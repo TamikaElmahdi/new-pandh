@@ -1,0 +1,127 @@
+.host {
+  // height: 100vh;
+  // overflow-x: hidden;
+  margin: 0 2rem;
+}
+
+.myrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+mat-card, button {
+  width: 10rem;
+  margin: 10px !important;
+  height: 7rem;
+  transform: scale(1);
+  transition: transform .3s ease-in-out, box-shadow .6s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 20px 10px -15px grey;
+  }
+}
+
+
+button {
+  width: 13rem;
+}
+
+.router-link-active {
+  // background-color: #c5c5c5 !important;
+  // color: #c5c5c5;
+  .myspan {
+    color: #c5c5c5 !important;
+  }
+  border-bottom: solid 10px #c5c5c5;
+}
+
+.mywidth {
+  ::ng-deep .mat-list-item-content {
+    padding: 0 10px !important;
+    width: 187px;
+  }
+}
+::ng-deep mat-list-item {
+  height: 70px !important;
+
+  .mat-list-item-content {
+    padding: 0 10px !important;
+    // width: 187px;
+  }
+  // .mat-list-base {
+  // }
+  width: fit-content !important;
+
+  .myspan {
+    color: white;
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-expansion-panel {
+  border-radius: 0 !important;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+::ng-deep .material-icons {
+  font-size: 1.2em;
+}
+
+span {
+  font-size: 0.9em;
+}
+
+main {
+  // height: 100%;
+}
+
+mat-toolbar {
+  min-height: 50px;
+  // height: 50px;
+  // width: 100%;
+  // display: flex;
+  // background-color: #3F51B5;
+  // color: white;
+  height: 50px;
+  position: fixed;
+  top: 50px;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  p {
+    margin: auto;
+  }
+
+  .mat-elevation-z6 {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+:host {
+  overflow: hidden;
+}
+
+mat-sidenav-container {
+  mat-sidenav {
+    box-shadow: 3px 0 5px -1px rgba(0, 0, 0, 0.2),
+      6px 0 10px 0 rgba(0, 0, 0, 0.14), 1px 0 18px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+
+

@@ -1,0 +1,183 @@
+<!-- <nav style="position: fixed; top: 0; z-index: 12;width: 100vw;" class="mat-elevation-z2">
+  <mat-card class="d-flex mat-elevation-z6 w-100 m-0 text-white align-items-center"
+    style="height: 50px;border-radius: 0; background-color: #737373 ">
+
+    <div style="margin: auto 0;">
+    </div>
+    <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ml-auto" style=" height: fit-content;">
+      <div *ngFor="let e of navs; let i=index">
+        <ng-container *ngIf="e.children && e.children.length === 0; else elseTemplate">
+          <mat-list-item  [routerLink]="e.route" routerLinkActive="router-link-active" style="height: 50px !important;">
+            <span class="myspan" [style.width]="e.width">{{e.name}}</span>
+          </mat-list-item>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <mat-list-item  [matMenuTriggerFor]="i">
+            <span class="myspan" [style.width]="e.width">{{e.name}}</span>
+          </mat-list-item>
+
+          <mat-menu #i="matMenu" xPosition="after">
+            <div *ngIf="session.isAdmin">
+              <button mat-menu-item *ngFor="let c of e.children; let i2=index" [routerLink]="c.route" routerLinkActive="router-link-active">
+                {{c.name}}
+              </button>
+            </div>
+          </mat-menu>
+
+
+        </ng-template>
+
+
+      </div>
+    </mat-nav-list>
+  </mat-card>
+</nav> -->
+
+<!--
+<mat-toolbar class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <p>Système de Suivi des recommandations des mécanismes onusiens des DH</p>
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Bienvenue, {{session.getUser.nom}}
+      {{session.getUser.prenom}}</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item [routerLink]="['/admin/compte']">Info Compte</button>
+      <button mat-menu-item (click)="disconnect()">Se déconnecter</button>
+      <mat-divider></mat-divider>
+      <div *ngIf="session.isAdmin">
+        <button mat-menu-item *ngFor="let e of menus; let i=index" [routerLink]="e.route" routerLinkActive="router-link-active">
+          {{e.name}}
+        </button>
+      </div>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar> me-->
+
+
+<nav style="position: fixed; top: 0px; z-index: 10; width: 100vw;">
+  <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center"
+    style="height: 90px;border-radius: 0;width: 100vw; background: linear-gradient(90deg, #88d6f5 0%, #6591bd 100%);">
+
+    <div style="margin: auto 0;">
+      <img [src]="'assets/logo-ddh.jpg'" alt="marit logo"
+        style="height: 90px;">
+    </div>
+    <section class="d-flex flex-column justify-content-between  mt-2"
+
+      [ngClass]="'ar'" style="width: 100%;">
+
+
+
+      <!-- first row -->
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
+
+        [ngClass]="'ar'" style=" height: fit-content;">
+        <span class="example-spacer"></span>
+
+        <mat-list-item [matMenuTriggerFor]="beforeMenu"
+          style=" background-color: #aaabab;height: 40px !important;margin-right: 1px;">
+          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+          <mat-icon style="color: white;">power_settings_new</mat-icon>
+        </mat-list-item>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item> <b>{{session.getUser.nom}} {{session.getUser.prenom}}</b> </button>
+          <button mat-menu-item [routerLink]="['/admin/compte']">Info Compte</button>
+          <button mat-menu-item (click)="disconnect()">Se déconnecter</button>
+          <mat-divider></mat-divider>
+
+        </mat-menu>
+      </mat-nav-list>
+      <!-- second row -->
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0">
+        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active">
+          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+          <mat-icon style="color: white;">home</mat-icon>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
+          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+          <span>المخطط التنفيدي</span>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="session.checkPermission('mesure-region')" [routerLink]="['/admin/mesure-region']" routerLinkActive="router-link-active">
+        <span>المخطط التنفيدي الترابي</span>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
+          <span>برامج العمل</span>
+        </mat-list-item>
+
+
+
+        <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
+        [ngClass]="'ar'" style=" height: fit-content;">
+        <span class="example-spacer"></span>
+
+        <mat-list-item [matMenuTriggerFor]="beforeMenu">
+          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+          <span>التتبع</span>
+        </mat-list-item>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <mat-list-item *ngIf="session.checkPermission('suivi')" [routerLink]="['/admin/suivi']" routerLinkActive="router-link-active">
+            <span>وضعية التنفيد</span>
+          </mat-list-item>
+
+          <mat-list-item *ngIf="session.checkPermission('suivi-indicateur')" [routerLink]="['/admin/suivi-indicateur']" routerLinkActive="router-link-active">
+            <span>تتبع المؤشرات</span>
+          </mat-list-item>
+
+        </mat-menu>
+      </mat-nav-list>
+
+
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
+      [ngClass]="'ar'" style=" height: fit-content;">
+      <span class="example-spacer"></span>
+      <mat-list-item [matMenuTriggerFor]="beforeMenu">
+        <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+        <span>التقارير</span>
+      </mat-list-item>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <mat-list-item *ngIf="session.checkPermission('rapport-litteraire')" [routerLink]="['/admin/rapport-litteraire']" routerLinkActive="router-link-active">
+          <span>تقرير الحصيلة الأدبي</span>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="session.checkPermission('rapport-qualitative')" [routerLink]="['/admin/rapport-qualitative']" routerLinkActive="router-link-active">
+          <span>تقرير الحصيلة النوعي</span>
+        </mat-list-item>
+      </mat-menu>
+    </mat-nav-list>
+
+
+      <mat-list-item *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
+        <span>اللجنة</span>
+      </mat-list-item>
+
+
+
+      </mat-nav-list>
+
+
+
+    </section>
+  </mat-card>
+</nav>
+
+
+
+    <!-- <div style="margin: 65px auto 15px;" class="mybreadcrumb">
+        <div *ngFor="let s of patchRoute" class="items">
+          <a *ngIf="session.checkPermission('mesure')" [routerLink]="['/home/connection']">{{ s !== '-1' ? s : 'nauveau'}}</a><mat-icon>navigate_next</mat-icon>
+        </div>
+      </div> -->
+      <main [@routerTransition]="getState(o)" style="margin: 65px 0 0 5px;">
+        <router-outlet #o="outlet"></router-outlet>
+      </main>
+
+      <!-- <footer>
+          <mat-toolbar class="mt-2 text" color="primary">
+            <mat-toolbar-row style="height: 70px">
+              <span style="margin-left: auto; margin-right: auto;"> © {{ d | date:"dd/MMMM/yyyy" }} - Yaasin MOURABIT</span>
+            </mat-toolbar-row>
+          </mat-toolbar>
+        </footer> -->
