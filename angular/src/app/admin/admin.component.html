@@ -170,7 +170,7 @@
           <a *ngIf="session.checkPermission('mesure')" [routerLink]="['/home/connection']">{{ s !== '-1' ? s : 'nauveau'}}</a><mat-icon>navigate_next</mat-icon>
         </div>
       </div> -->
-      <main [@routerTransition]="getState(o)" style="margin: 65px 0 0 5px;">
+      <main [@routerTransition]="getState(o)" style="margin: 105px 0 0 5px;">
         <router-outlet #o="outlet"></router-outlet>
       </main>
 
