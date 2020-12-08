@@ -56,27 +56,27 @@
 
 <nav style="position: fixed; top: 0px; z-index: 10; width: 100vw;">
   <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center"
-    style="height: 90px;border-radius: 0;width: 100vw; background: linear-gradient(90deg, #88d6f5 0%, #6591bd 100%);">
+    style="height: 90px;border-radius: 0;width: 100vw; background: linear-gradient(90deg, #88d6f5 0%, #5badff 100%);">
 
     <div style="margin: auto 0;">
-      <img [src]="'assets/logo-ddh.jpg'" alt="marit logo"
+      <img [src]="'assets/logo-ddh.jpg'" alt="pandh logo"
         style="height: 90px;">
     </div>
-    <section class="d-flex flex-column justify-content-between  mt-2"
+    <section class="d-flex flex-column justify-content-between  mt-2 ar"
 
-      [ngClass]="'ar'" style="width: 100%;">
+      style="width: 100%;">
 
 
 
       <!-- first row -->
-      <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar"
 
-        [ngClass]="'ar'" style=" height: fit-content;">
+        style=" height: fit-content;">
         <span class="example-spacer"></span>
 
         <mat-list-item [matMenuTriggerFor]="beforeMenu"
           style=" background-color: #aaabab;height: 40px !important;margin-right: 1px;">
-          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+
           <mat-icon style="color: white;">power_settings_new</mat-icon>
         </mat-list-item>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
@@ -89,35 +89,35 @@
       </mat-nav-list>
       <!-- second row -->
       <mat-nav-list class="d-flex align-items-start justify-content-start p-0">
-        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active">
-          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active" class="MenuPandh">
+
           <mat-icon style="color: white;">home</mat-icon>
         </mat-list-item>
 
-        <mat-list-item *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
-          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
+
           <span>المخطط التنفيدي</span>
         </mat-list-item>
 
-        <mat-list-item *ngIf="session.checkPermission('mesure-region')" [routerLink]="['/admin/mesure-region']" routerLinkActive="router-link-active">
+        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-region')" [routerLink]="['/admin/mesure-region']" routerLinkActive="router-link-active">
         <span>المخطط التنفيدي الترابي</span>
         </mat-list-item>
 
-        <mat-list-item *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
+        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
           <span>برامج العمل</span>
         </mat-list-item>
 
 
 
-        <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
-        [ngClass]="'ar'" style=" height: fit-content;">
+        <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
+         style=" height: fit-content;" >
         <span class="example-spacer"></span>
 
-        <mat-list-item [matMenuTriggerFor]="beforeMenu">
-          <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+        <mat-list-item [matMenuTriggerFor]="beforeMenu1">
+
           <span>التتبع</span>
         </mat-list-item>
-        <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <mat-menu #beforeMenu1="matMenu" xPosition="before">
           <mat-list-item *ngIf="session.checkPermission('suivi')" [routerLink]="['/admin/suivi']" routerLinkActive="router-link-active">
             <span>وضعية التنفيد</span>
           </mat-list-item>
@@ -130,14 +130,14 @@
       </mat-nav-list>
 
 
-      <mat-nav-list class="d-flex align-items-start justify-content-start p-0"
-      [ngClass]="'ar'" style=" height: fit-content;">
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
+      style=" height: fit-content;" >
       <span class="example-spacer"></span>
-      <mat-list-item [matMenuTriggerFor]="beforeMenu">
-        <!-- Bienvenue, {{session.getUser.nom}} {{session.getUser.prenom}} -->
+      <mat-list-item [matMenuTriggerFor]="beforeMenu2">
+
         <span>التقارير</span>
       </mat-list-item>
-      <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <mat-menu #beforeMenu2="matMenu" xPosition="before">
         <mat-list-item *ngIf="session.checkPermission('rapport-litteraire')" [routerLink]="['/admin/rapport-litteraire']" routerLinkActive="router-link-active">
           <span>تقرير الحصيلة الأدبي</span>
         </mat-list-item>
@@ -149,7 +149,7 @@
     </mat-nav-list>
 
 
-      <mat-list-item *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
+      <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
         <span>اللجنة</span>
       </mat-list-item>
 
@@ -170,7 +170,7 @@
           <a *ngIf="session.checkPermission('mesure')" [routerLink]="['/home/connection']">{{ s !== '-1' ? s : 'nauveau'}}</a><mat-icon>navigate_next</mat-icon>
         </div>
       </div> -->
-      <main [@routerTransition]="getState(o)" style="margin: 105px 0 0 5px;">
+      <main [@routerTransition]="getState(o)" style="margin: 110px 0 0 5px;">
         <router-outlet #o="outlet"></router-outlet>
       </main>
 

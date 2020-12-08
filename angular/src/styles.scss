@@ -14,6 +14,14 @@ body{
 html, body { height: 100%; background-color:#fff;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+body {
+  background-image: url(assets/bg2.jpg), url(assets/bg1.jpg);
+  background-position: left top, left bottom;
+  background-size: 10%, 8%;
+  background-repeat: no-repeat, no-repeat;
+}
+
 mat-dialog-container {
   padding: 0 !important;
 }
@@ -51,4 +59,24 @@ mat-icon {
 mat-icon {
   // margin-top: 4px !important;
   margin-bottom: 5px !important;
+}
+
+.MenuPandh
+{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  height: 40% !important;
+  background-color: #3393d0;
+  color: #fff !important;
+}
+
+.MenuPandh mat-list-item
+{
+  height: 40% !important;
+}
+.MenuPandh span
+{
+  color: #fff;
+
 }
