@@ -84,18 +84,16 @@
           <button mat-menu-item [routerLink]="['/admin/compte']">Info Compte</button>
           <button mat-menu-item (click)="disconnect()">Se déconnecter</button>
           <mat-divider></mat-divider>
-
         </mat-menu>
       </mat-nav-list>
       <!-- second row -->
       <mat-nav-list class="d-flex align-items-start justify-content-start p-0">
-        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active" class="MenuPandh">
 
+        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active" class="MenuPandh">
           <mat-icon style="color: white;">home</mat-icon>
         </mat-list-item>
 
         <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
-
           <span>المخطط التنفيدي</span>
         </mat-list-item>
 
@@ -106,8 +104,6 @@
         <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
           <span>برامج العمل</span>
         </mat-list-item>
-
-
 
         <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
          style=" height: fit-content;" >
