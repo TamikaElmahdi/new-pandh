@@ -16,10 +16,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 body {
-  background-image: url(assets/bg2.jpg), url(assets/bg1.jpg);
-  background-position: left top, left bottom;
-  background-size: 10%, 8%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(assets/bg2.jpg), url(assets/bg1.jpg), url(assets/bg3.png);
+  background-position: left top, left bottom, right top;
+  background-size: 10%, 8%, 8%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 mat-dialog-container {
@@ -79,4 +79,15 @@ mat-icon {
 {
   color: #fff;
 
+}
+
+.mat-menu-content
+{
+  background-color: #c6e8f2 !important;
+  cursor: pointer !important;
+}
+
+.router-link-active[_ngcontent-irh-c3]
+{
+    background-color: #3396d0 !important;
 }
