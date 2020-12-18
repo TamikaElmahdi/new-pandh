@@ -5,6 +5,13 @@
   color: white;
 }
 
+
+ .router-link-active.MenuPandhHome{
+  // background-color: #3f51b5 !important;
+  background-color: #8bd0e8  !important;
+  color: white;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -117,7 +124,7 @@ mat-panel-title {
   .myspan {
     color: #c5c5c5 !important;
   }
-  border-bottom: solid 10px #8bd0e8;
+  //border-bottom: solid 10px #8bd0e8;
 }
 
 .mywidth {
@@ -219,6 +226,7 @@ div.mat-list-item-content
   height: 50%;
   margin-top: 16%;
 }
+
 
 .router-link-active[_ngcontent-irh-c3]
 {

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
 using Providers;
-
+using System.Text.RegularExpressions;
 namespace Controllers
 {
     [Route("api/[controller]/[action]")]
@@ -142,6 +142,8 @@ namespace Controllers
             return Ok(new { list = list, count = count });
         }
 
+        
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOneWithInclude(int id)
         {
@@ -154,5 +156,67 @@ namespace Controllers
 
             return Ok(model);
         }
+
+
+        public int getNumber(string text)
+        { return 15;
+            // string a = text;
+            // string b = string.Empty;
+            // int val = 0;
+
+            // for (int i=0; i< a.Length; i++)
+            // {
+            //     if (Char.IsDigit(a[i]))
+            //         b += a[i];
+            // }
+
+            // if (b.Length>0)
+            //     val = int.Parse(b);
+            // return val;
+            string input = text;
+            int number = 0;
+            // Split on one or more non-digit characters.
+            string[] numbers = Regex.Split(input, @"\D+");
+            foreach (string value in numbers)
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    int i = int.Parse(value);
+                    Console.WriteLine("Number: {0}", i);
+                    number = i;
+                }
+            }
+            return 15;
+        }
+
+        // [HttpGet("{type}")]
+        // public  async Task<IActionResult> PourcentageParAxe(int type)
+        // {
+        //     try
+        //     { 
+               
+        //     var q = _context.Realisations
+        //     .Where(e=>e.Activite.Mesure.IdAxe==type)
+        //         ;
+        //     var list = await q
+        //         .GroupBy(e => e.Activite.Mesure.Axe.Label)
+        //          .Select(e => new
+        //         {
+        //             name = e.Key,
+
+                    
+        //             value = e.Average(getNumber(s => s.Taux)),
+        //         })
+
+        //         .ToListAsync()
+        //         ;
+
+        //     return Ok(list);
+
+        //     }
+        //     catch(Exception ex){throw ex;}
+        // }
     }
+
+   
 }

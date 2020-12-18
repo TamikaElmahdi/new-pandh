@@ -27,4 +27,8 @@ export class RealisationService  extends SuperService<Realisation> {
     return this.http.post(`${this.urlApi}/${this.controller}/getRapportQualitative`, o);
   }
 
+  pourcentageParAxe(type) {
+    return this.http.get(`${this.urlApi}/${this.controller}/pourcentageParAxe/${type}`);
+    }
+
 }

@@ -54,29 +54,32 @@
 </mat-toolbar> me-->
 
 
+
 <nav style="position: fixed; top: 0px; z-index: 10; width: 100vw;">
   <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center"
-    style="height: 90px;border-radius: 0;width: 100vw; background: linear-gradient(90deg, #88d6f5 0%, #5badff 100%);">
+    style="height: 120px;border-radius: 0;width: 100vw;background-image: url(assets/fondPage.jpg)">
 
     <div style="margin: auto 0;">
-      <img [src]="'assets/logo-ddh.jpg'" alt="pandh logo"
-        style="    height: 118px;
-        width: 220px;">
+      <img [src]="'assets/logo-ddh.png'" alt="pandh logo"
+        style="    height: 182px;
+        width: 256px;
+        margin-left: -7px;
+    margin-right: -7px;">
     </div>
     <section class="d-flex flex-column justify-content-between  mt-2 ar"
 
-      style="width: 100%;background-image: url(assets/fondPage.jpg)">
+      style="width: 100%;">
 
 
 
       <!-- first row -->
       <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar"
 
-        style=" height: fit-content;">
+    style=" height: fit-content;margin-left: 16px; ">
         <span class="example-spacer"></span>
 
         <mat-list-item [matMenuTriggerFor]="beforeMenu"
-          style=" background-color: #aaabab;height: 40px !important;margin-right: 1px;">
+          style=" background-color: #aaabab00;height: 40px !important;margin-right: 1px;">
 
           <mat-icon style="color: white;">power_settings_new</mat-icon>
         </mat-list-item>
@@ -88,29 +91,29 @@
         </mat-menu>
       </mat-nav-list>
       <!-- second row -->
-      <mat-nav-list class="d-flex align-items-start justify-content-start p-0">
+      <mat-nav-list class="d-flex align-items-start justify-content-start p-0" style="margin-bottom: 1%;">
 
-        <mat-list-item [routerLink]="['/admin/home']" routerLinkActive="router-link-active" class="MenuPandh">
-          <mat-icon style="color: white;">home</mat-icon>
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" [routerLink]="['/admin/home']" routerLinkActive="router-link-active" class="MenuPandhHome">
+          <mat-icon style="color: white;background-color: #3393d000 !important;">home</mat-icon>
         </mat-list-item>
 
-        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" class="MenuPandh" *ngIf="session.checkPermission('mesure-executif')" [routerLink]="['/admin/mesure-executif']" routerLinkActive="router-link-active">
           <span>المخطط التنفيدي</span>
         </mat-list-item>
 
-        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-region')" [routerLink]="['/admin/mesure-region']" routerLinkActive="router-link-active">
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" class="MenuPandh" *ngIf="session.checkPermission('mesure-region')" [routerLink]="['/admin/mesure-region']" routerLinkActive="router-link-active">
         <span>المخطط التنفيدي الترابي</span>
         </mat-list-item>
 
-        <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" class="MenuPandh" *ngIf="session.checkPermission('mesure-programme')" [routerLink]="['/admin/mesure-programme']" routerLinkActive="router-link-active">
           <span>برامج العمل</span>
         </mat-list-item>
 
-        <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
-         style=" height: fit-content;" >
+        <mat-nav-list  class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
+         style=" height: fit-content;height: 36px !important;margin-top: 12px !important;padding-top: 14px !important;" >
         <span class="example-spacer"></span>
 
-        <mat-list-item [matMenuTriggerFor]="beforeMenu1">
+        <mat-list-item   [matMenuTriggerFor]="beforeMenu1">
 
           <span>التتبع</span>
         </mat-list-item>
@@ -127,34 +130,34 @@
       </mat-nav-list>
 
 
-      <mat-nav-list class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
-      style=" height: fit-content;" >
+      <mat-nav-list  class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
+      style=" height: fit-content;height: 36px !important;margin-top: 12px !important;padding-top: 14px !important;" >
       <span class="example-spacer"></span>
       <mat-list-item [matMenuTriggerFor]="beforeMenu2">
 
         <span>التقارير</span>
       </mat-list-item>
       <mat-menu #beforeMenu2="matMenu" xPosition="before">
-        <mat-list-item *ngIf="session.checkPermission('rapport-litteraire')" [routerLink]="['/admin/rapport-litteraire']" routerLinkActive="router-link-active">
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" *ngIf="session.checkPermission('rapport-litteraire')" [routerLink]="['/admin/rapport-litteraire']" routerLinkActive="router-link-active">
           <span>تقرير الحصيلة الأدبي</span>
         </mat-list-item>
 
-        <mat-list-item *ngIf="session.checkPermission('rapport-qualitative')" [routerLink]="['/admin/rapport-qualitative']" routerLinkActive="router-link-active">
+        <mat-list-item style="height: 36px !important;margin-top: 12px;" *ngIf="session.checkPermission('rapport-qualitative')" [routerLink]="['/admin/rapport-qualitative']" routerLinkActive="router-link-active">
           <span>تقرير الحصيلة النوعي</span>
         </mat-list-item>
       </mat-menu>
     </mat-nav-list>
 
 
-      <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
+      <mat-list-item style="height: 36px !important;margin-top: 12px;" class="MenuPandh" *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
         <span>اللجنة</span>
       </mat-list-item>
 
-
+      <!-- <mat-list-item class="MenuPandh" *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
+        <span>إحصائيات</span>
+      </mat-list-item> -->
 
       </mat-nav-list>
-
-
 
     </section>
   </mat-card>
@@ -167,7 +170,7 @@
           <a *ngIf="session.checkPermission('mesure')" [routerLink]="['/home/connection']">{{ s !== '-1' ? s : 'nauveau'}}</a><mat-icon>navigate_next</mat-icon>
         </div>
       </div> -->
-      <main [@routerTransition]="getState(o)" style="margin: 110px 0 0 5px;">
+      <main [@routerTransition]="getState(o)" style="margin: 110px 70px 0 70px ;">
         <router-outlet #o="outlet"></router-outlet>
       </main>
 
