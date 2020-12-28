@@ -1,0 +1,32 @@
+<div>
+  <div *ngIf="title && title !== ''" class="d-flex justify-content-left w-100" style="margin-top: 2%; ">
+    <section [className]="'super-title border-right'">
+      <div>
+        <h3 style="font-size: 1.2em;">{{title === '' ? '.......' : title}}</h3>
+      </div>
+    </section>
+  </div>
+
+  <div class=" mb-5" style="cursor: pointer;"
+    (click)="openDialog()">
+
+    <div [class]="'col-md-' + col" style="display: block; width: 100vw;" [style.height]="height">
+      <!-- <h5 class="XChart">%</h5> -->
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [chartType]="barChartType" [plugins]="pieChartPlugins" [colors]="pieChartColors"
+        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+
+      <!-- <button class="m-1" mat-mini-fab color="accent" (click)="randomize()"><mat-icon>compare_arrows</mat-icon></button> -->
+
+    </div>
+    <!--
+  <div class="d-flex flex-column justify-content-center mt-3">
+    <img src="assets/line.png" height="10px" width="280px" [style.transform]="'rotateY(' + retate + 'deg)'">
+    <h5 style="color: #737473; margin: 5px 0 10px 5px;">
+      {{title === '' ? '.......' : title}}
+    </h5>
+  </div> -->
+
+
+  </div>
+</div>

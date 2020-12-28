@@ -1,0 +1,40 @@
+<div class="dialog">
+  <h1 mat-dialog-title>
+    <mat-toolbar role="toolbar" class="task-header">
+      <span>{{title}}</span>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+  </h1>
+  <div class="content">
+    <div mat-dialog-content>
+
+      <ul *ngIf="type === 'cercle'">
+        <li>En cours : {{o.p.toFixed(0)}} %</li>
+        <li>Réaliser : {{o.r.toFixed(0)}} %</li>
+        <li>Non réalisé' : {{o.n.toFixed(0)}} %</li>
+      </ul>
+
+      <div *ngIf="type === 'bar'">
+        <ul *ngFor="let e of list; let i=index">
+          <li style="font-weight: bold;">{{e.name}}</li>
+          <li>En cours : {{e.p.toFixed(0)}} %</li>
+          <li>Réaliser : {{e.r.toFixed(0)}} %</li>
+          <li>Non réalisé' : {{e.n.toFixed(0)}} %</li>
+        </ul>
+      </div>
+
+      <div *ngIf="type === 'pie'">
+        <ul *ngFor="let e of list; let i=index">
+          <li style="font-weight: bold;">{{e.name}}</li>
+          <li>{{e.value.toFixed(0)}} %</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="actions" mat-dialog-actions>
+      <button mat-button (click)="onNoClick()" type="button">Retour</button>
+    </div>
+  </div>
+</div>

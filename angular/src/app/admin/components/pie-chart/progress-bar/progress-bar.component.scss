@@ -1,0 +1,17 @@
+.miniBarProgress {
+  background-color: #8a898a;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.miniBar {
+  height: 0.85rem;
+  // border: 1px solid #8a898a;
+  position: relative;
+  width: -webkit-calc(100% - 2rem);
+  width: -moz-calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  margin-right: 0.5rem;
+}

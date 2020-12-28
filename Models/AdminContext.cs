@@ -235,6 +235,7 @@ namespace Models
                entity.Property(e => e.Situation);
                entity.Property(e => e.Annee);
                entity.Property(e => e.Taux);
+               entity.Property(e => e.TauxRealisation);
                entity.Property(e => e.Effet);
                entity.Property(e => e.IdActivite);
 

@@ -1,0 +1,120 @@
+p {
+  font-family: Lato;
+}
+.XChart
+{
+  margin-top: 0;
+  margin-bottom: -40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  color: gray;
+  // font-size: 1.2em;
+  direction:rtl;
+}
+
+.chart-size {
+  // width: 200px;
+}
+
+.border-left {border-left: 10px solid #d17c36;}
+.border-right {border-right: 10px solid #d17c36;}
+
+.super-title {
+
+  height: 45px;
+  display: flex;
+  align-items: center;
+  div {
+    background-color: #a19b9e;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    h3 {
+      color: white;
+      margin: 0 0 0 0;
+      padding: 0 5px;
+    }
+  }
+}
+
+.super-title2 {
+  // border-left: 10px solid #d17c36;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  div {
+    // background-color: #a19b9e;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    h3 {
+      color: #a19b9e;
+      margin: 0 0 0 0;
+      padding: 0 5px;
+      font-size: 1.8em;
+    }
+  }
+}
+
+.row {
+  // margin-top: 10px;
+}
+.host {
+  margin: 1em !important;
+}
+
+::ng-deep .mat-progress-spinner circle {
+  fill: #00000008 !important;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: var(--primary);
+  text-align: center;
+  font-size: medium;
+}
+
+.axes {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px rgb(221, 221, 221);
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  p {
+    margin: 0;
+    font-size: .8em;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: .9em;
+  }
+}
+
+/* latin */
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v11/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.textAlign-left
+{
+  text-align: left;
+}
+.textAlign-right
+{
+  text-align: right;
+}
+.textSouTitre
+{
+  text-align: right;
+  margin-bottom: 2%;font-size: 0.9em; color:#00000070;
+  //font-family:'Satisfy', cursive;
+
+}

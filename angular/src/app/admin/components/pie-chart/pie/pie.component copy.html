@@ -1,0 +1,48 @@
+<div class="d-flex flex-column align-items-center justify-content-center mb-3" style="cursor: pointer;" (click)="openDialog()">
+
+    <div style="display: block;" [style.width.px] = "withGraphe">
+      <canvas class="chart chart-pie"   baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors" [legend]="pieChartLegend">
+      </canvas>
+  
+    </div>
+    <div class="d-flex flex-column justify-content-center mt-2">
+      <img src="assets/line.png" height="10px" width="280px" [style.transform]="'rotateY(' + retate + 'deg)'">
+      <h5 style="color: #737473; margin: 5px 0 10px 5px;">
+        {{title}}
+      </h5>
+    </div>
+
+    <table id="customers">
+      <tr>
+        <th></th>
+        <th>Label</th>
+        <th>Nombre</th>
+        <th>Pourcentage</th>
+      </tr>
+      <tr *ngFor="let n of arr; let i=index">
+        <td [style.backgroundColor]="pieChartColors[0].backgroundColor[i]"> </td>
+        <td>{{pieChartLabels[i]}}</td>
+        <ng-container *ngIf="dataToShowInTable.length !== 0; else elseTemplate">
+          <!-- 1 et 2 eme collonne -->
+          <!-- nomber -->
+          <td *ngIf="((i + 1) % 3) !== 0">{{ toStr(pieChartData[i])  }}</td>
+
+          <td *ngIf="((i + 1) % 3) !== 0">{{pieChartData[i]}} %</td>
+
+          <!-- troisieme colonne -->
+          <!-- nombre -->
+          <td *ngIf="((i + 1) % 3) === 0">{{(+dataToShowInTable[  toInt(i) ] * count / 100).toFixed(0)}}</td>
+
+          <td *ngIf="((i + 1) % 3) === 0">{{dataToShowInTable[  toInt(i) ]}} %</td>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <!-- nombre -->
+          <td>{{ toStr(pieChartData[i])}} </td>
+
+          <td>{{pieChartData[i]}} %</td>
+        </ng-template>
+      </tr>
+    </table>
+  </div>
+  

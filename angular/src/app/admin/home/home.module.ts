@@ -11,6 +11,7 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { CalendarComponent } from './calendar/calendar.component';
 import { BarOneComponent } from './bar-one/bar-one.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PieChartModule } from '../components/pie-chart/pie-chart.module';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -28,6 +29,7 @@ export function momentAdapterFactory() {
     FormsModule,
     ReactiveFormsModule,
     MatModule,
+    PieChartModule,
     ChartsModule,
     CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory }),
   ]

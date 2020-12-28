@@ -1,7 +1,7 @@
 import { Mesure } from './../../../Models/models';
 import { Component, OnInit, ViewChild, EventEmitter } from '@angular/core';
 import { MatPaginator, MatSort, MatDialog, MatAutocompleteSelectedEvent, MatInput } from '@angular/material';
-import { merge, Observable } from 'rxjs';
+import { BehaviorSubject, merge, Observable, Subject } from 'rxjs';
 import { UowService } from 'src/app/services/uow.service';
 import { SnackbarService } from 'src/app/shared/snakebar.service';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
@@ -10,6 +10,7 @@ import { SessionService } from 'src/app/shared';
 import { switchMap, map } from 'rxjs/operators';
 import { DetailsComponent } from '../details/details.component';
 import { DeleteService } from '../../components/delete/delete.service';
+import { IData } from '../../components/pie-chart/pie-chart.component';
 
 @Component({
   selector: 'app-list',
@@ -25,6 +26,15 @@ export class ListComponent implements OnInit {
   resultsLength = 0;
   isRateLimitReached = false;
   dataSource = [];
+
+  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'taux', title: 'التوزيع الحسب المحاور' });
+
+  dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
+
+  examenPageSubject = new Subject();
+  countRec = new Subject();
+  dataEpuPie = new Subject();
+
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
   // responsables = ['المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1',];
@@ -79,6 +89,10 @@ export class ListComponent implements OnInit {
     , private route: ActivatedRoute, public router: Router) { }
 
   ngOnInit() {
+
+    this.stateAxe();
+    this.stateOneOFMecanisme();
+
     this.getOrganismes();
     this.routeMesure = this.router.url;
     this.checkWitchMesure(this.routeMesure);
@@ -130,6 +144,69 @@ export class ListComponent implements OnInit {
   getOrganismes() {
     this.uow.organismes.getByType(this.typeOrganisme).subscribe(r => {
       this.organismes = r as any;
+    });
+  }
+
+
+  stateAxe() {
+    this.uow.axes.stateAxes('epu').subscribe(r => {
+
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        { data: [], label: 'Etatavancement'/*, stack: 'a'*/ },
+        { data: [], label: 'Réalisé'/*, stack: 'a'*/ },
+        { data: [], label: 'NonRéalisé'/*, stack: 'a'*/ },
+      ];
+
+      r.forEach(e => {
+        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
+      });
+
+
+      // tslint:disable-next-line:max-line-length
+      this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
+    });
+  }
+
+
+  stateOneOFMecanisme() {
+    this.uow.realisations.stateMecanisme().subscribe(r => {
+      const chartLabels = [];
+      chartLabels.push('EnCours');
+      chartLabels.push('Réalisé');
+      chartLabels.push('NonRéalisé');
+
+      console.log(r)
+
+      const chartData = [];
+      const dataToShowInTable = [];
+
+      // chartData.push(r.epu.p * r.epu.t / 100);
+      // chartData.push(r.epu.r * r.epu.t / 100);
+      // chartData.push(r.epu.t - (r.epu.p * r.epu.t / 100) - (r.epu.r * r.epu.t / 100));
+
+      chartData.push(r.epu.p * 100 / r.epu.t);
+      chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.n * 100 / r.epu.t);
+
+      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.n);
+      this.countRec.next(r.epu.p + r.epu.r + r.epu.n);
+
+      // chartData.push(100 - r.epu.t);
+
+
+      const chartColors = ['#f7801e', '#2b960b', '#db0707', '#ffffff'];
+
+      this.dataEpuPie.next({
+        chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
+        , title: 'وضعية التنفيذ'
+      });
+
     });
   }
 

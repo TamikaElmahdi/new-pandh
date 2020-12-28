@@ -51,7 +51,8 @@ namespace Controllers
                     annee = e.Annee,
                     nom = e.Nom,
                     situation = e.Situation,
-                    taux = e.Taux,
+                    //taux = e.Taux,
+                    taux = e.TauxRealisation,
                 })
                 .ToListAsync();
             ;
@@ -90,7 +91,8 @@ namespace Controllers
                     activite = e.Activite.Nom,
                     annee = e.Annee,
                     situation = e.Situation,
-                    taux = e.Taux,
+                    //taux = e.Taux,
+                    taux = e.TauxRealisation,
                     effet = e.Effet,
                 })
                 .ToListAsync();
@@ -132,7 +134,8 @@ namespace Controllers
                     organisme = e.Responsable.Organisme.Label,
                     mesure = e.Nom,
                     realisations = e.Activites.SelectMany(a => a.Realisations.Select(r => r.Nom)),
-                    taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.Taux)),
+                    //taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.Taux)),
+                    taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.TauxRealisation)),
                     // taux = e.ac,
                     indicateurs = e.IndicateurMesures.Select(i => i.Indicateur.Nom),
                 })
@@ -140,6 +143,44 @@ namespace Controllers
             ;
 
             return Ok(new { list = list, count = count });
+        }
+
+        private async Task<object> Calc(IQueryable<Realisation> q)
+        {
+
+            // int recommendationsCount = _context.Recommendations.Count();
+
+            var t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
+            var n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
+            var r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
+            var p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+            
+            var epu = new { n, r, p, t };
+
+            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
+            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
+            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
+            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+            // var h = t == 0 ? 1 : t;
+            // var h2 = 0/1;
+            var ot = new { n, r, p, t };
+
+            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
+            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
+            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
+            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+
+            var ps = new { n, r, p, t };
+
+            return new { epu, ot, ps, count = 0 };
+
+        }
+
+
+          [HttpGet]
+        public async Task<IActionResult> StateMecanisme() // used
+        {
+            return Ok(await Calc(_context.Realisations));
         }
 
         

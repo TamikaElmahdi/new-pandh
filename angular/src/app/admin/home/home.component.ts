@@ -1,6 +1,7 @@
 import { SessionService } from 'src/app/shared';
 import { UowService } from 'src/app/services/uow.service';
 import { Component, OnInit, ViewChild, EventEmitter, ChangeDetectorRef } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,8 @@ export class HomeComponent implements OnInit {
   countG2 = 25 ;
   countG3 = 26;
   countG4 = 24;
+  departementSubjectPE = new Subject();
+
   constructor(private uow: UowService, public session: SessionService) { }
 
   ngOnInit() {

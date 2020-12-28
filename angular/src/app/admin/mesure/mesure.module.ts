@@ -13,6 +13,8 @@ import { PartenaireComponent } from './partenaire/partenaire.component';
 import { IndicateurComponent } from './indicateur/indicateur.component';
 import { ActiviteComponent } from './activite/activite.component';
 import { DetailsComponent } from './details/details.component';
+import { PieChartModule } from '../components/pie-chart/pie-chart.module';
+import { CountModule } from '../components/count/count.module';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { DetailsComponent } from './details/details.component';
     FormsModule,
     ReactiveFormsModule,
     TitleModule,
+    PieChartModule,
+    CountModule
   ],
   entryComponents: [
     DetailsComponent,

@@ -468,6 +468,7 @@ namespace seed
                 .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
                 .RuleFor(o => o.Annee, f => f.PickRandom(list))
                 .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, f => f.Random.Number(0, 100))
                 .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
                 .RuleFor(o => o.IdActivite, f => f.Random.Number(1, 50))
                 ;

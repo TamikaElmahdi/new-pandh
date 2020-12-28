@@ -1,0 +1,115 @@
+<div class="d-flex justify-content-center" style="height: 230px; cursor: pointer;" (click)="openDialog()">
+
+  <div class="d-flex justify-content-center" style="height: 300px;">
+
+    <div style="position: relative;width: 100%;">
+
+      <div class="blue">
+        <mat-progress-spinner [matTooltip]="'Taux : ' + o.t + '%'" style="position: absolute;"
+          [style.transform]="'translateX(' + transform + '%)'" [diameter]="diameter" [color]="'primary'"
+          [mode]="'determinate'" [value]="o.t">
+        </mat-progress-spinner>
+      </div>
+      <!-- {{(o.p * o.t) / 100}}
+      {{(o.r * o.t) / 100}} -->
+      <ng-container *ngIf="o.p < o.r; else elseTemplate">
+        <div class="gray">
+          <mat-progress-spinner [matTooltip]="tooltipMsg(o.p, o.r, o.t)" style="position: absolute;"
+            [style.transform]="'translateX(' + transform + '%)'" [diameter]="diameter" [color]="'primary'"
+            [mode]="'determinate'" [value]="(o.r * o.t) / 100">
+          </mat-progress-spinner>
+        </div>
+        <div class="orange">
+          <mat-progress-spinner class="orange" [matTooltip]="tooltipMsg(o.p, o.r, o.t)" style="position: absolute;"
+            [style.transform]="'translateX(' + transform + '%)'" [diameter]="diameter" [color]="'warn'"
+            [mode]="'determinate'" [value]="(o.p * o.t) / 100">
+          </mat-progress-spinner>
+        </div>
+
+      </ng-container>
+      <ng-template #elseTemplate>
+        <div class="orange">
+          <mat-progress-spinner class="orange" [matTooltip]="tooltipMsg(o.p, o.r, o.t)" style="position: absolute;"
+            [style.transform]="'translateX(' + transform + '%)'" [diameter]="diameter" [color]="'warn'"
+            [mode]="'determinate'" [value]="(o.p * o.t) / 100">
+          </mat-progress-spinner>
+        </div>
+        <div class="gray">
+          <mat-progress-spinner [matTooltip]="tooltipMsg(o.p, o.r, o.t)" style="position: absolute;"
+            [style.transform]="'translateX(' + transform + '%)'" [diameter]="diameter" [color]="'primary'"
+            [mode]="'determinate'" [value]="(o.r * o.t) / 100">
+          </mat-progress-spinner>
+
+        </div>
+
+      </ng-template>
+
+
+
+
+    </div>
+  </div>
+
+  <div class="d-flex flex-column justify-content-center mt-2" style="height: 218%;"
+    [style.margin-left]="marginLeftTitle" [style.width]="widthText">
+
+    <h5 class="h5Title" [style.margin]="marginh5Title" [style.font-size.em]="fontSize"
+      [ngStyle]="{'text-align': isInForLoop ? 'center' : (retate === 0  ? 'left' : 'right')}">
+      {{o.name}}
+    </h5>
+    <img *ngIf="!isInForLoop" src="assets/line.png" height="10px" width="280px"
+      [style.transform]="'rotateY(' + retate + 'deg)'" style="    margin-left: 17%;">
+  </div>
+
+
+  <div *ngIf="showLegend" class="d-flex flex-column justify-content-center mt-2 " [style.width]="widthText"
+    [style.margin]="marginLegend">
+    <ul class="legend">
+      <span class="superawesome"></span>
+      <span class="awesome"></span>
+      <span class="kindaawesome"></span>
+    </ul>
+
+  </div>
+
+
+  <!-- <div class="d-flex flex-column justify-content-center mt-2 " [style.width]="widthText"
+    style="margin:3px -3px -448px -174px;" *ngIf="showTable">
+
+    <table id="customers">
+      <tr>
+        <th></th>
+        <th>Nombre</th>
+        <th>Pourcentage</th>
+      </tr>
+      <tr>
+        <td>Taux</td>
+        <td>{{(o.t * count) / 100}}</td>
+        <td>{{ (o.t).toFixed(0) }}%</td>
+      </tr>
+      <tr>
+        <td>En cours</td>
+        <td>{{((o.p * o.t) / 100) * count / 100}}</td>
+        <td>{{ ((o.p * o.t) / 100).toFixed(0) }}%</td>
+      </tr>
+      <tr>
+        <td>Réalisé</td>
+        <td>{{(((o.r * o.t) / 100) * count / 100).toFixed(0)}}</td>
+        <td>{{ ((o.r * o.t) / 100).toFixed(0) }}%</td>
+      </tr>
+      <tr>
+        <td>Non Réalisé</td>
+        <td>{{((o.t - ((o.r * o.t) / 100)) * count / 100).toFixed(0)}}</td>
+        <td>{{(o.t - ((o.r * o.t) / 100)).toFixed(0)}}%</td>
+      </tr>
+
+    </table>
+
+  </div> -->
+
+
+
+
+
+
+</div>

@@ -1,0 +1,18 @@
+<div *ngIf="!ifEpu" class="d-flex justify-content-center align-items-center" [style.height] = "height">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <p class="prg1" style="color: #00658e;">{{count | async}}</p>
+    <p class="prg2" style="color: gray;">{{ 'admin.recomm' | translate }}</p>
+    <p class="prg2" style="color: gray;">
+      <!-- {{ 'admin.du' | translate }} 2011 {{ 'admin.au' | translate }} {{year}} -->
+      {{ mytranslate.langSync === 'fr' ? 'En cours de suivi et d\'affaires' : 'في طور التتبع والأعمال' }}
+    </p>
+  </div>
+</div>
+
+<div *ngIf="ifEpu" class="d-flex justify-content-center align-items-center" [style.height] = "height">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <p class="prg1" style="color: #00658e;">{{count | async}}</p>
+    <p class="prg2" style="color: gray;">{{ 'admin.recomm' | translate }}</p>
+    <p class="prg2" style="color: gray;">{{ mytranslate.langSync === 'fr' ? 'à l’exercice du troisième cycle' : 'برسم الدورة الثالثة' }}</p>
+  </div>
+</div>

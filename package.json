@@ -23,10 +23,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@angular/cdk": "^11.0.3",
+    "@angular/material": "^11.0.3",
+    "@ngx-translate/core": "^12.1.2",
+    "chartjs-plugin-labels": "^1.1.0"
+  },
   "devDependencies": {
     "@angular/cli": "^10.2.0"
   }
 }
-
-

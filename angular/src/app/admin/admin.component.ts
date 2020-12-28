@@ -36,12 +36,12 @@ export class AdminComponent implements OnInit {
 
   async ngOnInit() {
 
-    
+
     // this.getRoute();
     setTimeout(() => {
       this.user = this.session.user;
       // console.log(this.user);
-      this.snav.toggle();
+     // this.snav.toggle();
     }, 300);
 
   }

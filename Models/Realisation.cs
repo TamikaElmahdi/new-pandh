@@ -13,6 +13,7 @@ namespace Models
         public string Situation { get; set; }
         public int Annee { get; set; }
         public string Taux { get; set; }
+        public double TauxRealisation { get; set; }
         public string Effet { get; set; }
         public int IdActivite { get; set; }
         public Activite Activite { get; set; }

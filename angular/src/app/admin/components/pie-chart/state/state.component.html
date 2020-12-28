@@ -1,0 +1,18 @@
+
+<mat-card>
+  <div class="d-flex justify-content-center">
+    <h5 style="color: rgb(94, 94, 94); margin: 0 0 10px 0;">{{title}}</h5>
+  </div>
+  <div style="display: block;">
+    <canvas baseChart
+    [data]="pieChartData"
+    [labels]="pieChartLabels"
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [colors]="pieChartColors"
+    [legend]="pieChartLegend">
+  </canvas>
+</div>
+
+</mat-card>

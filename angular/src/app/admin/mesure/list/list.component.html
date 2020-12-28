@@ -119,10 +119,32 @@
   </div>
 
 
+<!-- ------------------ Graphe -------------------- -->
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <app-pie [obs]="dataEpuPie"></app-pie>
+    </div>
+    <!-- <mat-divider [vertical]="true"></mat-divider> -->
+    <!-- <div class="col-md-2 p-0">
+      <app-count ifEpu="true" [count]="countRec" [height]="'55vh'"></app-count>
+    </div> -->
+    <div class="col-md-5">
+      <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
+    </div>
+    <div class="col-md-12">
+      <div class="chart-size">
+        <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
+      </div>
+    </div>
+  </div>
+<!-- ------------------ Graphe -------------------- -->
+
+
   <div class="example-container mat-elevation-z8">
     <div class="example-loading-shade" *ngIf="isLoadingResults">
       <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
     </div>
+
 
     <div class="example-table-container">
       <table mat-table #table [dataSource]="dataSource" multiTemplateDataRows aria-label="Elements" matSort>
