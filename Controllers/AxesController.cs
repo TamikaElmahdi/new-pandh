@@ -13,12 +13,15 @@ namespace Controllers
         public AxesController(AdminContext context) : base(context)
         { }
 
-        [HttpGet("{mecanisme}")]
-        public async Task<IActionResult> StateAxes(string mecanisme) // used
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateAxes(int type) 
         {
 
+            
             var q = _context.Realisations.Where(e => e.Activite.Mesure.Axe != null)
-                // .Where(e => mecanisme == "" ? true : e.IdCycle != null)
+                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == type)
+                //.Where(e => e.Activite.Mesure.IdType.Organisme.Type == type)
+                //.Where(e => e.Id == 1)
                 .Include(e => e.Activite.Mesure.Axe)
                 ;
 

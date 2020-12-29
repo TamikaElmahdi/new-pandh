@@ -119,6 +119,64 @@ export class PieChartComponent implements OnInit {
         this.title = d.title;
       }
 
+
+      this.obs.subscribe(d => {
+        // if (d.type === 'stateRecommendationByMecanismeTaux' as any) {
+        //   this.title = d.title;
+        //   this.uow.recommendations.stateRecommendationByMecanismeTaux().subscribe(r => {
+        //     this.pieChartLabels = r.map(e => e.table/*.split(' ')*/);
+        //     this.pieChartData = r.map(e => e.value);
+
+        //     this.pieChartColors[0].backgroundColor = this.getColors(this.pieChartLabels.length);
+        //   });
+        // } else if (d.type === 'stateRecommendationByMecanismePercentage' as any) {
+        //   this.title = d.title;
+        //   this.uow.recommendations.stateRecommendationByMecanismePercentage().subscribe(r => {
+        //     this.pieChartLabels = r.map(e => e.table/*.split(' ')*/);
+        //     this.pieChartData = r.map(e => e.value);
+
+        //     this.pieChartColors[0].backgroundColor = this.getColors(this.pieChartLabels.length);
+        //   });
+        // } else {
+
+        // }
+
+        if (d.title instanceof Observable) {
+          d.title.subscribe(t => this.title = t)
+        } else {
+          this.title = d.title;
+        }
+
+        this.uow.realisations.genericByRecommendation(d.table, d.type).subscribe(r => {
+          console.log(r)
+          this.pieChartLabels = r.map(e => e.table/*.substring(0, 40) + ' ...'*/);
+          this.pieChartData = r.map(e => +e.value.toFixed(0));
+          this.pieChartColors[0].backgroundColor = this.getColors(this.pieChartLabels.length);
+
+          this.pieChartLabels.forEach((e, i) => {
+            const value = this.pieChartData[i] as number;
+            if (value !== 0) {
+              this.list.push({
+                name: r[i].table.toString(),
+                value: this.pieChartData[i] as number,
+              });
+            }
+          });
+
+        });
+
+      });
+
+      // this.pieChartOptions.title.text = this.mytitle;
+      //   this.uow.recommendations.genericByRecommendation(this.table, this.type).subscribe(r => {
+      //     console.log(r);
+      //     this.pieChartLabels = r.map(e => e.table/*.split(' ')*/);
+      //     this.pieChartData = r.map(e => e.value);
+
+      //     this.pieChartColors[0].backgroundColor = this.getColors(this.pieChartLabels.length);
+      //   });
+
+
       // this.uow.recommendations.genericByRecommendation(d.table, d.type).subscribe(r => {
       //   console.log(r)
       //   this.pieChartLabels = r.map(e => e.table/*.substring(0, 40) + ' ...'*/);
@@ -195,6 +253,6 @@ export class PieChartComponent implements OnInit {
 
 export interface IData {
   table: 'axe';
-  type: 'taux' | 'etat' | 'realise';
+  type: 'tauxRealisation' | 'etat' | 'realise';
   title: string | Observable<string>;
 }

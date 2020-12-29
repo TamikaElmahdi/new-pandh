@@ -27,7 +27,7 @@ export class ListComponent implements OnInit {
   isRateLimitReached = false;
   dataSource = [];
 
-  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'taux', title: 'التوزيع الحسب المحاور' });
+  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', title: 'التوزيع الحسب المحاور' });
 
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
@@ -77,6 +77,7 @@ export class ListComponent implements OnInit {
   isMesure = false;
   isProgramme = false;
   typeOrganisme = 1;
+  type = 0;
   //
   routeMesure = '';
   //
@@ -149,16 +150,26 @@ export class ListComponent implements OnInit {
 
 
   stateAxe() {
-    this.uow.axes.stateAxes('epu').subscribe(r => {
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+
+    this.uow.axes.stateAxes(this.type).subscribe(r => {
 
       r = r.filter(e => e.name !== null);
       // console.log(r);
       const barChartLabels = r.map(e => e.name);
       const dataToShowInTable = []
       const barChartData = [
-        { data: [], label: 'Etatavancement'/*, stack: 'a'*/ },
-        { data: [], label: 'Réalisé'/*, stack: 'a'*/ },
-        { data: [], label: 'NonRéalisé'/*, stack: 'a'*/ },
+        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
       ];
 
       r.forEach(e => {
@@ -177,9 +188,9 @@ export class ListComponent implements OnInit {
   stateOneOFMecanisme() {
     this.uow.realisations.stateMecanisme().subscribe(r => {
       const chartLabels = [];
-      chartLabels.push('EnCours');
-      chartLabels.push('Réalisé');
-      chartLabels.push('NonRéalisé');
+      chartLabels.push('في طور الإنجاز');
+      chartLabels.push('منجز');
+      chartLabels.push('غير منجز');
 
       console.log(r)
 
