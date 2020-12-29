@@ -8,7 +8,6 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import { SessionService } from 'src/app/shared';
 import { switchMap, map } from 'rxjs/operators';
-import { DetailsComponent } from '../details/details.component';
 import { DeleteService } from '../../components/delete/delete.service';
 import { IData } from '../../components/pie-chart/pie-chart.component';
 
@@ -48,7 +47,7 @@ export class ListComponent implements OnInit {
     // { columnDef: 'activite', headName: 'الأنشطة' },
     { columnDef: 'resultatsAttendu', headName: 'النتائج المبرمجة' },
     // { columnDef: 'indicateur', headName: 'مؤشرات القياس' },
-    { columnDef: 'option', headName: '' },
+    // { columnDef: 'option', headName: '' },
   ].map(e => {
     e.headName = e.headName === '' ? e.columnDef.toUpperCase() : e.headName;
     return e;
@@ -312,22 +311,6 @@ export class ListComponent implements OnInit {
     this.update.next(true);
   }
 
-  detail(o) {
-    this.uow.mesures.getOneWithInclude(o.id).subscribe(r => {
-      this.openDialog(r);
-    });
-  }
-
-  openDialog(o: any) {
-    const dialogRef = this.dialog.open(DetailsComponent, {
-      width: '7100px',
-      disableClose: true,
-      data: { model: o, title: this.title },
-      direction: 'rtl',
-    });
-
-    return dialogRef.afterClosed();
-  }
 
   searchAndGet(o: Model) {
     console.log(o);

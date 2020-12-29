@@ -184,8 +184,8 @@ namespace Controllers
         }
 
         
-        [HttpGet("{table}/{type}")]
-        public async Task<IActionResult> GenericByRecommendation(string table, string type) // used 
+        [HttpGet("{table}/{type}/{typeTable}")]
+        public async Task<IActionResult> GenericByRecommendation(string table, string type, int typeTable) // used 
         {
             //https://stackoverflow.com/questions/57131550/why-cant-i-create-a-listt-of-anonymous-type-in-c
             string lng = Request.Headers["mylang"].FirstOrDefault();
@@ -193,7 +193,10 @@ namespace Controllers
             int recommendationsCount = 0;
             if (table == "axe")
             {
-                recommendationsCount = await _context.Realisations.Where(r => r.Activite.Mesure.IdCycle != null).CountAsync();
+                recommendationsCount = await _context.Realisations
+                .Where(r => r.Activite.Mesure.IdCycle != null)
+                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                .CountAsync();
                 list = await _context.Activites
                     .Select(e => new
                     {

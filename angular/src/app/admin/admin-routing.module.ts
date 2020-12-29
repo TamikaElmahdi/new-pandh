@@ -34,7 +34,9 @@ const routes: Routes = [
       { path: 'rapport-qualitative', loadChildren: () => import('./rapportQ/rapport.module').then(m => m.RapportModule), },
       { path: 'compte', loadChildren: () => import('./compte/compte.module').then(m => m.CompteModule), canActivate: [AdminGuard] },
       // tslint:disable-next-line: max-line-length suivi-indicateur
-      { path: 'commission', loadChildren: () => import('./commission/commission.module').then(m => m.CommissionModule), canActivate: [AdminGuard] }
+      { path: 'commission', loadChildren: () => import('./commission/commission.module').then(m => m.CommissionModule), canActivate: [AdminGuard] },
+      { path: 'state', loadChildren: () => import('./state/state.module').then(m => m.StateModule), canActivate: [AdminGuard] },
+
     ]
   },
 ];

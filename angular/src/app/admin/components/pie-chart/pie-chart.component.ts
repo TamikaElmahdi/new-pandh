@@ -22,7 +22,7 @@ export class PieChartComponent implements OnInit {
   @Input() public positionLegendBottom = false;
   @Input() canvasHeight = 400;
   @Input() height = '45vh';
-
+  @Input() type = 0;
   title = '' || null;
   // Pie
 
@@ -147,7 +147,7 @@ export class PieChartComponent implements OnInit {
           this.title = d.title;
         }
 
-        this.uow.realisations.genericByRecommendation(d.table, d.type).subscribe(r => {
+        this.uow.realisations.genericByRecommendation(d.table, d.type, d.typeTable).subscribe(r => {
           console.log(r)
           this.pieChartLabels = r.map(e => e.table/*.substring(0, 40) + ' ...'*/);
           this.pieChartData = r.map(e => +e.value.toFixed(0));
@@ -254,5 +254,6 @@ export class PieChartComponent implements OnInit {
 export interface IData {
   table: 'axe';
   type: 'tauxRealisation' | 'etat' | 'realise';
+  typeTable: 1 | 2 | 3;
   title: string | Observable<string>;
 }
