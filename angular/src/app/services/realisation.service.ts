@@ -16,13 +16,13 @@ export class RealisationService  extends SuperService<Realisation> {
   //   return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${idSynthese}`);
   // }
 
-  stateMecanisme() {
+  stateMecanisme(typeTable) {
     return this.http.get<{
       epu: { name: string | Observable<string>, p: number, t: number, r: number, n: number},
       ot: { name: string | Observable<string>, p: number, t: number, r: number , n: number},
       ps: { name: string | Observable<string>, p: number, t: number, r: number , n: number},
       count: number,
-    }>(`${this.urlApi}/${this.controller}/stateMecanisme`);
+    }>(`${this.urlApi}/${this.controller}/stateMecanisme/${typeTable}`);
   }
 
   searchAndGet(o) {
@@ -41,7 +41,7 @@ export class RealisationService  extends SuperService<Realisation> {
     return this.http.get(`${this.urlApi}/${this.controller}/pourcentageParAxe/${type}`);
     }
 
-    genericByRecommendation(table: 'axe' | 'organe' | 'visite', type: string, typeTable: number) {
+    genericByRecommendation(table: 'axe' | 'sousAxe' | 'organe' | 'visite', type: string, typeTable: number) {
       return this.http.get<{ table: string, value: number }[]>(`${this.urlApi}/${this.controller}/genericByRecommendation/${table}/${type}/${typeTable}`);
     }
 

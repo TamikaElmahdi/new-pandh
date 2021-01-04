@@ -145,30 +145,35 @@ namespace Controllers
             return Ok(new { list = list, count = count });
         }
 
-        private async Task<object> Calc(IQueryable<Realisation> q)
+        private async Task<object> Calc(IQueryable<Realisation> q, int typeTable)
         {
 
             // int recommendationsCount = _context.Recommendations.Count();
 
-            var t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
-            var n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
-            var r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
-            var p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+            var t = await q.Where(e => e.Activite.Mesure.IdCycle != null)
+                            .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+                            
+            var n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0)
+                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            var r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100)
+                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            var p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)
+                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
             
             var epu = new { n, r, p, t };
 
-            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
-            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
-            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
-            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
             // var h = t == 0 ? 1 : t;
             // var h2 = 0/1;
             var ot = new { n, r, p, t };
 
-            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).CountAsync();
-            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).CountAsync();
-            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).CountAsync();
-            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).CountAsync();
+            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
 
             var ps = new { n, r, p, t };
 
@@ -177,10 +182,10 @@ namespace Controllers
         }
 
 
-          [HttpGet]
-        public async Task<IActionResult> StateMecanisme() // used
+          [HttpGet("{typeTable}")]
+        public async Task<IActionResult> StateMecanisme(int typeTable) // used
         {
-            return Ok(await Calc(_context.Realisations));
+            return Ok(await Calc(_context.Realisations, typeTable));
         }
 
         
@@ -201,12 +206,36 @@ namespace Controllers
                     .Select(e => new
                     {
                         table = e.Mesure.Axe.Label,
-                        value = e.Realisations.Where(r => r.Activite.Mesure.IdCycle != null).Count() * 100 / recommendationsCount,
+                        value = e.Realisations.Where(r => r.Activite.Mesure.IdCycle != null)
+                                            .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                                            .Count() * 100 / recommendationsCount,
                     })
                     .Distinct()
                     .ToListAsync()
                 ;
             }
+
+            else if (table == "sousAxe")
+            {
+                recommendationsCount = await _context.Realisations
+                .Where(r => r.Activite.Mesure.IdCycle != null)
+                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                .CountAsync();
+                list = await _context.SousAxes
+                    .Select(e => new
+                    {
+                        table = e.Label,
+                        value = e.Mesures.Where(r => r.IdCycle != null)
+                                        .Where(e => e.Responsable.Organisme.Type == typeTable)
+                                        .Count() * 100 / recommendationsCount,
+                    })
+                    .Distinct()
+                    .ToListAsync()
+                ;
+            }
+
+           
+
            
             
             return Ok(list);

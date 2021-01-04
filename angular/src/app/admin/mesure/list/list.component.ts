@@ -27,7 +27,8 @@ export class ListComponent implements OnInit {
   isRateLimitReached = false;
   dataSource = [];
 
-  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 3, title: 'التوزيع الحسب المحاور' });
+
+  pieChartSubjectC =  new Subject();
 
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
@@ -77,7 +78,7 @@ export class ListComponent implements OnInit {
   isMesure = false;
   isProgramme = false;
   typeOrganisme = 1;
-  type = 0;
+  type = 1;
   //
   routeMesure = '';
   //
@@ -90,6 +91,18 @@ export class ListComponent implements OnInit {
     , private route: ActivatedRoute, public router: Router) { }
 
   ngOnInit() {
+
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+
+    this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع الحسب المحاور الفرعية ' });
 
     this.stateAxe();
     this.stateOneOFMecanisme();
@@ -180,13 +193,23 @@ export class ListComponent implements OnInit {
 
 
       // tslint:disable-next-line:max-line-length
-      this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
+      this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور الرئسية' });
     });
   }
 
 
   stateOneOFMecanisme() {
-    this.uow.realisations.stateMecanisme().subscribe(r => {
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+
+    this.uow.realisations.stateMecanisme(this.type).subscribe(r => {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');

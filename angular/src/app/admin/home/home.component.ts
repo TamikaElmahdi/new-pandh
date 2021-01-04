@@ -33,7 +33,6 @@ export class HomeComponent implements OnInit {
   }
 
   stateAxe(type) {
-    console.log('type' + type);
       this.uow.axes.stateAxes(type).subscribe(r => {
         r = r.filter(e => e.name !== null);
         // console.log(r);

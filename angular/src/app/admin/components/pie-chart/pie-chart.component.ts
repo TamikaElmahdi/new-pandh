@@ -252,8 +252,8 @@ export class PieChartComponent implements OnInit {
 }
 
 export interface IData {
-  table: 'axe';
+  table: 'axe' | 'sousAxe';
   type: 'tauxRealisation' | 'etat' | 'realise';
-  typeTable: 1 | 2 | 3;
+  typeTable: number;
   title: string | Observable<string>;
 }

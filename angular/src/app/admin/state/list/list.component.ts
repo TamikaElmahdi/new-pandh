@@ -76,7 +76,7 @@ export class ListComponent implements OnInit {
   isMesure = false;
   isProgramme = false;
   typeOrganisme = 1;
-  type = 0;
+  type = 1;
   //
   routeMesure = '';
   //
@@ -185,7 +185,18 @@ export class ListComponent implements OnInit {
 
 
   stateOneOFMecanisme() {
-    this.uow.realisations.stateMecanisme().subscribe(r => {
+
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+
+    this.uow.realisations.stateMecanisme(this.type).subscribe(r => {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
