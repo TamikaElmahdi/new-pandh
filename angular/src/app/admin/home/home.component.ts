@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
     this.stateAxe(1);
     this.stateAxe(2);
     this.stateAxe(3);
-
   }
 
   stateAxe(type) {
