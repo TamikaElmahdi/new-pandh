@@ -118,7 +118,7 @@
 
           <span>التتبع</span>
         </mat-list-item>
-        <mat-menu #beforeMenu1="matMenu" xPosition="before">
+        <mat-menu class="SousMenuPandh" #beforeMenu1="matMenu" xPosition="before">
           <mat-list-item *ngIf="session.checkPermission('suivi')" [routerLink]="['/admin/suivi']" routerLinkActive="router-link-active">
             <span>وضعية التنفيد</span>
           </mat-list-item>
@@ -131,14 +131,14 @@
       </mat-nav-list>
 
 
-      <mat-nav-list  class="d-flex align-items-start justify-content-start p-0 ar MenuPandh"
+      <mat-nav-list  class="d-flex align-items-start justify-content-start p-0 ar MenuPandh "
       style=" height: fit-content;height: 25px !important;margin-top: 3px !important;padding-top: 11px !important;" >
       <span class="example-spacer"></span>
       <mat-list-item [matMenuTriggerFor]="beforeMenu2">
 
         <span>التقارير</span>
       </mat-list-item>
-      <mat-menu #beforeMenu2="matMenu" xPosition="before">
+      <mat-menu class="SousMenuPandh" #beforeMenu2="matMenu" xPosition="before">
         <mat-list-item style="    height: 25px !important;margin-top: 3px;" *ngIf="session.checkPermission('rapport-litteraire')" [routerLink]="['/admin/rapport-litteraire']" routerLinkActive="router-link-active">
           <span>تقرير الحصيلة الأدبي</span>
         </mat-list-item>
