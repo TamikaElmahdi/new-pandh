@@ -56,9 +56,8 @@
 
 
 <nav style="position: fixed; top: 0px; z-index: 10; width: 100vw;">
-  <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center"
-    style="height: 120px;border-radius: 0;width: 100vw;background-image: url(assets/fondPage.jpg)">
-
+  <!-- <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center" style="height: 120px;border-radius: 0;width: 100vw;background-image: url(assets/fondPage.jpg); "> -->
+    <mat-card class="d-flex mat-elevation-z6 p-0 m-0 text-white align-items-center" style="height: 120px;border-radius: 0;width: 100vw;background-image: url(assets/fondPage2.jpg); ">
     <div style="margin: auto 0;">
       <img [src]="'assets/logo-ddh.png'" alt="pandh logo"
         style="    height: 182px;
@@ -151,7 +150,7 @@
 
 
       <mat-list-item style="    height: 25px !important;margin-top: 3px;" class="MenuPandh" *ngIf="session.checkPermission('commission')" [routerLink]="['/admin/commission']" routerLinkActive="router-link-active">
-        <span>اللجنة</span>
+        <span>منظومة الحكامة</span>
       </mat-list-item>
 
       <mat-list-item style="    height: 25px !important; margin-top: 3px;" class="MenuPandh"  [routerLink]="['/admin/state']" routerLinkActive="router-link-active">

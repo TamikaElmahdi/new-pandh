@@ -102,7 +102,7 @@ export class ListComponent implements OnInit {
       this.type = 3;
     }
 
-    this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع الحسب المحاور الفرعية ' });
+    this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' });
 
     this.stateAxe();
     this.stateOneOFMecanisme();

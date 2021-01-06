@@ -122,14 +122,19 @@ mat-sidenav-container {
   }
 }
 
-
+.CompteurGraphe
+{
+    font-weight: bold;
+    color: #838383;
+    position: relative;
+    bottom: 68%;
+}
 .nb1
 {
     position: relative;
     bottom: 51%;
     left: -9.5%;
-    font-weight: bold;
-    color: #838383;
+
 }
 
 .nb2
@@ -137,24 +142,21 @@ mat-sidenav-container {
     position: relative;
     bottom: 59%;
     left: -33.5%;
-    font-weight: bold;
-    color: #838383;
+
 }
 .nb3
 {
     position: relative;
     bottom: 67%;
     right: 59.5%;
-    font-weight: bold;
-    color: #838383;
+
 }
 .nb4
 {
     position: relative;
     bottom: 75%;
     right: 85.5%;
-    font-weight: bold;
-    color: #838383;
+
 }
 
 
