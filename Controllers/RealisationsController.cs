@@ -198,37 +198,37 @@ namespace Controllers
             int recommendationsCount = 0;
             if (table == "axe")
             {
+                // recommendationsCount = await _context.Realisations
+                // .Where(r => r.Activite.Mesure.IdCycle != null)
+                // .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                // .CountAsync();
+                // list = await _context.Activites
+                //     .Select(e => new
+                //     {
+                //         table = e.Mesure.Axe.Label,
+                //         value = e.Realisations.Where(r => r.Activite.Mesure.IdCycle != null)
+                //                             .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                //                             .Count() * 100 / recommendationsCount,
+                //     })
+                //     .Distinct()
+                //     .ToListAsync();
+
+
                 recommendationsCount = await _context.Realisations
                 .Where(r => r.Activite.Mesure.IdCycle != null)
                 .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
                 .CountAsync();
-                list = await _context.Activites
+                list = await _context.Axes
                     .Select(e => new
                     {
-                        table = e.Mesure.Axe.Label,
-                        value = e.Realisations.Where(r => r.Activite.Mesure.IdCycle != null)
-                                            .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
-                                            .Count() * 100 / recommendationsCount,
+                        table = e.Label,
+                        value = e.Mesures.Where(r => r.IdCycle != null)
+                                        .Where(e => e.Responsable.Organisme.Type == typeTable)
+                                        .Count() * 100 / recommendationsCount,
                     })
                     .Distinct()
                     .ToListAsync();
 
-
-
-                // recommendationsCount = await _context.Realisations
-                // //.Where(r => r.Activite.Mesure.IdCycle != null)
-                // .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
-                // .CountAsync();
-                // list = await _context.Axes
-                //     .Select(e => new
-                //     {
-                //         table = e.Label,
-                //         // var model = await _context.Users.Where(e => e.Mesures.Any(m => m.Id  == id))
-                //         value = e.Mesures.Where(a => a.Activites.Where(b => b.Realisations.Where(c => c.Activite.Mesure.Responsable.Organisme.Type == typeTable))).
-                //         //value = e.Mesures.Any(r=>r.Activites.Any(z=>z.Realisations.Any(f=> f.Activite.Mesure.Responsable.Organisme.Type == typeTable)))
-                //     })
-                //     .Distinct()
-                //     .ToListAsync();
 
             }
 
