@@ -127,8 +127,31 @@
     <div class="col-md-5">
       <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
     </div>
+    <div class="row" hidden>
+      <div class="col md-3" *ngFor="let axe of listeAxes | async">
+        <app-pie-chart [obs]="pieChartSubjectD" ></app-pie-chart>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div class="col md-3" >
+        <app-pie-chart [obs]="pieChartSubject_1" ></app-pie-chart>
+      </div>
+      <div class="col md-3" >
+        <app-pie-chart [obs]="pieChartSubject_2" ></app-pie-chart>
+      </div>
+      <div class="col md-3" >
+        <app-pie-chart [obs]="pieChartSubject_3" ></app-pie-chart>
+      </div>
+      <div class="col md-3" >
+        <app-pie-chart [obs]="pieChartSubject_4" ></app-pie-chart>
+      </div>
+    </div>
+
+
     <div class="col-md-12">
       <div class="chart-size">
+
         <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
       </div>
     </div>

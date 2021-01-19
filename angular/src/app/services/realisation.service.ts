@@ -45,4 +45,9 @@ export class RealisationService  extends SuperService<Realisation> {
       return this.http.get<{ table: string, value: number }[]>(`${this.urlApi}/${this.controller}/genericByRecommendation/${table}/${type}/${typeTable}`);
     }
 
+    genericByRecommendationSousAxe(type: string, typeTable: number , idAxe: number) {
+      return this.http.get<{ table: string, value: number }[]>(`${this.urlApi}/${this.controller}/genericByRecommendationSousAxe/${type}/${typeTable}/${idAxe}`);
+    }
+
+
 }

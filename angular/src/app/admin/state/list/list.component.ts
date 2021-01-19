@@ -26,7 +26,7 @@ export class ListComponent implements OnInit {
   isRateLimitReached = false;
   dataSource = [];
 
-  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 3, title: 'التوزيع الحسب المحاور' });
+  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 3, title: 'التوزيع الحسب المحاور', idAxe: 0 });
 
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 

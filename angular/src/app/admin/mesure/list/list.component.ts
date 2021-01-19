@@ -29,12 +29,18 @@ export class ListComponent implements OnInit {
 
 
   pieChartSubjectC =  new Subject();
+  pieChartSubjectD =  new Subject();
+  pieChartSubject_1 =  new Subject();
+  pieChartSubject_2 =  new Subject();
+  pieChartSubject_3 =  new Subject();
+  pieChartSubject_4 =  new Subject();
 
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
   examenPageSubject = new Subject();
   countRec = new Subject();
   dataEpuPie = new Subject();
+  listeAxes = this.uow.axes.get();
 
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
@@ -102,11 +108,24 @@ export class ListComponent implements OnInit {
       this.type = 3;
     }
 
-    this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' });
+    this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الرئيسية ', idAxe: 0  });
+
+    this.pieChartSubject_1 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:1  });
+    this.pieChartSubject_2 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:2  });
+    this.pieChartSubject_3 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:3  });
+    this.pieChartSubject_4 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:4  });
+
+
+    this.listeAxes.subscribe(r => {
+    r.forEach(e => {
+    this.pieChartSubjectD = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: e.label , idAxe:e.id  });
+
+    });
+  });
+
 
     this.stateAxe();
     this.stateOneOFMecanisme();
-
     this.getOrganismes();
     this.routeMesure = this.router.url;
     this.checkWitchMesure(this.routeMesure);

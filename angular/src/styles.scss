@@ -33,6 +33,35 @@ body {
 
 }
 
+.blockMenuBg
+{
+
+    position: absolute;
+    width: 329px;
+    height: 100%;
+    left: 0%;
+    background-image: url(assets/backMenu1.png);
+    //background-color: rgba(165, 42, 42, 0.212);
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 14%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+}
+.HeaderPanddh
+{
+    height: 120px;
+    border-radius: 0;
+    width: 100vw;
+    background-image: linear-gradient(to left,#006190, #00a4c7);
+    // background-image: url(assets/backMenu1.png);
+    //background-image: url(assets/backMenu1.png), linear-gradient(to left,#006190, #00a4c7);
+    //background-attachment: fixed;
+    //background-position: left top;
+    //background-size: 15%;
+    //background-repeat: no-repeat;
+}
 mat-dialog-container {
   padding: 0 !important;
 }
@@ -78,16 +107,29 @@ mat-icon {
   margin-right: 2%;
   margin-top: 1%;
   height: 40% !important;
-  background-color: #3393d0;
+  // background-color: #3393d0;
   color: #fff !important;
 }
+
+// .arrow {
+//   border: solid #dadbd7;
+//   border-width: 0px 6px 6px 0px;
+//   display: inline-block;
+//   padding: 3px;
+// }
+// .down {
+//   transform: rotate(45deg);
+//   -webkit-transform: rotate(45deg);
+// }
+
+
 
 .MenuPandhHome
 {
 
-  margin-top: 1%;
+  margin-top: 1.5%;
   height: 10% !important;
-  background-color: #aed6e2 !important;
+  // background-color: #aed6e2 !important;
   color: #fff !important;
   padding-left: 0 !important;
   padding-right:0 !important;
@@ -107,7 +149,7 @@ mat-icon {
 
 .mat-menu-content
 {
-  background-color: #c6e8f2 !important;
+  background-color: #eeefef !important;
   cursor: pointer !important;
 }
 
@@ -125,14 +167,32 @@ mat-icon {
 
 .MenuPandh
 {
-  padding-left: 3% !important;
-    padding-right: 3% !important;
-    margin-left: 2px !important;;
-    margin-right: 2px !important;;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  border-bottom: solid 6px #dadbd7;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #dadbd7;
+  position: relative;
+    top: 36px;
+    left: 41.8%;
+}
+
+.iconTr {
+  height: 36px;
+  width: 12px;
+  margin-left: 6px;
 }
 
 .MenuPandh:hover{
-  background-color: #c6e8f2 !important;
+  // background-color: #c6e8f2 !important;
   span{
     color: black !important;
   }

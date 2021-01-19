@@ -211,8 +211,25 @@ namespace Controllers
                                             .Count() * 100 / recommendationsCount,
                     })
                     .Distinct()
-                    .ToListAsync()
-                ;
+                    .ToListAsync();
+
+
+
+                // recommendationsCount = await _context.Realisations
+                // //.Where(r => r.Activite.Mesure.IdCycle != null)
+                // .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                // .CountAsync();
+                // list = await _context.Axes
+                //     .Select(e => new
+                //     {
+                //         table = e.Label,
+                //         // var model = await _context.Users.Where(e => e.Mesures.Any(m => m.Id  == id))
+                //         value = e.Mesures.Where(a => a.Activites.Where(b => b.Realisations.Where(c => c.Activite.Mesure.Responsable.Organisme.Type == typeTable))).
+                //         //value = e.Mesures.Any(r=>r.Activites.Any(z=>z.Realisations.Any(f=> f.Activite.Mesure.Responsable.Organisme.Type == typeTable)))
+                //     })
+                //     .Distinct()
+                //     .ToListAsync();
+
             }
 
             else if (table == "sousAxe")
@@ -240,6 +257,36 @@ namespace Controllers
             
             return Ok(list);
         }
+
+
+         [HttpGet("{type}/{typeTable}/{idAxe}")]
+        public async Task<IActionResult> GenericByRecommendationSousAxe( string type, int typeTable, int idAxe) // used 
+        {
+            //https://stackoverflow.com/questions/57131550/why-cant-i-create-a-listt-of-anonymous-type-in-c
+            string lng = Request.Headers["mylang"].FirstOrDefault();
+            var list = new[] { new { table = "", value = 0 } }.ToList();
+            int recommendationsCount = 0;
+           
+                recommendationsCount = await _context.Realisations
+                .Where(e => e.Activite.Mesure.IdAxe == idAxe)
+                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                .CountAsync();
+                list = await _context.SousAxes
+                    .Select(e => new
+                    {
+                        table = e.Label,
+                        value = e.Mesures
+                        .Where(e => e.IdAxe == idAxe)
+                        .Where(e => e.Responsable.Organisme.Type == typeTable)
+                                        .Count() * 100 / recommendationsCount,
+                    })
+                    .Distinct()
+                    .ToListAsync()
+                ;
+            
+            return Ok(list);
+        }
+
 
         
 
