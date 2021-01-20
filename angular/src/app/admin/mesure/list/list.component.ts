@@ -110,10 +110,10 @@ export class ListComponent implements OnInit {
 
     this.pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الرئيسية ', idAxe: 0  });
 
-    this.pieChartSubject_1 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:1  });
-    this.pieChartSubject_2 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:2  });
-    this.pieChartSubject_3 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:3  });
-    this.pieChartSubject_4 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'التوزيع حسب المحاور الفرعية ' , idAxe:4  });
+    this.pieChartSubject_1 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'الحكامة والديمقراطية ' , idAxe:1  });
+    this.pieChartSubject_2 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'الحقوق الاقتصادية والاجتماعية والثقافية والبيئية' , idAxe:2  });
+    this.pieChartSubject_3 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'حماية الحقوق الفئوية والنهوض بها' , idAxe:3  });
+    this.pieChartSubject_4 = new BehaviorSubject<IData>({ table: 'sousAxe', type: 'tauxRealisation', typeTable: this.type, title: 'الإطار القانوني والمؤسساتي' , idAxe:4  });
 
 
     this.listeAxes.subscribe(r => {

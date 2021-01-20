@@ -271,7 +271,7 @@ namespace Controllers
                 .Where(e => e.Activite.Mesure.IdAxe == idAxe)
                 .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
                 .CountAsync();
-                list = await _context.SousAxes
+                list = await _context.SousAxes.Where(e => e.IdAxe == idAxe)
                     .Select(e => new
                     {
                         table = e.Label,
