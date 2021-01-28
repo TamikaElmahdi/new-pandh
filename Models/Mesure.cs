@@ -5,6 +5,8 @@ namespace Models
 {
     public partial class Mesure
     {
+        protected readonly AdminContext _context;
+
         public Mesure()
         {
             IndicateurMesures = new HashSet<IndicateurMesure>();
@@ -34,5 +36,7 @@ namespace Models
         public virtual ICollection<IndicateurMesureValue> IndicateurMesureValues { get; set; }
          public virtual ICollection<Activite> Activites { get; set; }
          public virtual ICollection<Partenariat> Partenariats { get; set; }
+
+         
     }
 }

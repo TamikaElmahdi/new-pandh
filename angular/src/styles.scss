@@ -186,9 +186,10 @@ mat-icon {
 }
 
 .iconTr {
-  height: 36px;
-  width: 12px;
+  height: 20px;
+  width: 10px;
   margin-left: 6px;
+  margin-bottom: 5px;
 }
 
 .MenuPandh:hover{
@@ -222,4 +223,8 @@ mat-icon {
 .mat-header-row
 {
   background-color: #8bd0e8 !important;
+}
+.host
+{
+  padding-top: 3%;
 }

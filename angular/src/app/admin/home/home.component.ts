@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   }
 
   stateAxe(type) {
-      this.uow.axes.stateAxes(type).subscribe(r => {
+      this.uow.axes.stateAxes(type, 1).subscribe(r => {
         r = r.filter(e => e.name !== null);
         // console.log(r);
         const barChartLabels = r.map(e => e.name);

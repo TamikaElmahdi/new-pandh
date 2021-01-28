@@ -156,6 +156,9 @@ namespace Models
                 entity.HasOne(d => d.Profil).WithMany(p => p.Users).HasForeignKey(d => d.IdProfil);
                 entity.HasMany(d => d.Mesures).WithOne(p => p.Responsable).HasForeignKey(d => d.IdResponsable)
                 .OnDelete(DeleteBehavior.NoAction);
+
+                // entity.HasMany(d => d.Mesures).WithOne(p => p.Responsable).HasForeignKey(d => d.IdResponsable)
+                // .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Mesure>(entity =>

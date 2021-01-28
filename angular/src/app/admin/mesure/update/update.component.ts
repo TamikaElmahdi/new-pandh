@@ -25,12 +25,19 @@ export class UpdateComponent implements OnInit {
   // syntheses = this.uow.syntheses.get();
   o = new Mesure();
   id = 0;
+
+  isBaramij = false;
   // title = 'Nouveau utilisateur';
   // listOrganisme: Organisme[] = [];
   constructor(private route: ActivatedRoute, private router: Router,
     private uow: UowService, private fb: FormBuilder, private session: SessionService) { }
 
   ngOnInit() {
+
+    if (this.router.url.includes('mesure-programme')) {
+      this.isBaramij = true;
+    }
+
 
     this.createForm();
     this.id = +this.route.snapshot.paramMap.get('id');

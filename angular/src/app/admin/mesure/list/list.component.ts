@@ -192,7 +192,7 @@ export class ListComponent implements OnInit {
       this.type = 3;
     }
 
-    this.uow.axes.stateAxes(this.type).subscribe(r => {
+    this.uow.axes.stateAxes(this.type, 0).subscribe(r => {
 
       r = r.filter(e => e.name !== null);
       // console.log(r);

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   // for test
   displayedColumns: string[] = ['email', 'password', 'profil'];
   dataSource = [
-    // { email: 'mourabit@angular.io', password: '123', profil: 'مدير' },
+    // { email: 'admin@panddh.com', password: '123', profil: 'مدير' },
     // { email: 'mehdi@angular.io', password: '123', profil: 'مشرف' },
     // { email: 'fakri@angular.io', password: '123', profil: 'المخاطب الرئيسي' },
     // { email: 'ahmed@angular.io', password: '123', profil: 'لجنة التتبع' },
@@ -28,13 +28,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   myForm: FormGroup;
   o = new User();
   hide = true;
-  
+
   constructor(private fb: FormBuilder, private uow: UowService
     , private router: Router, public session: SessionService) { }
 
   async ngOnInit() {
     // test
-    this.o.email = 'mourabit@angular.io';
+    this.o.email = 'admin@panddh.com';
     this.o.password = '123';
     this.createForm();
 
