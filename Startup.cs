@@ -86,7 +86,7 @@ namespace Admin
            });
             //auth
 
-           
+            
 
             services.AddDbContext<AdminContext>(options =>
             {

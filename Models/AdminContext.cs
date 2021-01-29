@@ -280,7 +280,7 @@ namespace Models
             OnModelCreatingPartial(modelBuilder);
 
             modelBuilder
-                .Profils()
+            .Profils()
             .Permissions()
             .Organismes()
             .Users()
@@ -290,8 +290,14 @@ namespace Models
             .Natures()
             .Indicateurs()
             .Mesures()
+            .MesuresJihat()
+            .MesuresSociete()
             .Activites()
+            .ActivitesJihat()
+            .ActivitesSociete()
             .Realisations()
+            .RealisationsJihat()
+            .RealisationsSociete()
             .Commissions()
             .MembreCommissions()
             .IndicateurMesureValues()

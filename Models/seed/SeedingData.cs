@@ -105,6 +105,26 @@ namespace seed
                 new Organisme {Id = 33, Type = 1, Label = "قطاع التعليم العالي"},
                 new Organisme {Id = 34, Type = 1, Label = "وزارة الثقافة والاتصال قطاع الثقافة"},
 
+                new Organisme {Id = 35, Type = 2, Label = "جهة طنجة تطوان الحسيمة"},
+                new Organisme {Id = 36, Type = 2, Label = "جهة الشرق"},
+                new Organisme {Id = 37, Type = 2, Label = "جهة فاس مكناس"},
+                new Organisme {Id = 38, Type = 2, Label = "جهة الرباط سلا القنيطرة"},
+                new Organisme {Id = 39, Type = 2, Label = "جهة بني ملال خنيفرة"},
+                new Organisme {Id = 40, Type = 2, Label = "جهة الدار البيضاء سطات"},
+                new Organisme {Id = 41, Type = 2, Label = "جهة مراكش آسفي"},
+                new Organisme {Id = 42, Type = 2, Label = "جهة درعة تافيلالت"},
+                new Organisme {Id = 43, Type = 2, Label = "جهة سوس ماسة"},
+                new Organisme {Id = 44, Type = 2, Label = "جهة كلميم واد نون"},
+                new Organisme {Id = 45, Type = 2, Label = "جهة العيون الساقية الحمراء"},
+                new Organisme {Id = 46, Type = 2, Label = "جهة الداخلة وادي الذهب"},
+
+                new Organisme {Id = 47, Type = 3, Label = "مؤسسة-1"},
+                new Organisme {Id = 48, Type = 3, Label = "مؤسسة-2"},
+                new Organisme {Id = 49, Type = 3, Label = "مؤسسة-3"},
+                new Organisme {Id = 50, Type = 3, Label = "مؤسسة-4"},
+
+
+
                 
             });
 
@@ -193,8 +213,7 @@ namespace seed
                 IdProfil = 3
             });
             
-
-             for (int i = 5; i <= 34; i++)
+            for (int i = 5; i <= 34; i++)
              {
                 var u = new User
                 {
@@ -214,6 +233,51 @@ namespace seed
 
                 users.Add(u);
              }
+
+
+             for (int i = 35; i <= 46; i++)
+             {
+                var u = new User
+                {
+                Id = id++,
+                Nom = $"user-regions-{id-1}",
+                Prenom = "mohamed",
+                Email = $"user-regions-{id-1}@panddh.com",
+                Adresse = "taza",
+                Tel = "06 ## ## ## ##",
+                Fix = "05 ## ## ## ##",
+                Username = $"user-regions-{id-1}",
+                Password = "123",
+                Actif = true,
+                IdOrganisme = i,
+                IdProfil = 5
+                };
+
+                users.Add(u);
+             }
+
+             for (int i = 47; i <= 50; i++)
+             {
+                var u = new User
+                {
+                Id = id++,
+                Nom = $"user-societe-{id-1}",
+                Prenom = "mohamed",
+                Email = $"user-societe-{id-1}@panddh.com",
+                Adresse = "taza",
+                Tel = "06 ## ## ## ##",
+                Fix = "05 ## ## ## ##",
+                Username = $"user-societe-{id-1}",
+                Password = "123",
+                Actif = true,
+                IdOrganisme = i,
+                IdProfil = 5
+                };
+
+                users.Add(u);
+             }
+
+             
 
             modelBuilder.Entity<User>().HasData(users);
 
@@ -344,42 +408,11 @@ namespace seed
                 .RuleFor(o => o.IdAxe, f => idAxe)
                 ;
             modelBuilder.Entity<SousAxe>().HasData(faker.Generate(26));
-
+        
             return modelBuilder;
         }
 
-        public static ModelBuilder Mesuresl(this ModelBuilder modelBuilder)
-        {
-            var id = 1;
-            var list = new[]
-            {
-                " إرتفاع نسبة التسجيل والتصويت",
-                "التعبير عن الرضا بخصوص تدبير العملية الإنتخابية من قبل عموم المعنيين والملاحظين ",
-                "إرتفاع نسب التمثيلية",
-                "النشر في الجريدة الرسمية",
-                "تنصيب رئيس واعضاء الهيئة ",
-                "عدد عمليات التشاور العمومي",
-             };
-            var faker = new Faker<Mesure>(SeedingData.lang)
-                .CustomInstantiator(f => new Mesure { Id = id++ })
-                .RuleFor(o => o.Nom, f => $"{id - 1} : تدابير عشوائية لغايات تجريبية فقط")
-                .RuleFor(o => o.Code, f => "Code : {id - 1}")
-                .RuleFor(o => o.IdType, f => f.Random.Number(1, 3))
-                .RuleFor(o => o.IdResponsable, f => f.Random.Number(5, 12))
-                .RuleFor(o => o.IdAxe, f => f.Random.Number(1, 4))
-                .RuleFor(o => o.IdSousAxe, f => f.Random.Number(1, 26))
-                .RuleFor(o => o.IdCycle, f => f.Random.Number(1, 3))
-                .RuleFor(o => o.IdNature, f => f.Random.Number(1, 3))
-                .RuleFor(o => o.ResultatsAttendu, f => $"بعد النتائج المرتقبة : {id - 1}")
-                .RuleFor(o => o.ObjectifGlobal, f => $"بعد الأهداف العامة  : {id - 1}")
-                .RuleFor(o => o.ObjectifSpeciaux, f => $"بعد الأهداف الخاصة : {id - 1}")
-                // .RuleFor(o => o.IdMesure, f => null)
-                ;
-
-            modelBuilder.Entity<Mesure>().HasData(faker.Generate(50));
-
-            return modelBuilder; 
-        }
+        
 
 
 
@@ -842,9 +875,75 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
         
         });
     return modelBuilder;
+
 }
 
         
+        public static ModelBuilder MesuresJihat(this ModelBuilder modelBuilder)
+        {
+            var id = 436;
+            var list = new[]
+            {
+                " إرتفاع نسبة التسجيل والتصويت",
+                "التعبير عن الرضا بخصوص تدبير العملية الإنتخابية من قبل عموم المعنيين والملاحظين ",
+                "إرتفاع نسب التمثيلية",
+                "النشر في الجريدة الرسمية",
+                "تنصيب رئيس واعضاء الهيئة ",
+                "عدد عمليات التشاور العمومي",
+             };
+            var faker = new Faker<Mesure>(SeedingData.lang)
+                .CustomInstantiator(f => new Mesure { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 1} : تدابير عشوائية لغايات تجريبية فقط")
+                .RuleFor(o => o.Code, f => "Code : {id - 1}")
+                .RuleFor(o => o.IdType, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.IdResponsable, f => f.Random.Number(35, 46))
+                .RuleFor(o => o.IdAxe, f => f.Random.Number(1, 4))
+                .RuleFor(o => o.IdSousAxe, f => f.Random.Number(1, 26))
+                .RuleFor(o => o.IdCycle, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.IdNature, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.ResultatsAttendu, f => $"بعد النتائج المرتقبة : {id - 1}")
+                .RuleFor(o => o.ObjectifGlobal, f => $"بعد الأهداف العامة  : {id - 1}")
+                .RuleFor(o => o.ObjectifSpeciaux, f => $"بعد الأهداف الخاصة : {id - 1}")
+                // .RuleFor(o => o.IdMesure, f => null)
+                ;
+
+            modelBuilder.Entity<Mesure>().HasData(faker.Generate(50));
+
+            return modelBuilder; 
+        }
+
+        public static ModelBuilder MesuresSociete(this ModelBuilder modelBuilder)
+        {
+            var id = 487;
+            var list = new[]
+            {
+                " إرتفاع نسبة التسجيل والتصويت",
+                "التعبير عن الرضا بخصوص تدبير العملية الإنتخابية من قبل عموم المعنيين والملاحظين ",
+                "إرتفاع نسب التمثيلية",
+                "النشر في الجريدة الرسمية",
+                "تنصيب رئيس واعضاء الهيئة ",
+                "عدد عمليات التشاور العمومي",
+             };
+            var faker = new Faker<Mesure>(SeedingData.lang)
+                .CustomInstantiator(f => new Mesure { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 1} : تدابير عشوائية لغايات تجريبية فقط")
+                .RuleFor(o => o.Code, f => "Code : {id - 1}")
+                .RuleFor(o => o.IdType, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.IdResponsable, f => f.Random.Number(47, 50))
+                .RuleFor(o => o.IdAxe, f => f.Random.Number(1, 4))
+                .RuleFor(o => o.IdSousAxe, f => f.Random.Number(1, 26))
+                .RuleFor(o => o.IdCycle, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.IdNature, f => f.Random.Number(1, 3))
+                .RuleFor(o => o.ResultatsAttendu, f => $"بعد النتائج المرتقبة : {id - 1}")
+                .RuleFor(o => o.ObjectifGlobal, f => $"بعد الأهداف العامة  : {id - 1}")
+                .RuleFor(o => o.ObjectifSpeciaux, f => $"بعد الأهداف الخاصة : {id - 1}")
+                // .RuleFor(o => o.IdMesure, f => null)
+                ;
+
+            modelBuilder.Entity<Mesure>().HasData(faker.Generate(50));
+
+            return modelBuilder; 
+        }
 
 
         public static ModelBuilder Activites(this ModelBuilder modelBuilder)
@@ -867,6 +966,49 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
 
             return modelBuilder;
         }
+
+        public static ModelBuilder ActivitesJihat(this ModelBuilder modelBuilder)
+        {
+            var id = 51;
+            // var list = new[] {  "2018 - 2021", "2022 - 2025", "2026 - 2030" };
+            var numberList = Enumerable.Range(2018, 12).ToList();
+            var faker = new Faker<Activite>(SeedingData.lang)
+                .CustomInstantiator(f => new Activite { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الأنشطة لبعض التدابير")
+                .RuleFor(o => o.Duree, f =>
+                {
+                    var y = f.PickRandom(numberList);
+                    return $"[\"{y++}\", \"{y++}\", \"{y++}\"]";
+                })
+                .RuleFor(o => o.IdMesure, f => f.Random.Number(436, 486 ))
+                ;
+
+            modelBuilder.Entity<Activite>().HasData(faker.Generate(50));
+
+            return modelBuilder;
+        }
+
+        public static ModelBuilder ActivitesSociete(this ModelBuilder modelBuilder)
+        {
+            var id = 101;
+            // var list = new[] {  "2018 - 2021", "2022 - 2025", "2026 - 2030" };
+            var numberList = Enumerable.Range(2018, 12).ToList();
+            var faker = new Faker<Activite>(SeedingData.lang)
+                .CustomInstantiator(f => new Activite { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الأنشطة لبعض التدابير")
+                .RuleFor(o => o.Duree, f =>
+                {
+                    var y = f.PickRandom(numberList);
+                    return $"[\"{y++}\", \"{y++}\", \"{y++}\"]";
+                })
+                .RuleFor(o => o.IdMesure, f => f.Random.Number(487, 536 ))
+                ;
+
+            modelBuilder.Entity<Activite>().HasData(faker.Generate(50));
+
+            return modelBuilder;
+        }
+
 
         public static ModelBuilder Indicateurs(this ModelBuilder modelBuilder)
         {
@@ -999,6 +1141,109 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
 
             return modelBuilder;
         }
+
+        public static ModelBuilder RealisationsJihat(this ModelBuilder modelBuilder)
+        {
+            var id = 151;
+            // var list = new[] {  "2018 - 2021", "2022 - 2025", "2026 - 2030" };
+            var list = Enumerable.Range(2018, 12).ToList();
+            var faker = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, f => f.Random.Number(1, 99))
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                .RuleFor(o => o.IdActivite, f => f.Random.Number(51, 100))
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker.Generate(50));
+
+            var faker2 = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, 100)
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                .RuleFor(o => o.IdActivite, f => f.Random.Number(51, 100))
+
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker2.Generate(10));
+
+            var faker3 = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, 0)
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                 .RuleFor(o => o.IdActivite, f => f.Random.Number(51, 100))
+
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker3.Generate(10));
+
+
+            return modelBuilder;
+        }
+
+        public static ModelBuilder RealisationsSociete(this ModelBuilder modelBuilder)
+        {
+            var id = 221;
+            // var list = new[] {  "2018 - 2021", "2022 - 2025", "2026 - 2030" };
+            var list = Enumerable.Range(2018, 12).ToList();
+            var faker = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, f => f.Random.Number(1, 99))
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                .RuleFor(o => o.IdActivite, f => f.Random.Number(101, 150))
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker.Generate(50));
+
+            var faker2 = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, 100)
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                .RuleFor(o => o.IdActivite, f => f.Random.Number(101, 150))
+
+
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker2.Generate(10));
+
+            var faker3 = new Faker<Realisation>(SeedingData.lang)
+                .CustomInstantiator(f => new Realisation { Id = id++ })
+                .RuleFor(o => o.Nom, f => $"{id - 2} بعد الإنجازات لبعض الأنشطة ")
+                .RuleFor(o => o.Situation, f => $"{id - 2} وضعية التنفيد لهدا الإنجاز")
+                .RuleFor(o => o.Annee, f => f.PickRandom(list))
+                .RuleFor(o => o.Taux, f => $"{id - 2} معدل الإنجاز لهدا الإنجاز")
+                .RuleFor(o => o.TauxRealisation, 0)
+                .RuleFor(o => o.Effet, f => $"{id - 2} التأثير لهدا الإنجاز")
+                .RuleFor(o => o.IdActivite, f => f.Random.Number(101, 150))
+
+
+                ;
+
+            modelBuilder.Entity<Realisation>().HasData(faker3.Generate(10));
+
+
+            return modelBuilder;
+        }
+
 
 
 
