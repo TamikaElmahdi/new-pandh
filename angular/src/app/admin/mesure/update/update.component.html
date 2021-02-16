@@ -168,19 +168,7 @@
 
               </div>
 
-              <div class="inputs2">
-                <mat-form-field appearance="fill">
-                  <mat-label>الأهداف الخاصة</mat-label>
-                  <textarea matInput rows="4" formControlName="objectifSpeciaux" required></textarea>
-                  <!-- <input matInput formControlName="adresse" required> -->
-                </mat-form-field>
 
-                <mat-form-field appearance="fill">
-                  <mat-label>النتائج المرتقبة</mat-label>
-                  <textarea matInput rows="4" formControlName="resultatsAttendu" required></textarea>
-                  <!-- <input matInput formControlName="adresse" required> -->
-                </mat-form-field>
-              </div>
 
               <div class="inputs">
                 <mat-form-field appearance="fill" style="width: 100%">
@@ -239,6 +227,20 @@
                 </mat-form-field>
               </div>
 
+              <div class="inputs2">
+                <mat-form-field appearance="fill">
+                  <mat-label>الأهداف الخاصة</mat-label>
+                  <textarea matInput rows="4" formControlName="objectifSpeciaux" required></textarea>
+                  <!-- <input matInput formControlName="adresse" required> -->
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                  <mat-label>النتائج المرتقبة</mat-label>
+                  <textarea matInput rows="4" formControlName="resultatsAttendu" required></textarea>
+                  <!-- <input matInput formControlName="adresse" required> -->
+                </mat-form-field>
+              </div>
+
             </mat-card>
           </form>
 
@@ -251,6 +253,16 @@
       </mat-tab>
 
     </div>
+
+
+    <mat-tab label="المسؤولين" [disabled]='o.id === 0'>
+      <ng-template matTabContent>
+
+        <div style="margin: 15px;">
+          <app-responsables [mesure]="o"></app-responsables>
+        </div>
+      </ng-template>
+    </mat-tab>
 
     <!--  -->
     <mat-tab label="الشركاء" [disabled]='o.id === 0'>

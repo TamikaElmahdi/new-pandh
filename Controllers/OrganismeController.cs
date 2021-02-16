@@ -31,6 +31,15 @@ namespace Controllers
         }
 
         [HttpGet("{id}")]
+        public async Task<IActionResult> GetResponsableByForeignKey(int id)
+        {
+            var model = await _context.Organismes.Where(e => e.Responsables.Any(o => o.IdMesure == id))
+            .ToListAsync();
+
+            return Ok(model);
+        }
+
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetByType(int id)
         {
             var model = await _context.Organismes.Where(e => e.Type == id)
@@ -47,6 +56,17 @@ namespace Controllers
         {
             var list = await _context.Organismes
                 .Where(e => e.Label.Contains(searchText))
+                .ToListAsync()
+                ;
+            int count = await _context.Organismes.CountAsync();
+
+            return Ok(new { list = list, count = count });
+        }
+
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}")]
+        public virtual async Task<IActionResult> GetListByType(int startIndex, int pageSize, string sortBy, string sortDir, int type)
+        {
+            var list = await _context.Organismes.Where(e => e.Type == type)
                 .ToListAsync()
                 ;
             int count = await _context.Organismes.CountAsync();

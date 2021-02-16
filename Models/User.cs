@@ -8,6 +8,9 @@ namespace Models
         public User()
         {
             Mesures = new HashSet<Mesure>();
+            OrganismeUsers = new HashSet<OrganismeUser>();
+
+
         }
         
 
@@ -30,5 +33,8 @@ namespace Models
         public virtual Profil Profil { get; set; }
         // [System.Text.Json.Serialization.JsonIgnore]
         public virtual ICollection<Mesure> Mesures { get; set; }
+
+        public virtual ICollection<OrganismeUser> OrganismeUsers { get; set; }
+
     }
 }

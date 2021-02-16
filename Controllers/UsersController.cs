@@ -174,6 +174,18 @@ namespace Controllers
             return Ok(model);
         }
 
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByOrganisme(int id)
+        {
+            var model = await _context.Users.Where(e => e.OrganismeUsers.Any(m => m.IdOrganisme  == id))
+                .ToListAsync();
+                ;
+
+            return Ok(model);
+        }
+
+
         [HttpGet]
         public async Task<IActionResult> GetForTest()
         {

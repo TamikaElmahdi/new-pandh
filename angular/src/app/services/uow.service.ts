@@ -12,6 +12,7 @@ import { SousAxeService } from './sous.axe.service';
 import { AxeService } from './axe.service';
 import { RapportService } from './rapport.service';
 import { PartenariatService } from './partenariat.service';
+import { ResponsableService } from './responsable.service';
 import { RealisationService } from './realisation.service';
 import { MesureService } from './mesure.service';
 import { NatureService } from './nature.service';
@@ -44,6 +45,7 @@ export class UowService {
   mesures = new MesureService();
   natures = new NatureService();
   partenariats = new PartenariatService();
+  responsables = new ResponsableService();
   activites = new ActiviteService();
 
 

@@ -22,4 +22,12 @@ export class OrganismeService  extends SuperService<any> {
     return this.http.get(`${this.urlApi}/${this.controller}/getDataFiltre/${searchText}`);
   }
 
+  getListByType(startIndex, pageSize, sortBy, sortDir, type) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${type}`);
+  }
+
+  getResponsableByForeignKey(id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getResponsableByForeignKey/${id}`);
+  }
+
 }

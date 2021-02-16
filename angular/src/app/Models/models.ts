@@ -67,6 +67,14 @@ export class Organisme {
   users: User[] = [];
 }
 
+export class OrganismeUser {
+  idOrganisme = 0;
+  idUser = 0;
+  user = new User();
+  organisme = new Organisme();
+}
+
+
 export class Notification {
   id = 0;
   idConcerner = 0;
@@ -144,6 +152,7 @@ export class Mesure {
   indicateurMesureValues: IndicateurMesureValue[] = [];
   activites: Activite[] = [];
   partenariats: Partenariat[] = [];
+  responsables: Responsable[] = [];
 
 }
 
@@ -187,6 +196,15 @@ export class Partenariat {
   organisme = new Organisme();
 }
 
+//Modification-----------
+export class Responsable {
+  idOrganisme = 0;
+  idMesure = 0;
+  isPrincipale = false;
+  mesure = new Mesure();
+  organisme = new Organisme();
+}
+//-----------------------
 export class Cycle {
   id = 0;
   label = '';

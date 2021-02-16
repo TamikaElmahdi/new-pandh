@@ -13,6 +13,7 @@ namespace Models
             IndicateurMesureValues = new HashSet<IndicateurMesureValue>();
             Activites = new HashSet<Activite>();
             Partenariats = new HashSet<Partenariat>();
+            Responsables = new HashSet<Responsable>();
         }
 
         public int Id { get; set; }
@@ -36,6 +37,7 @@ namespace Models
         public virtual ICollection<IndicateurMesureValue> IndicateurMesureValues { get; set; }
          public virtual ICollection<Activite> Activites { get; set; }
          public virtual ICollection<Partenariat> Partenariats { get; set; }
+         public virtual ICollection<Responsable> Responsables { get; set; }
 
          
     }

@@ -38,4 +38,8 @@ export class UserService extends SuperService<any> {
     return this.http.get(`${this.urlApi}/${this.controller}/getOne/${id}`);
   }
 
+  getByOrganisme(id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getByOrganisme/${id}`);
+  }
+
 }
