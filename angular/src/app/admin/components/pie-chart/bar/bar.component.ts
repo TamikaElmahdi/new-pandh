@@ -92,8 +92,9 @@ export class BarComponent implements OnInit {
     // { backgroundColor: ['#d17c36', '#2d71a1'], },
     { backgroundColor: '#d17c36' },
     { backgroundColor: '#7dc460' },
+    { backgroundColor: '#1476de' },
     { backgroundColor: '#db0707' },
-    { backgroundColor: '#a19b9e' },
+
   ];
 
   @Input() dataSubject = new Subject();
@@ -101,7 +102,7 @@ export class BarComponent implements OnInit {
   @Input() col = 12;
   retate = 0;
 
-  list: { name: string, t: number, p: number, r: number, n: number }[] = [];
+  list: { name: string, t: number, p: number, r: number, c: number, n: number }[] = [];
 
   constructor(public mytranslate: MyTranslateService, public dialog: MatDialog) { }
 
@@ -135,6 +136,7 @@ export class BarComponent implements OnInit {
           // t: this.barChartData.find(f => f.label === 'Taux').data[i] as number,
           p: +this.barChartData.find((f, j) => j === 0).data[i] as number,
           r: +this.barChartData.find((f, j) => j === 1).data[i] as number,
+          c: +this.barChartData.find((f, j) => j === 1).data[i] as number,
           n: +this.barChartData.find((f, j) => j === 2).data[i] as number,
         } as any);
       });

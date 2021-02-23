@@ -23,7 +23,7 @@ namespace Controllers
             // string tableName = typeof(T).FullName.Substring(i + 1) + "s";
 
             var list = await _context.Activites
-                .Where(e => e.IdMesure == id)
+                .Where(e => e.ActiviteMesures.Any(p => p.Mesure.Id == id))
                 .OrderByName<Activite>(sortBy, sortDir == "desc")
                 .Skip(startIndex)
                 .Take(pageSize)
@@ -37,10 +37,23 @@ namespace Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByForeignKey(int id)
         {
-            var model = await _context.Activites.Where(e => e.IdMesure == id)
+            var model = await _context.Activites
+            .Where(e => e.ActiviteMesures.Any(p => p.Mesure.Id == id))
             .ToListAsync();
 
             return Ok(model);
+        }
+
+        [HttpGet("{searchText}")]
+        public virtual async Task<IActionResult> GetDataFiltre(string searchText)
+        {
+            var list = await _context.Activites
+                .Where(e => e.Nom.Contains(searchText))
+                .ToListAsync()
+                ;
+            int count = await _context.Activites.CountAsync();
+
+            return Ok(new { list = list, count = count });
         }
     }
 }

@@ -41,6 +41,7 @@ namespace Models
         public virtual DbSet<OrganismeUser> OrganismeUsers { get; set; }
 
         public virtual DbSet<IndicateurMesure> IndicateurMesures { get; set; }
+        public virtual DbSet<ActiviteMesure> ActiviteMesures { get; set; }
         public virtual DbSet<IndicateurMesureValue> IndicateurMesureValues { get; set; }
         public virtual DbSet<Commission> Commissions { get; set; }
         public virtual DbSet<MembreCommission> MembreCommissions { get; set; }
@@ -159,9 +160,10 @@ namespace Models
                 entity.Property(e => e.Username).IsRequired();
                 entity.HasOne(d => d.Organisme).WithMany(p => p.Users).HasForeignKey(d => d.IdOrganisme);
                 entity.HasOne(d => d.Profil).WithMany(p => p.Users).HasForeignKey(d => d.IdProfil);
-                entity.HasMany(d => d.Mesures).WithOne(p => p.Responsable).HasForeignKey(d => d.IdResponsable)
-                .OnDelete(DeleteBehavior.NoAction);
-                entity.HasMany(d => d.OrganismeUsers).WithOne(p => p.User).HasForeignKey(d => d.IdUser).OnDelete(DeleteBehavior.NoAction);;
+                // entity.HasMany(d => d.Mesures).WithOne(p => p.Responsable).HasForeignKey(d => d.IdResponsable)
+                // .OnDelete(DeleteBehavior.NoAction);
+                entity.HasMany(d => d.OrganismeUsers).WithOne(p => p.User).HasForeignKey(d => d.IdUser).OnDelete(DeleteBehavior.NoAction);
+                entity.HasMany(d => d.Responsables).WithOne(p => p.User).HasForeignKey(d => d.IdUser).OnDelete(DeleteBehavior.NoAction);
 
                 // entity.HasMany(d => d.Mesures).WithOne(p => p.Responsable).HasForeignKey(d => d.IdResponsable)
                 // .OnDelete(DeleteBehavior.Cascade);
@@ -182,10 +184,11 @@ namespace Models
                 entity.Property(e => e.Code);
                 entity.Property(e => e.Nom);
                 entity.Property(e => e.IdType);
-                entity.Property(e => e.IdResponsable);
+               // entity.Property(e => e.IdResponsable);
                 entity.Property(e => e.IdAxe);
                 entity.Property(e => e.IdSousAxe);
                 entity.Property(e => e.IdCycle);
+                entity.Property(e => e.TypeMesure);
                 entity.Property(e => e.ResultatsAttendu);
                 entity.Property(e => e.ObjectifGlobal);
                 entity.Property(e => e.ObjectifSpeciaux);
@@ -206,7 +209,6 @@ namespace Models
             {
                 entity.HasKey(e => new { e.IdMesure, e.IdOrganisme });
 
-
                 entity.HasOne(d => d.Mesure).WithMany(p => p.Partenariats).HasForeignKey(d => d.IdMesure);
                 entity.HasOne(d => d.Organisme).WithMany(p => p.Partenariats).HasForeignKey(d => d.IdOrganisme);
             });
@@ -214,9 +216,10 @@ namespace Models
             modelBuilder.Entity<Responsable>(entity =>
             {
                 entity.HasKey(e => new { e.IdMesure, e.IdOrganisme });
-                entity.Property(e => e.IsPrincipale);
+                entity.Property(e => e.IdUser);
                 entity.HasOne(d => d.Mesure).WithMany(p => p.Responsables).HasForeignKey(d => d.IdMesure);
                 entity.HasOne(d => d.Organisme).WithMany(p => p.Responsables).HasForeignKey(d => d.IdOrganisme);
+                entity.HasOne(d => d.User).WithMany(p => p.Responsables).HasForeignKey(d => d.IdUser);
             });
             
 
@@ -227,6 +230,8 @@ namespace Models
                 entity.HasOne(d => d.Mesure).WithMany(p => p.IndicateurMesures).HasForeignKey(d => d.IdMesure);
                 entity.HasOne(d => d.Indicateur).WithMany(p => p.IndicateurMesures).HasForeignKey(d => d.IdIndicateur);
             });
+
+           
 
             modelBuilder.Entity<IndicateurMesureValue>(entity =>
             {
@@ -263,8 +268,10 @@ namespace Models
                entity.Property(e => e.TauxRealisation);
                entity.Property(e => e.Effet);
                entity.Property(e => e.IdActivite);
+               entity.Property(e => e.IdMesure);
 
                entity.HasOne(d => d.Activite).WithMany(p => p.Realisations).HasForeignKey(d => d.IdActivite);
+               entity.HasOne(d => d.Mesure).WithMany(p => p.Realisations).HasForeignKey(d => d.IdMesure);
            });
 
             modelBuilder.Entity<Activite>(entity =>
@@ -274,9 +281,17 @@ namespace Models
 
                 entity.Property(e => e.Nom);
                 entity.Property(e => e.Duree);
-                entity.Property(e => e.IdMesure);
+                //entity.Property(e => e.IdMesure);
 
-                entity.HasOne(d => d.Mesure).WithMany(p => p.Activites).HasForeignKey(d => d.IdMesure);
+                //entity.HasOne(d => d.Mesure).WithMany(p => p.Activites).HasForeignKey(d => d.IdMesure);
+            });
+
+             modelBuilder.Entity<ActiviteMesure>(entity =>
+            {
+                entity.HasKey(e => new { e.IdMesure, e.IdActivite });
+
+                entity.HasOne(d => d.Mesure).WithMany(p => p.ActiviteMesures).HasForeignKey(d => d.IdMesure);
+                entity.HasOne(d => d.Activite).WithMany(p => p.ActiviteMesures).HasForeignKey(d => d.IdActivite);
             });
 
             modelBuilder.Entity<Commission>(entity =>
@@ -313,14 +328,18 @@ namespace Models
             .Natures()
             .Indicateurs()
             .Mesures()
-            .MesuresJihat()
-            .MesuresSociete()
+            //.MesuresJihat()
+            //.MesuresSociete()
             .Activites()
+            .ActiviteMesures()
+
             //.ActivitesJihat()
-            .ActivitesSociete()
+            //.ActivitesSociete()
             .Realisations()
             //.RealisationsJihat()
-            .RealisationsSociete()
+            //.RealisationsSociete()
+            .Responsables()
+            .Partenariats()
             .Commissions()
             .MembreCommissions()
             .IndicateurMesureValues()

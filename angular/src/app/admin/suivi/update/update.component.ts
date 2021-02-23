@@ -21,7 +21,9 @@ export class UpdateComponent implements OnInit {
   // mecanismes = this.uow.mecanismes;
   // etats = this.uow.etats;
   activites = [];
-  years = [];
+  //years = [];
+  years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+
   // activites = ['الأنشطة01', 'الأنشطة02', 'الأنشطة03', 'الأنشطة04'];
   cycles = this.uow.cycles.get();
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', ];
@@ -37,7 +39,7 @@ export class UpdateComponent implements OnInit {
   filteredOptions: Observable<any>;
   situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز']
   sendMesureToIndicateurComponent = new BehaviorSubject(0);
-
+  mesureId =0;
   constructor(private route: ActivatedRoute, private router: Router,
     private uow: UowService, private fb: FormBuilder, private session: SessionService) { }
 
@@ -49,11 +51,11 @@ export class UpdateComponent implements OnInit {
       this.uow.realisations.getOneWithInclude(this.id).subscribe(async r => {
         this.o = r as Realisation;
         this.o.activite = Object.assign(new Activite(), this.o.activite);
-        this.years = this.o.activite.dureeToArray();
-        this.myAuto.setValue(this.o.activite.mesure.nom);
-        this.cycleFC.setValue(this.o.activite.mesure.idCycle);
-        this.sendMesureToIndicateurComponent.next(this.o.activite.idMesure);
-        this.activites = await this.uow.activites.getByForeignKey(this.o.activite.idMesure).toPromise() as any;
+        //this.years = this.o.activite.dureeToArray();
+        //this.myAuto.setValue(this.o.activite.mesure.nom);
+        //this.cycleFC.setValue(this.o.activite.mesure.idCycle);
+        //this.sendMesureToIndicateurComponent.next(this.o.activite.idMesure);
+        //this.activites = await this.uow.activites.getByForeignKey(this.o.activite.idMesure).toPromise() as any;
 
         this.createForm();
         this.myForm.get('annee').setValue(this.o.annee.toString());
@@ -86,8 +88,24 @@ export class UpdateComponent implements OnInit {
     );
   }
 
+  showTaux(valType: string) {
+  //situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز']
+
+      if(valType === 'منجز'){
+        this.myForm.controls.tauxRealisation.setValue(100);
+        this.myForm.controls.tauxRealisation.disable();
+      } else if(valType === 'غير منجز'){
+        this.myForm.controls.tauxRealisation.setValue(0);
+        this.myForm.controls.tauxRealisation.disable();
+      } else {
+        this.myForm.controls.tauxRealisation.enable();
+      }
+
+  }
+
   selected(event: MatAutocompleteSelectedEvent): void {
     this.mesure = event.option.value as Mesure;
+    this.mesureId = this.mesure.id;
     console.log(this.mesure);
     this.myAuto.setValue(this.mesure.nom);
     // this.mySubsForm.get('placeId').setValue(this.place.id);
@@ -106,14 +124,28 @@ export class UpdateComponent implements OnInit {
       situation: [this.o.situation, Validators.required],
       annee: [this.o.annee],
       taux: [this.o.taux],
+      tauxRealisation: [this.o.tauxRealisation],
       effet: [this.o.effet],
       idActivite: [this.o.idActivite, Validators.required],
+      idMesure: [this.myAuto.value],
+
     });
   }
 
 
   submit(o: Realisation) {
     // return;
+    // alert(this.o.id);
+    // alert(this.o.nom);
+    // alert(this.o.situation);
+    // alert(this.o.annee);
+    // alert(this.o.taux);
+    // alert(this.o.tauxRealisation);
+    // alert(this.o.effet);
+    // alert(this.o.idActivite);
+    // alert(this.mesureId);
+
+console.log(o);
     if (this.id === 0) {
       this.uow.realisations.post(o).subscribe((r: Realisation) => {
         this.router.navigate(['/admin/suivi']);
@@ -131,7 +163,7 @@ export class UpdateComponent implements OnInit {
       this.uow.activites.getOne(id).subscribe(r => {
         r = Object.assign(new Activite(), r);
         // this.myForm.get('annee').setValue(r.duree);
-        this.years = r.dureeToArray();
+        //this.years = r.dureeToArray();
         // console.log(this.myForm.get('annee').value)
       });
     } else if (name === 'cycle'){

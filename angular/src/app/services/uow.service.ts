@@ -20,6 +20,7 @@ import { ActiviteService } from './activite.service';
 import { IndicateurMesureService } from './indicateur-mesure.service';
 import { MembreCommissionService } from './membre-commission.service';
 import { PermissionService } from './permission.service';
+import { ActiviteMesureService } from './activite-mesure.service';
 
 
 @Injectable({
@@ -47,6 +48,7 @@ export class UowService {
   partenariats = new PartenariatService();
   responsables = new ResponsableService();
   activites = new ActiviteService();
+  activiteMesures = new ActiviteMesureService();
 
 
 

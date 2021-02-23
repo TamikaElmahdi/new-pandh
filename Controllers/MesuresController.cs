@@ -17,58 +17,109 @@ namespace Controllers
         public MesuresController(AdminContext context) : base(context) { }
 
         [HttpPost]
+        // public async Task<IActionResult> SearchAndGetOld(Model model)
+        // {
+            // int idUser = HttpContext.GetIdUser();
+            // int role = HttpContext.GetRoleUser();
+            // bool hasAcess = (role == 1 || role == 4) ? true : false;
+
+            // var query = _context.Mesures
+            //     // .Where(e => hasAcess ? true : (e.User.IdOrganisme == idOrganisme))
+            //     // this filter = , المخطط التنفيدي   المخطط التنفيدي الترابي    برامج العمل
+            //     .Where(e => e.Responsable.Organisme.Type == model.TypeOrganisme)
+
+            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+            //     .Where(e => model.IdResponsable == 0 ? true : e.IdResponsable == model.IdResponsable)
+            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+            //     .Where(e => model.IdOrganisme == 0 ? true : e.Responsable.IdOrganisme == model.IdOrganisme)
+            //     // .Where(e => model.IdOrganisme == 0 ? true : e.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
+            //     ;
+
+            // int count = model.IsAllEmpty() ? await _context.Mesures.CountAsync() : await query.CountAsync();
+
+            // var list = await query.OrderByName<Mesure>(model.SortBy, model.SortDir == "desc")
+            //     .Skip(model.StartIndex)
+            //     .Take(model.PageSize)
+            //     // .Include(e => e.Responsable)
+            //     // .ThenInclude(e => e.Organisme)
+            //     .Include(e => e.Cycle)
+            //     .Select(e => new
+            //     {
+            //         id = e.Id,
+            //         cycle = e.Cycle,
+            //         organisme = e.Responsable.Organisme,
+            //         nom = e.Nom,
+            //         responsable = e.Responsable,
+            //         resultatsAttendu = e.ResultatsAttendu,
+            //         type = e.Responsable.Organisme.Type
+            //     })
+            //     .ToListAsync();
+            // ;
+
+            // return Ok(new { list = list, count = count });
+        //}
+
+        [HttpPost]
         public async Task<IActionResult> SearchAndGet(Model model)
         {
             // int idUser = HttpContext.GetIdUser();
             // int role = HttpContext.GetRoleUser();
             // bool hasAcess = (role == 1 || role == 4) ? true : false;
 
-            var query = _context.Mesures
+            var query = _context.Responsables
                 // .Where(e => hasAcess ? true : (e.User.IdOrganisme == idOrganisme))
                 // this filter = , المخطط التنفيدي   المخطط التنفيدي الترابي    برامج العمل
-                .Where(e => e.Responsable.Organisme.Type == model.TypeOrganisme)
+                .Where(e => e.Organisme.Type == model.TypeOrganisme)
 
-                .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
-                .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-                .Where(e => model.IdResponsable == 0 ? true : e.IdResponsable == model.IdResponsable)
-                .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
-                .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
-                .Where(e => model.IdOrganisme == 0 ? true : e.Responsable.IdOrganisme == model.IdOrganisme)
+                .Where(e => model.IdCycle == 0 ? true : e.Mesure.IdCycle == model.IdCycle)
+                .Where(e => model.IdMesure == 0 ? true : e.Mesure.Id == model.IdMesure)
+                .Where(e => model.IdResponsable == 0 ? true : e.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable))
+                .Where(e => model.IdAxe == 0 ? true : e.Mesure.IdAxe == model.IdAxe)
+                .Where(e => model.IdSousAxe == 0 ? true : e.Mesure.IdSousAxe == model.IdSousAxe)
+                .Where(e => model.IdOrganisme == 0 ? true : e.Mesure.Responsables.Any(o => o.IdOrganisme == model.IdOrganisme))
                 // .Where(e => model.IdOrganisme == 0 ? true : e.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
                 ;
 
-            int count = model.IsAllEmpty() ? await _context.Mesures.CountAsync() : await query.CountAsync();
-
-            var list = await query.OrderByName<Mesure>(model.SortBy, model.SortDir == "desc")
+            var list = await query
+                .OrderByName<Responsable>(model.SortBy, model.SortDir == "desc")
                 .Skip(model.StartIndex)
                 .Take(model.PageSize)
-                // .Include(e => e.Responsable)
-                // .ThenInclude(e => e.Organisme)
-                .Include(e => e.Cycle)
+                //.Include(e => e.Responsable)
+                //.Include(e => e.Organisme)
+                //.Include(e => e.Mesure.Cycle)
+                //.Include(e => e.User)
                 .Select(e => new
                 {
-                    id = e.Id,
-                    cycle = e.Cycle,
-                    organisme = e.Responsable.Organisme,
-                    nom = e.Nom,
-                    responsable = e.Responsable,
-                    resultatsAttendu = e.ResultatsAttendu,
-                    type = e.Responsable.Organisme.Type
+                    id = e.Mesure.Id,
+                    cycle = e.Mesure.Cycle,
+                    organisme = e.Organisme.Label,
+                    nom = e.Mesure.Nom,
+                    responsable = e.User.Nom + " "+ e.User.Prenom,
+                    resultatsAttendu = e.Mesure.ResultatsAttendu,
+                    type = e.Organisme.Type
                 })
+                .OrderBy(e => e.organisme)
                 .ToListAsync();
             ;
 
+
+            int count =  await _context.Mesures.Where(e => e.Responsables.Any(r => r.Organisme.Type == model.TypeOrganisme)).Distinct().CountAsync() ;
+
             return Ok(new { list = list, count = count });
         }
+
+
         
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOneWithInclude(int id)
         {
             var model = await _context.Mesures.Where(e => e.Id == id)
-                .Include(e => e.Activites)
+                .Include(e => e.ActiviteMesures)
                 .Include(e => e.IndicateurMesures)
                 .ThenInclude(e => e.Indicateur)
-                .Include(e => e.Responsable)
+                .Include(e => e.Responsables)
                 .ThenInclude(e => e.Organisme)
                 .Include(e => e.Cycle)
                 .Include(e => e.Axe)
@@ -98,7 +149,7 @@ namespace Controllers
             int role = HttpContext.GetRoleUser();
             bool hasAcess = (role == 1 || role == 2) ? true : false;
             var model = await _context.Mesures
-                .Where(e => hasAcess ? true : (e.IdResponsable == idUser))
+                .Where(e => hasAcess ? true : (e.Responsables.Any(o => o.User.Id == idUser)))
                 .Where(e => e.IdCycle == id)
                 .ToListAsync();
                 ;

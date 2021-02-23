@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, EventEmitter, Input } from '@angular/core
 import { MatPaginator, MatSort, MatDialog } from '@angular/material';
 import { merge } from 'rxjs';
 import { UowService } from 'src/app/services/uow.service';
-import { Activite, Mesure } from 'src/app/Models/models';
+import { Activite, ActiviteMesure, Mesure } from 'src/app/Models/models';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
 import { DeleteService } from '../../components/delete/delete.service';
 import { UpdateComponent } from '../../user/update/update.component';
@@ -32,7 +32,7 @@ export class ActiviteComponent implements OnInit {
     { columnDef: 'duree', headName: 'السنة' },
     { columnDef: 'option', headName: 'OPTION' },
   ];
-
+  activites = this.uow.activites.get();
   // toppings = new FormControl();
 
   toppingList = [...Array(15).keys()].map(e => `${2016 + e}`);
@@ -79,41 +79,39 @@ export class ActiviteComponent implements OnInit {
   createForm() {
     // this.o.duree = this.o.dureeToString();
     this.myForm = this.fb.group({
-      id: this.o.id,
-      nom: [this.o.nom, Validators.required],
-      duree: [this.o.duree],
+      //idActivite: this.o.idActivite,
       idMesure: [this.mesure.id],
     });
   }
 
-  submit(o: Activite) {
-    o.duree = Object.assign(new Activite(), o).dureeToString();
+  submit(o: ActiviteMesure) {
+    //o.duree = Object.assign(new ActiviteMesure(), o).dureeToString();
     // console.log(o);
     if (!this.isEdit) {
-      this.uow.activites.post(o).subscribe(r => {
+      this.uow.activiteMesures.post(o).subscribe(r => {
         this.reset();
         this.update.next(true);
       });
     } else {
-      this.uow.activites.put(o.id, o).subscribe(r => {
-        this.reset();
-        this.update.next(true);
-      });
+      // this.uow.activiteMesures.put(o.id, o).subscribe(r => {
+      //   this.reset();
+      //   this.update.next(true);
+      // });
     }
   }
 
-  edit(o: Activite) {
-    this.o = o;
-    // Object.assign(new Activite(), this.o).dureeToArray()
-    this.isEdit = true;
-    this.createForm();
+  edit(o: ActiviteMesure) {
+    // this.o = o;
+    // // Object.assign(new Activite(), this.o).dureeToArray()
+    // this.isEdit = true;
+    // this.createForm();
   }
 
   reset() {
-    this.o = new Activite();
-    // this.o = this.o.dureeToArray();
-    this.isEdit = false;
-    this.createForm();
+    // this.o = new ActiviteMesure();
+    // // this.o = this.o.dureeToArray();
+    // this.isEdit = false;
+    // this.createForm();
   }
 
   async delete(id: number) {

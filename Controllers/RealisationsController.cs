@@ -24,13 +24,13 @@ namespace Controllers
             bool hasAcess = (role == 1 || role == 2) ? true : false;
 
             var query = _context.Realisations
-                .Where(e => hasAcess ? true : (e.Activite.Mesure.IdResponsable == idUser))
+                .Where(e => hasAcess ? true : (e.Activite.ActiviteMesures.Any(r => r.Mesure.Responsables.Any(r => r.IdUser == idUser))))
                 // .Where(e => e.Responsable.Organisme.Type == model.TypeOrganisme)
-                .Where(e => model.IdCycle == 0 ? true : e.Activite.Mesure.IdCycle == model.IdCycle)
-                .Where(e => model.IdMesure == 0 ? true : e.Activite.IdMesure == model.IdMesure)
-                .Where(e => model.IdResponsable == 0 ? true : e.Activite.Mesure.IdResponsable == model.IdResponsable)
-                .Where(e => model.IdAxe == 0 ? true : e.Activite.Mesure.IdAxe == model.IdAxe)
-                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.Mesure.IdSousAxe == model.IdSousAxe)
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdMesure == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.Id == model.IdMesure))
+                .Where(e => model.IdResponsable == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.IdSousAxe == model.IdSousAxe))
                 // .Where(e => model.IdOrganisme == 0 ? true : e.Activite.Mesure.IdOrganisme == model.IdOrganisme)
                 // .Where(e => model.IdOrganisme == 0 ? true : e.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
                 ;
@@ -46,7 +46,8 @@ namespace Controllers
                 .Select(e => new
                 {
                     id = e.Id,
-                    mesure = e.Activite.Mesure.Nom,
+                    //mesure = e.Activite.Mesure.Nom,
+                    mesure = e.Activite.ActiviteMesures.Select(s => s.Mesure.Nom),
                     activite = e.Activite.Nom,
                     annee = e.Annee,
                     nom = e.Nom,
@@ -68,11 +69,11 @@ namespace Controllers
             bool hasAcess = (role == 1 || role == 2) ? true : false;
 
             var query = _context.Realisations
-                .Where(e => hasAcess ? true : (e.Activite.Mesure.IdResponsable == idUser))
+                .Where(e => hasAcess ? true : (e.Activite.ActiviteMesures.Any(r => r.Mesure.Responsables.Any(o => o.IdUser == idUser))))
                 // .Where(e => e.Responsable.Organisme.Type == model.TypeOrganisme)
-                .Where(e => model.IdCycle == 0 ? true : e.Activite.Mesure.IdCycle == model.IdCycle)
-                .Where(e => model.IdMesure == 0 ? true : e.Activite.IdMesure == model.IdMesure)
-                .Where(e => model.IdResponsable == 0 ? true : e.Activite.Mesure.IdResponsable == model.IdResponsable)
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdMesure == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.Id == model.IdMesure))
+                .Where(e => model.IdResponsable == 0 ? true : e.Activite.ActiviteMesures.Any(r => r.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
                 ;
 
             int count = model.IsAllEmpty() ? await _context.Realisations.CountAsync() : await query.CountAsync();
@@ -86,8 +87,10 @@ namespace Controllers
                 .Select(e => new
                 {
                     id = e.Id,
-                    organisme = e.Activite.Mesure.Responsable.Organisme.Label,
-                    mesure = e.Activite.Mesure.Nom,
+                    //organisme = e.Activite.Mesure.Responsable.Organisme.Label,
+                    //mesure = e.Activite.Mesure.Nom,
+                    organisme = "e.Activite.ActiviteMesures.Select(p => p.Mesure.Responsables..Organisme.Label),",
+                    mesure = e.Activite.ActiviteMesures.Select(p => p.Mesure.Nom),
                     activite = e.Activite.Nom,
                     annee = e.Annee,
                     situation = e.Situation,
@@ -109,17 +112,16 @@ namespace Controllers
             bool hasAcess = (role == 1 || role == 2) ? true : false;
 
             var query = _context.Mesures
-                .Where(e => hasAcess ? true : (e.IdResponsable == idUser))
+                .Where(e => hasAcess ? true : (e.Responsables.Any(o => o.IdUser == idUser)))
                 // .Where(e => e.Responsable.Organisme.Type == model.TypeOrganisme)
                 .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
                 .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-                .Where(e => model.IdResponsable == 0 ? true : e.IdResponsable == model.IdResponsable)
+                .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
                 .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
                 .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
                 // .Where(e => model.IdOrganisme == 0 ? true : e.Activite.Mesure.IdOrganisme == model.IdOrganisme)
                 // .Where(e => model.IdOrganisme == 0 ? true : e.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
                 ;
-
             int count = model.IsAllEmpty() ? await _context.Realisations.CountAsync() : await query.CountAsync();
 
             var list = await query.OrderByName<Mesure>(model.SortBy, model.SortDir == "desc")
@@ -131,17 +133,19 @@ namespace Controllers
                 .Select(e => new
                 {
                     id = e.Id,
-                    organisme = e.Responsable.Organisme.Label,
+                    organisme = "e.Responsable.Organisme.Label",
                     mesure = e.Nom,
-                    realisations = e.Activites.SelectMany(a => a.Realisations.Select(r => r.Nom)),
+                    //realisations = e.ActiviteMesures.SelectMany(a => a.Realisations.Select(r => r.Nom)),
+                    realisations = "dd",
                     //taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.Taux)),
-                    taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.TauxRealisation)),
+                    taux = 25,
+                    //taux = e.Activites.SelectMany(a => a.Realisations.Select(r => r.TauxRealisation)),
                     // taux = e.ac,
                     indicateurs = e.IndicateurMesures.Select(i => i.Indicateur.Nom),
                 })
                 .ToListAsync();
             ;
-
+ 
             return Ok(new { list = list, count = count });
         }
 
@@ -150,30 +154,30 @@ namespace Controllers
 
             // int recommendationsCount = _context.Recommendations.Count();
 
-            var t = await q.Where(e => e.Activite.Mesure.IdCycle != null)
-                            .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
                             
-            var n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0)
-                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            var r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100)
-                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            var p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)
-                           .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
             
             var epu = new { n, r, p, t };
 
-            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
             // var h = t == 0 ? 1 : t;
             // var h2 = 0/1;
             var ot = new { n, r, p, t };
 
-            t = await q.Where(e => e.Activite.Mesure.IdCycle != null).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            n = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            r = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation == 100).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
-            p = await q.Where(e => e.Activite.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0).Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable).CountAsync();
+            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
 
             var ps = new { n, r, p, t };
 
@@ -215,15 +219,15 @@ namespace Controllers
 
 
                 recommendationsCount = await _context.Realisations
-                .Where(r => r.Activite.Mesure.IdCycle != null)
-                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                .Where(r => r.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
                 .CountAsync();
                 list = await _context.Axes
                     .Select(e => new
                     {
                         table = e.Label,
                         value = e.Mesures.Where(r => r.IdCycle != null)
-                                        .Where(e => e.Responsable.Organisme.Type == typeTable)
+                                        .Where(e => e.Responsables.Any(o => o.Organisme.Type == typeTable))
                                         .Count() * 100 / recommendationsCount,
                     })
                     .Distinct()
@@ -235,15 +239,15 @@ namespace Controllers
             else if (table == "sousAxe")
             {
                 recommendationsCount = await _context.Realisations
-                .Where(r => r.Activite.Mesure.IdCycle != null)
-                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                .Where(r => r.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
                 .CountAsync();
                 list = await _context.SousAxes
                     .Select(e => new
                     {
                         table = e.Label,
                         value = e.Mesures.Where(r => r.IdCycle != null)
-                                        .Where(e => e.Responsable.Organisme.Type == typeTable)
+                                        .Where(e => e.Responsables.Any(o => o.Organisme.Type == typeTable))
                                         .Count() * 100 / recommendationsCount,
                     })
                     .Distinct()
@@ -268,17 +272,29 @@ namespace Controllers
             int recommendationsCount = 0;
            
                 recommendationsCount = await _context.Realisations
-                .Where(e => e.Activite.Mesure.IdAxe == idAxe)
-                .Where(e => e.Activite.Mesure.Responsable.Organisme.Type == typeTable)
+                //.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdAxe == idAxe))
+                //.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
+
+                .Where(e => e.Mesure.Axe.Id == idAxe)
+                .Where(e => e.Mesure.TypeMesure == typeTable)
+                .Where(e => e.Activite.ActiviteMesures != null)
+
                 .CountAsync();
                 list = await _context.SousAxes.Where(e => e.IdAxe == idAxe)
                     .Select(e => new
                     {
                         table = e.Label,
-                        value = e.Mesures
-                        .Where(e => e.IdAxe == idAxe)
-                        .Where(e => e.Responsable.Organisme.Type == typeTable)
-                                        .Count() * 100 / recommendationsCount,
+                        // value = e.Mesures
+                        // .Where(e => e.IdAxe == idAxe)
+                        // .Where(e => e.Responsable.Organisme.Type == typeTable)
+                        //                 .Count() * 100 / recommendationsCount,
+
+                        value = e.Mesures.Select(o => o.ActiviteMesures.Select(t => t.Activite))
+                        //.Where(e => e.Any( o => o.ActiviteMesures != null) && e.Any(o => o.ActiviteMesures.Any(r => r.Mesure.IdAxe == idAxe)))
+                        //.Where(e => e.Any( o => o.ActiviteMesures != null)  && e.Any(u => u.ActiviteMesures.Any(o=>o.Mesure.TypeMesure == typeTable)))
+                        .Count() * 100 / recommendationsCount,
+
+                        //value = 10
                     })
                     .Distinct()
                     .ToListAsync()
@@ -295,7 +311,7 @@ namespace Controllers
         {
             var model = await _context.Realisations.Where(e => e.Id == id)
                 .Include(e => e.Activite)
-                .ThenInclude(e => e.Mesure)
+                //.ThenInclude(e => e.Mesure)
                 // .ThenInclude(e => e.Cycle)
                 .FirstOrDefaultAsync();
                 ;

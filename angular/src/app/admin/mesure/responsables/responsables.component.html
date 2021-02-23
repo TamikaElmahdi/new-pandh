@@ -3,7 +3,7 @@
       <div class="row">
       <mat-form-field appearance="fill" style="width: 100%" class="col-md-6" >
         <mat-label>القطاعات</mat-label>
-        <mat-select formControlName="idCycle" >
+        <mat-select formControlName="idOrganisme" (selectionChange)="selectChange($event.value)">
           <mat-option value="0">...</mat-option>
           <mat-option *ngFor="let e of organismes | async " [value]="e.id">{{ e.label }} </mat-option>
         </mat-select>
@@ -11,7 +11,7 @@
 
       <mat-form-field appearance="fill" style="width: 100%" class="col-md-6" >
         <mat-label> المسؤول الرسمي</mat-label>
-        <mat-select formControlName="idCycle" >
+        <mat-select formControlName="idUser" >
           <mat-option value="0">...</mat-option>
           <mat-option *ngFor="let e of users " [value]="e.id">{{ e.nom }} {{ e.prenom }}</mat-option>
         </mat-select>

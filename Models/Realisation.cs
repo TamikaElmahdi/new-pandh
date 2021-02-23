@@ -16,7 +16,9 @@ namespace Models
         public double TauxRealisation { get; set; }
         public string Effet { get; set; }
         public int IdActivite { get; set; }
+        public int IdMesure { get; set; }
         public Activite Activite { get; set; }
+        public Mesure Mesure { get; set; }
         // public virtual ICollection<IndicateurRealisation> IndicateurRealisations { get; set; }
 
     }

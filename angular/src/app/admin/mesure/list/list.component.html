@@ -174,7 +174,7 @@
         </ng-container>
         <ng-container [matColumnDef]="columnDefs[1].columnDef">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>{{isMesure ? 'القطاع الوزاري/المؤسسة' : (isMesureRegion ? 'الجماعة الترابية' : 'الهيئة')}}</th>
-          <td mat-cell *matCellDef="let row">{{row[columnDefs[1].columnDef].label}}</td>
+          <td mat-cell *matCellDef="let row">{{row[columnDefs[1].columnDef]}}</td>
         </ng-container>
 
         <ng-container [matColumnDef]="columnDefs[2].columnDef">
@@ -183,7 +183,7 @@
         </ng-container>
         <ng-container [matColumnDef]="columnDefs[3].columnDef">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[3].headName}}</th>
-          <td mat-cell *matCellDef="let row">{{row[columnDefs[3].columnDef].nom}}</td>
+          <td mat-cell *matCellDef="let row">{{row[columnDefs[3].columnDef]}}</td>
         </ng-container>
         <ng-container [matColumnDef]="columnDefs[4].columnDef">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[4].headName}}</th>

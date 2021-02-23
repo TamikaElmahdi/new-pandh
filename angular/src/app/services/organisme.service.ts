@@ -29,5 +29,9 @@ export class OrganismeService  extends SuperService<any> {
   getResponsableByForeignKey(id) {
     return this.http.get(`${this.urlApi}/${this.controller}/getResponsableByForeignKey/${id}`);
   }
+  getResponsableByMesure(startIndex, pageSize, sortBy, sortDir,id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getResponsableByMesure/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
+  }
+
 
 }

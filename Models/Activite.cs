@@ -7,12 +7,15 @@ namespace Models
         public Activite()
         {
             Realisations = new HashSet<Realisation>();
+            ActiviteMesures = new HashSet<ActiviteMesure>();
+
         }
         public int Id { get; set; }
         public string Nom { get; set; }
         public string Duree { get; set; }
-        public int IdMesure { get; set; }
-        public Mesure Mesure { get; set; }
+        // public int IdMesure { get; set; }
+        // public Mesure Mesure { get; set; }
         public virtual ICollection<Realisation> Realisations { get; set; }
+        public virtual ICollection<ActiviteMesure> ActiviteMesures { get; set; }
     }
 }

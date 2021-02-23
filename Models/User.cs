@@ -9,6 +9,8 @@ namespace Models
         {
             Mesures = new HashSet<Mesure>();
             OrganismeUsers = new HashSet<OrganismeUser>();
+            Responsables = new HashSet<Responsable>();
+
 
 
         }
@@ -35,6 +37,7 @@ namespace Models
         public virtual ICollection<Mesure> Mesures { get; set; }
 
         public virtual ICollection<OrganismeUser> OrganismeUsers { get; set; }
+        public virtual ICollection<Responsable> Responsables { get; set; }
 
     }
 }

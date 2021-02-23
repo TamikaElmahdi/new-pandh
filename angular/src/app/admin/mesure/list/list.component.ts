@@ -201,13 +201,15 @@ export class ListComponent implements OnInit {
       const barChartData = [
         { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
         { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
         { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
       ];
 
       r.forEach(e => {
         barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
         barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
-        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
       });
 
 
@@ -232,6 +234,7 @@ export class ListComponent implements OnInit {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
       chartLabels.push('غير منجز');
 
       console.log(r)
@@ -245,10 +248,11 @@ export class ListComponent implements OnInit {
 
       chartData.push(r.epu.p * 100 / r.epu.t);
       chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
       chartData.push(r.epu.n * 100 / r.epu.t);
 
-      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.n);
-      this.countRec.next(r.epu.p + r.epu.r + r.epu.n);
+      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.p + r.epu.r + r.epu.c + r.epu.n);
 
       // chartData.push(100 - r.epu.t);
 
@@ -371,13 +375,14 @@ export class ListComponent implements OnInit {
     return dialogRef.afterClosed();
   }
 
+
   searchAndGet(o: Model) {
     console.log(o);
     this.o = o;
     // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
     this.uow.mesures.searchAndGet(this.o).subscribe(
       (r: any) => {
-        console.log(r.list);
+        console.log('ff' + r.list);
         this.dataSource = r.list;
         this.resultsLength = r.count;
         this.isLoadingResults = false;

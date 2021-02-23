@@ -14,6 +14,7 @@ import { ResponsableComponent } from './responsable/responsable.component';
 import { ResponsablesComponent } from './responsables/responsables.component';
 import { IndicateurComponent } from './indicateur/indicateur.component';
 import { ActiviteComponent } from './activite/activite.component';
+import { ActivitesComponent } from './activites/activites.component';
 import { DetailsComponent } from './details/details.component';
 import { PieChartModule } from '../components/pie-chart/pie-chart.module';
 import { CountModule } from '../components/count/count.module';
@@ -29,6 +30,7 @@ import { CountModule } from '../components/count/count.module';
     ResponsablesComponent,
     IndicateurComponent,
     ActiviteComponent,
+    ActivitesComponent,
     DetailsComponent,
   ],
   imports: [

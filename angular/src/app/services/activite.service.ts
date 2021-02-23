@@ -15,4 +15,7 @@ export class ActiviteService  extends SuperService<Activite> {
     return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
   }
 
+  getDataFiltre(searchText) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getDataFiltre/${searchText}`);
+  }
 }

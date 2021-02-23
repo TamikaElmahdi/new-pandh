@@ -11,7 +11,7 @@ export class AxeService  extends SuperService<any> {
   }
 
   stateAxes(type: number, isHome: number) {
-    return this.http.get<{ name: string, p: number, t: number, r: number, n: number }[]>(`${this.urlApi}/${this.controller}/stateAxes/${type}/${isHome}`);
+    return this.http.get<{ name: string, p: number, t: number, r: number, c: number, n: number }[]>(`${this.urlApi}/${this.controller}/stateAxes/${type}/${isHome}`);
   }
 
 }

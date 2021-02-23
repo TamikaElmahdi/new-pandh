@@ -232,15 +232,17 @@ export class ListComponent implements OnInit {
   }
 
   checkWitchMesure(r: string) {
+    this.title = 'إحصائيات';
+
     if (r.includes('mesure-region')) {
-      this.title = 'المخطط التنفيدي الترابي';
+     // this.title = 'المخطط التنفيدي الترابي';
       this.isMesureRegion = true;
       this.isMesure = false;
       this.isProgramme = false;
       this.typeOrganisme = 2;
       this.getOrganismes();
     } else if (r.includes('mesure-programme')) {
-      this.title = 'برامج العمل';
+      //this.title = 'برامج العمل';
       this.isMesureRegion = false;
       this.isMesure = false;
       this.isProgramme = true;
@@ -248,7 +250,7 @@ export class ListComponent implements OnInit {
       this.getOrganismes();
     } else {
       // mesure-executif
-      this.title = 'المخطط التنفيدي';
+     // this.title = 'المخطط التنفيدي';
       this.isMesureRegion = false;
       this.isMesure = true;
       this.isProgramme = false;

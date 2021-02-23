@@ -11,7 +11,7 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill" style="width: 100%;margin-bottom: 5px;">
-        <mat-label> (test)التدبير</mat-label>
+        <mat-label> التدبير</mat-label>
         <input matInput [formControl]="myAuto" [matAutocomplete]="auto" placeholder="إكمال تلقائي">
         <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
           <mat-option *ngFor="let e of filteredOptions | async" [value]="e">{{ e.nom }} </mat-option>
@@ -50,11 +50,21 @@
               <mat-form-field appearance="fill">
                 <mat-label>وضعية التنفيد</mat-label>
                 <!-- <input matInput formControlName="situation" required> -->
-                <mat-select formControlName="situation">
+                <mat-select formControlName="situation" (selectionChange)="showTaux($event.value)" >
                   <mat-option *ngFor="let e of situations" [value]="e">{{ e }}</mat-option>
                 </mat-select>
-
               </mat-form-field>
+
+              <mat-form-field appearance="fill">
+                <mat-label>معدل الإنجاز</mat-label>
+                <input matInput formControlName="tauxRealisation" required>
+              </mat-form-field>
+
+
+            </div>
+
+            <div class="inputs2">
+
 
               <mat-form-field appearance="fill" style="width: 100%">
                 <mat-label>السنة</mat-label>
@@ -62,13 +72,7 @@
                   <mat-option *ngFor="let e of years" [value]="e">{{ e }}</mat-option>
                 </mat-select>
               </mat-form-field>
-            </div>
 
-            <div class="inputs2">
-              <mat-form-field appearance="fill">
-                <mat-label>معدل الإنجاز</mat-label>
-                <input matInput formControlName="taux" required>
-              </mat-form-field>
               <mat-form-field appearance="fill">
                 <mat-label>الأثر</mat-label>
                 <input matInput formControlName="effet" required>

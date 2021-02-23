@@ -29,11 +29,11 @@ export class ResponsablesComponent implements OnInit {
   o = new Responsable();
   isEdit = false;
   organismes = this.uow.organismes.get();
-  users = [];
+  users : any;
   dataSource = [];
   columnDefs = [
-    { columnDef: 'nom', headName: 'القطاع' },
-    { columnDef: 'duree', headName: 'المخاطب الرسمي' },
+    { columnDef: 'organisme', headName: 'القطاع' },
+    { columnDef: 'user', headName: 'المخاطب الرسمي' },
     { columnDef: 'option', headName: 'OPTION' },
   ];
 
@@ -66,7 +66,19 @@ export class ResponsablesComponent implements OnInit {
     );
   }
 
+
   getPage(startIndex, pageSize, sortBy, sortDir) {
+    this.uow.organismes.getResponsableByMesure(startIndex, pageSize, sortBy, sortDir, this.mesure.id).subscribe(
+      (r: any) => {
+        console.log(r.list);
+        this.dataSource = r.list;
+        this.resultsLength = r.count;
+        this.isLoadingResults = false;
+      }
+    );
+  }
+
+  getPage2(startIndex, pageSize, sortBy, sortDir) {
     this.isLoadingResults = true;
     this.uow.organismes.getList(startIndex, pageSize, sortBy, sortDir).subscribe(
       (r: any) => {
@@ -85,10 +97,17 @@ export class ResponsablesComponent implements OnInit {
     this.myForm = this.fb.group({
       idOrganisme: [this.o.idOrganisme],
       idMesure: [this.mesure.id],
+      idUser: [this.o.idUser],
     });
   }
 
-  submit2(o: Responsable) {
+  selectChange(id: number) {
+      this.uow.users.getByOrganisme(id).subscribe(r => {
+        this.users = r;
+      });
+    }
+
+  submit(o: Responsable) {
     // console.log(o);
     if (!this.isEdit) {
       this.uow.responsables.post(o).subscribe(r => {
@@ -103,7 +122,7 @@ export class ResponsablesComponent implements OnInit {
     }
   }
 
-  submit() {
+  submit1() {
     this.useFullList = [];
     this.selectedList.map(r => {
       this.useFullList.push({ idOrganisme: r.id, idMesure: this.mesure.id } as any);

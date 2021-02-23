@@ -9,8 +9,9 @@ namespace Models
 
         public int IdMesure { get; set; }
         public int IdOrganisme { get; set; }
-        public bool IsPrincipale { get; set;}
+        public int IdUser { get; set; }
         public Mesure Mesure { get; set; }
         public Organisme Organisme { get; set; }
+        public User User { get; set; }
     }
 }

@@ -75,5 +75,50 @@ namespace Controllers
         }
 
 
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
+        public virtual async Task<IActionResult> GetResponsableByMesure(int startIndex, int pageSize, string sortBy, string sortDir, int id)
+        {
+            var list = await _context.Responsables
+            .Where(e => e.IdMesure == id)
+            //.OrderByName<Organisme>(sortBy, sortDir == "desc")
+            .Skip(startIndex)
+            .Take(pageSize)
+             .Select(e => new 
+                {
+                idUser = e.IdUser,
+                user = e.User.Nom + ' ' + e.User.Prenom,
+                idOrganisme = e.IdOrganisme,
+                organisme = e.Organisme.Label,
+                idMesure = e.IdMesure,
+
+                })
+            .ToListAsync();
+
+            int count = await _context.Organismes.Where(e => e.Responsables.Any(o => o.IdMesure == id)).CountAsync();
+            return Ok(new { list = list, count = count });
+
+           // return Ok(model);
+        }
+
+        // [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
+        // public virtual async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, int id)
+        // {
+        //     // int i = typeof(T).FullName.LastIndexOf('.');
+        //     // string tableName = typeof(T).FullName.Substring(i + 1) + "s";
+
+        //     var list = await _context.Activites
+        //         .Where(e => e.IdMesure == id)
+        //         .OrderByName<Activite>(sortBy, sortDir == "desc")
+        //         .Skip(startIndex)
+        //         .Take(pageSize)
+        //         .ToListAsync()
+        //         ;
+        //     int count = await _context.Activites.CountAsync();
+
+        //     return Ok(new { list = list, count = count });
+        // }
+
+
+
     }
 }

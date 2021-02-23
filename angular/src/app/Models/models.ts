@@ -13,6 +13,7 @@ export class User {
   idProfil = 0;
   organisme = new Organisme();
   profil = new Profil();
+  responsables: Responsable[] = [];
 }
 
 export class Indicateur {
@@ -93,9 +94,12 @@ export class Realisation {
   situation = '';
   annee = 0;
   taux = '';
+  tauxRealisation = 0;
   effet = '';
   idActivite = 0;
   activite = new Activite();
+  idMesure = 0;
+  mesure = new Mesure();
 }
 
 export class Rapport {
@@ -113,9 +117,9 @@ export class Activite {
   id = 0;
   nom = '';
   duree = '';
-  idMesure = 0;
-  mesure = new Mesure();
-
+  // idMesure = 0;
+  // mesure = new Mesure();
+  activiteMesures: ActiviteMesure[] = [];
   dureeToString() {
     return this.duree === '' ? '' : JSON.stringify(this.duree);
   }
@@ -127,6 +131,13 @@ export class Activite {
       return [];
     }
   }
+}
+
+export class ActiviteMesure {
+  idActivite = 0;
+  idMesure = 0;
+  activite = new Activite();
+  mesure = new Mesure();
 }
 
 export class Mesure {
@@ -149,8 +160,9 @@ export class Mesure {
   responsable = new User();
 
   indicateurMesures: IndicateurMesure[] = [];
+  activiteMesures: ActiviteMesure[] = [];
   indicateurMesureValues: IndicateurMesureValue[] = [];
-  activites: Activite[] = [];
+  //activites: Activite[] = [];
   partenariats: Partenariat[] = [];
   responsables: Responsable[] = [];
 
@@ -200,9 +212,10 @@ export class Partenariat {
 export class Responsable {
   idOrganisme = 0;
   idMesure = 0;
-  isPrincipale = false;
+  idUser = 0;
   mesure = new Mesure();
   organisme = new Organisme();
+  user = new User();
 }
 //-----------------------
 export class Cycle {

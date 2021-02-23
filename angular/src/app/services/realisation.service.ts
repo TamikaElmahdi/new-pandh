@@ -18,9 +18,9 @@ export class RealisationService  extends SuperService<Realisation> {
 
   stateMecanisme(typeTable) {
     return this.http.get<{
-      epu: { name: string | Observable<string>, p: number, t: number, r: number, n: number},
-      ot: { name: string | Observable<string>, p: number, t: number, r: number , n: number},
-      ps: { name: string | Observable<string>, p: number, t: number, r: number , n: number},
+      epu: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},
+      ot: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},
+      ps: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},
       count: number,
     }>(`${this.urlApi}/${this.controller}/stateMecanisme/${typeTable}`);
   }

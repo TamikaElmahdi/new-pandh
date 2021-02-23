@@ -1,7 +1,16 @@
 <mat-card>
   <form [formGroup]="myForm">
     <div class="inputs">
-      <mat-form-field appearance="fill">
+
+      <mat-form-field appearance="fill" style="width: 100%" class="col-md-12" >
+        <mat-label>النشاط</mat-label>
+        <mat-select formControlName="idActivite" >
+          <mat-option value="0">...</mat-option>
+          <mat-option *ngFor="let e of activites | async " [value]="e.id">{{ e.nom }} ({{ e.duree }}) </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- <mat-form-field appearance="fill">
         <mat-label>النشاط</mat-label>
         <input matInput formControlName="nom" required>
       </mat-form-field>
@@ -11,7 +20,7 @@
         <mat-select formControlName="duree" multiple>
           <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
         </mat-select>
-      </mat-form-field>
+      </mat-form-field> -->
     </div>
   </form>
   <!-- {{myForm.value | json}} -->

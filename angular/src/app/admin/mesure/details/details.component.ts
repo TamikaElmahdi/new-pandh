@@ -31,7 +31,7 @@ export class DetailsComponent implements OnInit {
   ngOnInit() {
     this.o = this.data.model;
     this.partenaires = this.o.partenariats.map(e => e.organisme);
-    this.activites = this.o.activites;
+    //this.activites = this.o.activites;
     this.indicateurs = this.o.indicateurMesures.map(e => e.indicateur);
 
     // this.title = typeof(Synthese).name.toUpperCase;
