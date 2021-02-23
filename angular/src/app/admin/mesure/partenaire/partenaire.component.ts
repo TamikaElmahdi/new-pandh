@@ -103,6 +103,7 @@ export class PartenaireComponent implements OnInit {
 
 
   submit() {
+
     this.useFullList = [];
     this.selectedList.map(r => {
       this.useFullList.push({ idOrganisme: r.id, idMesure: this.mesure.id } as any);
