@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit {
   departementSubject5 = new Subject();
   departementSubject6 = new Subject();
 
+  departementSubject7 = new Subject();
+
   constructor(private uow: UowService, public session: SessionService) { }
 
   ngOnInit() {
@@ -35,6 +37,7 @@ export class HomeComponent implements OnInit {
     this.stateAxe(4);
     this.stateAxe(5);
     this.stateAxe(6);
+    this.stateAxe(7);
   }
 
   stateAxe(type) {
@@ -70,6 +73,8 @@ export class HomeComponent implements OnInit {
         this.departementSubject5.next({ barChartLabels, barChartData, title: '' });
         else if(type === 6)
         this.departementSubject6.next({ barChartLabels, barChartData, title: '' });
+        else if(type === 7)
+        this.departementSubject7.next({ barChartLabels, barChartData, title: '' });
       });
 
 

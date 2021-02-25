@@ -9,7 +9,7 @@ using Models;
 namespace Admin5.Migrations
 {
     [DbContext(typeof(AdminContext))]
-    [Migration("20210224141622_first")]
+    [Migration("20210225160533_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -16266,140 +16266,140 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            DateEvenement = new DateTime(2020, 8, 13, 2, 50, 7, 809, DateTimeKind.Local).AddTicks(1649),
+                            DateEvenement = new DateTime(2020, 12, 12, 17, 35, 1, 100, DateTimeKind.Local).AddTicks(9601),
                             Pv = "محضر رقم 1",
                             Type = "اللجنة رقم 1"
                         },
                         new
                         {
                             Id = 2,
-                            DateEvenement = new DateTime(2020, 12, 15, 5, 31, 11, 767, DateTimeKind.Local).AddTicks(9709),
+                            DateEvenement = new DateTime(2020, 10, 11, 14, 58, 57, 293, DateTimeKind.Local).AddTicks(796),
                             Pv = "محضر رقم 2",
                             Type = "اللجنة رقم 2"
                         },
                         new
                         {
                             Id = 3,
-                            DateEvenement = new DateTime(2020, 4, 22, 0, 39, 19, 290, DateTimeKind.Local).AddTicks(2296),
+                            DateEvenement = new DateTime(2021, 1, 12, 16, 38, 34, 638, DateTimeKind.Local).AddTicks(6935),
                             Pv = "محضر رقم 3",
                             Type = "اللجنة رقم 3"
                         },
                         new
                         {
                             Id = 4,
-                            DateEvenement = new DateTime(2020, 12, 23, 5, 8, 19, 908, DateTimeKind.Local).AddTicks(3423),
+                            DateEvenement = new DateTime(2020, 4, 3, 6, 34, 50, 995, DateTimeKind.Local).AddTicks(7671),
                             Pv = "محضر رقم 4",
                             Type = "اللجنة رقم 4"
                         },
                         new
                         {
                             Id = 5,
-                            DateEvenement = new DateTime(2020, 7, 8, 22, 38, 4, 163, DateTimeKind.Local).AddTicks(2415),
+                            DateEvenement = new DateTime(2020, 8, 20, 7, 57, 6, 564, DateTimeKind.Local).AddTicks(3718),
                             Pv = "محضر رقم 5",
                             Type = "اللجنة رقم 5"
                         },
                         new
                         {
                             Id = 6,
-                            DateEvenement = new DateTime(2021, 1, 7, 12, 51, 22, 965, DateTimeKind.Local).AddTicks(9868),
+                            DateEvenement = new DateTime(2020, 12, 27, 12, 25, 47, 43, DateTimeKind.Local).AddTicks(8692),
                             Pv = "محضر رقم 6",
                             Type = "اللجنة رقم 6"
                         },
                         new
                         {
                             Id = 7,
-                            DateEvenement = new DateTime(2020, 9, 8, 12, 11, 22, 747, DateTimeKind.Local).AddTicks(5421),
+                            DateEvenement = new DateTime(2020, 3, 12, 18, 5, 42, 122, DateTimeKind.Local).AddTicks(4722),
                             Pv = "محضر رقم 7",
                             Type = "اللجنة رقم 7"
                         },
                         new
                         {
                             Id = 8,
-                            DateEvenement = new DateTime(2021, 1, 24, 19, 46, 10, 342, DateTimeKind.Local).AddTicks(2130),
+                            DateEvenement = new DateTime(2020, 7, 30, 0, 43, 55, 313, DateTimeKind.Local).AddTicks(3038),
                             Pv = "محضر رقم 8",
                             Type = "اللجنة رقم 8"
                         },
                         new
                         {
                             Id = 9,
-                            DateEvenement = new DateTime(2020, 6, 2, 15, 20, 26, 102, DateTimeKind.Local).AddTicks(1540),
+                            DateEvenement = new DateTime(2020, 11, 8, 12, 27, 26, 797, DateTimeKind.Local).AddTicks(1403),
                             Pv = "محضر رقم 9",
                             Type = "اللجنة رقم 9"
                         },
                         new
                         {
                             Id = 10,
-                            DateEvenement = new DateTime(2020, 9, 4, 10, 36, 54, 698, DateTimeKind.Local).AddTicks(5408),
+                            DateEvenement = new DateTime(2021, 2, 18, 17, 2, 46, 624, DateTimeKind.Local).AddTicks(2605),
                             Pv = "محضر رقم 10",
                             Type = "اللجنة رقم 10"
                         },
                         new
                         {
                             Id = 11,
-                            DateEvenement = new DateTime(2020, 3, 19, 15, 5, 11, 326, DateTimeKind.Local).AddTicks(3067),
+                            DateEvenement = new DateTime(2020, 5, 17, 0, 30, 21, 543, DateTimeKind.Local).AddTicks(5070),
                             Pv = "محضر رقم 11",
                             Type = "اللجنة رقم 11"
                         },
                         new
                         {
                             Id = 12,
-                            DateEvenement = new DateTime(2020, 6, 28, 19, 20, 49, 867, DateTimeKind.Local).AddTicks(9006),
+                            DateEvenement = new DateTime(2020, 3, 19, 5, 22, 8, 880, DateTimeKind.Local).AddTicks(7411),
                             Pv = "محضر رقم 12",
                             Type = "اللجنة رقم 12"
                         },
                         new
                         {
                             Id = 13,
-                            DateEvenement = new DateTime(2020, 3, 21, 12, 0, 26, 242, DateTimeKind.Local).AddTicks(3520),
+                            DateEvenement = new DateTime(2020, 11, 27, 21, 37, 13, 437, DateTimeKind.Local).AddTicks(5062),
                             Pv = "محضر رقم 13",
                             Type = "اللجنة رقم 13"
                         },
                         new
                         {
                             Id = 14,
-                            DateEvenement = new DateTime(2020, 7, 7, 20, 37, 6, 73, DateTimeKind.Local).AddTicks(7389),
+                            DateEvenement = new DateTime(2020, 10, 5, 5, 35, 30, 134, DateTimeKind.Local).AddTicks(4924),
                             Pv = "محضر رقم 14",
                             Type = "اللجنة رقم 14"
                         },
                         new
                         {
                             Id = 15,
-                            DateEvenement = new DateTime(2020, 3, 27, 22, 55, 13, 387, DateTimeKind.Local).AddTicks(3918),
+                            DateEvenement = new DateTime(2020, 8, 20, 19, 56, 33, 641, DateTimeKind.Local).AddTicks(541),
                             Pv = "محضر رقم 15",
                             Type = "اللجنة رقم 15"
                         },
                         new
                         {
                             Id = 16,
-                            DateEvenement = new DateTime(2020, 11, 6, 11, 11, 1, 732, DateTimeKind.Local).AddTicks(8217),
+                            DateEvenement = new DateTime(2020, 12, 20, 17, 58, 28, 44, DateTimeKind.Local).AddTicks(1586),
                             Pv = "محضر رقم 16",
                             Type = "اللجنة رقم 16"
                         },
                         new
                         {
                             Id = 17,
-                            DateEvenement = new DateTime(2020, 4, 1, 19, 15, 4, 131, DateTimeKind.Local).AddTicks(1316),
+                            DateEvenement = new DateTime(2020, 5, 31, 2, 15, 48, 306, DateTimeKind.Local).AddTicks(6987),
                             Pv = "محضر رقم 17",
                             Type = "اللجنة رقم 17"
                         },
                         new
                         {
                             Id = 18,
-                            DateEvenement = new DateTime(2020, 8, 1, 18, 11, 45, 948, DateTimeKind.Local).AddTicks(8748),
+                            DateEvenement = new DateTime(2020, 3, 21, 21, 48, 11, 604, DateTimeKind.Local).AddTicks(8076),
                             Pv = "محضر رقم 18",
                             Type = "اللجنة رقم 18"
                         },
                         new
                         {
                             Id = 19,
-                            DateEvenement = new DateTime(2021, 2, 23, 14, 7, 21, 560, DateTimeKind.Local).AddTicks(116),
+                            DateEvenement = new DateTime(2020, 2, 29, 12, 50, 34, 771, DateTimeKind.Local).AddTicks(649),
                             Pv = "محضر رقم 19",
                             Type = "اللجنة رقم 19"
                         },
                         new
                         {
                             Id = 20,
-                            DateEvenement = new DateTime(2020, 11, 27, 21, 7, 26, 195, DateTimeKind.Local).AddTicks(4706),
+                            DateEvenement = new DateTime(2020, 10, 9, 5, 0, 35, 20, DateTimeKind.Local).AddTicks(2871),
                             Pv = "محضر رقم 20",
                             Type = "اللجنة رقم 20"
                         });
@@ -18883,1602 +18883,1602 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2020, 6, 7, 9, 48, 56, 471, DateTimeKind.Local).AddTicks(7446),
-                            IdIndicateur = 6,
-                            IdMesure = 169,
-                            Value = "29"
+                            Date = new DateTime(2020, 10, 14, 17, 28, 43, 563, DateTimeKind.Local).AddTicks(3516),
+                            IdIndicateur = 3,
+                            IdMesure = 393,
+                            Value = "36"
                         },
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2020, 12, 8, 11, 36, 0, 702, DateTimeKind.Local).AddTicks(7643),
-                            IdIndicateur = 2,
-                            IdMesure = 68,
-                            Value = "97"
+                            Date = new DateTime(2020, 7, 21, 9, 8, 45, 994, DateTimeKind.Local).AddTicks(5231),
+                            IdIndicateur = 1,
+                            IdMesure = 346,
+                            Value = "30"
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2020, 2, 24, 22, 21, 38, 940, DateTimeKind.Local).AddTicks(4613),
-                            IdIndicateur = 6,
-                            IdMesure = 128,
+                            Date = new DateTime(2020, 12, 5, 12, 57, 8, 556, DateTimeKind.Local).AddTicks(5770),
+                            IdIndicateur = 4,
+                            IdMesure = 136,
                             Value = "48"
                         },
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2020, 4, 20, 5, 38, 1, 99, DateTimeKind.Local).AddTicks(6872),
-                            IdIndicateur = 3,
-                            IdMesure = 31,
-                            Value = "47"
+                            Date = new DateTime(2020, 7, 11, 10, 44, 14, 52, DateTimeKind.Local).AddTicks(4527),
+                            IdIndicateur = 4,
+                            IdMesure = 221,
+                            Value = "87"
                         },
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2020, 11, 9, 1, 4, 3, 898, DateTimeKind.Local).AddTicks(8338),
+                            Date = new DateTime(2020, 6, 20, 15, 13, 40, 501, DateTimeKind.Local).AddTicks(429),
                             IdIndicateur = 3,
-                            IdMesure = 11,
-                            Value = "14"
+                            IdMesure = 195,
+                            Value = "48"
                         },
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2020, 3, 18, 7, 10, 24, 312, DateTimeKind.Local).AddTicks(7130),
-                            IdIndicateur = 4,
-                            IdMesure = 429,
-                            Value = "35"
+                            Date = new DateTime(2020, 5, 21, 14, 40, 48, 422, DateTimeKind.Local).AddTicks(6620),
+                            IdIndicateur = 3,
+                            IdMesure = 127,
+                            Value = "12"
                         },
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2020, 8, 8, 3, 43, 31, 860, DateTimeKind.Local).AddTicks(5802),
-                            IdIndicateur = 6,
-                            IdMesure = 120,
-                            Value = "36"
+                            Date = new DateTime(2020, 3, 1, 5, 59, 27, 679, DateTimeKind.Local).AddTicks(4613),
+                            IdIndicateur = 5,
+                            IdMesure = 161,
+                            Value = "14"
                         },
                         new
                         {
                             Id = 8,
-                            Date = new DateTime(2020, 8, 28, 20, 52, 9, 799, DateTimeKind.Local).AddTicks(2735),
-                            IdIndicateur = 1,
-                            IdMesure = 259,
-                            Value = "31"
+                            Date = new DateTime(2020, 5, 6, 9, 0, 35, 892, DateTimeKind.Local).AddTicks(917),
+                            IdIndicateur = 3,
+                            IdMesure = 312,
+                            Value = "64"
                         },
                         new
                         {
                             Id = 9,
-                            Date = new DateTime(2020, 10, 28, 3, 0, 39, 16, DateTimeKind.Local).AddTicks(9603),
-                            IdIndicateur = 6,
-                            IdMesure = 67,
-                            Value = "10"
+                            Date = new DateTime(2020, 9, 21, 16, 18, 36, 244, DateTimeKind.Local).AddTicks(9110),
+                            IdIndicateur = 4,
+                            IdMesure = 206,
+                            Value = "40"
                         },
                         new
                         {
                             Id = 10,
-                            Date = new DateTime(2020, 4, 12, 13, 7, 31, 115, DateTimeKind.Local).AddTicks(2316),
-                            IdIndicateur = 1,
-                            IdMesure = 421,
-                            Value = "45"
+                            Date = new DateTime(2020, 11, 30, 9, 51, 42, 559, DateTimeKind.Local).AddTicks(9092),
+                            IdIndicateur = 3,
+                            IdMesure = 14,
+                            Value = "59"
                         },
                         new
                         {
                             Id = 11,
-                            Date = new DateTime(2020, 9, 2, 14, 41, 4, 201, DateTimeKind.Local).AddTicks(5457),
-                            IdIndicateur = 6,
-                            IdMesure = 288,
-                            Value = "11"
+                            Date = new DateTime(2020, 8, 5, 13, 36, 3, 85, DateTimeKind.Local).AddTicks(4565),
+                            IdIndicateur = 4,
+                            IdMesure = 275,
+                            Value = "31"
                         },
                         new
                         {
                             Id = 12,
-                            Date = new DateTime(2020, 12, 22, 21, 6, 9, 755, DateTimeKind.Local).AddTicks(7721),
-                            IdIndicateur = 1,
-                            IdMesure = 361,
-                            Value = "36"
+                            Date = new DateTime(2020, 9, 25, 16, 32, 56, 577, DateTimeKind.Local).AddTicks(5613),
+                            IdIndicateur = 5,
+                            IdMesure = 221,
+                            Value = "88"
                         },
                         new
                         {
                             Id = 13,
-                            Date = new DateTime(2020, 4, 13, 21, 2, 50, 192, DateTimeKind.Local).AddTicks(1391),
-                            IdIndicateur = 3,
-                            IdMesure = 33,
+                            Date = new DateTime(2020, 3, 31, 11, 21, 15, 17, DateTimeKind.Local).AddTicks(1120),
+                            IdIndicateur = 5,
+                            IdMesure = 218,
                             Value = "74"
                         },
                         new
                         {
                             Id = 14,
-                            Date = new DateTime(2020, 5, 7, 3, 46, 28, 479, DateTimeKind.Local).AddTicks(6585),
+                            Date = new DateTime(2020, 9, 1, 3, 40, 59, 426, DateTimeKind.Local).AddTicks(4731),
                             IdIndicateur = 6,
-                            IdMesure = 122,
-                            Value = "77"
+                            IdMesure = 142,
+                            Value = "11"
                         },
                         new
                         {
                             Id = 15,
-                            Date = new DateTime(2020, 11, 16, 23, 5, 18, 220, DateTimeKind.Local).AddTicks(5624),
-                            IdIndicateur = 2,
-                            IdMesure = 243,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Date = new DateTime(2020, 11, 25, 5, 29, 32, 616, DateTimeKind.Local).AddTicks(3859),
-                            IdIndicateur = 3,
-                            IdMesure = 432,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Date = new DateTime(2021, 1, 26, 8, 10, 31, 609, DateTimeKind.Local).AddTicks(1816),
-                            IdIndicateur = 6,
-                            IdMesure = 304,
-                            Value = "87"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Date = new DateTime(2020, 3, 2, 5, 50, 8, 608, DateTimeKind.Local).AddTicks(3949),
-                            IdIndicateur = 1,
-                            IdMesure = 157,
-                            Value = "90"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Date = new DateTime(2021, 1, 25, 23, 54, 19, 868, DateTimeKind.Local).AddTicks(4182),
-                            IdIndicateur = 2,
-                            IdMesure = 422,
-                            Value = "67"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            Date = new DateTime(2020, 11, 19, 16, 1, 57, 826, DateTimeKind.Local).AddTicks(1571),
-                            IdIndicateur = 5,
-                            IdMesure = 250,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            Date = new DateTime(2020, 12, 7, 13, 33, 6, 755, DateTimeKind.Local).AddTicks(2231),
-                            IdIndicateur = 1,
-                            IdMesure = 258,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            Date = new DateTime(2020, 11, 8, 12, 12, 36, 495, DateTimeKind.Local).AddTicks(8039),
-                            IdIndicateur = 3,
-                            IdMesure = 145,
-                            Value = "29"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            Date = new DateTime(2020, 6, 18, 15, 40, 5, 834, DateTimeKind.Local).AddTicks(8821),
-                            IdIndicateur = 2,
-                            IdMesure = 110,
-                            Value = "80"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            Date = new DateTime(2020, 11, 27, 5, 19, 0, 350, DateTimeKind.Local).AddTicks(3320),
-                            IdIndicateur = 1,
-                            IdMesure = 262,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            Date = new DateTime(2020, 4, 2, 3, 47, 33, 581, DateTimeKind.Local).AddTicks(154),
-                            IdIndicateur = 5,
-                            IdMesure = 125,
-                            Value = "81"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            Date = new DateTime(2020, 2, 26, 23, 28, 21, 751, DateTimeKind.Local).AddTicks(189),
-                            IdIndicateur = 2,
-                            IdMesure = 71,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            Date = new DateTime(2021, 1, 19, 7, 11, 50, 674, DateTimeKind.Local).AddTicks(5460),
-                            IdIndicateur = 5,
-                            IdMesure = 217,
-                            Value = "91"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            Date = new DateTime(2020, 5, 23, 7, 17, 41, 221, DateTimeKind.Local).AddTicks(1461),
+                            Date = new DateTime(2021, 1, 31, 13, 30, 59, 421, DateTimeKind.Local).AddTicks(7242),
                             IdIndicateur = 4,
-                            IdMesure = 98,
-                            Value = "30"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            Date = new DateTime(2020, 4, 11, 8, 22, 17, 967, DateTimeKind.Local).AddTicks(7726),
-                            IdIndicateur = 2,
-                            IdMesure = 75,
-                            Value = "71"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            Date = new DateTime(2020, 10, 26, 7, 35, 53, 829, DateTimeKind.Local).AddTicks(8249),
-                            IdIndicateur = 3,
-                            IdMesure = 411,
-                            Value = "93"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            Date = new DateTime(2020, 12, 30, 12, 0, 43, 226, DateTimeKind.Local).AddTicks(8500),
-                            IdIndicateur = 4,
-                            IdMesure = 313,
-                            Value = "85"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            Date = new DateTime(2020, 4, 17, 3, 12, 36, 799, DateTimeKind.Local).AddTicks(2673),
-                            IdIndicateur = 2,
-                            IdMesure = 136,
-                            Value = "44"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            Date = new DateTime(2020, 5, 3, 10, 33, 6, 162, DateTimeKind.Local).AddTicks(5840),
-                            IdIndicateur = 3,
-                            IdMesure = 132,
-                            Value = "82"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            Date = new DateTime(2020, 10, 8, 6, 45, 20, 366, DateTimeKind.Local).AddTicks(117),
-                            IdIndicateur = 2,
-                            IdMesure = 8,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            Date = new DateTime(2020, 7, 18, 13, 20, 10, 222, DateTimeKind.Local).AddTicks(4804),
-                            IdIndicateur = 3,
-                            IdMesure = 133,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            Date = new DateTime(2020, 7, 21, 21, 51, 23, 359, DateTimeKind.Local).AddTicks(8033),
-                            IdIndicateur = 1,
-                            IdMesure = 205,
-                            Value = "16"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            Date = new DateTime(2020, 9, 22, 6, 18, 6, 687, DateTimeKind.Local).AddTicks(1633),
-                            IdIndicateur = 1,
-                            IdMesure = 426,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            Date = new DateTime(2020, 4, 7, 10, 23, 54, 686, DateTimeKind.Local).AddTicks(1141),
-                            IdIndicateur = 1,
-                            IdMesure = 189,
-                            Value = "37"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            Date = new DateTime(2020, 7, 16, 2, 25, 18, 635, DateTimeKind.Local).AddTicks(7829),
-                            IdIndicateur = 3,
-                            IdMesure = 368,
-                            Value = "26"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            Date = new DateTime(2020, 11, 6, 13, 40, 22, 424, DateTimeKind.Local).AddTicks(8377),
-                            IdIndicateur = 4,
-                            IdMesure = 167,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            Date = new DateTime(2020, 4, 25, 0, 30, 6, 552, DateTimeKind.Local).AddTicks(2492),
-                            IdIndicateur = 1,
-                            IdMesure = 152,
-                            Value = "82"
-                        },
-                        new
-                        {
-                            Id = 42,
-                            Date = new DateTime(2020, 3, 10, 20, 29, 37, 110, DateTimeKind.Local).AddTicks(499),
-                            IdIndicateur = 3,
-                            IdMesure = 375,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            Date = new DateTime(2020, 9, 7, 4, 58, 28, 581, DateTimeKind.Local).AddTicks(6354),
-                            IdIndicateur = 2,
-                            IdMesure = 33,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            Date = new DateTime(2020, 7, 18, 5, 3, 28, 88, DateTimeKind.Local).AddTicks(6411),
-                            IdIndicateur = 2,
-                            IdMesure = 298,
-                            Value = "88"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            Date = new DateTime(2020, 11, 6, 22, 57, 56, 439, DateTimeKind.Local).AddTicks(8967),
-                            IdIndicateur = 2,
-                            IdMesure = 209,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            Date = new DateTime(2020, 11, 8, 11, 0, 42, 166, DateTimeKind.Local).AddTicks(2761),
-                            IdIndicateur = 6,
-                            IdMesure = 297,
-                            Value = "48"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            Date = new DateTime(2020, 7, 31, 14, 43, 12, 322, DateTimeKind.Local).AddTicks(6372),
-                            IdIndicateur = 6,
-                            IdMesure = 39,
-                            Value = "98"
-                        },
-                        new
-                        {
-                            Id = 48,
-                            Date = new DateTime(2020, 7, 4, 7, 49, 1, 974, DateTimeKind.Local).AddTicks(4942),
-                            IdIndicateur = 3,
-                            IdMesure = 15,
+                            IdMesure = 196,
                             Value = "100"
                         },
                         new
                         {
-                            Id = 49,
-                            Date = new DateTime(2020, 9, 19, 22, 55, 17, 282, DateTimeKind.Local).AddTicks(7635),
-                            IdIndicateur = 3,
-                            IdMesure = 347,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            Date = new DateTime(2020, 8, 3, 4, 39, 19, 476, DateTimeKind.Local).AddTicks(6627),
+                            Id = 16,
+                            Date = new DateTime(2020, 4, 19, 2, 4, 45, 977, DateTimeKind.Local).AddTicks(3997),
                             IdIndicateur = 2,
-                            IdMesure = 138,
-                            Value = "76"
+                            IdMesure = 15,
+                            Value = "90"
                         },
                         new
                         {
-                            Id = 51,
-                            Date = new DateTime(2021, 1, 6, 19, 38, 29, 237, DateTimeKind.Local).AddTicks(4110),
+                            Id = 17,
+                            Date = new DateTime(2020, 3, 20, 9, 44, 16, 793, DateTimeKind.Local).AddTicks(4675),
                             IdIndicateur = 4,
-                            IdMesure = 119,
-                            Value = "41"
-                        },
-                        new
-                        {
-                            Id = 52,
-                            Date = new DateTime(2020, 8, 14, 13, 23, 42, 962, DateTimeKind.Local).AddTicks(5456),
-                            IdIndicateur = 6,
-                            IdMesure = 191,
-                            Value = "28"
-                        },
-                        new
-                        {
-                            Id = 53,
-                            Date = new DateTime(2020, 12, 31, 22, 42, 32, 599, DateTimeKind.Local).AddTicks(1216),
-                            IdIndicateur = 4,
-                            IdMesure = 256,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 54,
-                            Date = new DateTime(2020, 10, 4, 7, 49, 45, 921, DateTimeKind.Local).AddTicks(674),
-                            IdIndicateur = 3,
-                            IdMesure = 212,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 55,
-                            Date = new DateTime(2020, 3, 14, 13, 12, 50, 273, DateTimeKind.Local).AddTicks(3879),
-                            IdIndicateur = 4,
-                            IdMesure = 268,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 56,
-                            Date = new DateTime(2020, 7, 26, 8, 8, 9, 320, DateTimeKind.Local).AddTicks(6755),
-                            IdIndicateur = 2,
-                            IdMesure = 195,
-                            Value = "94"
-                        },
-                        new
-                        {
-                            Id = 57,
-                            Date = new DateTime(2020, 11, 19, 14, 53, 16, 74, DateTimeKind.Local).AddTicks(4622),
-                            IdIndicateur = 6,
-                            IdMesure = 132,
-                            Value = "70"
-                        },
-                        new
-                        {
-                            Id = 58,
-                            Date = new DateTime(2020, 11, 27, 15, 1, 29, 89, DateTimeKind.Local).AddTicks(2094),
-                            IdIndicateur = 3,
-                            IdMesure = 25,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 59,
-                            Date = new DateTime(2021, 1, 10, 1, 58, 21, 777, DateTimeKind.Local).AddTicks(405),
-                            IdIndicateur = 4,
-                            IdMesure = 218,
-                            Value = "12"
-                        },
-                        new
-                        {
-                            Id = 60,
-                            Date = new DateTime(2020, 11, 23, 12, 5, 41, 287, DateTimeKind.Local).AddTicks(5549),
-                            IdIndicateur = 2,
-                            IdMesure = 264,
-                            Value = "88"
-                        },
-                        new
-                        {
-                            Id = 61,
-                            Date = new DateTime(2020, 9, 9, 16, 44, 18, 869, DateTimeKind.Local).AddTicks(1850),
-                            IdIndicateur = 3,
-                            IdMesure = 311,
-                            Value = "99"
-                        },
-                        new
-                        {
-                            Id = 62,
-                            Date = new DateTime(2020, 9, 25, 18, 17, 19, 892, DateTimeKind.Local).AddTicks(9492),
-                            IdIndicateur = 6,
-                            IdMesure = 157,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 63,
-                            Date = new DateTime(2020, 5, 3, 3, 32, 56, 843, DateTimeKind.Local).AddTicks(6662),
-                            IdIndicateur = 6,
-                            IdMesure = 348,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 64,
-                            Date = new DateTime(2021, 1, 18, 17, 29, 28, 325, DateTimeKind.Local).AddTicks(6226),
-                            IdIndicateur = 5,
-                            IdMesure = 214,
-                            Value = "20"
-                        },
-                        new
-                        {
-                            Id = 65,
-                            Date = new DateTime(2020, 8, 21, 5, 4, 43, 344, DateTimeKind.Local).AddTicks(768),
-                            IdIndicateur = 5,
-                            IdMesure = 275,
-                            Value = "85"
-                        },
-                        new
-                        {
-                            Id = 66,
-                            Date = new DateTime(2020, 12, 29, 0, 44, 30, 26, DateTimeKind.Local).AddTicks(3028),
-                            IdIndicateur = 6,
-                            IdMesure = 73,
-                            Value = "53"
-                        },
-                        new
-                        {
-                            Id = 67,
-                            Date = new DateTime(2020, 4, 11, 17, 37, 53, 16, DateTimeKind.Local).AddTicks(9107),
-                            IdIndicateur = 6,
-                            IdMesure = 124,
-                            Value = "69"
-                        },
-                        new
-                        {
-                            Id = 68,
-                            Date = new DateTime(2020, 10, 28, 14, 33, 4, 481, DateTimeKind.Local).AddTicks(6772),
-                            IdIndicateur = 3,
-                            IdMesure = 155,
-                            Value = "81"
-                        },
-                        new
-                        {
-                            Id = 69,
-                            Date = new DateTime(2021, 2, 20, 20, 50, 22, 909, DateTimeKind.Local).AddTicks(7305),
-                            IdIndicateur = 3,
-                            IdMesure = 281,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 70,
-                            Date = new DateTime(2020, 9, 11, 17, 26, 41, 972, DateTimeKind.Local).AddTicks(7529),
-                            IdIndicateur = 3,
-                            IdMesure = 84,
-                            Value = "30"
-                        },
-                        new
-                        {
-                            Id = 71,
-                            Date = new DateTime(2020, 12, 16, 7, 19, 20, 259, DateTimeKind.Local).AddTicks(2330),
-                            IdIndicateur = 2,
-                            IdMesure = 335,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 72,
-                            Date = new DateTime(2020, 6, 8, 6, 35, 47, 408, DateTimeKind.Local).AddTicks(4271),
-                            IdIndicateur = 3,
-                            IdMesure = 268,
+                            IdMesure = 11,
                             Value = "78"
                         },
                         new
                         {
-                            Id = 73,
-                            Date = new DateTime(2020, 4, 23, 16, 17, 45, 243, DateTimeKind.Local).AddTicks(1068),
+                            Id = 18,
+                            Date = new DateTime(2020, 3, 2, 21, 58, 7, 552, DateTimeKind.Local).AddTicks(6109),
+                            IdIndicateur = 3,
+                            IdMesure = 130,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Date = new DateTime(2020, 7, 4, 10, 6, 36, 109, DateTimeKind.Local).AddTicks(1567),
+                            IdIndicateur = 2,
+                            IdMesure = 353,
+                            Value = "14"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Date = new DateTime(2020, 7, 16, 4, 5, 46, 271, DateTimeKind.Local).AddTicks(4769),
+                            IdIndicateur = 3,
+                            IdMesure = 79,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Date = new DateTime(2020, 4, 6, 1, 5, 32, 469, DateTimeKind.Local).AddTicks(6155),
+                            IdIndicateur = 4,
+                            IdMesure = 374,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Date = new DateTime(2020, 8, 14, 22, 27, 17, 766, DateTimeKind.Local).AddTicks(515),
+                            IdIndicateur = 5,
+                            IdMesure = 324,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Date = new DateTime(2020, 8, 25, 15, 20, 51, 18, DateTimeKind.Local).AddTicks(6838),
                             IdIndicateur = 6,
-                            IdMesure = 219,
+                            IdMesure = 241,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Date = new DateTime(2020, 10, 2, 22, 4, 22, 225, DateTimeKind.Local).AddTicks(1313),
+                            IdIndicateur = 3,
+                            IdMesure = 204,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Date = new DateTime(2020, 4, 6, 4, 47, 29, 643, DateTimeKind.Local).AddTicks(4961),
+                            IdIndicateur = 3,
+                            IdMesure = 332,
+                            Value = "58"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Date = new DateTime(2021, 1, 29, 13, 39, 16, 700, DateTimeKind.Local).AddTicks(7009),
+                            IdIndicateur = 6,
+                            IdMesure = 2,
+                            Value = "20"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Date = new DateTime(2021, 1, 3, 18, 36, 59, 629, DateTimeKind.Local).AddTicks(1265),
+                            IdIndicateur = 5,
+                            IdMesure = 101,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Date = new DateTime(2020, 3, 4, 22, 49, 24, 346, DateTimeKind.Local).AddTicks(2234),
+                            IdIndicateur = 3,
+                            IdMesure = 387,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Date = new DateTime(2020, 10, 2, 1, 19, 14, 527, DateTimeKind.Local).AddTicks(7199),
+                            IdIndicateur = 3,
+                            IdMesure = 118,
+                            Value = "29"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Date = new DateTime(2020, 10, 27, 7, 19, 14, 750, DateTimeKind.Local).AddTicks(4203),
+                            IdIndicateur = 6,
+                            IdMesure = 324,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Date = new DateTime(2020, 9, 15, 6, 58, 19, 632, DateTimeKind.Local).AddTicks(616),
+                            IdIndicateur = 2,
+                            IdMesure = 60,
+                            Value = "44"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Date = new DateTime(2020, 10, 27, 0, 11, 19, 301, DateTimeKind.Local).AddTicks(2606),
+                            IdIndicateur = 1,
+                            IdMesure = 195,
+                            Value = "56"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Date = new DateTime(2020, 5, 8, 20, 52, 33, 679, DateTimeKind.Local).AddTicks(6396),
+                            IdIndicateur = 4,
+                            IdMesure = 424,
+                            Value = "90"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Date = new DateTime(2020, 3, 23, 14, 27, 31, 721, DateTimeKind.Local).AddTicks(3302),
+                            IdIndicateur = 3,
+                            IdMesure = 409,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Date = new DateTime(2021, 2, 20, 11, 11, 3, 66, DateTimeKind.Local).AddTicks(9407),
+                            IdIndicateur = 3,
+                            IdMesure = 224,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Date = new DateTime(2020, 12, 22, 20, 0, 38, 578, DateTimeKind.Local).AddTicks(8521),
+                            IdIndicateur = 3,
+                            IdMesure = 260,
+                            Value = "68"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Date = new DateTime(2021, 1, 25, 14, 33, 18, 431, DateTimeKind.Local).AddTicks(9825),
+                            IdIndicateur = 1,
+                            IdMesure = 239,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Date = new DateTime(2020, 5, 21, 2, 23, 34, 319, DateTimeKind.Local).AddTicks(2985),
+                            IdIndicateur = 5,
+                            IdMesure = 117,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Date = new DateTime(2020, 5, 14, 15, 51, 38, 809, DateTimeKind.Local).AddTicks(645),
+                            IdIndicateur = 2,
+                            IdMesure = 119,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Date = new DateTime(2021, 1, 6, 7, 52, 45, 423, DateTimeKind.Local).AddTicks(9248),
+                            IdIndicateur = 5,
+                            IdMesure = 239,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Date = new DateTime(2020, 12, 1, 16, 23, 31, 844, DateTimeKind.Local).AddTicks(7964),
+                            IdIndicateur = 5,
+                            IdMesure = 94,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Date = new DateTime(2020, 4, 1, 7, 43, 25, 101, DateTimeKind.Local).AddTicks(2346),
+                            IdIndicateur = 4,
+                            IdMesure = 214,
+                            Value = "13"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Date = new DateTime(2020, 10, 27, 21, 37, 44, 638, DateTimeKind.Local).AddTicks(1009),
+                            IdIndicateur = 2,
+                            IdMesure = 337,
+                            Value = "90"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Date = new DateTime(2020, 5, 9, 18, 57, 45, 397, DateTimeKind.Local).AddTicks(3449),
+                            IdIndicateur = 1,
+                            IdMesure = 146,
+                            Value = "76"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Date = new DateTime(2020, 9, 15, 19, 43, 27, 902, DateTimeKind.Local).AddTicks(844),
+                            IdIndicateur = 2,
+                            IdMesure = 251,
+                            Value = "91"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Date = new DateTime(2020, 12, 25, 6, 49, 53, 367, DateTimeKind.Local).AddTicks(8591),
+                            IdIndicateur = 3,
+                            IdMesure = 375,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Date = new DateTime(2020, 6, 1, 14, 15, 3, 776, DateTimeKind.Local).AddTicks(4026),
+                            IdIndicateur = 1,
+                            IdMesure = 435,
+                            Value = "58"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Date = new DateTime(2020, 4, 24, 4, 42, 59, 656, DateTimeKind.Local).AddTicks(7890),
+                            IdIndicateur = 5,
+                            IdMesure = 268,
+                            Value = "44"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Date = new DateTime(2020, 4, 25, 20, 13, 32, 537, DateTimeKind.Local).AddTicks(5191),
+                            IdIndicateur = 4,
+                            IdMesure = 343,
+                            Value = "82"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Date = new DateTime(2021, 2, 9, 7, 33, 3, 695, DateTimeKind.Local).AddTicks(9546),
+                            IdIndicateur = 3,
+                            IdMesure = 74,
+                            Value = "72"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Date = new DateTime(2020, 3, 2, 13, 0, 53, 869, DateTimeKind.Local).AddTicks(6178),
+                            IdIndicateur = 2,
+                            IdMesure = 419,
+                            Value = "38"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Date = new DateTime(2020, 12, 23, 7, 27, 40, 999, DateTimeKind.Local).AddTicks(3343),
+                            IdIndicateur = 2,
+                            IdMesure = 399,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Date = new DateTime(2020, 10, 23, 5, 59, 8, 751, DateTimeKind.Local).AddTicks(5414),
+                            IdIndicateur = 6,
+                            IdMesure = 204,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Date = new DateTime(2020, 5, 14, 15, 58, 46, 741, DateTimeKind.Local).AddTicks(8070),
+                            IdIndicateur = 2,
+                            IdMesure = 338,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Date = new DateTime(2020, 10, 12, 9, 7, 10, 505, DateTimeKind.Local).AddTicks(8839),
+                            IdIndicateur = 6,
+                            IdMesure = 304,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Date = new DateTime(2020, 3, 15, 13, 38, 12, 479, DateTimeKind.Local).AddTicks(2830),
+                            IdIndicateur = 2,
+                            IdMesure = 425,
+                            Value = "36"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Date = new DateTime(2020, 5, 4, 8, 27, 50, 94, DateTimeKind.Local).AddTicks(9884),
+                            IdIndicateur = 1,
+                            IdMesure = 395,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Date = new DateTime(2020, 12, 26, 9, 7, 13, 106, DateTimeKind.Local).AddTicks(5940),
+                            IdIndicateur = 6,
+                            IdMesure = 129,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Date = new DateTime(2020, 8, 15, 11, 16, 44, 686, DateTimeKind.Local).AddTicks(4518),
+                            IdIndicateur = 6,
+                            IdMesure = 226,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Date = new DateTime(2020, 6, 23, 7, 48, 58, 325, DateTimeKind.Local).AddTicks(7802),
+                            IdIndicateur = 1,
+                            IdMesure = 52,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Date = new DateTime(2020, 6, 29, 18, 5, 55, 164, DateTimeKind.Local).AddTicks(22),
+                            IdIndicateur = 3,
+                            IdMesure = 299,
+                            Value = "34"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Date = new DateTime(2020, 7, 19, 19, 16, 26, 484, DateTimeKind.Local).AddTicks(3645),
+                            IdIndicateur = 1,
+                            IdMesure = 269,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Date = new DateTime(2020, 12, 25, 22, 9, 43, 733, DateTimeKind.Local).AddTicks(3453),
+                            IdIndicateur = 1,
+                            IdMesure = 107,
+                            Value = "22"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Date = new DateTime(2020, 6, 29, 21, 28, 25, 812, DateTimeKind.Local).AddTicks(1637),
+                            IdIndicateur = 2,
+                            IdMesure = 76,
+                            Value = "16"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Date = new DateTime(2020, 4, 13, 10, 18, 58, 280, DateTimeKind.Local).AddTicks(3075),
+                            IdIndicateur = 3,
+                            IdMesure = 18,
+                            Value = "17"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Date = new DateTime(2020, 8, 1, 3, 51, 24, 7, DateTimeKind.Local).AddTicks(3142),
+                            IdIndicateur = 4,
+                            IdMesure = 340,
+                            Value = "90"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Date = new DateTime(2020, 3, 25, 10, 9, 45, 911, DateTimeKind.Local).AddTicks(3460),
+                            IdIndicateur = 1,
+                            IdMesure = 143,
+                            Value = "84"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Date = new DateTime(2020, 7, 15, 1, 26, 47, 979, DateTimeKind.Local).AddTicks(7365),
+                            IdIndicateur = 5,
+                            IdMesure = 305,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Date = new DateTime(2020, 7, 12, 23, 11, 37, 789, DateTimeKind.Local).AddTicks(4038),
+                            IdIndicateur = 4,
+                            IdMesure = 325,
+                            Value = "72"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Date = new DateTime(2020, 4, 12, 22, 55, 5, 610, DateTimeKind.Local).AddTicks(3955),
+                            IdIndicateur = 4,
+                            IdMesure = 17,
+                            Value = "40"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Date = new DateTime(2020, 11, 15, 2, 1, 22, 911, DateTimeKind.Local).AddTicks(297),
+                            IdIndicateur = 6,
+                            IdMesure = 428,
+                            Value = "61"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Date = new DateTime(2020, 12, 12, 20, 49, 3, 320, DateTimeKind.Local).AddTicks(2897),
+                            IdIndicateur = 3,
+                            IdMesure = 331,
+                            Value = "100"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Date = new DateTime(2020, 5, 25, 2, 26, 14, 123, DateTimeKind.Local).AddTicks(9438),
+                            IdIndicateur = 5,
+                            IdMesure = 341,
                             Value = "54"
                         },
                         new
                         {
                             Id = 74,
-                            Date = new DateTime(2020, 5, 15, 20, 13, 54, 225, DateTimeKind.Local).AddTicks(8457),
+                            Date = new DateTime(2021, 2, 1, 12, 51, 47, 747, DateTimeKind.Local).AddTicks(7758),
                             IdIndicateur = 3,
-                            IdMesure = 200,
-                            Value = "18"
+                            IdMesure = 2,
+                            Value = "91"
                         },
                         new
                         {
                             Id = 75,
-                            Date = new DateTime(2020, 9, 4, 9, 42, 38, 286, DateTimeKind.Local).AddTicks(9923),
+                            Date = new DateTime(2020, 7, 29, 17, 46, 39, 553, DateTimeKind.Local).AddTicks(3718),
                             IdIndicateur = 5,
-                            IdMesure = 420,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 76,
-                            Date = new DateTime(2020, 11, 5, 12, 7, 46, 877, DateTimeKind.Local).AddTicks(7005),
-                            IdIndicateur = 2,
-                            IdMesure = 87,
-                            Value = "15"
-                        },
-                        new
-                        {
-                            Id = 77,
-                            Date = new DateTime(2020, 2, 25, 3, 14, 7, 658, DateTimeKind.Local).AddTicks(785),
-                            IdIndicateur = 3,
-                            IdMesure = 35,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 78,
-                            Date = new DateTime(2020, 12, 26, 7, 55, 50, 422, DateTimeKind.Local).AddTicks(2086),
-                            IdIndicateur = 1,
-                            IdMesure = 240,
-                            Value = "92"
-                        },
-                        new
-                        {
-                            Id = 79,
-                            Date = new DateTime(2020, 3, 27, 20, 50, 52, 747, DateTimeKind.Local).AddTicks(5892),
-                            IdIndicateur = 3,
-                            IdMesure = 238,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 80,
-                            Date = new DateTime(2020, 5, 5, 1, 27, 56, 125, DateTimeKind.Local).AddTicks(3046),
-                            IdIndicateur = 2,
-                            IdMesure = 204,
-                            Value = "59"
-                        },
-                        new
-                        {
-                            Id = 81,
-                            Date = new DateTime(2020, 9, 20, 21, 41, 23, 697, DateTimeKind.Local).AddTicks(8374),
-                            IdIndicateur = 6,
-                            IdMesure = 59,
-                            Value = "43"
-                        },
-                        new
-                        {
-                            Id = 82,
-                            Date = new DateTime(2020, 11, 7, 11, 18, 30, 100, DateTimeKind.Local).AddTicks(8984),
-                            IdIndicateur = 6,
-                            IdMesure = 1,
-                            Value = "88"
-                        },
-                        new
-                        {
-                            Id = 83,
-                            Date = new DateTime(2020, 10, 12, 20, 47, 38, 78, DateTimeKind.Local).AddTicks(2367),
-                            IdIndicateur = 3,
-                            IdMesure = 176,
-                            Value = "14"
-                        },
-                        new
-                        {
-                            Id = 84,
-                            Date = new DateTime(2020, 9, 1, 5, 31, 40, 4, DateTimeKind.Local).AddTicks(7515),
-                            IdIndicateur = 5,
-                            IdMesure = 128,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 85,
-                            Date = new DateTime(2021, 1, 9, 19, 11, 27, 802, DateTimeKind.Local).AddTicks(5115),
-                            IdIndicateur = 1,
-                            IdMesure = 85,
-                            Value = "20"
-                        },
-                        new
-                        {
-                            Id = 86,
-                            Date = new DateTime(2020, 10, 1, 19, 29, 31, 554, DateTimeKind.Local).AddTicks(9117),
-                            IdIndicateur = 5,
-                            IdMesure = 135,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 87,
-                            Date = new DateTime(2021, 1, 26, 6, 38, 34, 573, DateTimeKind.Local).AddTicks(8049),
-                            IdIndicateur = 2,
-                            IdMesure = 8,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 88,
-                            Date = new DateTime(2020, 6, 19, 9, 36, 12, 287, DateTimeKind.Local).AddTicks(5972),
-                            IdIndicateur = 2,
-                            IdMesure = 262,
-                            Value = "38"
-                        },
-                        new
-                        {
-                            Id = 89,
-                            Date = new DateTime(2020, 11, 20, 9, 42, 57, 890, DateTimeKind.Local).AddTicks(7886),
-                            IdIndicateur = 3,
-                            IdMesure = 123,
+                            IdMesure = 206,
                             Value = "40"
                         },
                         new
                         {
-                            Id = 90,
-                            Date = new DateTime(2021, 1, 7, 4, 17, 31, 81, DateTimeKind.Local).AddTicks(5461),
+                            Id = 76,
+                            Date = new DateTime(2020, 8, 27, 11, 41, 9, 195, DateTimeKind.Local).AddTicks(3466),
+                            IdIndicateur = 1,
+                            IdMesure = 92,
+                            Value = "92"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Date = new DateTime(2020, 7, 16, 2, 9, 56, 550, DateTimeKind.Local).AddTicks(866),
                             IdIndicateur = 4,
-                            IdMesure = 399,
-                            Value = "37"
+                            IdMesure = 153,
+                            Value = "48"
                         },
                         new
                         {
-                            Id = 91,
-                            Date = new DateTime(2021, 1, 21, 16, 23, 38, 21, DateTimeKind.Local).AddTicks(2779),
-                            IdIndicateur = 6,
-                            IdMesure = 272,
-                            Value = "64"
+                            Id = 78,
+                            Date = new DateTime(2020, 9, 28, 4, 57, 49, 694, DateTimeKind.Local).AddTicks(1666),
+                            IdIndicateur = 3,
+                            IdMesure = 274,
+                            Value = "66"
                         },
                         new
                         {
-                            Id = 92,
-                            Date = new DateTime(2020, 5, 8, 23, 58, 20, 267, DateTimeKind.Local).AddTicks(339),
-                            IdIndicateur = 4,
-                            IdMesure = 25,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 93,
-                            Date = new DateTime(2020, 11, 4, 18, 57, 5, 744, DateTimeKind.Local).AddTicks(4229),
+                            Id = 79,
+                            Date = new DateTime(2020, 4, 24, 5, 39, 22, 889, DateTimeKind.Local).AddTicks(1338),
                             IdIndicateur = 2,
-                            IdMesure = 54,
+                            IdMesure = 14,
+                            Value = "90"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Date = new DateTime(2020, 4, 14, 17, 42, 36, 302, DateTimeKind.Local).AddTicks(7096),
+                            IdIndicateur = 4,
+                            IdMesure = 23,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Date = new DateTime(2020, 4, 11, 14, 43, 47, 90, DateTimeKind.Local).AddTicks(495),
+                            IdIndicateur = 4,
+                            IdMesure = 21,
+                            Value = "22"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Date = new DateTime(2020, 10, 16, 10, 28, 57, 211, DateTimeKind.Local).AddTicks(2776),
+                            IdIndicateur = 6,
+                            IdMesure = 112,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Date = new DateTime(2020, 10, 24, 4, 34, 58, 867, DateTimeKind.Local).AddTicks(4835),
+                            IdIndicateur = 4,
+                            IdMesure = 289,
+                            Value = "23"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Date = new DateTime(2020, 4, 24, 22, 30, 18, 177, DateTimeKind.Local).AddTicks(626),
+                            IdIndicateur = 5,
+                            IdMesure = 130,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Date = new DateTime(2020, 11, 30, 15, 34, 20, 839, DateTimeKind.Local).AddTicks(9606),
+                            IdIndicateur = 1,
+                            IdMesure = 16,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Date = new DateTime(2020, 10, 25, 18, 58, 13, 577, DateTimeKind.Local).AddTicks(4777),
+                            IdIndicateur = 3,
+                            IdMesure = 17,
+                            Value = "62"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Date = new DateTime(2020, 5, 10, 15, 15, 20, 441, DateTimeKind.Local).AddTicks(8004),
+                            IdIndicateur = 1,
+                            IdMesure = 89,
                             Value = "75"
                         },
                         new
                         {
-                            Id = 94,
-                            Date = new DateTime(2020, 10, 8, 6, 30, 59, 685, DateTimeKind.Local).AddTicks(3447),
-                            IdIndicateur = 3,
-                            IdMesure = 74,
-                            Value = "55"
-                        },
-                        new
-                        {
-                            Id = 95,
-                            Date = new DateTime(2020, 6, 23, 2, 43, 20, 669, DateTimeKind.Local).AddTicks(7052),
-                            IdIndicateur = 6,
-                            IdMesure = 336,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 96,
-                            Date = new DateTime(2020, 12, 3, 21, 20, 50, 382, DateTimeKind.Local).AddTicks(561),
-                            IdIndicateur = 5,
-                            IdMesure = 285,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 97,
-                            Date = new DateTime(2020, 3, 22, 22, 44, 20, 418, DateTimeKind.Local).AddTicks(501),
-                            IdIndicateur = 3,
-                            IdMesure = 65,
-                            Value = "17"
-                        },
-                        new
-                        {
-                            Id = 98,
-                            Date = new DateTime(2020, 8, 3, 3, 31, 31, 457, DateTimeKind.Local).AddTicks(6880),
-                            IdIndicateur = 6,
-                            IdMesure = 179,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 99,
-                            Date = new DateTime(2020, 9, 17, 6, 13, 0, 949, DateTimeKind.Local).AddTicks(4934),
-                            IdIndicateur = 6,
-                            IdMesure = 375,
-                            Value = "55"
-                        },
-                        new
-                        {
-                            Id = 100,
-                            Date = new DateTime(2020, 9, 3, 15, 39, 52, 645, DateTimeKind.Local).AddTicks(3741),
+                            Id = 88,
+                            Date = new DateTime(2020, 4, 12, 6, 22, 22, 912, DateTimeKind.Local).AddTicks(3164),
                             IdIndicateur = 1,
-                            IdMesure = 69,
-                            Value = "41"
+                            IdMesure = 216,
+                            Value = "11"
                         },
                         new
                         {
-                            Id = 101,
-                            Date = new DateTime(2020, 10, 23, 5, 56, 19, 160, DateTimeKind.Local).AddTicks(3582),
+                            Id = 89,
+                            Date = new DateTime(2020, 7, 24, 2, 18, 26, 999, DateTimeKind.Local).AddTicks(6215),
                             IdIndicateur = 3,
-                            IdMesure = 199,
-                            Value = "97"
+                            IdMesure = 386,
+                            Value = "58"
                         },
                         new
                         {
-                            Id = 102,
-                            Date = new DateTime(2020, 4, 14, 9, 24, 6, 718, DateTimeKind.Local).AddTicks(5692),
+                            Id = 90,
+                            Date = new DateTime(2020, 9, 17, 13, 46, 46, 18, DateTimeKind.Local).AddTicks(789),
                             IdIndicateur = 1,
-                            IdMesure = 200,
-                            Value = "56"
+                            IdMesure = 3,
+                            Value = "31"
                         },
                         new
                         {
-                            Id = 103,
-                            Date = new DateTime(2020, 3, 16, 1, 15, 13, 484, DateTimeKind.Local).AddTicks(7416),
-                            IdIndicateur = 6,
-                            IdMesure = 378,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 104,
-                            Date = new DateTime(2020, 4, 24, 6, 22, 29, 908, DateTimeKind.Local).AddTicks(7090),
-                            IdIndicateur = 4,
-                            IdMesure = 96,
-                            Value = "53"
-                        },
-                        new
-                        {
-                            Id = 105,
-                            Date = new DateTime(2020, 6, 15, 2, 59, 55, 531, DateTimeKind.Local).AddTicks(4991),
-                            IdIndicateur = 3,
-                            IdMesure = 76,
+                            Id = 91,
+                            Date = new DateTime(2021, 2, 23, 4, 4, 16, 105, DateTimeKind.Local).AddTicks(6412),
+                            IdIndicateur = 1,
+                            IdMesure = 395,
                             Value = "96"
                         },
                         new
                         {
-                            Id = 106,
-                            Date = new DateTime(2021, 1, 7, 8, 30, 53, 97, DateTimeKind.Local).AddTicks(3465),
+                            Id = 92,
+                            Date = new DateTime(2020, 11, 16, 13, 43, 8, 664, DateTimeKind.Local).AddTicks(7617),
+                            IdIndicateur = 2,
+                            IdMesure = 130,
+                            Value = "20"
+                        },
+                        new
+                        {
+                            Id = 93,
+                            Date = new DateTime(2020, 3, 3, 7, 54, 21, 793, DateTimeKind.Local).AddTicks(3479),
+                            IdIndicateur = 1,
+                            IdMesure = 239,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 94,
+                            Date = new DateTime(2020, 6, 27, 3, 10, 15, 306, DateTimeKind.Local).AddTicks(8430),
+                            IdIndicateur = 4,
+                            IdMesure = 292,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 95,
+                            Date = new DateTime(2020, 12, 22, 5, 52, 5, 52, DateTimeKind.Local).AddTicks(2099),
+                            IdIndicateur = 5,
+                            IdMesure = 19,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 96,
+                            Date = new DateTime(2020, 7, 18, 4, 26, 31, 985, DateTimeKind.Local).AddTicks(3402),
+                            IdIndicateur = 5,
+                            IdMesure = 81,
+                            Value = "88"
+                        },
+                        new
+                        {
+                            Id = 97,
+                            Date = new DateTime(2020, 4, 26, 23, 51, 47, 467, DateTimeKind.Local).AddTicks(609),
+                            IdIndicateur = 2,
+                            IdMesure = 264,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 98,
+                            Date = new DateTime(2021, 2, 23, 3, 47, 41, 218, DateTimeKind.Local).AddTicks(3394),
+                            IdIndicateur = 1,
+                            IdMesure = 98,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 99,
+                            Date = new DateTime(2020, 3, 5, 16, 14, 20, 755, DateTimeKind.Local).AddTicks(9728),
+                            IdIndicateur = 3,
+                            IdMesure = 361,
+                            Value = "40"
+                        },
+                        new
+                        {
+                            Id = 100,
+                            Date = new DateTime(2020, 3, 24, 14, 24, 52, 530, DateTimeKind.Local).AddTicks(8438),
+                            IdIndicateur = 4,
+                            IdMesure = 188,
+                            Value = "13"
+                        },
+                        new
+                        {
+                            Id = 101,
+                            Date = new DateTime(2020, 9, 15, 3, 41, 24, 839, DateTimeKind.Local).AddTicks(1697),
+                            IdIndicateur = 3,
+                            IdMesure = 420,
+                            Value = "32"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            Date = new DateTime(2020, 11, 2, 7, 47, 55, 597, DateTimeKind.Local).AddTicks(920),
+                            IdIndicateur = 1,
+                            IdMesure = 110,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 103,
+                            Date = new DateTime(2020, 12, 13, 6, 5, 19, 526, DateTimeKind.Local).AddTicks(7182),
                             IdIndicateur = 6,
-                            IdMesure = 198,
-                            Value = "45"
+                            IdMesure = 278,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 104,
+                            Date = new DateTime(2021, 1, 24, 1, 18, 30, 41, DateTimeKind.Local).AddTicks(5399),
+                            IdIndicateur = 1,
+                            IdMesure = 157,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Date = new DateTime(2021, 2, 18, 0, 46, 29, 601, DateTimeKind.Local).AddTicks(7041),
+                            IdIndicateur = 3,
+                            IdMesure = 86,
+                            Value = "46"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Date = new DateTime(2020, 9, 3, 4, 24, 56, 256, DateTimeKind.Local).AddTicks(7506),
+                            IdIndicateur = 2,
+                            IdMesure = 360,
+                            Value = "14"
                         },
                         new
                         {
                             Id = 107,
-                            Date = new DateTime(2020, 12, 17, 22, 12, 42, 223, DateTimeKind.Local).AddTicks(3964),
-                            IdIndicateur = 1,
-                            IdMesure = 303,
-                            Value = "50"
+                            Date = new DateTime(2020, 12, 22, 3, 46, 1, 417, DateTimeKind.Local).AddTicks(1909),
+                            IdIndicateur = 5,
+                            IdMesure = 95,
+                            Value = "23"
                         },
                         new
                         {
                             Id = 108,
-                            Date = new DateTime(2020, 6, 13, 6, 41, 48, 159, DateTimeKind.Local).AddTicks(9206),
-                            IdIndicateur = 1,
-                            IdMesure = 399,
-                            Value = "30"
+                            Date = new DateTime(2020, 9, 5, 17, 16, 14, 83, DateTimeKind.Local).AddTicks(6506),
+                            IdIndicateur = 6,
+                            IdMesure = 106,
+                            Value = "31"
                         },
                         new
                         {
                             Id = 109,
-                            Date = new DateTime(2020, 12, 29, 2, 41, 50, 573, DateTimeKind.Local).AddTicks(5131),
-                            IdIndicateur = 6,
-                            IdMesure = 275,
+                            Date = new DateTime(2020, 5, 31, 19, 10, 2, 171, DateTimeKind.Local).AddTicks(9447),
+                            IdIndicateur = 5,
+                            IdMesure = 333,
                             Value = "29"
                         },
                         new
                         {
                             Id = 110,
-                            Date = new DateTime(2021, 1, 3, 3, 52, 41, 358, DateTimeKind.Local).AddTicks(9478),
+                            Date = new DateTime(2020, 7, 30, 13, 4, 8, 55, DateTimeKind.Local).AddTicks(8911),
                             IdIndicateur = 3,
-                            IdMesure = 361,
-                            Value = "79"
+                            IdMesure = 249,
+                            Value = "42"
                         },
                         new
                         {
                             Id = 111,
-                            Date = new DateTime(2020, 9, 12, 0, 54, 31, 263, DateTimeKind.Local).AddTicks(1143),
-                            IdIndicateur = 2,
-                            IdMesure = 369,
-                            Value = "15"
+                            Date = new DateTime(2020, 10, 16, 21, 58, 42, 479, DateTimeKind.Local).AddTicks(1566),
+                            IdIndicateur = 1,
+                            IdMesure = 32,
+                            Value = "27"
                         },
                         new
                         {
                             Id = 112,
-                            Date = new DateTime(2020, 12, 1, 9, 42, 2, 858, DateTimeKind.Local).AddTicks(6590),
+                            Date = new DateTime(2020, 5, 20, 19, 46, 7, 873, DateTimeKind.Local).AddTicks(6167),
                             IdIndicateur = 4,
-                            IdMesure = 218,
-                            Value = "41"
-                        },
-                        new
-                        {
-                            Id = 113,
-                            Date = new DateTime(2020, 5, 11, 21, 44, 49, 851, DateTimeKind.Local).AddTicks(2154),
-                            IdIndicateur = 4,
-                            IdMesure = 219,
-                            Value = "34"
-                        },
-                        new
-                        {
-                            Id = 114,
-                            Date = new DateTime(2020, 8, 22, 12, 4, 48, 176, DateTimeKind.Local).AddTicks(7989),
-                            IdIndicateur = 4,
-                            IdMesure = 55,
-                            Value = "11"
-                        },
-                        new
-                        {
-                            Id = 115,
-                            Date = new DateTime(2020, 11, 6, 7, 52, 52, 892, DateTimeKind.Local).AddTicks(5337),
-                            IdIndicateur = 5,
-                            IdMesure = 48,
+                            IdMesure = 226,
                             Value = "68"
                         },
                         new
                         {
-                            Id = 116,
-                            Date = new DateTime(2020, 5, 5, 9, 49, 9, 543, DateTimeKind.Local).AddTicks(8524),
+                            Id = 113,
+                            Date = new DateTime(2021, 1, 24, 6, 57, 42, 137, DateTimeKind.Local).AddTicks(5557),
                             IdIndicateur = 2,
-                            IdMesure = 244,
-                            Value = "96"
+                            IdMesure = 103,
+                            Value = "80"
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Date = new DateTime(2020, 6, 20, 0, 42, 58, 690, DateTimeKind.Local).AddTicks(9590),
+                            IdIndicateur = 1,
+                            IdMesure = 74,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Date = new DateTime(2020, 9, 12, 5, 19, 36, 265, DateTimeKind.Local).AddTicks(6359),
+                            IdIndicateur = 5,
+                            IdMesure = 173,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Date = new DateTime(2020, 5, 14, 20, 31, 48, 403, DateTimeKind.Local).AddTicks(5933),
+                            IdIndicateur = 1,
+                            IdMesure = 383,
+                            Value = "16"
                         },
                         new
                         {
                             Id = 117,
-                            Date = new DateTime(2020, 11, 12, 11, 52, 55, 691, DateTimeKind.Local).AddTicks(9083),
-                            IdIndicateur = 5,
-                            IdMesure = 320,
-                            Value = "38"
+                            Date = new DateTime(2020, 7, 16, 11, 52, 38, 468, DateTimeKind.Local).AddTicks(1321),
+                            IdIndicateur = 1,
+                            IdMesure = 274,
+                            Value = "49"
                         },
                         new
                         {
                             Id = 118,
-                            Date = new DateTime(2020, 5, 1, 10, 28, 58, 133, DateTimeKind.Local).AddTicks(8347),
-                            IdIndicateur = 2,
-                            IdMesure = 179,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 119,
-                            Date = new DateTime(2020, 12, 2, 3, 44, 45, 25, DateTimeKind.Local).AddTicks(999),
-                            IdIndicateur = 5,
-                            IdMesure = 262,
-                            Value = "87"
-                        },
-                        new
-                        {
-                            Id = 120,
-                            Date = new DateTime(2021, 1, 28, 11, 48, 2, 117, DateTimeKind.Local).AddTicks(4394),
-                            IdIndicateur = 6,
-                            IdMesure = 387,
-                            Value = "67"
-                        },
-                        new
-                        {
-                            Id = 121,
-                            Date = new DateTime(2020, 11, 24, 23, 54, 7, 437, DateTimeKind.Local).AddTicks(6669),
-                            IdIndicateur = 2,
-                            IdMesure = 356,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 122,
-                            Date = new DateTime(2020, 3, 1, 5, 52, 28, 951, DateTimeKind.Local).AddTicks(4622),
-                            IdIndicateur = 3,
-                            IdMesure = 347,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 123,
-                            Date = new DateTime(2021, 2, 22, 17, 6, 37, 869, DateTimeKind.Local).AddTicks(1590),
-                            IdIndicateur = 5,
-                            IdMesure = 398,
-                            Value = "14"
-                        },
-                        new
-                        {
-                            Id = 124,
-                            Date = new DateTime(2020, 8, 18, 20, 22, 30, 503, DateTimeKind.Local).AddTicks(3858),
-                            IdIndicateur = 3,
-                            IdMesure = 310,
-                            Value = "63"
-                        },
-                        new
-                        {
-                            Id = 125,
-                            Date = new DateTime(2020, 6, 9, 21, 23, 52, 86, DateTimeKind.Local).AddTicks(9589),
-                            IdIndicateur = 2,
-                            IdMesure = 120,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 126,
-                            Date = new DateTime(2020, 12, 20, 17, 23, 40, 191, DateTimeKind.Local).AddTicks(8380),
-                            IdIndicateur = 1,
-                            IdMesure = 135,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 127,
-                            Date = new DateTime(2020, 10, 28, 23, 38, 35, 675, DateTimeKind.Local).AddTicks(5852),
-                            IdIndicateur = 3,
-                            IdMesure = 286,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 128,
-                            Date = new DateTime(2020, 12, 22, 9, 31, 30, 394, DateTimeKind.Local).AddTicks(6523),
-                            IdIndicateur = 5,
-                            IdMesure = 347,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 129,
-                            Date = new DateTime(2020, 10, 20, 6, 55, 19, 674, DateTimeKind.Local).AddTicks(5639),
+                            Date = new DateTime(2020, 5, 16, 16, 23, 0, 539, DateTimeKind.Local).AddTicks(2732),
                             IdIndicateur = 4,
-                            IdMesure = 85,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 130,
-                            Date = new DateTime(2020, 11, 6, 3, 36, 32, 244, DateTimeKind.Local).AddTicks(7854),
-                            IdIndicateur = 5,
-                            IdMesure = 280,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 131,
-                            Date = new DateTime(2020, 6, 13, 0, 28, 43, 513, DateTimeKind.Local).AddTicks(2249),
-                            IdIndicateur = 2,
-                            IdMesure = 95,
-                            Value = "43"
-                        },
-                        new
-                        {
-                            Id = 132,
-                            Date = new DateTime(2021, 1, 5, 23, 54, 3, 836, DateTimeKind.Local).AddTicks(310),
-                            IdIndicateur = 1,
-                            IdMesure = 120,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 133,
-                            Date = new DateTime(2020, 7, 6, 0, 12, 50, 267, DateTimeKind.Local).AddTicks(169),
-                            IdIndicateur = 2,
-                            IdMesure = 95,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 134,
-                            Date = new DateTime(2020, 5, 22, 12, 39, 49, 34, DateTimeKind.Local).AddTicks(772),
-                            IdIndicateur = 6,
-                            IdMesure = 95,
-                            Value = "79"
-                        },
-                        new
-                        {
-                            Id = 135,
-                            Date = new DateTime(2020, 10, 19, 13, 26, 32, 813, DateTimeKind.Local).AddTicks(4392),
-                            IdIndicateur = 4,
-                            IdMesure = 170,
-                            Value = "63"
-                        },
-                        new
-                        {
-                            Id = 136,
-                            Date = new DateTime(2021, 1, 10, 2, 56, 19, 826, DateTimeKind.Local).AddTicks(7690),
-                            IdIndicateur = 2,
-                            IdMesure = 108,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 137,
-                            Date = new DateTime(2021, 1, 3, 7, 43, 7, 588, DateTimeKind.Local).AddTicks(4000),
-                            IdIndicateur = 6,
-                            IdMesure = 40,
-                            Value = "83"
-                        },
-                        new
-                        {
-                            Id = 138,
-                            Date = new DateTime(2020, 7, 28, 22, 25, 59, 549, DateTimeKind.Local).AddTicks(3820),
-                            IdIndicateur = 2,
-                            IdMesure = 427,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 139,
-                            Date = new DateTime(2020, 3, 3, 7, 4, 51, 814, DateTimeKind.Local).AddTicks(76),
-                            IdIndicateur = 3,
-                            IdMesure = 105,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 140,
-                            Date = new DateTime(2020, 6, 29, 17, 12, 54, 185, DateTimeKind.Local).AddTicks(4443),
-                            IdIndicateur = 1,
-                            IdMesure = 299,
-                            Value = "92"
-                        },
-                        new
-                        {
-                            Id = 141,
-                            Date = new DateTime(2020, 9, 6, 23, 51, 11, 589, DateTimeKind.Local).AddTicks(875),
-                            IdIndicateur = 1,
-                            IdMesure = 149,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 142,
-                            Date = new DateTime(2020, 11, 17, 6, 30, 1, 575, DateTimeKind.Local).AddTicks(2135),
-                            IdIndicateur = 6,
-                            IdMesure = 363,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 143,
-                            Date = new DateTime(2021, 1, 5, 22, 39, 56, 580, DateTimeKind.Local).AddTicks(9718),
-                            IdIndicateur = 5,
-                            IdMesure = 350,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 144,
-                            Date = new DateTime(2020, 3, 8, 0, 9, 18, 620, DateTimeKind.Local).AddTicks(1261),
-                            IdIndicateur = 4,
-                            IdMesure = 46,
-                            Value = "15"
-                        },
-                        new
-                        {
-                            Id = 145,
-                            Date = new DateTime(2020, 9, 30, 9, 27, 41, 690, DateTimeKind.Local).AddTicks(4813),
-                            IdIndicateur = 2,
-                            IdMesure = 62,
-                            Value = "65"
-                        },
-                        new
-                        {
-                            Id = 146,
-                            Date = new DateTime(2020, 3, 2, 2, 50, 32, 452, DateTimeKind.Local).AddTicks(7528),
-                            IdIndicateur = 6,
-                            IdMesure = 83,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 147,
-                            Date = new DateTime(2020, 5, 7, 3, 37, 33, 229, DateTimeKind.Local).AddTicks(7293),
-                            IdIndicateur = 3,
-                            IdMesure = 198,
-                            Value = "46"
-                        },
-                        new
-                        {
-                            Id = 148,
-                            Date = new DateTime(2020, 11, 18, 14, 50, 36, 536, DateTimeKind.Local).AddTicks(2350),
-                            IdIndicateur = 5,
-                            IdMesure = 187,
-                            Value = "16"
-                        },
-                        new
-                        {
-                            Id = 149,
-                            Date = new DateTime(2020, 12, 15, 5, 15, 58, 436, DateTimeKind.Local).AddTicks(8087),
-                            IdIndicateur = 6,
-                            IdMesure = 262,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 150,
-                            Date = new DateTime(2021, 1, 15, 14, 49, 42, 329, DateTimeKind.Local).AddTicks(4881),
-                            IdIndicateur = 5,
-                            IdMesure = 63,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 151,
-                            Date = new DateTime(2020, 11, 23, 1, 5, 4, 564, DateTimeKind.Local).AddTicks(9644),
-                            IdIndicateur = 4,
-                            IdMesure = 398,
-                            Value = "40"
-                        },
-                        new
-                        {
-                            Id = 152,
-                            Date = new DateTime(2020, 7, 26, 21, 40, 53, 112, DateTimeKind.Local).AddTicks(4814),
-                            IdIndicateur = 5,
-                            IdMesure = 121,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 153,
-                            Date = new DateTime(2020, 9, 16, 3, 56, 46, 695, DateTimeKind.Local).AddTicks(2899),
-                            IdIndicateur = 4,
-                            IdMesure = 157,
-                            Value = "86"
-                        },
-                        new
-                        {
-                            Id = 154,
-                            Date = new DateTime(2020, 10, 8, 13, 44, 24, 850, DateTimeKind.Local).AddTicks(3125),
-                            IdIndicateur = 4,
-                            IdMesure = 223,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 155,
-                            Date = new DateTime(2020, 9, 11, 19, 27, 47, 582, DateTimeKind.Local).AddTicks(8687),
-                            IdIndicateur = 1,
-                            IdMesure = 391,
-                            Value = "11"
-                        },
-                        new
-                        {
-                            Id = 156,
-                            Date = new DateTime(2021, 2, 18, 12, 50, 28, 744, DateTimeKind.Local).AddTicks(9509),
-                            IdIndicateur = 1,
-                            IdMesure = 254,
-                            Value = "86"
-                        },
-                        new
-                        {
-                            Id = 157,
-                            Date = new DateTime(2020, 12, 25, 0, 55, 50, 847, DateTimeKind.Local).AddTicks(4284),
-                            IdIndicateur = 5,
-                            IdMesure = 284,
-                            Value = "58"
-                        },
-                        new
-                        {
-                            Id = 158,
-                            Date = new DateTime(2020, 9, 24, 2, 54, 13, 735, DateTimeKind.Local).AddTicks(4794),
-                            IdIndicateur = 6,
-                            IdMesure = 284,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 159,
-                            Date = new DateTime(2020, 7, 1, 23, 21, 12, 877, DateTimeKind.Local).AddTicks(3383),
-                            IdIndicateur = 4,
-                            IdMesure = 416,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 160,
-                            Date = new DateTime(2020, 6, 8, 19, 15, 9, 869, DateTimeKind.Local).AddTicks(8589),
-                            IdIndicateur = 6,
-                            IdMesure = 271,
-                            Value = "74"
-                        },
-                        new
-                        {
-                            Id = 161,
-                            Date = new DateTime(2020, 3, 31, 17, 24, 29, 695, DateTimeKind.Local).AddTicks(9751),
-                            IdIndicateur = 5,
-                            IdMesure = 397,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 162,
-                            Date = new DateTime(2021, 1, 20, 7, 50, 57, 824, DateTimeKind.Local).AddTicks(1518),
-                            IdIndicateur = 4,
-                            IdMesure = 413,
-                            Value = "78"
-                        },
-                        new
-                        {
-                            Id = 163,
-                            Date = new DateTime(2021, 2, 17, 4, 42, 14, 70, DateTimeKind.Local).AddTicks(3187),
-                            IdIndicateur = 4,
-                            IdMesure = 206,
-                            Value = "37"
-                        },
-                        new
-                        {
-                            Id = 164,
-                            Date = new DateTime(2020, 5, 23, 14, 3, 26, 591, DateTimeKind.Local).AddTicks(3742),
-                            IdIndicateur = 6,
-                            IdMesure = 309,
+                            IdMesure = 370,
                             Value = "57"
                         },
                         new
                         {
-                            Id = 165,
-                            Date = new DateTime(2020, 7, 25, 3, 12, 55, 601, DateTimeKind.Local).AddTicks(7345),
-                            IdIndicateur = 2,
-                            IdMesure = 304,
-                            Value = "64"
-                        },
-                        new
-                        {
-                            Id = 166,
-                            Date = new DateTime(2020, 8, 25, 18, 55, 18, 703, DateTimeKind.Local).AddTicks(3561),
-                            IdIndicateur = 2,
-                            IdMesure = 90,
-                            Value = "94"
-                        },
-                        new
-                        {
-                            Id = 167,
-                            Date = new DateTime(2021, 2, 21, 11, 2, 46, 579, DateTimeKind.Local).AddTicks(5162),
-                            IdIndicateur = 3,
-                            IdMesure = 307,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 168,
-                            Date = new DateTime(2020, 2, 25, 9, 27, 57, 984, DateTimeKind.Local).AddTicks(7401),
+                            Id = 119,
+                            Date = new DateTime(2020, 6, 18, 6, 26, 34, 846, DateTimeKind.Local).AddTicks(2146),
                             IdIndicateur = 5,
-                            IdMesure = 7,
-                            Value = "78"
-                        },
-                        new
-                        {
-                            Id = 169,
-                            Date = new DateTime(2020, 5, 19, 14, 57, 43, 902, DateTimeKind.Local).AddTicks(523),
-                            IdIndicateur = 2,
-                            IdMesure = 183,
-                            Value = "59"
-                        },
-                        new
-                        {
-                            Id = 170,
-                            Date = new DateTime(2021, 2, 17, 7, 59, 53, 701, DateTimeKind.Local).AddTicks(8328),
-                            IdIndicateur = 6,
-                            IdMesure = 311,
-                            Value = "16"
-                        },
-                        new
-                        {
-                            Id = 171,
-                            Date = new DateTime(2021, 2, 15, 21, 37, 43, 784, DateTimeKind.Local).AddTicks(1178),
-                            IdIndicateur = 3,
-                            IdMesure = 407,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 172,
-                            Date = new DateTime(2021, 1, 12, 14, 26, 15, 382, DateTimeKind.Local).AddTicks(9849),
-                            IdIndicateur = 5,
-                            IdMesure = 245,
-                            Value = "74"
-                        },
-                        new
-                        {
-                            Id = 173,
-                            Date = new DateTime(2020, 11, 6, 20, 1, 36, 837, DateTimeKind.Local).AddTicks(9260),
-                            IdIndicateur = 5,
-                            IdMesure = 425,
+                            IdMesure = 429,
                             Value = "96"
                         },
                         new
                         {
-                            Id = 174,
-                            Date = new DateTime(2020, 7, 16, 16, 28, 37, 718, DateTimeKind.Local).AddTicks(7817),
-                            IdIndicateur = 1,
-                            IdMesure = 129,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 175,
-                            Date = new DateTime(2020, 8, 14, 11, 14, 54, 125, DateTimeKind.Local).AddTicks(774),
-                            IdIndicateur = 6,
-                            IdMesure = 386,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 176,
-                            Date = new DateTime(2020, 6, 29, 17, 3, 58, 257, DateTimeKind.Local).AddTicks(1500),
+                            Id = 120,
+                            Date = new DateTime(2020, 7, 25, 12, 46, 45, 197, DateTimeKind.Local).AddTicks(7772),
                             IdIndicateur = 5,
-                            IdMesure = 64,
-                            Value = "17"
+                            IdMesure = 37,
+                            Value = "97"
                         },
                         new
                         {
-                            Id = 177,
-                            Date = new DateTime(2020, 9, 27, 20, 7, 9, 134, DateTimeKind.Local).AddTicks(6553),
-                            IdIndicateur = 2,
-                            IdMesure = 379,
-                            Value = "64"
-                        },
-                        new
-                        {
-                            Id = 178,
-                            Date = new DateTime(2020, 5, 23, 23, 35, 15, 720, DateTimeKind.Local).AddTicks(9264),
-                            IdIndicateur = 5,
-                            IdMesure = 129,
-                            Value = "13"
-                        },
-                        new
-                        {
-                            Id = 179,
-                            Date = new DateTime(2020, 5, 20, 5, 46, 1, 518, DateTimeKind.Local).AddTicks(1178),
-                            IdIndicateur = 4,
-                            IdMesure = 111,
-                            Value = "69"
-                        },
-                        new
-                        {
-                            Id = 180,
-                            Date = new DateTime(2020, 3, 31, 1, 9, 36, 675, DateTimeKind.Local).AddTicks(1362),
-                            IdIndicateur = 6,
-                            IdMesure = 264,
+                            Id = 121,
+                            Date = new DateTime(2021, 2, 25, 4, 12, 14, 438, DateTimeKind.Local).AddTicks(5126),
+                            IdIndicateur = 3,
+                            IdMesure = 65,
                             Value = "95"
                         },
                         new
                         {
-                            Id = 181,
-                            Date = new DateTime(2020, 11, 13, 1, 51, 16, 763, DateTimeKind.Local).AddTicks(7292),
-                            IdIndicateur = 3,
-                            IdMesure = 309,
-                            Value = "12"
+                            Id = 122,
+                            Date = new DateTime(2020, 5, 28, 4, 44, 2, 42, DateTimeKind.Local).AddTicks(2885),
+                            IdIndicateur = 1,
+                            IdMesure = 33,
+                            Value = "37"
                         },
                         new
                         {
-                            Id = 182,
-                            Date = new DateTime(2020, 11, 7, 1, 40, 43, 912, DateTimeKind.Local).AddTicks(6051),
-                            IdIndicateur = 3,
-                            IdMesure = 377,
+                            Id = 123,
+                            Date = new DateTime(2020, 5, 7, 22, 13, 25, 876, DateTimeKind.Local).AddTicks(1759),
+                            IdIndicateur = 4,
+                            IdMesure = 283,
+                            Value = "41"
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Date = new DateTime(2021, 2, 7, 18, 43, 57, 106, DateTimeKind.Local).AddTicks(2025),
+                            IdIndicateur = 6,
+                            IdMesure = 82,
                             Value = "73"
                         },
                         new
                         {
-                            Id = 183,
-                            Date = new DateTime(2020, 5, 18, 1, 24, 59, 826, DateTimeKind.Local).AddTicks(4360),
+                            Id = 125,
+                            Date = new DateTime(2020, 9, 16, 23, 26, 3, 823, DateTimeKind.Local).AddTicks(3308),
+                            IdIndicateur = 3,
+                            IdMesure = 29,
+                            Value = "76"
+                        },
+                        new
+                        {
+                            Id = 126,
+                            Date = new DateTime(2020, 6, 7, 22, 47, 48, 667, DateTimeKind.Local).AddTicks(6033),
+                            IdIndicateur = 1,
+                            IdMesure = 83,
+                            Value = "93"
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Date = new DateTime(2020, 10, 23, 2, 2, 27, 365, DateTimeKind.Local).AddTicks(9205),
                             IdIndicateur = 6,
+                            IdMesure = 315,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Date = new DateTime(2020, 6, 12, 15, 37, 23, 266, DateTimeKind.Local).AddTicks(1287),
+                            IdIndicateur = 3,
+                            IdMesure = 31,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Date = new DateTime(2020, 8, 28, 18, 11, 5, 419, DateTimeKind.Local).AddTicks(1693),
+                            IdIndicateur = 4,
+                            IdMesure = 352,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Date = new DateTime(2020, 9, 1, 17, 51, 4, 765, DateTimeKind.Local).AddTicks(5323),
+                            IdIndicateur = 1,
+                            IdMesure = 36,
+                            Value = "74"
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Date = new DateTime(2020, 10, 31, 17, 3, 33, 51, DateTimeKind.Local).AddTicks(1255),
+                            IdIndicateur = 5,
+                            IdMesure = 337,
+                            Value = "97"
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Date = new DateTime(2021, 1, 25, 18, 31, 54, 71, DateTimeKind.Local).AddTicks(4194),
+                            IdIndicateur = 5,
+                            IdMesure = 77,
+                            Value = "63"
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Date = new DateTime(2020, 6, 24, 9, 36, 30, 26, DateTimeKind.Local).AddTicks(8982),
+                            IdIndicateur = 6,
+                            IdMesure = 58,
+                            Value = "66"
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Date = new DateTime(2021, 1, 15, 3, 5, 36, 571, DateTimeKind.Local).AddTicks(9578),
+                            IdIndicateur = 4,
+                            IdMesure = 419,
+                            Value = "46"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Date = new DateTime(2021, 1, 29, 9, 6, 23, 668, DateTimeKind.Local).AddTicks(9565),
+                            IdIndicateur = 2,
+                            IdMesure = 203,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Date = new DateTime(2020, 11, 28, 13, 26, 5, 212, DateTimeKind.Local).AddTicks(7729),
+                            IdIndicateur = 6,
+                            IdMesure = 19,
+                            Value = "71"
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Date = new DateTime(2020, 8, 9, 18, 28, 2, 874, DateTimeKind.Local).AddTicks(1964),
+                            IdIndicateur = 4,
+                            IdMesure = 404,
+                            Value = "100"
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Date = new DateTime(2020, 2, 28, 7, 45, 49, 465, DateTimeKind.Local).AddTicks(3623),
+                            IdIndicateur = 2,
+                            IdMesure = 259,
+                            Value = "98"
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Date = new DateTime(2020, 8, 27, 10, 7, 8, 703, DateTimeKind.Local).AddTicks(8242),
+                            IdIndicateur = 2,
+                            IdMesure = 306,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Date = new DateTime(2021, 2, 23, 5, 38, 50, 320, DateTimeKind.Local).AddTicks(1636),
+                            IdIndicateur = 4,
+                            IdMesure = 32,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Date = new DateTime(2020, 12, 25, 4, 50, 42, 116, DateTimeKind.Local).AddTicks(6367),
+                            IdIndicateur = 1,
+                            IdMesure = 179,
+                            Value = "29"
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Date = new DateTime(2020, 11, 12, 6, 28, 3, 128, DateTimeKind.Local).AddTicks(5704),
+                            IdIndicateur = 6,
+                            IdMesure = 340,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Date = new DateTime(2020, 4, 18, 21, 0, 26, 557, DateTimeKind.Local).AddTicks(5761),
+                            IdIndicateur = 2,
+                            IdMesure = 107,
+                            Value = "12"
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Date = new DateTime(2020, 5, 3, 23, 30, 51, 491, DateTimeKind.Local).AddTicks(7305),
+                            IdIndicateur = 4,
                             IdMesure = 345,
-                            Value = "90"
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Date = new DateTime(2020, 8, 11, 21, 39, 15, 534, DateTimeKind.Local).AddTicks(1621),
+                            IdIndicateur = 5,
+                            IdMesure = 7,
+                            Value = "45"
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Date = new DateTime(2020, 3, 21, 19, 40, 20, 997, DateTimeKind.Local).AddTicks(5602),
+                            IdIndicateur = 1,
+                            IdMesure = 314,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Date = new DateTime(2020, 6, 9, 5, 49, 20, 292, DateTimeKind.Local).AddTicks(4057),
+                            IdIndicateur = 4,
+                            IdMesure = 405,
+                            Value = "98"
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Date = new DateTime(2020, 4, 14, 13, 30, 31, 860, DateTimeKind.Local).AddTicks(9344),
+                            IdIndicateur = 6,
+                            IdMesure = 371,
+                            Value = "13"
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Date = new DateTime(2021, 2, 16, 10, 20, 12, 784, DateTimeKind.Local).AddTicks(5848),
+                            IdIndicateur = 2,
+                            IdMesure = 298,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Date = new DateTime(2021, 2, 25, 4, 57, 56, 89, DateTimeKind.Local).AddTicks(3383),
+                            IdIndicateur = 4,
+                            IdMesure = 326,
+                            Value = "52"
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Date = new DateTime(2020, 10, 1, 4, 43, 15, 747, DateTimeKind.Local).AddTicks(3416),
+                            IdIndicateur = 5,
+                            IdMesure = 389,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Date = new DateTime(2021, 1, 31, 18, 50, 54, 800, DateTimeKind.Local).AddTicks(890),
+                            IdIndicateur = 1,
+                            IdMesure = 75,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Date = new DateTime(2020, 10, 19, 3, 59, 17, 73, DateTimeKind.Local).AddTicks(9038),
+                            IdIndicateur = 6,
+                            IdMesure = 351,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Date = new DateTime(2020, 10, 15, 2, 8, 13, 298, DateTimeKind.Local).AddTicks(2570),
+                            IdIndicateur = 1,
+                            IdMesure = 91,
+                            Value = "36"
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Date = new DateTime(2021, 1, 2, 3, 14, 31, 786, DateTimeKind.Local).AddTicks(9589),
+                            IdIndicateur = 2,
+                            IdMesure = 231,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Date = new DateTime(2020, 10, 22, 19, 21, 13, 562, DateTimeKind.Local).AddTicks(1821),
+                            IdIndicateur = 1,
+                            IdMesure = 417,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Date = new DateTime(2020, 8, 19, 7, 19, 46, 755, DateTimeKind.Local).AddTicks(9541),
+                            IdIndicateur = 1,
+                            IdMesure = 66,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Date = new DateTime(2020, 8, 24, 5, 23, 12, 633, DateTimeKind.Local).AddTicks(3964),
+                            IdIndicateur = 3,
+                            IdMesure = 422,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Date = new DateTime(2021, 2, 21, 1, 11, 23, 119, DateTimeKind.Local).AddTicks(4078),
+                            IdIndicateur = 3,
+                            IdMesure = 112,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Date = new DateTime(2020, 5, 2, 20, 20, 19, 773, DateTimeKind.Local).AddTicks(2044),
+                            IdIndicateur = 1,
+                            IdMesure = 323,
+                            Value = "79"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Date = new DateTime(2020, 2, 27, 6, 56, 30, 729, DateTimeKind.Local).AddTicks(7295),
+                            IdIndicateur = 6,
+                            IdMesure = 188,
+                            Value = "92"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Date = new DateTime(2020, 6, 20, 15, 32, 28, 697, DateTimeKind.Local).AddTicks(7346),
+                            IdIndicateur = 5,
+                            IdMesure = 181,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Date = new DateTime(2020, 9, 7, 9, 32, 35, 344, DateTimeKind.Local).AddTicks(6810),
+                            IdIndicateur = 2,
+                            IdMesure = 429,
+                            Value = "55"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Date = new DateTime(2020, 4, 16, 1, 44, 39, 75, DateTimeKind.Local).AddTicks(4705),
+                            IdIndicateur = 2,
+                            IdMesure = 116,
+                            Value = "14"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Date = new DateTime(2021, 2, 22, 1, 33, 51, 198, DateTimeKind.Local).AddTicks(7187),
+                            IdIndicateur = 6,
+                            IdMesure = 118,
+                            Value = "32"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Date = new DateTime(2020, 10, 5, 3, 59, 29, 63, DateTimeKind.Local).AddTicks(5390),
+                            IdIndicateur = 5,
+                            IdMesure = 411,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Date = new DateTime(2020, 5, 2, 3, 7, 51, 969, DateTimeKind.Local).AddTicks(6544),
+                            IdIndicateur = 6,
+                            IdMesure = 344,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Date = new DateTime(2020, 9, 16, 14, 27, 34, 924, DateTimeKind.Local).AddTicks(3647),
+                            IdIndicateur = 2,
+                            IdMesure = 154,
+                            Value = "66"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Date = new DateTime(2021, 2, 5, 18, 8, 58, 664, DateTimeKind.Local).AddTicks(3490),
+                            IdIndicateur = 3,
+                            IdMesure = 227,
+                            Value = "75"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Date = new DateTime(2020, 9, 8, 14, 46, 13, 66, DateTimeKind.Local).AddTicks(6005),
+                            IdIndicateur = 3,
+                            IdMesure = 54,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Date = new DateTime(2020, 6, 25, 21, 11, 11, 603, DateTimeKind.Local).AddTicks(8463),
+                            IdIndicateur = 3,
+                            IdMesure = 220,
+                            Value = "58"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Date = new DateTime(2020, 3, 17, 8, 8, 5, 879, DateTimeKind.Local).AddTicks(3573),
+                            IdIndicateur = 4,
+                            IdMesure = 400,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Date = new DateTime(2020, 5, 14, 22, 22, 41, 616, DateTimeKind.Local).AddTicks(7890),
+                            IdIndicateur = 5,
+                            IdMesure = 151,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Date = new DateTime(2020, 5, 26, 11, 40, 34, 330, DateTimeKind.Local).AddTicks(2713),
+                            IdIndicateur = 5,
+                            IdMesure = 364,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Date = new DateTime(2020, 9, 18, 5, 30, 27, 686, DateTimeKind.Local).AddTicks(3980),
+                            IdIndicateur = 4,
+                            IdMesure = 350,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Date = new DateTime(2020, 6, 10, 4, 48, 10, 421, DateTimeKind.Local).AddTicks(8650),
+                            IdIndicateur = 6,
+                            IdMesure = 257,
+                            Value = "40"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Date = new DateTime(2020, 4, 23, 8, 18, 0, 718, DateTimeKind.Local).AddTicks(3360),
+                            IdIndicateur = 1,
+                            IdMesure = 295,
+                            Value = "96"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Date = new DateTime(2020, 4, 28, 13, 59, 57, 483, DateTimeKind.Local).AddTicks(3842),
+                            IdIndicateur = 6,
+                            IdMesure = 260,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Date = new DateTime(2020, 9, 11, 19, 24, 26, 890, DateTimeKind.Local).AddTicks(9666),
+                            IdIndicateur = 5,
+                            IdMesure = 14,
+                            Value = "56"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Date = new DateTime(2020, 12, 17, 4, 4, 1, 701, DateTimeKind.Local).AddTicks(9718),
+                            IdIndicateur = 3,
+                            IdMesure = 64,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Date = new DateTime(2020, 8, 2, 9, 7, 18, 543, DateTimeKind.Local).AddTicks(2515),
+                            IdIndicateur = 1,
+                            IdMesure = 321,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 182,
+                            Date = new DateTime(2020, 5, 19, 12, 14, 48, 65, DateTimeKind.Local).AddTicks(9442),
+                            IdIndicateur = 6,
+                            IdMesure = 232,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 183,
+                            Date = new DateTime(2020, 7, 18, 17, 15, 21, 592, DateTimeKind.Local).AddTicks(7607),
+                            IdIndicateur = 6,
+                            IdMesure = 240,
+                            Value = "32"
                         },
                         new
                         {
                             Id = 184,
-                            Date = new DateTime(2020, 12, 19, 0, 37, 47, 739, DateTimeKind.Local).AddTicks(9654),
-                            IdIndicateur = 4,
-                            IdMesure = 325,
+                            Date = new DateTime(2020, 6, 27, 16, 43, 19, 979, DateTimeKind.Local).AddTicks(1634),
+                            IdIndicateur = 3,
+                            IdMesure = 103,
                             Value = "89"
                         },
                         new
                         {
                             Id = 185,
-                            Date = new DateTime(2020, 11, 20, 22, 12, 33, 282, DateTimeKind.Local).AddTicks(8637),
-                            IdIndicateur = 1,
-                            IdMesure = 156,
-                            Value = "23"
+                            Date = new DateTime(2020, 4, 15, 3, 58, 41, 882, DateTimeKind.Local).AddTicks(3425),
+                            IdIndicateur = 5,
+                            IdMesure = 69,
+                            Value = "100"
                         },
                         new
                         {
                             Id = 186,
-                            Date = new DateTime(2020, 12, 6, 19, 13, 32, 267, DateTimeKind.Local).AddTicks(6927),
-                            IdIndicateur = 2,
-                            IdMesure = 87,
-                            Value = "84"
+                            Date = new DateTime(2020, 10, 18, 17, 55, 25, 376, DateTimeKind.Local).AddTicks(1428),
+                            IdIndicateur = 3,
+                            IdMesure = 283,
+                            Value = "41"
                         },
                         new
                         {
                             Id = 187,
-                            Date = new DateTime(2020, 6, 9, 5, 25, 49, 665, DateTimeKind.Local).AddTicks(3462),
-                            IdIndicateur = 2,
-                            IdMesure = 300,
-                            Value = "14"
+                            Date = new DateTime(2021, 2, 8, 4, 28, 34, 295, DateTimeKind.Local).AddTicks(1116),
+                            IdIndicateur = 6,
+                            IdMesure = 20,
+                            Value = "78"
                         },
                         new
                         {
                             Id = 188,
-                            Date = new DateTime(2020, 3, 2, 12, 49, 23, 915, DateTimeKind.Local).AddTicks(8114),
-                            IdIndicateur = 5,
-                            IdMesure = 203,
-                            Value = "10"
+                            Date = new DateTime(2020, 10, 12, 1, 43, 34, 889, DateTimeKind.Local).AddTicks(7393),
+                            IdIndicateur = 3,
+                            IdMesure = 106,
+                            Value = "65"
                         },
                         new
                         {
                             Id = 189,
-                            Date = new DateTime(2020, 5, 16, 4, 6, 28, 816, DateTimeKind.Local).AddTicks(8159),
-                            IdIndicateur = 2,
-                            IdMesure = 3,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 190,
-                            Date = new DateTime(2020, 9, 26, 7, 30, 41, 723, DateTimeKind.Local).AddTicks(8876),
-                            IdIndicateur = 5,
-                            IdMesure = 312,
-                            Value = "81"
-                        },
-                        new
-                        {
-                            Id = 191,
-                            Date = new DateTime(2020, 10, 15, 2, 55, 37, 466, DateTimeKind.Local).AddTicks(2263),
-                            IdIndicateur = 2,
-                            IdMesure = 260,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 192,
-                            Date = new DateTime(2020, 6, 6, 21, 45, 50, 504, DateTimeKind.Local).AddTicks(691),
-                            IdIndicateur = 2,
-                            IdMesure = 382,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 193,
-                            Date = new DateTime(2020, 8, 2, 3, 18, 23, 177, DateTimeKind.Local).AddTicks(4272),
-                            IdIndicateur = 3,
-                            IdMesure = 309,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 194,
-                            Date = new DateTime(2020, 9, 28, 14, 16, 8, 652, DateTimeKind.Local).AddTicks(3387),
-                            IdIndicateur = 5,
-                            IdMesure = 328,
+                            Date = new DateTime(2020, 9, 19, 3, 26, 42, 400, DateTimeKind.Local).AddTicks(8600),
+                            IdIndicateur = 1,
+                            IdMesure = 19,
                             Value = "73"
                         },
                         new
                         {
-                            Id = 195,
-                            Date = new DateTime(2020, 6, 24, 23, 23, 7, 802, DateTimeKind.Local).AddTicks(7661),
+                            Id = 190,
+                            Date = new DateTime(2020, 4, 25, 5, 14, 14, 300, DateTimeKind.Local).AddTicks(860),
                             IdIndicateur = 5,
-                            IdMesure = 238,
-                            Value = "64"
+                            IdMesure = 160,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Date = new DateTime(2020, 7, 9, 19, 45, 54, 122, DateTimeKind.Local).AddTicks(2873),
+                            IdIndicateur = 2,
+                            IdMesure = 194,
+                            Value = "36"
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Date = new DateTime(2020, 8, 11, 21, 57, 25, 517, DateTimeKind.Local).AddTicks(6289),
+                            IdIndicateur = 1,
+                            IdMesure = 322,
+                            Value = "63"
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Date = new DateTime(2020, 10, 30, 14, 8, 14, 318, DateTimeKind.Local).AddTicks(6296),
+                            IdIndicateur = 6,
+                            IdMesure = 397,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Date = new DateTime(2020, 10, 24, 12, 6, 33, 986, DateTimeKind.Local).AddTicks(4674),
+                            IdIndicateur = 4,
+                            IdMesure = 191,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 195,
+                            Date = new DateTime(2020, 7, 15, 1, 13, 16, 232, DateTimeKind.Local).AddTicks(3328),
+                            IdIndicateur = 1,
+                            IdMesure = 351,
+                            Value = "57"
                         },
                         new
                         {
                             Id = 196,
-                            Date = new DateTime(2021, 2, 5, 20, 20, 40, 702, DateTimeKind.Local).AddTicks(5329),
-                            IdIndicateur = 6,
-                            IdMesure = 180,
-                            Value = "85"
+                            Date = new DateTime(2021, 1, 7, 22, 2, 22, 260, DateTimeKind.Local).AddTicks(7791),
+                            IdIndicateur = 4,
+                            IdMesure = 38,
+                            Value = "58"
                         },
                         new
                         {
                             Id = 197,
-                            Date = new DateTime(2020, 9, 12, 4, 18, 5, 452, DateTimeKind.Local).AddTicks(640),
+                            Date = new DateTime(2020, 12, 6, 4, 34, 2, 421, DateTimeKind.Local).AddTicks(6764),
                             IdIndicateur = 6,
-                            IdMesure = 405,
-                            Value = "79"
+                            IdMesure = 157,
+                            Value = "61"
                         },
                         new
                         {
                             Id = 198,
-                            Date = new DateTime(2020, 8, 4, 2, 44, 15, 601, DateTimeKind.Local).AddTicks(2461),
-                            IdIndicateur = 1,
-                            IdMesure = 311,
-                            Value = "52"
+                            Date = new DateTime(2020, 10, 5, 2, 37, 3, 930, DateTimeKind.Local).AddTicks(4318),
+                            IdIndicateur = 3,
+                            IdMesure = 343,
+                            Value = "37"
                         },
                         new
                         {
                             Id = 199,
-                            Date = new DateTime(2020, 4, 2, 3, 17, 57, 943, DateTimeKind.Local).AddTicks(1243),
-                            IdIndicateur = 5,
-                            IdMesure = 109,
-                            Value = "70"
+                            Date = new DateTime(2020, 9, 5, 11, 32, 49, 198, DateTimeKind.Local).AddTicks(9377),
+                            IdIndicateur = 1,
+                            IdMesure = 280,
+                            Value = "48"
                         },
                         new
                         {
                             Id = 200,
-                            Date = new DateTime(2020, 9, 24, 6, 57, 39, 655, DateTimeKind.Local).AddTicks(2974),
-                            IdIndicateur = 3,
-                            IdMesure = 298,
-                            Value = "41"
+                            Date = new DateTime(2020, 3, 29, 0, 28, 27, 507, DateTimeKind.Local).AddTicks(240),
+                            IdIndicateur = 5,
+                            IdMesure = 47,
+                            Value = "66"
                         });
                 });
 
@@ -20507,142 +20507,142 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "Clemence_Aubert38@gmail.com",
+                            Email = "Clara_Colin93@hotmail.fr",
                             IdCommission = 1,
-                            NomComplete = "Clara Cousin"
+                            NomComplete = "Noémie Royer"
                         },
                         new
                         {
                             Id = 2,
-                            Email = "Valentin.Barre@yahoo.fr",
+                            Email = "Celia41@hotmail.fr",
                             IdCommission = 2,
-                            NomComplete = "Carla Boyer"
+                            NomComplete = "Arthur Fontaine"
                         },
                         new
                         {
                             Id = 3,
-                            Email = "Mathilde.Colin73@yahoo.fr",
+                            Email = "Melissa.Adam@hotmail.fr",
                             IdCommission = 3,
-                            NomComplete = "Eva Rodriguez"
+                            NomComplete = "Maxime Dupuy"
                         },
                         new
                         {
                             Id = 4,
-                            Email = "Mohamed88@hotmail.fr",
+                            Email = "Lou.Charpentier67@hotmail.fr",
                             IdCommission = 4,
-                            NomComplete = "Louise Laurent"
+                            NomComplete = "Mohamed Remy"
                         },
                         new
                         {
                             Id = 5,
-                            Email = "Anais_Laurent@gmail.com",
+                            Email = "Raphael55@hotmail.fr",
                             IdCommission = 5,
-                            NomComplete = "Hugo Remy"
+                            NomComplete = "Ethan Royer"
                         },
                         new
                         {
                             Id = 6,
-                            Email = "Jules36@hotmail.fr",
+                            Email = "Alexis_Dubois@hotmail.fr",
                             IdCommission = 6,
-                            NomComplete = "Tom Vidal"
+                            NomComplete = "Lola Denis"
                         },
                         new
                         {
                             Id = 7,
-                            Email = "Matteo62@hotmail.fr",
+                            Email = "Clement.Barre@yahoo.fr",
                             IdCommission = 7,
-                            NomComplete = "Emilie Giraud"
+                            NomComplete = "Axel Bernard"
                         },
                         new
                         {
                             Id = 8,
-                            Email = "Chloe47@yahoo.fr",
+                            Email = "Emilie_Pierre@gmail.com",
                             IdCommission = 8,
-                            NomComplete = "Chloé Aubry"
+                            NomComplete = "Ambre Laine"
                         },
                         new
                         {
                             Id = 9,
-                            Email = "Matheo29@yahoo.fr",
+                            Email = "Mathis.Perez@hotmail.fr",
                             IdCommission = 9,
-                            NomComplete = "Romane Vidal"
+                            NomComplete = "Lola Lacroix"
                         },
                         new
                         {
                             Id = 10,
-                            Email = "Manon_Olivier75@yahoo.fr",
+                            Email = "Louise.David@gmail.com",
                             IdCommission = 10,
-                            NomComplete = "Ines Sanchez"
+                            NomComplete = "Ambre Robert"
                         },
                         new
                         {
                             Id = 11,
-                            Email = "Maxime.Denis31@yahoo.fr",
+                            Email = "Mael_Bernard@yahoo.fr",
                             IdCommission = 11,
-                            NomComplete = "Alice Perrin"
+                            NomComplete = "Chloé Guerin"
                         },
                         new
                         {
                             Id = 12,
-                            Email = "Ethan52@gmail.com",
+                            Email = "Elisa.Roux@hotmail.fr",
                             IdCommission = 12,
-                            NomComplete = "Mathéo Dumont"
+                            NomComplete = "Justine Dumont"
                         },
                         new
                         {
                             Id = 13,
-                            Email = "Clara40@gmail.com",
+                            Email = "Pauline_Jacquet71@gmail.com",
                             IdCommission = 13,
-                            NomComplete = "Théo Maillard"
+                            NomComplete = "Carla Marie"
                         },
                         new
                         {
                             Id = 14,
-                            Email = "Theo30@gmail.com",
+                            Email = "Celia_Paul@yahoo.fr",
                             IdCommission = 14,
-                            NomComplete = "Clément Cousin"
+                            NomComplete = "Noémie Francois"
                         },
                         new
                         {
                             Id = 15,
-                            Email = "Mathis.Fleury91@yahoo.fr",
+                            Email = "Celia69@hotmail.fr",
                             IdCommission = 15,
-                            NomComplete = "Laura Berger"
+                            NomComplete = "Mattéo Joly"
                         },
                         new
                         {
                             Id = 16,
-                            Email = "Yanis83@hotmail.fr",
+                            Email = "Carla.Garnier10@yahoo.fr",
                             IdCommission = 16,
-                            NomComplete = "Raphaël Charpentier"
+                            NomComplete = "Louise Fernandez"
                         },
                         new
                         {
                             Id = 17,
-                            Email = "Mohamed71@hotmail.fr",
+                            Email = "Anais.Renault@gmail.com",
                             IdCommission = 17,
-                            NomComplete = "Mathis Maillard"
+                            NomComplete = "Raphaël Sanchez"
                         },
                         new
                         {
                             Id = 18,
-                            Email = "Clemence62@gmail.com",
+                            Email = "Matteo.Marchal@hotmail.fr",
                             IdCommission = 18,
-                            NomComplete = "Julien Mercier"
+                            NomComplete = "Lou Guerin"
                         },
                         new
                         {
                             Id = 19,
-                            Email = "Jules_Bernard@yahoo.fr",
+                            Email = "Antoine.Paul5@yahoo.fr",
                             IdCommission = 19,
-                            NomComplete = "Clément Dumont"
+                            NomComplete = "Pauline Muller"
                         },
                         new
                         {
                             Id = 20,
-                            Email = "Alexis72@hotmail.fr",
+                            Email = "Ethan.Rey@gmail.com",
                             IdCommission = 20,
-                            NomComplete = "Sacha Blanc"
+                            NomComplete = "Maxence Jean"
                         });
                 });
 
@@ -20789,7 +20789,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز دور وسائل الإعلام في مجال التوعية والاتصال والحوار العمومي بشأن المشاركة السياسية.",
                             ResultatsAttendu = "برامج داعمة للمشاركة السياسية",
                             TypeMesure = 1
@@ -20841,7 +20841,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إحداث فضاءات لإثراء مشاركة اليافعين والشباب في الوسط التربوي والهيئات التمثيلية.",
                             ResultatsAttendu = "برامج ومبادرات داعمة لمشاركة الشباب واليافعين",
                             TypeMesure = 1
@@ -20854,7 +20854,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج تدريبية وتكوينية فعالة تستهدف تطوير مهارات التواصل والرفع بمستوى الثقافة الحقوقية والسياسية في نطاق الدستور والتزامات المملكة المغربية في مجال حقوق الإنسان.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20867,7 +20867,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج تكوينية على المواطنة وحقوق الإنسان وسيادة القانون لفائدة المنتخبين وموظفي الجماعات الترابية والمجتمع المدني.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20906,7 +20906,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تفعيل مقاربة النوع في كافة المجالس المنتخبة وطنيا وجهويا ومحليا.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20919,7 +20919,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تجويد عمل آليات الحوار والتشاور الكفيلة بإعمال المساواة وتكافؤ الفرص على نحو أفضل في كافة دوائر اتخاذ القرار في القطاعات العمومية الوطنية والمحلية والقطاع الخاص والمنظمات غير الحكومية. ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20932,7 +20932,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 2,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج فعالة للتوعية والتحسيس والتربية على قيم ومبادئ المساواة وتكافؤ الفرص والمناصفة لفائدة أطر وموظفي الإدارات والمؤسسات العمومية والجماعات الترابية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20945,7 +20945,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 2,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز دور وسائل الإعلام في نشر قيم ومبادئ المساواة والمناصفة وتكافؤ الفرص ومحاربة التمييز.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20958,7 +20958,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "-20- تسريع إصدار قانون خاص بإعداد التراب الوطني. ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20971,7 +20971,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "-21- تنفيذ توصيات المجلس الأعلى لإعداد التراب الوطني واللجن المنبثقة عنه.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -20984,7 +20984,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إدماج البعد الثقافي في التنظيم الجهوي على مستوى وسائل الإعلام والبرامج التربوية والتظاهرات الثقافية والفنية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21010,7 +21010,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة دعم الجهات بمناسبة وضع التصاميم الجهوية المقترحة لإعداد التراب.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21023,7 +21023,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "--",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21036,7 +21036,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بوضع ميثاق اللاتمركز الإداري في إطار تنزيل الجهوية المتقدمة وتكريس الحكامة الترابية",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21049,7 +21049,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية الإطار القانوني والتنظيمي لتعزيز النزاهة والشفافية من خلال ملاءمته مع الاتفاقيات الدولية لمكافحة الفساد كما صادقت عليها المملكة المغربية ليشمل ما يتعلق بالتنسيق وآليات التحري والوصول إلى المعلومات والتنفيذ الفعال والتتبع والإشراف.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21062,7 +21062,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بالمصادقة على المقتضيات القانونية المؤطرة لتجريم الإثراء غير المشروع.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21075,7 +21075,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بوضع ميثاق للمرافق العمومية يتضمن قواعد الحكامة الإدارية الجيدة.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21088,7 +21088,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بوضع المقتضيات التنظيمية الخاصة بالتدابير المتعلقة بالوقاية من الفساد. ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21101,7 +21101,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  استكمال الإجراءات التشريعية المتعلقة بإصدار مشروع القانون رقم 13.31 المتعلق بالحق في الوصول إلى المعلومات.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21140,7 +21140,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل أدوار مؤسسات الحكامة والديمقراطية التشاركية في اقتراح التدابير ذات الأثر المباشر على مكافحة الفساد ودعم عملها في كل ما يخص نشر قيم النزاهة والشفافية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21153,7 +21153,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الالتقائية بين البرامج والمبادرات الأفقية والقطاعية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21205,7 +21205,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز طرق وأشكال التبليغ عن حالات الفساد، بما في ذلك وضع خط أخضر وتيسير تقديم الشكايات.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21218,7 +21218,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع معايير مرجعية قابلة للتتبع وقياس مظاهر الفساد.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21296,7 +21296,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مراجعة المقتضيات القانونية بما يضمن إلزامية إجراء الخبرة الطبية في حالة ادعاء التعرض للتعذيب واعتبار المحاضر المنجزة باطلة في حالة رفض إجراءها بعد طلبها من طرف المتهم أو دفاعه. ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21309,7 +21309,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإصدار قانون يتعلق بالتحقق من هوية الأشخاص بواسطة البصمات الجينية. ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21400,7 +21400,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "دعم المؤسسات الأمنية بالموارد البشرية والمالية والتقنية اللازمة.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21465,7 +21465,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إعداد ونشر دلائل ودعائم ديداكتيكية لتوعية وتحسيس المسؤولين وأعوان الأمن بقواعد الحكامة الجيدة على المستوى الأمني واحترام حقوق الإنسان.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21504,7 +21504,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقوية الخبرة الفنية فيما يخص عمل لجان تقصي الحقائق البرلمانية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21530,7 +21530,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مراجعة القوانين المنظمة للحريات العامة لضمان انسجامها مع الدستور من حيث القواعد القانونية الجوهرية والإجراءات الخاصة بفض التجمعات العمومية والتجمهر والتظاهر وذلك في إطار احترام المعايير الدولية والقواعد الديمقراطية المتعارف عليها.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21556,7 +21556,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تبسيط المساطر المتعلقة بالتصريح بالتجمعات العمومية من أجل تعزيز وضمان ممارسة الحريات العامة من طرف مختلف مكونات المجتمع (جمعيات، نقابات) والعمل على ضمان التطبيق السليم للمساطر المعمول بها في هذا المجال.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21595,7 +21595,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تيسير حريات الاجتماع والتجمهر والتظاهر السلمي من حيث تحديد الأماكن المخصصة لها والقيام بالوساطة والتفاوض.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21634,7 +21634,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تكريس مبدأ عدم الإفلات من العقاب في السياسة الجنائية وفي سائر التدابير العمومية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21660,7 +21660,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز المقتضيات القانونية المتعلقة بجبر ضرر ضحايا انتهاكات حقوق الإنسان.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21725,7 +21725,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تشجيع إمكانيات التظلم الإداري والقضائي صونا لمبدأ عدم الإفلات من العقاب وضمانا لوصول الضحايا إلى سبل الانتصاف المناسبة.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21738,7 +21738,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إعمال الحق في الوصول إلى المعلومة واستلامها ونشرها بما يضمن تفعيل مبدأ عدم الإفلات من العقاب",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21764,7 +21764,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تفعيل الرؤية الاستراتيجية لإصلاح التعليم 2015-2030 من أجل مدرسة الجودة والارتقاء، وإصدار القانون الإطار الخاص بها",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21803,7 +21803,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "--",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21816,7 +21816,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  اعتماد تدابير تحفيزية لتعميم تمدرس الفتيات في جميع المستويات التعليمية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21842,7 +21842,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  بلورة سياسة لغوية تضمن العدالة اللغوية وتأخذ بعين الاعتبار حاجيات التلاميذ وتراعي الخصوصيات اللغوية والثقافية للأقاليم والجهات",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21855,7 +21855,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "   إيجاد آليات لربط مخرجات المنظومة التربوية بالحاجيات الاقتصادية والاجتماعية والثقافية وبأهداف الخطط التنموية",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21881,7 +21881,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  إيجاد آليات إدارية تحفز المدرسين على المشاركة الفعالة في المشاريع المدرسية والتربوية وتسمح بتوسيع مشاركة التلاميذ فيها",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21894,7 +21894,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  تفعيل مجالس التدبير وتعزيز أدوارها باعتبارها أداة لتحقيق تدبير تشاركي للشأن التعليمي",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21907,7 +21907,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  اعتماد آلية المساعدة الاجتماعية في الوسط المدرسي",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21959,7 +21959,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  الإسراع بإصدار القانون التنظيمي المتعلق بإعمال الطابع الرسمي للغة الأمازيغية",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21972,7 +21972,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  الإسراع بإصدار القانون التنظيمي المتعلق بالمجلس الوطني للغات والثقافة المغربية",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21985,7 +21985,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  تنمية الأشكال والآليات والوسائل الكفيلة بالحفاظ على التنوع الثقافي وتطويره في السياسات العمومية والاستراتيجيات والمخططات والبرامج الوطنية التي تقتضي إعمال الحقوق الثقافية بما فيها الحق في المشاركة الثقافية ",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -21998,7 +21998,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز استعمال اللغة العربية في المرافق العمومية وباقي مناحي الحياة العامة",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -22037,7 +22037,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإدماج العرضاني للحقوق اللغوية والثقافية الأمازيغية في برامج التربية والتكوين وفي المحيط المدرسي والجامعي",
                             ResultatsAttendu = "بيئة تربوية مساعدة على إدماج الحقوق اللغوية والثقافية الأمازيغية",
                             TypeMesure = 1
@@ -22050,7 +22050,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز مكانة الثقافة والموروث الحساني في النموذج التنموي الخاص بالأقاليم الجنوبية وضمن التطور المجتمعي الوطني",
                             ResultatsAttendu = "برامج معززة لمكانة الموروث الثقافي الحساني في النموذج التنموي",
                             TypeMesure = 1
@@ -22063,7 +22063,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "استثمار وحفظ الرصيد الحضاري العبري المغربي في إغناء التنوع الثقافي والتطور المجتمعي",
                             ResultatsAttendu = "مبادرات داعمة للتنوع الثقافي والتطور الاجتماعي ",
                             TypeMesure = 1
@@ -22076,7 +22076,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز وسائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق الثقافية",
                             ResultatsAttendu = "سائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق معززة جهويا ومركزيا",
                             TypeMesure = 1
@@ -22102,7 +22102,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مراجعة دفاتر تحملات شركات الاتصال السمعي البصري بما يسمح بتعزيز حصة البث بالأمازيغية",
                             ResultatsAttendu = "إطار تنظيمي معزز لحصة البث باللغة الأمازيغية",
                             TypeMesure = 1
@@ -22154,7 +22154,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز الشراكات بين المؤسسات الثقافية العمومية والقطاع الخاص ومنظمات الشباب والمجتمع المدني.",
                             ResultatsAttendu = "شراكات داعمة لإبداعات الشباب ",
                             TypeMesure = 1
@@ -22206,7 +22206,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " توسيع شبكة المراكز والمركبات الثقافية لتشمل عموم المناطق الحضرية والقروية.",
                             ResultatsAttendu = "مركبات ثقافية جهوية ومحلية مساهمة في الإشعاع الثقافي",
                             TypeMesure = 1
@@ -22219,7 +22219,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعميم المكتبات ومراكز التنشيط الثقافي والمسرحي والفني في المناطق التي تفتقر للبنيات التحتية الثقافية.",
                             ResultatsAttendu = "بنيات مشجعة على الحياة الثقافية ",
                             TypeMesure = 1
@@ -22232,7 +22232,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج تيسر مشاركة وتمتع الأشخاص المسنين وفي وضعية إعاقة بالحقوق الثقافية.",
                             ResultatsAttendu = "بيئة داعمة لتمتع الأشخاص المسنين      وفي وضعية إعاقة بالحقوق الثقافية",
                             TypeMesure = 1
@@ -22271,7 +22271,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تشجيع وتثمين الدراسات البحثية في مجال التأصيل للتنوع الثقافي والحفاظ على الذاكرة والثقافة الشعبية وسائر الإبداعات المماثلة.",
                             ResultatsAttendu = "مناخ مشجع على البحث ",
                             TypeMesure = 1
@@ -22310,7 +22310,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع ميثاق وطني في مجال التنوع الثقافي موجه إلى كافة المتدخلين والفاعلين.",
                             ResultatsAttendu = "ميثاق وطني في مجال التنوع الثقافي معتمد",
                             TypeMesure = 1
@@ -22323,7 +22323,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج تواصلية للجمهور الواسع تستهدف التعريف والتحسيس بالحقوق الثقافية واللغوية ومختلف إبداعاتها",
                             ResultatsAttendu = "بيئة مشجعة للنهوض بالحقوق الثقافية ",
                             TypeMesure = 1
@@ -22336,7 +22336,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج متخصصة بمساعدة المختصين في المهن الثقافية للنهوض بقدرات المنظمات غير الحكومية والجماعات الترابية وسائر المؤسسات العاملة في مجال الحقوق الثقافية",
                             ResultatsAttendu = "برامج داعمة لقدرات مختلف الفاعلين في مجال الحقوق الثقافية",
                             TypeMesure = 1
@@ -22401,7 +22401,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم الموارد البشرية الطبية وشبه الطبية والإدارية ومواصلة تعزيز الكفاءات عن طريق التكوين والتكوين المستمر.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي   ",
                             TypeMesure = 1
@@ -22414,7 +22414,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تأهيل أقسام المستعجلات لتعزيز الخدمات المتعلقة بالحالات الطارئة والخطيرة.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي/ أقسام المستعجلات مؤهلة لتقديم خدمات ذات جودة وتغطي الحاجيات",
                             TypeMesure = 1
@@ -22427,7 +22427,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النهوض بصحة الأم والمواليد الجدد والعناية بطب التوليد.",
                             ResultatsAttendu = "برامج صحية معززة لصحة الأم والطفل والمواليد الجدد",
                             TypeMesure = 1
@@ -22466,7 +22466,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تحسين جودة الخدمات وتوسيع التغطية لتشمل باقي الفئات الأخرى وضمان التوزيع العادل للموارد على كافة التراب الوطني. ",
                             ResultatsAttendu = "برامج داعمة لتعميم وتجويد الخدمات الصحية",
                             TypeMesure = 1
@@ -22479,7 +22479,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم التحصيل والتحليل الممنهج والشمولي للمعطيات والمعلومات حسب النوع الاجتماعي في مجال الصحة وخصوصا ما تعلق بالأمراض المتنقلة جنسيا والعنف. ",
                             ResultatsAttendu = " نظاممعلوماتي مندمج معد",
                             TypeMesure = 1
@@ -22492,7 +22492,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحداث خلايا تساعد الأطر الصحية على التواصل مع المرضى المتحدثين بالأمازيغية والحسانية.",
                             ResultatsAttendu = "بنيات داعمة للتواصل مع المرضى المتحدثين باللغة الأمازيغية والحسانية",
                             TypeMesure = 1
@@ -22505,7 +22505,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " النهوض بالصحة النفسية والعقلية ومواصلة مأسستها وتعميم خدماتها.",
                             ResultatsAttendu = "بنيات داعمة للنهوض بالصحةالنفسيةوالعقلية",
                             TypeMesure = 1
@@ -22518,7 +22518,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم عمل الفرق الطبية المتنقلة في إطار تقريب الخدمات الصحية وتيسيرها.",
                             ResultatsAttendu = "آليات داعمة لتقريب الخدمات الصحية وتيسيرها",
                             TypeMesure = 1
@@ -22544,7 +22544,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تخليق المرفق الصحي وعقلنة طرق تدبير الأدوية والمستلزمات الطبية داخل المستشفيات.",
                             ResultatsAttendu = "آليات مساعدة على التدبير المعقلن وداعمة لتخليق المرفق الصحي",
                             TypeMesure = 1
@@ -22596,7 +22596,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة تعزيز الخدمات المتعلقة بمعالجة الشكايات والتظلمات والاقتراحات من طرف المرتفقين على الصعيد الجهوي، واعتماد استمارات توضع رهن إشارة المرتفقين لقياس مستوى رضاهم عن الخدمات. ",
                             ResultatsAttendu = "منظومة داعمة لتحسين مستوى الخدمات",
                             TypeMesure = 1
@@ -22609,7 +22609,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "القيام بحملات للتوعية داخل المستشفيات والمراكز والمستوصفات الصحية (ملصقات ومنشورات وأشرطة سمعية بصرية...) من أجل توعية المواطنات والمواطنين بحقوقهم وواجباتهم باللغات المتداولة.",
                             ResultatsAttendu = "مبادرات مساهمة في النهوض بثقافة الحق والواجب                  ",
                             TypeMesure = 1
@@ -22622,7 +22622,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز البرامج السمعية البصرية المتعلقة بالحق في الصحة",
                             ResultatsAttendu = "برامج سمعية بصرية داعمة للحق في الصحة",
                             TypeMesure = 1
@@ -22635,7 +22635,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " استكمال مسطرة المصادقة على اتفاقية منظمة العمل الدولية رقم 102 المتعلقة بالمعايير الدنيا للضمان الاجتماعي.",
                             ResultatsAttendu = "المصادقة على تفاقية منظمةا لعمل الدولية رقم 102 المتعلقة بالمعاييرالدنيا للضمان الاجتماعي",
                             TypeMesure = 1
@@ -22648,7 +22648,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " النظر في المصادقة على اتفاقية منظمة العمل الدولية رقم 118 التي تهم المساواة في معاملة مواطني البلد والذين ليسوا من مواطني البلد في مجال الضمان الاجتماعي.",
                             ResultatsAttendu = "بلورة تصور ",
                             TypeMesure = 1
@@ -22687,7 +22687,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " اعتماد المساواة وتكافؤ الفرص في برامج التكوين والتأهيل والإدماج في سوق الشغل.",
                             ResultatsAttendu = "المساواة وتكافؤ الفرص فئويا ومجاليا مفعلة في برامج التكوين والتأهيل والإدماج في سوق الشغل",
                             TypeMesure = 1
@@ -22713,7 +22713,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعمال مبدأ الشفافية وتكافؤ الفرص في التشغيل ووضع آليات ومساطر إدارية تنظم الإعلان عن المناصب الشاغرة في جميع القطاعات وفي مرافق الإدارة العمومية ضمانا للشفافية.",
                             ResultatsAttendu = "الشفافية   وتكافؤ الفرص في التوظيف معززة  ",
                             TypeMesure = 1
@@ -22726,7 +22726,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد برامج لدعم وتنشيط المقاولات الصغرى والمتوسطة والتعاونيات ووضع شباك داخل الجماعات الترابية للتعريف بالمقاولات خصوصا النسائية منها.",
                             ResultatsAttendu = "برامج داعمة للمقاولات الصغرى           والمتوسطة",
                             TypeMesure = 1
@@ -22739,7 +22739,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تشجيع المشاريع المذرة للدخل.",
                             ResultatsAttendu = "برامج داعمة للمقاولات الصغرى  والمتوسطة / أنشطة داعمة لتحسين الدخل والإدماج الاقتصادي",
                             TypeMesure = 1
@@ -22778,7 +22778,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية هيئة مفتشي الشغل.",
                             ResultatsAttendu = "هيئة مفتشي الشغل معززة ",
                             TypeMesure = 1
@@ -22791,7 +22791,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج وخطط كفيلة بتأهيل التكوين المهني وجعله يساهم بفعالية في تقليص معدلات البطالة. ",
                             ResultatsAttendu = "برامج داعمة للنهوض بالتكوين المهني كرافعة للتشغيل",
                             TypeMesure = 1
@@ -22843,7 +22843,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إرساء استراتيجية وطنية شمولية ومندمجة في مجال السكن.",
                             ResultatsAttendu = "استراتيجية وطنية معتمدة داعمة للحق في السكن   ",
                             TypeMesure = 1
@@ -22856,7 +22856,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز المنظومة القانونية المتعلقة بالسكن والتعمير وملاءمتها مع متطلبات حقوق الإنسان.",
                             ResultatsAttendu = "إطار قانوني داعم للحق في السكن",
                             TypeMesure = 1
@@ -22882,7 +22882,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بإصدار مشاريع القوانين ذات الصلة بالتعمير وفق منظور يتوخى التنمية البشرية المستدامة ويراعي التنوع المجالي والخصوصيات المحلية والهوية المعمارية لمختلف الأقاليم.",
                             ResultatsAttendu = "منظومة قانونية للتعمير داعمةللتنمية المستدامة",
                             TypeMesure = 1
@@ -22895,7 +22895,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل القانون للحد من التجاوزات في ميدان التعمير والإسكان وزجر المخالفات وضمان سلامة البناء في الوسطين الحضري والقروي.",
                             ResultatsAttendu = "منظومة قانونية داعمة للحد من التجاوزات في ميدان التعمير والإسكان",
                             TypeMesure = 1
@@ -22960,7 +22960,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنفيذ أولويات السكن الاجتماعي بمضاعفة العرض في مجال المنتوجات السكنية الملائمة لحاجيات وإمكانيات الفئات المحدودة الدخل في إطار مشروع تطوير المنتوج السكني البديل في أفق 2021.",
                             ResultatsAttendu = "عرض سكني مستجيب لحاجيات الفئات المحدودة الدخل",
                             TypeMesure = 1
@@ -22973,7 +22973,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " حصر الاستفادة من برنامج السكن الاجتماعي في ذوي الدخل المحدود بالصرامة اللازمة",
                             ResultatsAttendu = "آليات داعمة لتعزيز الحكامة في تنفيذ برامج السكن الاجتماعي",
                             TypeMesure = 1
@@ -22986,7 +22986,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مضاعفة الإمكانيات المالية لصناديق الضمان الموجهة للشرائح الاجتماعية ذات الدخل المحدود والضعيف وغير القار لتمكينها من ولوج القروض السكنية في ظروف ملائمة.",
                             ResultatsAttendu = "آلية مالية داعمة لتمكين الشرائح الاجتماعية ذات الدخل المحدود والضعيف والقار من ولوج السكن",
                             TypeMesure = 1
@@ -22999,7 +22999,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تفعيل القانون المتعلق بالمباني الآيلة للسقوط وتنظيم عمليات التجديد الحضري ووضع برامج متكاملة لمعالجة السكن المهدد بالانهيار لتشمل مجموع التراب الوطني.",
                             ResultatsAttendu = "إطار مؤسساتي وتنظيمي داعم لمعالجة إشكالية السكن المهدد بالانهيار",
                             TypeMesure = 1
@@ -23012,7 +23012,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " جعل التدابير الجبائية التحفيزية لفائدة المنعشين العقاريين المنخرطين في إنجاز مشاريع السكن الاجتماعي تتلاءم وتوفير العرض السكني اللائق لمختلف فئات المجتمع.",
                             ResultatsAttendu = "تدابير تحفيزية داعمة لتكثيف العرض السكني",
                             TypeMesure = 1
@@ -23025,7 +23025,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تضمين دفاتر التحملات للمعايير الدنيا المطبقة على السكن الاجتماعي المحددة بصفة قانونية أو تنظيمية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -23038,7 +23038,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع سياسة إعلامية تيسر التواصل الموجه في مجال تمتع الفئات الاجتماعية من الحق في السكن اللائق. ",
                             ResultatsAttendu = "برامج إعلامية لتعزيز التواصل حول الحق في السكن اللائق",
                             TypeMesure = 1
@@ -23064,7 +23064,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إعداد مواد مرجعية بيداغوجية حول ثقافة حقوق الإنسان وقيمتها الدستورية موجهة لطلبة الدراسات العليا في مجال الهندسة المعمارية.",
                             ResultatsAttendu = "آليات داعمة لإدماج ثقافة حقوق الإنسان في منهاج التكوين",
                             TypeMesure = 1
@@ -23077,7 +23077,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج تدريب وتكوين المنشطين في ميدان المصاحبة الاجتماعية للمشاريع السكنية. ",
                             ResultatsAttendu = "موارد بشرية مؤهلة، داعمة للمصاحبة الاجتماعية  ",
                             TypeMesure = 1
@@ -23142,7 +23142,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مراجعة اختصاصات وتنظيم المجلس الوطني للبيئة بهدف وضع الهياكل والمؤسسات والآليات والمساطر اللازمة للحكامة البيئية الجيدة وتحقيق التنمية المستدامة طبقا لمبادئ وأهداف القانون الإطار بمثابة ميثاق وطني للبيئة والتنمية المستدامة. ",
                             ResultatsAttendu = "التأطير القانوني للمجالات البيئية معزز",
                             TypeMesure = 1
@@ -23155,7 +23155,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تغطية المجالات البيئية غير المشمولة بالتشريع البيئي والتنمية المستدامة بغية استكمال التأطير القانوني لمختلف هذه المجالات. ",
                             ResultatsAttendu = "إطار تشريعي معزز",
                             TypeMesure = 1
@@ -23168,7 +23168,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النظر في تجميع القوانين القطاعية ذات الصلة بالبيئة في إطار مدونة واضحة ومحينة لأجل تعزيز الانسجام بينها وتسهيل الولوج إلى مضامينها من طرف الهيئات التي تسهر على تطبيقها ومن طرف المواطنات والمواطنين.",
                             ResultatsAttendu = "مصنفات مساهمة في الولوج إلى القوانين ذات الصلة بالبيئة ",
                             TypeMesure = 1
@@ -23181,7 +23181,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم الصندوق الوطني للبيئة والتنمية المستدامة.",
                             ResultatsAttendu = "آلية مساهمة في دعم المشاريع البيئية",
                             TypeMesure = 1
@@ -23233,7 +23233,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تأمين مشاركة ومساهمة مختلف الفاعلين وخاصة منظمات المجتمع المدني والهيئات السياسية والنقابية والإعلامية في النهوض بالثقافة البيئية ومختلف البرامج البيئية.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالثقافة البيئية",
                             TypeMesure = 1
@@ -23272,7 +23272,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقنين الزراعات المستهلكة للمياه خاصة بالمناطق الهشة.",
                             ResultatsAttendu = "برامج داعمةلتكريس تدبير يحافظ على الموارد المائية المحدودة ويضمن استدامتها",
                             TypeMesure = 1
@@ -23285,7 +23285,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تيسير الولوج إلى المعلومة البيئية وتأمين مشاركة المواطنات والمواطنين في إعداد المشاريع والبرامج ذات الصلة بالبيئة والمشاركة في اتخاذ القرار.",
                             ResultatsAttendu = "إطار مؤسساتي ضامن للحق في المعلومة ومؤمن للمشاركة",
                             TypeMesure = 1
@@ -23298,7 +23298,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم البرنامج الوطني لتدبير وتثمين النفايات.",
                             ResultatsAttendu = "البرنامج الوطني لتدبير وتثمين النفاياتمدعم",
                             TypeMesure = 1
@@ -23311,7 +23311,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  الإسراع بتنفيذ المخطط الوطني لتطهير السائل لا سيما بالعالم القروي.",
                             ResultatsAttendu = "مخطط وطني منجز",
                             TypeMesure = 1
@@ -23337,7 +23337,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تيسير ولوج المواطنات المواطنين إلى القضاء عند التعرض للأضرار البيئية لأجل تحقيق عدالة بيئية.",
                             ResultatsAttendu = "معرفة مساعدة على تيسير الحق في العدالة البيئية  ",
                             TypeMesure = 1
@@ -23363,7 +23363,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعمال مضامين الميثاق الوطني للإعلام والبيئة والتنمية المستدامة.",
                             ResultatsAttendu = "الميثاق الوطني للإعلام والبيئة والتنمية المستدامة مفعل",
                             TypeMesure = 1
@@ -23376,7 +23376,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنظيم حملات تحسيسية بمتطلبات ترشيد وعقلنة تدبير الموارد الطبيعية وحماية البيئة عبر وسائل الإعلام المكتوبة والمسموعة والمرئية والإلكترونية.",
                             ResultatsAttendu = "برامج إعلامية داعمة لحماية البيئة  ",
                             TypeMesure = 1
@@ -23402,7 +23402,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " النهوض بثقافة حماية البيئة عبر التربية والتكوين والتكوين المستمر والتحسيس.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالثقافة البيئية ",
                             TypeMesure = 1
@@ -23428,7 +23428,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تكوين القضاة والشرطة القضائية والبيئية في مجال الحقوق البيئية.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي   ",
                             TypeMesure = 1
@@ -23441,7 +23441,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إعداد واعتماد خطة عمل وطنية في مجال المقاولة وحقوق الإنسان بإشراك كافة الفاعلين المعنيين (قطاعات حكومية والبرلمان والقطاع الخاص والنقابات وهيئات الحكامة والديمقراطية التشاركية وحقوق الإنسان ومنظمات المجتمع المدني...).",
                             ResultatsAttendu = "خطة معتمدة في مجال المقاولة وحقوق الإنسان ",
                             TypeMesure = 1
@@ -23454,7 +23454,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "-212- تحفيز المقاولات على وضع ميثاق داخلي عام للسلوك في مجال حقوق الإنسان.",
                             ResultatsAttendu = "بيئة داعمة للنهوض بحقوق الإنسان داخل المقاولة ",
                             TypeMesure = 1
@@ -23467,7 +23467,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إدماج بعد احترام حقوق الإنسان في المقاولة على مستوى القانون والممارسة والنهوض بأدوار المقاولة المتعلقة بحقوق الانسان وقيم المواطنة.",
                             ResultatsAttendu = "بيئة داعمة للنهوض بحقوق الإنسان داخل المقاولة",
                             TypeMesure = 1
@@ -23506,7 +23506,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الوعي بموضوع المقاولة وحقوق الإنسان من خلال تنظيم لقاءات وطنية وجهوية بمشاركة الأطراف المعنية. ",
                             ResultatsAttendu = "برامج داعمة للنهوض بمجال المقاولة وحقوق الإنسان ",
                             TypeMesure = 1
@@ -23532,7 +23532,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج تكوينية في مجال حقوق الإنسان في المقاولة لفائدة كل المتدخلين وأصحاب المصلحة (مسؤولو المقاولة والأطر النقابية والفاعلون المدنيون والقضاة والمحامون ومفتشو الشغل).",
                             ResultatsAttendu = "برامج تكوينية مساعدة على الرفع من مستوى الوعي بحقوق الإنسان في المقاولة",
                             TypeMesure = 1
@@ -23545,7 +23545,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع التدريس والبحث العلمي في الجامعة ومعاهد التكوين ومراكز البحث العلمي حول المقاولة وحقوق الإنسان",
                             ResultatsAttendu = "برامج داعمة للتدريس والبحث الجامعي حول المقاولة وحقوق الإنسان",
                             TypeMesure = 1
@@ -23584,7 +23584,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم الآليات والتدابير الكفيلة ببلورة وتيسير تتبع وتقييم السياسات العمومية والبرامج التي تستهدف الحماية والنهوض بالحقوق الفئوية.",
                             ResultatsAttendu = "آليات كفيلة بتطوير نجاعة البرامج الخاصة بالحقوق الفئوية ",
                             TypeMesure = 1
@@ -23597,7 +23597,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة إدماج ثقافة حقوق الإنسان ذات الصلة بالحقوق الفئوية في برامج المعهد العالي للقضاء والمهن القضائية.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي   ",
                             TypeMesure = 1
@@ -23675,7 +23675,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع الجماعات الترابية لبرامج في مجال الحقوق الفئوية.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالحقوق الفئوية",
                             TypeMesure = 1
@@ -23740,7 +23740,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز قدرات مختلف الفاعلين المعنيين، حكوميين وغير حكوميين، في مجال الحقوق الفئوية.",
                             ResultatsAttendu = "برامج للتكوين والتكوين المستمر داعمة لتعزيز القدرات في مجال الحقوق الفئوية",
                             TypeMesure = 1
@@ -23753,7 +23753,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تأهيل وتعزيز قدرات جمعية الهلال الأحمر المغربي والجمعيات الوطنية الأخرى المعنية بالفئات الاجتماعية في وضعية هشاشة.",
                             ResultatsAttendu = "برنامج داعم لقدرات جمعيات المجتمع المدني",
                             TypeMesure = 1
@@ -23766,7 +23766,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل المجلس الاستشاري للأسرة والطفولة وإصدار النصوص التشريعية والتنظيمية المتعلقة به.",
                             ResultatsAttendu = "المجلس الاستشاري للأسرة والطفولة مفعل",
                             TypeMesure = 1
@@ -23779,7 +23779,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بإحداث وتفعيل الآلية الوطنية للتظلم الخاصة بالأطفال ضحايا انتهاكات حقوق الطفل.",
                             ResultatsAttendu = "الآلية الوطنية للتظلم الخاصة بالأطفال ضحايا انتهاكات حقوق الطفل مفعلة",
                             TypeMesure = 1
@@ -23831,7 +23831,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بإصدار القانون المتعلق بشروط فتح وتدبير مؤسسات الرعاية الاجتماعية والنصوص القانونية والتنظيمية ذات الصلة.",
                             ResultatsAttendu = " إطار قانوني داعم تجويد خدمات مؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -23844,7 +23844,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل المقتضيات القانونية ذات الصلة بالأطفال في المرحلة الانتقالية في القانون المتعلق بتشغيل العمال المنزليين.",
                             ResultatsAttendu = "مناخ داعم لاحترام القانون المتعلق بتشغيل العاملات والعمال المنزليين ",
                             TypeMesure = 1
@@ -23870,7 +23870,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تطوير وتفعيل المقتضيات القانونية الخاصة بتجريم الاستغلال الجنسي للأطفال والاتجار بهم مع تشديد العقوبات على الجناة.",
                             ResultatsAttendu = "إطار قانوني داعم    لحماية حقوق الطفل ",
                             TypeMesure = 1
@@ -23896,7 +23896,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تبسيط المساطر المتعلقة بتسجيل الأطفال في سجلات الحالة المدنية. ",
                             ResultatsAttendu = "إطار قانوني داعم لتعزيز حق الطفل في الهوية ",
                             TypeMesure = 1
@@ -23909,7 +23909,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "نقل جميع الاختصاصات المخولة للجنة العليا للحالة المدنية في موضوع الأسماء العائلية إلى القضاء.",
                             ResultatsAttendu = "آليات وسبل إعمال الحق في الهوية معززة ",
                             TypeMesure = 1
@@ -23922,7 +23922,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل منشور رئيس الحكومة حول الحملة الوطنية لتسجيل الأطفال غير المسجلين في الحالة المدنية بشكل دوري ومستمر.",
                             ResultatsAttendu = "آليات داعمة لحماية الأطفال في هويتهم المدنية وحقوقهم الأساسية ",
                             TypeMesure = 1
@@ -23935,7 +23935,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز وتقوية المساعدة الاجتماعية والقانونية للأطفال ضحايا الاعتداء والعنف والاستغلال أو في تماس مع القانون.",
                             ResultatsAttendu = "المساعدة الاجتماعية والقانونية للأطفال ضحايا العنف والاستغلال معززة وشاملة",
                             TypeMesure = 1
@@ -23948,7 +23948,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز حقوق الأطفال في المشاركة في إعداد وتتبع تفعيل السياسات والبرامج والمشاريع الوطنية.",
                             ResultatsAttendu = "بيئة مشجعة على مشاركة الأطفال",
                             TypeMesure = 1
@@ -23961,7 +23961,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة ودعم الجهود الرامية إلى الحد من تزويج القاصرات. ",
                             ResultatsAttendu = "بيئة مساعدة على الحد من تزويج القاصرات ",
                             TypeMesure = 1
@@ -24000,7 +24000,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " حماية حقوق الأطفال في وسائل الإعلام بما في ذلك وسائل الاتصال الحديثة والنهوض بالتربية عليها.",
                             ResultatsAttendu = "بيئة إعلامية داعمة لحقوق الطفل ",
                             TypeMesure = 1
@@ -24013,7 +24013,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الولوج الآمن للأطفال إلى وسائل الإعلام والاتصال المعتمدة على التكنولوجية الحديثة عبر وضع برامج خاصة وحمايتهم من كافة أشكال الاستغلال.",
                             ResultatsAttendu = "بيئة داعمة لولوج الأطفال الآمن   لوسائل الإعلام والاتصال المعتمدة على التكنولوجيا الحديثة",
                             TypeMesure = 1
@@ -24039,7 +24039,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة الجهود الرامية إلى الحد من ظاهرة تشغيل الأطفال.",
                             ResultatsAttendu = "الجهود الرامية إلى الحد من ظاهرة تشغيل الأطفال متواصلة ومعززة",
                             TypeMesure = 1
@@ -24065,7 +24065,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " اعتماد معايير الجودة في خدمات التكفل بمؤسسات الرعاية الاجتماعية للأطفال.",
                             ResultatsAttendu = "توفر مؤسسات الرعاية الاجتماعية على خدمات ذات جودة",
                             TypeMesure = 1
@@ -24078,7 +24078,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع تصنيفات ودفاتر تحملات خاصة بأصناف مؤسسات الرعاية الاجتماعية المستقبلة للأطفال في حاجة للحماية.",
                             ResultatsAttendu = "مؤسسات الرعاية الاجتماعية المستقبلة للأطفال مصنفة",
                             TypeMesure = 1
@@ -24117,7 +24117,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل البرنامج التنفيذي للسياسة العمومية المندمجة لحماية الطفولة بالمغرب محليا وجهويا.",
                             ResultatsAttendu = "تدابير البرنامج الوطني للسياسة العمومية المندمجة لحماية الطفولة منفذة جهويا ومحليا",
                             TypeMesure = 1
@@ -24169,7 +24169,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " العمل على تطوير شراكات مع دول الاستقبال لحماية الأطفال المغاربة من الاستغلال إعمالا لمصلحتهم الفضلى.",
                             ResultatsAttendu = "الشراكات مع دول الاستقبال لحماية الأطفال المغاربة من الاستغلال مطورة",
                             TypeMesure = 1
@@ -24182,7 +24182,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع آليات ترابية مندمجة لحماية الطفولة تضمن التنسيق واليقظة من حيث الإشعار والتبليغ وتتبع الخدمات الموجهة للأطفال ضحايا العنف.",
                             ResultatsAttendu = "آليات ترابية مندمجة لحماية الطفولة مفعلة",
                             TypeMesure = 1
@@ -24195,7 +24195,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تفعيل ميثاق السياحة المستدامة من أجل وضع برامج وقائية لحماية الأطفال من الأشخاص الذين يستغلون السياحة لأسباب جنسية.",
                             ResultatsAttendu = "آليات داعمة لحماية الأطفال من الاستغلال الجنسي",
                             TypeMesure = 1
@@ -24221,7 +24221,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل آليات المراقبة التربوية والبيداغوجية واللوجيستيكية بالأماكن التي تخصص لتعليم وتربية الأطفال.",
                             ResultatsAttendu = "آليات معززة للمراقبة التربوية والبيداغوجية واللوجيستيكية",
                             TypeMesure = 1
@@ -24247,7 +24247,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إشاعة ثقافة حقوق الطفل داخل مؤسسات الرعاية الاجتماعية المستقبلة للأطفال.",
                             ResultatsAttendu = "ثقافة حقوق الطفل مشاعة داخل مؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -24260,7 +24260,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " التحسيس والتوعية بخطورة العقاب البدني والعنف في الوسط التربوي كبيئة آمنة.",
                             ResultatsAttendu = "برامج مساعدة على الحد من العنف في الوسط التربوي ",
                             TypeMesure = 1
@@ -24299,7 +24299,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإبداع في أشكال وصيغ الأدوات البيداغوجية حول التربية الجنسية وفق مقاربة وقائية تراعي أعمار ومستوى نضج الأطفال والمخاطر التي قد تهددهم.",
                             ResultatsAttendu = " بيئة داعمة للتربية الجنسية بالوسط المدرسي ",
                             TypeMesure = 1
@@ -24338,7 +24338,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع تدابير تشريعية وتنظيمية في مجال حماية الجمهور الناشئ ضد المخاطر المترتبة عن الاستعمال السيئ لوسائل التواصل المعتمدة على التكنولوجيات الحديثة. ",
                             ResultatsAttendu = "إطار قانوني داعم لحماية الجمهور الناشئ  ",
                             TypeMesure = 1
@@ -24351,7 +24351,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مراجعة القانون التنظيمي للأحزاب بكيفية تمكن الشباب من المساهمة الفعالة في تدبير الشأن الحزبي. ",
                             ResultatsAttendu = "مقتضيات قانونية داعمة للمشاركة السياسية للشباب",
                             TypeMesure = 1
@@ -24403,7 +24403,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج استعجالية لفائدة فئات الشباب الأكثر هشاشة (في وضعية إعاقة أو إقصاء...).",
                             ResultatsAttendu = "برامج مساعدة على إدماج الشباب الأكثر هشاشة ",
                             TypeMesure = 1
@@ -24416,7 +24416,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد وتعميم تقارير دورية حول الشباب.",
                             ResultatsAttendu = "تقارير مساعدة على تتبع وضعية الشباب",
                             TypeMesure = 1
@@ -24481,7 +24481,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع قاعدة معلومات خاصة بالشباب. ",
                             ResultatsAttendu = "قاعدة معلومات مساعدة على التخطيط     والبرمجة",
                             TypeMesure = 1
@@ -24494,7 +24494,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج لتعزيز قدرات المتدخلين في السياسة الوطنية المندمجة للشباب.",
                             ResultatsAttendu = "قدرات متطورة لتفعيل السياسة الوطنية المندمجة للشباب",
                             TypeMesure = 1
@@ -24507,7 +24507,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز مواكبة الشباب ودعمهم في مجالات الادماج الاقتصادي والمهني والاجتماعي.",
                             ResultatsAttendu = "آليات داعمة لقدرات الشباب على الاندماج الاقتصادي والمهني والاجتماعي",
                             TypeMesure = 1
@@ -24520,7 +24520,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز المقررات المدرسية والجامعية بمصوغات بيداغوجية تعنى بحقوق الانسان وبالتربية على المواطنة.",
                             ResultatsAttendu = "بيئة تربوية داعمة لترسيخ ثقافة حقوق الإنسان",
                             TypeMesure = 1
@@ -24533,7 +24533,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز برامج محو الأمية في أفق القضاء عليها وتأهيل الشباب.",
                             ResultatsAttendu = "تقليص المعدل العام للأمية إلى20 % سنة 2021",
                             TypeMesure = 1
@@ -24572,7 +24572,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  الإسراع بإصدار النصوص التنظيمية المنصوص عليها في القانون الإطار المتعلق بحماية حقوق الأشخاص في وضعية إعاقة والنهوض بها.",
                             ResultatsAttendu = "مقتضيات تنظيمية داعمة لتفعيل القانون الإطار",
                             TypeMesure = 1
@@ -24585,7 +24585,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بإحداث الآلية الوطنية لحماية حقوق الأشخاص في وضعية إعاقة وفقا لمقتضيات اتفاقية حقوق الأشخاص ذوي الإعاقة.",
                             ResultatsAttendu = "الآلية الوطنية لحماية حقوق الأشخاص في وضعية إعاقة مفعلة",
                             TypeMesure = 1
@@ -24598,7 +24598,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم عمل آلية التنسيق الحكومية ذات الصلة بالمجال.",
                             ResultatsAttendu = "آلية مؤسساتية داعمة لتنفيذ الاستراتيجية",
                             TypeMesure = 1
@@ -24611,7 +24611,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحداث مركز وطني للرصد والتوثيق والبحث في مجال الإعاقة.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -24624,7 +24624,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل مقتضيات الرافعة الرابعة من الرؤية الاستراتيجية لإصلاح التربية والتعليم 2015-2030 من أجل مدرسة الانصاف والجودة والارتقاء لفائدة الأشخاص في وضعية إعاقة أو في وضعيات خاصة.",
                             ResultatsAttendu = "مؤسسة تعليمية دامجة ",
                             TypeMesure = 1
@@ -24676,7 +24676,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بتحديد وإعمال النسبة المائوية للأشخاص في وضعية إعاقة الواجب تشغيلهم في إطار تعاقدي بين الدولة ومقاولات القطاع الخاص.",
                             ResultatsAttendu = " إطار تعاقدي محفز لتشغيل الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -24689,7 +24689,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج لدعم وتشجيع التشغيل الذاتي للأشخاص في وضعية إعاقة.",
                             ResultatsAttendu = "برامج دعم وتشجيع التشغيل الذاتي للأشخاص في وضعية إعاقة مفعلة",
                             TypeMesure = 1
@@ -24728,7 +24728,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " اعتماد مقاربة التنمية الدامجة بشكل عرضاني في كل البرامج والسياسات المرتبطة بمجال الإعاقة.",
                             ResultatsAttendu = "مقاربة التنمية الدامجة مفعلة",
                             TypeMesure = 1
@@ -24767,7 +24767,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بتفعيل نظام الدعم الاجتماعي والتشجيع والمساندة لفائدة الأشخاص في وضعية إعاقة المنصوص عليه في المادة 6 من القانون الإطار رقم 97.13 المتعلق بحماية حقوق الاشخاص في وضعية إعاقة والنهوض بها.",
                             ResultatsAttendu = "نظام الدعم الاجتماعي مشجع على النهوض بوضعية الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -24793,7 +24793,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحداث مؤسسات اجتماعية تعنى بإيواء الأشخاص في وضعية إعاقة المتخلى عنهم.",
                             ResultatsAttendu = "بنيات داعمة للتكفل بالأشخاص في وضعية إعاقة المتخلى عنهم",
                             TypeMesure = 1
@@ -24923,7 +24923,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تمكين الأشخاص في وضعية إعاقة من خدمات الإعلام والتواصل عن طريق إدماج لغة الإشارة في البرامج الإعلامية.",
                             ResultatsAttendu = "بيئة داعمة لولوج   الأشخاص في وضعية إعاقة للخدمات الإعلامية  ",
                             TypeMesure = 1
@@ -24936,7 +24936,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تطوير التكوين الأساسي والمستمر في مجال الإعاقة خصوصا في ميدان التربية والتكوين المهني والصحة ولاسيما ما يتعلق ببعض أنواع الإعاقة كالتوحد.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالتكوين الأساسي والمستمر في مجال الإعاقة في ميدان التربية والتكوين المهني",
                             TypeMesure = 1
@@ -24949,7 +24949,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز دور المجتمع المدني في النهوض بحقوق الأشخاص في وضعية إعاقة. ",
                             ResultatsAttendu = "مبادرات مثمنة وداعمة لأدوار المجتمع المدني في مجال النهوض بحقوق الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -24988,7 +24988,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " حماية حقوق وكرامة الأشخاص المسنين بتجويد معايير وخدمات التكفل على مستوى البنيات والموارد البشرية.",
                             ResultatsAttendu = "بنيات مهيكلة وفق معايير الجودة، مؤهلة لصيانة حقوق وكرامة الأشخاص المسنين",
                             TypeMesure = 1
@@ -25014,7 +25014,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "حث الجماعات الترابية على إدماج احتياجات الأشخاص المسنين في برامج تفعيل مخططات التنمية.",
                             ResultatsAttendu = "مخططات للتنمية المحلية داعمة للنهوض بأوضاع الأشخاص المسنين  ",
                             TypeMesure = 1
@@ -25027,7 +25027,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم وتشجيع مبادرات المجتمع المدني والقطاع الخاص لإحداث نوادي وفضاءات الترفيه الموجهة للأشخاص المسنين.",
                             ResultatsAttendu = "دينامية داعمة لمبادرات المجتمع المدني والقطاع الخاص في مجال الترفيه لفائدة الأشخاص المسنين ",
                             TypeMesure = 1
@@ -25053,7 +25053,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " التفكير في سبل تثمين خبرات ومهارات الأشخاص المسنين بوصفها جزءا من الرصيد الثقافي والقيمي للرأسمال اللامادي.",
                             ResultatsAttendu = "بيئة داعمة لتثمين خبرات ومهارات الأشخاص المسنين",
                             TypeMesure = 1
@@ -25066,7 +25066,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع مؤشرات وأنظمة معلوماتية لتتبع أوضاع الأشخاص المسنين لاسيما الموجودين في أوضاع صعبة محليا جهويا ووطنيا.",
                             ResultatsAttendu = "منظومة معلوماتية ومؤشرات للتتبع مبلورة ",
                             TypeMesure = 1
@@ -25105,7 +25105,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع النهوض بطب الشيخوخة في وزارة الصحة وإحداث شعب للتكوين الطبي المتخصص في هذا المجال.",
                             ResultatsAttendu = "منظومة داعمة لطب الشيخوخة",
                             TypeMesure = 1
@@ -25118,7 +25118,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز البرامج الإعلامية الموجهة للمسنين",
                             ResultatsAttendu = "برامج إعلامية مواكبة لحاجيات المسنين",
                             TypeMesure = 1
@@ -25131,7 +25131,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز قدرات العاملين العموميين والمؤسساتيين لإدماج حاجيات الأشخاص المسنين في السياسات العمومية",
                             ResultatsAttendu = "قدرات معززة لإدماج حاجيات الأشخاص المسنين في السياسات العمومية",
                             TypeMesure = 1
@@ -25183,7 +25183,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع المقتضيات التنظيمية الخاصة بقانون مكافحة الاتجار بالبشر.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -25196,7 +25196,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تطوير الاتفاقيات الخاصة بالحماية الاجتماعية المبرمة بين المغرب ودول الاستقبال وفق مقاربة حقوق الإنسان.",
                             ResultatsAttendu = "الإطار الاتفاقي الثنائي في مجال الحماية الاجتماعية معزز وفق مقاربة حقوق الانسان",
                             TypeMesure = 1
@@ -25222,7 +25222,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "ضمان حماية النساء المغربيات المهاجرات وتعزيز الجهود الحكومية ذات الصلة.",
                             ResultatsAttendu = "آلية لتعزيز حماية النساء المغربيات المهاجرات محدثة ومفعلة",
                             TypeMesure = 1
@@ -25235,7 +25235,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "حماية حقوق الأطفال المغاربة المهاجرين غير المرفقين في دول الاستقبال.",
                             ResultatsAttendu = "برامج متخصصة مع جمعيات ومنظمات في مجال حماية حقوق الأطفال مبلورة ومنفذة",
                             TypeMesure = 1
@@ -25248,7 +25248,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع آلية وطنية للرصد ومتابعة تطور الهجرة من وإلى المغرب وقياس آثارها المجتمعية والاقتصادية والثقافية.",
                             ResultatsAttendu = "مرصد متخصص في متابعة تطور الهجرة محدث",
                             TypeMesure = 1
@@ -25261,7 +25261,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة المجهودات المبذولة للرقي بالبرامج الموجهة لفائدة مغاربة العالم والاستجابة لانتظاراتهم الثقافية واللغوية والدينية والتربوية في بلدان الاستقبال وتعزيز التواصل بينهم وبين بلدهم الأصلي.",
                             ResultatsAttendu = "برامج متنوعة تستجيب لإنتظارات مغاربة العالم",
                             TypeMesure = 1
@@ -25287,7 +25287,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة التنسيق والالتقائية بين كافة المتدخلين في مجال الهجرة وتعزيز دور اللجنة بين الوزارية لمغاربة العالم وشؤون الهجرة في هذا المجال. ",
                             ResultatsAttendu = "أداء اللجنة بين الوزارية معزز وفعال",
                             TypeMesure = 1
@@ -25339,7 +25339,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز البرامج الإعلامية الموجهة إلى المهاجرين.",
                             ResultatsAttendu = "بيئة إعلامية داعمة لحقوق المهاجرين",
                             TypeMesure = 1
@@ -25365,7 +25365,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد برامج للتكوين والتكوين المستمر تستحضر البعد الحقوقي وتستهدف الجمعيات التي تعمل مع المغاربة في الخارج والمهاجرين بالمغرب.",
                             ResultatsAttendu = "قدرات فعاليات المجتمع المدني معززة",
                             TypeMesure = 1
@@ -25378,7 +25378,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الانضمام والتفاعل مع الأنظمة الدولية والإقليمية لحقوق الإنسان.",
                             ResultatsAttendu = "ممارسة اتفاقية في مجال حقوق الإنسان معززة ",
                             TypeMesure = 1
@@ -25391,7 +25391,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة الانخراط في اتفاقيات مجلس أوروبا المفتوحة للبلدان غير الأعضاء.",
                             ResultatsAttendu = "ممارسة اتفاقية في مجال حقوق الإنسان معززة ",
                             TypeMesure = 1
@@ -25404,7 +25404,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع باعتماد مشروعي القانون الجنائي وقانون المسطرة الجنائية.",
                             ResultatsAttendu = "منظومة جنائية معتمدة",
                             TypeMesure = 1
@@ -25417,7 +25417,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع باعتماد قانون جديد منظم للسجون بما يضمن أنسنة المؤسسات السجنية وتحسين ظروف إقامة النزلاء وتغذيتهم وحماية باقي حقوقهم.",
                             ResultatsAttendu = "إطار قانوني داعم لأنسنة المؤسسات السجنية  ",
                             TypeMesure = 1
@@ -25430,7 +25430,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإخراج المقتضيات القانونية الناظمة للعقوبات البديلة بهدف الحد من إشكالات الاعتقال الاحتياطي والاكتظاظ في السجون.",
                             ResultatsAttendu = "مقتضيات قانونية داعمة لتجويد خدمات المؤسسة السجنية",
                             TypeMesure = 1
@@ -25443,7 +25443,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة الحوار المجتمعي حول الانضمام إلى البروتوكول الاختياري الثاني الملحق بالعهد الدولي الخاص بالحقوق المدنية والسياسية المتعلق بإلغاء عقوبة الاعدام. ",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25469,7 +25469,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة الحوار المجتمعي حول تعديل المادة 53 من مدونة الأسرة لأجل كفالة الحماية الفعلية للزوج أو الزوجة من طرف النيابة العامة عند الإرجاع إلى بيت الزوجية.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25482,7 +25482,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إحداث مرصد وطني للإجرام.",
                             ResultatsAttendu = "آلية مؤسساتية مساعدة على تتبع تطور ظاهرة الإجرام",
                             TypeMesure = 1
@@ -25495,7 +25495,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إحداث بنك وطني للبصمات الجينية.",
                             ResultatsAttendu = "آلية داعمة للنجاعة الأمنية ",
                             TypeMesure = 1
@@ -25508,7 +25508,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "عقد شراكات وعلاقات تعاون مع مؤسسات وطنية ودولية تعنى بحقوق الإنسان للمساهمة في تأطير وتكوين القضاة والمحامين في مجال تملك ثقافة حقوق الإنسان فكرا وسلوكا وعملا.",
                             ResultatsAttendu = "شراكات وبرامج داعمة لتملك ثقافة حقوق الإنسان",
                             TypeMesure = 1
@@ -25560,7 +25560,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برنامج خاص بجمع وتصنيف وتقديم ونشر الاجتهادات القضائية الجنائية والإدارية المعززة لإعمال المعايير الدولية لحقوق الإنسان.",
                             ResultatsAttendu = "منظومة داعمة لتثمين الاجتهادات القضائية واستثمارها",
                             TypeMesure = 1
@@ -25573,7 +25573,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "توثيق ونشر الأعمال البحثية المعززة لرصيد ثقافة حقوق الإنسان المنجزة بمناسبة الآراء والأعمال الاستشارية من قبل مؤسسات الديمقراطية التشاركية.",
                             ResultatsAttendu = "برامج معززة لرصيد ثقافة حقوق الإنسان ",
                             TypeMesure = 1
@@ -25599,7 +25599,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج للتدريب والتكوين المستمر على سيادة القانون واحترام حقوق الإنسان تتأسس على الدستور والرصيد الثري للاجتهاد القضائي المغربي والممارسات الفضلى ذات الصلة لفائدة مكونات العدالة ومساعديها.",
                             ResultatsAttendu = "برامج للتكوين داعمة لتمكين الجهاز القضائي من ثقافة حقوق الانسان  ",
                             TypeMesure = 1
@@ -25625,7 +25625,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل الهيئة المكلفة بالمناصفة ومكافحة جميع أشكال التمييز.",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -25651,7 +25651,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز الخطة الحكومية للمساواة في أفق المناصفة إكرام 2",
                             ResultatsAttendu = "الإعمال الناجع لخطة إكرام 2",
                             TypeMesure = 1
@@ -25664,7 +25664,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز حماية النساء ضد العنف على مستوى التشريع والسياسة الجنائية الوطنية.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -25677,7 +25677,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإصدار القانون المتعلق بمحاربة العنف ضد النساء.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -25729,7 +25729,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة الحوار المجتمعي حول بعض مقتضيات مدونة الأسرة، ويتعلق الأمر بإعادة صياغة المادة 49 بما يضمن استيعاب مفهوم الكد والسعاية ومراجعة المادة 175 بإقرار عدم سقوط الحضانة عن الأم رغم زواجها وتعديل المادتين 236 و238 من أجل كفالة المساواة بين الأب والأم في الولاية على الأبناء.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25755,7 +25755,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز آليات الرصد والتتبع لحماية النساء ضحايا العنف وطنيا جهويا ومحليا.",
                             ResultatsAttendu = "آليات فعالة لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -25781,7 +25781,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إدماج مقاربة النوع الاجتماعي في البرامج الاقتصادية الداعمة لإحداث المقاولات.",
                             ResultatsAttendu = "آليات كفيلة بإدماج مقاربة النوع",
                             TypeMesure = 1
@@ -25794,7 +25794,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " التفعيل الحازم لمقتضيات قانون الاتجار بالبشر المتعلقة بحماية الأطفال والنساء الضحايا.",
                             ResultatsAttendu = "إجراءات داعمة لحماية الأطفال والنساء ضحايا الاتجار بالبشر ",
                             TypeMesure = 1
@@ -25833,7 +25833,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع الآليات الكفيلة بضمان ولوج النساء لمجال المقاولة.",
                             ResultatsAttendu = "أليات كفيلة بتيسير ولوج النساء للمقاولة ",
                             TypeMesure = 1
@@ -25859,7 +25859,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "توثيق ونشر الاجتهاد القضائي في مجال حماية حقوق المرأة كمصدر من مصادر التشريع.",
                             ResultatsAttendu = "دينامية داعمة لترصيد الاجتهاد القضائي في مجال حماية حقوق المرأة",
                             TypeMesure = 1
@@ -25924,7 +25924,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  التعجيل بإصدار القانون المتعلق بالحق في الحصول على المعلومات، انسجاما مع الدستور والاتفاقيات الدولية.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -25937,7 +25937,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إصدار القرار الخاص بتحديد كيفيات سير وتنظيم مراحل انتخاب أعضاء المجلس الوطني للصحافة.",
                             ResultatsAttendu = "",
                             TypeMesure = 1
@@ -26054,7 +26054,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " التشجيع على الانضمام إلى الاتفاقيات الدولية المتعلقة بحماية التراث الثقافي والمحافظة عليه.",
                             ResultatsAttendu = "تعزيز الممارسة الاتفاقية",
                             TypeMesure = 1
@@ -26106,7 +26106,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تأهيل آليات الحفاظ على التراث الثقافي المغربي بكل مكوناته وأبعاده المادية والرمزية والمحافظة عليها.",
                             ResultatsAttendu = "آليات الحفاظ على التراث الثقافي المغربي مؤهلة",
                             TypeMesure = 1
@@ -26132,7 +26132,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مراجعة قانون الأرشيف طبقا للممارسات الفضلى المعمول بها في هذا المجال مع استكمال إصدار المراسيم التطبيقية لقانون الأرشيف.",
                             ResultatsAttendu = "إطار قانوني داعم لثقافة الأرشيف ",
                             TypeMesure = 1
@@ -26145,7 +26145,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع تصور لتدبير الأرشيف في إطار الجهوية المتقدمة.",
                             ResultatsAttendu = "خطة وطنية لتنظيم الأرشيفات الترابية معتمدة",
                             TypeMesure = 1
@@ -26158,7 +26158,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " رصد مصادر الأرشيف الخاصة بالمغرب والموجودة خارج الوطن ومواصلة استرجاعها ومعالجتها وحفظها وتيسير الاطلاع عليها من قبل المهتمين. ",
                             ResultatsAttendu = "الأرصدة الوثائقية المتعلقة بالمغرب والموجودة بالخارج مرصودة ومعالجة وميسرة للاطلاع",
                             TypeMesure = 1
@@ -26184,7 +26184,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 25,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تحسيس مصالح الإدارات العمومية بأهمية إيداع أرشيفها بانتظام لدى مصالح أرشيف المغرب طبقا للنصوص الجاري بها العمل.",
                             ResultatsAttendu = "مصالح الإدارات العمومية منخرطة",
                             TypeMesure = 1
@@ -26197,7 +26197,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية قدرات مؤسسة أرشيف المغرب المادية والبشرية حتى تتمكن من الاضطلاع بالمهام المنوطة بها.",
                             ResultatsAttendu = "قدرات مؤسسة أرشيف المغرب معززة ",
                             TypeMesure = 1
@@ -26249,7 +26249,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الرفع من جودة الأحكام.",
                             ResultatsAttendu = "آلية داعمة للرفع من جودة الاحكام",
                             TypeMesure = 1
@@ -26262,7 +26262,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة تحسين الخدمات القضائية.",
                             ResultatsAttendu = "إجراءات معززة للخدمات القضائية",
                             TypeMesure = 1
@@ -26275,7 +26275,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة جهود تخليق العدالة.",
                             ResultatsAttendu = "دينامية داعمة لتخليق العدالة",
                             TypeMesure = 1
@@ -26776,7 +26776,7 @@ namespace Admin5.Migrations
                             Label = "جمعيات المجتمع المدني",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -26792,7 +26792,7 @@ namespace Admin5.Migrations
                             Label = " القطاع الخاص",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -26912,7 +26912,7 @@ namespace Admin5.Migrations
                             Label = " مهنيو الإعلام  ",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -26976,7 +26976,7 @@ namespace Admin5.Migrations
                             Label = "المنعشون العقاريون",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -26992,7 +26992,7 @@ namespace Admin5.Migrations
                             Label = " مهنيو الصحافة",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27016,7 +27016,7 @@ namespace Admin5.Migrations
                             Label = "مجلس الجالية المغربية المقيمة بالخارج",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27024,7 +27024,7 @@ namespace Admin5.Migrations
                             Label = "النقابات الأكثر تمثيلية",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27176,7 +27176,7 @@ namespace Admin5.Migrations
                             Label = " المجتمع المدني",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27200,7 +27200,7 @@ namespace Admin5.Migrations
                             Label = " المنظمات المهنية",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27208,7 +27208,7 @@ namespace Admin5.Migrations
                             Label = " الهيئات المهنية",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27248,7 +27248,7 @@ namespace Admin5.Migrations
                             Label = " المقاولات ",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27296,7 +27296,7 @@ namespace Admin5.Migrations
                             Label = "المنظمات المهنية للمشغلين والأجراء",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -27304,7 +27304,7 @@ namespace Admin5.Migrations
                             Label = "لمنظمات المهنية للمشغلين",
                             Type = 1,
                             TypeHome = 5,
-                            TypeHomeText = "للهيئات الشريكة و الموازية"
+                            TypeHomeText = "الهيئات الشريكة و الموازية"
                         },
                         new
                         {
@@ -34509,1906 +34509,1906 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Annee = 2021,
+                            Annee = 2020,
                             Effet = "0 التأثير لهدا الإنجاز",
-                            IdActivite = 38,
-                            IdMesure = 239,
+                            IdActivite = 125,
+                            IdMesure = 315,
                             Nom = "0 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "0 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 78.0
+                            TauxRealisation = 55.0
                         },
                         new
                         {
                             Id = 2,
-                            Annee = 2025,
+                            Annee = 2029,
                             Effet = "1 التأثير لهدا الإنجاز",
-                            IdActivite = 307,
-                            IdMesure = 365,
+                            IdActivite = 236,
+                            IdMesure = 386,
                             Nom = "1 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "1 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 95.0
+                            TauxRealisation = 72.0
                         },
                         new
                         {
                             Id = 3,
-                            Annee = 2025,
+                            Annee = 2022,
                             Effet = "2 التأثير لهدا الإنجاز",
-                            IdActivite = 371,
-                            IdMesure = 288,
+                            IdActivite = 862,
+                            IdMesure = 312,
                             Nom = "2 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "2 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 39.0
+                            TauxRealisation = 31.0
                         },
                         new
                         {
                             Id = 4,
-                            Annee = 2023,
+                            Annee = 2022,
                             Effet = "3 التأثير لهدا الإنجاز",
-                            IdActivite = 304,
-                            IdMesure = 279,
+                            IdActivite = 540,
+                            IdMesure = 113,
                             Nom = "3 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "3 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
+                            TauxRealisation = 57.0
                         },
                         new
                         {
                             Id = 5,
-                            Annee = 2018,
+                            Annee = 2026,
                             Effet = "4 التأثير لهدا الإنجاز",
-                            IdActivite = 914,
-                            IdMesure = 148,
+                            IdActivite = 475,
+                            IdMesure = 18,
                             Nom = "4 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "4 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 13.0
+                            TauxRealisation = 46.0
                         },
                         new
                         {
                             Id = 6,
-                            Annee = 2020,
+                            Annee = 2024,
                             Effet = "5 التأثير لهدا الإنجاز",
-                            IdActivite = 954,
-                            IdMesure = 84,
+                            IdActivite = 929,
+                            IdMesure = 391,
                             Nom = "5 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "5 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 93.0
+                            TauxRealisation = 76.0
                         },
                         new
                         {
                             Id = 7,
                             Annee = 2021,
                             Effet = "6 التأثير لهدا الإنجاز",
-                            IdActivite = 543,
-                            IdMesure = 328,
+                            IdActivite = 888,
+                            IdMesure = 201,
                             Nom = "6 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "6 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 15.0
+                            TauxRealisation = 47.0
                         },
                         new
                         {
                             Id = 8,
-                            Annee = 2029,
+                            Annee = 2024,
                             Effet = "7 التأثير لهدا الإنجاز",
-                            IdActivite = 771,
-                            IdMesure = 78,
+                            IdActivite = 65,
+                            IdMesure = 52,
                             Nom = "7 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "7 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 38.0
+                            TauxRealisation = 23.0
                         },
                         new
                         {
                             Id = 9,
-                            Annee = 2020,
+                            Annee = 2026,
                             Effet = "8 التأثير لهدا الإنجاز",
-                            IdActivite = 973,
-                            IdMesure = 308,
+                            IdActivite = 876,
+                            IdMesure = 147,
                             Nom = "8 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "8 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 90.0
+                            TauxRealisation = 62.0
                         },
                         new
                         {
                             Id = 10,
                             Annee = 2019,
                             Effet = "9 التأثير لهدا الإنجاز",
-                            IdActivite = 960,
-                            IdMesure = 318,
+                            IdActivite = 987,
+                            IdMesure = 20,
                             Nom = "9 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "9 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 21.0
+                            TauxRealisation = 36.0
                         },
                         new
                         {
                             Id = 11,
-                            Annee = 2020,
+                            Annee = 2029,
                             Effet = "10 التأثير لهدا الإنجاز",
-                            IdActivite = 972,
-                            IdMesure = 326,
+                            IdActivite = 270,
+                            IdMesure = 228,
                             Nom = "10 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "10 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 59.0
+                            TauxRealisation = 60.0
                         },
                         new
                         {
                             Id = 12,
-                            Annee = 2020,
+                            Annee = 2026,
                             Effet = "11 التأثير لهدا الإنجاز",
-                            IdActivite = 668,
-                            IdMesure = 155,
+                            IdActivite = 82,
+                            IdMesure = 14,
                             Nom = "11 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "11 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 86.0
+                            TauxRealisation = 8.0
                         },
                         new
                         {
                             Id = 13,
-                            Annee = 2026,
+                            Annee = 2020,
                             Effet = "12 التأثير لهدا الإنجاز",
-                            IdActivite = 97,
-                            IdMesure = 30,
+                            IdActivite = 260,
+                            IdMesure = 203,
                             Nom = "12 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "12 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 99.0
+                            TauxRealisation = 79.0
                         },
                         new
                         {
                             Id = 14,
-                            Annee = 2023,
+                            Annee = 2028,
                             Effet = "13 التأثير لهدا الإنجاز",
-                            IdActivite = 552,
-                            IdMesure = 314,
+                            IdActivite = 361,
+                            IdMesure = 48,
                             Nom = "13 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "13 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 84.0
+                            TauxRealisation = 43.0
                         },
                         new
                         {
                             Id = 15,
-                            Annee = 2018,
+                            Annee = 2019,
                             Effet = "14 التأثير لهدا الإنجاز",
-                            IdActivite = 109,
-                            IdMesure = 267,
+                            IdActivite = 410,
+                            IdMesure = 189,
                             Nom = "14 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "14 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 79.0
+                            TauxRealisation = 51.0
                         },
                         new
                         {
                             Id = 16,
                             Annee = 2019,
                             Effet = "15 التأثير لهدا الإنجاز",
-                            IdActivite = 146,
-                            IdMesure = 208,
+                            IdActivite = 109,
+                            IdMesure = 329,
                             Nom = "15 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "15 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 16.0
+                            TauxRealisation = 58.0
                         },
                         new
                         {
                             Id = 17,
-                            Annee = 2018,
+                            Annee = 2019,
                             Effet = "16 التأثير لهدا الإنجاز",
-                            IdActivite = 159,
-                            IdMesure = 331,
+                            IdActivite = 881,
+                            IdMesure = 286,
                             Nom = "16 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "16 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 97.0
+                            TauxRealisation = 78.0
                         },
                         new
                         {
                             Id = 18,
                             Annee = 2026,
                             Effet = "17 التأثير لهدا الإنجاز",
-                            IdActivite = 728,
-                            IdMesure = 185,
+                            IdActivite = 320,
+                            IdMesure = 264,
                             Nom = "17 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "17 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 18.0
+                            TauxRealisation = 20.0
                         },
                         new
                         {
                             Id = 19,
-                            Annee = 2019,
+                            Annee = 2023,
                             Effet = "18 التأثير لهدا الإنجاز",
-                            IdActivite = 385,
-                            IdMesure = 305,
+                            IdActivite = 32,
+                            IdMesure = 50,
                             Nom = "18 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "18 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 71.0
+                            TauxRealisation = 15.0
                         },
                         new
                         {
                             Id = 20,
-                            Annee = 2021,
+                            Annee = 2029,
                             Effet = "19 التأثير لهدا الإنجاز",
-                            IdActivite = 899,
-                            IdMesure = 44,
+                            IdActivite = 369,
+                            IdMesure = 98,
                             Nom = "19 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "19 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
+                            TauxRealisation = 36.0
                         },
                         new
                         {
                             Id = 21,
-                            Annee = 2020,
+                            Annee = 2026,
                             Effet = "20 التأثير لهدا الإنجاز",
-                            IdActivite = 175,
-                            IdMesure = 298,
+                            IdActivite = 867,
+                            IdMesure = 126,
                             Nom = "20 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "20 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 65.0
+                            TauxRealisation = 99.0
                         },
                         new
                         {
                             Id = 22,
-                            Annee = 2022,
+                            Annee = 2023,
                             Effet = "21 التأثير لهدا الإنجاز",
-                            IdActivite = 306,
-                            IdMesure = 140,
+                            IdActivite = 799,
+                            IdMesure = 29,
                             Nom = "21 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "21 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 48.0
+                            TauxRealisation = 19.0
                         },
                         new
                         {
                             Id = 23,
-                            Annee = 2018,
+                            Annee = 2019,
                             Effet = "22 التأثير لهدا الإنجاز",
-                            IdActivite = 149,
-                            IdMesure = 107,
+                            IdActivite = 260,
+                            IdMesure = 175,
                             Nom = "22 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "22 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 72.0
+                            TauxRealisation = 96.0
                         },
                         new
                         {
                             Id = 24,
-                            Annee = 2026,
+                            Annee = 2022,
                             Effet = "23 التأثير لهدا الإنجاز",
-                            IdActivite = 270,
-                            IdMesure = 177,
+                            IdActivite = 546,
+                            IdMesure = 17,
                             Nom = "23 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "23 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 84.0
+                            TauxRealisation = 91.0
                         },
                         new
                         {
                             Id = 25,
-                            Annee = 2021,
+                            Annee = 2026,
                             Effet = "24 التأثير لهدا الإنجاز",
-                            IdActivite = 91,
-                            IdMesure = 11,
+                            IdActivite = 703,
+                            IdMesure = 79,
                             Nom = "24 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "24 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 12.0
+                            TauxRealisation = 11.0
                         },
                         new
                         {
                             Id = 26,
-                            Annee = 2022,
+                            Annee = 2018,
                             Effet = "25 التأثير لهدا الإنجاز",
-                            IdActivite = 347,
-                            IdMesure = 129,
+                            IdActivite = 286,
+                            IdMesure = 336,
                             Nom = "25 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "25 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 41.0
+                            TauxRealisation = 48.0
                         },
                         new
                         {
                             Id = 27,
-                            Annee = 2022,
+                            Annee = 2026,
                             Effet = "26 التأثير لهدا الإنجاز",
-                            IdActivite = 36,
-                            IdMesure = 61,
+                            IdActivite = 866,
+                            IdMesure = 204,
                             Nom = "26 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "26 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 26.0
+                            TauxRealisation = 22.0
                         },
                         new
                         {
                             Id = 28,
-                            Annee = 2022,
+                            Annee = 2019,
                             Effet = "27 التأثير لهدا الإنجاز",
-                            IdActivite = 416,
-                            IdMesure = 207,
+                            IdActivite = 568,
+                            IdMesure = 246,
                             Nom = "27 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "27 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
+                            TauxRealisation = 91.0
                         },
                         new
                         {
                             Id = 29,
-                            Annee = 2020,
+                            Annee = 2023,
                             Effet = "28 التأثير لهدا الإنجاز",
-                            IdActivite = 379,
-                            IdMesure = 99,
+                            IdActivite = 250,
+                            IdMesure = 364,
                             Nom = "28 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "28 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 86.0
+                            TauxRealisation = 40.0
                         },
                         new
                         {
                             Id = 30,
-                            Annee = 2022,
+                            Annee = 2024,
                             Effet = "29 التأثير لهدا الإنجاز",
-                            IdActivite = 118,
-                            IdMesure = 145,
+                            IdActivite = 596,
+                            IdMesure = 108,
                             Nom = "29 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "29 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
+                            TauxRealisation = 88.0
                         },
                         new
                         {
                             Id = 31,
-                            Annee = 2022,
+                            Annee = 2018,
                             Effet = "30 التأثير لهدا الإنجاز",
-                            IdActivite = 456,
-                            IdMesure = 58,
+                            IdActivite = 327,
+                            IdMesure = 324,
                             Nom = "30 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "30 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 54.0
+                            TauxRealisation = 81.0
                         },
                         new
                         {
                             Id = 32,
-                            Annee = 2019,
+                            Annee = 2025,
                             Effet = "31 التأثير لهدا الإنجاز",
-                            IdActivite = 148,
-                            IdMesure = 318,
+                            IdActivite = 670,
+                            IdMesure = 22,
                             Nom = "31 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "31 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
+                            TauxRealisation = 30.0
                         },
                         new
                         {
                             Id = 33,
                             Annee = 2018,
                             Effet = "32 التأثير لهدا الإنجاز",
-                            IdActivite = 984,
-                            IdMesure = 54,
+                            IdActivite = 959,
+                            IdMesure = 200,
                             Nom = "32 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "32 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 14.0
+                            TauxRealisation = 90.0
                         },
                         new
                         {
                             Id = 34,
-                            Annee = 2027,
+                            Annee = 2029,
                             Effet = "33 التأثير لهدا الإنجاز",
-                            IdActivite = 997,
-                            IdMesure = 159,
+                            IdActivite = 752,
+                            IdMesure = 229,
                             Nom = "33 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "33 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 68.0
+                            TauxRealisation = 10.0
                         },
                         new
                         {
                             Id = 35,
-                            Annee = 2028,
+                            Annee = 2023,
                             Effet = "34 التأثير لهدا الإنجاز",
-                            IdActivite = 753,
-                            IdMesure = 91,
+                            IdActivite = 933,
+                            IdMesure = 24,
                             Nom = "34 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "34 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 43.0
+                            TauxRealisation = 35.0
                         },
                         new
                         {
                             Id = 36,
-                            Annee = 2023,
+                            Annee = 2021,
                             Effet = "35 التأثير لهدا الإنجاز",
-                            IdActivite = 846,
-                            IdMesure = 117,
+                            IdActivite = 795,
+                            IdMesure = 172,
                             Nom = "35 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "35 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 74.0
+                            TauxRealisation = 85.0
                         },
                         new
                         {
                             Id = 37,
-                            Annee = 2027,
+                            Annee = 2019,
                             Effet = "36 التأثير لهدا الإنجاز",
-                            IdActivite = 987,
-                            IdMesure = 275,
+                            IdActivite = 17,
+                            IdMesure = 244,
                             Nom = "36 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "36 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 29.0
-                        },
-                        new
-                        {
-                            Id = 38,
-                            Annee = 2027,
-                            Effet = "37 التأثير لهدا الإنجاز",
-                            IdActivite = 892,
-                            IdMesure = 38,
-                            Nom = "37 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "37 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
-                        },
-                        new
-                        {
-                            Id = 39,
-                            Annee = 2027,
-                            Effet = "38 التأثير لهدا الإنجاز",
-                            IdActivite = 622,
-                            IdMesure = 227,
-                            Nom = "38 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "38 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 66.0
-                        },
-                        new
-                        {
-                            Id = 40,
-                            Annee = 2018,
-                            Effet = "39 التأثير لهدا الإنجاز",
-                            IdActivite = 244,
-                            IdMesure = 146,
-                            Nom = "39 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "39 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 88.0
                         },
                         new
                         {
+                            Id = 38,
+                            Annee = 2029,
+                            Effet = "37 التأثير لهدا الإنجاز",
+                            IdActivite = 57,
+                            IdMesure = 363,
+                            Nom = "37 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "37 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 88.0
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Annee = 2028,
+                            Effet = "38 التأثير لهدا الإنجاز",
+                            IdActivite = 515,
+                            IdMesure = 212,
+                            Nom = "38 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "38 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 24.0
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Annee = 2025,
+                            Effet = "39 التأثير لهدا الإنجاز",
+                            IdActivite = 752,
+                            IdMesure = 357,
+                            Nom = "39 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "39 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 44.0
+                        },
+                        new
+                        {
                             Id = 41,
-                            Annee = 2026,
+                            Annee = 2022,
                             Effet = "40 التأثير لهدا الإنجاز",
-                            IdActivite = 721,
-                            IdMesure = 134,
+                            IdActivite = 24,
+                            IdMesure = 227,
                             Nom = "40 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "40 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 57.0
+                            TauxRealisation = 14.0
                         },
                         new
                         {
                             Id = 42,
-                            Annee = 2029,
+                            Annee = 2025,
                             Effet = "41 التأثير لهدا الإنجاز",
-                            IdActivite = 229,
-                            IdMesure = 155,
+                            IdActivite = 269,
+                            IdMesure = 351,
                             Nom = "41 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "41 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 78.0
+                            TauxRealisation = 88.0
                         },
                         new
                         {
                             Id = 43,
-                            Annee = 2022,
+                            Annee = 2027,
                             Effet = "42 التأثير لهدا الإنجاز",
-                            IdActivite = 858,
-                            IdMesure = 91,
+                            IdActivite = 242,
+                            IdMesure = 123,
                             Nom = "42 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "42 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 72.0
+                            TauxRealisation = 50.0
                         },
                         new
                         {
                             Id = 44,
-                            Annee = 2026,
+                            Annee = 2019,
                             Effet = "43 التأثير لهدا الإنجاز",
-                            IdActivite = 299,
-                            IdMesure = 132,
+                            IdActivite = 350,
+                            IdMesure = 375,
                             Nom = "43 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "43 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 16.0
+                            TauxRealisation = 88.0
                         },
                         new
                         {
                             Id = 45,
-                            Annee = 2029,
+                            Annee = 2018,
                             Effet = "44 التأثير لهدا الإنجاز",
-                            IdActivite = 903,
-                            IdMesure = 264,
+                            IdActivite = 847,
+                            IdMesure = 133,
                             Nom = "44 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "44 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 79.0
+                            TauxRealisation = 5.0
                         },
                         new
                         {
                             Id = 46,
                             Annee = 2020,
                             Effet = "45 التأثير لهدا الإنجاز",
-                            IdActivite = 186,
-                            IdMesure = 10,
+                            IdActivite = 405,
+                            IdMesure = 33,
                             Nom = "45 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "45 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
+                            TauxRealisation = 83.0
                         },
                         new
                         {
                             Id = 47,
-                            Annee = 2024,
+                            Annee = 2028,
                             Effet = "46 التأثير لهدا الإنجاز",
-                            IdActivite = 482,
-                            IdMesure = 127,
+                            IdActivite = 904,
+                            IdMesure = 239,
                             Nom = "46 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "46 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 49.0
+                            TauxRealisation = 11.0
                         },
                         new
                         {
                             Id = 48,
-                            Annee = 2020,
+                            Annee = 2029,
                             Effet = "47 التأثير لهدا الإنجاز",
-                            IdActivite = 653,
-                            IdMesure = 381,
+                            IdActivite = 450,
+                            IdMesure = 348,
                             Nom = "47 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "47 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 57.0
+                            TauxRealisation = 85.0
                         },
                         new
                         {
                             Id = 49,
                             Annee = 2018,
                             Effet = "48 التأثير لهدا الإنجاز",
-                            IdActivite = 505,
-                            IdMesure = 191,
+                            IdActivite = 181,
+                            IdMesure = 246,
                             Nom = "48 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "48 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 57.0
+                            TauxRealisation = 62.0
                         },
                         new
                         {
                             Id = 50,
-                            Annee = 2019,
+                            Annee = 2022,
                             Effet = "49 التأثير لهدا الإنجاز",
-                            IdActivite = 396,
-                            IdMesure = 167,
+                            IdActivite = 210,
+                            IdMesure = 230,
                             Nom = "49 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "49 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
+                            TauxRealisation = 1.0
                         },
                         new
                         {
                             Id = 51,
-                            Annee = 2029,
+                            Annee = 2026,
                             Effet = "50 التأثير لهدا الإنجاز",
-                            IdActivite = 915,
-                            IdMesure = 112,
+                            IdActivite = 817,
+                            IdMesure = 317,
                             Nom = "50 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "50 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 59.0
+                            TauxRealisation = 10.0
                         },
                         new
                         {
                             Id = 52,
-                            Annee = 2028,
-                            Effet = "51 التأثير لهدا الإنجاز",
-                            IdActivite = 63,
-                            IdMesure = 47,
-                            Nom = "51 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "51 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 66.0
-                        },
-                        new
-                        {
-                            Id = 53,
-                            Annee = 2020,
-                            Effet = "52 التأثير لهدا الإنجاز",
-                            IdActivite = 205,
-                            IdMesure = 281,
-                            Nom = "52 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "52 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 60.0
-                        },
-                        new
-                        {
-                            Id = 54,
-                            Annee = 2028,
-                            Effet = "53 التأثير لهدا الإنجاز",
-                            IdActivite = 542,
-                            IdMesure = 142,
-                            Nom = "53 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "53 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
-                        },
-                        new
-                        {
-                            Id = 55,
-                            Annee = 2019,
-                            Effet = "54 التأثير لهدا الإنجاز",
-                            IdActivite = 348,
-                            IdMesure = 204,
-                            Nom = "54 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "54 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 50.0
-                        },
-                        new
-                        {
-                            Id = 56,
                             Annee = 2022,
-                            Effet = "55 التأثير لهدا الإنجاز",
-                            IdActivite = 425,
-                            IdMesure = 126,
-                            Nom = "55 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "55 معدل الإنجاز لهدا الإنجاز",
+                            Effet = "51 التأثير لهدا الإنجاز",
+                            IdActivite = 691,
+                            IdMesure = 289,
+                            Nom = "51 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "51 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 29.0
                         },
                         new
                         {
-                            Id = 57,
-                            Annee = 2023,
-                            Effet = "56 التأثير لهدا الإنجاز",
-                            IdActivite = 770,
-                            IdMesure = 218,
-                            Nom = "56 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "56 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 41.0
-                        },
-                        new
-                        {
-                            Id = 58,
-                            Annee = 2029,
-                            Effet = "57 التأثير لهدا الإنجاز",
-                            IdActivite = 202,
-                            IdMesure = 121,
-                            Nom = "57 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "57 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 58.0
-                        },
-                        new
-                        {
-                            Id = 59,
-                            Annee = 2024,
-                            Effet = "58 التأثير لهدا الإنجاز",
-                            IdActivite = 536,
-                            IdMesure = 185,
-                            Nom = "58 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "58 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 50.0
-                        },
-                        new
-                        {
-                            Id = 60,
-                            Annee = 2022,
-                            Effet = "59 التأثير لهدا الإنجاز",
-                            IdActivite = 804,
-                            IdMesure = 168,
-                            Nom = "59 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "59 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 37.0
-                        },
-                        new
-                        {
-                            Id = 61,
-                            Annee = 2028,
-                            Effet = "60 التأثير لهدا الإنجاز",
-                            IdActivite = 42,
-                            IdMesure = 199,
-                            Nom = "60 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "60 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 26.0
-                        },
-                        new
-                        {
-                            Id = 62,
-                            Annee = 2023,
-                            Effet = "61 التأثير لهدا الإنجاز",
-                            IdActivite = 406,
-                            IdMesure = 83,
-                            Nom = "61 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "61 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
-                        },
-                        new
-                        {
-                            Id = 63,
-                            Annee = 2025,
-                            Effet = "62 التأثير لهدا الإنجاز",
-                            IdActivite = 749,
-                            IdMesure = 397,
-                            Nom = "62 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "62 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
-                        },
-                        new
-                        {
-                            Id = 64,
+                            Id = 53,
                             Annee = 2027,
-                            Effet = "63 التأثير لهدا الإنجاز",
-                            IdActivite = 661,
-                            IdMesure = 373,
-                            Nom = "63 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "52 التأثير لهدا الإنجاز",
+                            IdActivite = 187,
+                            IdMesure = 216,
+                            Nom = "52 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "63 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 83.0
-                        },
-                        new
-                        {
-                            Id = 65,
-                            Annee = 2021,
-                            Effet = "64 التأثير لهدا الإنجاز",
-                            IdActivite = 240,
-                            IdMesure = 156,
-                            Nom = "64 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "64 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 4.0
-                        },
-                        new
-                        {
-                            Id = 66,
-                            Annee = 2025,
-                            Effet = "65 التأثير لهدا الإنجاز",
-                            IdActivite = 886,
-                            IdMesure = 349,
-                            Nom = "65 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "65 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 96.0
-                        },
-                        new
-                        {
-                            Id = 67,
-                            Annee = 2018,
-                            Effet = "66 التأثير لهدا الإنجاز",
-                            IdActivite = 7,
-                            IdMesure = 348,
-                            Nom = "66 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "66 معدل الإنجاز لهدا الإنجاز",
+                            Taux = "52 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 48.0
                         },
                         new
                         {
-                            Id = 68,
-                            Annee = 2020,
-                            Effet = "67 التأثير لهدا الإنجاز",
-                            IdActivite = 273,
-                            IdMesure = 89,
-                            Nom = "67 بعد الإنجازات لبعض الأنشطة ",
+                            Id = 54,
+                            Annee = 2025,
+                            Effet = "53 التأثير لهدا الإنجاز",
+                            IdActivite = 645,
+                            IdMesure = 390,
+                            Nom = "53 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "67 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 37.0
+                            Taux = "53 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 60.0
                         },
                         new
                         {
-                            Id = 69,
-                            Annee = 2026,
-                            Effet = "68 التأثير لهدا الإنجاز",
-                            IdActivite = 996,
-                            IdMesure = 270,
-                            Nom = "68 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "68 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 18.0
-                        },
-                        new
-                        {
-                            Id = 70,
+                            Id = 55,
                             Annee = 2021,
-                            Effet = "69 التأثير لهدا الإنجاز",
-                            IdActivite = 545,
-                            IdMesure = 168,
-                            Nom = "69 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "69 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 75.0
-                        },
-                        new
-                        {
-                            Id = 71,
-                            Annee = 2024,
-                            Effet = "70 التأثير لهدا الإنجاز",
-                            IdActivite = 872,
-                            IdMesure = 133,
-                            Nom = "70 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "54 التأثير لهدا الإنجاز",
+                            IdActivite = 482,
+                            IdMesure = 15,
+                            Nom = "54 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
-                            Taux = "70 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 71.0
+                            Taux = "54 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 44.0
                         },
                         new
                         {
-                            Id = 72,
-                            Annee = 2027,
-                            Effet = "71 التأثير لهدا الإنجاز",
-                            IdActivite = 652,
-                            IdMesure = 58,
-                            Nom = "71 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "71 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 2.0
-                        },
-                        new
-                        {
-                            Id = 73,
+                            Id = 56,
                             Annee = 2023,
-                            Effet = "72 التأثير لهدا الإنجاز",
-                            IdActivite = 535,
-                            IdMesure = 218,
-                            Nom = "72 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "72 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 35.0
-                        },
-                        new
-                        {
-                            Id = 74,
-                            Annee = 2019,
-                            Effet = "73 التأثير لهدا الإنجاز",
-                            IdActivite = 879,
-                            IdMesure = 287,
-                            Nom = "73 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "73 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
-                        },
-                        new
-                        {
-                            Id = 75,
-                            Annee = 2022,
-                            Effet = "74 التأثير لهدا الإنجاز",
-                            IdActivite = 440,
-                            IdMesure = 234,
-                            Nom = "74 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "74 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
-                        },
-                        new
-                        {
-                            Id = 76,
-                            Annee = 2019,
-                            Effet = "75 التأثير لهدا الإنجاز",
-                            IdActivite = 565,
-                            IdMesure = 18,
-                            Nom = "75 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "55 التأثير لهدا الإنجاز",
+                            IdActivite = 233,
+                            IdMesure = 345,
+                            Nom = "55 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "75 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 5.0
+                            Taux = "55 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 86.0
                         },
                         new
                         {
-                            Id = 77,
-                            Annee = 2028,
-                            Effet = "76 التأثير لهدا الإنجاز",
-                            IdActivite = 468,
-                            IdMesure = 2,
-                            Nom = "76 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "76 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 42.0
-                        },
-                        new
-                        {
-                            Id = 78,
-                            Annee = 2021,
-                            Effet = "77 التأثير لهدا الإنجاز",
-                            IdActivite = 677,
-                            IdMesure = 299,
-                            Nom = "77 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "77 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 61.0
-                        },
-                        new
-                        {
-                            Id = 79,
+                            Id = 57,
                             Annee = 2020,
-                            Effet = "78 التأثير لهدا الإنجاز",
-                            IdActivite = 128,
-                            IdMesure = 221,
-                            Nom = "78 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "56 التأثير لهدا الإنجاز",
+                            IdActivite = 831,
+                            IdMesure = 92,
+                            Nom = "56 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "78 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 71.0
+                            Taux = "56 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 62.0
                         },
                         new
                         {
-                            Id = 80,
-                            Annee = 2022,
-                            Effet = "79 التأثير لهدا الإنجاز",
-                            IdActivite = 453,
-                            IdMesure = 26,
-                            Nom = "79 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "79 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 64.0
-                        },
-                        new
-                        {
-                            Id = 81,
-                            Annee = 2019,
-                            Effet = "80 التأثير لهدا الإنجاز",
-                            IdActivite = 828,
-                            IdMesure = 226,
-                            Nom = "80 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "80 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 87.0
-                        },
-                        new
-                        {
-                            Id = 82,
-                            Annee = 2018,
-                            Effet = "81 التأثير لهدا الإنجاز",
-                            IdActivite = 288,
-                            IdMesure = 391,
-                            Nom = "81 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "81 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 27.0
-                        },
-                        new
-                        {
-                            Id = 83,
+                            Id = 58,
                             Annee = 2027,
-                            Effet = "82 التأثير لهدا الإنجاز",
-                            IdActivite = 608,
-                            IdMesure = 49,
-                            Nom = "82 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "57 التأثير لهدا الإنجاز",
+                            IdActivite = 112,
+                            IdMesure = 327,
+                            Nom = "57 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
-                            Taux = "82 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 45.0
+                            Taux = "57 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 29.0
                         },
                         new
                         {
-                            Id = 84,
-                            Annee = 2018,
-                            Effet = "83 التأثير لهدا الإنجاز",
-                            IdActivite = 530,
-                            IdMesure = 185,
-                            Nom = "83 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "83 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 88.0
-                        },
-                        new
-                        {
-                            Id = 85,
-                            Annee = 2024,
-                            Effet = "84 التأثير لهدا الإنجاز",
-                            IdActivite = 133,
-                            IdMesure = 103,
-                            Nom = "84 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "84 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
-                        },
-                        new
-                        {
-                            Id = 86,
+                            Id = 59,
                             Annee = 2026,
-                            Effet = "85 التأثير لهدا الإنجاز",
-                            IdActivite = 890,
-                            IdMesure = 277,
-                            Nom = "85 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "58 التأثير لهدا الإنجاز",
+                            IdActivite = 729,
+                            IdMesure = 150,
+                            Nom = "58 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
-                            Taux = "85 معدل الإنجاز لهدا الإنجاز",
+                            Taux = "58 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 17.0
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Annee = 2024,
+                            Effet = "59 التأثير لهدا الإنجاز",
+                            IdActivite = 642,
+                            IdMesure = 78,
+                            Nom = "59 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "59 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 43.0
                         },
                         new
                         {
-                            Id = 87,
+                            Id = 61,
+                            Annee = 2027,
+                            Effet = "60 التأثير لهدا الإنجاز",
+                            IdActivite = 237,
+                            IdMesure = 247,
+                            Nom = "60 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "60 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 36.0
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Annee = 2021,
+                            Effet = "61 التأثير لهدا الإنجاز",
+                            IdActivite = 780,
+                            IdMesure = 291,
+                            Nom = "61 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "61 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 61.0
+                        },
+                        new
+                        {
+                            Id = 63,
                             Annee = 2024,
+                            Effet = "62 التأثير لهدا الإنجاز",
+                            IdActivite = 831,
+                            IdMesure = 92,
+                            Nom = "62 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "62 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 6.0
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Annee = 2020,
+                            Effet = "63 التأثير لهدا الإنجاز",
+                            IdActivite = 959,
+                            IdMesure = 365,
+                            Nom = "63 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "63 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 65.0
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Annee = 2022,
+                            Effet = "64 التأثير لهدا الإنجاز",
+                            IdActivite = 830,
+                            IdMesure = 7,
+                            Nom = "64 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "64 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 49.0
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Annee = 2019,
+                            Effet = "65 التأثير لهدا الإنجاز",
+                            IdActivite = 108,
+                            IdMesure = 387,
+                            Nom = "65 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "65 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 71.0
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Annee = 2029,
+                            Effet = "66 التأثير لهدا الإنجاز",
+                            IdActivite = 38,
+                            IdMesure = 22,
+                            Nom = "66 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "66 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 22.0
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Annee = 2028,
+                            Effet = "67 التأثير لهدا الإنجاز",
+                            IdActivite = 216,
+                            IdMesure = 257,
+                            Nom = "67 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "67 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 39.0
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Annee = 2020,
+                            Effet = "68 التأثير لهدا الإنجاز",
+                            IdActivite = 385,
+                            IdMesure = 186,
+                            Nom = "68 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "68 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 51.0
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Annee = 2025,
+                            Effet = "69 التأثير لهدا الإنجاز",
+                            IdActivite = 500,
+                            IdMesure = 50,
+                            Nom = "69 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "69 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 34.0
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Annee = 2028,
+                            Effet = "70 التأثير لهدا الإنجاز",
+                            IdActivite = 732,
+                            IdMesure = 223,
+                            Nom = "70 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "70 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 47.0
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Annee = 2021,
+                            Effet = "71 التأثير لهدا الإنجاز",
+                            IdActivite = 221,
+                            IdMesure = 147,
+                            Nom = "71 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "71 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 53.0
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Annee = 2024,
+                            Effet = "72 التأثير لهدا الإنجاز",
+                            IdActivite = 814,
+                            IdMesure = 88,
+                            Nom = "72 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "72 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 50.0
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Annee = 2021,
+                            Effet = "73 التأثير لهدا الإنجاز",
+                            IdActivite = 778,
+                            IdMesure = 198,
+                            Nom = "73 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "73 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 2.0
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Annee = 2027,
+                            Effet = "74 التأثير لهدا الإنجاز",
+                            IdActivite = 319,
+                            IdMesure = 222,
+                            Nom = "74 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "74 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 43.0
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Annee = 2028,
+                            Effet = "75 التأثير لهدا الإنجاز",
+                            IdActivite = 366,
+                            IdMesure = 230,
+                            Nom = "75 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "75 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 11.0
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Annee = 2027,
+                            Effet = "76 التأثير لهدا الإنجاز",
+                            IdActivite = 983,
+                            IdMesure = 42,
+                            Nom = "76 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "76 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 21.0
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Annee = 2024,
+                            Effet = "77 التأثير لهدا الإنجاز",
+                            IdActivite = 482,
+                            IdMesure = 248,
+                            Nom = "77 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "77 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 49.0
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Annee = 2022,
+                            Effet = "78 التأثير لهدا الإنجاز",
+                            IdActivite = 849,
+                            IdMesure = 61,
+                            Nom = "78 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "78 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 17.0
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Annee = 2026,
+                            Effet = "79 التأثير لهدا الإنجاز",
+                            IdActivite = 165,
+                            IdMesure = 44,
+                            Nom = "79 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "79 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 69.0
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Annee = 2025,
+                            Effet = "80 التأثير لهدا الإنجاز",
+                            IdActivite = 6,
+                            IdMesure = 307,
+                            Nom = "80 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "80 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 56.0
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Annee = 2023,
+                            Effet = "81 التأثير لهدا الإنجاز",
+                            IdActivite = 179,
+                            IdMesure = 36,
+                            Nom = "81 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "81 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 16.0
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Annee = 2020,
+                            Effet = "82 التأثير لهدا الإنجاز",
+                            IdActivite = 648,
+                            IdMesure = 310,
+                            Nom = "82 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "82 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 16.0
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Annee = 2022,
+                            Effet = "83 التأثير لهدا الإنجاز",
+                            IdActivite = 711,
+                            IdMesure = 249,
+                            Nom = "83 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "83 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 52.0
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Annee = 2027,
+                            Effet = "84 التأثير لهدا الإنجاز",
+                            IdActivite = 159,
+                            IdMesure = 12,
+                            Nom = "84 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "84 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 53.0
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Annee = 2025,
+                            Effet = "85 التأثير لهدا الإنجاز",
+                            IdActivite = 168,
+                            IdMesure = 303,
+                            Nom = "85 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "85 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 58.0
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Annee = 2020,
                             Effet = "86 التأثير لهدا الإنجاز",
-                            IdActivite = 501,
-                            IdMesure = 333,
+                            IdActivite = 258,
+                            IdMesure = 170,
                             Nom = "86 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "86 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 59.0
+                            TauxRealisation = 93.0
                         },
                         new
                         {
                             Id = 88,
-                            Annee = 2018,
+                            Annee = 2020,
                             Effet = "87 التأثير لهدا الإنجاز",
-                            IdActivite = 904,
-                            IdMesure = 219,
+                            IdActivite = 216,
+                            IdMesure = 24,
                             Nom = "87 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "87 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 59.0
+                            TauxRealisation = 21.0
                         },
                         new
                         {
                             Id = 89,
-                            Annee = 2018,
+                            Annee = 2022,
                             Effet = "88 التأثير لهدا الإنجاز",
-                            IdActivite = 702,
-                            IdMesure = 308,
+                            IdActivite = 394,
+                            IdMesure = 21,
                             Nom = "88 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "88 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 33.0
+                            TauxRealisation = 31.0
                         },
                         new
                         {
                             Id = 90,
-                            Annee = 2026,
+                            Annee = 2020,
                             Effet = "89 التأثير لهدا الإنجاز",
-                            IdActivite = 6,
-                            IdMesure = 311,
+                            IdActivite = 76,
+                            IdMesure = 169,
                             Nom = "89 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "89 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 11.0
+                            TauxRealisation = 52.0
                         },
                         new
                         {
                             Id = 91,
-                            Annee = 2023,
+                            Annee = 2019,
                             Effet = "90 التأثير لهدا الإنجاز",
-                            IdActivite = 990,
-                            IdMesure = 305,
+                            IdActivite = 545,
+                            IdMesure = 111,
                             Nom = "90 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "90 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 11.0
+                            TauxRealisation = 98.0
                         },
                         new
                         {
                             Id = 92,
-                            Annee = 2024,
+                            Annee = 2019,
                             Effet = "91 التأثير لهدا الإنجاز",
-                            IdActivite = 571,
-                            IdMesure = 352,
+                            IdActivite = 977,
+                            IdMesure = 310,
                             Nom = "91 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "91 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 74.0
+                            TauxRealisation = 40.0
                         },
                         new
                         {
                             Id = 93,
-                            Annee = 2025,
+                            Annee = 2028,
                             Effet = "92 التأثير لهدا الإنجاز",
-                            IdActivite = 595,
-                            IdMesure = 400,
+                            IdActivite = 422,
+                            IdMesure = 116,
                             Nom = "92 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "92 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 38.0
+                            TauxRealisation = 98.0
                         },
                         new
                         {
                             Id = 94,
                             Annee = 2020,
                             Effet = "93 التأثير لهدا الإنجاز",
-                            IdActivite = 778,
-                            IdMesure = 79,
+                            IdActivite = 223,
+                            IdMesure = 327,
                             Nom = "93 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "93 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 95.0
+                            TauxRealisation = 90.0
                         },
                         new
                         {
                             Id = 95,
-                            Annee = 2023,
+                            Annee = 2019,
                             Effet = "94 التأثير لهدا الإنجاز",
-                            IdActivite = 985,
-                            IdMesure = 162,
+                            IdActivite = 653,
+                            IdMesure = 199,
                             Nom = "94 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "94 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 98.0
+                            TauxRealisation = 31.0
                         },
                         new
                         {
                             Id = 96,
-                            Annee = 2020,
+                            Annee = 2023,
                             Effet = "95 التأثير لهدا الإنجاز",
-                            IdActivite = 364,
-                            IdMesure = 229,
+                            IdActivite = 108,
+                            IdMesure = 294,
                             Nom = "95 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "95 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 85.0
+                            TauxRealisation = 14.0
                         },
                         new
                         {
                             Id = 97,
-                            Annee = 2024,
+                            Annee = 2019,
                             Effet = "96 التأثير لهدا الإنجاز",
-                            IdActivite = 113,
-                            IdMesure = 336,
+                            IdActivite = 746,
+                            IdMesure = 126,
                             Nom = "96 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "96 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 42.0
+                            TauxRealisation = 51.0
                         },
                         new
                         {
                             Id = 98,
-                            Annee = 2022,
+                            Annee = 2020,
                             Effet = "97 التأثير لهدا الإنجاز",
-                            IdActivite = 739,
-                            IdMesure = 56,
+                            IdActivite = 981,
+                            IdMesure = 33,
                             Nom = "97 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "97 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 60.0
+                            TauxRealisation = 39.0
                         },
                         new
                         {
                             Id = 99,
-                            Annee = 2021,
+                            Annee = 2027,
                             Effet = "98 التأثير لهدا الإنجاز",
-                            IdActivite = 26,
-                            IdMesure = 311,
+                            IdActivite = 443,
+                            IdMesure = 266,
                             Nom = "98 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "98 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 3.0
+                            TauxRealisation = 23.0
                         },
                         new
                         {
                             Id = 100,
-                            Annee = 2025,
+                            Annee = 2022,
                             Effet = "99 التأثير لهدا الإنجاز",
-                            IdActivite = 703,
-                            IdMesure = 120,
+                            IdActivite = 106,
+                            IdMesure = 261,
                             Nom = "99 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "99 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 73.0
+                            TauxRealisation = 88.0
                         },
                         new
                         {
                             Id = 101,
-                            Annee = 2027,
+                            Annee = 2021,
                             Effet = "100 التأثير لهدا الإنجاز",
-                            IdActivite = 811,
-                            IdMesure = 10,
-                            Nom = "100 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "100 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 33.0
-                        },
-                        new
-                        {
-                            Id = 102,
-                            Annee = 2024,
-                            Effet = "101 التأثير لهدا الإنجاز",
-                            IdActivite = 587,
-                            IdMesure = 200,
-                            Nom = "101 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "101 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 13.0
-                        },
-                        new
-                        {
-                            Id = 103,
-                            Annee = 2026,
-                            Effet = "102 التأثير لهدا الإنجاز",
-                            IdActivite = 1000,
-                            IdMesure = 364,
-                            Nom = "102 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "102 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 38.0
-                        },
-                        new
-                        {
-                            Id = 104,
-                            Annee = 2020,
-                            Effet = "103 التأثير لهدا الإنجاز",
-                            IdActivite = 757,
-                            IdMesure = 206,
-                            Nom = "103 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "103 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 27.0
-                        },
-                        new
-                        {
-                            Id = 105,
-                            Annee = 2025,
-                            Effet = "104 التأثير لهدا الإنجاز",
-                            IdActivite = 638,
-                            IdMesure = 324,
-                            Nom = "104 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "104 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 22.0
-                        },
-                        new
-                        {
-                            Id = 106,
-                            Annee = 2023,
-                            Effet = "105 التأثير لهدا الإنجاز",
-                            IdActivite = 208,
-                            IdMesure = 376,
-                            Nom = "105 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "105 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 95.0
-                        },
-                        new
-                        {
-                            Id = 107,
-                            Annee = 2023,
-                            Effet = "106 التأثير لهدا الإنجاز",
-                            IdActivite = 64,
-                            IdMesure = 29,
-                            Nom = "106 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "106 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 16.0
-                        },
-                        new
-                        {
-                            Id = 108,
-                            Annee = 2021,
-                            Effet = "107 التأثير لهدا الإنجاز",
-                            IdActivite = 88,
-                            IdMesure = 172,
-                            Nom = "107 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "107 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 61.0
-                        },
-                        new
-                        {
-                            Id = 109,
-                            Annee = 2021,
-                            Effet = "108 التأثير لهدا الإنجاز",
-                            IdActivite = 240,
-                            IdMesure = 258,
-                            Nom = "108 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "108 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 2.0
-                        },
-                        new
-                        {
-                            Id = 110,
-                            Annee = 2028,
-                            Effet = "109 التأثير لهدا الإنجاز",
-                            IdActivite = 117,
-                            IdMesure = 236,
-                            Nom = "109 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "109 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 3.0
-                        },
-                        new
-                        {
-                            Id = 111,
-                            Annee = 2022,
-                            Effet = "110 التأثير لهدا الإنجاز",
-                            IdActivite = 188,
-                            IdMesure = 91,
-                            Nom = "110 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "110 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 97.0
-                        },
-                        new
-                        {
-                            Id = 112,
-                            Annee = 2024,
-                            Effet = "111 التأثير لهدا الإنجاز",
-                            IdActivite = 3,
-                            IdMesure = 220,
-                            Nom = "111 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "111 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 69.0
-                        },
-                        new
-                        {
-                            Id = 113,
-                            Annee = 2024,
-                            Effet = "112 التأثير لهدا الإنجاز",
-                            IdActivite = 649,
+                            IdActivite = 259,
                             IdMesure = 358,
-                            Nom = "112 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "112 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 91.0
-                        },
-                        new
-                        {
-                            Id = 114,
-                            Annee = 2024,
-                            Effet = "113 التأثير لهدا الإنجاز",
-                            IdActivite = 930,
-                            IdMesure = 281,
-                            Nom = "113 بعد الإنجازات لبعض الأنشطة ",
+                            Nom = "100 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "113 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 32.0
-                        },
-                        new
-                        {
-                            Id = 115,
-                            Annee = 2024,
-                            Effet = "114 التأثير لهدا الإنجاز",
-                            IdActivite = 329,
-                            IdMesure = 217,
-                            Nom = "114 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "114 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 18.0
-                        },
-                        new
-                        {
-                            Id = 116,
-                            Annee = 2024,
-                            Effet = "115 التأثير لهدا الإنجاز",
-                            IdActivite = 994,
-                            IdMesure = 42,
-                            Nom = "115 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "115 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 97.0
-                        },
-                        new
-                        {
-                            Id = 117,
-                            Annee = 2022,
-                            Effet = "116 التأثير لهدا الإنجاز",
-                            IdActivite = 618,
-                            IdMesure = 257,
-                            Nom = "116 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "116 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 84.0
-                        },
-                        new
-                        {
-                            Id = 118,
-                            Annee = 2023,
-                            Effet = "117 التأثير لهدا الإنجاز",
-                            IdActivite = 838,
-                            IdMesure = 62,
-                            Nom = "117 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "117 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 96.0
-                        },
-                        new
-                        {
-                            Id = 119,
-                            Annee = 2024,
-                            Effet = "118 التأثير لهدا الإنجاز",
-                            IdActivite = 539,
-                            IdMesure = 178,
-                            Nom = "118 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "118 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 61.0
-                        },
-                        new
-                        {
-                            Id = 120,
-                            Annee = 2022,
-                            Effet = "119 التأثير لهدا الإنجاز",
-                            IdActivite = 346,
-                            IdMesure = 246,
-                            Nom = "119 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "119 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 37.0
-                        },
-                        new
-                        {
-                            Id = 121,
-                            Annee = 2024,
-                            Effet = "120 التأثير لهدا الإنجاز",
-                            IdActivite = 416,
-                            IdMesure = 262,
-                            Nom = "120 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "120 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 10.0
-                        },
-                        new
-                        {
-                            Id = 122,
-                            Annee = 2020,
-                            Effet = "121 التأثير لهدا الإنجاز",
-                            IdActivite = 647,
-                            IdMesure = 171,
-                            Nom = "121 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "121 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 64.0
-                        },
-                        new
-                        {
-                            Id = 123,
-                            Annee = 2024,
-                            Effet = "122 التأثير لهدا الإنجاز",
-                            IdActivite = 899,
-                            IdMesure = 387,
-                            Nom = "122 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "122 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 70.0
-                        },
-                        new
-                        {
-                            Id = 124,
-                            Annee = 2026,
-                            Effet = "123 التأثير لهدا الإنجاز",
-                            IdActivite = 6,
-                            IdMesure = 273,
-                            Nom = "123 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "123 معدل الإنجاز لهدا الإنجاز",
+                            Taux = "100 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 30.0
                         },
                         new
                         {
-                            Id = 125,
-                            Annee = 2024,
-                            Effet = "124 التأثير لهدا الإنجاز",
-                            IdActivite = 775,
-                            IdMesure = 17,
-                            Nom = "124 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "124 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 48.0
-                        },
-                        new
-                        {
-                            Id = 126,
-                            Annee = 2029,
-                            Effet = "125 التأثير لهدا الإنجاز",
-                            IdActivite = 884,
-                            IdMesure = 49,
-                            Nom = "125 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "125 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 64.0
-                        },
-                        new
-                        {
-                            Id = 127,
-                            Annee = 2020,
-                            Effet = "126 التأثير لهدا الإنجاز",
-                            IdActivite = 381,
-                            IdMesure = 373,
-                            Nom = "126 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "126 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 63.0
-                        },
-                        new
-                        {
-                            Id = 128,
-                            Annee = 2021,
-                            Effet = "127 التأثير لهدا الإنجاز",
-                            IdActivite = 964,
-                            IdMesure = 361,
-                            Nom = "127 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "127 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 43.0
-                        },
-                        new
-                        {
-                            Id = 129,
+                            Id = 102,
                             Annee = 2028,
-                            Effet = "128 التأثير لهدا الإنجاز",
-                            IdActivite = 413,
-                            IdMesure = 326,
-                            Nom = "128 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "101 التأثير لهدا الإنجاز",
+                            IdActivite = 48,
+                            IdMesure = 325,
+                            Nom = "101 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "128 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 32.0
-                        },
-                        new
-                        {
-                            Id = 130,
-                            Annee = 2028,
-                            Effet = "129 التأثير لهدا الإنجاز",
-                            IdActivite = 572,
-                            IdMesure = 347,
-                            Nom = "129 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "129 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 71.0
-                        },
-                        new
-                        {
-                            Id = 131,
-                            Annee = 2018,
-                            Effet = "130 التأثير لهدا الإنجاز",
-                            IdActivite = 664,
-                            IdMesure = 30,
-                            Nom = "130 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "130 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 36.0
-                        },
-                        new
-                        {
-                            Id = 132,
-                            Annee = 2019,
-                            Effet = "131 التأثير لهدا الإنجاز",
-                            IdActivite = 374,
-                            IdMesure = 111,
-                            Nom = "131 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "131 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 32.0
-                        },
-                        new
-                        {
-                            Id = 133,
-                            Annee = 2024,
-                            Effet = "132 التأثير لهدا الإنجاز",
-                            IdActivite = 527,
-                            IdMesure = 392,
-                            Nom = "132 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "132 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 76.0
-                        },
-                        new
-                        {
-                            Id = 134,
-                            Annee = 2029,
-                            Effet = "133 التأثير لهدا الإنجاز",
-                            IdActivite = 968,
-                            IdMesure = 386,
-                            Nom = "133 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "133 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 32.0
-                        },
-                        new
-                        {
-                            Id = 135,
-                            Annee = 2021,
-                            Effet = "134 التأثير لهدا الإنجاز",
-                            IdActivite = 105,
-                            IdMesure = 272,
-                            Nom = "134 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "134 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 34.0
-                        },
-                        new
-                        {
-                            Id = 136,
-                            Annee = 2020,
-                            Effet = "135 التأثير لهدا الإنجاز",
-                            IdActivite = 963,
-                            IdMesure = 382,
-                            Nom = "135 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "135 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 7.0
-                        },
-                        new
-                        {
-                            Id = 137,
-                            Annee = 2020,
-                            Effet = "136 التأثير لهدا الإنجاز",
-                            IdActivite = 19,
-                            IdMesure = 165,
-                            Nom = "136 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "136 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 7.0
-                        },
-                        new
-                        {
-                            Id = 138,
-                            Annee = 2028,
-                            Effet = "137 التأثير لهدا الإنجاز",
-                            IdActivite = 308,
-                            IdMesure = 130,
-                            Nom = "137 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "137 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 96.0
-                        },
-                        new
-                        {
-                            Id = 139,
-                            Annee = 2029,
-                            Effet = "138 التأثير لهدا الإنجاز",
-                            IdActivite = 688,
-                            IdMesure = 43,
-                            Nom = "138 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "138 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 6.0
-                        },
-                        new
-                        {
-                            Id = 140,
-                            Annee = 2018,
-                            Effet = "139 التأثير لهدا الإنجاز",
-                            IdActivite = 434,
-                            IdMesure = 272,
-                            Nom = "139 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "139 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 79.0
-                        },
-                        new
-                        {
-                            Id = 141,
-                            Annee = 2024,
-                            Effet = "140 التأثير لهدا الإنجاز",
-                            IdActivite = 608,
-                            IdMesure = 240,
-                            Nom = "140 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "140 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 74.0
-                        },
-                        new
-                        {
-                            Id = 142,
-                            Annee = 2026,
-                            Effet = "141 التأثير لهدا الإنجاز",
-                            IdActivite = 984,
-                            IdMesure = 151,
-                            Nom = "141 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "141 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 26.0
-                        },
-                        new
-                        {
-                            Id = 143,
-                            Annee = 2018,
-                            Effet = "142 التأثير لهدا الإنجاز",
-                            IdActivite = 420,
-                            IdMesure = 303,
-                            Nom = "142 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "142 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 36.0
-                        },
-                        new
-                        {
-                            Id = 144,
-                            Annee = 2023,
-                            Effet = "143 التأثير لهدا الإنجاز",
-                            IdActivite = 116,
-                            IdMesure = 235,
-                            Nom = "143 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "143 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 74.0
-                        },
-                        new
-                        {
-                            Id = 145,
-                            Annee = 2029,
-                            Effet = "144 التأثير لهدا الإنجاز",
-                            IdActivite = 644,
-                            IdMesure = 24,
-                            Nom = "144 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "144 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 2.0
-                        },
-                        new
-                        {
-                            Id = 146,
-                            Annee = 2020,
-                            Effet = "145 التأثير لهدا الإنجاز",
-                            IdActivite = 998,
-                            IdMesure = 100,
-                            Nom = "145 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "145 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 65.0
-                        },
-                        new
-                        {
-                            Id = 147,
-                            Annee = 2023,
-                            Effet = "146 التأثير لهدا الإنجاز",
-                            IdActivite = 283,
-                            IdMesure = 324,
-                            Nom = "146 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "146 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 63.0
-                        },
-                        new
-                        {
-                            Id = 148,
-                            Annee = 2023,
-                            Effet = "147 التأثير لهدا الإنجاز",
-                            IdActivite = 421,
-                            IdMesure = 396,
-                            Nom = "147 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "147 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 46.0
-                        },
-                        new
-                        {
-                            Id = 149,
-                            Annee = 2025,
-                            Effet = "148 التأثير لهدا الإنجاز",
-                            IdActivite = 930,
-                            IdMesure = 386,
-                            Nom = "148 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "148 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 98.0
-                        },
-                        new
-                        {
-                            Id = 150,
-                            Annee = 2025,
-                            Effet = "149 التأثير لهدا الإنجاز",
-                            IdActivite = 931,
-                            IdMesure = 219,
-                            Nom = "149 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "149 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 63.0
-                        },
-                        new
-                        {
-                            Id = 151,
-                            Annee = 2022,
-                            Effet = "150 التأثير لهدا الإنجاز",
-                            IdActivite = 849,
-                            IdMesure = 159,
-                            Nom = "150 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "150 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 68.0
-                        },
-                        new
-                        {
-                            Id = 152,
-                            Annee = 2024,
-                            Effet = "151 التأثير لهدا الإنجاز",
-                            IdActivite = 550,
-                            IdMesure = 132,
-                            Nom = "151 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "151 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 10.0
-                        },
-                        new
-                        {
-                            Id = 153,
-                            Annee = 2018,
-                            Effet = "152 التأثير لهدا الإنجاز",
-                            IdActivite = 736,
-                            IdMesure = 306,
-                            Nom = "152 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "152 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 26.0
-                        },
-                        new
-                        {
-                            Id = 154,
-                            Annee = 2022,
-                            Effet = "153 التأثير لهدا الإنجاز",
-                            IdActivite = 612,
-                            IdMesure = 311,
-                            Nom = "153 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "153 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 8.0
-                        },
-                        new
-                        {
-                            Id = 155,
-                            Annee = 2018,
-                            Effet = "154 التأثير لهدا الإنجاز",
-                            IdActivite = 126,
-                            IdMesure = 364,
-                            Nom = "154 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "154 معدل الإنجاز لهدا الإنجاز",
+                            Taux = "101 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 33.0
                         },
                         new
                         {
-                            Id = 156,
+                            Id = 103,
                             Annee = 2029,
-                            Effet = "155 التأثير لهدا الإنجاز",
-                            IdActivite = 682,
-                            IdMesure = 73,
-                            Nom = "155 بعد الإنجازات لبعض الأنشطة ",
+                            Effet = "102 التأثير لهدا الإنجاز",
+                            IdActivite = 244,
+                            IdMesure = 394,
+                            Nom = "102 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
-                            Taux = "155 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 9.0
+                            Taux = "102 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 30.0
                         },
                         new
                         {
-                            Id = 157,
-                            Annee = 2025,
-                            Effet = "156 التأثير لهدا الإنجاز",
-                            IdActivite = 452,
-                            IdMesure = 126,
-                            Nom = "156 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "156 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 72.0
-                        },
-                        new
-                        {
-                            Id = 158,
-                            Annee = 2027,
-                            Effet = "157 التأثير لهدا الإنجاز",
-                            IdActivite = 887,
-                            IdMesure = 255,
-                            Nom = "157 بعد الإنجازات لبعض الأنشطة ",
+                            Id = 104,
+                            Annee = 2022,
+                            Effet = "103 التأثير لهدا الإنجاز",
+                            IdActivite = 109,
+                            IdMesure = 256,
+                            Nom = "103 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
-                            Taux = "157 معدل الإنجاز لهدا الإنجاز",
+                            Taux = "103 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 25.0
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Annee = 2028,
+                            Effet = "104 التأثير لهدا الإنجاز",
+                            IdActivite = 141,
+                            IdMesure = 387,
+                            Nom = "104 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "104 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 92.0
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Annee = 2029,
+                            Effet = "105 التأثير لهدا الإنجاز",
+                            IdActivite = 989,
+                            IdMesure = 107,
+                            Nom = "105 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "105 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 86.0
+                        },
+                        new
+                        {
+                            Id = 107,
+                            Annee = 2025,
+                            Effet = "106 التأثير لهدا الإنجاز",
+                            IdActivite = 456,
+                            IdMesure = 269,
+                            Nom = "106 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "106 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 4.0
+                        },
+                        new
+                        {
+                            Id = 108,
+                            Annee = 2028,
+                            Effet = "107 التأثير لهدا الإنجاز",
+                            IdActivite = 851,
+                            IdMesure = 6,
+                            Nom = "107 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "107 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 25.0
+                        },
+                        new
+                        {
+                            Id = 109,
+                            Annee = 2028,
+                            Effet = "108 التأثير لهدا الإنجاز",
+                            IdActivite = 170,
+                            IdMesure = 95,
+                            Nom = "108 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "108 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 35.0
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Annee = 2024,
+                            Effet = "109 التأثير لهدا الإنجاز",
+                            IdActivite = 460,
+                            IdMesure = 162,
+                            Nom = "109 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "109 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 98.0
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Annee = 2019,
+                            Effet = "110 التأثير لهدا الإنجاز",
+                            IdActivite = 468,
+                            IdMesure = 176,
+                            Nom = "110 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "110 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 78.0
                         },
                         new
                         {
-                            Id = 159,
+                            Id = 112,
                             Annee = 2022,
+                            Effet = "111 التأثير لهدا الإنجاز",
+                            IdActivite = 293,
+                            IdMesure = 67,
+                            Nom = "111 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "111 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 16.0
+                        },
+                        new
+                        {
+                            Id = 113,
+                            Annee = 2029,
+                            Effet = "112 التأثير لهدا الإنجاز",
+                            IdActivite = 783,
+                            IdMesure = 290,
+                            Nom = "112 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "112 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 35.0
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Annee = 2029,
+                            Effet = "113 التأثير لهدا الإنجاز",
+                            IdActivite = 573,
+                            IdMesure = 198,
+                            Nom = "113 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "113 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 84.0
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Annee = 2019,
+                            Effet = "114 التأثير لهدا الإنجاز",
+                            IdActivite = 95,
+                            IdMesure = 334,
+                            Nom = "114 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "114 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 39.0
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Annee = 2023,
+                            Effet = "115 التأثير لهدا الإنجاز",
+                            IdActivite = 905,
+                            IdMesure = 31,
+                            Nom = "115 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "115 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 75.0
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Annee = 2029,
+                            Effet = "116 التأثير لهدا الإنجاز",
+                            IdActivite = 586,
+                            IdMesure = 167,
+                            Nom = "116 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "116 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 40.0
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Annee = 2027,
+                            Effet = "117 التأثير لهدا الإنجاز",
+                            IdActivite = 17,
+                            IdMesure = 180,
+                            Nom = "117 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "117 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 57.0
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Annee = 2026,
+                            Effet = "118 التأثير لهدا الإنجاز",
+                            IdActivite = 685,
+                            IdMesure = 255,
+                            Nom = "118 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "118 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 95.0
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Annee = 2024,
+                            Effet = "119 التأثير لهدا الإنجاز",
+                            IdActivite = 446,
+                            IdMesure = 400,
+                            Nom = "119 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "119 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 56.0
+                        },
+                        new
+                        {
+                            Id = 121,
+                            Annee = 2025,
+                            Effet = "120 التأثير لهدا الإنجاز",
+                            IdActivite = 965,
+                            IdMesure = 390,
+                            Nom = "120 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "120 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 41.0
+                        },
+                        new
+                        {
+                            Id = 122,
+                            Annee = 2026,
+                            Effet = "121 التأثير لهدا الإنجاز",
+                            IdActivite = 634,
+                            IdMesure = 31,
+                            Nom = "121 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "121 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 68.0
+                        },
+                        new
+                        {
+                            Id = 123,
+                            Annee = 2025,
+                            Effet = "122 التأثير لهدا الإنجاز",
+                            IdActivite = 217,
+                            IdMesure = 377,
+                            Nom = "122 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "122 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 26.0
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Annee = 2025,
+                            Effet = "123 التأثير لهدا الإنجاز",
+                            IdActivite = 366,
+                            IdMesure = 309,
+                            Nom = "123 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "123 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 76.0
+                        },
+                        new
+                        {
+                            Id = 125,
+                            Annee = 2022,
+                            Effet = "124 التأثير لهدا الإنجاز",
+                            IdActivite = 124,
+                            IdMesure = 154,
+                            Nom = "124 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "124 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 82.0
+                        },
+                        new
+                        {
+                            Id = 126,
+                            Annee = 2020,
+                            Effet = "125 التأثير لهدا الإنجاز",
+                            IdActivite = 460,
+                            IdMesure = 6,
+                            Nom = "125 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "125 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 71.0
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Annee = 2029,
+                            Effet = "126 التأثير لهدا الإنجاز",
+                            IdActivite = 905,
+                            IdMesure = 46,
+                            Nom = "126 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "126 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 31.0
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Annee = 2024,
+                            Effet = "127 التأثير لهدا الإنجاز",
+                            IdActivite = 611,
+                            IdMesure = 281,
+                            Nom = "127 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "127 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 44.0
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Annee = 2019,
+                            Effet = "128 التأثير لهدا الإنجاز",
+                            IdActivite = 941,
+                            IdMesure = 291,
+                            Nom = "128 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "128 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 93.0
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Annee = 2023,
+                            Effet = "129 التأثير لهدا الإنجاز",
+                            IdActivite = 744,
+                            IdMesure = 77,
+                            Nom = "129 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "129 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 74.0
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Annee = 2026,
+                            Effet = "130 التأثير لهدا الإنجاز",
+                            IdActivite = 675,
+                            IdMesure = 237,
+                            Nom = "130 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "130 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 20.0
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Annee = 2028,
+                            Effet = "131 التأثير لهدا الإنجاز",
+                            IdActivite = 580,
+                            IdMesure = 90,
+                            Nom = "131 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "131 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 29.0
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Annee = 2018,
+                            Effet = "132 التأثير لهدا الإنجاز",
+                            IdActivite = 621,
+                            IdMesure = 90,
+                            Nom = "132 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "132 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 23.0
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Annee = 2021,
+                            Effet = "133 التأثير لهدا الإنجاز",
+                            IdActivite = 104,
+                            IdMesure = 154,
+                            Nom = "133 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "133 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 35.0
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Annee = 2019,
+                            Effet = "134 التأثير لهدا الإنجاز",
+                            IdActivite = 665,
+                            IdMesure = 224,
+                            Nom = "134 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "134 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 15.0
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Annee = 2023,
+                            Effet = "135 التأثير لهدا الإنجاز",
+                            IdActivite = 398,
+                            IdMesure = 360,
+                            Nom = "135 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "135 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 88.0
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Annee = 2023,
+                            Effet = "136 التأثير لهدا الإنجاز",
+                            IdActivite = 269,
+                            IdMesure = 311,
+                            Nom = "136 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "136 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 96.0
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Annee = 2026,
+                            Effet = "137 التأثير لهدا الإنجاز",
+                            IdActivite = 313,
+                            IdMesure = 203,
+                            Nom = "137 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "137 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 63.0
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Annee = 2020,
+                            Effet = "138 التأثير لهدا الإنجاز",
+                            IdActivite = 386,
+                            IdMesure = 65,
+                            Nom = "138 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "138 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 85.0
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Annee = 2029,
+                            Effet = "139 التأثير لهدا الإنجاز",
+                            IdActivite = 717,
+                            IdMesure = 375,
+                            Nom = "139 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "139 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 32.0
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Annee = 2018,
+                            Effet = "140 التأثير لهدا الإنجاز",
+                            IdActivite = 361,
+                            IdMesure = 108,
+                            Nom = "140 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "140 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 64.0
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Annee = 2025,
+                            Effet = "141 التأثير لهدا الإنجاز",
+                            IdActivite = 116,
+                            IdMesure = 132,
+                            Nom = "141 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "141 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 53.0
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Annee = 2029,
+                            Effet = "142 التأثير لهدا الإنجاز",
+                            IdActivite = 682,
+                            IdMesure = 360,
+                            Nom = "142 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "142 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 89.0
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Annee = 2018,
+                            Effet = "143 التأثير لهدا الإنجاز",
+                            IdActivite = 844,
+                            IdMesure = 48,
+                            Nom = "143 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "143 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 95.0
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Annee = 2026,
+                            Effet = "144 التأثير لهدا الإنجاز",
+                            IdActivite = 598,
+                            IdMesure = 268,
+                            Nom = "144 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "144 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 4.0
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Annee = 2021,
+                            Effet = "145 التأثير لهدا الإنجاز",
+                            IdActivite = 503,
+                            IdMesure = 153,
+                            Nom = "145 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "145 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 76.0
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Annee = 2019,
+                            Effet = "146 التأثير لهدا الإنجاز",
+                            IdActivite = 463,
+                            IdMesure = 292,
+                            Nom = "146 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "146 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 17.0
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Annee = 2027,
+                            Effet = "147 التأثير لهدا الإنجاز",
+                            IdActivite = 1000,
+                            IdMesure = 276,
+                            Nom = "147 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "147 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 60.0
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Annee = 2020,
+                            Effet = "148 التأثير لهدا الإنجاز",
+                            IdActivite = 985,
+                            IdMesure = 129,
+                            Nom = "148 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "148 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 52.0
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Annee = 2022,
+                            Effet = "149 التأثير لهدا الإنجاز",
+                            IdActivite = 488,
+                            IdMesure = 24,
+                            Nom = "149 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "149 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 18.0
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Annee = 2029,
+                            Effet = "150 التأثير لهدا الإنجاز",
+                            IdActivite = 598,
+                            IdMesure = 354,
+                            Nom = "150 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "150 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 47.0
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Annee = 2018,
+                            Effet = "151 التأثير لهدا الإنجاز",
+                            IdActivite = 693,
+                            IdMesure = 234,
+                            Nom = "151 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "151 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 4.0
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Annee = 2028,
+                            Effet = "152 التأثير لهدا الإنجاز",
+                            IdActivite = 735,
+                            IdMesure = 393,
+                            Nom = "152 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "152 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 3.0
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Annee = 2027,
+                            Effet = "153 التأثير لهدا الإنجاز",
+                            IdActivite = 953,
+                            IdMesure = 260,
+                            Nom = "153 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "153 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 43.0
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Annee = 2023,
+                            Effet = "154 التأثير لهدا الإنجاز",
+                            IdActivite = 155,
+                            IdMesure = 248,
+                            Nom = "154 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "154 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 95.0
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Annee = 2019,
+                            Effet = "155 التأثير لهدا الإنجاز",
+                            IdActivite = 278,
+                            IdMesure = 366,
+                            Nom = "155 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "155 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 6.0
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Annee = 2019,
+                            Effet = "156 التأثير لهدا الإنجاز",
+                            IdActivite = 445,
+                            IdMesure = 109,
+                            Nom = "156 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "156 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 28.0
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Annee = 2025,
+                            Effet = "157 التأثير لهدا الإنجاز",
+                            IdActivite = 579,
+                            IdMesure = 98,
+                            Nom = "157 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
+                            Taux = "157 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 57.0
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Annee = 2027,
                             Effet = "158 التأثير لهدا الإنجاز",
-                            IdActivite = 92,
-                            IdMesure = 322,
+                            IdActivite = 417,
+                            IdMesure = 356,
                             Nom = "158 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "158 معدل الإنجاز لهدا الإنجاز",
@@ -36417,502 +36417,502 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 160,
-                            Annee = 2022,
+                            Annee = 2020,
                             Effet = "159 التأثير لهدا الإنجاز",
-                            IdActivite = 167,
-                            IdMesure = 23,
+                            IdActivite = 3,
+                            IdMesure = 97,
                             Nom = "159 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "159 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 25.0
+                            TauxRealisation = 78.0
                         },
                         new
                         {
                             Id = 161,
-                            Annee = 2024,
+                            Annee = 2029,
                             Effet = "160 التأثير لهدا الإنجاز",
-                            IdActivite = 155,
-                            IdMesure = 191,
+                            IdActivite = 839,
+                            IdMesure = 301,
                             Nom = "160 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "160 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 3.0
+                            TauxRealisation = 23.0
                         },
                         new
                         {
                             Id = 162,
                             Annee = 2018,
                             Effet = "161 التأثير لهدا الإنجاز",
-                            IdActivite = 939,
-                            IdMesure = 284,
+                            IdActivite = 980,
+                            IdMesure = 16,
                             Nom = "161 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "161 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 55.0
+                            TauxRealisation = 32.0
                         },
                         new
                         {
                             Id = 163,
-                            Annee = 2023,
+                            Annee = 2029,
                             Effet = "162 التأثير لهدا الإنجاز",
-                            IdActivite = 369,
-                            IdMesure = 281,
+                            IdActivite = 779,
+                            IdMesure = 98,
                             Nom = "162 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "162 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 42.0
+                            TauxRealisation = 76.0
                         },
                         new
                         {
                             Id = 164,
-                            Annee = 2022,
+                            Annee = 2024,
                             Effet = "163 التأثير لهدا الإنجاز",
-                            IdActivite = 422,
-                            IdMesure = 195,
+                            IdActivite = 462,
+                            IdMesure = 240,
                             Nom = "163 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "163 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 80.0
+                            TauxRealisation = 58.0
                         },
                         new
                         {
                             Id = 165,
-                            Annee = 2025,
+                            Annee = 2020,
                             Effet = "164 التأثير لهدا الإنجاز",
-                            IdActivite = 975,
-                            IdMesure = 129,
+                            IdActivite = 710,
+                            IdMesure = 177,
                             Nom = "164 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "164 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 19.0
+                            TauxRealisation = 85.0
                         },
                         new
                         {
                             Id = 166,
-                            Annee = 2019,
+                            Annee = 2024,
                             Effet = "165 التأثير لهدا الإنجاز",
-                            IdActivite = 323,
-                            IdMesure = 122,
+                            IdActivite = 265,
+                            IdMesure = 382,
                             Nom = "165 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "165 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
+                            TauxRealisation = 54.0
                         },
                         new
                         {
                             Id = 167,
-                            Annee = 2026,
+                            Annee = 2022,
                             Effet = "166 التأثير لهدا الإنجاز",
-                            IdActivite = 626,
-                            IdMesure = 280,
+                            IdActivite = 37,
+                            IdMesure = 383,
                             Nom = "166 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "166 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 91.0
+                            TauxRealisation = 5.0
                         },
                         new
                         {
                             Id = 168,
-                            Annee = 2025,
+                            Annee = 2028,
                             Effet = "167 التأثير لهدا الإنجاز",
-                            IdActivite = 977,
-                            IdMesure = 167,
+                            IdActivite = 693,
+                            IdMesure = 252,
                             Nom = "167 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "167 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 56.0
+                            TauxRealisation = 44.0
                         },
                         new
                         {
                             Id = 169,
-                            Annee = 2020,
+                            Annee = 2021,
                             Effet = "168 التأثير لهدا الإنجاز",
-                            IdActivite = 178,
-                            IdMesure = 183,
+                            IdActivite = 541,
+                            IdMesure = 369,
                             Nom = "168 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "168 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 84.0
+                            TauxRealisation = 59.0
                         },
                         new
                         {
                             Id = 170,
                             Annee = 2029,
                             Effet = "169 التأثير لهدا الإنجاز",
-                            IdActivite = 392,
-                            IdMesure = 89,
+                            IdActivite = 173,
+                            IdMesure = 83,
                             Nom = "169 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "169 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 55.0
+                            TauxRealisation = 14.0
                         },
                         new
                         {
                             Id = 171,
-                            Annee = 2024,
+                            Annee = 2025,
                             Effet = "170 التأثير لهدا الإنجاز",
-                            IdActivite = 682,
-                            IdMesure = 371,
+                            IdActivite = 405,
+                            IdMesure = 319,
                             Nom = "170 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "170 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 82.0
+                            TauxRealisation = 32.0
                         },
                         new
                         {
                             Id = 172,
-                            Annee = 2022,
+                            Annee = 2018,
                             Effet = "171 التأثير لهدا الإنجاز",
-                            IdActivite = 835,
-                            IdMesure = 318,
+                            IdActivite = 398,
+                            IdMesure = 82,
                             Nom = "171 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "171 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 5.0
+                            TauxRealisation = 51.0
                         },
                         new
                         {
                             Id = 173,
-                            Annee = 2027,
+                            Annee = 2023,
                             Effet = "172 التأثير لهدا الإنجاز",
-                            IdActivite = 636,
-                            IdMesure = 144,
+                            IdActivite = 26,
+                            IdMesure = 147,
                             Nom = "172 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "172 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 23.0
+                            TauxRealisation = 6.0
                         },
                         new
                         {
                             Id = 174,
-                            Annee = 2024,
+                            Annee = 2029,
                             Effet = "173 التأثير لهدا الإنجاز",
-                            IdActivite = 669,
-                            IdMesure = 258,
+                            IdActivite = 824,
+                            IdMesure = 329,
                             Nom = "173 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "173 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 79.0
+                            TauxRealisation = 72.0
                         },
                         new
                         {
                             Id = 175,
-                            Annee = 2027,
+                            Annee = 2019,
                             Effet = "174 التأثير لهدا الإنجاز",
-                            IdActivite = 4,
-                            IdMesure = 89,
+                            IdActivite = 834,
+                            IdMesure = 87,
                             Nom = "174 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "174 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 83.0
+                            TauxRealisation = 89.0
                         },
                         new
                         {
                             Id = 176,
-                            Annee = 2027,
+                            Annee = 2025,
                             Effet = "175 التأثير لهدا الإنجاز",
-                            IdActivite = 518,
-                            IdMesure = 124,
+                            IdActivite = 788,
+                            IdMesure = 89,
                             Nom = "175 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "175 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 1.0
+                            TauxRealisation = 31.0
                         },
                         new
                         {
                             Id = 177,
-                            Annee = 2024,
+                            Annee = 2023,
                             Effet = "176 التأثير لهدا الإنجاز",
-                            IdActivite = 102,
-                            IdMesure = 19,
+                            IdActivite = 60,
+                            IdMesure = 343,
                             Nom = "176 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "176 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 84.0
+                            TauxRealisation = 37.0
                         },
                         new
                         {
                             Id = 178,
-                            Annee = 2028,
+                            Annee = 2018,
                             Effet = "177 التأثير لهدا الإنجاز",
-                            IdActivite = 701,
-                            IdMesure = 332,
+                            IdActivite = 241,
+                            IdMesure = 91,
                             Nom = "177 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "177 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 24.0
+                            TauxRealisation = 64.0
                         },
                         new
                         {
                             Id = 179,
-                            Annee = 2024,
+                            Annee = 2022,
                             Effet = "178 التأثير لهدا الإنجاز",
-                            IdActivite = 182,
-                            IdMesure = 257,
+                            IdActivite = 489,
+                            IdMesure = 215,
                             Nom = "178 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "178 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 73.0
+                            TauxRealisation = 4.0
                         },
                         new
                         {
                             Id = 180,
-                            Annee = 2029,
+                            Annee = 2021,
                             Effet = "179 التأثير لهدا الإنجاز",
-                            IdActivite = 818,
-                            IdMesure = 8,
+                            IdActivite = 174,
+                            IdMesure = 393,
                             Nom = "179 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "179 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 21.0
+                            TauxRealisation = 56.0
                         },
                         new
                         {
                             Id = 181,
-                            Annee = 2020,
+                            Annee = 2021,
                             Effet = "180 التأثير لهدا الإنجاز",
-                            IdActivite = 748,
-                            IdMesure = 90,
+                            IdActivite = 351,
+                            IdMesure = 166,
                             Nom = "180 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "180 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 87.0
+                            TauxRealisation = 31.0
                         },
                         new
                         {
                             Id = 182,
                             Annee = 2026,
                             Effet = "181 التأثير لهدا الإنجاز",
-                            IdActivite = 460,
-                            IdMesure = 8,
+                            IdActivite = 188,
+                            IdMesure = 269,
                             Nom = "181 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "181 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 82.0
+                            TauxRealisation = 49.0
                         },
                         new
                         {
                             Id = 183,
-                            Annee = 2022,
+                            Annee = 2027,
                             Effet = "182 التأثير لهدا الإنجاز",
-                            IdActivite = 525,
-                            IdMesure = 35,
+                            IdActivite = 176,
+                            IdMesure = 261,
                             Nom = "182 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "182 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 53.0
+                            TauxRealisation = 72.0
                         },
                         new
                         {
                             Id = 184,
-                            Annee = 2029,
+                            Annee = 2019,
                             Effet = "183 التأثير لهدا الإنجاز",
-                            IdActivite = 589,
-                            IdMesure = 218,
+                            IdActivite = 170,
+                            IdMesure = 115,
                             Nom = "183 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "183 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 13.0
+                            TauxRealisation = 99.0
                         },
                         new
                         {
                             Id = 185,
                             Annee = 2021,
                             Effet = "184 التأثير لهدا الإنجاز",
-                            IdActivite = 842,
-                            IdMesure = 389,
+                            IdActivite = 599,
+                            IdMesure = 188,
                             Nom = "184 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "184 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 10.0
+                            TauxRealisation = 49.0
                         },
                         new
                         {
                             Id = 186,
-                            Annee = 2018,
+                            Annee = 2019,
                             Effet = "185 التأثير لهدا الإنجاز",
-                            IdActivite = 363,
-                            IdMesure = 296,
+                            IdActivite = 298,
+                            IdMesure = 121,
                             Nom = "185 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "185 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 65.0
+                            TauxRealisation = 40.0
                         },
                         new
                         {
                             Id = 187,
-                            Annee = 2024,
+                            Annee = 2018,
                             Effet = "186 التأثير لهدا الإنجاز",
-                            IdActivite = 498,
-                            IdMesure = 331,
+                            IdActivite = 806,
+                            IdMesure = 378,
                             Nom = "186 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
                             Taux = "186 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 19.0
+                            TauxRealisation = 14.0
                         },
                         new
                         {
                             Id = 188,
-                            Annee = 2026,
+                            Annee = 2019,
                             Effet = "187 التأثير لهدا الإنجاز",
-                            IdActivite = 879,
-                            IdMesure = 231,
+                            IdActivite = 647,
+                            IdMesure = 355,
                             Nom = "187 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
+                            Situation = "في طور الإنجاز",
                             Taux = "187 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 10.0
+                            TauxRealisation = 2.0
                         },
                         new
                         {
                             Id = 189,
-                            Annee = 2019,
+                            Annee = 2024,
                             Effet = "188 التأثير لهدا الإنجاز",
-                            IdActivite = 681,
-                            IdMesure = 288,
+                            IdActivite = 570,
+                            IdMesure = 55,
                             Nom = "188 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "188 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 77.0
-                        },
-                        new
-                        {
-                            Id = 190,
-                            Annee = 2018,
-                            Effet = "189 التأثير لهدا الإنجاز",
-                            IdActivite = 96,
-                            IdMesure = 178,
-                            Nom = "189 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "189 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 21.0
-                        },
-                        new
-                        {
-                            Id = 191,
-                            Annee = 2028,
-                            Effet = "190 التأثير لهدا الإنجاز",
-                            IdActivite = 274,
-                            IdMesure = 200,
-                            Nom = "190 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "عمل متواصل",
-                            Taux = "190 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 62.0
-                        },
-                        new
-                        {
-                            Id = 192,
-                            Annee = 2019,
-                            Effet = "191 التأثير لهدا الإنجاز",
-                            IdActivite = 777,
-                            IdMesure = 305,
-                            Nom = "191 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "191 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 4.0
-                        },
-                        new
-                        {
-                            Id = 193,
-                            Annee = 2018,
-                            Effet = "192 التأثير لهدا الإنجاز",
-                            IdActivite = 721,
-                            IdMesure = 45,
-                            Nom = "192 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "192 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 46.0
                         },
                         new
                         {
-                            Id = 194,
-                            Annee = 2020,
-                            Effet = "193 التأثير لهدا الإنجاز",
-                            IdActivite = 700,
-                            IdMesure = 224,
-                            Nom = "193 بعد الإنجازات لبعض الأنشطة ",
+                            Id = 190,
+                            Annee = 2025,
+                            Effet = "189 التأثير لهدا الإنجاز",
+                            IdActivite = 837,
+                            IdMesure = 347,
+                            Nom = "189 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "عمل متواصل",
+                            Taux = "189 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 86.0
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Annee = 2021,
+                            Effet = "190 التأثير لهدا الإنجاز",
+                            IdActivite = 887,
+                            IdMesure = 42,
+                            Nom = "190 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "190 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 39.0
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Annee = 2027,
+                            Effet = "191 التأثير لهدا الإنجاز",
+                            IdActivite = 882,
+                            IdMesure = 399,
+                            Nom = "191 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "191 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 71.0
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Annee = 2021,
+                            Effet = "192 التأثير لهدا الإنجاز",
+                            IdActivite = 888,
+                            IdMesure = 325,
+                            Nom = "192 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "192 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 19.0
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Annee = 2025,
+                            Effet = "193 التأثير لهدا الإنجاز",
+                            IdActivite = 233,
+                            IdMesure = 149,
+                            Nom = "193 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "في طور الإنجاز",
                             Taux = "193 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 4.0
+                            TauxRealisation = 92.0
                         },
                         new
                         {
                             Id = 195,
-                            Annee = 2028,
+                            Annee = 2018,
                             Effet = "194 التأثير لهدا الإنجاز",
-                            IdActivite = 12,
-                            IdMesure = 174,
+                            IdActivite = 285,
+                            IdMesure = 362,
                             Nom = "194 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             Taux = "194 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 25.0
+                            TauxRealisation = 35.0
                         },
                         new
                         {
                             Id = 196,
-                            Annee = 2024,
+                            Annee = 2028,
                             Effet = "195 التأثير لهدا الإنجاز",
-                            IdActivite = 124,
-                            IdMesure = 271,
+                            IdActivite = 463,
+                            IdMesure = 351,
                             Nom = "195 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "195 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 41.0
-                        },
-                        new
-                        {
-                            Id = 197,
-                            Annee = 2028,
-                            Effet = "196 التأثير لهدا الإنجاز",
-                            IdActivite = 920,
-                            IdMesure = 78,
-                            Nom = "196 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "196 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 55.0
-                        },
-                        new
-                        {
-                            Id = 198,
-                            Annee = 2029,
-                            Effet = "197 التأثير لهدا الإنجاز",
-                            IdActivite = 999,
-                            IdMesure = 254,
-                            Nom = "197 بعد الإنجازات لبعض الأنشطة ",
-                            Situation = "في طور الإنجاز",
-                            Taux = "197 معدل الإنجاز لهدا الإنجاز",
                             TauxRealisation = 91.0
                         },
                         new
                         {
+                            Id = 197,
+                            Annee = 2020,
+                            Effet = "196 التأثير لهدا الإنجاز",
+                            IdActivite = 433,
+                            IdMesure = 192,
+                            Nom = "196 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "196 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 57.0
+                        },
+                        new
+                        {
+                            Id = 198,
+                            Annee = 2026,
+                            Effet = "197 التأثير لهدا الإنجاز",
+                            IdActivite = 704,
+                            IdMesure = 386,
+                            Nom = "197 بعد الإنجازات لبعض الأنشطة ",
+                            Situation = "عمل متواصل",
+                            Taux = "197 معدل الإنجاز لهدا الإنجاز",
+                            TauxRealisation = 25.0
+                        },
+                        new
+                        {
                             Id = 199,
-                            Annee = 2025,
+                            Annee = 2022,
                             Effet = "198 التأثير لهدا الإنجاز",
-                            IdActivite = 117,
-                            IdMesure = 67,
+                            IdActivite = 650,
+                            IdMesure = 2,
                             Nom = "198 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "198 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 32.0
+                            TauxRealisation = 14.0
                         },
                         new
                         {
                             Id = 200,
-                            Annee = 2025,
+                            Annee = 2022,
                             Effet = "199 التأثير لهدا الإنجاز",
-                            IdActivite = 569,
-                            IdMesure = 64,
+                            IdActivite = 759,
+                            IdMesure = 50,
                             Nom = "199 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "في طور الإنجاز",
                             Taux = "199 معدل الإنجاز لهدا الإنجاز",
-                            TauxRealisation = 6.0
+                            TauxRealisation = 57.0
                         },
                         new
                         {
                             Id = 201,
-                            Annee = 2019,
+                            Annee = 2029,
                             Effet = "200 التأثير لهدا الإنجاز",
-                            IdActivite = 49,
-                            IdMesure = 202,
+                            IdActivite = 37,
+                            IdMesure = 253,
                             Nom = "200 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "200 معدل الإنجاز لهدا الإنجاز",
@@ -36921,10 +36921,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 202,
-                            Annee = 2024,
+                            Annee = 2023,
                             Effet = "201 التأثير لهدا الإنجاز",
-                            IdActivite = 48,
-                            IdMesure = 280,
+                            IdActivite = 16,
+                            IdMesure = 298,
                             Nom = "201 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "201 معدل الإنجاز لهدا الإنجاز",
@@ -36933,10 +36933,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 203,
-                            Annee = 2025,
+                            Annee = 2029,
                             Effet = "202 التأثير لهدا الإنجاز",
-                            IdActivite = 31,
-                            IdMesure = 337,
+                            IdActivite = 6,
+                            IdMesure = 394,
                             Nom = "202 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "202 معدل الإنجاز لهدا الإنجاز",
@@ -36945,10 +36945,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 204,
-                            Annee = 2018,
+                            Annee = 2027,
                             Effet = "203 التأثير لهدا الإنجاز",
-                            IdActivite = 34,
-                            IdMesure = 270,
+                            IdActivite = 8,
+                            IdMesure = 348,
                             Nom = "203 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "203 معدل الإنجاز لهدا الإنجاز",
@@ -36957,10 +36957,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 205,
-                            Annee = 2028,
+                            Annee = 2020,
                             Effet = "204 التأثير لهدا الإنجاز",
-                            IdActivite = 6,
-                            IdMesure = 124,
+                            IdActivite = 1,
+                            IdMesure = 93,
                             Nom = "204 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "204 معدل الإنجاز لهدا الإنجاز",
@@ -36969,10 +36969,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 206,
-                            Annee = 2024,
+                            Annee = 2025,
                             Effet = "205 التأثير لهدا الإنجاز",
-                            IdActivite = 26,
-                            IdMesure = 217,
+                            IdActivite = 37,
+                            IdMesure = 304,
                             Nom = "205 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "205 معدل الإنجاز لهدا الإنجاز",
@@ -36981,10 +36981,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 207,
-                            Annee = 2024,
+                            Annee = 2022,
                             Effet = "206 التأثير لهدا الإنجاز",
-                            IdActivite = 4,
-                            IdMesure = 253,
+                            IdActivite = 12,
+                            IdMesure = 132,
                             Nom = "206 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "206 معدل الإنجاز لهدا الإنجاز",
@@ -36993,10 +36993,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 208,
-                            Annee = 2021,
+                            Annee = 2022,
                             Effet = "207 التأثير لهدا الإنجاز",
-                            IdActivite = 2,
-                            IdMesure = 27,
+                            IdActivite = 11,
+                            IdMesure = 108,
                             Nom = "207 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "207 معدل الإنجاز لهدا الإنجاز",
@@ -37005,10 +37005,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 209,
-                            Annee = 2019,
+                            Annee = 2028,
                             Effet = "208 التأثير لهدا الإنجاز",
-                            IdActivite = 42,
-                            IdMesure = 212,
+                            IdActivite = 9,
+                            IdMesure = 378,
                             Nom = "208 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "208 معدل الإنجاز لهدا الإنجاز",
@@ -37017,10 +37017,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 210,
-                            Annee = 2019,
+                            Annee = 2026,
                             Effet = "209 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 153,
+                            IdActivite = 15,
+                            IdMesure = 326,
                             Nom = "209 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "209 معدل الإنجاز لهدا الإنجاز",
@@ -37029,10 +37029,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 211,
-                            Annee = 2027,
+                            Annee = 2029,
                             Effet = "210 التأثير لهدا الإنجاز",
-                            IdActivite = 24,
-                            IdMesure = 338,
+                            IdActivite = 14,
+                            IdMesure = 64,
                             Nom = "210 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "210 معدل الإنجاز لهدا الإنجاز",
@@ -37041,10 +37041,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 212,
-                            Annee = 2029,
+                            Annee = 2022,
                             Effet = "211 التأثير لهدا الإنجاز",
-                            IdActivite = 29,
-                            IdMesure = 191,
+                            IdActivite = 46,
+                            IdMesure = 14,
                             Nom = "211 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "211 معدل الإنجاز لهدا الإنجاز",
@@ -37053,10 +37053,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 213,
-                            Annee = 2022,
+                            Annee = 2025,
                             Effet = "212 التأثير لهدا الإنجاز",
-                            IdActivite = 1,
-                            IdMesure = 391,
+                            IdActivite = 6,
+                            IdMesure = 52,
                             Nom = "212 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "212 معدل الإنجاز لهدا الإنجاز",
@@ -37065,10 +37065,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 214,
-                            Annee = 2023,
+                            Annee = 2026,
                             Effet = "213 التأثير لهدا الإنجاز",
-                            IdActivite = 21,
-                            IdMesure = 127,
+                            IdActivite = 33,
+                            IdMesure = 230,
                             Nom = "213 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "213 معدل الإنجاز لهدا الإنجاز",
@@ -37077,10 +37077,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 215,
-                            Annee = 2018,
+                            Annee = 2021,
                             Effet = "214 التأثير لهدا الإنجاز",
-                            IdActivite = 47,
-                            IdMesure = 385,
+                            IdActivite = 46,
+                            IdMesure = 329,
                             Nom = "214 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "214 معدل الإنجاز لهدا الإنجاز",
@@ -37089,10 +37089,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 216,
-                            Annee = 2027,
+                            Annee = 2025,
                             Effet = "215 التأثير لهدا الإنجاز",
-                            IdActivite = 38,
-                            IdMesure = 87,
+                            IdActivite = 8,
+                            IdMesure = 53,
                             Nom = "215 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "215 معدل الإنجاز لهدا الإنجاز",
@@ -37101,10 +37101,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 217,
-                            Annee = 2027,
+                            Annee = 2023,
                             Effet = "216 التأثير لهدا الإنجاز",
-                            IdActivite = 31,
-                            IdMesure = 219,
+                            IdActivite = 18,
+                            IdMesure = 146,
                             Nom = "216 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "216 معدل الإنجاز لهدا الإنجاز",
@@ -37113,10 +37113,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 218,
-                            Annee = 2019,
+                            Annee = 2025,
                             Effet = "217 التأثير لهدا الإنجاز",
-                            IdActivite = 27,
-                            IdMesure = 199,
+                            IdActivite = 9,
+                            IdMesure = 213,
                             Nom = "217 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "217 معدل الإنجاز لهدا الإنجاز",
@@ -37125,10 +37125,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 219,
-                            Annee = 2024,
+                            Annee = 2027,
                             Effet = "218 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 378,
+                            IdActivite = 30,
+                            IdMesure = 206,
                             Nom = "218 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "218 معدل الإنجاز لهدا الإنجاز",
@@ -37137,10 +37137,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 220,
-                            Annee = 2023,
+                            Annee = 2022,
                             Effet = "219 التأثير لهدا الإنجاز",
-                            IdActivite = 22,
-                            IdMesure = 43,
+                            IdActivite = 30,
+                            IdMesure = 58,
                             Nom = "219 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "219 معدل الإنجاز لهدا الإنجاز",
@@ -37149,10 +37149,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 221,
-                            Annee = 2020,
+                            Annee = 2027,
                             Effet = "220 التأثير لهدا الإنجاز",
-                            IdActivite = 25,
-                            IdMesure = 307,
+                            IdActivite = 12,
+                            IdMesure = 332,
                             Nom = "220 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "220 معدل الإنجاز لهدا الإنجاز",
@@ -37161,10 +37161,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 222,
-                            Annee = 2023,
+                            Annee = 2020,
                             Effet = "221 التأثير لهدا الإنجاز",
-                            IdActivite = 14,
-                            IdMesure = 85,
+                            IdActivite = 44,
+                            IdMesure = 349,
                             Nom = "221 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "221 معدل الإنجاز لهدا الإنجاز",
@@ -37173,10 +37173,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 223,
-                            Annee = 2027,
+                            Annee = 2026,
                             Effet = "222 التأثير لهدا الإنجاز",
-                            IdActivite = 48,
-                            IdMesure = 214,
+                            IdActivite = 46,
+                            IdMesure = 38,
                             Nom = "222 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "222 معدل الإنجاز لهدا الإنجاز",
@@ -37185,10 +37185,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 224,
-                            Annee = 2027,
+                            Annee = 2020,
                             Effet = "223 التأثير لهدا الإنجاز",
-                            IdActivite = 11,
-                            IdMesure = 198,
+                            IdActivite = 4,
+                            IdMesure = 250,
                             Nom = "223 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "223 معدل الإنجاز لهدا الإنجاز",
@@ -37197,10 +37197,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 225,
-                            Annee = 2024,
+                            Annee = 2025,
                             Effet = "224 التأثير لهدا الإنجاز",
-                            IdActivite = 2,
-                            IdMesure = 262,
+                            IdActivite = 34,
+                            IdMesure = 227,
                             Nom = "224 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "224 معدل الإنجاز لهدا الإنجاز",
@@ -37209,10 +37209,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 226,
-                            Annee = 2021,
+                            Annee = 2027,
                             Effet = "225 التأثير لهدا الإنجاز",
-                            IdActivite = 10,
-                            IdMesure = 42,
+                            IdActivite = 6,
+                            IdMesure = 125,
                             Nom = "225 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "225 معدل الإنجاز لهدا الإنجاز",
@@ -37221,10 +37221,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 227,
-                            Annee = 2019,
+                            Annee = 2023,
                             Effet = "226 التأثير لهدا الإنجاز",
-                            IdActivite = 18,
-                            IdMesure = 35,
+                            IdActivite = 13,
+                            IdMesure = 5,
                             Nom = "226 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "226 معدل الإنجاز لهدا الإنجاز",
@@ -37233,10 +37233,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 228,
-                            Annee = 2021,
+                            Annee = 2027,
                             Effet = "227 التأثير لهدا الإنجاز",
-                            IdActivite = 17,
-                            IdMesure = 97,
+                            IdActivite = 15,
+                            IdMesure = 374,
                             Nom = "227 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "227 معدل الإنجاز لهدا الإنجاز",
@@ -37245,10 +37245,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 229,
-                            Annee = 2028,
+                            Annee = 2023,
                             Effet = "228 التأثير لهدا الإنجاز",
-                            IdActivite = 36,
-                            IdMesure = 374,
+                            IdActivite = 15,
+                            IdMesure = 44,
                             Nom = "228 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "228 معدل الإنجاز لهدا الإنجاز",
@@ -37257,10 +37257,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 230,
-                            Annee = 2022,
+                            Annee = 2025,
                             Effet = "229 التأثير لهدا الإنجاز",
-                            IdActivite = 22,
-                            IdMesure = 291,
+                            IdActivite = 28,
+                            IdMesure = 129,
                             Nom = "229 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "229 معدل الإنجاز لهدا الإنجاز",
@@ -37271,8 +37271,8 @@ namespace Admin5.Migrations
                             Id = 231,
                             Annee = 2024,
                             Effet = "230 التأثير لهدا الإنجاز",
-                            IdActivite = 46,
-                            IdMesure = 237,
+                            IdActivite = 12,
+                            IdMesure = 205,
                             Nom = "230 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "230 معدل الإنجاز لهدا الإنجاز",
@@ -37281,10 +37281,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 232,
-                            Annee = 2028,
+                            Annee = 2029,
                             Effet = "231 التأثير لهدا الإنجاز",
-                            IdActivite = 17,
-                            IdMesure = 372,
+                            IdActivite = 47,
+                            IdMesure = 172,
                             Nom = "231 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "231 معدل الإنجاز لهدا الإنجاز",
@@ -37293,10 +37293,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 233,
-                            Annee = 2024,
+                            Annee = 2026,
                             Effet = "232 التأثير لهدا الإنجاز",
-                            IdActivite = 31,
-                            IdMesure = 262,
+                            IdActivite = 5,
+                            IdMesure = 14,
                             Nom = "232 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "232 معدل الإنجاز لهدا الإنجاز",
@@ -37305,10 +37305,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 234,
-                            Annee = 2026,
+                            Annee = 2029,
                             Effet = "233 التأثير لهدا الإنجاز",
-                            IdActivite = 47,
-                            IdMesure = 321,
+                            IdActivite = 46,
+                            IdMesure = 97,
                             Nom = "233 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "233 معدل الإنجاز لهدا الإنجاز",
@@ -37317,10 +37317,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 235,
-                            Annee = 2026,
+                            Annee = 2018,
                             Effet = "234 التأثير لهدا الإنجاز",
-                            IdActivite = 49,
-                            IdMesure = 158,
+                            IdActivite = 11,
+                            IdMesure = 115,
                             Nom = "234 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "234 معدل الإنجاز لهدا الإنجاز",
@@ -37329,10 +37329,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 236,
-                            Annee = 2018,
+                            Annee = 2026,
                             Effet = "235 التأثير لهدا الإنجاز",
-                            IdActivite = 27,
-                            IdMesure = 201,
+                            IdActivite = 50,
+                            IdMesure = 196,
                             Nom = "235 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "235 معدل الإنجاز لهدا الإنجاز",
@@ -37341,10 +37341,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 237,
-                            Annee = 2028,
+                            Annee = 2029,
                             Effet = "236 التأثير لهدا الإنجاز",
-                            IdActivite = 11,
-                            IdMesure = 260,
+                            IdActivite = 2,
+                            IdMesure = 191,
                             Nom = "236 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "236 معدل الإنجاز لهدا الإنجاز",
@@ -37353,10 +37353,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 238,
-                            Annee = 2028,
+                            Annee = 2020,
                             Effet = "237 التأثير لهدا الإنجاز",
-                            IdActivite = 17,
-                            IdMesure = 31,
+                            IdActivite = 46,
+                            IdMesure = 137,
                             Nom = "237 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "237 معدل الإنجاز لهدا الإنجاز",
@@ -37365,10 +37365,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 239,
-                            Annee = 2018,
+                            Annee = 2019,
                             Effet = "238 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 66,
+                            IdActivite = 50,
+                            IdMesure = 381,
                             Nom = "238 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "238 معدل الإنجاز لهدا الإنجاز",
@@ -37377,10 +37377,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 240,
-                            Annee = 2024,
+                            Annee = 2028,
                             Effet = "239 التأثير لهدا الإنجاز",
-                            IdActivite = 32,
-                            IdMesure = 228,
+                            IdActivite = 36,
+                            IdMesure = 229,
                             Nom = "239 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "239 معدل الإنجاز لهدا الإنجاز",
@@ -37389,10 +37389,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 241,
-                            Annee = 2021,
+                            Annee = 2027,
                             Effet = "240 التأثير لهدا الإنجاز",
-                            IdActivite = 25,
-                            IdMesure = 206,
+                            IdActivite = 5,
+                            IdMesure = 145,
                             Nom = "240 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "240 معدل الإنجاز لهدا الإنجاز",
@@ -37403,8 +37403,8 @@ namespace Admin5.Migrations
                             Id = 242,
                             Annee = 2027,
                             Effet = "241 التأثير لهدا الإنجاز",
-                            IdActivite = 16,
-                            IdMesure = 122,
+                            IdActivite = 34,
+                            IdMesure = 332,
                             Nom = "241 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "241 معدل الإنجاز لهدا الإنجاز",
@@ -37413,10 +37413,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 243,
-                            Annee = 2028,
+                            Annee = 2019,
                             Effet = "242 التأثير لهدا الإنجاز",
-                            IdActivite = 35,
-                            IdMesure = 280,
+                            IdActivite = 33,
+                            IdMesure = 294,
                             Nom = "242 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "242 معدل الإنجاز لهدا الإنجاز",
@@ -37425,10 +37425,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 244,
-                            Annee = 2026,
+                            Annee = 2019,
                             Effet = "243 التأثير لهدا الإنجاز",
-                            IdActivite = 39,
-                            IdMesure = 231,
+                            IdActivite = 1,
+                            IdMesure = 7,
                             Nom = "243 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "243 معدل الإنجاز لهدا الإنجاز",
@@ -37437,10 +37437,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 245,
-                            Annee = 2023,
+                            Annee = 2021,
                             Effet = "244 التأثير لهدا الإنجاز",
-                            IdActivite = 18,
-                            IdMesure = 165,
+                            IdActivite = 25,
+                            IdMesure = 134,
                             Nom = "244 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "244 معدل الإنجاز لهدا الإنجاز",
@@ -37449,10 +37449,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 246,
-                            Annee = 2021,
+                            Annee = 2027,
                             Effet = "245 التأثير لهدا الإنجاز",
-                            IdActivite = 32,
-                            IdMesure = 141,
+                            IdActivite = 39,
+                            IdMesure = 25,
                             Nom = "245 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "245 معدل الإنجاز لهدا الإنجاز",
@@ -37461,10 +37461,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 247,
-                            Annee = 2028,
+                            Annee = 2025,
                             Effet = "246 التأثير لهدا الإنجاز",
-                            IdActivite = 39,
-                            IdMesure = 73,
+                            IdActivite = 36,
+                            IdMesure = 123,
                             Nom = "246 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "246 معدل الإنجاز لهدا الإنجاز",
@@ -37473,10 +37473,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 248,
-                            Annee = 2023,
+                            Annee = 2025,
                             Effet = "247 التأثير لهدا الإنجاز",
-                            IdActivite = 26,
-                            IdMesure = 89,
+                            IdActivite = 34,
+                            IdMesure = 204,
                             Nom = "247 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "247 معدل الإنجاز لهدا الإنجاز",
@@ -37485,10 +37485,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 249,
-                            Annee = 2018,
+                            Annee = 2028,
                             Effet = "248 التأثير لهدا الإنجاز",
-                            IdActivite = 35,
-                            IdMesure = 230,
+                            IdActivite = 16,
+                            IdMesure = 128,
                             Nom = "248 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "248 معدل الإنجاز لهدا الإنجاز",
@@ -37497,10 +37497,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 250,
-                            Annee = 2024,
+                            Annee = 2020,
                             Effet = "249 التأثير لهدا الإنجاز",
                             IdActivite = 43,
-                            IdMesure = 189,
+                            IdMesure = 381,
                             Nom = "249 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "منجز",
                             Taux = "249 معدل الإنجاز لهدا الإنجاز",
@@ -37509,10 +37509,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 251,
-                            Annee = 2027,
+                            Annee = 2023,
                             Effet = "250 التأثير لهدا الإنجاز",
-                            IdActivite = 2,
-                            IdMesure = 396,
+                            IdActivite = 43,
+                            IdMesure = 151,
                             Nom = "250 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "250 معدل الإنجاز لهدا الإنجاز",
@@ -37521,10 +37521,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 252,
-                            Annee = 2019,
+                            Annee = 2023,
                             Effet = "251 التأثير لهدا الإنجاز",
-                            IdActivite = 24,
-                            IdMesure = 181,
+                            IdActivite = 10,
+                            IdMesure = 332,
                             Nom = "251 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "251 معدل الإنجاز لهدا الإنجاز",
@@ -37533,10 +37533,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 253,
-                            Annee = 2021,
+                            Annee = 2028,
                             Effet = "252 التأثير لهدا الإنجاز",
-                            IdActivite = 44,
-                            IdMesure = 270,
+                            IdActivite = 14,
+                            IdMesure = 217,
                             Nom = "252 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "252 معدل الإنجاز لهدا الإنجاز",
@@ -37545,10 +37545,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 254,
-                            Annee = 2019,
+                            Annee = 2023,
                             Effet = "253 التأثير لهدا الإنجاز",
-                            IdActivite = 8,
-                            IdMesure = 332,
+                            IdActivite = 32,
+                            IdMesure = 139,
                             Nom = "253 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "253 معدل الإنجاز لهدا الإنجاز",
@@ -37559,8 +37559,8 @@ namespace Admin5.Migrations
                             Id = 255,
                             Annee = 2027,
                             Effet = "254 التأثير لهدا الإنجاز",
-                            IdActivite = 6,
-                            IdMesure = 181,
+                            IdActivite = 42,
+                            IdMesure = 11,
                             Nom = "254 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "254 معدل الإنجاز لهدا الإنجاز",
@@ -37569,10 +37569,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 256,
-                            Annee = 2018,
+                            Annee = 2023,
                             Effet = "255 التأثير لهدا الإنجاز",
-                            IdActivite = 20,
-                            IdMesure = 393,
+                            IdActivite = 47,
+                            IdMesure = 168,
                             Nom = "255 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "255 معدل الإنجاز لهدا الإنجاز",
@@ -37581,10 +37581,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 257,
-                            Annee = 2025,
+                            Annee = 2018,
                             Effet = "256 التأثير لهدا الإنجاز",
-                            IdActivite = 37,
-                            IdMesure = 91,
+                            IdActivite = 19,
+                            IdMesure = 84,
                             Nom = "256 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "256 معدل الإنجاز لهدا الإنجاز",
@@ -37593,10 +37593,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 258,
-                            Annee = 2027,
+                            Annee = 2028,
                             Effet = "257 التأثير لهدا الإنجاز",
-                            IdActivite = 34,
-                            IdMesure = 339,
+                            IdActivite = 13,
+                            IdMesure = 4,
                             Nom = "257 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "257 معدل الإنجاز لهدا الإنجاز",
@@ -37605,10 +37605,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 259,
-                            Annee = 2022,
+                            Annee = 2021,
                             Effet = "258 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 392,
+                            IdActivite = 8,
+                            IdMesure = 171,
                             Nom = "258 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "258 معدل الإنجاز لهدا الإنجاز",
@@ -37617,10 +37617,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 260,
-                            Annee = 2021,
+                            Annee = 2028,
                             Effet = "259 التأثير لهدا الإنجاز",
-                            IdActivite = 37,
-                            IdMesure = 243,
+                            IdActivite = 47,
+                            IdMesure = 144,
                             Nom = "259 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "259 معدل الإنجاز لهدا الإنجاز",
@@ -37629,10 +37629,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 261,
-                            Annee = 2026,
+                            Annee = 2024,
                             Effet = "260 التأثير لهدا الإنجاز",
-                            IdActivite = 20,
-                            IdMesure = 340,
+                            IdActivite = 48,
+                            IdMesure = 319,
                             Nom = "260 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "260 معدل الإنجاز لهدا الإنجاز",
@@ -37641,10 +37641,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 262,
-                            Annee = 2020,
+                            Annee = 2027,
                             Effet = "261 التأثير لهدا الإنجاز",
-                            IdActivite = 49,
-                            IdMesure = 295,
+                            IdActivite = 34,
+                            IdMesure = 64,
                             Nom = "261 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "261 معدل الإنجاز لهدا الإنجاز",
@@ -37655,8 +37655,8 @@ namespace Admin5.Migrations
                             Id = 263,
                             Annee = 2025,
                             Effet = "262 التأثير لهدا الإنجاز",
-                            IdActivite = 19,
-                            IdMesure = 354,
+                            IdActivite = 41,
+                            IdMesure = 123,
                             Nom = "262 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "262 معدل الإنجاز لهدا الإنجاز",
@@ -37665,10 +37665,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 264,
-                            Annee = 2029,
+                            Annee = 2024,
                             Effet = "263 التأثير لهدا الإنجاز",
-                            IdActivite = 50,
-                            IdMesure = 302,
+                            IdActivite = 45,
+                            IdMesure = 205,
                             Nom = "263 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "263 معدل الإنجاز لهدا الإنجاز",
@@ -37677,10 +37677,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 265,
-                            Annee = 2026,
+                            Annee = 2024,
                             Effet = "264 التأثير لهدا الإنجاز",
-                            IdActivite = 38,
-                            IdMesure = 252,
+                            IdActivite = 10,
+                            IdMesure = 35,
                             Nom = "264 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "264 معدل الإنجاز لهدا الإنجاز",
@@ -37689,10 +37689,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 266,
-                            Annee = 2022,
+                            Annee = 2029,
                             Effet = "265 التأثير لهدا الإنجاز",
-                            IdActivite = 32,
-                            IdMesure = 156,
+                            IdActivite = 44,
+                            IdMesure = 334,
                             Nom = "265 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "265 معدل الإنجاز لهدا الإنجاز",
@@ -37701,10 +37701,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 267,
-                            Annee = 2027,
+                            Annee = 2023,
                             Effet = "266 التأثير لهدا الإنجاز",
-                            IdActivite = 1,
-                            IdMesure = 123,
+                            IdActivite = 20,
+                            IdMesure = 157,
                             Nom = "266 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "266 معدل الإنجاز لهدا الإنجاز",
@@ -37713,10 +37713,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 268,
-                            Annee = 2025,
+                            Annee = 2028,
                             Effet = "267 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 45,
+                            IdActivite = 8,
+                            IdMesure = 195,
                             Nom = "267 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "267 معدل الإنجاز لهدا الإنجاز",
@@ -37725,10 +37725,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 269,
-                            Annee = 2020,
+                            Annee = 2026,
                             Effet = "268 التأثير لهدا الإنجاز",
-                            IdActivite = 48,
-                            IdMesure = 140,
+                            IdActivite = 30,
+                            IdMesure = 243,
                             Nom = "268 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "268 معدل الإنجاز لهدا الإنجاز",
@@ -37737,10 +37737,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 270,
-                            Annee = 2019,
+                            Annee = 2022,
                             Effet = "269 التأثير لهدا الإنجاز",
-                            IdActivite = 35,
-                            IdMesure = 250,
+                            IdActivite = 10,
+                            IdMesure = 20,
                             Nom = "269 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "269 معدل الإنجاز لهدا الإنجاز",
@@ -37749,10 +37749,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 271,
-                            Annee = 2023,
+                            Annee = 2022,
                             Effet = "270 التأثير لهدا الإنجاز",
-                            IdActivite = 50,
-                            IdMesure = 58,
+                            IdActivite = 2,
+                            IdMesure = 136,
                             Nom = "270 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "270 معدل الإنجاز لهدا الإنجاز",
@@ -37761,10 +37761,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 272,
-                            Annee = 2018,
+                            Annee = 2020,
                             Effet = "271 التأثير لهدا الإنجاز",
-                            IdActivite = 19,
-                            IdMesure = 307,
+                            IdActivite = 48,
+                            IdMesure = 272,
                             Nom = "271 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "271 معدل الإنجاز لهدا الإنجاز",
@@ -37773,10 +37773,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 273,
-                            Annee = 2029,
+                            Annee = 2024,
                             Effet = "272 التأثير لهدا الإنجاز",
-                            IdActivite = 29,
-                            IdMesure = 63,
+                            IdActivite = 49,
+                            IdMesure = 67,
                             Nom = "272 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "272 معدل الإنجاز لهدا الإنجاز",
@@ -37785,10 +37785,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 274,
-                            Annee = 2026,
+                            Annee = 2028,
                             Effet = "273 التأثير لهدا الإنجاز",
-                            IdActivite = 25,
-                            IdMesure = 9,
+                            IdActivite = 41,
+                            IdMesure = 46,
                             Nom = "273 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "273 معدل الإنجاز لهدا الإنجاز",
@@ -37799,8 +37799,8 @@ namespace Admin5.Migrations
                             Id = 275,
                             Annee = 2019,
                             Effet = "274 التأثير لهدا الإنجاز",
-                            IdActivite = 36,
-                            IdMesure = 297,
+                            IdActivite = 26,
+                            IdMesure = 191,
                             Nom = "274 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "274 معدل الإنجاز لهدا الإنجاز",
@@ -37809,10 +37809,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 276,
-                            Annee = 2023,
+                            Annee = 2026,
                             Effet = "275 التأثير لهدا الإنجاز",
-                            IdActivite = 7,
-                            IdMesure = 370,
+                            IdActivite = 19,
+                            IdMesure = 22,
                             Nom = "275 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "275 معدل الإنجاز لهدا الإنجاز",
@@ -37821,10 +37821,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 277,
-                            Annee = 2020,
+                            Annee = 2029,
                             Effet = "276 التأثير لهدا الإنجاز",
-                            IdActivite = 2,
-                            IdMesure = 88,
+                            IdActivite = 16,
+                            IdMesure = 112,
                             Nom = "276 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "276 معدل الإنجاز لهدا الإنجاز",
@@ -37835,8 +37835,8 @@ namespace Admin5.Migrations
                             Id = 278,
                             Annee = 2025,
                             Effet = "277 التأثير لهدا الإنجاز",
-                            IdActivite = 27,
-                            IdMesure = 291,
+                            IdActivite = 19,
+                            IdMesure = 217,
                             Nom = "277 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "277 معدل الإنجاز لهدا الإنجاز",
@@ -37845,10 +37845,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 279,
-                            Annee = 2021,
+                            Annee = 2029,
                             Effet = "278 التأثير لهدا الإنجاز",
-                            IdActivite = 7,
-                            IdMesure = 214,
+                            IdActivite = 31,
+                            IdMesure = 315,
                             Nom = "278 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "278 معدل الإنجاز لهدا الإنجاز",
@@ -37857,10 +37857,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 280,
-                            Annee = 2026,
+                            Annee = 2021,
                             Effet = "279 التأثير لهدا الإنجاز",
-                            IdActivite = 50,
-                            IdMesure = 3,
+                            IdActivite = 2,
+                            IdMesure = 29,
                             Nom = "279 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "279 معدل الإنجاز لهدا الإنجاز",
@@ -37869,10 +37869,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 281,
-                            Annee = 2022,
+                            Annee = 2024,
                             Effet = "280 التأثير لهدا الإنجاز",
-                            IdActivite = 23,
-                            IdMesure = 268,
+                            IdActivite = 14,
+                            IdMesure = 247,
                             Nom = "280 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "280 معدل الإنجاز لهدا الإنجاز",
@@ -37883,8 +37883,8 @@ namespace Admin5.Migrations
                             Id = 282,
                             Annee = 2021,
                             Effet = "281 التأثير لهدا الإنجاز",
-                            IdActivite = 25,
-                            IdMesure = 2,
+                            IdActivite = 5,
+                            IdMesure = 345,
                             Nom = "281 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "281 معدل الإنجاز لهدا الإنجاز",
@@ -37893,10 +37893,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 283,
-                            Annee = 2025,
+                            Annee = 2020,
                             Effet = "282 التأثير لهدا الإنجاز",
-                            IdActivite = 31,
-                            IdMesure = 159,
+                            IdActivite = 17,
+                            IdMesure = 97,
                             Nom = "282 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "282 معدل الإنجاز لهدا الإنجاز",
@@ -37905,10 +37905,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 284,
-                            Annee = 2028,
+                            Annee = 2022,
                             Effet = "283 التأثير لهدا الإنجاز",
-                            IdActivite = 19,
-                            IdMesure = 22,
+                            IdActivite = 21,
+                            IdMesure = 357,
                             Nom = "283 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "283 معدل الإنجاز لهدا الإنجاز",
@@ -37917,10 +37917,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 285,
-                            Annee = 2020,
+                            Annee = 2026,
                             Effet = "284 التأثير لهدا الإنجاز",
-                            IdActivite = 3,
-                            IdMesure = 207,
+                            IdActivite = 31,
+                            IdMesure = 227,
                             Nom = "284 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "284 معدل الإنجاز لهدا الإنجاز",
@@ -37931,8 +37931,8 @@ namespace Admin5.Migrations
                             Id = 286,
                             Annee = 2021,
                             Effet = "285 التأثير لهدا الإنجاز",
-                            IdActivite = 25,
-                            IdMesure = 59,
+                            IdActivite = 40,
+                            IdMesure = 262,
                             Nom = "285 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "285 معدل الإنجاز لهدا الإنجاز",
@@ -37941,10 +37941,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 287,
-                            Annee = 2022,
+                            Annee = 2018,
                             Effet = "286 التأثير لهدا الإنجاز",
-                            IdActivite = 39,
-                            IdMesure = 329,
+                            IdActivite = 3,
+                            IdMesure = 88,
                             Nom = "286 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "286 معدل الإنجاز لهدا الإنجاز",
@@ -37953,10 +37953,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 288,
-                            Annee = 2023,
+                            Annee = 2024,
                             Effet = "287 التأثير لهدا الإنجاز",
-                            IdActivite = 47,
-                            IdMesure = 266,
+                            IdActivite = 23,
+                            IdMesure = 356,
                             Nom = "287 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "287 معدل الإنجاز لهدا الإنجاز",
@@ -37965,10 +37965,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 289,
-                            Annee = 2022,
+                            Annee = 2027,
                             Effet = "288 التأثير لهدا الإنجاز",
-                            IdActivite = 45,
-                            IdMesure = 188,
+                            IdActivite = 41,
+                            IdMesure = 263,
                             Nom = "288 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "288 معدل الإنجاز لهدا الإنجاز",
@@ -37977,10 +37977,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 290,
-                            Annee = 2022,
+                            Annee = 2027,
                             Effet = "289 التأثير لهدا الإنجاز",
-                            IdActivite = 39,
-                            IdMesure = 89,
+                            IdActivite = 11,
+                            IdMesure = 138,
                             Nom = "289 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "289 معدل الإنجاز لهدا الإنجاز",
@@ -37989,10 +37989,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 291,
-                            Annee = 2020,
+                            Annee = 2028,
                             Effet = "290 التأثير لهدا الإنجاز",
                             IdActivite = 13,
-                            IdMesure = 237,
+                            IdMesure = 374,
                             Nom = "290 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "290 معدل الإنجاز لهدا الإنجاز",
@@ -38003,8 +38003,8 @@ namespace Admin5.Migrations
                             Id = 292,
                             Annee = 2019,
                             Effet = "291 التأثير لهدا الإنجاز",
-                            IdActivite = 17,
-                            IdMesure = 18,
+                            IdActivite = 16,
+                            IdMesure = 219,
                             Nom = "291 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "291 معدل الإنجاز لهدا الإنجاز",
@@ -38013,10 +38013,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 293,
-                            Annee = 2022,
+                            Annee = 2023,
                             Effet = "292 التأثير لهدا الإنجاز",
-                            IdActivite = 42,
-                            IdMesure = 88,
+                            IdActivite = 43,
+                            IdMesure = 164,
                             Nom = "292 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "292 معدل الإنجاز لهدا الإنجاز",
@@ -38025,10 +38025,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 294,
-                            Annee = 2026,
+                            Annee = 2025,
                             Effet = "293 التأثير لهدا الإنجاز",
-                            IdActivite = 44,
-                            IdMesure = 209,
+                            IdActivite = 27,
+                            IdMesure = 15,
                             Nom = "293 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "293 معدل الإنجاز لهدا الإنجاز",
@@ -38037,10 +38037,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 295,
-                            Annee = 2024,
+                            Annee = 2027,
                             Effet = "294 التأثير لهدا الإنجاز",
-                            IdActivite = 18,
-                            IdMesure = 265,
+                            IdActivite = 26,
+                            IdMesure = 360,
                             Nom = "294 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "294 معدل الإنجاز لهدا الإنجاز",
@@ -38049,10 +38049,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 296,
-                            Annee = 2019,
+                            Annee = 2022,
                             Effet = "295 التأثير لهدا الإنجاز",
-                            IdActivite = 18,
-                            IdMesure = 188,
+                            IdActivite = 47,
+                            IdMesure = 303,
                             Nom = "295 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "295 معدل الإنجاز لهدا الإنجاز",
@@ -38061,10 +38061,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 297,
-                            Annee = 2020,
+                            Annee = 2029,
                             Effet = "296 التأثير لهدا الإنجاز",
-                            IdActivite = 1,
-                            IdMesure = 258,
+                            IdActivite = 35,
+                            IdMesure = 327,
                             Nom = "296 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "296 معدل الإنجاز لهدا الإنجاز",
@@ -38073,10 +38073,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 298,
-                            Annee = 2022,
+                            Annee = 2019,
                             Effet = "297 التأثير لهدا الإنجاز",
-                            IdActivite = 19,
-                            IdMesure = 85,
+                            IdActivite = 16,
+                            IdMesure = 399,
                             Nom = "297 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "297 معدل الإنجاز لهدا الإنجاز",
@@ -38085,10 +38085,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 299,
-                            Annee = 2020,
+                            Annee = 2028,
                             Effet = "298 التأثير لهدا الإنجاز",
-                            IdActivite = 49,
-                            IdMesure = 209,
+                            IdActivite = 1,
+                            IdMesure = 332,
                             Nom = "298 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "298 معدل الإنجاز لهدا الإنجاز",
@@ -38097,10 +38097,10 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 300,
-                            Annee = 2018,
+                            Annee = 2026,
                             Effet = "299 التأثير لهدا الإنجاز",
-                            IdActivite = 43,
-                            IdMesure = 242,
+                            IdActivite = 25,
+                            IdMesure = 114,
                             Nom = "299 بعد الإنجازات لبعض الأنشطة ",
                             Situation = "غير منجز",
                             Taux = "299 معدل الإنجاز لهدا الإنجاز",
