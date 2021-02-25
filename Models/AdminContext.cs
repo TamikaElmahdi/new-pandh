@@ -59,6 +59,8 @@ namespace Models
                 entity.Property(e => e.Label);
                 entity.Property(e => e.Type);
                 entity.Property(e => e.Tel);
+                entity.Property(e => e.TypeHome);
+                entity.Property(e => e.TypeHomeText);
                 entity.HasMany(d => d.Partenariats).WithOne(p => p.Organisme).HasForeignKey(d => d.IdOrganisme);
                 entity.HasMany(d => d.Responsables).WithOne(p => p.Organisme).HasForeignKey(d => d.IdOrganisme);
                 entity.HasMany(d => d.OrganismeUsers).WithOne(p => p.Organisme).HasForeignKey(d => d.IdOrganisme);

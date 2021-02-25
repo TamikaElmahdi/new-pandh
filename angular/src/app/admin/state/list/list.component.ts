@@ -26,13 +26,15 @@ export class ListComponent implements OnInit {
   isRateLimitReached = false;
   dataSource = [];
 
-  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 3, title: 'التوزيع الحسب المحاور', idAxe: 0 });
+  pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب المحاور', idAxe: 0 });
+  pieChartSubjectD = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب النوع', idAxe: 6 });
 
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
   examenPageSubject = new Subject();
   countRec = new Subject();
   dataEpuPie = new Subject();
+
 
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
@@ -158,8 +160,7 @@ export class ListComponent implements OnInit {
     } else {
       this.type = 3;
     }
-
-    this.uow.axes.stateAxes(this.type, 0).subscribe(r => {
+    this.uow.axes.stateAxes(0 , 0).subscribe(r => {
 
       r = r.filter(e => e.name !== null);
       // console.log(r);
@@ -168,13 +169,15 @@ export class ListComponent implements OnInit {
       const barChartData = [
         { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
         { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
         { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
       ];
 
       r.forEach(e => {
         barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
         barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
-        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
       });
 
 
@@ -196,10 +199,11 @@ export class ListComponent implements OnInit {
       this.type = 3;
     }
 
-    this.uow.realisations.stateMecanisme(this.type).subscribe(r => {
+    this.uow.realisations.stateMecanisme(1).subscribe(r => {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
       chartLabels.push('غير منجز');
 
       console.log(r)
@@ -213,15 +217,16 @@ export class ListComponent implements OnInit {
 
       chartData.push(r.epu.p * 100 / r.epu.t);
       chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
       chartData.push(r.epu.n * 100 / r.epu.t);
 
-      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.n);
-      this.countRec.next(r.epu.p + r.epu.r + r.epu.n);
+      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.p + r.epu.r + r.epu.c + r.epu.n);
 
       // chartData.push(100 - r.epu.t);
 
 
-      const chartColors = ['#f7801e', '#2b960b', '#db0707', '#ffffff'];
+      const chartColors = ['#f7801e', '#2b960b', '#2d71a1', '#db0707'];
 
       this.dataEpuPie.next({
         chartLabels, chartData, chartColors, dataToShowInTable, count: r.count

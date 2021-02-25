@@ -65,6 +65,8 @@ export class Organisme {
   label = '';
   adresse = '';
   tel = '';
+  typeHome = 0;
+  typeHomeText = '';
   users: User[] = [];
 }
 

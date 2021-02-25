@@ -155,31 +155,35 @@ namespace Controllers
             // int recommendationsCount = _context.Recommendations.Count();
 
             var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
                             
             var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
             var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز"))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            var c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل"))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
             
-            var epu = new { n, r, p, t };
+            var epu = new { n, r, p, c, t };
 
-            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز")).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل")).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
             // var h = t == 0 ? 1 : t;
             // var h2 = 0/1;
-            var ot = new { n, r, p, t };
+            var ot = new { n, r, p, c, t };
 
-            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
-            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable))).CountAsync();
+            t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100)).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز")).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
+            c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل")).Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))).CountAsync();
 
-            var ps = new { n, r, p, t };
+            var ps = new { n, r, p, c, t };
 
             return new { epu, ot, ps, count = 0 };
 
@@ -303,8 +307,45 @@ namespace Controllers
             return Ok(list);
         }
 
+         [HttpGet("{type}/{typeTable}")]
+        public async Task<IActionResult> GenericByRecommendationType( string type, int typeTable) // used 
+        {
+            //https://stackoverflow.com/questions/57131550/why-cant-i-create-a-listt-of-anonymous-type-in-c
+            string lng = Request.Headers["mylang"].FirstOrDefault();
+            var list = new[] { new { table = "", value = 0 } }.ToList();
+            int recommendationsCount = 0;
+           
+                recommendationsCount = await _context.Realisations
+                
+                //.Where(e => e.Mesure.TypeMesure == typeTable)
+                .Where(e => e.Activite.ActiviteMesures != null)
 
-        
+                .CountAsync();
+                list = await _context.Natures
+                    .Select(e => new
+                    {
+                        table = e.Label,
+                        // value = e.Mesures
+                        // .Where(e => e.IdAxe == idAxe)
+                        // .Where(e => e.Responsable.Organisme.Type == typeTable)
+                        //                 .Count() * 100 / recommendationsCount,
+
+                        //value = e.Mesures.ActiviteMesures.Select(t => t.Activite)
+                        value = e.Mesures.Select(r => r.ActiviteMesures.Select(t => t.Activite))
+                        //.Where(e => e.Any( o => o.ActiviteMesures != null) && e.Any(o => o.ActiviteMesures.Any(r => r.Mesure.IdAxe == idAxe)))
+                        //.Where(e => e.Any( o => o.ActiviteMesures != null)  && e.Any(u => u.ActiviteMesures.Any(o=>o.Mesure.TypeMesure == typeTable)))
+                        .Count() * 100 / recommendationsCount,
+
+                        //value = 10
+                    })
+                    .Distinct()
+                    .ToListAsync()
+                ;
+            
+            return Ok(list);
+        }
+
+       
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOneWithInclude(int id)
