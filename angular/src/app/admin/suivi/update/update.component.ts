@@ -58,7 +58,7 @@ export class UpdateComponent implements OnInit {
         //this.activites = await this.uow.activites.getByForeignKey(this.o.activite.idMesure).toPromise() as any;
 
         this.createForm();
-        this.myForm.get('annee').setValue(this.o.annee.toString());
+        //this.myForm.get('annee').setValue(this.o.annee.toString());
         // this.eventToChild.emit(this.listOrganisme);
         // this.title = 'Modifier Utilisateur';
 
@@ -124,7 +124,7 @@ export class UpdateComponent implements OnInit {
       situation: [this.o.situation, Validators.required],
       annee: [this.o.annee],
       taux: [this.o.taux],
-      tauxRealisation: [this.o.tauxRealisation],
+      tauxRealisation: [this.o.tauxRealisation, [Validators.min(0), , Validators.max(100)]],
       effet: [this.o.effet],
       idActivite: [this.o.idActivite, Validators.required],
       idMesure: [this.myAuto.value],

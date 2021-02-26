@@ -29,7 +29,8 @@ export class SuiviIndicateurComponent implements OnInit {
     { columnDef: 'mesure', headName: 'التدبير' },
     { columnDef: 'indicateur', headName: 'المؤشرات' },
     { columnDef: 'date', headName: 'تاريخ' },
-    { columnDef: 'value', headName: 'قيمة / نسبة' },
+    { columnDef: 'value', headName: 'قيمة(الإنطلاق) / نسبة' },
+    { columnDef: 'value2', headName: 'قيمة(الحالية) / نسبة' },
     { columnDef: 'option', headName: '' },
   ];
 

@@ -17,12 +17,12 @@
           </mat-form-field>
 
           <mat-form-field appearance="fill" style="margin-bottom: 5px;">
-            <mat-label> (test)التدبير</mat-label>
+            <mat-label> التدبير</mat-label>
             <input matInput [formControl]="myAuto" [matAutocomplete]="auto" placeholder="إكمال تلقائي">
             <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
               <mat-option *ngFor="let e of filteredOptions | async" [value]="e">{{ e.nom }} </mat-option>
             </mat-autocomplete>
-          </mat-form-field> 
+          </mat-form-field>
 
           <mat-form-field appearance="fill">
             <mat-label>المؤشرات</mat-label>

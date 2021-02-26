@@ -57,7 +57,9 @@
 
               <mat-form-field appearance="fill">
                 <mat-label>معدل الإنجاز</mat-label>
-                <input matInput formControlName="tauxRealisation" required>
+                <input matInput formControlName="tauxRealisation"  #i matInput type="number" min="0" required>
+              <mat-error *ngIf="i.value <= 0 || i.value >100 ">يسمح فقط بالقيم بين 0 و 100</mat-error>
+
               </mat-form-field>
 
 

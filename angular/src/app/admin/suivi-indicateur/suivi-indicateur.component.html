@@ -85,6 +85,10 @@
           <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[4].headName}}</th>
           <td mat-cell *matCellDef="let row">{{row[columnDefs[4].columnDef]}}</td>
         </ng-container>
+        <ng-container [matColumnDef]="columnDefs[5].columnDef">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[5].headName}}</th>
+          <td mat-cell *matCellDef="let row">{{row[columnDefs[5].columnDef]}}</td>
+        </ng-container>
         <ng-container matColumnDef="option" style="flex-direction: row-reverse;">
           <th mat-header-cell *matHeaderCellDef> </th>
           <td mat-cell *matCellDef="let row">

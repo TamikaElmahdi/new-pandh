@@ -27,7 +27,10 @@ namespace Controllers
                 .OrderByName<IndicateurMesureValue>(sortBy, sortDir == "desc")
                 .Skip(startIndex)
                 .Take(pageSize)
+                //.Distinct()
                 // .Include(e => e.Mesure)
+                //.GroupBy( e=> new { e.Mesure.Nom , e.Indicateur.Nom)
+
                 .Select(e => new
                 {
                     id = e.Id,
@@ -36,6 +39,7 @@ namespace Controllers
                     indicateur = e.Indicateur.Nom,
                     date = e.Date,
                     value = e.Value,
+                    value2 = e.Value,
                     idCycle = e.Mesure.IdCycle,
                     idMesure = e.IdMesure,
                     // Responsable = e.Mesure.Responsable.Nom,
