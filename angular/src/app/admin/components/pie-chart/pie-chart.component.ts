@@ -27,7 +27,7 @@ export class PieChartComponent implements OnInit {
 
   title = '' || null;
   // Pie
-
+  CountData = 0;
   public pieChartOptions: ChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
@@ -158,16 +158,19 @@ export class PieChartComponent implements OnInit {
             this.pieChartLabels = r.map(e => e.table/*.substring(0, 40) + ' ...'*/);
             this.pieChartData = r.map(e => +e.value.toFixed(0));
             this.pieChartColors[0].backgroundColor = this.getColors(this.pieChartLabels.length);
-
             this.pieChartLabels.forEach((e, i) => {
+
               const value = this.pieChartData[i] as number;
               if (value !== 0) {
                 this.list.push({
                   name: r[i].table.toString(),
                   value: this.pieChartData[i] as number,
                 });
+              this.CountData =  this.CountData  + +this.pieChartData[i];
+
               }
             });
+
 
           });
         }
@@ -189,6 +192,8 @@ export class PieChartComponent implements OnInit {
                     value: this.pieChartData[i] as number,
                   });
                 }
+              this.CountData =  this.CountData  + +this.pieChartData[i];
+
               });
 
             });
@@ -208,7 +213,10 @@ export class PieChartComponent implements OnInit {
                     name: r[i].table.toString(),
                     value: this.pieChartData[i] as number,
                   });
+              this.CountData =  this.CountData  + +this.pieChartData[i];
+
                 }
+
               });
 
             });

@@ -133,20 +133,7 @@
       </div>
     </div>
 
-    <div class="row" >
-      <div class="col md-3" >
-        <app-pie-chart [obs]="pieChartSubject_1" ></app-pie-chart>
-      </div>
-      <div class="col md-3" >
-        <app-pie-chart [obs]="pieChartSubject_2" ></app-pie-chart>
-      </div>
-      <div class="col md-3" >
-        <app-pie-chart [obs]="pieChartSubject_3" ></app-pie-chart>
-      </div>
-      <div class="col md-3" >
-        <app-pie-chart [obs]="pieChartSubject_4" ></app-pie-chart>
-      </div>
-    </div>
+
 
 
     <div class="col-md-12">
@@ -155,6 +142,31 @@
         <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
       </div>
     </div>
+
+    <div  class="d-flex justify-content-left w-100" style="margin-top: 2%; ">
+      <section class="super-title border-right">
+        <div>
+          <h3 style="font-size: 1.2em;">وضعية التنفيد التدابير حسب المحاور الفرعية</h3>
+        </div>
+      </section>
+    </div>
+
+    <div class="row" >
+
+      <div class="col-md-3" >
+        <app-pie-chart [obs]="pieChartSubject_1" ></app-pie-chart>
+      </div>
+      <div class="col-md-3" >
+        <app-pie-chart [obs]="pieChartSubject_2" ></app-pie-chart>
+      </div>
+      <div class="col-md-3" >
+        <app-pie-chart [obs]="pieChartSubject_3" ></app-pie-chart>
+      </div>
+      <div class="col-md-3" >
+        <app-pie-chart [obs]="pieChartSubject_4" ></app-pie-chart>
+      </div>
+    </div>
+
   </div>
 <!-- ------------------ Graphe -------------------- -->
 
