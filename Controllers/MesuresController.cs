@@ -157,6 +157,10 @@ namespace Controllers
             return Ok(model);
         }
 
+
+       
+
+
         //  [HttpGet("{id}")]
         // public async Task<IActionResult> GetByTypeOrganisme(int id)
         // {

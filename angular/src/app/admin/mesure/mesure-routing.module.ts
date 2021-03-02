@@ -1,8 +1,8 @@
 import { MesureComponent } from './mesure.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from './list/list.component';
 import { UpdateComponent } from './update/update.component';
+import { ListComponent } from './list/list.component';
 
 
 const routes: Routes = [
@@ -10,12 +10,14 @@ const routes: Routes = [
   {
     path: '', component: MesureComponent,
     children: [
+      // { path: '', redirectTo: 'list', pathMatch: 'full' },
       { path: '', redirectTo: 'list', pathMatch: 'full' },
       { path: 'list', component: ListComponent },
       { path: 'update/:id', component: UpdateComponent },
     ]
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

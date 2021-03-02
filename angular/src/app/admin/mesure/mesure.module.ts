@@ -1,4 +1,4 @@
-import { ListComponent } from './list/list.component';
+import { ListOldComponent } from './listOld/listOld.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -18,12 +18,14 @@ import { ActivitesComponent } from './activites/activites.component';
 import { DetailsComponent } from './details/details.component';
 import { PieChartModule } from '../components/pie-chart/pie-chart.module';
 import { CountModule } from '../components/count/count.module';
+import { ListComponent } from './list/list.component';
 
 
 @NgModule({
   declarations: [
     MesureComponent,
     ListComponent,
+    ListOldComponent,
     UpdateComponent,
     PartenaireComponent,
     ResponsableComponent,

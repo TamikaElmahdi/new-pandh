@@ -33,5 +33,13 @@ export class OrganismeService  extends SuperService<any> {
     return this.http.get(`${this.urlApi}/${this.controller}/getResponsableByMesure/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
   }
 
+  searchAndGet(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/searchAndGet`, o);
+  }
+
+  getInfoResponsable(id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getInfoResponsable/${id}`);
+  }
+
 
 }

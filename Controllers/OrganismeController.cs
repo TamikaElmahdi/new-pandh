@@ -10,6 +10,7 @@ using Microsoft.Data.SqlClient;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+using Providers;
 
 namespace Controllers
 {
@@ -99,6 +100,109 @@ namespace Controllers
 
            // return Ok(model);
         }
+
+        // [HttpPost]
+        // public async Task<IActionResult> SearchAndGet(Model model)
+        // {
+            
+        //     var query = _context.Organismes
+        //         .Where(e => e.Type == model.TypeOrganisme)
+        //         .Where(e => model.IdCycle == 0 ? true : e.Responsables.Any(m => m.Mesure.IdCycle == model.IdCycle))
+        //         .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
+        //         .Where(e => model.IdAxe == 0 ? true : e.Responsables.Any(m => m.Mesure.IdAxe == model.IdAxe))
+        //         .Where(e => model.IdSousAxe == 0 ? true : e.Responsables.Any(m => m.Mesure.IdSousAxe == model.IdSousAxe))
+        //         .Where(e => model.IdOrganisme == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdOrganisme == model.IdOrganisme)))
+        //         ;
+
+        //     var list = await query
+        //         .OrderByName<Organisme>(model.SortBy, model.SortDir == "desc")
+        //         .Skip(model.StartIndex)
+        //         .Take(model.PageSize)
+               
+        //         .Select(e => new
+        //         {
+        //             id = e.Id,
+        //             cycle = e.Responsables.Select(m => m.Mesure.Cycle),
+        //             organisme = e.Label,
+        //             type = e.Type
+        //         })
+        //         .OrderBy(e => e.organisme)
+        //         .ToListAsync();
+        //     ;
+
+
+        //     int count =  await _context.Mesures.Where(e => e.Responsables.Any(r => r.Organisme.Type == model.TypeOrganisme)).Distinct().CountAsync() ;
+
+        //     return Ok(new { list = list, count = count });
+        // }
+        [HttpPost]
+        public async Task<IActionResult> SearchAndGet(Model model)
+        {
+            
+            var query = _context.Organismes
+                .Where(e => e.Type == model.TypeOrganisme)
+                // .Where(e => model.IdCycle == 0 ? true : e.Responsables.Any(m => m.Mesure.IdCycle == model.IdCycle))
+                // .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
+                // .Where(e => model.IdAxe == 0 ? true : e.Responsables.Any(m => m.Mesure.IdAxe == model.IdAxe))
+                // .Where(e => model.IdSousAxe == 0 ? true : e.Responsables.Any(m => m.Mesure.IdSousAxe == model.IdSousAxe))
+                // .Where(e => model.IdOrganisme == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdOrganisme == model.IdOrganisme)))
+                ;
+
+            var list = await query
+                .OrderByName<Organisme>(model.SortBy, model.SortDir == "desc")
+                .Skip(model.StartIndex)
+                .Take(model.PageSize)
+               
+                .Select(e => new
+                {
+                    id = e.Id,
+                    idMesure = e.Id,
+                    cycle = "2018 - 2021",
+                    organisme = e.Label,
+                    type = e.Type
+                })
+                .OrderBy(e => e.organisme)
+                .ToListAsync();
+            ;
+
+
+            int count =  await _context.Organismes.Where(e => e.Type == model.TypeOrganisme).Distinct().CountAsync() ;
+            int countMesures =  await _context.Mesures.Where(e => e.Responsables.Any(o => o.Organisme.Type == model.TypeOrganisme)).Distinct().CountAsync() ;
+
+            return Ok(new { list = list, count = count , countMesures = countMesures });
+        }
+
+        // [HttpGet("{id}")]
+        // public async Task<IActionResult> GetInfoResponsable(int id)
+        // {
+           
+        //     return Ok(await _context.Responsables
+        //                     .Where(e => e.IdOrganisme == id)
+        //                     //.Include(e => e.Responsables)
+        //                     //.Include(e => e.Mesures)
+        //                     .FirstOrDefaultAsync()
+        //                     );
+        // }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetInfoResponsable(int id)
+        {
+            
+            return Ok(await _context.Organismes
+                            .Where(e => e.Id == id)
+                            .Include(e => e.Responsables).ThenInclude(e => e.Mesure)
+                            .Include(e => e.Responsables).ThenInclude(e => e.User)
+                            
+                            .FirstOrDefaultAsync()
+                            );
+        }
+
+        
+
+
+        
+
+
 
         // [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
         // public virtual async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, int id)

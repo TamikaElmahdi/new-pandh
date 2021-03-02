@@ -1,4 +1,4 @@
-import { Mesure, Organisme, Responsable } from './../../../Models/models';
+import { Mesure } from './../../../Models/models';
 import { Component, OnInit, ViewChild, EventEmitter } from '@angular/core';
 import { MatPaginator, MatSort, MatDialog, MatAutocompleteSelectedEvent, MatInput } from '@angular/material';
 import { BehaviorSubject, merge, Observable, Subject } from 'rxjs';
@@ -11,33 +11,21 @@ import { switchMap, map } from 'rxjs/operators';
 import { DetailsComponent } from '../details/details.component';
 import { DeleteService } from '../../components/delete/delete.service';
 import { IData } from '../../components/pie-chart/pie-chart.component';
-import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss'],
-  animations: [
-    trigger('detailExpand', [
-      state('collapsed', style({ height: '0px', minHeight: '0' })),
-      state('expanded', style({ height: '*' })),
-      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-    ]),
-  ],
+  selector: 'app-listOld',
+  templateUrl: './listOld.component.html',
+  styleUrls: ['./listOld.component.scss']
 })
-export class ListComponent implements OnInit {
+export class ListOldComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   // @ViewChild('myAutocomplete', { static: true }) myAutocomplete: MatInput;
-
   update = new EventEmitter();
   isLoadingResults = true;
   resultsLength = 0;
-  resultsLengthTadabir = 0;
   isRateLimitReached = false;
   dataSource = [];
-  expandedElement = new Organisme();
-
 
 
   pieChartSubjectC =  new Subject();
@@ -61,11 +49,11 @@ export class ListComponent implements OnInit {
   columnDefs = [
     { columnDef: 'cycle', headName: 'المرحلة' },
     { columnDef: 'organisme', headName: 'الجهة' },
-    //{ columnDef: 'nom', headName: 'التدبير' },
-    //{ columnDef: 'responsable', headName: 'المخاطب الرسمي' },
+    { columnDef: 'nom', headName: 'التدبير' },
+    { columnDef: 'responsable', headName: 'المخاطب الرسمي' },
     // { columnDef: 'partenaire', headName: 'الشركاء' },
     // { columnDef: 'activite', headName: 'الأنشطة' },
-    //{ columnDef: 'resultatsAttendu', headName: 'النتائج المبرمجة' },
+    { columnDef: 'resultatsAttendu', headName: 'النتائج المبرمجة' },
     // { columnDef: 'indicateur', headName: 'مؤشرات القياس' },
     { columnDef: 'option', headName: '' },
   ].map(e => {
@@ -142,11 +130,22 @@ export class ListComponent implements OnInit {
     this.routeMesure = this.router.url;
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
-    //this.searchAndGet(this.o);
-    this.getPage(new Model());
-
+    this.searchAndGet(this.o);
     // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     this.createForm();
+
+    // this.router.events.subscribe(route => {
+    //   if (route instanceof NavigationStart) {
+    //     this.routeMesure = route.url;
+    //     // console.log(this.routeMesure);
+    //     this.checkWitchMesure(this.routeMesure);
+    //     this.o.typeOrganisme = this.typeOrganisme;
+    //     this.createForm();
+    //     this.update.next(true);
+    //     console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+    //   }
+    // });
+
 
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
@@ -162,7 +161,16 @@ export class ListComponent implements OnInit {
       }
     );
 
+    // this.route.queryParams.subscribe(params => {
+    //   const id = params['data'];
+    //   if (id) {
+    //     this.uow.mesures.getOne(id).subscribe(r => {
+    //       // this.openDialog(r);
+    //     });
+    //   }
+    // });
 
+    // this.getRoute();
     this.autoComplete();
   }
 
@@ -308,8 +316,12 @@ export class ListComponent implements OnInit {
   createForm() {
     this.myForm = this.fb.group({
       idCycle: this.o.idCycle,
+      idMesure: this.o.idMesure,
+      idResponsable: this.o.idResponsable,
       idOrganisme: this.o.idOrganisme,
       typeOrganisme: this.o.typeOrganisme,
+      idAxe: this.o.idAxe,
+      idSousAxe: this.o.idCycle,
       startIndex: this.o.startIndex,
       pageSize: this.o.pageSize,
       sortBy: this.o.sortBy,
@@ -363,46 +375,18 @@ export class ListComponent implements OnInit {
     return dialogRef.afterClosed();
   }
 
+
   searchAndGet(o: Model) {
-    this.o = o;
-    // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
-    this.uow.organismes.searchAndGet(this.o).subscribe(
-      (r: any) => {
-        this.dataSource = r.list;
-        this.resultsLength = r.count;
-        this.resultsLengthTadabir = r.countMesures;
-        this.isLoadingResults = false;
-      }, e => this.isLoadingResults = false,
-    );
-
-  }
-
-  getPage(data: Model) {
-    this.uow.organismes.searchAndGet(data).subscribe(
-      (r: any) => {
-        console.log(r.list);
-        this.dataSource = r.list;
-        this.resultsLength = r.count;
-        this.resultsLengthTadabir = r.countMesures;
-        this.isLoadingResults = false;
-      }
-    );
-  }
-
-
-
-
-  searchAndGetOld(o: Model) {
     this.o = o;
     // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
     this.uow.mesures.searchAndGet(this.o).subscribe(
       (r: any) => {
+        console.log('ff' + r.list);
         this.dataSource = r.list;
         this.resultsLength = r.count;
         this.isLoadingResults = false;
       }, e => this.isLoadingResults = false,
     );
-
   }
 
   async delete(o: Mesure) {
@@ -418,13 +402,6 @@ export class ListComponent implements OnInit {
     });
   }
 
-  async expandeRow(row: Organisme) {
-
-    if (this.expandedElement.id !== row.id) {
-      row = await this.uow.organismes.getInfoResponsable(row.id).toPromise() as Organisme;
-    }
-    return this.expandedElement = this.expandedElement.id === row.id ? new Organisme() : row;
-  }
   get isAllEmpty(): boolean {
     if (this.myForm.get('idAxe').value.toString() === '0' &&
       this.myForm.get('idCycle').value.toString() === '0' &&
@@ -441,8 +418,13 @@ export class ListComponent implements OnInit {
 
 class Model {
   idCycle = 0;
+  idMesure = 0;
+  idResponsable = 0;
+  idAxe = 0;
+  idSousAxe = 0;
   idOrganisme = 0;
   typeOrganisme = 1;
+  // mecanisme = '';
   startIndex = 0;
   pageSize = 10;
   sortBy = 'id';

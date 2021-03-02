@@ -19,6 +19,10 @@ export class MesureService extends SuperService<Mesure> {
     return this.http.get(`${this.urlApi}/${this.controller}/customAutocomplete/${idCycle}/${name}`);
   }
 
+
+  getByOrganisme(id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getByOrganisme/${id}`);
+  }
   // getByTypeOrganisme(id) {
   //   return this.http.get(`${this.urlApi}/${this.controller}/getByTypeOrganisme/${id}`);
   // }

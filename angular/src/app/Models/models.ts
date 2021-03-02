@@ -68,6 +68,7 @@ export class Organisme {
   typeHome = 0;
   typeHomeText = '';
   users: User[] = [];
+  responsables: Responsable[] = [];
 }
 
 export class OrganismeUser {

@@ -1,0 +1,90 @@
+section {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+::ng-deep h3 {
+  margin: 0 !important;
+}
+
+.host {
+  margin: 1em !important;
+}
+
+.inputs2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
+  margin: 15px;
+  align-items: center;
+  // mat-form-field {
+  //   width: 100%;
+  // }
+}
+
+form {
+  padding: 20px;
+}
+
+.expension {
+  margin: 20px 0;
+}
+
+.rightC {
+  // margin: 0 20px 20px;
+  display: flex;
+  // flex-direction: ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-panel-title {
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 0 0 10px;
+  }
+
+  mat-icon {
+    margin-top: 5px;
+  }
+}
+
+.right {
+  margin: 0 20px 20px;
+}
+
+.TitreGraphe
+{
+  background-color: #a19b9e;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  margin-right: 1%;
+}
+
+.super-title {
+
+  height: 45px;
+  display: flex;
+  align-items: center;
+  div {
+    background-color: #a19b9e;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    h3 {
+      color: white;
+      margin: 0 0 0 0;
+      padding: 0 5px;
+    }
+  }
+}
