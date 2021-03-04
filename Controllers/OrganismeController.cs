@@ -141,6 +141,9 @@ namespace Controllers
             
             var query = _context.Organismes
                 .Where(e => e.Type == model.TypeOrganisme)
+                .Include(e => e.Responsables).ThenInclude(e => e.Mesure)
+                .Include(e => e.Responsables).ThenInclude(e => e.User)
+
                 // .Where(e => model.IdCycle == 0 ? true : e.Responsables.Any(m => m.Mesure.IdCycle == model.IdCycle))
                 // .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
                 // .Where(e => model.IdAxe == 0 ? true : e.Responsables.Any(m => m.Mesure.IdAxe == model.IdAxe))
@@ -159,7 +162,9 @@ namespace Controllers
                     idMesure = e.Id,
                     cycle = "2018 - 2021",
                     organisme = e.Label,
-                    type = e.Type
+                    idOrganisme = e.Id,
+                    type = e.Type,
+                    responsables = e.Responsables, 
                 })
                 .OrderBy(e => e.organisme)
                 .ToListAsync();
@@ -196,6 +201,24 @@ namespace Controllers
                             .FirstOrDefaultAsync()
                             );
         }
+
+
+        // [HttpGet("{id}")]
+        // public async Task<IActionResult> GetInfoResponsable(int id)
+        // {
+        //     var query = await _context.Organismes
+        //                     .Where(e => e.Id == id)
+        //                     .Include(e => e.Responsables).ThenInclude(e => e.Mesure)
+        //                     .Include(e => e.Responsables).ThenInclude(e => e.User)
+                            
+        //                     .ToListAsync();
+
+
+
+        //     return Ok(new { list = query });
+
+        // }
+
 
         
 
