@@ -34,6 +34,7 @@
 
         </th>
         <!--  -->
+
         <td mat-cell *matCellDef="let row" >
           <!-- (click)="check(row)" -->
           <div ng-controller="MyCtrl" >
@@ -76,6 +77,6 @@
 <div class="actions">
   <button mat-button [routerLink]="['/admin/synthese/list']" type="button">رجوع</button>&nbsp;&nbsp;
   <!-- <button mat-button (click)="reset()" type="button">إلغاء</button>&nbsp;&nbsp; -->
-  <button mat-raised-button cdkFocusInitial color="primary" (click)="submit()"
-    [disabled]="selectedList.length === 0">تسجيل</button>
+  <!-- <button mat-raised-button cdkFocusInitial color="primary" (click)="submit()"
+    [disabled]="selectedList.length === 0">تسجيل</button> -->
 </div>

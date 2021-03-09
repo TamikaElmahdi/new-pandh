@@ -49,12 +49,6 @@ export class ActivitesComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.uow.activites.getByForeignKey(this.mesure.id).subscribe(r => {
-    //   this.selectedList2 = r as any[];
-    //   this.selectedList2.forEach(row => {
-    //     this.todeleteList2.push({ idActivite: row.id, idMesure: this.mesure.id } as any);
-    //   });
-    // });
 
     this.uow.activites.getByForeignKey(this.mesure.id).subscribe(r => {
       this.selectedList = r as any[];
@@ -65,14 +59,11 @@ export class ActivitesComponent implements OnInit {
 
     // this.selectedList = [];
 
-
-
-
     if (this.mesure.id !== 0) {
       this.isEdit = true;
     }
 
-    this.getPage(0, 10, 'id', 'desc');
+    this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
         r === true ? this.paginator.pageIndex = 0 : r = r;
@@ -84,14 +75,15 @@ export class ActivitesComponent implements OnInit {
           this.paginator.pageSize,
           this.sort.active ? this.sort.active : 'id',
           this.sort.direction ? this.sort.direction : 'desc',
+          this.mesure.id
         );
       }
     );
   }
 
-  getPage(startIndex, pageSize, sortBy, sortDir) {
+  getPage(startIndex, pageSize, sortBy, sortDir, id) {
     this.isLoadingResults = true;
-    this.uow.activites.getList(startIndex, pageSize, sortBy, sortDir).subscribe(
+    this.uow.activites.getListActivite(startIndex, pageSize, sortBy, sortDir, this.mesure.id).subscribe(
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list.map(e => {
@@ -143,7 +135,7 @@ export class ActivitesComponent implements OnInit {
     if (term !== null && term !== '') {
       this.getDataFiltre(term);
     } else {
-      this.getPage(0, 10, 'id', 'desc');
+      this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     }
   }
 

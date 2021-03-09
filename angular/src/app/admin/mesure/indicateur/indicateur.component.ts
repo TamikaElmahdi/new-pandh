@@ -51,10 +51,8 @@ export class IndicateurComponent implements OnInit {
   ngOnInit() {
     this.uow.indicateurs.getByForeignKey(this.mesure.id).subscribe(r => {
       this.selectedList = r as any[];
-      // console.log(this.selectedList)
       this.selectedList.forEach(row => {
         this.todeleteList.push({ idIndicateur: row.id, idMesure: this.mesure.id } as any);
-        // this.selection.select(row);
       });
     });
 
@@ -62,7 +60,7 @@ export class IndicateurComponent implements OnInit {
       this.isEdit = true;
     }
 
-    this.getPage(0, 10, 'id', 'desc');
+    this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
         r === true ? this.paginator.pageIndex = 0 : r = r;
@@ -74,6 +72,7 @@ export class IndicateurComponent implements OnInit {
           this.paginator.pageSize,
           this.sort.active ? this.sort.active : 'id',
           this.sort.direction ? this.sort.direction : 'desc',
+          this.mesure.id
         );
       }
     );
@@ -88,8 +87,8 @@ export class IndicateurComponent implements OnInit {
   //   });
   // }
 
-  getPage(startIndex, pageSize, sortBy, sortDir) {
-    this.uow.indicateurs.getList(startIndex, pageSize, sortBy, sortDir).subscribe(
+  getPage(startIndex, pageSize, sortBy, sortDir ,id) {
+    this.uow.indicateurs.getListIndicateur(startIndex, pageSize, sortBy, sortDir, this.mesure.id).subscribe(
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list;
@@ -115,7 +114,7 @@ export class IndicateurComponent implements OnInit {
     if (term !== null && term !== '') {
       this.getDataFiltre(term);
     } else {
-      this.getPage(0, 10, 'id', 'desc');
+      this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     }
   }
 

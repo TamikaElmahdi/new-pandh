@@ -22,4 +22,8 @@ export class IndicateurService extends SuperService<Indicateur> {
   putRange(modelsToDelete, modelsToAdd) {
     return this.http.post(`${this.urlApi}/${this.controller}/putRange`, { modelsToDelete, modelsToAdd });
   }
+
+  getListIndicateur(startIndex, pageSize, sortBy, sortDir, id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getListIndicateur/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
+  }
 }

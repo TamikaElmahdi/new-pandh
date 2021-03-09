@@ -34,6 +34,33 @@ namespace Controllers
             return Ok(new { list = list, count = count });
         }
 
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
+        public virtual async Task<IActionResult> GetListActivite(int startIndex, int pageSize, string sortBy, string sortDir, int id)
+        {
+           
+            var listIn = await _context.Activites
+                .Where(e => e.ActiviteMesures.Any(p => p.Mesure.Id == id))
+                .OrderByName<Activite>(sortBy, sortDir == "desc")
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync()
+                ;
+
+            var listOder = await _context.Activites
+                .Where(e => e.ActiviteMesures.Any(p => p.Mesure.Id != id))
+                .OrderByName<Activite>(sortBy, sortDir == "desc")
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync()
+                ;
+
+            var list = listIn.Union(listOder);
+            int count = await _context.Activites.CountAsync();
+
+            return Ok(new { list = list, count = count });
+        }
+
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByForeignKey(int id)
         {
@@ -43,6 +70,7 @@ namespace Controllers
 
             return Ok(model);
         }
+
 
         [HttpGet("{searchText}")]
         public virtual async Task<IActionResult> GetDataFiltre(string searchText)

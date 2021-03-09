@@ -18,4 +18,8 @@ export class ActiviteService  extends SuperService<Activite> {
   getDataFiltre(searchText) {
     return this.http.get(`${this.urlApi}/${this.controller}/getDataFiltre/${searchText}`);
   }
+
+  getListActivite(startIndex, pageSize, sortBy, sortDir, id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getListActivite/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
+  }
 }

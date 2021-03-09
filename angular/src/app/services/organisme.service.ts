@@ -41,5 +41,9 @@ export class OrganismeService  extends SuperService<any> {
     return this.http.get(`${this.urlApi}/${this.controller}/getInfoResponsable/${id}`);
   }
 
+  getListPartenaire(startIndex, pageSize, sortBy, sortDir, id) {
+    return this.http.get(`${this.urlApi}/${this.controller}/getListPartenaire/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${id}`);
+  }
+
 
 }

@@ -57,7 +57,7 @@ export class PartenaireComponent implements OnInit {
       this.isEdit = true;
     }
 
-    this.getPage(0, 10, 'id', 'desc');
+    this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
         r === true ? this.paginator.pageIndex = 0 : r = r;
@@ -69,14 +69,15 @@ export class PartenaireComponent implements OnInit {
           this.paginator.pageSize,
           this.sort.active ? this.sort.active : 'id',
           this.sort.direction ? this.sort.direction : 'desc',
+          this.mesure.id
         );
       }
     );
   }
 
-  getPage(startIndex, pageSize, sortBy, sortDir) {
+  getPage(startIndex, pageSize, sortBy, sortDir, id) {
     this.isLoadingResults = true;
-    this.uow.organismes.getList(startIndex, pageSize, sortBy, sortDir).subscribe(
+    this.uow.organismes.getListPartenaire(startIndex, pageSize, sortBy, sortDir, this.mesure.id).subscribe(
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list;
@@ -124,7 +125,7 @@ export class PartenaireComponent implements OnInit {
     if (term !== null && term !== '') {
       this.getDataFiltre(term);
     } else {
-      this.getPage(0, 10, 'id', 'desc');
+      this.getPage(0, 10, 'id', 'desc', this.mesure.id);
     }
   }
 

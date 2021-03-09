@@ -206,48 +206,31 @@ namespace Controllers
         }
 
 
-        // [HttpGet("{id}")]
-        // public async Task<IActionResult> GetInfoResponsable(int id)
-        // {
-        //     var query = await _context.Organismes
-        //                     .Where(e => e.Id == id)
-        //                     .Include(e => e.Responsables).ThenInclude(e => e.Mesure)
-        //                     .Include(e => e.Responsables).ThenInclude(e => e.User)
-                            
-        //                     .ToListAsync();
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
+        public virtual async Task<IActionResult> GetListPartenaire(int startIndex, int pageSize, string sortBy, string sortDir, int id)
+        {
+           
+            var listIn = await _context.Organismes
+                .Where(e => e.Partenariats.Any(p => p.Mesure.Id == id))
+                .OrderByName<Organisme>(sortBy, sortDir == "desc")
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync()
+                ;
 
+            var listOder = await _context.Organismes
+                .Where(e => e.Partenariats.Any(p => p.Mesure.Id != id))
+                .OrderByName<Organisme>(sortBy, sortDir == "desc")
+                .Skip(startIndex)
+                .Take(pageSize)
+                .ToListAsync()
+                ;
 
+            var list = listIn.Union(listOder);
+            int count = await _context.Organismes.CountAsync();
 
-        //     return Ok(new { list = query });
-
-        // }
-
-
-        
-
-
-        
-
-
-
-        // [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{id}")]
-        // public virtual async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, int id)
-        // {
-        //     // int i = typeof(T).FullName.LastIndexOf('.');
-        //     // string tableName = typeof(T).FullName.Substring(i + 1) + "s";
-
-        //     var list = await _context.Activites
-        //         .Where(e => e.IdMesure == id)
-        //         .OrderByName<Activite>(sortBy, sortDir == "desc")
-        //         .Skip(startIndex)
-        //         .Take(pageSize)
-        //         .ToListAsync()
-        //         ;
-        //     int count = await _context.Activites.CountAsync();
-
-        //     return Ok(new { list = list, count = count });
-        // }
-
+            return Ok(new { list = list, count = count });
+        }
 
 
     }
