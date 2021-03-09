@@ -16,7 +16,11 @@ export class ActivitesComponent implements OnInit {
 
   selectedList: Activite[] = [];
   todeleteList: ActiviteMesure[] = [];
+
   useFullList: ActiviteMesure[] = [];
+
+  selectedList2 = this.uow.activites.get();
+  todeleteList2 = this.uow.activiteMesures.get();
   // listFromParent: Partenariat[] = [];
 
   isEdit = false;
@@ -44,12 +48,18 @@ export class ActivitesComponent implements OnInit {
   constructor(private uow: UowService) { }
 
   ngOnInit() {
+
+    // this.uow.activites.getByForeignKey(this.mesure.id).subscribe(r => {
+    //   this.selectedList2 = r as any[];
+    //   this.selectedList2.forEach(row => {
+    //     this.todeleteList2.push({ idActivite: row.id, idMesure: this.mesure.id } as any);
+    //   });
+    // });
+
     this.uow.activites.getByForeignKey(this.mesure.id).subscribe(r => {
       this.selectedList = r as any[];
-      // console.log(this.selectedList)
       this.selectedList.forEach(row => {
         this.todeleteList.push({ idActivite: row.id, idMesure: this.mesure.id } as any);
-        // this.selection.select(row);
       });
     });
 
@@ -104,6 +114,8 @@ export class ActivitesComponent implements OnInit {
      }
     );
   }
+
+
 
 
   submit() {

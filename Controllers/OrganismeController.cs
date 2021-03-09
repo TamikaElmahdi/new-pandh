@@ -141,8 +141,10 @@ namespace Controllers
             
             var query = _context.Organismes
                 .Where(e => e.Type == model.TypeOrganisme)
+                .Where(e => e.Responsables.Any(f => f.Mesure != null))
                 .Include(e => e.Responsables).ThenInclude(e => e.Mesure)
                 .Include(e => e.Responsables).ThenInclude(e => e.User)
+                
 
                 // .Where(e => model.IdCycle == 0 ? true : e.Responsables.Any(m => m.Mesure.IdCycle == model.IdCycle))
                 // .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(m => m.Mesure.Responsables.Any(o => o.IdUser == model.IdResponsable)))
@@ -152,6 +154,7 @@ namespace Controllers
                 ;
 
             var list = await query
+
                 .OrderByName<Organisme>(model.SortBy, model.SortDir == "desc")
                 .Skip(model.StartIndex)
                 .Take(model.PageSize)
@@ -166,7 +169,7 @@ namespace Controllers
                     type = e.Type,
                     responsables = e.Responsables, 
                 })
-                .OrderBy(e => e.organisme)
+                .OrderByDescending(e => e.idMesure)
                 .ToListAsync();
             ;
 

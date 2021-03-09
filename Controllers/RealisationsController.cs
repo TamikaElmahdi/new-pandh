@@ -266,9 +266,37 @@ namespace Controllers
             return Ok(list);
         }
 
-
          [HttpGet("{type}/{typeTable}/{idAxe}")]
         public async Task<IActionResult> GenericByRecommendationSousAxe( string type, int typeTable, int idAxe) // used 
+        {
+            //https://stackoverflow.com/questions/57131550/why-cant-i-create-a-listt-of-anonymous-type-in-c
+            string lng = Request.Headers["mylang"].FirstOrDefault();
+            var list = new[] { new { table = "", value = 0 } }.ToList();
+            int recommendationsCount = 0;
+           
+                recommendationsCount = await _context.Mesures
+                .Where(e => e.Axe.Id == idAxe)
+                .Where(e => e.TypeMesure == typeTable)
+                //.Where(e => e.ActiviteMesures != null)
+                .CountAsync();
+                list = await _context.SousAxes.Where(e => e.IdAxe == idAxe)
+                    .Select(e => new
+                    {
+                        table = e.Label,
+                        value = e.Mesures.Count(),
+                        //value = e.Mesures.Select( s => s.Realisations.Select(r => r.TauxRealisation)).Count() * 100 / recommendationsCount,
+                    })
+                    .Distinct()
+                    .ToListAsync()
+                ;
+            
+            return Ok(list);
+        }
+
+
+
+         [HttpGet("{type}/{typeTable}/{idAxe}")]
+        public async Task<IActionResult> GenericByRecommendationSousAxeOld( string type, int typeTable, int idAxe) // used 
         {
             //https://stackoverflow.com/questions/57131550/why-cant-i-create-a-listt-of-anonymous-type-in-c
             string lng = Request.Headers["mylang"].FirstOrDefault();

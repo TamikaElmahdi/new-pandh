@@ -45,16 +45,12 @@ export class PartenaireComponent implements OnInit {
   ngOnInit() {
     this.uow.organismes.getByForeignKey(this.mesure.id).subscribe(r => {
       this.selectedList = r as any[];
-      // console.log(this.selectedList)
       this.selectedList.forEach(row => {
         this.todeleteList.push({ idOrganisme: row.id, idMesure: this.mesure.id } as any);
-        // this.selection.select(row);
       });
     });
 
     // this.selectedList = [];
-
-
 
 
     if (this.mesure.id !== 0) {

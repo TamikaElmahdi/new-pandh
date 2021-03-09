@@ -201,10 +201,12 @@ export class ListMesureComponent implements OnInit {
       ];
 
       r.forEach(e => {
-        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
-        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
-        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
-        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
+        let total = e.p + e.r + e.c + e.n ;
+
+        barChartData[0].data.push((e.p * 100 / total).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / total).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / total).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / total).toFixed(0));
       });
 
 

@@ -38,7 +38,7 @@
     <div  class="d-flex justify-content-left w-100" style="margin-top: 2%; ">
       <section class="super-title border-right">
         <div>
-          <h3 style="font-size: 1.2em;">وضعية التنفيد التدابير حسب المحاور الفرعية</h3>
+          <h3 class="titleGrapheMesure" style="font-size: 1.2em;">وضعية التنفيد التدابير حسب المحاور الفرعية</h3>
         </div>
       </section>
     </div>
@@ -85,29 +85,30 @@
 
         <td mat-cell *matCellDef="let row" style="width: 60% important;">
             <div class="mytable" *ngIf="row[columnDefs[2].columnDef].length > 0">
-              <table class="table table-bordered table-sm mt-3">
+              <table  class="tableFils table table-bordered table-sm mt-3">
+              <!-- <table class="table table-bordered table-sm mt-3"> -->
                 <thead>
-                  <tr>
-                    <th scope="col">التدبير</th>
-                    <th scope="col">المخاطب الرسمي</th>
-                    <th scope="col">النتائج المبرمجة</th>
-                    <th scope="col"></th>
+                  <tr style="background-color: #8bd0e8  !important;">
+                    <th scope="col" style="width: 56% !important;">التدبير</th>
+                    <th scope="col" style="width: 10% !important;">المخاطب الرسمي</th>
+                    <th scope="col" style="width: 30% !important;">النتائج المبرمجة</th>
+                    <th scope="col" style="width: 4% !important;"></th>
                   </tr>
                 </thead>
-                <tbody *ngFor="let e of row[columnDefs[2].columnDef]">
-                  <tr>
+                <tbody >
+                  <tr *ngFor="let e of row[columnDefs[2].columnDef]">
                     <td>{{e.mesure.nom}}</td>
                     <td>{{e.user.nom}}</td>
                     <td>{{e.mesure.resultatsAttendu}}</td>
                     <td>
                       <button mat-icon-button color="primary" (click)="navToUpdate(e.mesure.id)"
                         *ngIf="session.checkPermission(routeMesure, 1)">
-                        <mat-icon>create</mat-icon>
+                        <mat-icon>visibility</mat-icon>
                       </button>
-                      <button mat-icon-button color="warn" (click)="delete(e)"
+                      <!-- <button mat-icon-button color="warn" (click)="delete(e)"
                         *ngIf="session.checkPermission(routeMesure, 1)">
                         <mat-icon>delete_sweep</mat-icon>
-                      </button>
+                      </button> -->
                     </td>
                   </tr>
                 </tbody>
