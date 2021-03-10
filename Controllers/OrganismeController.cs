@@ -169,7 +169,7 @@ namespace Controllers
                     type = e.Type,
                     responsables = e.Responsables, 
                 })
-                .OrderByDescending(e => e.idMesure)
+                .OrderBy(e => e.id)
                 .ToListAsync();
             ;
 
