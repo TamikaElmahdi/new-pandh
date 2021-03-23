@@ -37,9 +37,9 @@ export class UpdateComponent implements OnInit {
   mesure = new Mesure();
   myAuto = new FormControl('');
   filteredOptions: Observable<any>;
-  situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز']
+  situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز'];
   sendMesureToIndicateurComponent = new BehaviorSubject(0);
-  mesureId =0;
+  mesureId = 0;
   constructor(private route: ActivatedRoute, private router: Router,
     private uow: UowService, private fb: FormBuilder, private session: SessionService) { }
 
@@ -52,10 +52,12 @@ export class UpdateComponent implements OnInit {
         this.o = r as Realisation;
         this.o.activite = Object.assign(new Activite(), this.o.activite);
         //this.years = this.o.activite.dureeToArray();
-        //this.myAuto.setValue(this.o.activite.mesure.nom);
-        //this.cycleFC.setValue(this.o.activite.mesure.idCycle);
-        //this.sendMesureToIndicateurComponent.next(this.o.activite.idMesure);
-        //this.activites = await this.uow.activites.getByForeignKey(this.o.activite.idMesure).toPromise() as any;
+
+        this.cycleFC.setValue(this.o.mesure.idCycle);
+        this.myAuto.setValue(this.o.mesure.nom);
+
+        this.sendMesureToIndicateurComponent.next(this.o.idMesure);
+        this.activites = await this.uow.activites.getByForeignKey(this.o.idMesure).toPromise() as any;
 
         this.createForm();
         //this.myForm.get('annee').setValue(this.o.annee.toString());
@@ -122,12 +124,12 @@ export class UpdateComponent implements OnInit {
       id: this.o.id,
       nom: [this.o.nom, Validators.required],
       situation: [this.o.situation, Validators.required],
-      annee: [this.o.annee],
+      annee: [this.o.annee, Validators.required],
       taux: [this.o.taux],
       tauxRealisation: [this.o.tauxRealisation, [Validators.min(0), , Validators.max(100)]],
       effet: [this.o.effet],
       idActivite: [this.o.idActivite, Validators.required],
-      idMesure: [this.myAuto.value],
+      idMesure: [this.o.idMesure, Validators.required],
 
     });
   }

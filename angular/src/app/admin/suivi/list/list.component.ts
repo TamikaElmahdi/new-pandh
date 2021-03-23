@@ -29,17 +29,18 @@ export class ListComponent implements OnInit {
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
   // responsables = ['المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1',];
+  situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز']
 
   columnDefs = [
     // { columnDef: 'cycle', headName: 'المرحلة' },
     { columnDef: 'mesure', headName: 'التدبير' },
-    { columnDef: 'activite', headName: 'النشاط' },
-    { columnDef: 'annee', headName: 'السنة' },
-    { columnDef: 'nom', headName: 'الإنجاز' },
-    { columnDef: 'situation', headName: 'وضعية التنفيد' },
-    { columnDef: 'taux', headName: 'معدل الإنجاز' },
-    // { columnDef: 'indicateur', headName: 'مؤشرات القياس' },
-    { columnDef: 'option', headName: '' },
+    // { columnDef: 'activite', headName: 'النشاط' },
+    // { columnDef: 'annee', headName: 'السنة' },
+    // { columnDef: 'nom', headName: 'الإنجاز' },
+    // { columnDef: 'situation', headName: 'وضعية التنفيد' },
+    { columnDef: 'realisations', headName: '' },
+    { columnDef: 'tauxTotal', headName: 'معدل الإنجاز الإجمالي' },
+    // { columnDef: 'option', headName: '' },
   ].map(e => {
     e.headName = e.headName === '' ? e.columnDef.toUpperCase() : e.headName;
     return e;
@@ -79,7 +80,7 @@ export class ListComponent implements OnInit {
   // regions = ['الرباط', 'تمارة'];
   // oranismes = ['الجامعة', 'الأكاديمية', 'محو الأمية'];
   title = '';
-  constructor(private uow: UowService, private mydialog: DeleteService
+  constructor(public uow: UowService, private mydialog: DeleteService
     , private snack: SnackbarService, private fb: FormBuilder
     , public session: SessionService, public dialog: MatDialog
     , public per: ManagePermissionService, public router: Router) { }
@@ -132,7 +133,10 @@ export class ListComponent implements OnInit {
     this.autoComplete();
   }
 
-
+  navToUpdate(id = 0) {
+    // console.log(`${this.routeMesure.replace('/list', '')}/update`, 0)
+    this.router.navigate([`${this.routeMesure.replace('/list', '')}/update`, id]);
+  }
 
   selectChange2(idMesure) {
     console.log(idMesure);
@@ -189,6 +193,9 @@ export class ListComponent implements OnInit {
       typeOrganisme: this.o.typeOrganisme,
       idAxe: this.o.idAxe,
       idSousAxe: this.o.idCycle,
+      codeMesure: this.o.codeMesure,
+      nomMesure: this.o.nomMesure,
+      situation: this.o.situation,
       startIndex: this.o.startIndex,
       pageSize: this.o.pageSize,
       sortBy: this.o.sortBy,
@@ -272,7 +279,10 @@ export class ListComponent implements OnInit {
       this.myForm.get('idSousAxe').value.toString() === '0' &&
       this.myForm.get('idMesure').value.toString() === '0' &&
       this.myForm.get('idOrganisme').value.toString() === '0' &&
-      this.myForm.get('idResponsable').value.toString() === '0') {
+      this.myForm.get('idResponsable').value.toString() === '0' &&
+      this.myForm.get('codeMesure').value.toString() === '' &&
+      this.myForm.get('nomMesure').value.toString() === '' &&
+      this.myForm.get('situation').value.toString() === '') {
       return true;
     }
     return false;
@@ -288,6 +298,9 @@ class Model {
   idSousAxe = 0;
   idOrganisme = 0;
   typeOrganisme = 1;
+  nomMesure = '';
+  codeMesure = '';
+  situation = '';
   // mecanisme = '';
   startIndex = 0;
   pageSize = 10;

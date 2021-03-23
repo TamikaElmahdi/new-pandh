@@ -182,6 +182,9 @@ namespace Controllers
         public int IdSousAxe { get; set; }
         public int IdOrganisme { get; set; }
         public int TypeOrganisme { get; set; }
+        public string CodeMesure { get; set; }
+        public string NomMesure { get; set; }
+        public string Situation { get; set; }
         public int StartIndex { get; set; }
         public int PageSize { get; set; }
         public string SortBy { get; set; }
@@ -189,7 +192,7 @@ namespace Controllers
 
         public bool IsAllEmpty()
         {
-            if (IdSousAxe == 0 && IdMesure == 0 && IdAxe == 0 && IdCycle == 0 && IdResponsable == 0 && TypeOrganisme == 0 && IdOrganisme == 0)
+            if (IdSousAxe == 0 && IdMesure == 0 && IdAxe == 0 && IdCycle == 0 && IdResponsable == 0 && TypeOrganisme == 0 && IdOrganisme == 0 && CodeMesure == null && NomMesure == null && Situation == "") 
             {
                 return true;
             }

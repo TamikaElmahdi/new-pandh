@@ -80,5 +80,16 @@ export class UowService {
     // { id: 16, nameF: 'permission',  nameA: 'صلاحيات المستخدم'},
   ];
 
+  getSomeCaracter(str: String, start: number, end: number)
+  {
+     if (str.length > 15)
+     {
+       return str.substring(start, end) + '...';
+     }
+     else {
+        return str.substring(start, end);
+     }
+  }
+
   constructor() { }
 }

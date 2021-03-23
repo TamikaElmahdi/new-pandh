@@ -154,3 +154,5 @@ tr.example-element-row:not(.example-expanded-row):active {
   margin-top: 0!important;
   margin-bottom: 0!important;
 }
+
+// [ngStyle]="{'background-color': (e.situation=='منجز') ? '#7dc460 !important' : (e.situation=='غير منجز') ? '#db0707 !important' : (e.situation=='في طور الإنجاز') ? '#d17c36 !important' : '#1476de !important' }"

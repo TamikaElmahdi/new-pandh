@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Models;
@@ -9,26 +10,29 @@ using Models;
 namespace Admin5.Migrations
 {
     [DbContext(typeof(AdminContext))]
-    [Migration("20210308144627_first")]
+    [Migration("20210323153659_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.0");
+                .HasAnnotation("ProductVersion", "3.1.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Models.Activite", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Duree")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nom")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -7648,10 +7652,10 @@ namespace Admin5.Migrations
             modelBuilder.Entity("Models.ActiviteMesure", b =>
                 {
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdActivite")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("IdMesure", "IdActivite");
 
@@ -16211,10 +16215,11 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -16247,16 +16252,17 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateEvenement")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Pv")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -16266,140 +16272,140 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            DateEvenement = new DateTime(2020, 11, 24, 23, 42, 52, 496, DateTimeKind.Local).AddTicks(4140),
+                            DateEvenement = new DateTime(2020, 5, 10, 19, 30, 35, 22, DateTimeKind.Local).AddTicks(2308),
                             Pv = "محضر رقم 1",
                             Type = "اللجنة رقم 1"
                         },
                         new
                         {
                             Id = 2,
-                            DateEvenement = new DateTime(2020, 9, 27, 6, 20, 29, 486, DateTimeKind.Local).AddTicks(223),
+                            DateEvenement = new DateTime(2021, 3, 9, 20, 56, 5, 500, DateTimeKind.Local).AddTicks(810),
                             Pv = "محضر رقم 2",
                             Type = "اللجنة رقم 2"
                         },
                         new
                         {
                             Id = 3,
-                            DateEvenement = new DateTime(2020, 11, 9, 3, 3, 16, 102, DateTimeKind.Local).AddTicks(3642),
+                            DateEvenement = new DateTime(2021, 3, 19, 1, 53, 18, 350, DateTimeKind.Local).AddTicks(7378),
                             Pv = "محضر رقم 3",
                             Type = "اللجنة رقم 3"
                         },
                         new
                         {
                             Id = 4,
-                            DateEvenement = new DateTime(2021, 1, 22, 13, 53, 49, 681, DateTimeKind.Local).AddTicks(7304),
+                            DateEvenement = new DateTime(2021, 3, 17, 19, 9, 56, 813, DateTimeKind.Local).AddTicks(6002),
                             Pv = "محضر رقم 4",
                             Type = "اللجنة رقم 4"
                         },
                         new
                         {
                             Id = 5,
-                            DateEvenement = new DateTime(2020, 4, 9, 20, 58, 49, 235, DateTimeKind.Local).AddTicks(4853),
+                            DateEvenement = new DateTime(2021, 3, 11, 18, 32, 55, 752, DateTimeKind.Local).AddTicks(5021),
                             Pv = "محضر رقم 5",
                             Type = "اللجنة رقم 5"
                         },
                         new
                         {
                             Id = 6,
-                            DateEvenement = new DateTime(2020, 12, 25, 3, 18, 53, 559, DateTimeKind.Local).AddTicks(2794),
+                            DateEvenement = new DateTime(2021, 3, 12, 2, 47, 28, 880, DateTimeKind.Local).AddTicks(404),
                             Pv = "محضر رقم 6",
                             Type = "اللجنة رقم 6"
                         },
                         new
                         {
                             Id = 7,
-                            DateEvenement = new DateTime(2020, 7, 14, 2, 41, 23, 38, DateTimeKind.Local).AddTicks(3129),
+                            DateEvenement = new DateTime(2020, 12, 5, 17, 30, 10, 417, DateTimeKind.Local).AddTicks(1401),
                             Pv = "محضر رقم 7",
                             Type = "اللجنة رقم 7"
                         },
                         new
                         {
                             Id = 8,
-                            DateEvenement = new DateTime(2020, 3, 31, 10, 51, 9, 32, DateTimeKind.Local).AddTicks(8280),
+                            DateEvenement = new DateTime(2020, 6, 27, 6, 56, 36, 955, DateTimeKind.Local).AddTicks(1139),
                             Pv = "محضر رقم 8",
                             Type = "اللجنة رقم 8"
                         },
                         new
                         {
                             Id = 9,
-                            DateEvenement = new DateTime(2020, 11, 25, 3, 24, 28, 823, DateTimeKind.Local).AddTicks(4035),
+                            DateEvenement = new DateTime(2020, 4, 15, 5, 8, 21, 303, DateTimeKind.Local).AddTicks(1982),
                             Pv = "محضر رقم 9",
                             Type = "اللجنة رقم 9"
                         },
                         new
                         {
                             Id = 10,
-                            DateEvenement = new DateTime(2020, 11, 29, 13, 34, 55, 425, DateTimeKind.Local).AddTicks(8825),
+                            DateEvenement = new DateTime(2020, 9, 5, 21, 46, 55, 837, DateTimeKind.Local).AddTicks(9931),
                             Pv = "محضر رقم 10",
                             Type = "اللجنة رقم 10"
                         },
                         new
                         {
                             Id = 11,
-                            DateEvenement = new DateTime(2020, 6, 18, 6, 34, 57, 506, DateTimeKind.Local).AddTicks(5408),
+                            DateEvenement = new DateTime(2020, 4, 7, 14, 11, 52, 18, DateTimeKind.Local).AddTicks(3448),
                             Pv = "محضر رقم 11",
                             Type = "اللجنة رقم 11"
                         },
                         new
                         {
                             Id = 12,
-                            DateEvenement = new DateTime(2021, 2, 4, 9, 41, 34, 284, DateTimeKind.Local).AddTicks(5991),
+                            DateEvenement = new DateTime(2021, 1, 5, 13, 56, 20, 489, DateTimeKind.Local).AddTicks(6614),
                             Pv = "محضر رقم 12",
                             Type = "اللجنة رقم 12"
                         },
                         new
                         {
                             Id = 13,
-                            DateEvenement = new DateTime(2021, 1, 25, 1, 47, 19, 967, DateTimeKind.Local).AddTicks(1874),
+                            DateEvenement = new DateTime(2020, 7, 1, 19, 54, 28, 15, DateTimeKind.Local).AddTicks(2865),
                             Pv = "محضر رقم 13",
                             Type = "اللجنة رقم 13"
                         },
                         new
                         {
                             Id = 14,
-                            DateEvenement = new DateTime(2021, 2, 25, 3, 47, 40, 817, DateTimeKind.Local).AddTicks(9058),
+                            DateEvenement = new DateTime(2020, 12, 28, 16, 59, 35, 509, DateTimeKind.Local).AddTicks(5301),
                             Pv = "محضر رقم 14",
                             Type = "اللجنة رقم 14"
                         },
                         new
                         {
                             Id = 15,
-                            DateEvenement = new DateTime(2020, 11, 8, 6, 27, 39, 358, DateTimeKind.Local).AddTicks(18),
+                            DateEvenement = new DateTime(2020, 8, 24, 0, 14, 8, 965, DateTimeKind.Local).AddTicks(3423),
                             Pv = "محضر رقم 15",
                             Type = "اللجنة رقم 15"
                         },
                         new
                         {
                             Id = 16,
-                            DateEvenement = new DateTime(2020, 8, 9, 19, 29, 43, 367, DateTimeKind.Local).AddTicks(5167),
+                            DateEvenement = new DateTime(2020, 8, 28, 19, 16, 48, 393, DateTimeKind.Local).AddTicks(6250),
                             Pv = "محضر رقم 16",
                             Type = "اللجنة رقم 16"
                         },
                         new
                         {
                             Id = 17,
-                            DateEvenement = new DateTime(2020, 11, 24, 10, 45, 34, 474, DateTimeKind.Local).AddTicks(3528),
+                            DateEvenement = new DateTime(2020, 7, 22, 14, 47, 49, 138, DateTimeKind.Local).AddTicks(9328),
                             Pv = "محضر رقم 17",
                             Type = "اللجنة رقم 17"
                         },
                         new
                         {
                             Id = 18,
-                            DateEvenement = new DateTime(2020, 10, 28, 23, 11, 32, 346, DateTimeKind.Local).AddTicks(8330),
+                            DateEvenement = new DateTime(2021, 1, 19, 23, 58, 25, 913, DateTimeKind.Local).AddTicks(2050),
                             Pv = "محضر رقم 18",
                             Type = "اللجنة رقم 18"
                         },
                         new
                         {
                             Id = 19,
-                            DateEvenement = new DateTime(2021, 1, 1, 11, 9, 22, 879, DateTimeKind.Local).AddTicks(3597),
+                            DateEvenement = new DateTime(2020, 12, 1, 1, 49, 51, 420, DateTimeKind.Local).AddTicks(6993),
                             Pv = "محضر رقم 19",
                             Type = "اللجنة رقم 19"
                         },
                         new
                         {
                             Id = 20,
-                            DateEvenement = new DateTime(2020, 12, 31, 11, 25, 23, 796, DateTimeKind.Local).AddTicks(1759),
+                            DateEvenement = new DateTime(2020, 8, 28, 13, 17, 43, 627, DateTimeKind.Local).AddTicks(3528),
                             Pv = "محضر رقم 20",
                             Type = "اللجنة رقم 20"
                         });
@@ -16409,10 +16415,11 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -16430,13 +16437,14 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nom")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Source")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -18224,10 +18232,10 @@ namespace Admin5.Migrations
             modelBuilder.Entity("Models.IndicateurMesure", b =>
                 {
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdIndicateur")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("IdMesure", "IdIndicateur");
 
@@ -18857,19 +18865,20 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("IdIndicateur")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Value")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -18883,1601 +18892,1601 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2020, 7, 3, 3, 15, 55, 973, DateTimeKind.Local).AddTicks(8810),
+                            Date = new DateTime(2021, 3, 19, 10, 17, 40, 549, DateTimeKind.Local).AddTicks(7825),
                             IdIndicateur = 4,
-                            IdMesure = 197,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Date = new DateTime(2020, 8, 21, 4, 44, 20, 314, DateTimeKind.Local).AddTicks(9374),
-                            IdIndicateur = 1,
-                            IdMesure = 381,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Date = new DateTime(2020, 5, 25, 21, 59, 52, 582, DateTimeKind.Local).AddTicks(3029),
-                            IdIndicateur = 5,
-                            IdMesure = 168,
-                            Value = "78"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Date = new DateTime(2020, 12, 27, 0, 25, 41, 684, DateTimeKind.Local).AddTicks(9218),
-                            IdIndicateur = 4,
-                            IdMesure = 153,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Date = new DateTime(2020, 4, 8, 8, 27, 53, 937, DateTimeKind.Local).AddTicks(8222),
-                            IdIndicateur = 6,
-                            IdMesure = 424,
-                            Value = "79"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Date = new DateTime(2020, 4, 8, 9, 52, 32, 87, DateTimeKind.Local).AddTicks(5083),
-                            IdIndicateur = 2,
-                            IdMesure = 194,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Date = new DateTime(2020, 8, 9, 10, 53, 23, 250, DateTimeKind.Local).AddTicks(5263),
-                            IdIndicateur = 1,
-                            IdMesure = 350,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Date = new DateTime(2020, 6, 26, 22, 47, 31, 859, DateTimeKind.Local).AddTicks(5333),
-                            IdIndicateur = 6,
-                            IdMesure = 221,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Date = new DateTime(2020, 10, 2, 14, 18, 40, 440, DateTimeKind.Local).AddTicks(6934),
-                            IdIndicateur = 3,
-                            IdMesure = 285,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Date = new DateTime(2020, 9, 4, 9, 4, 24, 523, DateTimeKind.Local).AddTicks(2860),
-                            IdIndicateur = 5,
-                            IdMesure = 276,
-                            Value = "49"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Date = new DateTime(2020, 7, 12, 18, 29, 59, 638, DateTimeKind.Local).AddTicks(4916),
-                            IdIndicateur = 4,
-                            IdMesure = 106,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Date = new DateTime(2021, 1, 17, 6, 33, 44, 180, DateTimeKind.Local).AddTicks(2430),
-                            IdIndicateur = 5,
-                            IdMesure = 402,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Date = new DateTime(2021, 1, 30, 0, 31, 53, 282, DateTimeKind.Local).AddTicks(4639),
-                            IdIndicateur = 4,
-                            IdMesure = 241,
-                            Value = "30"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Date = new DateTime(2020, 12, 6, 22, 48, 38, 454, DateTimeKind.Local).AddTicks(9878),
-                            IdIndicateur = 6,
-                            IdMesure = 62,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Date = new DateTime(2020, 5, 30, 20, 59, 27, 637, DateTimeKind.Local).AddTicks(1673),
-                            IdIndicateur = 2,
-                            IdMesure = 372,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Date = new DateTime(2020, 9, 5, 20, 16, 33, 803, DateTimeKind.Local).AddTicks(7721),
-                            IdIndicateur = 3,
-                            IdMesure = 345,
-                            Value = "13"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Date = new DateTime(2021, 3, 3, 16, 31, 8, 764, DateTimeKind.Local).AddTicks(9557),
-                            IdIndicateur = 1,
-                            IdMesure = 179,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Date = new DateTime(2021, 1, 6, 2, 19, 54, 316, DateTimeKind.Local).AddTicks(6355),
-                            IdIndicateur = 2,
-                            IdMesure = 406,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Date = new DateTime(2020, 5, 6, 14, 55, 39, 759, DateTimeKind.Local).AddTicks(6967),
-                            IdIndicateur = 2,
-                            IdMesure = 232,
-                            Value = "71"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            Date = new DateTime(2021, 2, 23, 20, 13, 4, 176, DateTimeKind.Local).AddTicks(5847),
-                            IdIndicateur = 1,
-                            IdMesure = 16,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            Date = new DateTime(2020, 4, 24, 5, 48, 49, 177, DateTimeKind.Local).AddTicks(8006),
-                            IdIndicateur = 1,
-                            IdMesure = 427,
-                            Value = "12"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            Date = new DateTime(2020, 5, 27, 21, 48, 59, 570, DateTimeKind.Local).AddTicks(1938),
-                            IdIndicateur = 2,
-                            IdMesure = 287,
-                            Value = "60"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            Date = new DateTime(2020, 10, 4, 4, 28, 6, 105, DateTimeKind.Local).AddTicks(6567),
-                            IdIndicateur = 2,
-                            IdMesure = 23,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            Date = new DateTime(2020, 5, 10, 5, 11, 18, 34, DateTimeKind.Local).AddTicks(2264),
-                            IdIndicateur = 4,
-                            IdMesure = 404,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            Date = new DateTime(2020, 4, 27, 5, 47, 25, 24, DateTimeKind.Local).AddTicks(5254),
-                            IdIndicateur = 4,
-                            IdMesure = 248,
-                            Value = "32"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            Date = new DateTime(2020, 12, 4, 9, 13, 10, 300, DateTimeKind.Local).AddTicks(4786),
-                            IdIndicateur = 1,
-                            IdMesure = 278,
-                            Value = "28"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            Date = new DateTime(2020, 4, 21, 8, 30, 34, 990, DateTimeKind.Local).AddTicks(2177),
-                            IdIndicateur = 1,
-                            IdMesure = 31,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            Date = new DateTime(2020, 5, 22, 20, 27, 56, 986, DateTimeKind.Local).AddTicks(253),
-                            IdIndicateur = 3,
-                            IdMesure = 88,
-                            Value = "29"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            Date = new DateTime(2020, 7, 18, 2, 7, 28, 969, DateTimeKind.Local).AddTicks(8029),
-                            IdIndicateur = 6,
-                            IdMesure = 93,
-                            Value = "81"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            Date = new DateTime(2021, 1, 21, 11, 1, 32, 384, DateTimeKind.Local).AddTicks(8680),
-                            IdIndicateur = 2,
-                            IdMesure = 169,
-                            Value = "86"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            Date = new DateTime(2020, 7, 28, 9, 22, 18, 355, DateTimeKind.Local).AddTicks(5629),
-                            IdIndicateur = 3,
-                            IdMesure = 219,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            Date = new DateTime(2020, 4, 26, 9, 13, 8, 240, DateTimeKind.Local).AddTicks(5019),
-                            IdIndicateur = 1,
-                            IdMesure = 313,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            Date = new DateTime(2020, 10, 23, 2, 54, 22, 140, DateTimeKind.Local).AddTicks(6649),
-                            IdIndicateur = 6,
-                            IdMesure = 238,
-                            Value = "34"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            Date = new DateTime(2020, 4, 23, 20, 45, 11, 145, DateTimeKind.Local).AddTicks(4939),
-                            IdIndicateur = 1,
-                            IdMesure = 356,
-                            Value = "46"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            Date = new DateTime(2020, 7, 31, 4, 46, 45, 31, DateTimeKind.Local).AddTicks(5937),
-                            IdIndicateur = 5,
-                            IdMesure = 412,
-                            Value = "82"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            Date = new DateTime(2020, 7, 31, 12, 2, 28, 258, DateTimeKind.Local).AddTicks(9447),
-                            IdIndicateur = 5,
-                            IdMesure = 311,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            Date = new DateTime(2021, 2, 5, 18, 35, 2, 475, DateTimeKind.Local).AddTicks(2720),
-                            IdIndicateur = 5,
-                            IdMesure = 46,
-                            Value = "29"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            Date = new DateTime(2020, 10, 13, 4, 46, 43, 427, DateTimeKind.Local).AddTicks(3779),
-                            IdIndicateur = 1,
-                            IdMesure = 381,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            Date = new DateTime(2020, 11, 24, 1, 14, 52, 401, DateTimeKind.Local).AddTicks(4068),
-                            IdIndicateur = 1,
-                            IdMesure = 355,
-                            Value = "42"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            Date = new DateTime(2020, 4, 2, 0, 29, 7, 294, DateTimeKind.Local).AddTicks(6697),
-                            IdIndicateur = 4,
-                            IdMesure = 64,
-                            Value = "59"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            Date = new DateTime(2020, 10, 29, 13, 30, 38, 979, DateTimeKind.Local).AddTicks(7974),
-                            IdIndicateur = 5,
-                            IdMesure = 354,
+                            IdMesure = 429,
                             Value = "40"
                         },
                         new
                         {
-                            Id = 42,
-                            Date = new DateTime(2021, 2, 6, 9, 10, 28, 752, DateTimeKind.Local).AddTicks(2500),
-                            IdIndicateur = 6,
-                            IdMesure = 77,
-                            Value = "98"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            Date = new DateTime(2020, 7, 25, 4, 18, 35, 497, DateTimeKind.Local).AddTicks(4861),
-                            IdIndicateur = 6,
-                            IdMesure = 194,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            Date = new DateTime(2020, 5, 11, 3, 29, 17, 127, DateTimeKind.Local).AddTicks(6932),
-                            IdIndicateur = 2,
-                            IdMesure = 160,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            Date = new DateTime(2020, 3, 31, 15, 23, 33, 732, DateTimeKind.Local).AddTicks(3921),
-                            IdIndicateur = 3,
-                            IdMesure = 336,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            Date = new DateTime(2020, 9, 17, 17, 50, 3, 393, DateTimeKind.Local).AddTicks(288),
-                            IdIndicateur = 1,
-                            IdMesure = 403,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            Date = new DateTime(2020, 6, 25, 23, 35, 30, 958, DateTimeKind.Local).AddTicks(602),
-                            IdIndicateur = 6,
-                            IdMesure = 176,
-                            Value = "60"
-                        },
-                        new
-                        {
-                            Id = 48,
-                            Date = new DateTime(2020, 10, 31, 14, 49, 45, 588, DateTimeKind.Local).AddTicks(7751),
-                            IdIndicateur = 1,
-                            IdMesure = 334,
-                            Value = "76"
-                        },
-                        new
-                        {
-                            Id = 49,
-                            Date = new DateTime(2021, 3, 5, 13, 43, 10, 374, DateTimeKind.Local).AddTicks(6761),
-                            IdIndicateur = 6,
-                            IdMesure = 100,
-                            Value = "81"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            Date = new DateTime(2020, 12, 3, 3, 40, 45, 91, DateTimeKind.Local).AddTicks(913),
-                            IdIndicateur = 2,
-                            IdMesure = 149,
-                            Value = "48"
-                        },
-                        new
-                        {
-                            Id = 51,
-                            Date = new DateTime(2020, 3, 24, 1, 8, 41, 471, DateTimeKind.Local).AddTicks(6141),
-                            IdIndicateur = 1,
-                            IdMesure = 351,
-                            Value = "68"
-                        },
-                        new
-                        {
-                            Id = 52,
-                            Date = new DateTime(2020, 8, 10, 23, 2, 25, 346, DateTimeKind.Local).AddTicks(9424),
-                            IdIndicateur = 5,
-                            IdMesure = 166,
-                            Value = "13"
-                        },
-                        new
-                        {
-                            Id = 53,
-                            Date = new DateTime(2020, 5, 26, 0, 5, 16, 270, DateTimeKind.Local).AddTicks(1236),
-                            IdIndicateur = 4,
-                            IdMesure = 307,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 54,
-                            Date = new DateTime(2020, 7, 11, 23, 32, 40, 457, DateTimeKind.Local).AddTicks(3958),
-                            IdIndicateur = 4,
-                            IdMesure = 38,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 55,
-                            Date = new DateTime(2020, 11, 16, 7, 15, 11, 396, DateTimeKind.Local).AddTicks(8479),
-                            IdIndicateur = 6,
-                            IdMesure = 311,
-                            Value = "96"
-                        },
-                        new
-                        {
-                            Id = 56,
-                            Date = new DateTime(2020, 11, 6, 22, 23, 38, 889, DateTimeKind.Local).AddTicks(9967),
-                            IdIndicateur = 2,
-                            IdMesure = 124,
-                            Value = "38"
-                        },
-                        new
-                        {
-                            Id = 57,
-                            Date = new DateTime(2020, 9, 8, 1, 18, 26, 477, DateTimeKind.Local).AddTicks(2524),
-                            IdIndicateur = 3,
-                            IdMesure = 83,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 58,
-                            Date = new DateTime(2020, 8, 20, 3, 53, 8, 616, DateTimeKind.Local).AddTicks(7308),
-                            IdIndicateur = 3,
-                            IdMesure = 196,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 59,
-                            Date = new DateTime(2020, 5, 22, 18, 26, 4, 132, DateTimeKind.Local).AddTicks(1044),
-                            IdIndicateur = 2,
-                            IdMesure = 407,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 60,
-                            Date = new DateTime(2020, 8, 7, 10, 25, 56, 885, DateTimeKind.Local).AddTicks(2451),
-                            IdIndicateur = 1,
-                            IdMesure = 225,
-                            Value = "18"
-                        },
-                        new
-                        {
-                            Id = 61,
-                            Date = new DateTime(2020, 12, 14, 8, 30, 5, 644, DateTimeKind.Local).AddTicks(4102),
-                            IdIndicateur = 6,
-                            IdMesure = 363,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 62,
-                            Date = new DateTime(2020, 7, 23, 7, 39, 6, 917, DateTimeKind.Local).AddTicks(2055),
-                            IdIndicateur = 6,
-                            IdMesure = 260,
-                            Value = "34"
-                        },
-                        new
-                        {
-                            Id = 63,
-                            Date = new DateTime(2020, 9, 14, 21, 37, 4, 104, DateTimeKind.Local).AddTicks(7521),
-                            IdIndicateur = 1,
-                            IdMesure = 374,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 64,
-                            Date = new DateTime(2020, 8, 27, 15, 55, 36, 417, DateTimeKind.Local).AddTicks(6794),
-                            IdIndicateur = 1,
-                            IdMesure = 118,
-                            Value = "98"
-                        },
-                        new
-                        {
-                            Id = 65,
-                            Date = new DateTime(2021, 2, 22, 20, 10, 55, 855, DateTimeKind.Local).AddTicks(8966),
-                            IdIndicateur = 2,
-                            IdMesure = 355,
-                            Value = "79"
-                        },
-                        new
-                        {
-                            Id = 66,
-                            Date = new DateTime(2020, 11, 19, 15, 56, 16, 997, DateTimeKind.Local).AddTicks(7047),
-                            IdIndicateur = 4,
-                            IdMesure = 187,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 67,
-                            Date = new DateTime(2020, 5, 5, 20, 50, 53, 189, DateTimeKind.Local).AddTicks(3439),
-                            IdIndicateur = 6,
-                            IdMesure = 23,
-                            Value = "87"
-                        },
-                        new
-                        {
-                            Id = 68,
-                            Date = new DateTime(2020, 7, 3, 16, 30, 46, 508, DateTimeKind.Local).AddTicks(255),
-                            IdIndicateur = 2,
-                            IdMesure = 205,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 69,
-                            Date = new DateTime(2020, 11, 19, 3, 48, 29, 944, DateTimeKind.Local).AddTicks(4543),
-                            IdIndicateur = 3,
-                            IdMesure = 337,
-                            Value = "53"
-                        },
-                        new
-                        {
-                            Id = 70,
-                            Date = new DateTime(2020, 12, 8, 21, 26, 1, 726, DateTimeKind.Local).AddTicks(3289),
-                            IdIndicateur = 1,
-                            IdMesure = 122,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 71,
-                            Date = new DateTime(2020, 11, 13, 4, 59, 6, 506, DateTimeKind.Local).AddTicks(7515),
-                            IdIndicateur = 5,
-                            IdMesure = 35,
-                            Value = "68"
-                        },
-                        new
-                        {
-                            Id = 72,
-                            Date = new DateTime(2020, 5, 15, 1, 24, 9, 485, DateTimeKind.Local).AddTicks(3297),
-                            IdIndicateur = 1,
-                            IdMesure = 48,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 73,
-                            Date = new DateTime(2020, 12, 21, 18, 51, 24, 183, DateTimeKind.Local).AddTicks(9689),
-                            IdIndicateur = 4,
-                            IdMesure = 117,
-                            Value = "99"
-                        },
-                        new
-                        {
-                            Id = 74,
-                            Date = new DateTime(2020, 11, 20, 21, 15, 46, 99, DateTimeKind.Local).AddTicks(8549),
-                            IdIndicateur = 1,
-                            IdMesure = 116,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 75,
-                            Date = new DateTime(2020, 7, 21, 8, 48, 27, 214, DateTimeKind.Local).AddTicks(4567),
-                            IdIndicateur = 5,
-                            IdMesure = 374,
-                            Value = "26"
-                        },
-                        new
-                        {
-                            Id = 76,
-                            Date = new DateTime(2020, 7, 16, 6, 53, 13, 900, DateTimeKind.Local).AddTicks(9156),
-                            IdIndicateur = 3,
-                            IdMesure = 40,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 77,
-                            Date = new DateTime(2020, 4, 13, 7, 38, 56, 313, DateTimeKind.Local).AddTicks(8432),
-                            IdIndicateur = 4,
-                            IdMesure = 433,
-                            Value = "74"
-                        },
-                        new
-                        {
-                            Id = 78,
-                            Date = new DateTime(2020, 6, 15, 4, 36, 19, 647, DateTimeKind.Local).AddTicks(6188),
-                            IdIndicateur = 5,
-                            IdMesure = 281,
-                            Value = "32"
-                        },
-                        new
-                        {
-                            Id = 79,
-                            Date = new DateTime(2020, 7, 10, 11, 10, 50, 536, DateTimeKind.Local).AddTicks(1357),
-                            IdIndicateur = 4,
-                            IdMesure = 248,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 80,
-                            Date = new DateTime(2021, 2, 19, 16, 33, 35, 720, DateTimeKind.Local).AddTicks(629),
-                            IdIndicateur = 5,
-                            IdMesure = 392,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 81,
-                            Date = new DateTime(2020, 4, 26, 3, 13, 51, 638, DateTimeKind.Local).AddTicks(436),
+                            Id = 2,
+                            Date = new DateTime(2020, 11, 13, 1, 23, 32, 298, DateTimeKind.Local).AddTicks(8152),
                             IdIndicateur = 1,
                             IdMesure = 299,
-                            Value = "62"
+                            Value = "49"
                         },
                         new
                         {
-                            Id = 82,
-                            Date = new DateTime(2020, 6, 18, 10, 1, 41, 930, DateTimeKind.Local).AddTicks(9555),
-                            IdIndicateur = 6,
-                            IdMesure = 103,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 83,
-                            Date = new DateTime(2020, 8, 8, 15, 34, 31, 164, DateTimeKind.Local).AddTicks(3525),
+                            Id = 3,
+                            Date = new DateTime(2020, 12, 27, 20, 9, 0, 912, DateTimeKind.Local).AddTicks(1294),
                             IdIndicateur = 2,
-                            IdMesure = 92,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 84,
-                            Date = new DateTime(2020, 7, 12, 4, 8, 42, 292, DateTimeKind.Local).AddTicks(1337),
-                            IdIndicateur = 1,
-                            IdMesure = 394,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 85,
-                            Date = new DateTime(2020, 9, 9, 11, 20, 56, 820, DateTimeKind.Local).AddTicks(4355),
-                            IdIndicateur = 6,
-                            IdMesure = 267,
-                            Value = "39"
-                        },
-                        new
-                        {
-                            Id = 86,
-                            Date = new DateTime(2020, 8, 5, 2, 33, 6, 922, DateTimeKind.Local).AddTicks(9986),
-                            IdIndicateur = 3,
-                            IdMesure = 131,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 87,
-                            Date = new DateTime(2020, 6, 10, 22, 44, 23, 926, DateTimeKind.Local).AddTicks(4145),
-                            IdIndicateur = 2,
-                            IdMesure = 154,
-                            Value = "68"
-                        },
-                        new
-                        {
-                            Id = 88,
-                            Date = new DateTime(2021, 2, 17, 16, 29, 27, 698, DateTimeKind.Local).AddTicks(8372),
-                            IdIndicateur = 3,
-                            IdMesure = 41,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 89,
-                            Date = new DateTime(2021, 2, 16, 15, 16, 28, 28, DateTimeKind.Local).AddTicks(6458),
-                            IdIndicateur = 1,
-                            IdMesure = 222,
-                            Value = "95"
-                        },
-                        new
-                        {
-                            Id = 90,
-                            Date = new DateTime(2021, 2, 12, 21, 14, 27, 69, DateTimeKind.Local).AddTicks(7866),
-                            IdIndicateur = 2,
-                            IdMesure = 371,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 91,
-                            Date = new DateTime(2020, 9, 19, 23, 34, 2, 783, DateTimeKind.Local).AddTicks(8453),
-                            IdIndicateur = 6,
-                            IdMesure = 88,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 92,
-                            Date = new DateTime(2020, 9, 20, 14, 3, 27, 117, DateTimeKind.Local).AddTicks(3025),
-                            IdIndicateur = 5,
-                            IdMesure = 104,
-                            Value = "85"
-                        },
-                        new
-                        {
-                            Id = 93,
-                            Date = new DateTime(2020, 4, 11, 18, 12, 35, 577, DateTimeKind.Local).AddTicks(9301),
-                            IdIndicateur = 2,
-                            IdMesure = 161,
-                            Value = "14"
-                        },
-                        new
-                        {
-                            Id = 94,
-                            Date = new DateTime(2020, 11, 15, 13, 53, 28, 66, DateTimeKind.Local).AddTicks(7595),
-                            IdIndicateur = 5,
-                            IdMesure = 212,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 95,
-                            Date = new DateTime(2020, 3, 13, 22, 46, 38, 806, DateTimeKind.Local).AddTicks(9141),
-                            IdIndicateur = 6,
-                            IdMesure = 377,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 96,
-                            Date = new DateTime(2020, 6, 20, 9, 48, 39, 983, DateTimeKind.Local).AddTicks(7179),
-                            IdIndicateur = 5,
-                            IdMesure = 126,
+                            IdMesure = 205,
                             Value = "67"
                         },
                         new
                         {
-                            Id = 97,
-                            Date = new DateTime(2020, 5, 30, 9, 59, 27, 899, DateTimeKind.Local).AddTicks(8176),
+                            Id = 4,
+                            Date = new DateTime(2020, 12, 25, 4, 35, 30, 430, DateTimeKind.Local).AddTicks(3107),
                             IdIndicateur = 3,
-                            IdMesure = 341,
-                            Value = "16"
-                        },
-                        new
-                        {
-                            Id = 98,
-                            Date = new DateTime(2020, 11, 10, 11, 33, 29, 76, DateTimeKind.Local).AddTicks(9068),
-                            IdIndicateur = 1,
-                            IdMesure = 71,
-                            Value = "83"
-                        },
-                        new
-                        {
-                            Id = 99,
-                            Date = new DateTime(2020, 11, 13, 12, 12, 43, 104, DateTimeKind.Local).AddTicks(5338),
-                            IdIndicateur = 2,
-                            IdMesure = 254,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 100,
-                            Date = new DateTime(2020, 7, 1, 14, 13, 7, 782, DateTimeKind.Local).AddTicks(5096),
-                            IdIndicateur = 5,
-                            IdMesure = 299,
-                            Value = "42"
-                        },
-                        new
-                        {
-                            Id = 101,
-                            Date = new DateTime(2020, 5, 23, 19, 52, 5, 754, DateTimeKind.Local).AddTicks(2005),
-                            IdIndicateur = 2,
-                            IdMesure = 185,
-                            Value = "43"
-                        },
-                        new
-                        {
-                            Id = 102,
-                            Date = new DateTime(2020, 5, 15, 13, 20, 44, 489, DateTimeKind.Local).AddTicks(9217),
-                            IdIndicateur = 3,
-                            IdMesure = 195,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 103,
-                            Date = new DateTime(2020, 4, 25, 4, 3, 11, 122, DateTimeKind.Local).AddTicks(7771),
-                            IdIndicateur = 4,
-                            IdMesure = 168,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 104,
-                            Date = new DateTime(2020, 8, 27, 19, 2, 4, 858, DateTimeKind.Local).AddTicks(9090),
-                            IdIndicateur = 3,
-                            IdMesure = 337,
-                            Value = "80"
-                        },
-                        new
-                        {
-                            Id = 105,
-                            Date = new DateTime(2020, 5, 2, 15, 45, 48, 594, DateTimeKind.Local).AddTicks(318),
-                            IdIndicateur = 6,
-                            IdMesure = 156,
-                            Value = "71"
-                        },
-                        new
-                        {
-                            Id = 106,
-                            Date = new DateTime(2020, 11, 30, 15, 52, 35, 528, DateTimeKind.Local).AddTicks(952),
-                            IdIndicateur = 1,
-                            IdMesure = 260,
-                            Value = "37"
-                        },
-                        new
-                        {
-                            Id = 107,
-                            Date = new DateTime(2020, 12, 15, 2, 2, 43, 665, DateTimeKind.Local).AddTicks(3756),
-                            IdIndicateur = 5,
-                            IdMesure = 217,
-                            Value = "39"
-                        },
-                        new
-                        {
-                            Id = 108,
-                            Date = new DateTime(2021, 1, 9, 19, 40, 12, 186, DateTimeKind.Local).AddTicks(4753),
-                            IdIndicateur = 3,
-                            IdMesure = 176,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 109,
-                            Date = new DateTime(2021, 1, 27, 14, 44, 45, 131, DateTimeKind.Local).AddTicks(5030),
-                            IdIndicateur = 5,
-                            IdMesure = 274,
-                            Value = "60"
-                        },
-                        new
-                        {
-                            Id = 110,
-                            Date = new DateTime(2020, 11, 20, 23, 3, 18, 642, DateTimeKind.Local).AddTicks(2076),
-                            IdIndicateur = 6,
-                            IdMesure = 131,
-                            Value = "34"
-                        },
-                        new
-                        {
-                            Id = 111,
-                            Date = new DateTime(2020, 8, 28, 6, 37, 4, 241, DateTimeKind.Local).AddTicks(6806),
-                            IdIndicateur = 2,
-                            IdMesure = 358,
+                            IdMesure = 279,
                             Value = "45"
                         },
                         new
                         {
-                            Id = 112,
-                            Date = new DateTime(2021, 1, 9, 14, 1, 43, 229, DateTimeKind.Local).AddTicks(6342),
-                            IdIndicateur = 6,
-                            IdMesure = 396,
-                            Value = "59"
+                            Id = 5,
+                            Date = new DateTime(2020, 12, 25, 7, 58, 42, 274, DateTimeKind.Local).AddTicks(6679),
+                            IdIndicateur = 2,
+                            IdMesure = 256,
+                            Value = "64"
                         },
                         new
                         {
-                            Id = 113,
-                            Date = new DateTime(2020, 6, 22, 5, 3, 7, 182, DateTimeKind.Local).AddTicks(4930),
-                            IdIndicateur = 5,
-                            IdMesure = 209,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 114,
-                            Date = new DateTime(2020, 10, 23, 2, 45, 20, 11, DateTimeKind.Local).AddTicks(363),
-                            IdIndicateur = 4,
-                            IdMesure = 12,
-                            Value = "18"
-                        },
-                        new
-                        {
-                            Id = 115,
-                            Date = new DateTime(2020, 6, 18, 8, 54, 55, 646, DateTimeKind.Local).AddTicks(3069),
-                            IdIndicateur = 1,
-                            IdMesure = 382,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 116,
-                            Date = new DateTime(2020, 3, 25, 3, 58, 41, 432, DateTimeKind.Local).AddTicks(1054),
+                            Id = 6,
+                            Date = new DateTime(2021, 1, 12, 7, 43, 3, 381, DateTimeKind.Local).AddTicks(1079),
                             IdIndicateur = 3,
-                            IdMesure = 73,
-                            Value = "47"
+                            IdMesure = 208,
+                            Value = "63"
                         },
                         new
                         {
-                            Id = 117,
-                            Date = new DateTime(2020, 3, 28, 6, 54, 39, 155, DateTimeKind.Local).AddTicks(5327),
-                            IdIndicateur = 1,
-                            IdMesure = 5,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 118,
-                            Date = new DateTime(2020, 8, 30, 16, 24, 59, 987, DateTimeKind.Local).AddTicks(322),
-                            IdIndicateur = 5,
-                            IdMesure = 376,
+                            Id = 7,
+                            Date = new DateTime(2020, 9, 7, 15, 27, 40, 900, DateTimeKind.Local).AddTicks(7627),
+                            IdIndicateur = 4,
+                            IdMesure = 30,
                             Value = "30"
                         },
                         new
                         {
-                            Id = 119,
-                            Date = new DateTime(2020, 11, 4, 16, 17, 18, 309, DateTimeKind.Local).AddTicks(5120),
-                            IdIndicateur = 3,
-                            IdMesure = 308,
-                            Value = "12"
+                            Id = 8,
+                            Date = new DateTime(2020, 4, 22, 7, 1, 28, 293, DateTimeKind.Local).AddTicks(8557),
+                            IdIndicateur = 1,
+                            IdMesure = 209,
+                            Value = "20"
                         },
                         new
                         {
-                            Id = 120,
-                            Date = new DateTime(2020, 8, 15, 8, 28, 36, 399, DateTimeKind.Local).AddTicks(7524),
+                            Id = 9,
+                            Date = new DateTime(2021, 2, 28, 1, 58, 31, 210, DateTimeKind.Local).AddTicks(226),
                             IdIndicateur = 5,
-                            IdMesure = 289,
-                            Value = "42"
-                        },
-                        new
-                        {
-                            Id = 121,
-                            Date = new DateTime(2020, 7, 18, 9, 11, 29, 897, DateTimeKind.Local).AddTicks(2010),
-                            IdIndicateur = 1,
-                            IdMesure = 77,
-                            Value = "78"
-                        },
-                        new
-                        {
-                            Id = 122,
-                            Date = new DateTime(2021, 1, 22, 0, 59, 49, 376, DateTimeKind.Local).AddTicks(4110),
-                            IdIndicateur = 6,
-                            IdMesure = 206,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 123,
-                            Date = new DateTime(2020, 12, 27, 13, 21, 8, 219, DateTimeKind.Local).AddTicks(7467),
-                            IdIndicateur = 2,
-                            IdMesure = 323,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 124,
-                            Date = new DateTime(2020, 9, 12, 16, 0, 53, 799, DateTimeKind.Local).AddTicks(9049),
-                            IdIndicateur = 4,
-                            IdMesure = 236,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 125,
-                            Date = new DateTime(2020, 4, 21, 23, 25, 45, 590, DateTimeKind.Local).AddTicks(6859),
-                            IdIndicateur = 3,
-                            IdMesure = 369,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 126,
-                            Date = new DateTime(2020, 5, 16, 6, 46, 35, 763, DateTimeKind.Local).AddTicks(1434),
-                            IdIndicateur = 4,
-                            IdMesure = 302,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 127,
-                            Date = new DateTime(2020, 7, 18, 6, 21, 14, 446, DateTimeKind.Local).AddTicks(2686),
-                            IdIndicateur = 3,
-                            IdMesure = 233,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 128,
-                            Date = new DateTime(2021, 1, 30, 9, 17, 30, 521, DateTimeKind.Local).AddTicks(1956),
-                            IdIndicateur = 5,
-                            IdMesure = 208,
-                            Value = "74"
-                        },
-                        new
-                        {
-                            Id = 129,
-                            Date = new DateTime(2021, 3, 8, 1, 1, 25, 830, DateTimeKind.Local).AddTicks(3236),
-                            IdIndicateur = 5,
-                            IdMesure = 325,
-                            Value = "59"
-                        },
-                        new
-                        {
-                            Id = 130,
-                            Date = new DateTime(2021, 2, 1, 0, 51, 23, 718, DateTimeKind.Local).AddTicks(5219),
-                            IdIndicateur = 5,
-                            IdMesure = 256,
-                            Value = "53"
-                        },
-                        new
-                        {
-                            Id = 131,
-                            Date = new DateTime(2020, 7, 4, 6, 37, 5, 185, DateTimeKind.Local).AddTicks(3488),
-                            IdIndicateur = 1,
-                            IdMesure = 391,
-                            Value = "28"
-                        },
-                        new
-                        {
-                            Id = 132,
-                            Date = new DateTime(2021, 1, 9, 21, 59, 52, 984, DateTimeKind.Local).AddTicks(5136),
-                            IdIndicateur = 1,
-                            IdMesure = 189,
-                            Value = "98"
-                        },
-                        new
-                        {
-                            Id = 133,
-                            Date = new DateTime(2020, 12, 14, 7, 42, 22, 197, DateTimeKind.Local).AddTicks(8603),
-                            IdIndicateur = 4,
-                            IdMesure = 112,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 134,
-                            Date = new DateTime(2020, 8, 11, 11, 52, 19, 146, DateTimeKind.Local).AddTicks(8992),
-                            IdIndicateur = 3,
-                            IdMesure = 113,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 135,
-                            Date = new DateTime(2021, 2, 24, 3, 59, 51, 911, DateTimeKind.Local).AddTicks(6266),
-                            IdIndicateur = 6,
-                            IdMesure = 378,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 136,
-                            Date = new DateTime(2020, 3, 11, 12, 54, 27, 26, DateTimeKind.Local).AddTicks(9423),
-                            IdIndicateur = 3,
-                            IdMesure = 396,
-                            Value = "69"
-                        },
-                        new
-                        {
-                            Id = 137,
-                            Date = new DateTime(2020, 5, 16, 14, 46, 34, 980, DateTimeKind.Local).AddTicks(7162),
-                            IdIndicateur = 1,
-                            IdMesure = 207,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 138,
-                            Date = new DateTime(2021, 2, 9, 8, 51, 42, 529, DateTimeKind.Local).AddTicks(9936),
-                            IdIndicateur = 1,
-                            IdMesure = 2,
-                            Value = "91"
-                        },
-                        new
-                        {
-                            Id = 139,
-                            Date = new DateTime(2020, 8, 9, 21, 29, 2, 349, DateTimeKind.Local).AddTicks(6502),
-                            IdIndicateur = 3,
-                            IdMesure = 414,
-                            Value = "99"
-                        },
-                        new
-                        {
-                            Id = 140,
-                            Date = new DateTime(2020, 9, 6, 17, 21, 32, 686, DateTimeKind.Local).AddTicks(326),
-                            IdIndicateur = 4,
-                            IdMesure = 173,
+                            IdMesure = 409,
                             Value = "44"
                         },
                         new
                         {
-                            Id = 141,
-                            Date = new DateTime(2020, 4, 1, 16, 48, 10, 871, DateTimeKind.Local).AddTicks(1402),
-                            IdIndicateur = 6,
-                            IdMesure = 201,
-                            Value = "44"
-                        },
-                        new
-                        {
-                            Id = 142,
-                            Date = new DateTime(2020, 12, 1, 9, 44, 35, 198, DateTimeKind.Local).AddTicks(7651),
+                            Id = 10,
+                            Date = new DateTime(2020, 6, 20, 23, 36, 17, 598, DateTimeKind.Local).AddTicks(2487),
                             IdIndicateur = 3,
-                            IdMesure = 112,
-                            Value = "86"
+                            IdMesure = 36,
+                            Value = "34"
                         },
                         new
                         {
-                            Id = 143,
-                            Date = new DateTime(2020, 7, 14, 6, 26, 13, 821, DateTimeKind.Local).AddTicks(9533),
-                            IdIndicateur = 6,
-                            IdMesure = 376,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 144,
-                            Date = new DateTime(2020, 10, 11, 21, 34, 3, 922, DateTimeKind.Local).AddTicks(9090),
-                            IdIndicateur = 3,
-                            IdMesure = 291,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 145,
-                            Date = new DateTime(2020, 11, 17, 21, 32, 37, 734, DateTimeKind.Local).AddTicks(3199),
-                            IdIndicateur = 2,
-                            IdMesure = 204,
-                            Value = "28"
-                        },
-                        new
-                        {
-                            Id = 146,
-                            Date = new DateTime(2021, 1, 20, 14, 41, 11, 35, DateTimeKind.Local).AddTicks(8628),
-                            IdIndicateur = 2,
-                            IdMesure = 255,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 147,
-                            Date = new DateTime(2020, 5, 6, 7, 34, 4, 794, DateTimeKind.Local).AddTicks(9656),
-                            IdIndicateur = 3,
-                            IdMesure = 281,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 148,
-                            Date = new DateTime(2020, 12, 6, 19, 53, 47, 408, DateTimeKind.Local).AddTicks(8895),
-                            IdIndicateur = 2,
-                            IdMesure = 218,
-                            Value = "26"
-                        },
-                        new
-                        {
-                            Id = 149,
-                            Date = new DateTime(2021, 2, 14, 4, 5, 4, 49, DateTimeKind.Local).AddTicks(3423),
-                            IdIndicateur = 4,
-                            IdMesure = 244,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 150,
-                            Date = new DateTime(2020, 3, 9, 22, 30, 36, 116, DateTimeKind.Local).AddTicks(2191),
-                            IdIndicateur = 5,
-                            IdMesure = 49,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 151,
-                            Date = new DateTime(2021, 2, 25, 14, 18, 10, 926, DateTimeKind.Local).AddTicks(5907),
-                            IdIndicateur = 2,
-                            IdMesure = 125,
-                            Value = "96"
-                        },
-                        new
-                        {
-                            Id = 152,
-                            Date = new DateTime(2020, 9, 6, 8, 58, 40, 397, DateTimeKind.Local).AddTicks(4517),
-                            IdIndicateur = 2,
-                            IdMesure = 433,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 153,
-                            Date = new DateTime(2020, 12, 31, 16, 45, 42, 588, DateTimeKind.Local).AddTicks(9833),
-                            IdIndicateur = 4,
-                            IdMesure = 100,
-                            Value = "19"
-                        },
-                        new
-                        {
-                            Id = 154,
-                            Date = new DateTime(2020, 11, 21, 14, 56, 31, 107, DateTimeKind.Local).AddTicks(9195),
+                            Id = 11,
+                            Date = new DateTime(2021, 1, 17, 20, 51, 25, 932, DateTimeKind.Local).AddTicks(418),
                             IdIndicateur = 1,
-                            IdMesure = 181,
+                            IdMesure = 164,
+                            Value = "13"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Date = new DateTime(2020, 6, 25, 17, 16, 4, 66, DateTimeKind.Local).AddTicks(1762),
+                            IdIndicateur = 4,
+                            IdMesure = 313,
                             Value = "93"
                         },
                         new
                         {
-                            Id = 155,
-                            Date = new DateTime(2020, 5, 7, 4, 55, 4, 97, DateTimeKind.Local).AddTicks(825),
-                            IdIndicateur = 2,
-                            IdMesure = 301,
-                            Value = "36"
+                            Id = 13,
+                            Date = new DateTime(2020, 10, 30, 10, 41, 31, 388, DateTimeKind.Local).AddTicks(3308),
+                            IdIndicateur = 3,
+                            IdMesure = 16,
+                            Value = "84"
                         },
                         new
                         {
-                            Id = 156,
-                            Date = new DateTime(2020, 8, 12, 3, 15, 9, 867, DateTimeKind.Local).AddTicks(9150),
+                            Id = 14,
+                            Date = new DateTime(2020, 8, 18, 10, 29, 45, 55, DateTimeKind.Local).AddTicks(8511),
                             IdIndicateur = 1,
-                            IdMesure = 87,
-                            Value = "79"
+                            IdMesure = 429,
+                            Value = "61"
                         },
                         new
                         {
-                            Id = 157,
-                            Date = new DateTime(2021, 2, 12, 21, 15, 56, 443, DateTimeKind.Local).AddTicks(2709),
+                            Id = 15,
+                            Date = new DateTime(2021, 1, 24, 20, 9, 22, 609, DateTimeKind.Local).AddTicks(6121),
+                            IdIndicateur = 1,
+                            IdMesure = 426,
+                            Value = "95"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Date = new DateTime(2020, 11, 5, 6, 30, 19, 18, DateTimeKind.Local).AddTicks(9751),
                             IdIndicateur = 6,
-                            IdMesure = 347,
-                            Value = "18"
+                            IdMesure = 357,
+                            Value = "89"
                         },
                         new
                         {
-                            Id = 158,
-                            Date = new DateTime(2020, 6, 6, 16, 58, 35, 949, DateTimeKind.Local).AddTicks(3433),
-                            IdIndicateur = 1,
-                            IdMesure = 381,
-                            Value = "36"
-                        },
-                        new
-                        {
-                            Id = 159,
-                            Date = new DateTime(2020, 10, 12, 9, 0, 11, 176, DateTimeKind.Local).AddTicks(6013),
-                            IdIndicateur = 2,
-                            IdMesure = 208,
-                            Value = "11"
-                        },
-                        new
-                        {
-                            Id = 160,
-                            Date = new DateTime(2020, 10, 14, 5, 7, 19, 665, DateTimeKind.Local).AddTicks(102),
-                            IdIndicateur = 1,
-                            IdMesure = 96,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 161,
-                            Date = new DateTime(2020, 4, 5, 6, 15, 40, 954, DateTimeKind.Local).AddTicks(7360),
+                            Id = 17,
+                            Date = new DateTime(2020, 5, 20, 9, 6, 45, 87, DateTimeKind.Local).AddTicks(2803),
                             IdIndicateur = 5,
-                            IdMesure = 5,
-                            Value = "65"
+                            IdMesure = 76,
+                            Value = "36"
                         },
                         new
                         {
-                            Id = 162,
-                            Date = new DateTime(2020, 9, 12, 8, 3, 19, 950, DateTimeKind.Local).AddTicks(812),
-                            IdIndicateur = 6,
-                            IdMesure = 80,
-                            Value = "86"
-                        },
-                        new
-                        {
-                            Id = 163,
-                            Date = new DateTime(2020, 4, 29, 21, 55, 25, 32, DateTimeKind.Local).AddTicks(6375),
+                            Id = 18,
+                            Date = new DateTime(2021, 2, 14, 9, 33, 52, 91, DateTimeKind.Local).AddTicks(5320),
                             IdIndicateur = 2,
-                            IdMesure = 299,
-                            Value = "43"
+                            IdMesure = 51,
+                            Value = "24"
                         },
                         new
                         {
-                            Id = 164,
-                            Date = new DateTime(2020, 11, 25, 15, 10, 43, 307, DateTimeKind.Local).AddTicks(9646),
+                            Id = 19,
+                            Date = new DateTime(2020, 10, 7, 9, 26, 2, 202, DateTimeKind.Local).AddTicks(9117),
                             IdIndicateur = 6,
-                            IdMesure = 186,
-                            Value = "82"
+                            IdMesure = 435,
+                            Value = "88"
                         },
                         new
                         {
-                            Id = 165,
-                            Date = new DateTime(2021, 1, 26, 3, 27, 19, 343, DateTimeKind.Local).AddTicks(1781),
+                            Id = 20,
+                            Date = new DateTime(2020, 10, 23, 12, 12, 2, 992, DateTimeKind.Local).AddTicks(9038),
                             IdIndicateur = 3,
-                            IdMesure = 181,
-                            Value = "31"
+                            IdMesure = 155,
+                            Value = "53"
                         },
                         new
                         {
-                            Id = 166,
-                            Date = new DateTime(2021, 1, 30, 12, 40, 58, 871, DateTimeKind.Local).AddTicks(5990),
+                            Id = 21,
+                            Date = new DateTime(2021, 2, 19, 7, 43, 12, 105, DateTimeKind.Local).AddTicks(6173),
                             IdIndicateur = 3,
-                            IdMesure = 68,
+                            IdMesure = 267,
+                            Value = "55"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Date = new DateTime(2020, 5, 5, 3, 0, 2, 992, DateTimeKind.Local).AddTicks(1668),
+                            IdIndicateur = 5,
+                            IdMesure = 120,
+                            Value = "95"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Date = new DateTime(2020, 4, 15, 0, 46, 38, 335, DateTimeKind.Local).AddTicks(5204),
+                            IdIndicateur = 5,
+                            IdMesure = 101,
+                            Value = "17"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Date = new DateTime(2020, 9, 26, 21, 53, 30, 984, DateTimeKind.Local).AddTicks(921),
+                            IdIndicateur = 1,
+                            IdMesure = 236,
+                            Value = "95"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Date = new DateTime(2021, 3, 22, 10, 53, 15, 638, DateTimeKind.Local).AddTicks(3378),
+                            IdIndicateur = 4,
+                            IdMesure = 62,
+                            Value = "10"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Date = new DateTime(2020, 7, 8, 11, 3, 17, 817, DateTimeKind.Local).AddTicks(6910),
+                            IdIndicateur = 1,
+                            IdMesure = 157,
                             Value = "67"
                         },
                         new
                         {
-                            Id = 167,
-                            Date = new DateTime(2020, 12, 22, 0, 11, 26, 912, DateTimeKind.Local).AddTicks(6517),
-                            IdIndicateur = 3,
-                            IdMesure = 123,
-                            Value = "74"
+                            Id = 27,
+                            Date = new DateTime(2021, 1, 30, 15, 8, 22, 982, DateTimeKind.Local).AddTicks(6758),
+                            IdIndicateur = 5,
+                            IdMesure = 101,
+                            Value = "46"
                         },
                         new
                         {
-                            Id = 168,
-                            Date = new DateTime(2020, 8, 14, 5, 6, 52, 340, DateTimeKind.Local).AddTicks(5557),
+                            Id = 28,
+                            Date = new DateTime(2020, 8, 26, 19, 17, 40, 633, DateTimeKind.Local).AddTicks(1550),
+                            IdIndicateur = 1,
+                            IdMesure = 83,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Date = new DateTime(2020, 11, 18, 22, 34, 6, 146, DateTimeKind.Local).AddTicks(608),
                             IdIndicateur = 4,
-                            IdMesure = 26,
-                            Value = "16"
+                            IdMesure = 291,
+                            Value = "59"
                         },
                         new
                         {
-                            Id = 169,
-                            Date = new DateTime(2020, 10, 6, 9, 12, 34, 492, DateTimeKind.Local).AddTicks(7066),
-                            IdIndicateur = 6,
-                            IdMesure = 53,
-                            Value = "85"
+                            Id = 30,
+                            Date = new DateTime(2020, 10, 9, 1, 46, 30, 252, DateTimeKind.Local).AddTicks(7120),
+                            IdIndicateur = 5,
+                            IdMesure = 168,
+                            Value = "19"
                         },
                         new
                         {
-                            Id = 170,
-                            Date = new DateTime(2020, 5, 19, 5, 21, 51, 599, DateTimeKind.Local).AddTicks(5691),
-                            IdIndicateur = 6,
-                            IdMesure = 172,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 171,
-                            Date = new DateTime(2020, 8, 4, 2, 24, 55, 410, DateTimeKind.Local).AddTicks(5567),
-                            IdIndicateur = 4,
-                            IdMesure = 20,
-                            Value = "44"
-                        },
-                        new
-                        {
-                            Id = 172,
-                            Date = new DateTime(2020, 8, 10, 3, 34, 31, 101, DateTimeKind.Local).AddTicks(7699),
+                            Id = 31,
+                            Date = new DateTime(2020, 11, 21, 6, 39, 22, 742, DateTimeKind.Local).AddTicks(5600),
                             IdIndicateur = 3,
-                            IdMesure = 330,
+                            IdMesure = 340,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Date = new DateTime(2020, 5, 3, 10, 35, 58, 821, DateTimeKind.Local).AddTicks(8327),
+                            IdIndicateur = 2,
+                            IdMesure = 106,
+                            Value = "60"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Date = new DateTime(2020, 7, 11, 2, 58, 38, 209, DateTimeKind.Local).AddTicks(9270),
+                            IdIndicateur = 3,
+                            IdMesure = 394,
+                            Value = "38"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Date = new DateTime(2020, 9, 7, 13, 8, 21, 499, DateTimeKind.Local).AddTicks(9070),
+                            IdIndicateur = 3,
+                            IdMesure = 175,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Date = new DateTime(2020, 8, 31, 3, 38, 6, 535, DateTimeKind.Local).AddTicks(3642),
+                            IdIndicateur = 5,
+                            IdMesure = 370,
+                            Value = "88"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Date = new DateTime(2021, 2, 6, 23, 24, 40, 420, DateTimeKind.Local).AddTicks(890),
+                            IdIndicateur = 5,
+                            IdMesure = 141,
+                            Value = "73"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Date = new DateTime(2021, 3, 18, 20, 59, 16, 862, DateTimeKind.Local).AddTicks(4935),
+                            IdIndicateur = 4,
+                            IdMesure = 235,
+                            Value = "34"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Date = new DateTime(2020, 11, 15, 1, 42, 45, 289, DateTimeKind.Local).AddTicks(9812),
+                            IdIndicateur = 4,
+                            IdMesure = 246,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Date = new DateTime(2020, 4, 11, 21, 42, 8, 43, DateTimeKind.Local).AddTicks(5595),
+                            IdIndicateur = 4,
+                            IdMesure = 240,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Date = new DateTime(2021, 3, 20, 3, 42, 8, 309, DateTimeKind.Local).AddTicks(8727),
+                            IdIndicateur = 2,
+                            IdMesure = 202,
+                            Value = "52"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Date = new DateTime(2020, 5, 31, 19, 24, 44, 638, DateTimeKind.Local).AddTicks(4594),
+                            IdIndicateur = 4,
+                            IdMesure = 67,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Date = new DateTime(2021, 1, 10, 11, 24, 1, 110, DateTimeKind.Local).AddTicks(24),
+                            IdIndicateur = 4,
+                            IdMesure = 345,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Date = new DateTime(2020, 8, 20, 7, 47, 47, 567, DateTimeKind.Local).AddTicks(4506),
+                            IdIndicateur = 1,
+                            IdMesure = 206,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Date = new DateTime(2020, 3, 28, 4, 7, 57, 885, DateTimeKind.Local).AddTicks(130),
+                            IdIndicateur = 4,
+                            IdMesure = 406,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Date = new DateTime(2020, 7, 1, 10, 45, 11, 368, DateTimeKind.Local).AddTicks(7052),
+                            IdIndicateur = 3,
+                            IdMesure = 313,
+                            Value = "82"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Date = new DateTime(2020, 11, 30, 5, 40, 49, 604, DateTimeKind.Local).AddTicks(3819),
+                            IdIndicateur = 4,
+                            IdMesure = 414,
                             Value = "39"
                         },
                         new
                         {
-                            Id = 173,
-                            Date = new DateTime(2020, 5, 5, 13, 39, 11, 840, DateTimeKind.Local).AddTicks(1822),
-                            IdIndicateur = 5,
-                            IdMesure = 178,
-                            Value = "99"
+                            Id = 47,
+                            Date = new DateTime(2020, 5, 17, 11, 12, 29, 239, DateTimeKind.Local).AddTicks(1220),
+                            IdIndicateur = 6,
+                            IdMesure = 121,
+                            Value = "23"
                         },
                         new
                         {
-                            Id = 174,
-                            Date = new DateTime(2020, 7, 7, 5, 20, 2, 779, DateTimeKind.Local).AddTicks(8817),
+                            Id = 48,
+                            Date = new DateTime(2020, 8, 31, 16, 25, 9, 19, DateTimeKind.Local).AddTicks(102),
                             IdIndicateur = 1,
-                            IdMesure = 388,
-                            Value = "32"
+                            IdMesure = 108,
+                            Value = "17"
                         },
                         new
                         {
-                            Id = 175,
-                            Date = new DateTime(2020, 5, 11, 11, 0, 42, 418, DateTimeKind.Local).AddTicks(5327),
-                            IdIndicateur = 4,
-                            IdMesure = 66,
-                            Value = "68"
+                            Id = 49,
+                            Date = new DateTime(2020, 5, 30, 16, 5, 27, 356, DateTimeKind.Local).AddTicks(7809),
+                            IdIndicateur = 6,
+                            IdMesure = 144,
+                            Value = "47"
                         },
                         new
                         {
-                            Id = 176,
-                            Date = new DateTime(2021, 1, 3, 19, 20, 20, 697, DateTimeKind.Local).AddTicks(3430),
+                            Id = 50,
+                            Date = new DateTime(2021, 3, 23, 14, 55, 41, 79, DateTimeKind.Local).AddTicks(7873),
+                            IdIndicateur = 6,
+                            IdMesure = 242,
+                            Value = "40"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Date = new DateTime(2020, 8, 31, 16, 25, 40, 768, DateTimeKind.Local).AddTicks(1842),
+                            IdIndicateur = 1,
+                            IdMesure = 150,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Date = new DateTime(2021, 3, 21, 13, 27, 2, 721, DateTimeKind.Local).AddTicks(3456),
                             IdIndicateur = 4,
-                            IdMesure = 125,
+                            IdMesure = 45,
                             Value = "48"
                         },
                         new
                         {
-                            Id = 177,
-                            Date = new DateTime(2020, 8, 25, 8, 54, 45, 789, DateTimeKind.Local).AddTicks(7521),
+                            Id = 53,
+                            Date = new DateTime(2020, 4, 1, 19, 21, 16, 528, DateTimeKind.Local).AddTicks(1417),
+                            IdIndicateur = 2,
+                            IdMesure = 183,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Date = new DateTime(2020, 8, 14, 7, 28, 59, 444, DateTimeKind.Local).AddTicks(5005),
                             IdIndicateur = 5,
-                            IdMesure = 90,
-                            Value = "77"
+                            IdMesure = 216,
+                            Value = "15"
                         },
                         new
                         {
-                            Id = 178,
-                            Date = new DateTime(2020, 8, 11, 12, 39, 19, 801, DateTimeKind.Local).AddTicks(842),
-                            IdIndicateur = 3,
-                            IdMesure = 33,
-                            Value = "90"
+                            Id = 55,
+                            Date = new DateTime(2020, 5, 25, 11, 40, 34, 63, DateTimeKind.Local).AddTicks(9814),
+                            IdIndicateur = 6,
+                            IdMesure = 81,
+                            Value = "58"
                         },
                         new
                         {
-                            Id = 179,
-                            Date = new DateTime(2020, 8, 19, 8, 9, 15, 67, DateTimeKind.Local).AddTicks(7690),
-                            IdIndicateur = 3,
-                            IdMesure = 430,
-                            Value = "16"
+                            Id = 56,
+                            Date = new DateTime(2020, 11, 10, 3, 44, 32, 258, DateTimeKind.Local).AddTicks(1968),
+                            IdIndicateur = 2,
+                            IdMesure = 170,
+                            Value = "96"
                         },
                         new
                         {
-                            Id = 180,
-                            Date = new DateTime(2020, 5, 4, 13, 38, 23, 318, DateTimeKind.Local).AddTicks(2969),
+                            Id = 57,
+                            Date = new DateTime(2021, 2, 21, 2, 59, 12, 745, DateTimeKind.Local).AddTicks(6479),
+                            IdIndicateur = 6,
+                            IdMesure = 404,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Date = new DateTime(2020, 5, 23, 2, 55, 37, 821, DateTimeKind.Local).AddTicks(3660),
+                            IdIndicateur = 2,
+                            IdMesure = 60,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Date = new DateTime(2020, 5, 6, 15, 14, 34, 254, DateTimeKind.Local).AddTicks(9731),
+                            IdIndicateur = 5,
+                            IdMesure = 69,
+                            Value = "44"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Date = new DateTime(2020, 6, 16, 22, 47, 46, 240, DateTimeKind.Local).AddTicks(5870),
+                            IdIndicateur = 5,
+                            IdMesure = 4,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Date = new DateTime(2021, 3, 19, 7, 8, 24, 200, DateTimeKind.Local).AddTicks(1841),
                             IdIndicateur = 1,
-                            IdMesure = 420,
+                            IdMesure = 237,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Date = new DateTime(2020, 8, 19, 23, 18, 2, 319, DateTimeKind.Local).AddTicks(3312),
+                            IdIndicateur = 1,
+                            IdMesure = 382,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Date = new DateTime(2020, 8, 6, 9, 6, 20, 10, DateTimeKind.Local).AddTicks(9327),
+                            IdIndicateur = 5,
+                            IdMesure = 344,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Date = new DateTime(2021, 3, 15, 19, 17, 7, 488, DateTimeKind.Local).AddTicks(118),
+                            IdIndicateur = 4,
+                            IdMesure = 153,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Date = new DateTime(2021, 1, 20, 9, 21, 38, 894, DateTimeKind.Local).AddTicks(5429),
+                            IdIndicateur = 2,
+                            IdMesure = 54,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Date = new DateTime(2021, 2, 14, 13, 11, 11, 397, DateTimeKind.Local).AddTicks(9999),
+                            IdIndicateur = 3,
+                            IdMesure = 110,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Date = new DateTime(2020, 7, 10, 19, 22, 7, 630, DateTimeKind.Local).AddTicks(6608),
+                            IdIndicateur = 3,
+                            IdMesure = 350,
+                            Value = "84"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Date = new DateTime(2020, 10, 21, 13, 51, 26, 722, DateTimeKind.Local).AddTicks(5384),
+                            IdIndicateur = 2,
+                            IdMesure = 155,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Date = new DateTime(2020, 12, 23, 23, 42, 1, 708, DateTimeKind.Local).AddTicks(5472),
+                            IdIndicateur = 5,
+                            IdMesure = 313,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Date = new DateTime(2020, 5, 26, 8, 44, 39, 830, DateTimeKind.Local).AddTicks(2555),
+                            IdIndicateur = 6,
+                            IdMesure = 388,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Date = new DateTime(2020, 11, 20, 11, 47, 25, 488, DateTimeKind.Local).AddTicks(1028),
+                            IdIndicateur = 5,
+                            IdMesure = 379,
+                            Value = "36"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Date = new DateTime(2020, 7, 27, 10, 57, 16, 828, DateTimeKind.Local).AddTicks(9830),
+                            IdIndicateur = 5,
+                            IdMesure = 300,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Date = new DateTime(2020, 5, 23, 9, 14, 31, 698, DateTimeKind.Local).AddTicks(4692),
+                            IdIndicateur = 3,
+                            IdMesure = 81,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Date = new DateTime(2021, 1, 7, 6, 42, 8, 808, DateTimeKind.Local).AddTicks(4870),
+                            IdIndicateur = 1,
+                            IdMesure = 59,
+                            Value = "56"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Date = new DateTime(2020, 9, 28, 9, 40, 52, 407, DateTimeKind.Local).AddTicks(154),
+                            IdIndicateur = 2,
+                            IdMesure = 121,
+                            Value = "29"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Date = new DateTime(2020, 8, 12, 13, 50, 36, 850, DateTimeKind.Local).AddTicks(1475),
+                            IdIndicateur = 3,
+                            IdMesure = 124,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Date = new DateTime(2020, 8, 22, 12, 59, 39, 936, DateTimeKind.Local).AddTicks(1295),
+                            IdIndicateur = 2,
+                            IdMesure = 88,
+                            Value = "92"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            Date = new DateTime(2021, 1, 15, 15, 10, 14, 994, DateTimeKind.Local).AddTicks(9429),
+                            IdIndicateur = 3,
+                            IdMesure = 95,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            Date = new DateTime(2020, 8, 23, 4, 24, 4, 568, DateTimeKind.Local).AddTicks(3237),
+                            IdIndicateur = 5,
+                            IdMesure = 299,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            Date = new DateTime(2020, 3, 24, 8, 44, 5, 99, DateTimeKind.Local).AddTicks(8464),
+                            IdIndicateur = 4,
+                            IdMesure = 19,
+                            Value = "47"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            Date = new DateTime(2020, 3, 25, 21, 15, 8, 663, DateTimeKind.Local).AddTicks(8491),
+                            IdIndicateur = 1,
+                            IdMesure = 397,
+                            Value = "56"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            Date = new DateTime(2020, 7, 17, 20, 34, 3, 919, DateTimeKind.Local).AddTicks(3009),
+                            IdIndicateur = 5,
+                            IdMesure = 184,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            Date = new DateTime(2020, 8, 30, 10, 35, 29, 699, DateTimeKind.Local).AddTicks(9629),
+                            IdIndicateur = 1,
+                            IdMesure = 110,
+                            Value = "98"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            Date = new DateTime(2020, 9, 19, 6, 32, 54, 835, DateTimeKind.Local).AddTicks(6315),
+                            IdIndicateur = 1,
+                            IdMesure = 318,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            Date = new DateTime(2020, 9, 29, 22, 32, 44, 86, DateTimeKind.Local).AddTicks(5582),
+                            IdIndicateur = 5,
+                            IdMesure = 189,
+                            Value = "22"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            Date = new DateTime(2020, 5, 28, 6, 44, 29, 703, DateTimeKind.Local).AddTicks(2368),
+                            IdIndicateur = 6,
+                            IdMesure = 390,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            Date = new DateTime(2020, 11, 23, 16, 52, 9, 465, DateTimeKind.Local).AddTicks(5424),
+                            IdIndicateur = 4,
+                            IdMesure = 101,
+                            Value = "23"
+                        },
+                        new
+                        {
+                            Id = 88,
+                            Date = new DateTime(2020, 6, 24, 15, 7, 9, 440, DateTimeKind.Local).AddTicks(3267),
+                            IdIndicateur = 6,
+                            IdMesure = 321,
+                            Value = "24"
+                        },
+                        new
+                        {
+                            Id = 89,
+                            Date = new DateTime(2021, 2, 6, 19, 48, 5, 565, DateTimeKind.Local).AddTicks(4017),
+                            IdIndicateur = 2,
+                            IdMesure = 399,
+                            Value = "62"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            Date = new DateTime(2020, 10, 15, 14, 17, 30, 480, DateTimeKind.Local).AddTicks(1808),
+                            IdIndicateur = 2,
+                            IdMesure = 368,
+                            Value = "27"
+                        },
+                        new
+                        {
+                            Id = 91,
+                            Date = new DateTime(2021, 1, 31, 12, 58, 19, 619, DateTimeKind.Local).AddTicks(5665),
+                            IdIndicateur = 2,
+                            IdMesure = 403,
+                            Value = "40"
+                        },
+                        new
+                        {
+                            Id = 92,
+                            Date = new DateTime(2020, 7, 18, 0, 18, 5, 406, DateTimeKind.Local).AddTicks(4481),
+                            IdIndicateur = 4,
+                            IdMesure = 172,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 93,
+                            Date = new DateTime(2020, 11, 12, 4, 3, 24, 336, DateTimeKind.Local).AddTicks(7883),
+                            IdIndicateur = 5,
+                            IdMesure = 116,
+                            Value = "23"
+                        },
+                        new
+                        {
+                            Id = 94,
+                            Date = new DateTime(2021, 3, 19, 15, 2, 0, 973, DateTimeKind.Local).AddTicks(8444),
+                            IdIndicateur = 6,
+                            IdMesure = 172,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 95,
+                            Date = new DateTime(2020, 5, 18, 15, 46, 47, 663, DateTimeKind.Local).AddTicks(7589),
+                            IdIndicateur = 5,
+                            IdMesure = 316,
+                            Value = "79"
+                        },
+                        new
+                        {
+                            Id = 96,
+                            Date = new DateTime(2020, 11, 27, 11, 34, 37, 77, DateTimeKind.Local).AddTicks(5047),
+                            IdIndicateur = 6,
+                            IdMesure = 269,
+                            Value = "96"
+                        },
+                        new
+                        {
+                            Id = 97,
+                            Date = new DateTime(2020, 9, 15, 17, 3, 5, 82, DateTimeKind.Local).AddTicks(1033),
+                            IdIndicateur = 2,
+                            IdMesure = 398,
+                            Value = "68"
+                        },
+                        new
+                        {
+                            Id = 98,
+                            Date = new DateTime(2021, 1, 12, 11, 39, 38, 713, DateTimeKind.Local).AddTicks(8893),
+                            IdIndicateur = 3,
+                            IdMesure = 189,
+                            Value = "70"
+                        },
+                        new
+                        {
+                            Id = 99,
+                            Date = new DateTime(2020, 7, 23, 1, 19, 57, 369, DateTimeKind.Local).AddTicks(4180),
+                            IdIndicateur = 5,
+                            IdMesure = 215,
+                            Value = "60"
+                        },
+                        new
+                        {
+                            Id = 100,
+                            Date = new DateTime(2020, 7, 24, 15, 27, 20, 2, DateTimeKind.Local).AddTicks(6607),
+                            IdIndicateur = 2,
+                            IdMesure = 247,
+                            Value = "48"
+                        },
+                        new
+                        {
+                            Id = 101,
+                            Date = new DateTime(2020, 4, 13, 11, 48, 46, 650, DateTimeKind.Local).AddTicks(8893),
+                            IdIndicateur = 3,
+                            IdMesure = 52,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            Date = new DateTime(2020, 3, 30, 15, 32, 35, 681, DateTimeKind.Local).AddTicks(7774),
+                            IdIndicateur = 5,
+                            IdMesure = 342,
                             Value = "41"
                         },
                         new
                         {
-                            Id = 181,
-                            Date = new DateTime(2020, 11, 10, 14, 42, 41, 36, DateTimeKind.Local).AddTicks(6621),
+                            Id = 103,
+                            Date = new DateTime(2021, 1, 28, 2, 34, 26, 778, DateTimeKind.Local).AddTicks(3703),
+                            IdIndicateur = 4,
+                            IdMesure = 48,
+                            Value = "46"
+                        },
+                        new
+                        {
+                            Id = 104,
+                            Date = new DateTime(2020, 4, 4, 11, 30, 10, 151, DateTimeKind.Local).AddTicks(5334),
+                            IdIndicateur = 3,
+                            IdMesure = 209,
+                            Value = "84"
+                        },
+                        new
+                        {
+                            Id = 105,
+                            Date = new DateTime(2021, 1, 20, 12, 25, 18, 222, DateTimeKind.Local).AddTicks(2258),
                             IdIndicateur = 1,
-                            IdMesure = 13,
+                            IdMesure = 123,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Date = new DateTime(2020, 5, 18, 11, 56, 46, 333, DateTimeKind.Local).AddTicks(594),
+                            IdIndicateur = 6,
+                            IdMesure = 401,
+                            Value = "32"
+                        },
+                        new
+                        {
+                            Id = 107,
+                            Date = new DateTime(2020, 7, 13, 11, 28, 40, 614, DateTimeKind.Local).AddTicks(9037),
+                            IdIndicateur = 6,
+                            IdMesure = 57,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 108,
+                            Date = new DateTime(2020, 10, 18, 20, 37, 30, 226, DateTimeKind.Local).AddTicks(9327),
+                            IdIndicateur = 3,
+                            IdMesure = 166,
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 109,
+                            Date = new DateTime(2021, 1, 27, 11, 17, 1, 640, DateTimeKind.Local).AddTicks(5816),
+                            IdIndicateur = 1,
+                            IdMesure = 118,
+                            Value = "76"
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Date = new DateTime(2021, 2, 11, 4, 59, 1, 237, DateTimeKind.Local).AddTicks(5396),
+                            IdIndicateur = 1,
+                            IdMesure = 389,
+                            Value = "58"
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Date = new DateTime(2020, 5, 9, 7, 56, 15, 225, DateTimeKind.Local).AddTicks(7715),
+                            IdIndicateur = 4,
+                            IdMesure = 380,
+                            Value = "47"
+                        },
+                        new
+                        {
+                            Id = 112,
+                            Date = new DateTime(2021, 1, 28, 13, 50, 56, 261, DateTimeKind.Local).AddTicks(7099),
+                            IdIndicateur = 4,
+                            IdMesure = 9,
+                            Value = "74"
+                        },
+                        new
+                        {
+                            Id = 113,
+                            Date = new DateTime(2020, 9, 2, 19, 32, 58, 247, DateTimeKind.Local).AddTicks(6109),
+                            IdIndicateur = 4,
+                            IdMesure = 384,
+                            Value = "45"
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Date = new DateTime(2021, 1, 16, 5, 46, 29, 923, DateTimeKind.Local).AddTicks(6385),
+                            IdIndicateur = 2,
+                            IdMesure = 32,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Date = new DateTime(2020, 5, 25, 9, 6, 27, 315, DateTimeKind.Local).AddTicks(2987),
+                            IdIndicateur = 2,
+                            IdMesure = 95,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Date = new DateTime(2020, 7, 21, 4, 8, 45, 204, DateTimeKind.Local).AddTicks(4103),
+                            IdIndicateur = 4,
+                            IdMesure = 407,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Date = new DateTime(2020, 11, 5, 8, 27, 28, 553, DateTimeKind.Local).AddTicks(3704),
+                            IdIndicateur = 6,
+                            IdMesure = 51,
+                            Value = "90"
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Date = new DateTime(2020, 12, 11, 17, 45, 33, 383, DateTimeKind.Local).AddTicks(9532),
+                            IdIndicateur = 5,
+                            IdMesure = 269,
+                            Value = "16"
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Date = new DateTime(2020, 12, 20, 11, 18, 26, 549, DateTimeKind.Local).AddTicks(2340),
+                            IdIndicateur = 1,
+                            IdMesure = 209,
+                            Value = "37"
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Date = new DateTime(2020, 8, 10, 7, 25, 13, 989, DateTimeKind.Local).AddTicks(5978),
+                            IdIndicateur = 3,
+                            IdMesure = 230,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 121,
+                            Date = new DateTime(2020, 6, 7, 2, 59, 16, 473, DateTimeKind.Local).AddTicks(3686),
+                            IdIndicateur = 5,
+                            IdMesure = 106,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 122,
+                            Date = new DateTime(2021, 3, 18, 3, 58, 26, 405, DateTimeKind.Local).AddTicks(9157),
+                            IdIndicateur = 6,
+                            IdMesure = 22,
+                            Value = "42"
+                        },
+                        new
+                        {
+                            Id = 123,
+                            Date = new DateTime(2020, 7, 20, 0, 19, 6, 545, DateTimeKind.Local).AddTicks(1630),
+                            IdIndicateur = 4,
+                            IdMesure = 156,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Date = new DateTime(2021, 1, 3, 21, 44, 5, 280, DateTimeKind.Local).AddTicks(9442),
+                            IdIndicateur = 5,
+                            IdMesure = 83,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 125,
+                            Date = new DateTime(2021, 3, 6, 7, 39, 48, 987, DateTimeKind.Local).AddTicks(247),
+                            IdIndicateur = 5,
+                            IdMesure = 29,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 126,
+                            Date = new DateTime(2021, 1, 4, 2, 44, 12, 26, DateTimeKind.Local).AddTicks(1718),
+                            IdIndicateur = 3,
+                            IdMesure = 276,
+                            Value = "58"
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Date = new DateTime(2020, 4, 8, 14, 49, 27, 73, DateTimeKind.Local).AddTicks(851),
+                            IdIndicateur = 1,
+                            IdMesure = 223,
+                            Value = "16"
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Date = new DateTime(2020, 5, 20, 10, 43, 30, 134, DateTimeKind.Local).AddTicks(4524),
+                            IdIndicateur = 3,
+                            IdMesure = 417,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Date = new DateTime(2021, 1, 4, 4, 14, 26, 905, DateTimeKind.Local).AddTicks(717),
+                            IdIndicateur = 2,
+                            IdMesure = 170,
+                            Value = "63"
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Date = new DateTime(2020, 12, 31, 2, 54, 58, 513, DateTimeKind.Local).AddTicks(4319),
+                            IdIndicateur = 5,
+                            IdMesure = 368,
+                            Value = "66"
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Date = new DateTime(2021, 2, 25, 19, 4, 11, 544, DateTimeKind.Local).AddTicks(3627),
+                            IdIndicateur = 6,
+                            IdMesure = 269,
+                            Value = "11"
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Date = new DateTime(2020, 6, 13, 23, 5, 18, 126, DateTimeKind.Local).AddTicks(8957),
+                            IdIndicateur = 3,
+                            IdMesure = 320,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Date = new DateTime(2020, 6, 8, 3, 46, 18, 290, DateTimeKind.Local).AddTicks(95),
+                            IdIndicateur = 1,
+                            IdMesure = 409,
+                            Value = "27"
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Date = new DateTime(2020, 4, 26, 9, 3, 57, 400, DateTimeKind.Local).AddTicks(9236),
+                            IdIndicateur = 5,
+                            IdMesure = 271,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Date = new DateTime(2020, 4, 13, 4, 57, 26, 323, DateTimeKind.Local).AddTicks(2687),
+                            IdIndicateur = 4,
+                            IdMesure = 82,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Date = new DateTime(2020, 5, 9, 16, 20, 56, 653, DateTimeKind.Local).AddTicks(9737),
+                            IdIndicateur = 3,
+                            IdMesure = 356,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Date = new DateTime(2020, 3, 25, 11, 25, 49, 100, DateTimeKind.Local).AddTicks(6458),
+                            IdIndicateur = 1,
+                            IdMesure = 388,
+                            Value = "36"
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Date = new DateTime(2020, 12, 19, 16, 44, 20, 352, DateTimeKind.Local).AddTicks(1341),
+                            IdIndicateur = 6,
+                            IdMesure = 53,
+                            Value = "43"
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Date = new DateTime(2020, 6, 15, 17, 37, 32, 895, DateTimeKind.Local).AddTicks(8330),
+                            IdIndicateur = 4,
+                            IdMesure = 50,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Date = new DateTime(2021, 2, 10, 15, 4, 20, 821, DateTimeKind.Local).AddTicks(7683),
+                            IdIndicateur = 3,
+                            IdMesure = 137,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Date = new DateTime(2020, 5, 7, 14, 53, 37, 345, DateTimeKind.Local).AddTicks(3950),
+                            IdIndicateur = 2,
+                            IdMesure = 8,
+                            Value = "11"
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Date = new DateTime(2020, 8, 13, 13, 38, 2, 464, DateTimeKind.Local).AddTicks(4985),
+                            IdIndicateur = 6,
+                            IdMesure = 129,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Date = new DateTime(2020, 12, 22, 13, 14, 39, 976, DateTimeKind.Local).AddTicks(5508),
+                            IdIndicateur = 5,
+                            IdMesure = 92,
+                            Value = "12"
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Date = new DateTime(2021, 1, 3, 11, 48, 48, 150, DateTimeKind.Local).AddTicks(3783),
+                            IdIndicateur = 5,
+                            IdMesure = 229,
+                            Value = "47"
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Date = new DateTime(2020, 8, 1, 8, 30, 59, 545, DateTimeKind.Local).AddTicks(645),
+                            IdIndicateur = 1,
+                            IdMesure = 352,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Date = new DateTime(2020, 3, 31, 13, 31, 2, 801, DateTimeKind.Local).AddTicks(9184),
+                            IdIndicateur = 1,
+                            IdMesure = 49,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Date = new DateTime(2021, 2, 18, 4, 40, 53, 866, DateTimeKind.Local).AddTicks(6920),
+                            IdIndicateur = 6,
+                            IdMesure = 310,
+                            Value = "71"
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Date = new DateTime(2020, 7, 1, 6, 52, 23, 39, DateTimeKind.Local).AddTicks(1126),
+                            IdIndicateur = 2,
+                            IdMesure = 152,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Date = new DateTime(2020, 9, 14, 23, 45, 7, 505, DateTimeKind.Local).AddTicks(9705),
+                            IdIndicateur = 2,
+                            IdMesure = 50,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Date = new DateTime(2021, 3, 13, 21, 55, 29, 928, DateTimeKind.Local).AddTicks(8905),
+                            IdIndicateur = 2,
+                            IdMesure = 167,
+                            Value = "62"
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Date = new DateTime(2020, 10, 13, 10, 40, 4, 648, DateTimeKind.Local).AddTicks(8640),
+                            IdIndicateur = 5,
+                            IdMesure = 379,
+                            Value = "81"
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Date = new DateTime(2020, 10, 15, 18, 28, 14, 111, DateTimeKind.Local).AddTicks(1230),
+                            IdIndicateur = 1,
+                            IdMesure = 407,
+                            Value = "76"
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Date = new DateTime(2021, 1, 23, 1, 4, 1, 843, DateTimeKind.Local).AddTicks(1982),
+                            IdIndicateur = 2,
+                            IdMesure = 53,
+                            Value = "97"
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Date = new DateTime(2020, 4, 20, 19, 34, 58, 629, DateTimeKind.Local).AddTicks(3760),
+                            IdIndicateur = 6,
+                            IdMesure = 123,
+                            Value = "10"
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Date = new DateTime(2020, 11, 11, 2, 33, 48, 620, DateTimeKind.Local).AddTicks(7015),
+                            IdIndicateur = 1,
+                            IdMesure = 280,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Date = new DateTime(2020, 3, 24, 15, 15, 20, 662, DateTimeKind.Local).AddTicks(3255),
+                            IdIndicateur = 1,
+                            IdMesure = 82,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Date = new DateTime(2020, 11, 13, 11, 15, 55, 470, DateTimeKind.Local).AddTicks(7534),
+                            IdIndicateur = 2,
+                            IdMesure = 37,
+                            Value = "22"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Date = new DateTime(2020, 8, 6, 20, 34, 41, 148, DateTimeKind.Local).AddTicks(6303),
+                            IdIndicateur = 6,
+                            IdMesure = 328,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Date = new DateTime(2020, 10, 16, 7, 40, 50, 496, DateTimeKind.Local).AddTicks(9305),
+                            IdIndicateur = 1,
+                            IdMesure = 251,
+                            Value = "80"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Date = new DateTime(2020, 8, 19, 23, 4, 55, 609, DateTimeKind.Local).AddTicks(4559),
+                            IdIndicateur = 2,
+                            IdMesure = 135,
+                            Value = "14"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Date = new DateTime(2021, 2, 2, 15, 56, 30, 196, DateTimeKind.Local).AddTicks(7089),
+                            IdIndicateur = 2,
+                            IdMesure = 88,
+                            Value = "98"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Date = new DateTime(2020, 12, 13, 8, 41, 12, 49, DateTimeKind.Local).AddTicks(9703),
+                            IdIndicateur = 3,
+                            IdMesure = 110,
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Date = new DateTime(2020, 11, 18, 9, 58, 11, 217, DateTimeKind.Local).AddTicks(4344),
+                            IdIndicateur = 1,
+                            IdMesure = 74,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Date = new DateTime(2020, 6, 26, 0, 40, 40, 906, DateTimeKind.Local).AddTicks(8012),
+                            IdIndicateur = 2,
+                            IdMesure = 7,
+                            Value = "86"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Date = new DateTime(2020, 8, 4, 8, 32, 38, 735, DateTimeKind.Local).AddTicks(1924),
+                            IdIndicateur = 5,
+                            IdMesure = 183,
+                            Value = "42"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Date = new DateTime(2020, 12, 28, 22, 32, 8, 641, DateTimeKind.Local).AddTicks(1660),
+                            IdIndicateur = 3,
+                            IdMesure = 429,
+                            Value = "72"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Date = new DateTime(2021, 2, 5, 3, 29, 42, 236, DateTimeKind.Local).AddTicks(1078),
+                            IdIndicateur = 3,
+                            IdMesure = 166,
+                            Value = "63"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Date = new DateTime(2020, 10, 17, 13, 18, 48, 220, DateTimeKind.Local).AddTicks(9095),
+                            IdIndicateur = 4,
+                            IdMesure = 30,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Date = new DateTime(2020, 4, 12, 0, 31, 9, 246, DateTimeKind.Local).AddTicks(6548),
+                            IdIndicateur = 4,
+                            IdMesure = 433,
+                            Value = "24"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Date = new DateTime(2020, 7, 28, 8, 28, 35, 328, DateTimeKind.Local).AddTicks(1038),
+                            IdIndicateur = 1,
+                            IdMesure = 69,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Date = new DateTime(2020, 6, 23, 13, 53, 58, 653, DateTimeKind.Local).AddTicks(5189),
+                            IdIndicateur = 6,
+                            IdMesure = 372,
+                            Value = "27"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Date = new DateTime(2020, 11, 11, 5, 17, 49, 410, DateTimeKind.Local).AddTicks(8214),
+                            IdIndicateur = 3,
+                            IdMesure = 6,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Date = new DateTime(2020, 9, 13, 10, 46, 15, 994, DateTimeKind.Local).AddTicks(2649),
+                            IdIndicateur = 1,
+                            IdMesure = 137,
+                            Value = "11"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Date = new DateTime(2020, 5, 26, 1, 39, 25, 844, DateTimeKind.Local).AddTicks(5130),
+                            IdIndicateur = 3,
+                            IdMesure = 372,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Date = new DateTime(2020, 4, 23, 13, 1, 37, 942, DateTimeKind.Local).AddTicks(2084),
+                            IdIndicateur = 5,
+                            IdMesure = 243,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Date = new DateTime(2020, 8, 15, 18, 16, 22, 299, DateTimeKind.Local).AddTicks(7352),
+                            IdIndicateur = 2,
+                            IdMesure = 367,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Date = new DateTime(2020, 10, 14, 3, 9, 58, 850, DateTimeKind.Local).AddTicks(7738),
+                            IdIndicateur = 3,
+                            IdMesure = 171,
+                            Value = "41"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Date = new DateTime(2020, 12, 6, 15, 41, 59, 514, DateTimeKind.Local).AddTicks(2857),
+                            IdIndicateur = 6,
+                            IdMesure = 22,
+                            Value = "63"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Date = new DateTime(2021, 2, 6, 3, 27, 40, 513, DateTimeKind.Local).AddTicks(6941),
+                            IdIndicateur = 5,
+                            IdMesure = 18,
+                            Value = "80"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Date = new DateTime(2020, 5, 3, 16, 40, 46, 602, DateTimeKind.Local).AddTicks(5391),
+                            IdIndicateur = 6,
+                            IdMesure = 82,
+                            Value = "30"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Date = new DateTime(2021, 3, 9, 15, 11, 32, 376, DateTimeKind.Local).AddTicks(9010),
+                            IdIndicateur = 2,
+                            IdMesure = 315,
                             Value = "83"
                         },
                         new
                         {
                             Id = 182,
-                            Date = new DateTime(2021, 1, 31, 5, 56, 35, 970, DateTimeKind.Local).AddTicks(1191),
-                            IdIndicateur = 2,
-                            IdMesure = 228,
-                            Value = "71"
+                            Date = new DateTime(2020, 8, 22, 20, 49, 0, 880, DateTimeKind.Local).AddTicks(7609),
+                            IdIndicateur = 1,
+                            IdMesure = 240,
+                            Value = "62"
                         },
                         new
                         {
                             Id = 183,
-                            Date = new DateTime(2020, 4, 18, 23, 37, 19, 425, DateTimeKind.Local).AddTicks(238),
-                            IdIndicateur = 1,
-                            IdMesure = 282,
-                            Value = "34"
-                        },
-                        new
-                        {
-                            Id = 184,
-                            Date = new DateTime(2020, 10, 6, 18, 37, 48, 293, DateTimeKind.Local).AddTicks(6847),
-                            IdIndicateur = 4,
-                            IdMesure = 87,
-                            Value = "57"
-                        },
-                        new
-                        {
-                            Id = 185,
-                            Date = new DateTime(2020, 3, 26, 3, 45, 55, 665, DateTimeKind.Local).AddTicks(5083),
-                            IdIndicateur = 2,
-                            IdMesure = 77,
+                            Date = new DateTime(2020, 10, 21, 15, 9, 55, 28, DateTimeKind.Local).AddTicks(1230),
+                            IdIndicateur = 3,
+                            IdMesure = 422,
                             Value = "45"
                         },
                         new
                         {
-                            Id = 186,
-                            Date = new DateTime(2021, 2, 25, 21, 20, 23, 699, DateTimeKind.Local).AddTicks(2689),
+                            Id = 184,
+                            Date = new DateTime(2020, 9, 9, 11, 39, 39, 876, DateTimeKind.Local).AddTicks(234),
                             IdIndicateur = 5,
-                            IdMesure = 305,
-                            Value = "55"
+                            IdMesure = 162,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 185,
+                            Date = new DateTime(2020, 8, 28, 21, 42, 50, 866, DateTimeKind.Local).AddTicks(5821),
+                            IdIndicateur = 4,
+                            IdMesure = 285,
+                            Value = "42"
+                        },
+                        new
+                        {
+                            Id = 186,
+                            Date = new DateTime(2020, 10, 20, 11, 47, 6, 795, DateTimeKind.Local).AddTicks(640),
+                            IdIndicateur = 2,
+                            IdMesure = 63,
+                            Value = "38"
                         },
                         new
                         {
                             Id = 187,
-                            Date = new DateTime(2020, 9, 21, 6, 4, 24, 279, DateTimeKind.Local).AddTicks(1404),
-                            IdIndicateur = 3,
-                            IdMesure = 369,
-                            Value = "87"
+                            Date = new DateTime(2021, 1, 27, 22, 8, 58, 928, DateTimeKind.Local).AddTicks(5262),
+                            IdIndicateur = 5,
+                            IdMesure = 195,
+                            Value = "54"
                         },
                         new
                         {
                             Id = 188,
-                            Date = new DateTime(2021, 1, 25, 9, 0, 14, 712, DateTimeKind.Local).AddTicks(822),
-                            IdIndicateur = 5,
-                            IdMesure = 414,
-                            Value = "74"
+                            Date = new DateTime(2020, 8, 8, 11, 57, 11, 107, DateTimeKind.Local).AddTicks(2562),
+                            IdIndicateur = 3,
+                            IdMesure = 275,
+                            Value = "68"
                         },
                         new
                         {
                             Id = 189,
-                            Date = new DateTime(2021, 1, 10, 18, 22, 41, 288, DateTimeKind.Local).AddTicks(2581),
-                            IdIndicateur = 5,
-                            IdMesure = 72,
-                            Value = "82"
+                            Date = new DateTime(2020, 8, 10, 14, 40, 30, 813, DateTimeKind.Local).AddTicks(1491),
+                            IdIndicateur = 6,
+                            IdMesure = 226,
+                            Value = "27"
                         },
                         new
                         {
                             Id = 190,
-                            Date = new DateTime(2020, 3, 18, 15, 36, 15, 683, DateTimeKind.Local).AddTicks(2326),
-                            IdIndicateur = 1,
-                            IdMesure = 359,
-                            Value = "69"
+                            Date = new DateTime(2020, 12, 3, 6, 45, 33, 716, DateTimeKind.Local).AddTicks(459),
+                            IdIndicateur = 2,
+                            IdMesure = 220,
+                            Value = "14"
                         },
                         new
                         {
                             Id = 191,
-                            Date = new DateTime(2020, 4, 7, 5, 57, 34, 145, DateTimeKind.Local).AddTicks(9394),
-                            IdIndicateur = 4,
-                            IdMesure = 57,
-                            Value = "90"
+                            Date = new DateTime(2020, 7, 5, 23, 59, 28, 973, DateTimeKind.Local).AddTicks(5171),
+                            IdIndicateur = 5,
+                            IdMesure = 379,
+                            Value = "52"
                         },
                         new
                         {
                             Id = 192,
-                            Date = new DateTime(2020, 10, 5, 6, 7, 58, 787, DateTimeKind.Local).AddTicks(6129),
+                            Date = new DateTime(2021, 1, 6, 5, 43, 51, 771, DateTimeKind.Local).AddTicks(2072),
                             IdIndicateur = 1,
-                            IdMesure = 48,
-                            Value = "44"
+                            IdMesure = 219,
+                            Value = "93"
                         },
                         new
                         {
                             Id = 193,
-                            Date = new DateTime(2020, 6, 4, 0, 47, 41, 365, DateTimeKind.Local).AddTicks(8294),
-                            IdIndicateur = 4,
-                            IdMesure = 397,
-                            Value = "44"
+                            Date = new DateTime(2020, 8, 16, 2, 23, 23, 155, DateTimeKind.Local).AddTicks(7373),
+                            IdIndicateur = 2,
+                            IdMesure = 390,
+                            Value = "52"
                         },
                         new
                         {
                             Id = 194,
-                            Date = new DateTime(2020, 12, 12, 13, 36, 4, 857, DateTimeKind.Local).AddTicks(6057),
-                            IdIndicateur = 3,
-                            IdMesure = 282,
-                            Value = "23"
+                            Date = new DateTime(2020, 9, 3, 16, 24, 40, 977, DateTimeKind.Local).AddTicks(4805),
+                            IdIndicateur = 4,
+                            IdMesure = 252,
+                            Value = "77"
                         },
                         new
                         {
                             Id = 195,
-                            Date = new DateTime(2021, 1, 27, 23, 43, 1, 17, DateTimeKind.Local).AddTicks(8947),
-                            IdIndicateur = 5,
-                            IdMesure = 274,
-                            Value = "53"
+                            Date = new DateTime(2020, 5, 25, 1, 39, 18, 249, DateTimeKind.Local).AddTicks(9856),
+                            IdIndicateur = 3,
+                            IdMesure = 397,
+                            Value = "63"
                         },
                         new
                         {
                             Id = 196,
-                            Date = new DateTime(2020, 3, 24, 3, 53, 16, 787, DateTimeKind.Local).AddTicks(3908),
-                            IdIndicateur = 2,
-                            IdMesure = 166,
-                            Value = "23"
+                            Date = new DateTime(2020, 9, 26, 18, 38, 54, 469, DateTimeKind.Local).AddTicks(662),
+                            IdIndicateur = 3,
+                            IdMesure = 264,
+                            Value = "96"
                         },
                         new
                         {
                             Id = 197,
-                            Date = new DateTime(2020, 10, 13, 13, 22, 27, 374, DateTimeKind.Local).AddTicks(6123),
-                            IdIndicateur = 1,
-                            IdMesure = 196,
-                            Value = "75"
+                            Date = new DateTime(2020, 9, 20, 23, 6, 14, 249, DateTimeKind.Local).AddTicks(3835),
+                            IdIndicateur = 5,
+                            IdMesure = 303,
+                            Value = "91"
                         },
                         new
                         {
                             Id = 198,
-                            Date = new DateTime(2021, 2, 10, 11, 46, 47, 177, DateTimeKind.Local).AddTicks(8228),
-                            IdIndicateur = 3,
-                            IdMesure = 335,
-                            Value = "64"
+                            Date = new DateTime(2020, 9, 27, 10, 3, 6, 207, DateTimeKind.Local).AddTicks(7476),
+                            IdIndicateur = 2,
+                            IdMesure = 278,
+                            Value = "12"
                         },
                         new
                         {
                             Id = 199,
-                            Date = new DateTime(2021, 2, 13, 13, 37, 30, 780, DateTimeKind.Local).AddTicks(2537),
-                            IdIndicateur = 3,
-                            IdMesure = 241,
-                            Value = "84"
+                            Date = new DateTime(2020, 11, 6, 6, 52, 16, 891, DateTimeKind.Local).AddTicks(469),
+                            IdIndicateur = 1,
+                            IdMesure = 233,
+                            Value = "73"
                         },
                         new
                         {
                             Id = 200,
-                            Date = new DateTime(2020, 5, 3, 18, 42, 38, 871, DateTimeKind.Local).AddTicks(7448),
+                            Date = new DateTime(2020, 12, 10, 15, 26, 47, 917, DateTimeKind.Local).AddTicks(170),
                             IdIndicateur = 4,
-                            IdMesure = 395,
+                            IdMesure = 306,
                             Value = "93"
                         });
                 });
@@ -20486,16 +20495,17 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdCommission")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("NomComplete")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -20507,142 +20517,142 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "Lisa.Legall68@gmail.com",
+                            Email = "Celia73@yahoo.fr",
                             IdCommission = 1,
-                            NomComplete = "Alice Paris"
+                            NomComplete = "Mélissa Perrin"
                         },
                         new
                         {
                             Id = 2,
-                            Email = "Chloe32@hotmail.fr",
+                            Email = "Eva.Dubois@gmail.com",
                             IdCommission = 2,
-                            NomComplete = "Maëlle Dupuis"
+                            NomComplete = "Julien Guillot"
                         },
                         new
                         {
                             Id = 3,
-                            Email = "Clement.Rolland@gmail.com",
+                            Email = "Pierre_Garnier31@yahoo.fr",
                             IdCommission = 3,
-                            NomComplete = "Mattéo Lemaire"
+                            NomComplete = "Antoine Gerard"
                         },
                         new
                         {
                             Id = 4,
-                            Email = "Romane.Riviere21@hotmail.fr",
+                            Email = "Jules.Michel@yahoo.fr",
                             IdCommission = 4,
-                            NomComplete = "Maxence Maillard"
+                            NomComplete = "Mathis Guillaume"
                         },
                         new
                         {
                             Id = 5,
-                            Email = "Zoe.Baron@yahoo.fr",
+                            Email = "Nathan_Marchal@gmail.com",
                             IdCommission = 5,
-                            NomComplete = "Laura Mathieu"
+                            NomComplete = "Antoine Louis"
                         },
                         new
                         {
                             Id = 6,
-                            Email = "Antoine_Perrot35@gmail.com",
+                            Email = "Louna.Clement81@gmail.com",
                             IdCommission = 6,
-                            NomComplete = "Lilou Gautier"
+                            NomComplete = "Lola Guerin"
                         },
                         new
                         {
                             Id = 7,
-                            Email = "Zoe7@gmail.com",
+                            Email = "Lola8@hotmail.fr",
                             IdCommission = 7,
-                            NomComplete = "Antoine Dupuy"
+                            NomComplete = "Lou Carre"
                         },
                         new
                         {
                             Id = 8,
-                            Email = "Juliette_Marchand@hotmail.fr",
+                            Email = "Emilie70@yahoo.fr",
                             IdCommission = 8,
-                            NomComplete = "Arthur Lemoine"
+                            NomComplete = "Jules Schneider"
                         },
                         new
                         {
                             Id = 9,
-                            Email = "Oceane_Berger14@gmail.com",
+                            Email = "Matteo.Vincent@gmail.com",
                             IdCommission = 9,
-                            NomComplete = "Thomas Schneider"
+                            NomComplete = "Noa Aubert"
                         },
                         new
                         {
                             Id = 10,
-                            Email = "Clement_Adam38@hotmail.fr",
+                            Email = "Adrien.Giraud23@yahoo.fr",
                             IdCommission = 10,
-                            NomComplete = "Adrien Garcia"
+                            NomComplete = "Mael Guyot"
                         },
                         new
                         {
                             Id = 11,
-                            Email = "Adrien_Leroux8@hotmail.fr",
+                            Email = "Quentin.Legrand52@hotmail.fr",
                             IdCommission = 11,
-                            NomComplete = "Julien Rousseau"
+                            NomComplete = "Axel Dufour"
                         },
                         new
                         {
                             Id = 12,
-                            Email = "Nathan.Fleury0@hotmail.fr",
+                            Email = "Tom48@gmail.com",
                             IdCommission = 12,
-                            NomComplete = "Nathan Bernard"
+                            NomComplete = "Sacha Boyer"
                         },
                         new
                         {
                             Id = 13,
-                            Email = "Noah20@yahoo.fr",
+                            Email = "Justine_Prevost@yahoo.fr",
                             IdCommission = 13,
-                            NomComplete = "Laura Fabre"
+                            NomComplete = "Lou Perrot"
                         },
                         new
                         {
                             Id = 14,
-                            Email = "Mohamed_Dubois46@gmail.com",
+                            Email = "Julien.Dufour13@yahoo.fr",
                             IdCommission = 14,
-                            NomComplete = "Louise Riviere"
+                            NomComplete = "Maëlle Lecomte"
                         },
                         new
                         {
                             Id = 15,
-                            Email = "Pierre_Leroux46@gmail.com",
+                            Email = "Lucas22@hotmail.fr",
                             IdCommission = 15,
-                            NomComplete = "Ethan Boyer"
+                            NomComplete = "Kylian Marie"
                         },
                         new
                         {
                             Id = 16,
-                            Email = "Lola59@gmail.com",
+                            Email = "Noemie_Durand@hotmail.fr",
                             IdCommission = 16,
-                            NomComplete = "Quentin Nguyen"
+                            NomComplete = "Nicolas Durand"
                         },
                         new
                         {
                             Id = 17,
-                            Email = "Lina45@hotmail.fr",
+                            Email = "Clement.Brun23@hotmail.fr",
                             IdCommission = 17,
-                            NomComplete = "Maxence Aubert"
+                            NomComplete = "Tom Jean"
                         },
                         new
                         {
                             Id = 18,
-                            Email = "Lucas.Cousin31@gmail.com",
+                            Email = "Pierre_Brun80@yahoo.fr",
                             IdCommission = 18,
-                            NomComplete = "Anaïs Meunier"
+                            NomComplete = "Pauline Nguyen"
                         },
                         new
                         {
                             Id = 19,
-                            Email = "Chloe_Perez47@gmail.com",
+                            Email = "Maxence.Charpentier@yahoo.fr",
                             IdCommission = 19,
-                            NomComplete = "Jade Guerin"
+                            NomComplete = "Adam Dumas"
                         },
                         new
                         {
                             Id = 20,
-                            Email = "Paul_Simon73@hotmail.fr",
+                            Email = "Marie4@yahoo.fr",
                             IdCommission = 20,
-                            NomComplete = "Océane Morin"
+                            NomComplete = "Rayan Philippe"
                         });
                 });
 
@@ -20650,43 +20660,44 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Code")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdAxe")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdCycle")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdNature")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdSousAxe")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdType")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Nom")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ObjectifGlobal")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ObjectifSpeciaux")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ResultatsAttendu")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TypeMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int?>("UserId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -20724,7 +20735,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الرفع من مستوى مشاركة النساء في المجالس التمثيلية.",
                             ResultatsAttendu = "بيئة داعمة للرفع من مشاركة النساء",
                             TypeMesure = 1
@@ -20737,7 +20748,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بإحداث مرصد وطني مستقل يساهم في تحليل تطورات المشاركة السياسية والانتقال الديمقراطي.",
                             ResultatsAttendu = "آلية مؤسساتية مساعدة على تتبع تحليل وفهم تطورات المشاركة السياسية والانتقال الديمقراطي",
                             TypeMesure = 1
@@ -20750,7 +20761,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بتفعيل هيئة المناصفة ومكافحة جميع أشكال التمييز. ",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -20763,7 +20774,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تكريس مبدأ التشاور العمومي في إعداد السياسات العمومية وتنفيذها وتقييمها، وكذا تفعيل دور الجمعيات المهتمة بقضايا الشأن العام والمنظمات غير الحكومية في المساهمة في إعداد القرارات والمشاريع لدى المؤسسات المنتخبة والسلطات العمومية وتفعيلها وتقييمها.",
                             ResultatsAttendu = "مقتضيات قانونية تعزز المشاركة المواطنة",
                             TypeMesure = 1
@@ -20776,7 +20787,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  إغناء وإثراء الحوار العمومي الخاص بالمشاركة السياسية من خلال برامج تسهل وتضمن ولوج مختلف الفاعلين (أحزاب سياسية، نقابات، جمعيات...) للخدمات الإعلامية العمومية لتعزيز مساهمتهم في تأطير المواطنات والمواطنين وتطوير التعددية والحكامة السياسية.",
                             ResultatsAttendu = "فضاء سمعي بصري داعم للمشاركة السياسية",
                             TypeMesure = 1
@@ -20802,7 +20813,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إطلاق برامج تواصلية لتعزيز الديمقراطية التشاركية.",
                             ResultatsAttendu = "بيئة داعمة ومحفزة للديمقراطية التشاركية ",
                             TypeMesure = 1
@@ -20828,7 +20839,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج لتربية الأطفال على قيم المواطنة في الوسط التربوي ودعم برلمان الطفل وكافة أشكال تفعيل حقوق المشاركة لدى الأطفال.",
                             ResultatsAttendu = "برامج داعمة لقيم المواطنة ومشاركة الأطفال ",
                             TypeMesure = 1
@@ -20841,7 +20852,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحداث فضاءات لإثراء مشاركة اليافعين والشباب في الوسط التربوي والهيئات التمثيلية.",
                             ResultatsAttendu = "برامج ومبادرات داعمة لمشاركة الشباب واليافعين",
                             TypeMesure = 1
@@ -20854,7 +20865,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج تدريبية وتكوينية فعالة تستهدف تطوير مهارات التواصل والرفع بمستوى الثقافة الحقوقية والسياسية في نطاق الدستور والتزامات المملكة المغربية في مجال حقوق الإنسان.",
                             ResultatsAttendu = "برامج ومبادرات داعمة لمشاركة الشباب واليافعين",
                             TypeMesure = 1
@@ -20893,7 +20904,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بتفعيل هيئة المناصفة ومكافحة جميع أشكال التمييز كمدخل أساسي من مداخل تقوية قيم المساواة والإنصاف الموجهة للسياسات العمومية والاستراتيجيات والمخططات والبرامج الوطنية.",
                             ResultatsAttendu = "سياسات عمومية دامجة لمقاربة النوع.",
                             TypeMesure = 1
@@ -20906,7 +20917,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل مقاربة النوع في كافة المجالس المنتخبة وطنيا وجهويا ومحليا.",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -20919,7 +20930,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تجويد عمل آليات الحوار والتشاور الكفيلة بإعمال المساواة وتكافؤ الفرص على نحو أفضل في كافة دوائر اتخاذ القرار في القطاعات العمومية الوطنية والمحلية والقطاع الخاص والمنظمات غير الحكومية. ",
                             ResultatsAttendu = "مبادرات داعمة لتفعيل مقاربة النوع  ",
                             TypeMesure = 1
@@ -20945,7 +20956,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 2,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز دور وسائل الإعلام في نشر قيم ومبادئ المساواة والمناصفة وتكافؤ الفرص ومحاربة التمييز.",
                             ResultatsAttendu = "بيئة داعمة لثقافة المساواة والمناصفة",
                             TypeMesure = 1
@@ -20997,7 +21008,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقوية خدمات القرب وإلزامية تقييم السياسات العمومية وإحداث جهاز مؤسساتي متخصص في هذا المجال.",
                             ResultatsAttendu = "بيئة إعلامية داعمة لإدماج البعد الثقافي على المستوى الجهوي",
                             TypeMesure = 1
@@ -21010,7 +21021,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة دعم الجهات بمناسبة وضع التصاميم الجهوية المقترحة لإعداد التراب.",
                             ResultatsAttendu = "آليات داعمة لتقوية خدمات القرب وتقييم السياسات العمومية",
                             TypeMesure = 1
@@ -21049,7 +21060,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية الإطار القانوني والتنظيمي لتعزيز النزاهة والشفافية من خلال ملاءمته مع الاتفاقيات الدولية لمكافحة الفساد كما صادقت عليها المملكة المغربية ليشمل ما يتعلق بالتنسيق وآليات التحري والوصول إلى المعلومات والتنفيذ الفعال والتتبع والإشراف.",
                             ResultatsAttendu = "-",
                             TypeMesure = 1
@@ -21062,7 +21073,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بالمصادقة على المقتضيات القانونية المؤطرة لتجريم الإثراء غير المشروع.",
                             ResultatsAttendu = "الإطار القانوني والتنظيمي الوطني لتعزيز النزاهة والشفافية متلائم مع الاتفاقيات الدولية لمكافحة الفساد ",
                             TypeMesure = 1
@@ -21101,7 +21112,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  استكمال الإجراءات التشريعية المتعلقة بإصدار مشروع القانون رقم 13.31 المتعلق بالحق في الوصول إلى المعلومات.",
                             ResultatsAttendu = "إطار تنظيمي محفز للوقاية من الفساد ",
                             TypeMesure = 1
@@ -21127,7 +21138,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تفعيل مختلف أشكال الرقابة البرلمانية والإدارية والقضائية في مكافحة الفساد.",
                             ResultatsAttendu = "مناخ تشاركي داعم لمكافحة الفساد",
                             TypeMesure = 1
@@ -21192,7 +21203,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعميم الخدمات العمومية الإلكترونية في أفق الوصول إلى تحقيق الإدارة الرقمية الشاملة. ",
                             ResultatsAttendu = "قدرات معززة لتفعيل برامج مكافحة الفساد   ",
                             TypeMesure = 1
@@ -21205,7 +21216,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز طرق وأشكال التبليغ عن حالات الفساد، بما في ذلك وضع خط أخضر وتيسير تقديم الشكايات.",
                             ResultatsAttendu = "برامج رقمية داعمة لتجويد الخدمات الإدارية",
                             TypeMesure = 1
@@ -21218,7 +21229,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع معايير مرجعية قابلة للتتبع وقياس مظاهر الفساد.",
                             ResultatsAttendu = "آليات داعمة للوقاية من الفساد",
                             TypeMesure = 1
@@ -21231,7 +21242,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقوية الحوار العمومي حول منجز مؤسسات الرقابة والحكامة.",
                             ResultatsAttendu = "إطار مرجعي معياري وطني معتمد ",
                             TypeMesure = 1
@@ -21244,7 +21255,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع سياسة إعلامية وخطط تواصلية لبلوغ أهداف الاستراتيجية الوطنية لمكافحة الفساد وفق مقاربة تتأسس على سيادة القانون واحترام حقوق الإنسان.",
                             ResultatsAttendu = "دينامية داعمة لتطوير انخراط مختلف الفاعلين في مجال مكافحة الفساد",
                             TypeMesure = 1
@@ -21270,7 +21281,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج للتدريب والتكوين والتكوين المستمر لفائدة مختلف الفاعلين والمتدخلين في مجالات مكافحة الفساد وتعزيز النزاهة والشفافية وإشاعة أخلاقياتها.",
                             ResultatsAttendu = "آليات داعمة لتعميق المعرفة الموضوعية بالفساد",
                             TypeMesure = 1
@@ -21309,7 +21320,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإصدار قانون يتعلق بالتحقق من هوية الأشخاص بواسطة البصمات الجينية. ",
                             ResultatsAttendu = "إطار قانوني ضامن للوقاية من التعذيب",
                             TypeMesure = 1
@@ -21335,7 +21346,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إلزام المنظومة التعميرية والأمنية بنصب كاميرات يكون بإمكانها المساعدة على مكافحة الجريمة وحماية الأشخاص والممتلكات.",
                             ResultatsAttendu = "تدابير معززة لإدماج البعد الأمني  / في وثائق التعمير",
                             TypeMesure = 1
@@ -21374,7 +21385,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تجهيز أماكن الحرمان من الحرية بوسائل التوثيق السمعية البصرية لتوثيق تصريحات المستجوبين من طرف الشرطة القضائية ووضعها رهن إشارة القضاء.",
                             ResultatsAttendu = "تدخلات أمنية موثقة سمعيا وبصريا",
                             TypeMesure = 1
@@ -21400,7 +21411,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "دعم المؤسسات الأمنية بالموارد البشرية والمالية والتقنية اللازمة.",
                             ResultatsAttendu = "آليات داعمة لأنسنة ظروف الحراسة النظرية",
                             TypeMesure = 1
@@ -21413,7 +21424,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية أداء المؤسسة البرلمانية في مجال التقصي حول انتهاكات حقوق الإنسان مع إخضاع الأجهزة الأمنية للرقابة البرلمانية.",
                             ResultatsAttendu = "موارد مساعدة على تجويد الخدمات الأمنية",
                             TypeMesure = 1
@@ -21465,7 +21476,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إعداد ونشر دلائل ودعائم ديداكتيكية لتوعية وتحسيس المسؤولين وأعوان الأمن بقواعد الحكامة الجيدة على المستوى الأمني واحترام حقوق الإنسان.",
                             ResultatsAttendu = "بنيات أمنية للتواصل داعمة لتجويد خدمة المرفق الأمني",
                             TypeMesure = 1
@@ -21478,7 +21489,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعميم تدريس مادة حقوق الإنسان وأحكام القانون الدولي الإنساني ضمن برامج التكوين الأساسي والمستمر الخاص بالموظفين المكلفين بتنفيذ القانون.",
                             ResultatsAttendu = "أدوات ودلائل داعمة للنهوض بقواعد الحكامة الجيدة على المستوى الأمني واحترام حقوق الإنسان",
                             TypeMesure = 1
@@ -21504,7 +21515,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية الخبرة الفنية فيما يخص عمل لجان تقصي الحقائق البرلمانية.",
                             ResultatsAttendu = "قدرات موظفي المؤسسات الأمنية معززة في تدبير فضاء الاحتجاج",
                             TypeMesure = 1
@@ -21517,7 +21528,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة ملاءمة الإطار القانوني المتعلق بحريات الاجتماع وتأسيس الجمعيات مع المعايير الدولية لحقوق الإنسان في نطاق الدستور وأحكامه.",
                             ResultatsAttendu = "قدرات مدعمة لأعمال لجن تقصي الحقائق",
                             TypeMesure = 1
@@ -21569,7 +21580,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "كفالة احترام المقتضيات القانونية المتعلقة بوصل إيداع ملفات تأسيس الجمعيات.",
                             ResultatsAttendu = "آليات داعمة لضمان ممارسة الحريات العامة",
                             TypeMesure = 1
@@ -21582,7 +21593,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز الشراكة بين مؤسسات الدولة والجمعيات والرفع من مستوى حكامتها.",
                             ResultatsAttendu = "آليات داعمة لتطوير الممارسة المتعلقة بتأسيس الجمعيات",
                             TypeMesure = 1
@@ -21608,7 +21619,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز آليات الوساطة والتوفيق والتدخل الاستباقي المؤسساتي والمدني لتفادي حالات التوتر والحيلولة دون وقوع انتهاكات.",
                             ResultatsAttendu = "مبادرات مؤسساتية ميسرة لممارسة حريات الاجتماع والتجمهر والتظاهر السلمي ",
                             TypeMesure = 1
@@ -21621,7 +21632,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة تجريم كل الأفعال التي تمثل انتهاكا جسيما لحقوق الإنسان وفقا لأحكام الدستور.",
                             ResultatsAttendu = "آليات داعمة للتدبير التوقعي والتدخل الاستباقي لتفادي حالات التوتر",
                             TypeMesure = 1
@@ -21634,7 +21645,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تكريس مبدأ عدم الإفلات من العقاب في السياسة الجنائية وفي سائر التدابير العمومية.",
                             ResultatsAttendu = " مقتضيات قانونية داعمة لتجريم الانتهاكات الجسيمة لحقوق الإنسان  ",
                             TypeMesure = 1
@@ -21647,7 +21658,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تيسير التقاضي للضحايا من خلال توفير المساعدة القانونية والقضائية.",
                             ResultatsAttendu = "إطار قانوني داعم لمبدأ عدم الإفلات من العقاب",
                             TypeMesure = 1
@@ -21673,7 +21684,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "حماية المشتكين والمبلغين والشهود والمدافعين عن حقوق الإنسان من أي سوء معاملة ومن أي ترهيب بسبب شكاويهم أو شهاداتهم أمام السلطات العمومية والقضائية.",
                             ResultatsAttendu = "مقتضيات قانونية ضامنة لحقوق الضحايا",
                             TypeMesure = 1
@@ -21686,7 +21697,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع إطار تشريعي وتنظيمي مستقل لمأسسة الطب الشرعي.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية المشتكين والمبلغين والشهود والمدافعين عن حقوق الإنسان من أي سوء معاملة",
                             TypeMesure = 1
@@ -21725,7 +21736,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تشجيع إمكانيات التظلم الإداري والقضائي صونا لمبدأ عدم الإفلات من العقاب وضمانا لوصول الضحايا إلى سبل الانتصاف المناسبة.",
                             ResultatsAttendu = "نتائج تحريات الآلية الوطنية للوقاية من التعذيب محالة على القضاء",
                             TypeMesure = 1
@@ -21829,7 +21840,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "   إدماج المقاربة الحقوقية في جميع الأنشطة التربوية.",
                             ResultatsAttendu = "برامج داعمة لتعميم تمدرس الفتيات ",
                             TypeMesure = 1
@@ -21842,7 +21853,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  بلورة سياسة لغوية تضمن العدالة اللغوية وتأخذ بعين الاعتبار حاجيات التلاميذ وتراعي الخصوصيات اللغوية والثقافية للأقاليم والجهات",
                             ResultatsAttendu = "حياة مدرسية مفعلة وفق مقاربة حقوقية ",
                             TypeMesure = 1
@@ -21855,7 +21866,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "   إيجاد آليات لربط مخرجات المنظومة التربوية بالحاجيات الاقتصادية والاجتماعية والثقافية وبأهداف الخطط التنموية",
                             ResultatsAttendu = "سياسة عمومية داعمة للعدالة اللغوية ",
                             TypeMesure = 1
@@ -21868,7 +21879,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  مأسسة وتعميم الدعم المادي المقدم للمتمدرسين المعوزين والأطفال في وضعية إعاقة",
                             ResultatsAttendu = "آليات مساهمة في ربط التكوين بالحاجيات الاقتصادية والاجتماعية والثقافية",
                             TypeMesure = 1
@@ -21881,7 +21892,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  إيجاد آليات إدارية تحفز المدرسين على المشاركة الفعالة في المشاريع المدرسية والتربوية وتسمح بتوسيع مشاركة التلاميذ فيها",
                             ResultatsAttendu = "آليات داعمة لمأسسة وتعميم الدعم المادي على الأطفال المتمدرسين المعوزين أو في وضعية إعاقة ",
                             TypeMesure = 1
@@ -21933,7 +21944,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تقوية قيم التسامح والعيش المشترك واحترام حقوق الإنسان ونبذ الكراهية والعنف والتطرف في المناهج التربوية وفي الفضاء المدرسي.",
                             ResultatsAttendu = "إجراءات معززة لتيسير ولوج التعليم العالي ومساهمة في تقوية وتثمين البحث العلمي ",
                             TypeMesure = 1
@@ -21946,7 +21957,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  إرساء استراتيجية ثقافية وطنية",
                             ResultatsAttendu = "مدرسة حاضنة لقيم التسامح والعيش المشترك ونبذ الكراهية والعنف والتطرف",
                             TypeMesure = 1
@@ -21972,7 +21983,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  الإسراع بإصدار القانون التنظيمي المتعلق بالمجلس الوطني للغات والثقافة المغربية",
                             ResultatsAttendu = "قانون تنظيمي معتمد",
                             TypeMesure = 1
@@ -21998,7 +22009,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز استعمال اللغة العربية في المرافق العمومية وباقي مناحي الحياة العامة",
                             ResultatsAttendu = "مناخ داعم للتنوع الثقافي",
                             TypeMesure = 1
@@ -22037,7 +22048,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإدماج العرضاني للحقوق اللغوية والثقافية الأمازيغية في برامج التربية والتكوين وفي المحيط المدرسي والجامعي",
                             ResultatsAttendu = "بيئة تربوية مساعدة على إدماج الحقوق اللغوية والثقافية الأمازيغية",
                             TypeMesure = 1
@@ -22050,7 +22061,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز مكانة الثقافة والموروث الحساني في النموذج التنموي الخاص بالأقاليم الجنوبية وضمن التطور المجتمعي الوطني",
                             ResultatsAttendu = "برامج معززة لمكانة الموروث الثقافي الحساني في النموذج التنموي",
                             TypeMesure = 1
@@ -22076,7 +22087,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز وسائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق الثقافية",
                             ResultatsAttendu = "سائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق معززة جهويا ومركزيا",
                             TypeMesure = 1
@@ -22089,7 +22100,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة تعزيز القناة التلفزية الأمازيغية وتمكينها من الموارد البشرية والكفاءات اللازمة للبث المتواصل",
                             ResultatsAttendu = "بث متواصل للقناة التلفزية الأمازيغية",
                             TypeMesure = 1
@@ -22115,7 +22126,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع إحداث محطات إذاعية تستخدم اللغات المتداولة وتلبي حاجيات المواطنين على مستوى الإعلام والتثقيف والتوعية والترفيه.",
                             ResultatsAttendu = "محطات جهوية متفاعلة مع محيطها",
                             TypeMesure = 1
@@ -22167,7 +22178,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إحداث فضاءات للحوار والتشاور الدائمين بين منظمات المجتمع المدني والشباب على صعيد الجماعات الترابية فيما يخص الإنتاج الثقافي والأنشطة الداعمة للحياة الثقافية",
                             ResultatsAttendu = "جماعات ترابية داعمة لمبادرات الشباب والمجتمع المدني في المجال الثقافي ",
                             TypeMesure = 1
@@ -22180,7 +22191,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع مبادرات الشباب والمجتمع المدني فيما يخص التربية الثقافية والإنتاج الثقافي ودعم المشاريع المحفزة على الإبداع",
                             ResultatsAttendu = "مناخ داعم لمبادرات الشباب في المجال الثقافي ",
                             TypeMesure = 1
@@ -22193,7 +22204,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز القواعد المنظمة للسكن اللائق بإحداث مرافق تعزز الحياة والإبداع الثقافيين.",
                             ResultatsAttendu = "برامج سكنية معززة للحياة الثقافية",
                             TypeMesure = 1
@@ -22219,7 +22230,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعميم المكتبات ومراكز التنشيط الثقافي والمسرحي والفني في المناطق التي تفتقر للبنيات التحتية الثقافية.",
                             ResultatsAttendu = "بنيات مشجعة على الحياة الثقافية ",
                             TypeMesure = 1
@@ -22232,7 +22243,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج تيسر مشاركة وتمتع الأشخاص المسنين وفي وضعية إعاقة بالحقوق الثقافية.",
                             ResultatsAttendu = "بيئة داعمة لتمتع الأشخاص المسنين      وفي وضعية إعاقة بالحقوق الثقافية",
                             TypeMesure = 1
@@ -22245,7 +22256,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إحداث متاحف موضوعاتية جهوية تبرز تراث كل منطقة وخصوصياتها الثقافية والفنية.",
                             ResultatsAttendu = "بنيات حاضنة للتنوع الثقافي والتراثي ",
                             TypeMesure = 1
@@ -22284,7 +22295,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع إحداث محطات إعلامية جهوية",
                             ResultatsAttendu = "محطات جهوية متفاعلة مع محيطها",
                             TypeMesure = 1
@@ -22297,7 +22308,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تمكين الشباب من المساهمة الفاعلة في تدبير الحياة الثقافية والتحفيز على الولوج إليها",
                             ResultatsAttendu = "مناخ داعم لمبادرات الشباب في المجال الثقافي ",
                             TypeMesure = 1
@@ -22323,7 +22334,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج تواصلية للجمهور الواسع تستهدف التعريف والتحسيس بالحقوق الثقافية واللغوية ومختلف إبداعاتها",
                             ResultatsAttendu = "بيئة مشجعة للنهوض بالحقوق الثقافية ",
                             TypeMesure = 1
@@ -22349,7 +22360,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بالمصادقة على مشروع القانون المتعلق بمكافحة الاضطرابات العقلية وبحماية حقوق الأشخاص المصابين بها.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية الأشخاص المصابين بالاضطرابات العقلية ",
                             TypeMesure = 1
@@ -22401,7 +22412,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم الموارد البشرية الطبية وشبه الطبية والإدارية ومواصلة تعزيز الكفاءات عن طريق التكوين والتكوين المستمر.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي   ",
                             TypeMesure = 1
@@ -22414,7 +22425,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تأهيل أقسام المستعجلات لتعزيز الخدمات المتعلقة بالحالات الطارئة والخطيرة.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي/ أقسام المستعجلات مؤهلة لتقديم خدمات ذات جودة وتغطي الحاجيات",
                             TypeMesure = 1
@@ -22453,7 +22464,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " ضمان حقوق المصابين بالأمراض المتنقلة جنسيا وحمايتهم من كل أشكال التمييز أو الإقصاء أو الوصم.",
                             ResultatsAttendu = "برامج داعمة لحقوق المصابين بالأمراض المتنقلة جنسيا",
                             TypeMesure = 1
@@ -22466,7 +22477,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تحسين جودة الخدمات وتوسيع التغطية لتشمل باقي الفئات الأخرى وضمان التوزيع العادل للموارد على كافة التراب الوطني. ",
                             ResultatsAttendu = "برامج داعمة لتعميم وتجويد الخدمات الصحية",
                             TypeMesure = 1
@@ -22505,7 +22516,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النهوض بالصحة النفسية والعقلية ومواصلة مأسستها وتعميم خدماتها.",
                             ResultatsAttendu = "بنيات داعمة للنهوض بالصحةالنفسيةوالعقلية",
                             TypeMesure = 1
@@ -22518,7 +22529,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم عمل الفرق الطبية المتنقلة في إطار تقريب الخدمات الصحية وتيسيرها.",
                             ResultatsAttendu = "آليات داعمة لتقريب الخدمات الصحية وتيسيرها",
                             TypeMesure = 1
@@ -22531,7 +22542,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم الخطة المتعلقة بتوفير الأدوية الأساسية الاستعجالية وتلك المتعلقة بالأمراض المزمنة.",
                             ResultatsAttendu = "خطة داعمة لضمان تموين مستمر بالأدوية",
                             TypeMesure = 1
@@ -22570,7 +22581,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تطوير سبل التعاون والتنسيق بين القطاع العام والخاص بما يؤمن تجويد الخدمات الصحية والولوج العادل والمتكافئ إليها. ",
                             ResultatsAttendu = "شراكات مساهمة في الارتقاء بالمنظومة الصحية",
                             TypeMesure = 1
@@ -22622,7 +22633,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز البرامج السمعية البصرية المتعلقة بالحق في الصحة",
                             ResultatsAttendu = "برامج سمعية بصرية داعمة للحق في الصحة",
                             TypeMesure = 1
@@ -22674,7 +22685,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع وتقوية أدوار لجان الحوار والمصالحة الإقليمية والوطنية.",
                             ResultatsAttendu = "اللجان الإقليمية للبحث والمصالحة مفعلة على مستوى العمالات والأقاليم.",
                             TypeMesure = 1
@@ -22687,7 +22698,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " اعتماد المساواة وتكافؤ الفرص في برامج التكوين والتأهيل والإدماج في سوق الشغل.",
                             ResultatsAttendu = "المساواة وتكافؤ الفرص فئويا ومجاليا مفعلة في برامج التكوين والتأهيل والإدماج في سوق الشغل",
                             TypeMesure = 1
@@ -22700,7 +22711,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور الآليات الاستباقية للتقليص من النزاعات في مجال الشغل.",
                             ResultatsAttendu = "قدرات جهاز تفتيش الشغل في مجال التدخل الإستباقي معززة",
                             TypeMesure = 1
@@ -22713,7 +22724,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعمال مبدأ الشفافية وتكافؤ الفرص في التشغيل ووضع آليات ومساطر إدارية تنظم الإعلان عن المناصب الشاغرة في جميع القطاعات وفي مرافق الإدارة العمومية ضمانا للشفافية.",
                             ResultatsAttendu = "الشفافية   وتكافؤ الفرص في التوظيف معززة  ",
                             TypeMesure = 1
@@ -22726,7 +22737,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إعداد برامج لدعم وتنشيط المقاولات الصغرى والمتوسطة والتعاونيات ووضع شباك داخل الجماعات الترابية للتعريف بالمقاولات خصوصا النسائية منها.",
                             ResultatsAttendu = "برامج داعمة للمقاولات الصغرى           والمتوسطة",
                             TypeMesure = 1
@@ -22765,7 +22776,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقوية آلية التعويض عن فقدان الشغل.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية العمال      والأجراء عند فقدان الشغل",
                             TypeMesure = 1
@@ -22791,7 +22802,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج وخطط كفيلة بتأهيل التكوين المهني وجعله يساهم بفعالية في تقليص معدلات البطالة. ",
                             ResultatsAttendu = "برامج داعمة للنهوض بالتكوين المهني كرافعة للتشغيل",
                             TypeMesure = 1
@@ -22804,7 +22815,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج للتوعية والتحسيس بمقتضيات مدونة الشغل لفائدة العمال.",
                             ResultatsAttendu = "برامج داعمةلاحترام مقتضيات مدونة الشغل",
                             TypeMesure = 1
@@ -22817,7 +22828,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنظيم دورات تدريبية لفائدة موظفي وأطر وزارة الشغل والأطر النقابية ومناديب المستخدمين وأرباب العمل بغية إشاعة ثقافة حقوق الإنسان في ميدان التشغيل.",
                             ResultatsAttendu = "الرفع من قدرات أطر وزارة الشغل والإدماج المهني والأطر النقابية ومناديب المستخدمين وأرباب العمل في مجال حقوق الانسان",
                             TypeMesure = 1
@@ -22830,7 +22841,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج لتكوين قضاة متخصصين في قانون الشغل.",
                             ResultatsAttendu = "برامج داعمة للتخصص القضائي في قانون الشغل",
                             TypeMesure = 1
@@ -22843,7 +22854,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إرساء استراتيجية وطنية شمولية ومندمجة في مجال السكن.",
                             ResultatsAttendu = "استراتيجية وطنية معتمدة داعمة للحق في السكن   ",
                             TypeMesure = 1
@@ -22856,7 +22867,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز المنظومة القانونية المتعلقة بالسكن والتعمير وملاءمتها مع متطلبات حقوق الإنسان.",
                             ResultatsAttendu = "إطار قانوني داعم للحق في السكن",
                             TypeMesure = 1
@@ -22869,7 +22880,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع مقتضيات قانونية وتنظيمية تخص المعايير الدنيا المطبقة على السكن الاجتماعي من حيث المواصفات العمرانية والمناطق الخضراء والسلامة الأمنية والولوجيات.",
                             ResultatsAttendu = "منظومة قانونية داعمة للسكن الاجتماعي ",
                             TypeMesure = 1
@@ -22895,7 +22906,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل القانون للحد من التجاوزات في ميدان التعمير والإسكان وزجر المخالفات وضمان سلامة البناء في الوسطين الحضري والقروي.",
                             ResultatsAttendu = "منظومة قانونية داعمة للحد من التجاوزات في ميدان التعمير والإسكان",
                             TypeMesure = 1
@@ -22908,7 +22919,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إسراع وتيرة إنجاز برامج القضاء على السكن غير اللائق.",
                             ResultatsAttendu = "برامج مساهمة في القضاء على السكن غير اللائق",
                             TypeMesure = 1
@@ -22947,7 +22958,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " التأهيل الحضري للأحياء غير القانونية لتحسين ظروف السكان القاطنين بها.",
                             ResultatsAttendu = "برامج للتأهيل الحضري داعمة لتحسين ظروف عيش الساكنة",
                             TypeMesure = 1
@@ -22973,7 +22984,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " حصر الاستفادة من برنامج السكن الاجتماعي في ذوي الدخل المحدود بالصرامة اللازمة",
                             ResultatsAttendu = "آليات داعمة لتعزيز الحكامة في تنفيذ برامج السكن الاجتماعي",
                             TypeMesure = 1
@@ -22999,7 +23010,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل القانون المتعلق بالمباني الآيلة للسقوط وتنظيم عمليات التجديد الحضري ووضع برامج متكاملة لمعالجة السكن المهدد بالانهيار لتشمل مجموع التراب الوطني.",
                             ResultatsAttendu = "إطار مؤسساتي وتنظيمي داعم لمعالجة إشكالية السكن المهدد بالانهيار",
                             TypeMesure = 1
@@ -23012,7 +23023,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " جعل التدابير الجبائية التحفيزية لفائدة المنعشين العقاريين المنخرطين في إنجاز مشاريع السكن الاجتماعي تتلاءم وتوفير العرض السكني اللائق لمختلف فئات المجتمع.",
                             ResultatsAttendu = "تدابير تحفيزية داعمة لتكثيف العرض السكني",
                             TypeMesure = 1
@@ -23025,7 +23036,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تضمين دفاتر التحملات للمعايير الدنيا المطبقة على السكن الاجتماعي المحددة بصفة قانونية أو تنظيمية.",
                             ResultatsAttendu = "برامج داعمة لتعزيز مكانة اللغة العربية في الجامعة",
                             TypeMesure = 1
@@ -23090,7 +23101,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " ملاءمة الإطار القانوني الوطني مع الاتفاقيات الدولية المتعلقة بحماية البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "إطار قانوني وطنيمتلائم",
                             TypeMesure = 1
@@ -23142,7 +23153,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مراجعة اختصاصات وتنظيم المجلس الوطني للبيئة بهدف وضع الهياكل والمؤسسات والآليات والمساطر اللازمة للحكامة البيئية الجيدة وتحقيق التنمية المستدامة طبقا لمبادئ وأهداف القانون الإطار بمثابة ميثاق وطني للبيئة والتنمية المستدامة. ",
                             ResultatsAttendu = "التأطير القانوني للمجالات البيئية معزز",
                             TypeMesure = 1
@@ -23168,7 +23179,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النظر في تجميع القوانين القطاعية ذات الصلة بالبيئة في إطار مدونة واضحة ومحينة لأجل تعزيز الانسجام بينها وتسهيل الولوج إلى مضامينها من طرف الهيئات التي تسهر على تطبيقها ومن طرف المواطنات والمواطنين.",
                             ResultatsAttendu = "مصنفات مساهمة في الولوج إلى القوانين ذات الصلة بالبيئة ",
                             TypeMesure = 1
@@ -23194,7 +23205,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تخصيص تحفيزات مالية وتقنية لدعم المشاريع في مجال البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "موارد مالية مساهمة في دعم المشاريع الصديقة للبيئة ",
                             TypeMesure = 1
@@ -23233,7 +23244,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تأمين مشاركة ومساهمة مختلف الفاعلين وخاصة منظمات المجتمع المدني والهيئات السياسية والنقابية والإعلامية في النهوض بالثقافة البيئية ومختلف البرامج البيئية.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالثقافة البيئية",
                             TypeMesure = 1
@@ -23246,7 +23257,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل سياسة القرب في مجال تدبير البيئة وتسريع وتيرة تنفيذها.",
                             ResultatsAttendu = "إطار مؤسساتي داعم لسياسة القرب",
                             TypeMesure = 1
@@ -23259,7 +23270,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تطوير تدبير المجال الغابوي بالشكل الذي يوفر حماية شاملة للمحميات ولحقوق السكان ونشاطهم الزراعي والفلاحي.",
                             ResultatsAttendu = "ديناميات معززة للحماية القانونية للمجال الغابوي  وداعمة لتنمية مستدامة",
                             TypeMesure = 1
@@ -23272,7 +23283,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقنين الزراعات المستهلكة للمياه خاصة بالمناطق الهشة.",
                             ResultatsAttendu = "برامج داعمةلتكريس تدبير يحافظ على الموارد المائية المحدودة ويضمن استدامتها",
                             TypeMesure = 1
@@ -23337,7 +23348,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تيسير ولوج المواطنات المواطنين إلى القضاء عند التعرض للأضرار البيئية لأجل تحقيق عدالة بيئية.",
                             ResultatsAttendu = "معرفة مساعدة على تيسير الحق في العدالة البيئية  ",
                             TypeMesure = 1
@@ -23350,7 +23361,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع التدريس والبحث العلمي في الجامعة ومعاهد التكوين ومراكز البحث العلمي حول البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "مبادرات داعمة للتدريس والبحث العلمي في مجال البيئة",
                             TypeMesure = 1
@@ -23376,7 +23387,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنظيم حملات تحسيسية بمتطلبات ترشيد وعقلنة تدبير الموارد الطبيعية وحماية البيئة عبر وسائل الإعلام المكتوبة والمسموعة والمرئية والإلكترونية.",
                             ResultatsAttendu = "برامج إعلامية داعمة لحماية البيئة  ",
                             TypeMesure = 1
@@ -23389,7 +23400,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إدماج البعد البيئي في البرامج والمقررات الدراسية وفي الأنشطة التربوية بالوسط المدرسي.",
                             ResultatsAttendu = "مناهج ومقرراتدراسية معززة للتربية البيئية",
                             TypeMesure = 1
@@ -23415,7 +23426,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز برامج دعم القدرات في مجال البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "برامج مساعدة على رفع القدرات في مجال البيئة والتنمية المستدامة",
                             TypeMesure = 1
@@ -23428,7 +23439,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تكوين القضاة والشرطة القضائية والبيئية في مجال الحقوق البيئية.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي   ",
                             TypeMesure = 1
@@ -23506,7 +23517,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الوعي بموضوع المقاولة وحقوق الإنسان من خلال تنظيم لقاءات وطنية وجهوية بمشاركة الأطراف المعنية. ",
                             ResultatsAttendu = "برامج داعمة للنهوض بمجال المقاولة وحقوق الإنسان ",
                             TypeMesure = 1
@@ -23519,7 +23530,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع تبادل التجارب والممارسات الفضلى بين المقاولات في مجال احترام حقوق الإنسان في المقاولة.",
                             ResultatsAttendu = "مبادرات داعمة لترسيخ الممارسات الفضلى في مجال المقاولة وحقوق الإنسان ",
                             TypeMesure = 1
@@ -23532,7 +23543,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع برامج تكوينية في مجال حقوق الإنسان في المقاولة لفائدة كل المتدخلين وأصحاب المصلحة (مسؤولو المقاولة والأطر النقابية والفاعلون المدنيون والقضاة والمحامون ومفتشو الشغل).",
                             ResultatsAttendu = "برامج تكوينية مساعدة على الرفع من مستوى الوعي بحقوق الإنسان في المقاولة",
                             TypeMesure = 1
@@ -23545,7 +23556,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع التدريس والبحث العلمي في الجامعة ومعاهد التكوين ومراكز البحث العلمي حول المقاولة وحقوق الإنسان",
                             ResultatsAttendu = "برامج داعمة للتدريس والبحث الجامعي حول المقاولة وحقوق الإنسان",
                             TypeMesure = 1
@@ -23571,7 +23582,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تكثيف البرامج التي تستهدف الفئات الهشة خاصة في وضعية التشرد، وضمان خدمات المواكبة والاستماع والتكفل والادماج الاقتصادي والاجتماعي والأسري.",
                             ResultatsAttendu = "برامج داعمة للفئات الهشة",
                             TypeMesure = 1
@@ -23636,7 +23647,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " اعتماد معايير الجودة في التدبير وفي خدمات التكفل بمؤسسات الرعاية الاجتماعية من أجل ضمان الحقوق الفئوية. ",
                             ResultatsAttendu = "مؤسسات للرعاية الاجتماعية معتمدة لمعايير الجودة في التدبير وخدمات التكفل",
                             TypeMesure = 1
@@ -23649,7 +23660,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تجميع ونشر القوانين والتشريعات المتعلقة بالفئات المعنية والتعريف بمقتضياتها.",
                             ResultatsAttendu = "مصنفات منجزة",
                             TypeMesure = 1
@@ -23675,7 +23686,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع الجماعات الترابية لبرامج في مجال الحقوق الفئوية.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالحقوق الفئوية",
                             TypeMesure = 1
@@ -23688,7 +23699,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الرفع من الاعتمادات المخصصة للنهوض بالحقوق الفئوية في الميزانية العامة.",
                             ResultatsAttendu = "اعتمادات مالية مساهمة في النهوض بالحقوق الفئوية",
                             TypeMesure = 1
@@ -23701,7 +23712,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " اعتماد الحكامة الجيدة في تتبع تنفيذ البرامج والاستراتيجيات الخاصة بالفئات في وضعية هشاشة. ",
                             ResultatsAttendu = "آليات داعمة لضمان الحكامة الجيدة في تتبع البرامج الخاصة بالفئات في وضعية هشاشة",
                             TypeMesure = 1
@@ -23714,7 +23725,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مراجعة الإطار القانوني المتعلق بالإحسان العمومي.           ",
                             ResultatsAttendu = "إطار قانوني داعم لتجويد مبادرات الإحسان العمومي",
                             TypeMesure = 1
@@ -23753,7 +23764,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تأهيل وتعزيز قدرات جمعية الهلال الأحمر المغربي والجمعيات الوطنية الأخرى المعنية بالفئات الاجتماعية في وضعية هشاشة.",
                             ResultatsAttendu = "برنامج داعم لقدرات جمعيات المجتمع المدني",
                             TypeMesure = 1
@@ -23779,7 +23790,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بإحداث وتفعيل الآلية الوطنية للتظلم الخاصة بالأطفال ضحايا انتهاكات حقوق الطفل.",
                             ResultatsAttendu = "الآلية الوطنية للتظلم الخاصة بالأطفال ضحايا انتهاكات حقوق الطفل مفعلة",
                             TypeMesure = 1
@@ -23857,7 +23868,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة الحوار المجتمعي حول مراجعة المادة 20 من مدونة الأسرة المتعلقة بالإذن بزواج القاصر.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -23883,7 +23894,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع مؤشرات التتبع والتقييم في مجال حماية الأطفال من سوء المعاملة ومن كل أشكال الاستغلال والعنف.",
                             ResultatsAttendu = " منظومة المؤشرات الخاصة بتتبع وضعية حماية الأطفال وتقييمها معتمدة ومفعلة",
                             TypeMesure = 1
@@ -23948,7 +23959,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز حقوق الأطفال في المشاركة في إعداد وتتبع تفعيل السياسات والبرامج والمشاريع الوطنية.",
                             ResultatsAttendu = "بيئة مشجعة على مشاركة الأطفال",
                             TypeMesure = 1
@@ -23987,7 +23998,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " العمل على ضمان المساواة بين الرجل والمرأة في التمتع بالجنسية المغربية إعمالا للمصلحة الفضلى للطفل.",
                             ResultatsAttendu = "إطار قانوني ضامن للمصلحة الفضلى للأطفال والأسرة",
                             TypeMesure = 1
@@ -24000,7 +24011,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " حماية حقوق الأطفال في وسائل الإعلام بما في ذلك وسائل الاتصال الحديثة والنهوض بالتربية عليها.",
                             ResultatsAttendu = "بيئة إعلامية داعمة لحقوق الطفل ",
                             TypeMesure = 1
@@ -24026,7 +24037,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل دورية وزارة الداخلية المتعلقة باختيار الأسماء الشخصية. ",
                             ResultatsAttendu = "آليات ميسرة لإعمال الدورية",
                             TypeMesure = 1
@@ -24091,7 +24102,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تنظيم وتتبع أوضاع كفالة الأطفال خارج المغرب.",
                             ResultatsAttendu = "آليات مساعدة على تتبع أوضاع كفالة الأطفال خارج المغرب  ",
                             TypeMesure = 1
@@ -24104,7 +24115,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الرفع من مستوى آليات تتبع أوضاع الأطفال المتكفل بهم.",
                             ResultatsAttendu = "آليات داعمة لحماية حقوق الأطفال في وضعية كفالة ",
                             TypeMesure = 1
@@ -24117,7 +24128,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل البرنامج التنفيذي للسياسة العمومية المندمجة لحماية الطفولة بالمغرب محليا وجهويا.",
                             ResultatsAttendu = "تدابير البرنامج الوطني للسياسة العمومية المندمجة لحماية الطفولة منفذة جهويا ومحليا",
                             TypeMesure = 1
@@ -24156,7 +24167,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " اتخاذ تدابير خاصة بحماية الأطفال المتخلى عنهم والعناية ببنيات استقبالهم وتبسيط مسطرة التكفل بهم.",
                             ResultatsAttendu = "بنيات مؤسساتية كفيلة بحماية الأطفال المتخلى عنهم",
                             TypeMesure = 1
@@ -24182,7 +24193,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع آليات ترابية مندمجة لحماية الطفولة تضمن التنسيق واليقظة من حيث الإشعار والتبليغ وتتبع الخدمات الموجهة للأطفال ضحايا العنف.",
                             ResultatsAttendu = "آليات ترابية مندمجة لحماية الطفولة مفعلة",
                             TypeMesure = 1
@@ -24208,7 +24219,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إدماج الجماعات الترابية لانشغالات الأطفال في مخططات التنمية المحلية على مستوى التشخيص وتحديد الحاجيات والتخطيط والتنفيذ.",
                             ResultatsAttendu = "مخططات للتنمية المحلية داعمة للنهوض بأوضاع الطفولة  من الاستغلال مطورة",
                             TypeMesure = 1
@@ -24221,7 +24232,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل آليات المراقبة التربوية والبيداغوجية واللوجيستيكية بالأماكن التي تخصص لتعليم وتربية الأطفال.",
                             ResultatsAttendu = "آليات معززة للمراقبة التربوية والبيداغوجية واللوجيستيكية",
                             TypeMesure = 1
@@ -24247,7 +24258,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إشاعة ثقافة حقوق الطفل داخل مؤسسات الرعاية الاجتماعية المستقبلة للأطفال.",
                             ResultatsAttendu = "ثقافة حقوق الطفل مشاعة داخل مؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -24273,7 +24284,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة تعزيز برامج وأنشطة حقوق المشاركة لدى الأطفال.",
                             ResultatsAttendu = "بيئة مشجعة على مشاركة الأطفال",
                             TypeMesure = 1
@@ -24312,7 +24323,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة برامج وأنشطة التدريب والتكوين المستمر على اتفاقية الأمم المتحدة لحقوق الطفل والبروتوكولات الملحقة بها.",
                             ResultatsAttendu = "قدرات الفاعلين متطورة ",
                             TypeMesure = 1
@@ -24325,7 +24336,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل المجلس الاستشاري للشباب والعمل الجمعوي وإصدار النصوص التشريعية والتنظيمية المتعلقة به.",
                             ResultatsAttendu = "المجلس الاستشاري للشباب والعمل الجمعوي مفعل",
                             TypeMesure = 1
@@ -24338,7 +24349,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع تدابير تشريعية وتنظيمية في مجال حماية الجمهور الناشئ ضد المخاطر المترتبة عن الاستعمال السيئ لوسائل التواصل المعتمدة على التكنولوجيات الحديثة. ",
                             ResultatsAttendu = "إطار قانوني داعم لحماية الجمهور الناشئ  ",
                             TypeMesure = 1
@@ -24377,7 +24388,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تقوية آليات التنسيق عبر القطاعية الخاصة بالشباب.",
                             ResultatsAttendu = "سياسة وطنية للشباب معتمدة ",
                             TypeMesure = 1
@@ -24403,7 +24414,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج استعجالية لفائدة فئات الشباب الأكثر هشاشة (في وضعية إعاقة أو إقصاء...).",
                             ResultatsAttendu = "برامج مساعدة على إدماج الشباب الأكثر هشاشة ",
                             TypeMesure = 1
@@ -24416,7 +24427,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد وتعميم تقارير دورية حول الشباب.",
                             ResultatsAttendu = "تقارير مساعدة على تتبع وضعية الشباب",
                             TypeMesure = 1
@@ -24429,7 +24440,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم الجمعيات التي تعنى بالشباب وبالترافع عن قضاياهم.",
                             ResultatsAttendu = " قدرات متطورة في مجال الترافع ",
                             TypeMesure = 1
@@ -24442,7 +24453,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تقوية مشاركة الشباب في خدمات الإعلام والتواصل. ",
                             ResultatsAttendu = "آليات داعمة لتمكين الشباب من التواصل والولوج إلى المعلومة ",
                             TypeMesure = 1
@@ -24468,7 +24479,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور الشباب في الحوارات الوطنية والجهوية المتعلقة بتدبير الشأن العام والنهوض بأوضاعهم.",
                             ResultatsAttendu = "برامج داعمة لمشاركة الشباب في تدبير الشأن العام وتقييم السياسات العمومية",
                             TypeMesure = 1
@@ -24494,7 +24505,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج لتعزيز قدرات المتدخلين في السياسة الوطنية المندمجة للشباب.",
                             ResultatsAttendu = "قدرات متطورة لتفعيل السياسة الوطنية المندمجة للشباب",
                             TypeMesure = 1
@@ -24507,7 +24518,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز مواكبة الشباب ودعمهم في مجالات الادماج الاقتصادي والمهني والاجتماعي.",
                             ResultatsAttendu = "آليات داعمة لقدرات الشباب على الاندماج الاقتصادي والمهني والاجتماعي",
                             TypeMesure = 1
@@ -24533,7 +24544,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز برامج محو الأمية في أفق القضاء عليها وتأهيل الشباب.",
                             ResultatsAttendu = "تقليص المعدل العام للأمية إلى20 % سنة 2021",
                             TypeMesure = 1
@@ -24572,7 +24583,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  الإسراع بإصدار النصوص التنظيمية المنصوص عليها في القانون الإطار المتعلق بحماية حقوق الأشخاص في وضعية إعاقة والنهوض بها.",
                             ResultatsAttendu = "مقتضيات تنظيمية داعمة لتفعيل القانون الإطار",
                             TypeMesure = 1
@@ -24624,7 +24635,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل مقتضيات الرافعة الرابعة من الرؤية الاستراتيجية لإصلاح التربية والتعليم 2015-2030 من أجل مدرسة الانصاف والجودة والارتقاء لفائدة الأشخاص في وضعية إعاقة أو في وضعيات خاصة.",
                             ResultatsAttendu = "مؤسسة تعليمية دامجة ",
                             TypeMesure = 1
@@ -24663,7 +24674,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "النهوض بالحق في الشغل للأشخاص في وضعية إعاقة من خلال تطبيق نسب التوظيف القانونية. ",
                             ResultatsAttendu = "آليات ضامنة لتطبيق النسب القانونية ",
                             TypeMesure = 1
@@ -24741,7 +24752,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " توفير الوسائل التيسيرية لولوج الأشخاص في وضعية إعاقة إلى منظومة العدالة.",
                             ResultatsAttendu = "بنيات منظومة العدالة مساعدة على ولوجها",
                             TypeMesure = 1
@@ -24754,7 +24765,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل المخطط الوطني للصحة والإعاقة.",
                             ResultatsAttendu = "مخطط وطني للصحة والإعاقة      مفعل",
                             TypeMesure = 1
@@ -24780,7 +24791,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تقنين وتأهيل خدمات مؤسسات الرعاية الاجتماعية.  ",
                             ResultatsAttendu = "  توفر مؤسسات الرعاية الاجتماعية على خدمات ذات جودة",
                             TypeMesure = 1
@@ -24845,7 +24856,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " البحث في سبل إشراك القطاع الخاص في إدماج الأشخاص في وضعية إعاقة في سوق الشغل.",
                             ResultatsAttendu = "آلية مشتركة مساعدة على إدماج الأشخاص في وضعية إعاقة في سوق الشغل",
                             TypeMesure = 1
@@ -24871,7 +24882,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعميم ولوج الأشخاص في وضعية إعاقة إلى الخدمات الثقافية من خلال اعتماد الوسائل التقنية الحديثة سواء في المؤسسات التعليمية أو المكتبات والمركبات الثقافية والبنيات الرياضية.",
                             ResultatsAttendu = "فضاءات مساعدة على ولوج الأشخاص في وضعية إعاقة إلى الخدمات الثقافية",
                             TypeMesure = 1
@@ -24884,7 +24895,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم دور القطاع الخاص للمساهمة في مسلسل الإدماج الاجتماعي للأشخاص في وضعية إعاقة. ",
                             ResultatsAttendu = "قطاع خاص منخرط في الإدماج الاجتماعي للأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -24897,7 +24908,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تسهيل الولوج لإعادة تأهيل الأشخاص في وضعية إعاقة من خلال إحداث وتجهيز مراكز الترويض في مختلف الجهات والنهوض بأنظمة التكوين الطبي وشبه الطبي مصادق عليها ومستجيبة لمجموع الحاجيات.",
                             ResultatsAttendu = "بنيات داعمة لإعادة تأهيل الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -24910,7 +24921,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز دور الإعلام في تطوير حملات للوقاية من الإعاقة وبرامج مكافحة التمييز والوصم تجاه الأشخاص ذوي الإعاقة.",
                             ResultatsAttendu = " إعلام داعم لمكافحة التمييز والوصم تجاه الأشخاص ذوي الإعاقة ",
                             TypeMesure = 1
@@ -24923,7 +24934,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تمكين الأشخاص في وضعية إعاقة من خدمات الإعلام والتواصل عن طريق إدماج لغة الإشارة في البرامج الإعلامية.",
                             ResultatsAttendu = "بيئة داعمة لولوج   الأشخاص في وضعية إعاقة للخدمات الإعلامية  ",
                             TypeMesure = 1
@@ -24962,7 +24973,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع إطار استراتيجي للنهوض بحقوق الأشخاص المسنين وحمايتها.",
                             ResultatsAttendu = "إطار استراتيجي معد ومعتمد",
                             TypeMesure = 1
@@ -24988,7 +24999,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " حماية حقوق وكرامة الأشخاص المسنين بتجويد معايير وخدمات التكفل على مستوى البنيات والموارد البشرية.",
                             ResultatsAttendu = "بنيات مهيكلة وفق معايير الجودة، مؤهلة لصيانة حقوق وكرامة الأشخاص المسنين",
                             TypeMesure = 1
@@ -25014,7 +25025,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "حث الجماعات الترابية على إدماج احتياجات الأشخاص المسنين في برامج تفعيل مخططات التنمية.",
                             ResultatsAttendu = "مخططات للتنمية المحلية داعمة للنهوض بأوضاع الأشخاص المسنين  ",
                             TypeMesure = 1
@@ -25027,7 +25038,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم وتشجيع مبادرات المجتمع المدني والقطاع الخاص لإحداث نوادي وفضاءات الترفيه الموجهة للأشخاص المسنين.",
                             ResultatsAttendu = "دينامية داعمة لمبادرات المجتمع المدني والقطاع الخاص في مجال الترفيه لفائدة الأشخاص المسنين ",
                             TypeMesure = 1
@@ -25053,7 +25064,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " التفكير في سبل تثمين خبرات ومهارات الأشخاص المسنين بوصفها جزءا من الرصيد الثقافي والقيمي للرأسمال اللامادي.",
                             ResultatsAttendu = "بيئة داعمة لتثمين خبرات ومهارات الأشخاص المسنين",
                             TypeMesure = 1
@@ -25066,7 +25077,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع مؤشرات وأنظمة معلوماتية لتتبع أوضاع الأشخاص المسنين لاسيما الموجودين في أوضاع صعبة محليا جهويا ووطنيا.",
                             ResultatsAttendu = "منظومة معلوماتية ومؤشرات للتتبع مبلورة ",
                             TypeMesure = 1
@@ -25079,7 +25090,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "دعم الأسر التي تحتضن أفرادا مسنين في وضعية صعبة.",
                             ResultatsAttendu = "إطار داعم لخدمات التكفل بالأفراد المسنين في وضعية صعبة",
                             TypeMesure = 1
@@ -25105,7 +25116,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع النهوض بطب الشيخوخة في وزارة الصحة وإحداث شعب للتكوين الطبي المتخصص في هذا المجال.",
                             ResultatsAttendu = "منظومة داعمة لطب الشيخوخة",
                             TypeMesure = 1
@@ -25118,7 +25129,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز البرامج الإعلامية الموجهة للمسنين",
                             ResultatsAttendu = "برامج إعلامية مواكبة لحاجيات المسنين",
                             TypeMesure = 1
@@ -25157,7 +25168,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة التفكير في سبل تفعيل مقتضيات الدستور ذات الصلة بحقوق مغاربة العالم.",
                             ResultatsAttendu = "تصورات حول تفعيل مقتضيات الدستور ذات الصلة بحقوق مغاربة العالم مبلورة",
                             TypeMesure = 1
@@ -25183,7 +25194,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع المقتضيات التنظيمية الخاصة بقانون مكافحة الاتجار بالبشر.",
                             ResultatsAttendu = "مبادرات داعمة للتنوع الثقافي والتطور الاجتماعي ",
                             TypeMesure = 1
@@ -25196,7 +25207,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة تطوير الاتفاقيات الخاصة بالحماية الاجتماعية المبرمة بين المغرب ودول الاستقبال وفق مقاربة حقوق الإنسان.",
                             ResultatsAttendu = "الإطار الاتفاقي الثنائي في مجال الحماية الاجتماعية معزز وفق مقاربة حقوق الانسان",
                             TypeMesure = 1
@@ -25287,7 +25298,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة التنسيق والالتقائية بين كافة المتدخلين في مجال الهجرة وتعزيز دور اللجنة بين الوزارية لمغاربة العالم وشؤون الهجرة في هذا المجال. ",
                             ResultatsAttendu = "أداء اللجنة بين الوزارية معزز وفعال",
                             TypeMesure = 1
@@ -25352,7 +25363,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة دعم وتعزيز قدرات فعاليات المجتمع المدني التي تهتم ميدانيا بأوضاع المهاجرين سواء في المغرب أو في بلدان الاستقبال.",
                             ResultatsAttendu = "قدرات فعاليات المجتمع المدني معززة",
                             TypeMesure = 1
@@ -25365,7 +25376,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد برامج للتكوين والتكوين المستمر تستحضر البعد الحقوقي وتستهدف الجمعيات التي تعمل مع المغاربة في الخارج والمهاجرين بالمغرب.",
                             ResultatsAttendu = "قدرات فعاليات المجتمع المدني معززة",
                             TypeMesure = 1
@@ -25378,7 +25389,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة الانضمام والتفاعل مع الأنظمة الدولية والإقليمية لحقوق الإنسان.",
                             ResultatsAttendu = "ممارسة اتفاقية في مجال حقوق الإنسان معززة ",
                             TypeMesure = 1
@@ -25391,7 +25402,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الانخراط في اتفاقيات مجلس أوروبا المفتوحة للبلدان غير الأعضاء.",
                             ResultatsAttendu = "ممارسة اتفاقية في مجال حقوق الإنسان معززة ",
                             TypeMesure = 1
@@ -25417,7 +25428,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع باعتماد قانون جديد منظم للسجون بما يضمن أنسنة المؤسسات السجنية وتحسين ظروف إقامة النزلاء وتغذيتهم وحماية باقي حقوقهم.",
                             ResultatsAttendu = "إطار قانوني داعم لأنسنة المؤسسات السجنية  ",
                             TypeMesure = 1
@@ -25430,7 +25441,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بإخراج المقتضيات القانونية الناظمة للعقوبات البديلة بهدف الحد من إشكالات الاعتقال الاحتياطي والاكتظاظ في السجون.",
                             ResultatsAttendu = "مقتضيات قانونية داعمة لتجويد خدمات المؤسسة السجنية",
                             TypeMesure = 1
@@ -25443,7 +25454,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة الحوار المجتمعي حول الانضمام إلى البروتوكول الاختياري الثاني الملحق بالعهد الدولي الخاص بالحقوق المدنية والسياسية المتعلق بإلغاء عقوبة الاعدام. ",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25456,7 +25467,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الحوار المجتمعي بشأن المصادقة على النظام الأساسي للمحكمة الجنائية الدولية.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25482,7 +25493,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إحداث مرصد وطني للإجرام.",
                             ResultatsAttendu = "آلية مؤسساتية مساعدة على تتبع تطور ظاهرة الإجرام",
                             TypeMesure = 1
@@ -25508,7 +25519,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "عقد شراكات وعلاقات تعاون مع مؤسسات وطنية ودولية تعنى بحقوق الإنسان للمساهمة في تأطير وتكوين القضاة والمحامين في مجال تملك ثقافة حقوق الإنسان فكرا وسلوكا وعملا.",
                             ResultatsAttendu = "شراكات وبرامج داعمة لتملك ثقافة حقوق الإنسان",
                             TypeMesure = 1
@@ -25521,7 +25532,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع ميثاق النجاعة القضائية للتدبير الجيد للجلسات وآجال البت وتصفية المخلف والتواصل مع المواطنين والاستماع إلى شكاياتهم وغيرها من الإجراءات المماثلة.",
                             ResultatsAttendu = "آليات داعمة لتجويد خدمات العدالة",
                             TypeMesure = 1
@@ -25534,7 +25545,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور القضاء الإداري في ترسيخ دولة القانون وتكريس مبدأ سمو القانون واحترام حقوق الإنسان.",
                             ResultatsAttendu = "إطار مؤسساتي معزز للقضاء الإداري",
                             TypeMesure = 1
@@ -25547,7 +25558,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بوضع منظومة مندمجة لمعالجة الشكايات المتعلقة بحقوق المرتفقين.",
                             ResultatsAttendu = "منظومة مندمجة لمعالجة الشكايات مفعلة ",
                             TypeMesure = 1
@@ -25573,7 +25584,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "توثيق ونشر الأعمال البحثية المعززة لرصيد ثقافة حقوق الإنسان المنجزة بمناسبة الآراء والأعمال الاستشارية من قبل مؤسسات الديمقراطية التشاركية.",
                             ResultatsAttendu = "برامج معززة لرصيد ثقافة حقوق الإنسان ",
                             TypeMesure = 1
@@ -25612,7 +25623,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز برامج التكوين الأساسي والتكوين المستمر في المعاهد والمراكز المعنية بالمكلفين بإنفاذ القانون.",
                             ResultatsAttendu = "سائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق معززة جهويا ومركزيا",
                             TypeMesure = 1
@@ -25625,7 +25636,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل الهيئة المكلفة بالمناصفة ومكافحة جميع أشكال التمييز.",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -25638,7 +25649,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " البحث في سبل مبادرات الحكومة وهيئات الديمقراطية التشاركية لتنظيم حوارات عمومية حول رصيد إعمال مدونة الأسرة على مستوى الاجتهاد القضائي والتطور المجتمعي.",
                             ResultatsAttendu = "ديناميات داعمة لتطوير مدونة الأسرة ",
                             TypeMesure = 1
@@ -25703,7 +25714,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل النصوص التنظيمية الخاصة بتنفيذ القانون المتعلق بتحديد شروط التشغيل والشغل الخاص بالعمال المنزليين.",
                             ResultatsAttendu = "المقتضيات القانونية للقانون رقم 19.12 مفعلة",
                             TypeMesure = 1
@@ -25716,7 +25727,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تعزيز الضمانات القانونية المتعلقة بتجريم التحرش الجنسي.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -25729,7 +25740,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة الحوار المجتمعي حول بعض مقتضيات مدونة الأسرة، ويتعلق الأمر بإعادة صياغة المادة 49 بما يضمن استيعاب مفهوم الكد والسعاية ومراجعة المادة 175 بإقرار عدم سقوط الحضانة عن الأم رغم زواجها وتعديل المادتين 236 و238 من أجل كفالة المساواة بين الأب والأم في الولاية على الأبناء.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25742,7 +25753,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " صيانة الكرامة الإنسانية للمرأة في وسائل الإعلام، ووضع تدابير زجرية في حالة انتهاكها. ",
                             ResultatsAttendu = "إجراءات داعمة لصيانة كرامة المرأة في وسائل الاعلام",
                             TypeMesure = 1
@@ -25755,7 +25766,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز آليات الرصد والتتبع لحماية النساء ضحايا العنف وطنيا جهويا ومحليا.",
                             ResultatsAttendu = "آليات فعالة لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -25781,7 +25792,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إدماج مقاربة النوع الاجتماعي في البرامج الاقتصادية الداعمة لإحداث المقاولات.",
                             ResultatsAttendu = "آليات كفيلة بإدماج مقاربة النوع",
                             TypeMesure = 1
@@ -25807,7 +25818,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور الجماعات الترابية في توفير بيئة آمنة تحمي الأطفال والنساء من كل أشكال العنف.",
                             ResultatsAttendu = "بيئة آمنة تحمي الأطفال والنساء من كل أشكال العنف",
                             TypeMesure = 1
@@ -25846,7 +25857,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز البرامج الخاصة بالقضاء على الفقر والتهميش والإقصاء الاجتماعي في أوساط النساء.",
                             ResultatsAttendu = "البرامج الخاصة بالقضاء على الفقر والتهميش والإقصاء الاجتماعي في أوساط النساء معززة",
                             TypeMesure = 1
@@ -25885,7 +25896,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "توسيع شبكة الفضاءات متعددة الاختصاصات والوظائف الموجهة للنساء وتعزيزها وتقويتها.",
                             ResultatsAttendu = "نسيج مؤسساتي داعم ومنصف للنساء",
                             TypeMesure = 1
@@ -25898,7 +25909,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "محاربة الصور النمطية والتمييزية ضد النساء في وسائل الإعلام وفي البرامج والمقررات المدرسية.",
                             ResultatsAttendu = "بيئة داعمة لمكافحة الصور النمطية والتمييزية ضد النساء",
                             TypeMesure = 1
@@ -25911,7 +25922,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة برامج التدريب وتطوير القدرات في مجال التكوين والتكوين المستمر على حقوق النساء لفائدة القضاة ومساعدي العدالة.",
                             ResultatsAttendu = "برامج مساعدة على تقوية القدرات في مجال حقوق النساء",
                             TypeMesure = 1
@@ -25937,7 +25948,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إصدار القرار الخاص بتحديد كيفيات سير وتنظيم مراحل انتخاب أعضاء المجلس الوطني للصحافة.",
                             ResultatsAttendu = "محطات جهوية متفاعلة مع محيطها",
                             TypeMesure = 1
@@ -25950,7 +25961,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بوضع ميثاق أخلاقيات مهنة الصحافة والإعلام بما في ذلك الصحافة الإلكترونية.",
                             ResultatsAttendu = "ميثاق أخلاقيات مهنة الصحافة والإعلام معتمد",
                             TypeMesure = 1
@@ -25963,7 +25974,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الأخلاقيات المهنية في الممارسة الإعلامية.",
                             ResultatsAttendu = "بيئة داعمة لممارسة إعلامية وفق الضوابط المهنية  ",
                             TypeMesure = 1
@@ -25989,7 +26000,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "التنصيص على مبدأ المناصفة في دفاتر تحملات شركات الاتصال السمعي البصري.",
                             ResultatsAttendu = "بيئة إعلامية معززة لمبدأ المناصفة في الفضاء السمعي البصري ",
                             TypeMesure = 1
@@ -26002,7 +26013,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية المقتضيات القانونية المتعلقة بالاعتداء على الملكية الفكرية لتتلاءم مع الدستور.",
                             ResultatsAttendu = "مقتضيات قانونية داعمة لحماية الملكية الفكرية  ",
                             TypeMesure = 1
@@ -26015,7 +26026,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز دور المكتب المغربي لحقوق المؤلفين ومراجعة قانونه ليصبح مؤسسة عمومية.",
                             ResultatsAttendu = "إطار قانوني داعم لحقوق المؤلف",
                             TypeMesure = 1
@@ -26028,7 +26039,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 23,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز برامج التوعية والتحسيس بشأن مكتسبات وتحديات ممارسة حريات التعبير والإعلام والصحافة والحق في المعلومة",
                             ResultatsAttendu = "عدد البرامج والشراكات والدعامات المنجزة",
                             TypeMesure = 1
@@ -26080,7 +26091,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مراجعة النصوص المتعلقة بالتراث الثقافي.",
                             ResultatsAttendu = "إطار قانوني معزز",
                             TypeMesure = 1
@@ -26106,7 +26117,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تأهيل آليات الحفاظ على التراث الثقافي المغربي بكل مكوناته وأبعاده المادية والرمزية والمحافظة عليها.",
                             ResultatsAttendu = "آليات الحفاظ على التراث الثقافي المغربي مؤهلة",
                             TypeMesure = 1
@@ -26158,7 +26169,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " رصد مصادر الأرشيف الخاصة بالمغرب والموجودة خارج الوطن ومواصلة استرجاعها ومعالجتها وحفظها وتيسير الاطلاع عليها من قبل المهتمين. ",
                             ResultatsAttendu = "الأرصدة الوثائقية المتعلقة بالمغرب والموجودة بالخارج مرصودة ومعالجة وميسرة للاطلاع",
                             TypeMesure = 1
@@ -26223,7 +26234,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تأهيل الهياكل القضائية والإدارية بما يكرس النجاعة القضائية الضامنة للأجل المعقول. ",
                             ResultatsAttendu = "آليات مؤسساتية داعمة للنجاعة القضائية",
                             TypeMesure = 1
@@ -26262,7 +26273,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة تحسين الخدمات القضائية.",
                             ResultatsAttendu = "إجراءات معززة للخدمات القضائية",
                             TypeMesure = 1
@@ -26275,7 +26286,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة جهود تخليق العدالة.",
                             ResultatsAttendu = "دينامية داعمة لتخليق العدالة",
                             TypeMesure = 1
@@ -26288,7 +26299,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع سياسة فعالة تضمن تنفيذ الأحكام الصادرة ضد كافة مؤسسات الدولة والخواص.",
                             ResultatsAttendu = "سياسة داعمة لتنفيذ الاحكام القضائية",
                             TypeMesure = 1
@@ -26327,7 +26338,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تأهيل الموارد البشرية لإدارة العدالة وهيئات وجمعيات المهن القانونية من خلال وضع برامج في مجال التكوين والتكوين المستمر وتقويم الأداء.",
                             ResultatsAttendu = "قدرات الموارد البشرية لمنظومة العدالة معززة ",
                             TypeMesure = 1
@@ -26364,10 +26375,11 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -26395,34 +26407,35 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Destinataire")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdConcerner")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdOrganisme")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Priorite")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("TableConcerner")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Vu")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -26433,25 +26446,26 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Adresse")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tel")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Type")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("TypeHome")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("TypeHomeText")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -27447,10 +27461,10 @@ namespace Admin5.Migrations
             modelBuilder.Entity("Models.OrganismeUser", b =>
                 {
                     b.Property<int>("IdUser")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdOrganisme")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("IdUser", "IdOrganisme");
 
@@ -27462,10 +27476,10 @@ namespace Admin5.Migrations
             modelBuilder.Entity("Models.Partenariat", b =>
                 {
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdOrganisme")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("IdMesure", "IdOrganisme");
 
@@ -34275,19 +34289,20 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Action")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdProfil")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("RouteScreen")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RouteScreenAr")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -34438,10 +34453,11 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -34479,31 +34495,32 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Annee")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Effet")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdActivite")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Nom")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Situation")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Taux")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("TauxRealisation")
-                        .HasColumnType("REAL");
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -51659,13 +51676,13 @@ namespace Admin5.Migrations
             modelBuilder.Entity("Models.Responsable", b =>
                 {
                     b.Property<int>("IdMesure")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdOrganisme")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdUser")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.HasKey("IdMesure", "IdOrganisme");
 
@@ -54844,13 +54861,14 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("IdAxe")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Label")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -55021,48 +55039,49 @@ namespace Admin5.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<bool?>("Actif")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("bit");
 
                     b.Property<string>("Adresse")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Fix")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdOrganisme")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<int>("IdProfil")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("int");
 
                     b.Property<string>("Nom")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Prenom")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tel")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

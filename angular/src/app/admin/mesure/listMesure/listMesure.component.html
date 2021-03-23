@@ -89,7 +89,8 @@
               <!-- <table class="table table-bordered table-sm mt-3"> -->
                 <thead>
                   <tr style="background-color: #8bd0e8  !important;">
-                    <th scope="col" style="width: 56% !important;">التدبير</th>
+                    <th scope="col" style="width: 10% !important;">الرمز</th>
+                    <th scope="col" style="width: 46% !important;">التدبير</th>
                     <th scope="col" style="width: 10% !important;">المخاطب الرسمي</th>
                     <th scope="col" style="width: 30% !important;">النتائج المبرمجة</th>
                     <th scope="col" style="width: 4% !important;"></th>
@@ -97,6 +98,7 @@
                 </thead>
                 <tbody >
                   <tr *ngFor="let e of row[columnDefs[2].columnDef]">
+                    <td>{{e.mesure.code}}</td>
                     <td>{{e.mesure.nom}}</td>
                     <td>{{e.user.nom}}</td>
                     <td>{{e.mesure.resultatsAttendu}}</td>
@@ -105,6 +107,12 @@
                         *ngIf="session.checkPermission(routeMesure, 1)">
                         <mat-icon>visibility</mat-icon>
                       </button>
+
+                      <button mat-icon-button color="primary" (click)="generatePDF(e.mesure.id)"
+                        *ngIf="session.checkPermission(routeMesure, 1)">
+                        <mat-icon style="color: orange;">visibility</mat-icon>
+                      </button>
+
                       <!-- <button mat-icon-button color="warn" (click)="delete(e)"
                         *ngIf="session.checkPermission(routeMesure, 1)">
                         <mat-icon>delete_sweep</mat-icon>
