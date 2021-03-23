@@ -51,7 +51,7 @@ namespace Controllers
                     id = e.Id,
                     mesure = e.Nom,
                     realisations = e.Realisations,
-                    tauxTotal = 25,
+                    tauxTotal = e.Realisations.Average(f => f.TauxRealisation),
                 })
                 .ToListAsync();
             ;
