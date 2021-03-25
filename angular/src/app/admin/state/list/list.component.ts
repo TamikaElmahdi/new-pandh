@@ -83,6 +83,11 @@ export class ListComponent implements OnInit {
   //
   routeMesure = '';
   //
+
+  sum1 = 0;
+  sum2 = 0;
+  sum3 = 0;
+  sum4 = 0;
   regions = ['الرباط', 'تمارة'];
   oranismes = ['الجامعة', 'الأكاديمية', 'محو الأمية'];
   title = '';
@@ -101,6 +106,7 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
+    this.pourcentageParSituation('غير منجز');
     // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     this.createForm();
 
@@ -331,6 +337,20 @@ export class ListComponent implements OnInit {
     // this.searchAndGet(o);
     this.o = o;
     this.update.next(true);
+  }
+
+
+  pourcentageParSituation(o: string) {
+
+    // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
+    this.uow.mesures.pourcentageParSituation(this.o).subscribe(
+      (r: any) => {
+        console.log(r.list);
+        this.sum1 = r.value;
+        this.sum2 = r.value1;
+        this.isLoadingResults = false;
+      }, e => this.isLoadingResults = false,
+    );
   }
 
 

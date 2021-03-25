@@ -27,5 +27,9 @@ export class MesureService extends SuperService<Mesure> {
   //   return this.http.get(`${this.urlApi}/${this.controller}/getByTypeOrganisme/${id}`);
   // }
 
+  pourcentageParSituation(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/PourcentageParSituation`, o);
+  }
+
 
 }

@@ -59,6 +59,10 @@ namespace Controllers
             return Ok(new { list = list, count = count });
         }
 
+       
+
+
+        
         [HttpPost]
         public async Task<IActionResult> SearchAndGetOld(Model model)
         {

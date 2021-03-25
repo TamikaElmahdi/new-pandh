@@ -166,7 +166,7 @@ export class PieChartComponent implements OnInit {
                   name: r[i].table.toString(),
                   value: this.pieChartData[i] as number,
                 });
-              this.CountData =  this.CountData  + +this.pieChartData[i];
+              this.CountData =  435;
 
               }
             });
@@ -213,7 +213,7 @@ export class PieChartComponent implements OnInit {
                     name: r[i].table.toString(),
                     value: this.pieChartData[i] as number,
                   });
-              this.CountData =  this.CountData  + +this.pieChartData[i];
+              this.CountData =  435;
 
                 }
 

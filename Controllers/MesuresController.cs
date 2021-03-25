@@ -61,7 +61,7 @@ namespace Controllers
             // return Ok(new { list = list, count = count });
         //}
 
-                [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> SearchAndGet(Model model)
         {
             int idUser = HttpContext.GetIdUser();
@@ -104,6 +104,34 @@ namespace Controllers
             ;
 
             return Ok(new { list = list, count = count });
+        }
+
+
+        [HttpPost]
+        public  async Task<IActionResult> PourcentageParSituation(string situation)
+        {
+            try
+            { 
+               
+            var q = _context.Realisations
+            .Where(e => e.Situation == situation)
+                ;
+            var list = await q
+                .GroupBy(e => e.Situation)
+                 .Select(e => new
+                {
+                    name = e.Key,
+                    value = e.Sum(s => s.TauxRealisation),
+                    value1 = e.Average(s => s.TauxRealisation),
+                })
+
+                .ToListAsync()
+                ;
+
+            return Ok(list);
+
+            }
+            catch(Exception ex){throw ex;}
         }
 
 
