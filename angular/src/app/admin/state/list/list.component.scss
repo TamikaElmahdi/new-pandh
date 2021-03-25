@@ -57,3 +57,29 @@ mat-panel-title {
 .right {
   margin: 0 20px 20px;
 }
+.mt-3, .my-3 {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+
+.rowTermine
+{
+  background-color: #7dc460 !important;
+}
+.rowNonTermine
+{
+  // background-color: #db0707 !important;
+  background-color: #d6000047 !important;
+
+
+}
+.rowEncours
+{
+  background-color: #d17c36a6 !important;
+
+}
+.rowContinue
+{
+  background-color: #1476de87 !important;
+
+}

@@ -61,8 +61,54 @@ namespace Controllers
             // return Ok(new { list = list, count = count });
         //}
 
-        [HttpPost]
+                [HttpPost]
         public async Task<IActionResult> SearchAndGet(Model model)
+        {
+            int idUser = HttpContext.GetIdUser();
+            int role = HttpContext.GetRoleUser();
+            bool hasAcess = (role == 1 || role == 2) ? true : false;
+
+            var query = _context.Mesures
+                .Where(e => e.ActiviteMesures  != null)
+                .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => hasAcess ? true : e.Responsables.Any(r => r.IdUser == idUser))
+                .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+                .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+                .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
+                .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+                .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
+                .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+
+                .Include(e => e.Realisations).ThenInclude(e => e.Activite)
+
+                ;
+
+            int count = model.IsAllEmpty() ? await _context.Mesures.CountAsync() : await query.CountAsync();
+
+            var list = await query.OrderByName<Mesure>(model.SortBy, model.SortDir == "desc")
+                .Skip(model.StartIndex)
+                .Take(model.PageSize)
+                .Select(e => new
+                {
+                    id = e.Id,
+                    mesure = e.Nom,
+                    realisations = e.Realisations,
+                    tauxTotal = e.Realisations.Average(f => f.TauxRealisation),
+
+                    
+                })
+                .ToListAsync();
+            ;
+
+            return Ok(new { list = list, count = count });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> SearchAndGetOld(Model model)
         {
             // int idUser = HttpContext.GetIdUser();
             // int role = HttpContext.GetRoleUser();
