@@ -181,7 +181,7 @@
                   </thead>
                   <tbody >
                     <tr *ngFor="let e of row[columnDefs[1].columnDef]"
-                    [ngClass]="{'rowTermine': e.situation === 'منجز', 'rowNonTermine':e.situation === 'غير منجز' , 'rowEncours': e.situation === 'في طور الإنجاز', 'rowContinue': e.situation === 'عمل متواصل'  }"
+                    [ngClass]="{'rowTermine': e.situation === 'منجز', 'rowNonTermine':e.situation === 'غير منجز'  || e.situation === 'غير&nbsp;منجز' , 'rowEncours': e.situation === 'في طور الإنجاز', 'rowContinue': e.situation === 'عمل متواصل'  }"
                     >
                       <td>{{ e.activite.nom }}</td>
                       <td>{{e.annee}}</td>
