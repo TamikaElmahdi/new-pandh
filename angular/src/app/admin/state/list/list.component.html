@@ -3,346 +3,383 @@
   <app-title [title]="title"></app-title>
 
 
+  <mat-tab-group #myTab class="example-stretched-tabs" #matgroup (selectedTabChange)="selectedTabChange(matgroup)">
 
-  <div class="expension">
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <mat-icon>search</mat-icon>
-            <p>بحث</p>
-          </mat-panel-title>
-          <mat-panel-description>
+    <mat-tab label="شامل">
+      <ng-template mat-tab-label>
+        <span>شامل</span>
+        <!-- {{hideGlobalGraph}} {{indexTohideGlobalGraph}} -->
+      </ng-template>
+      <ng-template matTabContent>
 
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-divider>
-        </mat-divider>
-        <form [formGroup]="myForm">
-          <div class="inputs2">
-            <!-- <mat-form-field appearance="fill" style="width: 100%" *ngIf="isMesure">
-              <mat-label>المنظمات</mat-label>
-              <mat-select formControlName="idOrganisme">
-                <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill" style="width: 100%" *ngIf="isMesureRegion">
-              <mat-label>الجهة</mat-label>
-              <mat-select formControlName="idOrganisme">
-                <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill" style="width: 100%" *ngIf="isProgramme">
-              <mat-label>هيئة / مؤسسة</mat-label>
-              <mat-select formControlName="idOrganisme">
-                <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field> -->
-
-            <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label>المرحلة</mat-label>
-              <mat-select formControlName="idCycle" (selectionChange)="selectChange($event.value, 'cycle')">
-                <mat-option *ngFor="let e of cycles | async" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill">
-              <mat-label>الرمز</mat-label>
-              <input matInput formControlName="codeMesure">
-            </mat-form-field>
-
-            <mat-form-field appearance="fill">
-              <mat-label>التدبير</mat-label>
-              <input matInput formControlName="nomMesure">
-            </mat-form-field>
-
-
-            <mat-form-field appearance="fill" hidden>
-              <mat-label>التدابير</mat-label>
-              <mat-select formControlName="idMesure" (selectionChange)="selectChange($event.value, 'mesure')">
-                <mat-option value="0">...</mat-option>
-                <mat-option *ngFor="let e of mesures" [value]="e.id">{{ e.nom }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill" *ngIf="session.user.idProfil === 1 || session.user.idProfil === 2" hidden>
-              <mat-label>المسؤول</mat-label>
-              <mat-select formControlName="idResponsable">
-                <mat-option value="0">...</mat-option>
-                <mat-option *ngFor="let e of users" [value]="e.id">{{ e.nom }} {{ e.prenom }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-
-          </div>
-          <div class="inputs2">
-
-            <mat-form-field appearance="fill">
-              <mat-label>وضعية تنفيدالأنشطة </mat-label>
-              <!-- <input matInput formControlName="situation" required> -->
-              <mat-select formControlName="situation"  >
-                <mat-option value="'">...</mat-option>
-                <mat-option *ngFor="let e of situations" [value]="e">{{ e }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label>المحور</mat-label>
-              <mat-select formControlName="idAxe"  (selectionChange)="selectChange($event.value, 'axe')">
-                <mat-option *ngFor="let e of axes | async" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill">
-              <mat-label>المحور الفرعي</mat-label>
-              <mat-select formControlName="idSousAxe">
-                <mat-option value="0">...</mat-option>
-                <mat-option *ngFor="let e of sousAxes" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="fill" hidden>
-              <mat-label>{{isMesure ? 'القطاع الوزاري/المؤسسة' : (isMesureRegion ? 'الجهة أو الجماعة الترابية' : 'الهيئة')}}</mat-label>
-              <mat-select formControlName="idOrganisme">
-                <mat-option value="0">...</mat-option>
-                <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-
-          </div>
-        </form>
-        <div class="right">
-
-          <button mat-raised-button color="primary" (click)="search(myForm.value)" [disabled]="false">
-            <mat-icon>search</mat-icon>
-            بحث
-          </button>
-          &nbsp;
-          <button mat-raised-button (click)="reset()" [disabled]="false">
-            <mat-icon>refresh</mat-icon>
-            اعادة ضبط
-          </button>
+      <!-- ------------------ Graphe -------------------- -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <app-pie [obs]="dataEpuPie"></app-pie>
+        </div>
+        <div class="col-md-4">
+          <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
+        </div>
+        <div class="col-md-4">
+          <app-pie-chart [obs]="pieChartSubjectD"></app-pie-chart>
         </div>
 
-      </mat-expansion-panel>
-    </mat-accordion>
-  </div>
-
-
-<!-- ------------------ Graphe -------------------- -->
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <app-pie [obs]="dataEpuPie"></app-pie>
-    </div>
-    <div class="col-md-4">
-      <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
-    </div>
-    <div class="col-md-4">
-      <app-pie-chart [obs]="pieChartSubjectD"></app-pie-chart>
-    </div>
-
-    <div class="col-md-12">
-      <div class="chart-size">
-        <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
-      </div>
-    </div>
-  </div>
-<!-- ------------------ Graphe -------------------- -->
-<div class="row">
-<div class="col-md-6" style="margin-bottom: 3%;">
-
-  <div  class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
-    <section class="super-title border-right">
-      <div>
-        <h3 class="titleGrapheMesure" style="font-size: 1.2em;">توزيع الأنشطة حسب وضعية التنفيد</h3>
-      </div>
-    </section>
-  </div>
-
-<div class="example-container mat-elevation-z8">
-  <div class="example-loading-shade" *ngIf="isLoadingResults">
-    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-  </div>
-  <div class="example-table-container">
-<table  class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
-  <!-- <table class="table table-bordered table-sm mt-3"> -->
-    <thead>
-      <tr style="background-color: #8bd0e8  !important;">
-        <th scope="col" ></th>
-        <th scope="col" >العدد</th>
-        <th scope="col" >النسبة</th>
-
-      </tr>
-    </thead>
-    <tbody >
-      <tr class="rowNonTermine">
-        <td>غير منجز</td>
-        <td>1017</td>
-        <td>58</td>
-      </tr>
-
-      <tr  class="rowContinue">
-        <td>عمل متواصل</td>
-        <td>455</td>
-        <td>26</td>
-      </tr>
-
-      <tr  class="rowEncours">
-        <td>في طور الإنجاز</td>
-        <td>112</td>
-        <td>6</td>
-      </tr>
-
-      <tr  class="rowTermine">
-        <td>منجز</td>
-        <td>140</td>
-        <td>8</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-</div>
-
-<div class="col-md-6" style="margin-bottom: 3%;">
-
-  <div  class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
-    <section class="super-title border-right">
-      <div>
-        <h3 class="titleGrapheMesure" style="font-size: 1.2em;">توزيع التدابير حسب وضعية التنفيد</h3>
-      </div>
-    </section>
-  </div>
-
-<div class="example-container mat-elevation-z8">
-  <div class="example-loading-shade" *ngIf="isLoadingResults">
-    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-  </div>
-  <div class="example-table-container">
-<table  class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
-  <!-- <table class="table table-bordered table-sm mt-3"> -->
-    <thead>
-      <tr style="background-color: #8bd0e8  !important;">
-        <th scope="col" ></th>
-        <th scope="col" >العدد</th>
-        <th scope="col" >النسبة</th>
-
-      </tr>
-    </thead>
-    <tbody >
-      <tr class="rowNonTermine">
-        <td>غير منجز</td>
-        <td>312</td>
-        <td>74</td>
-      </tr>
-
-      <tr  class="rowEncours">
-        <td>في طور الإنجاز</td>
-        <td>120</td>
-        <td>23</td>
-      </tr>
-
-      <tr  class="rowTermine">
-        <td>منجز</td>
-        <td>3</td>
-        <td>3</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-</div>
-</div>
-<div class="example-container mat-elevation-z8">
-  <div class="example-loading-shade" *ngIf="isLoadingResults">
-    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-  </div>
-  <div class="example-table-container">
-    <table mat-table #table [dataSource]="dataSource" multiTemplateDataRows aria-label="Elements" matSort>
-      <ng-container [matColumnDef]="columnDefs[0].columnDef">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[0].headName}}</th>
-        <td mat-cell *matCellDef="let row">{{row[columnDefs[0].columnDef]}}</td>
-      </ng-container>
-
-
-
-      <ng-container [matColumnDef]="columnDefs[1].columnDef" >
-        <th mat-header-cell *matHeaderCellDef mat-sort-header style="width: 60% important;"></th>
-
-        <td mat-cell *matCellDef="let row" style="width: 60% important;">
-            <div class="mytable" *ngIf="row[columnDefs[1].columnDef].length > 0">
-              <table  class="tableFils table table-bordered table-sm mt-3">
-              <!-- <table class="table table-bordered table-sm mt-3"> -->
-                <thead>
-                  <tr style="background-color: #8bd0e8  !important;">
-                    <th scope="col" style="width: 46% !important;">النشاط</th>
-                    <th scope="col" style="width: 10% !important;">السنة</th>
-                    <th scope="col" style="width: 10% !important;">الإنجاز</th>
-                    <th scope="col" style="width: 10% !important;">وضعية تنفيد النشاط </th>
-                    <th scope="col" style="width: 8% !important;">معدل إنجاز النشاط</th>
-
-                  </tr>
-                </thead>
-                <tbody >
-                  <tr *ngFor="let e of row[columnDefs[1].columnDef]"
-                  [ngClass]="{'rowTermine': e.situation === 'منجز', 'rowNonTermine':e.situation === 'غير منجز'  || e.situation === 'غير&nbsp;منجز' , 'rowEncours': e.situation === 'في طور الإنجاز', 'rowContinue': e.situation === 'عمل متواصل'  }"
-                  >
-                    <td>{{ e.activite.nom }}</td>
-                    <td>{{e.annee}}</td>
-                    <td title="{{e.nom}}">{{ uow.getSomeCaracter(e.nom,1,15)}}</td>
-                    <td>{{e.situation}}</td>
-                    <td>{{e.tauxRealisation.toFixed(0)}}%</td>
-
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-        </td>
-      </ng-container>
-
-      <ng-container [matColumnDef]="columnDefs[2].columnDef">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[2].headName}}</th>
-        <td mat-cell *matCellDef="let row">{{row[columnDefs[2].columnDef].toFixed(0)}}%</td>
-      </ng-container>
-
-
-
-
-      <!-- <ng-container matColumnDef="option" style="flex-direction: row-reverse;">
-        <th mat-header-cell *matHeaderCellDef> </th>
-        <td mat-cell *matCellDef="let row">
-          <div class="button-row">
-            <button mat-icon-button color="primary" (click)="detail(row)">
-              <mat-icon>visibility</mat-icon>
-            </button>
-            <button mat-icon-button color="primary" [routerLink]="['/admin/suivi/update', row.id]"
-              *ngIf="session.checkPermission('suivi', 1)">
-              <mat-icon>create</mat-icon>
-            </button>
-            <button mat-icon-button color="warn" (click)="delete(row)"
-              *ngIf="session.checkPermission('suivi', 1)">
-              <mat-icon>delete_sweep</mat-icon>
-            </button>
-
-
-
+        <div class="col-md-12">
+          <div class="chart-size">
+            <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
           </div>
-        </td>
-      </ng-container> -->
+        </div>
+      </div>
+      <!-- ------------------ Graphe -------------------- -->
+      </ng-template>
+    </mat-tab>
 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <mat-tab label="بحت معمق">
+      <ng-template matTabContent>
 
-    </table>
-  </div>
+        <div class="expension">
+          <mat-accordion>
+            <mat-expansion-panel expanded (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>search</mat-icon>
+                  <p>بحث</p>
+                </mat-panel-title>
+                <mat-panel-description>
 
-  <mat-paginator #paginator [length]="resultsLength" pageIndex="0" pageSize="10"
-    [pageSizeOptions]="[10, 25, 50, 100, 250]" showFirstLastButtons>
-  </mat-paginator>
-</div>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-divider>
+              </mat-divider>
+              <form [formGroup]="myForm">
+                <div class="inputs2">
+                  <!-- <mat-form-field appearance="fill" style="width: 100%" *ngIf="isMesure">
+                  <mat-label>المنظمات</mat-label>
+                  <mat-select formControlName="idOrganisme">
+                    <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" style="width: 100%" *ngIf="isMesureRegion">
+                  <mat-label>الجهة</mat-label>
+                  <mat-select formControlName="idOrganisme">
+                    <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" style="width: 100%" *ngIf="isProgramme">
+                  <mat-label>هيئة / مؤسسة</mat-label>
+                  <mat-select formControlName="idOrganisme">
+                    <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
+                  </mat-select>
+                </mat-form-field> -->
+
+                  <mat-form-field appearance="fill" style="width: 100%">
+                    <mat-label>المرحلة</mat-label>
+                    <mat-select formControlName="idCycle" (selectionChange)="selectChange($event.value, 'cycle')">
+                      <mat-option *ngFor="let e of cycles | async" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>الرمز</mat-label>
+                    <input matInput formControlName="codeMesure">
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>التدبير</mat-label>
+                    <input matInput formControlName="nomMesure">
+                  </mat-form-field>
+
+
+                  <mat-form-field appearance="fill" hidden>
+                    <mat-label>التدابير</mat-label>
+                    <mat-select formControlName="idMesure" (selectionChange)="selectChange($event.value, 'mesure')">
+                      <mat-option value="0">...</mat-option>
+                      <mat-option *ngFor="let e of mesures" [value]="e.id">{{ e.nom }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill" *ngIf="session.user.idProfil === 1 || session.user.idProfil === 2"
+                    hidden>
+                    <mat-label>المسؤول</mat-label>
+                    <mat-select formControlName="idResponsable">
+                      <mat-option value="0">...</mat-option>
+                      <mat-option *ngFor="let e of users" [value]="e.id">{{ e.nom }} {{ e.prenom }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+
+                </div>
+                <div class="inputs2">
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>وضعية تنفيدالأنشطة </mat-label>
+                    <!-- <input matInput formControlName="situation" required> -->
+                    <mat-select formControlName="situation">
+                      <mat-option value="'">...</mat-option>
+                      <mat-option *ngFor="let e of situations" [value]="e">{{ e }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill" style="width: 100%">
+                    <mat-label>المحور</mat-label>
+                    <mat-select formControlName="idAxe" (selectionChange)="selectChange($event.value, 'axe')">
+                      <mat-option *ngFor="let e of axes | async" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>المحور الفرعي</mat-label>
+                    <mat-select formControlName="idSousAxe">
+                      <mat-option value="0">...</mat-option>
+                      <mat-option *ngFor="let e of sousAxes" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>وضعية تنفيد التدابير </mat-label>
+                    <!-- <input matInput formControlName="situation" required> -->
+                    <mat-select formControlName="situationMesure">
+                      <mat-option value="'">...</mat-option>
+                      <mat-option *ngFor="let e of situationsMesures" [value]="e">{{ e }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+
+                  <mat-form-field appearance="fill" hidden>
+                    <mat-label>{{isMesure ? 'القطاع الوزاري/المؤسسة' : (isMesureRegion ? 'الجهة أو الجماعة الترابية' :
+                      'الهيئة')}}</mat-label>
+                    <mat-select formControlName="idOrganisme">
+                      <mat-option value="0">...</mat-option>
+                      <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+
+                </div>
+              </form>
+              <div class="right">
+
+                <button mat-raised-button color="primary" (click)="search(myForm.value)" [disabled]="false">
+                  <mat-icon>search</mat-icon>
+                  بحث
+                </button>
+                &nbsp;
+                <button mat-raised-button (click)="reset()" [disabled]="false">
+                  <mat-icon>refresh</mat-icon>
+                  اعادة ضبط
+                </button>
+              </div>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" style="margin-bottom: 3%;">
+
+            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
+              <section class="super-title border-right">
+                <div>
+                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;">وضعية تنفيد الأنشطة</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="example-container mat-elevation-z8">
+              <div class="example-loading-shade" *ngIf="isLoadingResults">
+                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+              </div>
+              <div class="example-table-container">
+                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
+                  <!-- <table class="table table-bordered table-sm mt-3"> -->
+                  <thead>
+                    <tr style="background-color: #8bd0e8  !important;">
+                      <th scope="col"></th>
+                      <th scope="col">العدد</th>
+                      <th scope="col">النسبة</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="rowNonTermine">
+                      <td>غير منجز</td>
+                      <td>{{ sumNonRealise }}</td>
+                      <td>58</td>
+                    </tr>
+
+                    <tr class="rowContinue">
+                      <td>عمل متواصل</td>
+                      <td>{{ sumEnContinue }}</td>
+                      <td>26</td>
+                    </tr>
+
+                    <tr class="rowEncours">
+                      <td>في طور الإنجاز</td>
+                      <td>{{ sumEncourRealisation }}</td>
+                      <td>6</td>
+                    </tr>
+
+                    <tr class="rowTermine">
+                      <td>منجز</td>
+                      <td>{{ sumRealise }}</td>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" style="margin-bottom: 3%;">
+
+            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
+              <section class="super-title border-right">
+                <div>
+                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;"> وضعية تنفيد التدابير</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="example-container mat-elevation-z8">
+              <div class="example-loading-shade" *ngIf="isLoadingResults">
+                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+              </div>
+              <div class="example-table-container">
+                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
+                  <!-- <table class="table table-bordered table-sm mt-3"> -->
+                  <thead>
+                    <tr style="background-color: #8bd0e8  !important;">
+                      <th scope="col"></th>
+                      <th scope="col">العدد</th>
+                      <th scope="col">النسبة</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="rowNonTermine">
+                      <td>غير منجز</td>
+                      <td>312</td>
+                      <td>74</td>
+                    </tr>
+
+                    <tr class="rowEncours">
+                      <td>في طور الإنجاز</td>
+                      <td>120</td>
+                      <td>23</td>
+                    </tr>
+
+                    <tr class="rowTermine">
+                      <td>منجز</td>
+                      <td>3</td>
+                      <td>3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="example-container mat-elevation-z8">
+          <div class="example-loading-shade" *ngIf="isLoadingResults">
+            <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+          </div>
+          <div class="example-table-container">
+            <table mat-table #table [dataSource]="dataSource" multiTemplateDataRows aria-label="Elements" matSort>
+              <ng-container [matColumnDef]="columnDefs[0].columnDef">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[0].headName}}</th>
+                <td mat-cell *matCellDef="let row">{{row[columnDefs[0].columnDef]}}</td>
+              </ng-container>
+
+
+
+              <ng-container [matColumnDef]="columnDefs[1].columnDef">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header style="width: 60% important;"></th>
+
+                <td mat-cell *matCellDef="let row" style="width: 60% important;">
+                  <div class="mytable" *ngIf="row[columnDefs[1].columnDef].length > 0">
+                    <table class="tableFils table table-bordered table-sm mt-3">
+                      <!-- <table class="table table-bordered table-sm mt-3"> -->
+                      <thead>
+                        <tr style="background-color: #8bd0e8  !important;">
+                          <th scope="col" style="width: 46% !important;">النشاط</th>
+                          <th scope="col" style="width: 10% !important;">السنة</th>
+                          <th scope="col" style="width: 10% !important;">الإنجاز</th>
+                          <th scope="col" style="width: 10% !important;">وضعية تنفيد النشاط </th>
+                          <th scope="col" style="width: 8% !important;">معدل إنجاز النشاط</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let e of row[columnDefs[1].columnDef]"
+                          [ngClass]="{'rowTermine': e.situation === 'منجز', 'rowNonTermine':e.situation === 'غير منجز'  || e.situation === 'غير&nbsp;منجز' , 'rowEncours': e.situation === 'في طور الإنجاز', 'rowContinue': e.situation === 'عمل متواصل'  }">
+                          <td>{{ e.activite.nom }}</td>
+                          <td>{{e.annee}}</td>
+                          <td title="{{e.nom}}">{{ uow.getSomeCaracter(e.nom,1,15)}}</td>
+                          <td>{{e.situation}}</td>
+                          <td>{{e.tauxRealisation.toFixed(0)}}%</td>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </ng-container>
+
+              <ng-container [matColumnDef]="columnDefs[2].columnDef">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>{{columnDefs[2].headName}}</th>
+                <td mat-cell *matCellDef="let row">{{row[columnDefs[2].columnDef].toFixed(0)}}%</td>
+              </ng-container>
+
+
+
+
+              <!-- <ng-container matColumnDef="option" style="flex-direction: row-reverse;">
+              <th mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let row">
+                <div class="button-row">
+                  <button mat-icon-button color="primary" (click)="detail(row)">
+                    <mat-icon>visibility</mat-icon>
+                  </button>
+                  <button mat-icon-button color="primary" [routerLink]="['/admin/suivi/update', row.id]"
+                    *ngIf="session.checkPermission('suivi', 1)">
+                    <mat-icon>create</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" (click)="delete(row)"
+                    *ngIf="session.checkPermission('suivi', 1)">
+                    <mat-icon>delete_sweep</mat-icon>
+                  </button>
+
+
+
+                </div>
+              </td>
+            </ng-container> -->
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            </table>
+          </div>
+
+          <mat-paginator #paginator [length]="resultsLength" pageIndex="0" pageSize="10"
+            [pageSizeOptions]="[10, 25, 50, 100, 250]" showFirstLastButtons>
+          </mat-paginator>
+        </div>
+
+
+      </ng-template>
+    </mat-tab>
+
+  </mat-tab-group>
+
+
+
+
+
+
 
 
 </div>

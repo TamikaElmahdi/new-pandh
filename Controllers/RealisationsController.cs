@@ -237,11 +237,177 @@ namespace Controllers
         }
 
 
-          [HttpGet("{typeTable}")]
+        [HttpGet("{typeTable}")]
         public async Task<IActionResult> StateMecanisme(int typeTable) // used
         {
             return Ok(await Calc(_context.Realisations, typeTable));
         }
+
+        [HttpGet("{o}")]
+        public async Task<IActionResult> GetCountAndPourcentage(Model model) // used
+        {
+            return Ok(CalcCountAndPourcentage(_context.Mesures, model));
+        }
+
+        [HttpPost]
+        public int GetNbNonTermine(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation == 0).Count();
+                return count;
+
+        }
+
+        [HttpPost]
+        public int GetNbTermine(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation == 100).Count();
+                return count;
+
+        }
+
+
+        [HttpPost]
+        public int GetNbContinue(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل").Count();
+                return count;
+
+        }
+
+
+        [HttpPost]
+        public int GetNbEncours(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز").Count();
+                return count;
+
+        }
+
+
+
+
+
+
+        private  object CalcCountAndPourcentage(IQueryable<Mesure> q, Model model)
+        {
+
+            // var nonTermine = await q
+            //     .Where(e => e.ActiviteMesures  != null)
+            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
+            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                
+            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
+            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
+            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation == 0)).CountAsync();
+            var nonTermine = 25;
+            
+                           
+            // var termine = await q
+            //     .Where(e => e.ActiviteMesures  != null)
+            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
+            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                
+            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
+            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
+            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation == 100)).CountAsync();
+            
+            var termine = 20;
+
+            // var encourRealisation = await q
+            //     .Where(e => e.ActiviteMesures  != null)
+            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
+            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                
+            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
+            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
+            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation < 100 && f.TauxRealisation > 0 && f.Situation == "في طور الإنجاز")).CountAsync();
+
+            var encourRealisation = 50;
+                
+          
+
+            // var encontinue = await q
+            //     .Where(e => e.ActiviteMesures  != null)
+            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
+            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
+            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
+            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
+            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                
+            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
+            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
+            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation < 100 && f.TauxRealisation > 0 && f.Situation == "عمل متواصل")).CountAsync();
+
+            var encontinue = 47;
+            
+            var epu = new { nonTermine, termine, encourRealisation, encontinue };
+
+          
+            return new { epu };
+
+        }
+
 
         
         [HttpGet("{table}/{type}/{typeTable}")]

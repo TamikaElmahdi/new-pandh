@@ -1,6 +1,6 @@
 import { Mesure } from './../../../Models/models';
 import { Component, OnInit, ViewChild, EventEmitter } from '@angular/core';
-import { MatPaginator, MatSort, MatDialog, MatAutocompleteSelectedEvent, MatInput } from '@angular/material';
+import { MatPaginator, MatSort, MatDialog, MatTabGroup, MatAutocompleteSelectedEvent, MatInput } from '@angular/material';
 import { BehaviorSubject, merge, Observable, Subject } from 'rxjs';
 import { UowService } from 'src/app/services/uow.service';
 import { SnackbarService } from 'src/app/shared/snakebar.service';
@@ -17,6 +17,7 @@ import { IData } from '../../components/pie-chart/pie-chart.component';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  @ViewChild('matgroup', { static: false }) myTab: MatTabGroup;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   // @ViewChild('myAutocomplete', { static: true }) myAutocomplete: MatInput;
@@ -25,7 +26,8 @@ export class ListComponent implements OnInit {
   resultsLength = 0;
   isRateLimitReached = false;
   dataSource = [];
-  situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز']
+  situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز'];
+  situationsMesures = ['في طور الإنجاز', 'منجز', 'غير منجز'];
 
   pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب المحاور', idAxe: 0 });
   pieChartSubjectD = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب النوع', idAxe: 6 });
@@ -84,10 +86,17 @@ export class ListComponent implements OnInit {
   routeMesure = '';
   //
 
-  sum1 = 0;
-  sum2 = 0;
-  sum3 = 0;
-  sum4 = 0;
+  sumNonRealise = '0';
+  sumRealise = '0';
+  sumEncourRealisation = '5';
+  sumEnContinue = '0';
+
+  pourcentageNonRealise = 0;
+  pourcentageRealise = 0;
+  pourcentageEncourRealisation = 0;
+  pourcentageEnContinue = 0;
+
+
   regions = ['الرباط', 'تمارة'];
   oranismes = ['الجامعة', 'الأكاديمية', 'محو الأمية'];
   title = '';
@@ -106,7 +115,10 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
-    this.pourcentageParSituation('غير منجز');
+    this.getCountBySituation(this.o);
+
+
+
     // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     this.createForm();
 
@@ -148,6 +160,11 @@ export class ListComponent implements OnInit {
 
     // this.getRoute();
     this.autoComplete();
+
+    setTimeout(() => {
+      this.reset();
+      // this.idCycle.setValue(1);
+    }, 300);
   }
 
   getOrganismes() {
@@ -193,6 +210,52 @@ export class ListComponent implements OnInit {
     });
   }
 
+  getCountBySituation(o: Model) {
+    this.getNbNonTermine(o);
+    this.getNbTermine(o);
+    this.getNbContinue(o);
+    this.getNbEncours(o);
+  }
+
+
+
+  getNbNonTermine(o: Model) {
+    this.uow.realisations.getNbNonTermine(o).subscribe(r => {
+
+      this.sumNonRealise = r.toString();
+    });
+  }
+
+  getNbTermine(o: Model){
+    this.uow.realisations.getNbTermine(o).subscribe(r => {
+      this.sumRealise = r.toString();
+    });
+  }
+
+  getNbContinue(o: Model){
+    this.uow.realisations.getNbContinue(o).subscribe(r => {
+      this.sumEnContinue = r.toString();
+    });
+  }
+
+  getNbEncours(o: Model){
+    this.uow.realisations.getNbEncours(o).subscribe(r => {
+      this.sumEncourRealisation = r.toString();
+    });
+  }
+
+
+  getCountAndPourcentage(o: Model)
+    {
+      this.uow.realisations.getCountAndPourcentage(o).subscribe(r => {
+        alert(r);
+        alert(r.epu.nonTermine);
+
+        //this.sumNonRealise = r.epu.nonTermine;
+      });
+
+
+    }
 
   stateOneOFMecanisme() {
 
@@ -243,6 +306,40 @@ export class ListComponent implements OnInit {
     });
   }
 
+
+
+
+
+
+  selectedTabChange(o: MatTabGroup) {
+
+    this.stateAxe();
+    this.stateOneOFMecanisme();
+
+    this.getOrganismes();
+    this.routeMesure = this.router.url;
+    this.checkWitchMesure(this.routeMesure);
+    this.o.typeOrganisme = this.typeOrganisme;
+    this.searchAndGet(this.o);
+    this.getCountBySituation(this.o);
+    this.createForm();
+
+    merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
+      r => {
+        r === true ? this.paginator.pageIndex = 0 : r = r;
+        !this.paginator.pageSize ? this.paginator.pageSize = 10 : r = r;
+        // this.o = new Model();
+        this.o.startIndex = this.paginator.pageIndex * this.paginator.pageSize;
+        this.o.pageSize = this.paginator.pageSize;
+        this.o.sortBy = this.sort.active ? this.sort.active : 'id';
+        this.o.sortDir = this.sort.direction ? this.sort.direction : 'desc';
+        this.isLoadingResults = true;
+        this.searchAndGet(this.o);
+      }
+    );
+    this.autoComplete();
+
+  }
   checkWitchMesure(r: string) {
     this.title = 'إحصائيات';
 
@@ -303,6 +400,7 @@ export class ListComponent implements OnInit {
       codeMesure: this.o.codeMesure,
       nomMesure: this.o.nomMesure,
       situation: this.o.situation,
+      situationMesure: this.o.situationMesure,
       startIndex: this.o.startIndex,
       pageSize: this.o.pageSize,
       sortBy: this.o.sortBy,
@@ -331,27 +429,30 @@ export class ListComponent implements OnInit {
     this.o = new Model();
     this.createForm();
     this.searchAndGet(this.o);
+    this.getCountBySituation(this.o);
   }
 
   search(o: Model) {
-    // this.searchAndGet(o);
-    this.o = o;
-    this.update.next(true);
+    this.searchAndGet(o);
+    this.getCountBySituation(this.o);
+
+    //this.o = o;
+    ///this.update.next(true);
   }
 
 
-  pourcentageParSituation(o: string) {
+  // pourcentageParSituation(o: string) {
 
-    // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
-    this.uow.mesures.pourcentageParSituation(this.o).subscribe(
-      (r: any) => {
-        console.log(r.list);
-        this.sum1 = r.value;
-        this.sum2 = r.value1;
-        this.isLoadingResults = false;
-      }, e => this.isLoadingResults = false,
-    );
-  }
+  //   // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
+  //   this.uow.mesures.pourcentageParSituation(this.o).subscribe(
+  //     (r: any) => {
+  //       console.log(r.list);
+  //       this.sum1 = r.value;
+  //       this.sum2 = r.value1;
+  //       this.isLoadingResults = false;
+  //     }, e => this.isLoadingResults = false,
+  //   );
+  // }
 
 
   searchAndGet(o: Model) {
@@ -406,6 +507,7 @@ class Model {
   nomMesure = '';
   codeMesure = '';
   situation = '';
+  situationMesure = '';
   // mecanisme = '';
   startIndex = 0;
   pageSize = 10;

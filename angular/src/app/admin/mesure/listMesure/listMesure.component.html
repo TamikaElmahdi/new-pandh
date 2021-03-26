@@ -108,7 +108,7 @@
                         <mat-icon>visibility</mat-icon>
                       </button>
 
-                      <button mat-icon-button color="primary" (click)="generatePDF(e.mesure.id)"
+                      <button hidden mat-icon-button color="primary" (click)="generatePDF(e.mesure.id)"
                         *ngIf="session.checkPermission(routeMesure, 1)">
                         <mat-icon style="color: orange;">visibility</mat-icon>
                       </button>

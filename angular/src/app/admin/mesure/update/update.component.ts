@@ -25,6 +25,8 @@ export class UpdateComponent implements OnInit {
   // syntheses = this.uow.syntheses.get();
   o = new Mesure();
   id = 0;
+  idAxe = new FormControl(0);
+  idSousAxe = new FormControl(0);
 
   isBaramij = false;
   // title = 'Nouveau utilisateur';
@@ -39,15 +41,22 @@ export class UpdateComponent implements OnInit {
     }
 
 
+
     this.createForm();
     this.id = +this.route.snapshot.paramMap.get('id');
+
     if (this.id !== 0) {
+
+
+
       this.uow.mesures.getOne(this.id).subscribe(r => {
         this.o = r as Mesure;
         // console.log(r);
 
         // this.eventToChild.emit(this.listOrganisme);
         // this.title = 'Modifier Utilisateur';
+        this.selectChange(this.o.idAxe);
+        setTimeout(() => this.createForm(), 300);
         this.uow.sousAxes.getByIdAxe(this.o.idAxe).subscribe(s => {
           // this.sousAxes = s as any[];
           this.createForm();

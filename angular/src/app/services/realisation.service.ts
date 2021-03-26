@@ -25,9 +25,35 @@ export class RealisationService  extends SuperService<Realisation> {
     }>(`${this.urlApi}/${this.controller}/stateMecanisme/${typeTable}`);
   }
 
+  getCountAndPourcentage(o) {
+    return this.http.get<{
+      epu: {  nonTermine: number, termine: number, encourRealisation: number , encontinue: number},
+    }>(`${this.urlApi}/${this.controller}/getCountAndPourcentage/${o}`);
+  }
+
+
+  getNbNonTermine(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbNonTermine`, o);
+  }
+
+  getNbTermine(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbTermine`, o);
+  }
+
+  getNbContinue(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbContinue`, o);
+  }
+
+  getNbEncours(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbEncours`, o);
+  }
+
+
   searchAndGet(o) {
     return this.http.post(`${this.urlApi}/${this.controller}/searchAndGet`, o);
   }
+
+
 
   GetRapportLiterary(o) {
     return this.http.post(`${this.urlApi}/${this.controller}/GetRapportLiterary`, o);
