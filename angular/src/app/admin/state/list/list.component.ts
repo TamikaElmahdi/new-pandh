@@ -88,13 +88,21 @@ export class ListComponent implements OnInit {
 
   sumNonRealise = '0';
   sumRealise = '0';
-  sumEncourRealisation = '5';
+  sumEncourRealisation = '0';
   sumEnContinue = '0';
 
-  pourcentageNonRealise = 0;
-  pourcentageRealise = 0;
-  pourcentageEncourRealisation = 0;
-  pourcentageEnContinue = 0;
+  pourcentageNonRealise = '0';
+  pourcentageRealise = '0';
+  pourcentageEncourRealisation = '0';
+  pourcentageEnContinue = '0';
+
+  sumNonRealiseMesure = '0';
+  sumRealiseMesure = '0';
+  sumEncourRealisationMesure = '0';
+
+  pourcentageNonRealiseMesure = '0';
+  pourcentageRealiseMesure = '0';
+  pourcentageEncourRealisationMesure = '0';
 
 
   regions = ['الرباط', 'تمارة'];
@@ -215,15 +223,32 @@ export class ListComponent implements OnInit {
     this.getNbTermine(o);
     this.getNbContinue(o);
     this.getNbEncours(o);
+
+    this.getNbNonTermineMesure(o);
+    this.getNbTermineMesure(o);
+    this.getNbEncoursMesure(o);
+
+    this.getPourcentageBySituation(o);
   }
 
+
+  getPourcentageBySituation(o: Model) {
+    this.getPourcentageNonTermine(o);
+    this.getPourcentageTermine(o);
+    this.getPourcentageContinue(o);
+    this.getPourcentageEncours(o);
+
+    this.getPourcentageNonTermineMesure(o);
+    this.getPourcentageTermineMesure(o);
+    this.getPourcentageEncoursMesure(o);
+  }
 
 
   getNbNonTermine(o: Model) {
     this.uow.realisations.getNbNonTermine(o).subscribe(r => {
-
       this.sumNonRealise = r.toString();
     });
+
   }
 
   getNbTermine(o: Model){
@@ -244,13 +269,75 @@ export class ListComponent implements OnInit {
     });
   }
 
+  getNbNonTermineMesure(o: Model) {
+    this.uow.realisations.getNbNonTermineMesure(o).subscribe(r => {
+      this.sumNonRealiseMesure = r.toString();
+    });
+  }
+
+  getNbTermineMesure(o: Model) {
+    this.uow.realisations.getNbTermineMesure(o).subscribe(r => {
+      this.sumRealiseMesure = r.toString();
+    });
+  }
+
+  getNbEncoursMesure(o: Model){
+    this.uow.realisations.getNbEncoursMesure(o).subscribe(r => {
+      this.sumEncourRealisationMesure = r.toString();
+    });
+  }
+
+
+
+  //--------------
+
+  getPourcentageNonTermine(o: Model) {
+    this.uow.realisations.getPourcentageNonTermine(o).subscribe(r => {
+      this.pourcentageNonRealise = r.toString();
+    });
+
+  }
+
+  getPourcentageTermine(o: Model){
+    this.uow.realisations.getPourcentageTermine(o).subscribe(r => {
+      this.pourcentageRealise = r.toString();
+    });
+  }
+
+  getPourcentageContinue(o: Model){
+    this.uow.realisations.getPourcentageContinue(o).subscribe(r => {
+      this.pourcentageEnContinue = r.toString();
+    });
+  }
+
+  getPourcentageEncours(o: Model){
+    this.uow.realisations.getPourcentageEncours(o).subscribe(r => {
+      this.pourcentageEncourRealisation = r.toString();
+    });
+  }
+
+  getPourcentageNonTermineMesure(o: Model) {
+    this.uow.realisations.getPourcentageNonTermineMesure(o).subscribe(r => {
+      this.pourcentageNonRealiseMesure = r.toString();
+    });
+  }
+
+  getPourcentageTermineMesure(o: Model) {
+    this.uow.realisations.getPourcentageTermineMesure(o).subscribe(r => {
+      this.pourcentageRealiseMesure = r.toString();
+    });
+  }
+
+  getPourcentageEncoursMesure(o: Model){
+    this.uow.realisations.getPourcentageEncoursMesure(o).subscribe(r => {
+      this.pourcentageEncourRealisationMesure = r.toString();
+    });
+  }
+
 
   getCountAndPourcentage(o: Model)
     {
       this.uow.realisations.getCountAndPourcentage(o).subscribe(r => {
-        alert(r);
-        alert(r.epu.nonTermine);
-
         //this.sumNonRealise = r.epu.nonTermine;
       });
 

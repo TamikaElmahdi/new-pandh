@@ -36,6 +36,9 @@ namespace Controllers
                 .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
                 .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
                 .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => model.SituationMesure == "" ? true : model.SituationMesure == "غير منجز" ? e.Realisations.All(f => f.TauxRealisation == 0) : model.SituationMesure == "منجز" ? e.Realisations.All(f => f.TauxRealisation == 100): e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100) )
+                //.Where(e => e.Realisations.Any(f => f.TauxRealisation == 0)).Count();
+
 
                 .Include(e => e.Realisations).ThenInclude(e => e.Activite)
 
@@ -243,11 +246,7 @@ namespace Controllers
             return Ok(await Calc(_context.Realisations, typeTable));
         }
 
-        [HttpGet("{o}")]
-        public async Task<IActionResult> GetCountAndPourcentage(Model model) // used
-        {
-            return Ok(CalcCountAndPourcentage(_context.Mesures, model));
-        }
+       
 
         [HttpPost]
         public int GetNbNonTermine(Model model)
@@ -264,9 +263,27 @@ namespace Controllers
                 .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
                 .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
                 .Where(e => e.TauxRealisation == 0).Count();
+
+                var countAll = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation).Count();
+
+                var moyen = ( count * countAll ) / 100;
                 return count;
+                //return Tuple.Create(count,moyen);
+
 
         }
+
+        
+
 
         [HttpPost]
         public int GetNbTermine(Model model)
@@ -289,9 +306,10 @@ namespace Controllers
 
 
         [HttpPost]
-        public int GetNbContinue(Model model)
+        public  int GetNbContinue(Model model)
         {
           
+            
              var count = _context.Realisations
                 .Where(e => e.Activite.ActiviteMesures  != null)
                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
@@ -303,7 +321,22 @@ namespace Controllers
                 .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
                 .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
                 .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل").Count();
+                //return count;
+
+                var countAll = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation).Count();
+
+                var moyen = ( count * countAll ) / 100;
                 return count;
+                //return Tuple.Create(count,moyen);
 
         }
 
@@ -327,87 +360,254 @@ namespace Controllers
 
         }
 
-
-
-
-
-
-        private  object CalcCountAndPourcentage(IQueryable<Mesure> q, Model model)
+        [HttpPost]
+        public int GetNbNonTermineMesure(Model model)
         {
-
-            // var nonTermine = await q
-            //     .Where(e => e.ActiviteMesures  != null)
-            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
-            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
-            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
-            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
-            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
-                
-            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
-            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
-            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation == 0)).CountAsync();
-            var nonTermine = 25;
-            
-                           
-            // var termine = await q
-            //     .Where(e => e.ActiviteMesures  != null)
-            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
-            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
-            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
-            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
-            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
-                
-            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
-            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
-            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation == 100)).CountAsync();
-            
-            var termine = 20;
-
-            // var encourRealisation = await q
-            //     .Where(e => e.ActiviteMesures  != null)
-            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
-            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
-            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
-            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
-            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
-                
-            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
-            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
-            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation < 100 && f.TauxRealisation > 0 && f.Situation == "في طور الإنجاز")).CountAsync();
-
-            var encourRealisation = 50;
-                
           
-
-            // var encontinue = await q
-            //     .Where(e => e.ActiviteMesures  != null)
-            //     .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
-            //     .Where(e => model.IdCycle == 0 ? true : e.IdCycle == model.IdCycle)
-            //     .Where(e => model.IdMesure == 0 ? true : e.Id == model.IdMesure)
-            //     .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
-            //     .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
-            //     .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
                 
-            //     .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
-            //     .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
-            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-            //     .Where(e => e.Realisations.Any(f => f.TauxRealisation < 100 && f.TauxRealisation > 0 && f.Situation == "عمل متواصل")).CountAsync();
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "غير منجز")  && e.Realisations.All(f => f.TauxRealisation == 0) )
+                .Distinct().Count();
 
-            var encontinue = 47;
-            
-            var epu = new { nonTermine, termine, encourRealisation, encontinue };
+                var countAll = _context.Mesures.Count();
 
-          
-            return new { epu };
+                var countNull = 0;
+                if(model.SituationMesure == "" || model.SituationMesure == "غير منجز")
+                {
+                    countNull =  countAll - (GetNbTermineMesure(model)+ GetNbEncoursMesure(model) + count);
+                     return count + countNull;
 
+                }
+                else
+                    return count ;
+                //return Tuple.Create(count,moyen);
         }
 
+        [HttpPost]
+        public int GetNbTermineMesure(Model model)
+        {
+          
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "منجز")  && e.Realisations.All(f => f.TauxRealisation == 100)).Distinct().Count();
+                return count;
+                //return Tuple.Create(count,moyen);
+        }
+
+         [HttpPost]
+        public int GetNbEncoursMesure(Model model)
+        {
+          
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "في طور الإنجاز")  && e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
+                return count;
+                //return Tuple.Create(count,moyen);
+        }
+
+        public int CountAllActivite(Model model)
+        {
+            var countAll = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation).Count();
+                return  countAll;
+        }
+
+        [HttpPost]
+        public int GetPourcentageNonTermine(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation == 0).Count();
+                var moyen = ( count * 100 ) / CountAllActivite(model);
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+
+        [HttpPost]
+        public int GetPourcentageTermine(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation == 100).Count();
+                var moyen = ( count * 100 ) / CountAllActivite(model);
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+
+        [HttpPost]
+        public int GetPourcentageContinue(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز").Count();
+                var moyen = ( count * 100 ) / CountAllActivite(model);
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+        [HttpPost]
+        public int GetPourcentageEncours(Model model)
+        {
+          
+             var count = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل").Count();
+                var moyen = ( count * 100 ) / CountAllActivite(model);
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+        //*******************
+
+        [HttpPost]
+        public int GetPourcentageNonTermineMesure(Model model)
+        {
+          
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "غير منجز")  && e.Realisations.All(f => f.TauxRealisation == 0) )
+                .Distinct().Count();
+
+                var countAll = _context.Mesures.Count();
+
+                var countNull = 0;
+                if(model.SituationMesure == "" || model.SituationMesure == "غير منجز")
+                    countNull =  countAll - (GetNbTermineMesure(model)+ GetNbEncoursMesure(model) + count);
+                
+
+                var moyenNull = ( countNull * 100 ) / countAll;
+                var moyen = ( count * 100 ) / countAll;
+                return moyen + moyenNull;
+
+                //return count + countNull;
+                //return Tuple.Create(count,moyen);
+        }
+
+        
+        [HttpPost]
+        public int GetPourcentageTermineMesure(Model model)
+        {
+          
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "منجز")  && e.Realisations.All(f => f.TauxRealisation == 100)).Distinct().Count();
+                var countAll = _context.Mesures.Count();
+                
+                var moyen = ( count * 100 ) / countAll;
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+          [HttpPost]
+        public int GetPourcentageEncoursMesure(Model model)
+        {
+          
+             var count = _context.Mesures
+                // .Where(e => e.ActiviteMesures  != null)
+                // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "في طور الإنجاز")  && e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
+               
+                var countAll = _context.Mesures.Count();
+                var moyen = ( count * 100 ) / countAll;
+                return moyen;
+                //return Tuple.Create(count,moyen);
+        }
+
+
+
+        
 
         
         [HttpGet("{table}/{type}/{typeTable}")]

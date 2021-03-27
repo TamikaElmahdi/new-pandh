@@ -49,6 +49,47 @@ export class RealisationService  extends SuperService<Realisation> {
   }
 
 
+  getNbNonTermineMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbNonTermineMesure`, o);
+  }
+
+  getNbTermineMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbTermineMesure`, o);
+  }
+
+  getNbEncoursMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getNbEncoursMesure`, o);
+  }
+
+  //-----------------
+
+  getPourcentageNonTermine(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageNonTermine`, o);
+  }
+
+  getPourcentageTermine(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageTermine`, o);
+  }
+
+  getPourcentageContinue(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageContinue`, o);
+  }
+
+  getPourcentageEncours(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageEncours`, o);
+  }
+
+  getPourcentageNonTermineMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageNonTermineMesure`, o);
+  }
+
+  getPourcentageTermineMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageTermineMesure`, o);
+  }
+
+  getPourcentageEncoursMesure(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getPourcentageEncoursMesure`, o);
+  }
   searchAndGet(o) {
     return this.http.post(`${this.urlApi}/${this.controller}/searchAndGet`, o);
   }

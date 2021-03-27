@@ -81,6 +81,8 @@ namespace Controllers
                 .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
                 .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
                 .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+                .Where(e => model.SituationMesure == "" ? true : model.SituationMesure == "غير منجز" ? e.Realisations.All(f => f.TauxRealisation == 0) : model.SituationMesure == "منجز" ? e.Realisations.All(f => f.TauxRealisation == 100): e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100) )
+
 
                 .Include(e => e.Realisations).ThenInclude(e => e.Activite)
 
@@ -259,6 +261,7 @@ namespace Controllers
         public string CodeMesure { get; set; }
         public string NomMesure { get; set; }
         public string Situation { get; set; }
+        public string SituationMesure { get; set; }
         public int StartIndex { get; set; }
         public int PageSize { get; set; }
         public string SortBy { get; set; }
