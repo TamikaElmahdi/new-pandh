@@ -46,9 +46,6 @@ export class UpdateComponent implements OnInit {
     this.id = +this.route.snapshot.paramMap.get('id');
 
     if (this.id !== 0) {
-
-
-
       this.uow.mesures.getOne(this.id).subscribe(r => {
         this.o = r as Mesure;
         // console.log(r);
