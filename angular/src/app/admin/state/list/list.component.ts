@@ -104,6 +104,9 @@ export class ListComponent implements OnInit {
   pourcentageRealiseMesure = '0';
   pourcentageEncourRealisationMesure = '0';
 
+  countActivite = 0;
+  countMesure = 0;
+
 
   regions = ['الرباط', 'تمارة'];
   oranismes = ['الجامعة', 'الأكاديمية', 'محو الأمية'];
@@ -396,8 +399,6 @@ export class ListComponent implements OnInit {
 
 
 
-
-
   selectedTabChange(o: MatTabGroup) {
 
     this.stateAxe();
@@ -408,7 +409,7 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
-    this.getCountBySituation(this.o);
+    //this.getCountBySituation(this.o);
     this.createForm();
 
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
@@ -516,12 +517,12 @@ export class ListComponent implements OnInit {
     this.o = new Model();
     this.createForm();
     this.searchAndGet(this.o);
-    this.getCountBySituation(this.o);
+    //this.getCountBySituation(this.o);
   }
 
   search(o: Model) {
     this.searchAndGet(o);
-    this.getCountBySituation(this.o);
+    //this.getCountBySituation(this.o);
 
     //this.o = o;
     ///this.update.next(true);
@@ -552,6 +553,8 @@ export class ListComponent implements OnInit {
         this.dataSource = r.list;
         this.resultsLength = r.count;
         this.isLoadingResults = false;
+        this.countMesure = r.count;
+        this.countActivite = r.countActivite;
       }, e => this.isLoadingResults = false,
     );
   }

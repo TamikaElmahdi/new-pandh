@@ -90,6 +90,22 @@ namespace Controllers
 
             int count = model.IsAllEmpty() ? await _context.Mesures.CountAsync() : await query.CountAsync();
 
+
+            var countActivite = _context.Realisations
+                .Where(e => e.Activite.ActiviteMesures  != null)
+                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Activite != null))
+                .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+                .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+                .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+                .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+                .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+                .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
+                .Where(e => model.SituationMesure == "" ? true : model.SituationMesure == "غير منجز" ? e.TauxRealisation == 0 : model.SituationMesure == "منجز" ? e.TauxRealisation == 100: e.TauxRealisation > 0 && e.TauxRealisation < 100 )
+                .Count();
+
+                
+
             var list = await query.OrderByName<Mesure>(model.SortBy, model.SortDir == "desc")
                 .Skip(model.StartIndex)
                 .Take(model.PageSize)
@@ -105,7 +121,7 @@ namespace Controllers
                 .ToListAsync();
             ;
 
-            return Ok(new { list = list, count = count });
+            return Ok(new { list = list, count = count , countActivite = countActivite});
         }
 
 

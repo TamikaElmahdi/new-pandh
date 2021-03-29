@@ -12,6 +12,112 @@
       </ng-template>
       <ng-template matTabContent>
 
+        <div class="row">
+          <div class="col-md-6" style="margin-bottom: 3%;">
+
+            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
+              <section class="super-title border-right">
+                <div>
+                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;">وضعية تنفيد الأنشطة</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="example-container mat-elevation-z8">
+              <div class="example-loading-shade" *ngIf="isLoadingResults">
+                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+              </div>
+              <div class="example-table-container">
+                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
+                  <!-- <table class="table table-bordered table-sm mt-3"> -->
+                  <thead>
+                    <tr style="background-color: #8bd0e8  !important;">
+                      <th scope="col"></th>
+                      <th scope="col">العدد</th>
+                      <th scope="col">النسبة</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="rowNonTermine">
+                      <td>غير منجز</td>
+                      <td>{{ sumNonRealise }}</td>
+                      <td>{{ pourcentageNonRealise }}</td>
+                    </tr>
+
+                    <tr class="rowContinue">
+                      <td>عمل متواصل</td>
+                      <td>{{ sumEnContinue }}</td>
+                      <td>{{ pourcentageEnContinue }}</td>
+                    </tr>
+
+                    <tr class="rowEncours">
+                      <td>في طور الإنجاز</td>
+                      <td>{{ sumEncourRealisation }}</td>
+                      <td>{{ pourcentageEncourRealisation }}</td>
+                    </tr>
+
+                    <tr class="rowTermine">
+                      <td>منجز</td>
+                      <td>{{ sumRealise }}</td>
+                      <td>{{ pourcentageRealise }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" style="margin-bottom: 3%;">
+
+            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
+              <section class="super-title border-right">
+                <div>
+                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;"> وضعية تنفيد التدابير</h3>
+                </div>
+              </section>
+            </div>
+
+            <div class="example-container mat-elevation-z8">
+              <div class="example-loading-shade" *ngIf="isLoadingResults">
+                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+              </div>
+              <div class="example-table-container">
+                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
+                  <!-- <table class="table table-bordered table-sm mt-3"> -->
+                  <thead>
+                    <tr style="background-color: #8bd0e8  !important;">
+                      <th scope="col"></th>
+                      <th scope="col">العدد</th>
+                      <th scope="col">النسبة</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="rowNonTermine">
+                      <td>غير منجز</td>
+                      <td>{{ sumNonRealiseMesure }}</td>
+                      <td>{{ pourcentageNonRealiseMesure }}</td>
+                    </tr>
+
+                    <tr class="rowEncours">
+                      <td>في طور الإنجاز</td>
+                      <td>{{ sumEncourRealisationMesure }}</td>
+                      <td>{{ pourcentageEncourRealisationMesure }}</td>
+                    </tr>
+
+                    <tr class="rowTermine">
+                      <td>منجز</td>
+                      <td>{{ sumRealiseMesure }}</td>
+                      <td>{{ pourcentageRealiseMesure }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!-- ------------------ Graphe -------------------- -->
       <div class="row justify-content-center">
         <div class="col-md-4">
@@ -177,111 +283,14 @@
           </mat-accordion>
         </div>
 
-        <div class="row">
-          <div class="col-md-6" style="margin-bottom: 3%;">
+<div class="row">
+    <h5 class="countTotal col-md-12" style="text-align: right;"> عدد الأنشطة : {{ countActivite }} </h5>
+</div>
 
-            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
-              <section class="super-title border-right">
-                <div>
-                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;">وضعية تنفيد الأنشطة</h3>
-                </div>
-              </section>
-            </div>
+<div class="row">
+  <h5 class="countTotal col-md-12" style="text-align: right;"> عدد التدابير : {{ countMesure }} </h5>
+</div>
 
-            <div class="example-container mat-elevation-z8">
-              <div class="example-loading-shade" *ngIf="isLoadingResults">
-                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-              </div>
-              <div class="example-table-container">
-                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
-                  <!-- <table class="table table-bordered table-sm mt-3"> -->
-                  <thead>
-                    <tr style="background-color: #8bd0e8  !important;">
-                      <th scope="col"></th>
-                      <th scope="col">العدد</th>
-                      <th scope="col">النسبة</th>
-
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="rowNonTermine">
-                      <td>غير منجز</td>
-                      <td>{{ sumNonRealise }}</td>
-                      <td>{{ pourcentageNonRealise }}</td>
-                    </tr>
-
-                    <tr class="rowContinue">
-                      <td>عمل متواصل</td>
-                      <td>{{ sumEnContinue }}</td>
-                      <td>{{ pourcentageEnContinue }}</td>
-                    </tr>
-
-                    <tr class="rowEncours">
-                      <td>في طور الإنجاز</td>
-                      <td>{{ sumEncourRealisation }}</td>
-                      <td>{{ pourcentageEncourRealisation }}</td>
-                    </tr>
-
-                    <tr class="rowTermine">
-                      <td>منجز</td>
-                      <td>{{ sumRealise }}</td>
-                      <td>{{ pourcentageRealise }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" style="margin-bottom: 3%;">
-
-            <div class="d-flex justify-content-left w-100" style="margin-top: 2%; margin-bottom: 1%; ">
-              <section class="super-title border-right">
-                <div>
-                  <h3 class="titleGrapheMesure" style="font-size: 1.2em;"> وضعية تنفيد التدابير</h3>
-                </div>
-              </section>
-            </div>
-
-            <div class="example-container mat-elevation-z8">
-              <div class="example-loading-shade" *ngIf="isLoadingResults">
-                <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
-              </div>
-              <div class="example-table-container">
-                <table class="tableFils table table-bordered table-sm mt-3" style="text-align: center;">
-                  <!-- <table class="table table-bordered table-sm mt-3"> -->
-                  <thead>
-                    <tr style="background-color: #8bd0e8  !important;">
-                      <th scope="col"></th>
-                      <th scope="col">العدد</th>
-                      <th scope="col">النسبة</th>
-
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="rowNonTermine">
-                      <td>غير منجز</td>
-                      <td>{{ sumNonRealiseMesure }}</td>
-                      <td>{{ pourcentageNonRealiseMesure }}</td>
-                    </tr>
-
-                    <tr class="rowEncours">
-                      <td>في طور الإنجاز</td>
-                      <td>{{ sumEncourRealisationMesure }}</td>
-                      <td>{{ pourcentageEncourRealisationMesure }}</td>
-                    </tr>
-
-                    <tr class="rowTermine">
-                      <td>منجز</td>
-                      <td>{{ sumRealiseMesure }}</td>
-                      <td>{{ pourcentageRealiseMesure }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="example-container mat-elevation-z8">
           <div class="example-loading-shade" *ngIf="isLoadingResults">
             <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
