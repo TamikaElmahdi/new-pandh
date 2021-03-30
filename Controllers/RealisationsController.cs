@@ -634,17 +634,34 @@ namespace Controllers
                 //     .ToListAsync();
 
 
-                recommendationsCount = await _context.Realisations
-                .Where(r => r.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
-                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
+                // recommendationsCount = await _context.Realisations
+                // // .Where(r => r.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                // // .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
+                // .CountAsync();
+                // list = await _context.Axes
+                //     .Select(e => new
+                //     {
+                //         table = e.Label,
+                //         value = e.Mesures
+                //                         //.Where(r => r.IdCycle != null)
+                //                         //.Where(e => e.Responsables.Any(o => o.Organisme.Type == typeTable))
+                //                         .Count() * 100 / recommendationsCount,
+                //     })
+                //     .Distinct()
+                //     .ToListAsync();
+
+                recommendationsCount = await _context.Mesures
+                // .Where(r => r.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                // .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => o.Organisme.Type == typeTable)))
                 .CountAsync();
                 list = await _context.Axes
                     .Select(e => new
                     {
                         table = e.Label,
-                        value = e.Mesures.Where(r => r.IdCycle != null)
-                                        .Where(e => e.Responsables.Any(o => o.Organisme.Type == typeTable))
-                                        .Count() * 100 / recommendationsCount,
+                        value = e.Mesures
+                                        //.Where(r => r.IdCycle != null)
+                                        //.Where(e => e.Responsables.Any(o => o.Organisme.Type == typeTable))
+                                        .Count(),
                     })
                     .Distinct()
                     .ToListAsync();
@@ -755,10 +772,36 @@ namespace Controllers
             var list = new[] { new { table = "", value = 0 } }.ToList();
             int recommendationsCount = 0;
            
-                recommendationsCount = await _context.Realisations
+                // recommendationsCount = await _context.Realisations
+                
+                // //.Where(e => e.Mesure.TypeMesure == typeTable)
+                // .Where(e => e.Activite.ActiviteMesures != null)
+
+                // .CountAsync();
+                // list = await _context.Natures
+                //     .Select(e => new
+                //     {
+                //         table = e.Label,
+                //         // value = e.Mesures
+                //         // .Where(e => e.IdAxe == idAxe)
+                //         // .Where(e => e.Responsable.Organisme.Type == typeTable)
+                //         //                 .Count() * 100 / recommendationsCount,
+
+                //         //value = e.Mesures.ActiviteMesures.Select(t => t.Activite)
+                //         value = e.Mesures.Select(r => r.ActiviteMesures.Select(t => t.Activite))
+                //         //.Where(e => e.Any( o => o.ActiviteMesures != null) && e.Any(o => o.ActiviteMesures.Any(r => r.Mesure.IdAxe == idAxe)))
+                //         //.Where(e => e.Any( o => o.ActiviteMesures != null)  && e.Any(u => u.ActiviteMesures.Any(o=>o.Mesure.TypeMesure == typeTable)))
+                //         .Count() * 100 / recommendationsCount,
+
+                //         //value = 10
+                //     })
+                //     .Distinct()
+                //     .ToListAsync()
+
+                recommendationsCount = await _context.Mesures
                 
                 //.Where(e => e.Mesure.TypeMesure == typeTable)
-                .Where(e => e.Activite.ActiviteMesures != null)
+                //.Where(e => e.Activite.ActiviteMesures != null)
 
                 .CountAsync();
                 list = await _context.Natures
@@ -771,15 +814,17 @@ namespace Controllers
                         //                 .Count() * 100 / recommendationsCount,
 
                         //value = e.Mesures.ActiviteMesures.Select(t => t.Activite)
-                        value = e.Mesures.Select(r => r.ActiviteMesures.Select(t => t.Activite))
+                        value = e.Mesures
+                        //.Select(r => r.ActiviteMesures.Select(t => t.Activite))
                         //.Where(e => e.Any( o => o.ActiviteMesures != null) && e.Any(o => o.ActiviteMesures.Any(r => r.Mesure.IdAxe == idAxe)))
                         //.Where(e => e.Any( o => o.ActiviteMesures != null)  && e.Any(u => u.ActiviteMesures.Any(o=>o.Mesure.TypeMesure == typeTable)))
-                        .Count() * 100 / recommendationsCount,
+                        .Count() ,
 
                         //value = 10
                     })
                     .Distinct()
                     .ToListAsync()
+
                 ;
             
             return Ok(list);
