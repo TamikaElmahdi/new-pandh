@@ -4217,6 +4217,7 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
                 new Activite {Id = 1267, Nom = "إعداد وتنفيذ برامج تكوينية في مجال الإدارة القضائية", Duree = "2019;2020;2021" },
                 new Activite {Id = 1268, Nom = "تعديل القوانين المنظمة للمهن القانونية  والقضائية بما يضمن الزامية التكوين ", Duree = "2019;2020;2021" },
                 new Activite {Id = 1269, Nom = " إنجاز قاعدة معطيات متعلقة بالأحكام والاجتهادات القضائية التي تستند إلى مرجعية حقوق الإنسان", Duree = "2020;2021" },
+                new Activite {Id = 1270, Nom = "تدبير منفد", Duree = "2020;2021" },
                 
             });
 
@@ -4560,10 +4561,10 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
                 new ActiviteMesure {IdMesure = 77, IdActivite = 239},
                 new ActiviteMesure {IdMesure = 78, IdActivite = 240},
                 new ActiviteMesure {IdMesure = 78, IdActivite = 241},
-                new ActiviteMesure {IdMesure = 372, IdActivite = 242},
-                new ActiviteMesure {IdMesure = 372, IdActivite = 243},
-                new ActiviteMesure {IdMesure = 372, IdActivite = 244},
-                new ActiviteMesure {IdMesure = 372, IdActivite = 245},
+                new ActiviteMesure {IdMesure = 79, IdActivite = 242},
+                new ActiviteMesure {IdMesure = 79, IdActivite = 243},
+                new ActiviteMesure {IdMesure = 79, IdActivite = 244},
+                new ActiviteMesure {IdMesure = 79, IdActivite = 245},
                 new ActiviteMesure {IdMesure = 80, IdActivite = 246},
                 new ActiviteMesure {IdMesure = 80, IdActivite = 247},
                 new ActiviteMesure {IdMesure = 80, IdActivite = 248},
@@ -5373,8 +5374,10 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
                 new ActiviteMesure {IdMesure = 258, IdActivite = 811},
                 new ActiviteMesure {IdMesure = 258, IdActivite = 812},
                 new ActiviteMesure {IdMesure = 258, IdActivite = 813},
-                new ActiviteMesure {IdMesure = 258, IdActivite = 814},
-                new ActiviteMesure {IdMesure = 258, IdActivite = 815},
+
+                new ActiviteMesure {IdMesure = 259, IdActivite = 814},
+                new ActiviteMesure {IdMesure = 259, IdActivite = 815},
+                
                 new ActiviteMesure {IdMesure = 276, IdActivite = 811},
                 new ActiviteMesure {IdMesure = 276, IdActivite = 812},
                 new ActiviteMesure {IdMesure = 276, IdActivite = 813},
@@ -5938,6 +5941,41 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
                 new ActiviteMesure {IdMesure = 433, IdActivite = 1267},
                 new ActiviteMesure {IdMesure = 433, IdActivite = 1268},
                 new ActiviteMesure {IdMesure = 435, IdActivite = 1269},
+                
+                //ICI
+                new ActiviteMesure {IdMesure = 26, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 31, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 172, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 179, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 187, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 220, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 301, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 345, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 383, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 402, IdActivite = 1270},
+                new ActiviteMesure {IdMesure = 403, IdActivite = 1270},
+
+                new ActiviteMesure {IdMesure = 100, IdActivite = 323},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 332},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 333},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 334},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 335},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 336},
+                new ActiviteMesure {IdMesure = 100, IdActivite = 337},
+
+                new ActiviteMesure {IdMesure = 200, IdActivite = 645},
+                new ActiviteMesure {IdMesure = 212, IdActivite = 686},
+                new ActiviteMesure {IdMesure = 212, IdActivite = 687},
+                new ActiviteMesure {IdMesure = 212, IdActivite = 688},
+
+                new ActiviteMesure {IdMesure = 242, IdActivite = 766},
+                new ActiviteMesure {IdMesure = 242, IdActivite = 767},
+                new ActiviteMesure {IdMesure = 242, IdActivite = 768},
+
+
+
+
+
                 
             });
 
@@ -8597,6 +8635,51 @@ public static ModelBuilder Mesures(this ModelBuilder modelBuilder)
                 new Realisation {Id = 1722, IdMesure = 81    , IdActivite = 187 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
                 new Realisation {Id = 1723, IdMesure = 81    , IdActivite = 188 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
                 new Realisation {Id = 1724, IdMesure = 81    , IdActivite = 189 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+
+                new Realisation {Id = 1725, IdMesure = 100    , IdActivite = 323 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1726, IdMesure = 100    , IdActivite = 332 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1727, IdMesure = 100    , IdActivite = 333 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1728, IdMesure = 100    , IdActivite = 334 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1729, IdMesure = 100    , IdActivite = 335 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1730, IdMesure = 100    , IdActivite = 336 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1731, IdMesure = 100    , IdActivite = 337 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+
+                new Realisation {Id = 1732, IdMesure = 200    , IdActivite = 645 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+
+                new Realisation {Id = 1733, IdMesure = 212    , IdActivite = 686 , Situation="في طور الإنجاز", TauxRealisation= 50, Nom="", Annee = 2020},
+                new Realisation {Id = 1734, IdMesure = 212    , IdActivite = 687 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1735, IdMesure = 212    , IdActivite = 688 , Situation="في طور الإنجاز", TauxRealisation= 50, Nom="", Annee = 2020},
+
+                new Realisation {Id = 1736, IdMesure = 242    , IdActivite = 766 , Situation="عمل متواصل", TauxRealisation= 50, Nom="", Annee = 2020},
+                new Realisation {Id = 1737, IdMesure = 242    , IdActivite = 767 , Situation="عمل متواصل", TauxRealisation= 50, Nom="", Annee = 2020},
+                new Realisation {Id = 1738, IdMesure = 242    , IdActivite = 768 , Situation="عمل متواصل", TauxRealisation= 50, Nom="", Annee = 2020},
+
+                new Realisation {Id = 1739, IdMesure = 259    , IdActivite = 814 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1740, IdMesure = 259    , IdActivite = 815 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+
+
+                new Realisation {Id = 1741, IdMesure = 79    , IdActivite = 242 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1742, IdMesure = 79    , IdActivite = 243 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1743, IdMesure = 79    , IdActivite = 244 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+                new Realisation {Id = 1744, IdMesure = 79    , IdActivite = 245 , Situation="غير منجز", TauxRealisation= 0, Nom="", Annee = 2020},
+
+//ICI
+                new Realisation {Id = 1745, IdMesure = 26    , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1746, IdMesure = 31    , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1747, IdMesure = 172    , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1748, IdMesure = 179   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1749, IdMesure = 187   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1750, IdMesure = 220    , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1751, IdMesure = 301    , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1752, IdMesure = 345   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1753, IdMesure = 383   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1754, IdMesure = 402   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+                new Realisation {Id = 1755, IdMesure = 403   , IdActivite = 1270 , Situation="منجز", TauxRealisation= 100, Nom="", Annee = 2020},
+
+
+
+
+
 
                 
             });
