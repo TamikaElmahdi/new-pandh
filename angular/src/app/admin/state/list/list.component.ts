@@ -38,6 +38,24 @@ export class ListComponent implements OnInit {
   countRec = new Subject();
   dataEpuPie = new Subject();
 
+  dataEpuPieType1 = new Subject();
+  dataEpuPieType2 = new Subject();
+  dataEpuPieType3 = new Subject();
+
+  dataEpuPieType4 = new Subject();
+  dataEpuPieType5 = new Subject();
+  dataEpuPieType6 = new Subject();
+
+
+  dataEpuPieType7 = new Subject();
+  dataEpuPieType8 = new Subject();
+  dataEpuPieType9 = new Subject();
+
+  dataEpuPieType10 = new Subject();
+  dataEpuPieType11 = new Subject();
+  dataEpuPieType12 = new Subject();
+
+
 
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
@@ -127,6 +145,23 @@ export class ListComponent implements OnInit {
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
     this.getCountBySituation(this.o);
+
+    this.stateOneOFMecanismeByType(1, 1, this.dataEpuPieType1);
+    this.stateOneOFMecanismeByType(1, 2, this.dataEpuPieType2);
+    this.stateOneOFMecanismeByType(1, 3, this.dataEpuPieType3);
+
+    this.stateOneOFMecanismeByType(2, 1, this.dataEpuPieType4);
+    this.stateOneOFMecanismeByType(2, 2, this.dataEpuPieType5);
+    this.stateOneOFMecanismeByType(2, 3, this.dataEpuPieType6);
+
+    this.stateOneOFMecanismeByType(3, 1, this.dataEpuPieType7);
+    this.stateOneOFMecanismeByType(3, 2, this.dataEpuPieType8);
+    this.stateOneOFMecanismeByType(3, 3, this.dataEpuPieType9);
+
+
+    this.stateOneOFMecanismeByType(4, 1, this.dataEpuPieType10);
+    this.stateOneOFMecanismeByType(4, 2, this.dataEpuPieType11);
+    this.stateOneOFMecanismeByType(4, 3, this.dataEpuPieType12);
 
 
 
@@ -396,6 +431,59 @@ export class ListComponent implements OnInit {
     });
   }
 
+  typeToText(idType: number)
+  {
+    if(idType == 1)
+      return 'الجانب التشريعي والمؤسساتي';
+    else if(idType == 2)
+      return 'التواصل والتحسيس';
+    else
+    return 'تقوية القدرات';
+  }
+
+
+  stateOneOFMecanismeByType(axe: number, type: number, control: Subject<unknown>) {
+
+    this.uow.realisations.stateMecanismeByType(1, axe , type ).subscribe(r => {
+      const chartLabels = [];
+      chartLabels.push('في طور الإنجاز');
+      chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
+      chartLabels.push('غير منجز');
+
+      console.log(r)
+
+      const chartData = [];
+      const dataToShowInTable = [];
+
+      // chartData.push(r.epu.p * r.epu.t / 100);
+      // chartData.push(r.epu.r * r.epu.t / 100);
+      // chartData.push(r.epu.t - (r.epu.p * r.epu.t / 100) - (r.epu.r * r.epu.t / 100));
+
+      chartData.push(r.epu.p * 100 / r.epu.t);
+      chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
+      chartData.push(r.epu.n * 100 / r.epu.t);
+
+      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.p + r.epu.r + r.epu.c + r.epu.n);
+
+      // chartData.push(100 - r.epu.t);
+
+
+      const chartColors = ['#f7801e', '#2b960b', '#2d71a1', '#db0707'];
+
+      control.next({
+        chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
+        , title: this.typeToText(type)
+
+      });
+
+    });
+  }
+
+
+
 
 
 
@@ -403,6 +491,23 @@ export class ListComponent implements OnInit {
 
     this.stateAxe();
     this.stateOneOFMecanisme();
+
+    this.stateOneOFMecanismeByType(1, 1, this.dataEpuPieType1);
+    this.stateOneOFMecanismeByType(1, 2, this.dataEpuPieType2);
+    this.stateOneOFMecanismeByType(1, 3, this.dataEpuPieType3);
+
+    this.stateOneOFMecanismeByType(2, 1, this.dataEpuPieType4);
+    this.stateOneOFMecanismeByType(2, 2, this.dataEpuPieType5);
+    this.stateOneOFMecanismeByType(2, 3, this.dataEpuPieType6);
+
+    this.stateOneOFMecanismeByType(3, 1, this.dataEpuPieType7);
+    this.stateOneOFMecanismeByType(3, 2, this.dataEpuPieType8);
+    this.stateOneOFMecanismeByType(3, 3, this.dataEpuPieType9);
+
+
+    this.stateOneOFMecanismeByType(4, 1, this.dataEpuPieType10);
+    this.stateOneOFMecanismeByType(4, 2, this.dataEpuPieType11);
+    this.stateOneOFMecanismeByType(4, 3, this.dataEpuPieType12);
 
     this.getOrganismes();
     this.routeMesure = this.router.url;
