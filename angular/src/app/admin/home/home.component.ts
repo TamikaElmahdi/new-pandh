@@ -11,9 +11,9 @@ import { Subject } from 'rxjs';
 export class HomeComponent implements OnInit {
   countMesure = this.uow.mesures.count();
   countActivite = this.uow.activites.count();
-  countG1 = 9 ;
-  countG2 = 11 ;
-  countG3 = 7;
+  countG1 = 7 ;
+  countG2 = 9;
+  countG3 = 13;
   countG4 = 5;
   departementSubject1 = new Subject();
   departementSubject2 = new Subject();
