@@ -39,5 +39,60 @@ namespace Controllers
         {
             return Ok(await _context.SousAxes.Where(e => e.IdAxe == id).ToListAsync());
         }
+
+
+        [HttpGet("{idAxe}/{idSousAxe}")]
+        public async Task<IActionResult> StateSousAxesDetails(int idAxe, int idSousAxe) 
+        {
+
+           
+                var q = _context.Realisations
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => idAxe == 0 ? true : e.Mesure.IdAxe == idAxe)
+                .Where(e => idSousAxe == 0 ? true : e.Mesure.IdSousAxe == idSousAxe)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.SousAxe)
+                ;
+
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy(e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    p = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "في طور الإنجاز").Count(),
+                    r = e.Where(s => s.TauxRealisation == 100).Count(),
+                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "عمل متواصل").Count(),
+                    n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    
+                    // // t = count,
+                    t = e.Count(),
+                })
+                .ToList()
+                ;
+             return Ok(list2);
+        }
+
+        public class ModelDetails
+    {
+      
+        public int IdAxeDetails { get; set; }
+        public int IdSousAxeDetails { get; set; }
+    
+
+        public bool IsAllEmpty()
+        {
+            if (IdAxeDetails == 0 && IdSousAxeDetails == 0) 
+            {
+                return true;
+            }
+
+            return false;
+        }
+    }
+
+
+
+        
     }
 }

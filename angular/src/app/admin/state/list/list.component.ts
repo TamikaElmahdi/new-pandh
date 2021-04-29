@@ -35,6 +35,7 @@ export class ListComponent implements OnInit {
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
   examenPageSubject = new Subject();
+  examenPageSubjectDetails = new Subject();
   countRec = new Subject();
   dataEpuPie = new Subject();
 
@@ -55,7 +56,12 @@ export class ListComponent implements OnInit {
   dataEpuPieType11 = new Subject();
   dataEpuPieType12 = new Subject();
 
+  dataEpuPieTypeDetails1 = new Subject();
+  dataEpuPieTypeDetails2 = new Subject();
+  dataEpuPieTypeDetails3 = new Subject();
 
+  idAxeDetails = 0;
+  idSousAxeDetails = 0;
 
   // periodes = [2019, 2020, 2021, 2022, 2023];
   // planifications = ['1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط', '1المخطط',];
@@ -86,12 +92,14 @@ export class ListComponent implements OnInit {
   users = [];
   //organismeFiltres = this.uow.organismes.getByType(1);
   myForm: FormGroup;
+  myFormDetails: FormGroup;
   //
   displayedColumns = this.columnDefs.map(e => e.columnDef);
   // progress = 0;
   // message: any;
   // formData = new FormData();
   o = new Model();
+  oDetails = new ModelDetails();
   myAuto = new FormControl('');
   filteredOptions: Observable<any>;
   //
@@ -144,6 +152,8 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
+    this.stateAxeDetails();
+
     this.getCountBySituation(this.o);
 
     this.stateOneOFMecanismeByType(1, 1, this.dataEpuPieType1);
@@ -163,10 +173,16 @@ export class ListComponent implements OnInit {
     this.stateOneOFMecanismeByType(4, 2, this.dataEpuPieType11);
     this.stateOneOFMecanismeByType(4, 3, this.dataEpuPieType12);
 
+    this.stateOneOFMecanismeByTypeDetails(1, this.dataEpuPieTypeDetails1);
+    this.stateOneOFMecanismeByTypeDetails(2, this.dataEpuPieTypeDetails2);
+    this.stateOneOFMecanismeByTypeDetails(3, this.dataEpuPieTypeDetails3);
+
+
 
 
     // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     this.createForm();
+    this.createFormDetails();
 
     // this.router.events.subscribe(route => {
     //   if (route instanceof NavigationStart) {
@@ -192,6 +208,8 @@ export class ListComponent implements OnInit {
         this.o.sortDir = this.sort.direction ? this.sort.direction : 'desc';
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
+        this.stateAxeDetails();
+
       }
     );
 
@@ -255,6 +273,35 @@ export class ListComponent implements OnInit {
       this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
     });
   }
+
+  stateAxeDetails() {
+
+    this.uow.sousAxes.stateSousAxesDetails(this.idAxeDetails, this.idSousAxeDetails).subscribe(r => {
+
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+      ];
+
+      r.forEach(e => {
+        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
+      });
+
+
+      // tslint:disable-next-line:max-line-length
+      this.examenPageSubjectDetails.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ' });
+    });
+  }
+
 
   getCountBySituation(o: Model) {
     this.getNbNonTermine(o);
@@ -483,6 +530,47 @@ export class ListComponent implements OnInit {
   }
 
 
+  stateOneOFMecanismeByTypeDetails(type: number, control: Subject<unknown>) {
+
+    this.uow.realisations.stateMecanismeByTypeDetails(1, this.idAxeDetails, this.idSousAxeDetails, type ).subscribe(r => {
+      const chartLabels = [];
+      chartLabels.push('في طور الإنجاز');
+      chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
+      chartLabels.push('غير منجز');
+
+      console.log(r)
+
+      const chartData = [];
+      const dataToShowInTable = [];
+
+      // chartData.push(r.epu.p * r.epu.t / 100);
+      // chartData.push(r.epu.r * r.epu.t / 100);
+      // chartData.push(r.epu.t - (r.epu.p * r.epu.t / 100) - (r.epu.r * r.epu.t / 100));
+
+      chartData.push(r.epu.p * 100 / r.epu.t);
+      chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
+      chartData.push(r.epu.n * 100 / r.epu.t);
+
+      dataToShowInTable.push(r.epu.p, r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.p + r.epu.r + r.epu.c + r.epu.n);
+
+      // chartData.push(100 - r.epu.t);
+
+
+      const chartColors = ['#f7801e', '#2b960b', '#2d71a1', '#db0707'];
+
+      control.next({
+        chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
+        , title: this.typeToText(type)
+
+      });
+
+    });
+  }
+
+
 
 
 
@@ -509,13 +597,20 @@ export class ListComponent implements OnInit {
     this.stateOneOFMecanismeByType(4, 2, this.dataEpuPieType11);
     this.stateOneOFMecanismeByType(4, 3, this.dataEpuPieType12);
 
+    this.stateOneOFMecanismeByTypeDetails(1, this.dataEpuPieTypeDetails1);
+    this.stateOneOFMecanismeByTypeDetails(2, this.dataEpuPieTypeDetails2);
+    this.stateOneOFMecanismeByTypeDetails(3, this.dataEpuPieTypeDetails3);
+
     this.getOrganismes();
     this.routeMesure = this.router.url;
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
+    this.stateAxeDetails();
+
     //this.getCountBySituation(this.o);
     this.createForm();
+    this.createFormDetails();
 
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
@@ -528,6 +623,8 @@ export class ListComponent implements OnInit {
         this.o.sortDir = this.sort.direction ? this.sort.direction : 'desc';
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
+        this.stateAxeDetails();
+
       }
     );
     this.autoComplete();
@@ -594,12 +691,22 @@ export class ListComponent implements OnInit {
       nomMesure: this.o.nomMesure,
       situation: this.o.situation,
       situationMesure: this.o.situationMesure,
+      idAxeDetails: this.o.idAxeDetails,
+      idSousAxeDetails: this.o.idSousAxeDetails,
       startIndex: this.o.startIndex,
       pageSize: this.o.pageSize,
       sortBy: this.o.sortBy,
       sortDir: this.o.sortDir,
     });
   }
+
+  createFormDetails() {
+    this.myFormDetails = this.fb.group({
+      idAxeDetails: this.o.idAxeDetails,
+      idSousAxeDetails: this.o.idSousAxeDetails,
+    });
+  }
+
 
   selectChange(id, name) {
     if (name === 'axe') {
@@ -618,10 +725,27 @@ export class ListComponent implements OnInit {
     }
   }
 
+  selectChangeDetails(id, type) {
+    if(type === 'axe'){
+    this.idAxeDetails = id;
+      this.uow.sousAxes.getByIdAxe(id).subscribe(r => {
+        this.sousAxes = r as any[];
+      });
+    }
+    else{
+    this.idSousAxeDetails = id;
+
+    }
+
+  }
+
   reset() {
     this.o = new Model();
     this.createForm();
+    this.createFormDetails();
     this.searchAndGet(this.o);
+    this.stateAxeDetails();
+
     //this.getCountBySituation(this.o);
   }
 
@@ -633,6 +757,14 @@ export class ListComponent implements OnInit {
     ///this.update.next(true);
   }
 
+
+  searchDetails(oDetails: ModelDetails) {
+    this.stateAxeDetails();
+    this.stateOneOFMecanismeByTypeDetails(1, this.dataEpuPieTypeDetails1);
+    this.stateOneOFMecanismeByTypeDetails(2, this.dataEpuPieTypeDetails2);
+    this.stateOneOFMecanismeByTypeDetails(3, this.dataEpuPieTypeDetails3);
+
+  }
 
   // pourcentageParSituation(o: string) {
 
@@ -703,11 +835,23 @@ class Model {
   codeMesure = '';
   situation = '';
   situationMesure = '';
+  idAxeDetails = 0;
+  idSousAxeDetails = 0;
+
   // mecanisme = '';
   startIndex = 0;
   pageSize = 10;
   sortBy = 'id';
   sortDir = 'desc';
 }
+
+class ModelDetails {
+
+  idAxeDetails = 0;
+  idSousAxeDetails = 0;
+
+}
+
+
 
 

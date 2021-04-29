@@ -460,6 +460,93 @@
       </ng-template>
     </mat-tab>
 
+    <mat-tab label="حسب المحاور الفرعية">
+      <ng-template matTabContent>
+
+        <div class="expension">
+          <mat-accordion>
+            <mat-expansion-panel expanded (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>search</mat-icon>
+                  <p>بحث</p>
+                </mat-panel-title>
+                <mat-panel-description>
+
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-divider>
+              </mat-divider>
+              <form [formGroup]="myFormDetails">
+
+                <div class="inputs2">
+
+
+
+                  <mat-form-field appearance="fill" style="width: 100%">
+                    <mat-label>المحور</mat-label>
+                    <mat-select formControlName="idAxeDetails" (selectionChange)="selectChangeDetails($event.value, 'axe')">
+                      <mat-option *ngFor="let e of axes | async" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>المحور الفرعي</mat-label>
+                    <mat-select formControlName="idSousAxeDetails" (selectionChange)="selectChangeDetails($event.value,'Sousaxe')">
+                      <mat-option value="0">...</mat-option>
+                      <mat-option *ngFor="let e of sousAxes" [value]="e.id">{{ e.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                </div>
+              </form>
+              <div class="right">
+
+                <button mat-raised-button color="primary" (click)="searchDetails(myFormDetails.value)" [disabled]="false">
+                  <mat-icon>search</mat-icon>
+                  بحث
+                </button>
+                &nbsp;
+                <button mat-raised-button (click)="reset()" [disabled]="false">
+                  <mat-icon>refresh</mat-icon>
+                  اعادة ضبط
+                </button>
+              </div>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="chart-size">
+              <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubjectDetails"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100" >
+            <section class="super-title border-right">
+              <div>
+                <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد المحور الفرعي حسب النوع</h3>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieTypeDetails1"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieTypeDetails2"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieTypeDetails3"></app-pie>
+          </div>
+        </div>
+
+      </ng-template>
+    </mat-tab>
+
   </mat-tab-group>
 
 

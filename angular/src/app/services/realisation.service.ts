@@ -32,6 +32,13 @@ export class RealisationService  extends SuperService<Realisation> {
     }>(`${this.urlApi}/${this.controller}/stateMecanismeByType/${typeTable}/${axe}/${type}`);
   }
 
+  stateMecanismeByTypeDetails(typeTable, axe, sousAxe, type) {
+    return this.http.get<{
+      epu: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},
+      count: number,
+    }>(`${this.urlApi}/${this.controller}/stateMecanismeByTypeDetails/${typeTable}/${axe}/${sousAxe}/${type}`);
+  }
+
   getCountAndPourcentage(o) {
     return this.http.get<{
       epu: {  nonTermine: number, termine: number, encourRealisation: number , encontinue: number},

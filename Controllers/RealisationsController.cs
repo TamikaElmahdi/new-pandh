@@ -280,6 +280,52 @@ namespace Controllers
         }
 
 
+        private async Task<object> CalcByTypeDetails(IQueryable<Realisation> q, int typeTable, int axe, int sousAxe, int type)
+        {
+
+            // int recommendationsCount = _context.Recommendations.Count();
+
+            var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+                            .CountAsync();
+                            
+            var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+                            .CountAsync();
+            var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+                            .CountAsync();
+            var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز"))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+                            .CountAsync();
+            var c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل"))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+                            .CountAsync();
+            
+            var epu = new { n, r, p, c, t };
+
+           
+
+            return new { epu, count = 0 };
+
+        }
+
+
         [HttpGet("{typeTable}")]
         public async Task<IActionResult> StateMecanisme(int typeTable) // used
         {
@@ -290,6 +336,12 @@ namespace Controllers
         public async Task<IActionResult> StateMecanismeByType(int typeTable,int axe,int type) // used
         {
             return Ok(await CalcByType(_context.Realisations, typeTable, axe, type));
+        }
+
+        [HttpGet("{typeTable}/{axe}/{sousAxe}/{type}")]
+        public async Task<IActionResult> StateMecanismeByTypeDetails(int typeTable,int axe,int sousAxe,int type) // used
+        {
+            return Ok(await CalcByTypeDetails(_context.Realisations, typeTable, axe, sousAxe, type));
         }
 
        
