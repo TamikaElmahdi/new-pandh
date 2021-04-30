@@ -40,6 +40,7 @@ export class UpdateComponent implements OnInit {
   situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز'];
   sendMesureToIndicateurComponent = new BehaviorSubject(0);
   mesureId = 0;
+  disabled = false;
   constructor(private route: ActivatedRoute, private router: Router,
     private uow: UowService, private fb: FormBuilder, private session: SessionService) { }
 
@@ -58,6 +59,15 @@ export class UpdateComponent implements OnInit {
 
         this.sendMesureToIndicateurComponent.next(this.o.idMesure);
         this.activites = await this.uow.activites.getByForeignKey(this.o.idMesure).toPromise() as any;
+
+        if(this.o.situation === 'منجز'){
+          this.disabled = true;
+        } else if(this.o.situation === 'غير منجز'){
+          this.disabled = true;
+        } else {
+          this.disabled = false;
+
+        }
 
         this.createForm();
         //this.myForm.get('annee').setValue(this.o.annee.toString());
@@ -95,12 +105,17 @@ export class UpdateComponent implements OnInit {
 
       if(valType === 'منجز'){
         this.myForm.controls.tauxRealisation.setValue(100);
-        this.myForm.controls.tauxRealisation.disable();
+        //this.myForm.controls['tauxRealisation'].disable();
+        this.disabled = true;
       } else if(valType === 'غير منجز'){
         this.myForm.controls.tauxRealisation.setValue(0);
-        this.myForm.controls.tauxRealisation.disable();
+        //this.myForm.controls.tauxRealisation.disable();
+        this.disabled = true;
+
       } else {
-        this.myForm.controls.tauxRealisation.enable();
+        //this.myForm.controls.tauxRealisation.enable();
+        this.disabled = false;
+
       }
 
   }

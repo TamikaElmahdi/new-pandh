@@ -50,14 +50,14 @@
               <mat-form-field appearance="fill">
                 <mat-label>وضعية التنفيد</mat-label>
                 <!-- <input matInput formControlName="situation" required> -->
-                <mat-select formControlName="situation" (selectionChange)="showTaux($event.value)" >
+                <mat-select  formControlName="situation" (selectionChange)="showTaux($event.value)" >
                   <mat-option *ngFor="let e of situations" [value]="e">{{ e }}</mat-option>
                 </mat-select>
               </mat-form-field>
 
               <mat-form-field appearance="fill">
                 <mat-label>معدل الإنجاز</mat-label>
-                <input matInput formControlName="tauxRealisation"  #i matInput type="number" min="0" required>
+                <input matInput [attr.disabled]="disabled ? '' : null" formControlName="tauxRealisation"  #i matInput type="number" min="0" required>
               <mat-error *ngIf="i.value <= 0 || i.value >100 ">يسمح فقط بالقيم بين 0 و 100</mat-error>
 
               </mat-form-field>
