@@ -87,7 +87,7 @@ export class ActivitesComponent implements OnInit {
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list.map(e => {
-          e.duree = Object.assign(new Activite(), e).dureeToArray();
+          //e.duree = Object.assign(new Activite(), e).dureeToArray();
           return e;
         });
         this.resultsLength = r.count;

@@ -11,6 +11,7 @@ import { switchMap, map } from 'rxjs/operators';
 import { DetailsComponent } from '../details/details.component';
 import { DeleteService } from '../../components/delete/delete.service';
 import { ManagePermissionService } from 'src/app/shared/manage.permission.service';
+import { ExcelService } from 'src/app/shared/excel.service';
 
 @Component({
   selector: 'app-list',
@@ -83,7 +84,7 @@ export class ListComponent implements OnInit {
   constructor(public uow: UowService, private mydialog: DeleteService
     , private snack: SnackbarService, private fb: FormBuilder
     , public session: SessionService, public dialog: MatDialog
-    , public per: ManagePermissionService, public router: Router) { }
+    , public per: ManagePermissionService, public router: Router, private excel: ExcelService) { }
 
   ngOnInit() {
     // this.routeMesure = this.router.url;
@@ -168,6 +169,22 @@ export class ListComponent implements OnInit {
     });
   }
 
+  exportExcel() {
+    const l = this.dataSource.map(s => {
+      return {
+        القطاع: s.count,
+        // التدبير: s.mesure,
+        // 'الأنشطة المنجزة': s.activite,
+        // السنة: s.annee,
+        // 'حصيلة التنفيد': s.situation,
+        // 'معدل الإنجاز': s.taux,
+        // وضعية: s.effet,
+      };
+    });
+    // console.log(l);
+    // console.log(Object.values(this.dataSource));
+    this.excel.exportAsExcelFile(l, 'sample');
+  }
 
   autoComplete() {
     this.filteredOptions = this.myAuto.valueChanges.pipe(

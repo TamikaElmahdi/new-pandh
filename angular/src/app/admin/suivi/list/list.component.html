@@ -147,6 +147,12 @@
     </mat-accordion>
   </div>
 
+  <div class="right">
+    <button (click)="exportExcel()" class="mt-3" style="margin: 20px 0" mat-raised-button color="primary">
+      <!-- [routerLink]="['/admin/rapport/update', 0]" -->
+      <mat-icon>add</mat-icon>
+      تحميل     </button>
+  </div>
 
   <div class="example-container mat-elevation-z8">
     <div class="example-loading-shade" *ngIf="isLoadingResults">
@@ -171,7 +177,8 @@
                   <thead>
                     <tr style="background-color: #8bd0e8  !important;">
                       <th scope="col" style="width: 46% !important;">النشاط</th>
-                      <th scope="col" style="width: 10% !important;">السنة</th>
+                      <th scope="col" style="width: 10% !important;">سنوات النشاط</th>
+                      <th scope="col" style="width: 10% !important;">سنة الإنجاز</th>
                       <th scope="col" style="width: 10% !important;">الإنجاز</th>
                       <th scope="col" style="width: 10% !important;">وضعية تنفيد النشاط </th>
                       <th scope="col" style="width: 8% !important;">معدل إنجاز النشاط</th>
@@ -184,6 +191,7 @@
                     [ngClass]="{'rowTermine': e.situation === 'منجز', 'rowNonTermine':e.situation === 'غير منجز'  || e.situation === 'غير&nbsp;منجز' , 'rowEncours': e.situation === 'في طور الإنجاز', 'rowContinue': e.situation === 'عمل متواصل'  }"
                     >
                       <td>{{ e.activite.nom }}</td>
+                      <td>{{e.activite.duree}}</td>
                       <td>{{e.annee}}</td>
                       <td title="{{e.nom}}">{{ uow.getSomeCaracter(e.nom,1,15)}}</td>
                       <td>{{e.situation}}</td>
