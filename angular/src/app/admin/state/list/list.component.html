@@ -118,103 +118,316 @@
           </div>
         </div>
 
-      <!-- ------------------ Graphe -------------------- -->
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPie"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
-        </div>
-        <div class="col-md-4">
-          <app-pie-chart [obs]="pieChartSubjectD"></app-pie-chart>
-        </div>
+        <!-- ------------------ Graphe -------------------- -->
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPie"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie-chart [obs]="pieChartSubjectC"></app-pie-chart>
+          </div>
+          <div class="col-md-4">
+            <app-pie-chart [obs]="pieChartSubjectD"></app-pie-chart>
+          </div>
 
-        <div class="col-md-12">
-          <div class="chart-size">
-            <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
+          <div class="col-md-12">
+            <div class="chart-size">
+              <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="row justify-content-center">
-        <div class="d-flex justify-content-left w-100" >
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <section class="super-title border-right">
+              <div>
+                <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الحكامة والديمقراطية حسب النوع
+                </h3>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType1"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType2"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType3"></app-pie>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <section class="super-title border-right">
+              <div>
+                <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الحقوق الاقتصادية والاجتماعية
+                  والثقافية والبيئية حسب النوع</h3>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType4"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType5"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType6"></app-pie>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <section class="super-title border-right">
+              <div>
+                <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد حماية الحقوق الفئوية والنهوض بها
+                  حسب النوع</h3>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType7"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType8"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType9"></app-pie>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <section class="super-title border-right">
+              <div>
+                <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الإطار القانوني والمؤسساتي حسب
+                  النوع</h3>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType10"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType11"></app-pie>
+          </div>
+          <div class="col-md-4">
+            <app-pie [obs]="dataEpuPieType12"></app-pie>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
           <section class="super-title border-right">
             <div>
-              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الحكامة والديمقراطية حسب النوع</h3>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الأنشطة حسب القطاعات</h3>
             </div>
           </section>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType1"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType2"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType3"></app-pie>
-        </div>
-      </div>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
 
-      <div class="row justify-content-center">
-        <div class="d-flex justify-content-left w-100" >
+
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject1"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject2"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject3"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
           <section class="super-title border-right">
             <div>
-              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الحقوق الاقتصادية والاجتماعية والثقافية والبيئية حسب النوع</h3>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد التدابير حسب القطاعات</h3>
             </div>
           </section>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType4"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType5"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType6"></app-pie>
-        </div>
-      </div>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
 
 
-      <div class="row justify-content-center">
-        <div class="d-flex justify-content-left w-100" >
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject4"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject5"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject6"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
           <section class="super-title border-right">
             <div>
-              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد حماية الحقوق الفئوية والنهوض بها حسب النوع</h3>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الأنشطة حسب المحاور </h3>
             </div>
           </section>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType7"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType8"></app-pie>
-        </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType9"></app-pie>
-        </div>
-      </div>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
 
-      <div class="row justify-content-center">
-        <div class="d-flex justify-content-left w-100" >
+
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject7"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject8"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject9"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
           <section class="super-title border-right">
             <div>
-              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الإطار القانوني والمؤسساتي حسب النوع</h3>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد التدابير حسب المحاور </h3>
             </div>
           </section>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType10"></app-pie>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+
+
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject10"></app-bar>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType11"></app-pie>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject11"></app-bar>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <app-pie [obs]="dataEpuPieType12"></app-pie>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject12"></app-bar>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- ------------------ Graphe -------------------- -->
+
+
+
+
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
+          <section class="super-title border-right">
+            <div>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد الأنشطة حسب المحاور الفرعية </h3>
+            </div>
+          </section>
+        </div>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+
+
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject13"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject14"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject15"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d-flex justify-content-left w-100" style="margin-top: 2%;">
+          <section class="super-title border-right">
+            <div>
+              <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد التدابير حسب المحاور الفرعية </h3>
+            </div>
+          </section>
+        </div>
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+
+
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject16"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject17"></app-bar>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="d-flex justify-content-left w-100">
+            <div class="col-md-12" style="text-align: right;">
+              <app-bar [col]="12" [height]="'60vh'" [dataSubject]="departementSubject18"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ------------------ Graphe -------------------- -->
       </ng-template>
     </mat-tab>
 
@@ -361,13 +574,13 @@
           </mat-accordion>
         </div>
 
-<div class="row">
-    <h5 class="countTotal col-md-12" style="text-align: right;"> عدد الأنشطة : {{ countActivite }} </h5>
-</div>
+        <div class="row">
+          <h5 class="countTotal col-md-12" style="text-align: right;"> عدد الأنشطة : {{ countActivite }} </h5>
+        </div>
 
-<div class="row">
-  <h5 class="countTotal col-md-12" style="text-align: right;"> عدد التدابير : {{ countMesure }} </h5>
-</div>
+        <div class="row">
+          <h5 class="countTotal col-md-12" style="text-align: right;"> عدد التدابير : {{ countMesure }} </h5>
+        </div>
 
         <div class="example-container mat-elevation-z8">
           <div class="example-loading-shade" *ngIf="isLoadingResults">
@@ -485,14 +698,16 @@
 
                   <mat-form-field appearance="fill" style="width: 100%">
                     <mat-label>المحور</mat-label>
-                    <mat-select formControlName="idAxeDetails" (selectionChange)="selectChangeDetails($event.value, 'axe')">
+                    <mat-select formControlName="idAxeDetails"
+                      (selectionChange)="selectChangeDetails($event.value, 'axe')">
                       <mat-option *ngFor="let e of axes | async" [value]="e.id">{{ e.label }}</mat-option>
                     </mat-select>
                   </mat-form-field>
 
                   <mat-form-field appearance="fill">
                     <mat-label>المحور الفرعي</mat-label>
-                    <mat-select formControlName="idSousAxeDetails" (selectionChange)="selectChangeDetails($event.value,'Sousaxe')">
+                    <mat-select formControlName="idSousAxeDetails"
+                      (selectionChange)="selectChangeDetails($event.value,'Sousaxe')">
                       <mat-option value="0">...</mat-option>
                       <mat-option *ngFor="let e of sousAxes" [value]="e.id">{{ e.label }}</mat-option>
                     </mat-select>
@@ -502,7 +717,8 @@
               </form>
               <div class="right">
 
-                <button mat-raised-button color="primary" (click)="searchDetails(myFormDetails.value)" [disabled]="false">
+                <button mat-raised-button color="primary" (click)="searchDetails(myFormDetails.value)"
+                  [disabled]="false">
                   <mat-icon>search</mat-icon>
                   بحث
                 </button>
@@ -512,6 +728,7 @@
                   اعادة ضبط
                 </button>
               </div>
+
 
             </mat-expansion-panel>
           </mat-accordion>
@@ -526,7 +743,7 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="d-flex justify-content-left w-100" >
+          <div class="d-flex justify-content-left w-100">
             <section class="super-title border-right">
               <div>
                 <h3 class="titleGrapheMesureType" style="font-size: 1.2em;">وضعية تنفيد المحور الفرعي حسب النوع</h3>

@@ -68,15 +68,15 @@ export class ListComponent implements OnInit {
   // responsables = ['المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1', 'المخاطب الرسمي1',];
 
   columnDefs = [
-  // { columnDef: 'cycle', headName: 'المرحلة' },
-  { columnDef: 'mesure', headName: 'التدبير' },
-  // { columnDef: 'activite', headName: 'النشاط' },
-  // { columnDef: 'annee', headName: 'السنة' },
-  // { columnDef: 'nom', headName: 'الإنجاز' },
-  // { columnDef: 'situation', headName: 'وضعية التنفيد' },
-  { columnDef: 'realisations', headName: '' },
-  { columnDef: 'tauxTotal', headName: 'معدل الإنجاز الإجمالي' },
-  // { columnDef: 'option', headName: '' },
+    // { columnDef: 'cycle', headName: 'المرحلة' },
+    { columnDef: 'mesure', headName: 'التدبير' },
+    // { columnDef: 'activite', headName: 'النشاط' },
+    // { columnDef: 'annee', headName: 'السنة' },
+    // { columnDef: 'nom', headName: 'الإنجاز' },
+    // { columnDef: 'situation', headName: 'وضعية التنفيد' },
+    { columnDef: 'realisations', headName: '' },
+    { columnDef: 'tauxTotal', headName: 'معدل الإنجاز الإجمالي' },
+    // { columnDef: 'option', headName: '' },
   ].map(e => {
     e.headName = e.headName === '' ? e.columnDef.toUpperCase() : e.headName;
     return e;
@@ -134,6 +134,33 @@ export class ListComponent implements OnInit {
   countMesure = 0;
 
 
+  departementSubject1 = new Subject();
+  departementSubject2 = new Subject();
+  departementSubject3 = new Subject();
+
+  departementSubject4 = new Subject();
+  departementSubject5 = new Subject();
+  departementSubject6 = new Subject();
+
+
+  departementSubject7 = new Subject();
+  departementSubject8 = new Subject();
+  departementSubject9 = new Subject();
+
+  departementSubject10 = new Subject();
+  departementSubject11 = new Subject();
+  departementSubject12 = new Subject();
+
+
+  departementSubject13 = new Subject();
+  departementSubject14 = new Subject();
+  departementSubject15 = new Subject();
+
+  departementSubject16 = new Subject();
+  departementSubject17 = new Subject();
+  departementSubject18 = new Subject();
+
+
   regions = ['الرباط', 'تمارة'];
   oranismes = ['الجامعة', 'الأكاديمية', 'محو الأمية'];
   title = '';
@@ -145,6 +172,30 @@ export class ListComponent implements OnInit {
   ngOnInit() {
 
     this.stateAxe();
+    this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
+    this.stateOrganismeActivite(1, 'عمل متواصل', this.departementSubject2);
+    this.stateOrganismeActivite(2, 'منجز' , this.departementSubject3);
+
+    this.stateOrganismeMesure(0, 'غير منجز', this.departementSubject4);
+    this.stateOrganismeMesure(1, 'عمل متواصل', this.departementSubject5);
+    this.stateOrganismeMesure(2, 'منجز' , this.departementSubject6);
+
+    this.stateAxeActivite(0, 'غير منجز', this.departementSubject7 );
+    this.stateAxeActivite(1, 'عمل متواصل', this.departementSubject8);
+    this.stateAxeActivite(2, 'منجز' , this.departementSubject9);
+
+    this.stateAxeMesure(0, 'غير منجز', this.departementSubject10);
+    this.stateAxeMesure(1, 'عمل متواصل', this.departementSubject11);
+    this.stateAxeMesure(2, 'منجز' , this.departementSubject12);
+
+    this.stateSousAxeActivite(0, 'غير منجز', this.departementSubject13 );
+    this.stateSousAxeActivite(1, 'عمل متواصل', this.departementSubject14);
+    this.stateSousAxeActivite(2, 'منجز' , this.departementSubject15);
+
+    this.stateSousAxeMesure(0, 'غير منجز', this.departementSubject16);
+    this.stateSousAxeMesure(1, 'عمل متواصل', this.departementSubject17);
+    this.stateSousAxeMesure(2, 'منجز' , this.departementSubject18);
+
     this.stateOneOFMecanisme();
 
     this.getOrganismes();
@@ -236,6 +287,127 @@ export class ListComponent implements OnInit {
       this.organismes = r as any;
     });
   }
+  stateOrganismeActivite(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateOrganismeActivite(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
+
+    stateOrganismeMesure(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateOrganismeMesure(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
+
+  stateAxeActivite(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateAxeActivite(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
+
+    stateAxeMesure(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateAxeMesure(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
+
+
+
+  stateSousAxeActivite(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateSousAxeActivite(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
+
+    stateSousAxeMesure(type: number, labelText : String, control: Subject<unknown>) {
+    this.uow.axes.stateSousAxeMesure(type).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+       const barChartData = [
+        { data: [], label: labelText /*, stack: 'a'*/ },
+      ];
+      r.forEach(e => {
+        barChartData[0].data.push((e.val ).toFixed(0));
+      });
+      const typeColor = type;
+      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+    });
+  }
+
 
 
   stateAxe() {
@@ -248,7 +420,7 @@ export class ListComponent implements OnInit {
     } else {
       this.type = 3;
     }
-    this.uow.axes.stateAxes(0 , 0).subscribe(r => {
+    this.uow.axes.stateAxes(0, 0).subscribe(r => {
 
       r = r.filter(e => e.name !== null);
       // console.log(r);
@@ -336,19 +508,19 @@ export class ListComponent implements OnInit {
 
   }
 
-  getNbTermine(o: Model){
+  getNbTermine(o: Model) {
     this.uow.realisations.getNbTermine(o).subscribe(r => {
       this.sumRealise = r.toString();
     });
   }
 
-  getNbContinue(o: Model){
+  getNbContinue(o: Model) {
     this.uow.realisations.getNbContinue(o).subscribe(r => {
       this.sumEnContinue = r.toString();
     });
   }
 
-  getNbEncours(o: Model){
+  getNbEncours(o: Model) {
     this.uow.realisations.getNbEncours(o).subscribe(r => {
       this.sumEncourRealisation = r.toString();
     });
@@ -366,7 +538,7 @@ export class ListComponent implements OnInit {
     });
   }
 
-  getNbEncoursMesure(o: Model){
+  getNbEncoursMesure(o: Model) {
     this.uow.realisations.getNbEncoursMesure(o).subscribe(r => {
       this.sumEncourRealisationMesure = r.toString();
     });
@@ -383,19 +555,19 @@ export class ListComponent implements OnInit {
 
   }
 
-  getPourcentageTermine(o: Model){
+  getPourcentageTermine(o: Model) {
     this.uow.realisations.getPourcentageTermine(o).subscribe(r => {
       this.pourcentageRealise = r.toString();
     });
   }
 
-  getPourcentageContinue(o: Model){
+  getPourcentageContinue(o: Model) {
     this.uow.realisations.getPourcentageContinue(o).subscribe(r => {
       this.pourcentageEnContinue = r.toString();
     });
   }
 
-  getPourcentageEncours(o: Model){
+  getPourcentageEncours(o: Model) {
     this.uow.realisations.getPourcentageEncours(o).subscribe(r => {
       this.pourcentageEncourRealisation = r.toString();
     });
@@ -413,21 +585,20 @@ export class ListComponent implements OnInit {
     });
   }
 
-  getPourcentageEncoursMesure(o: Model){
+  getPourcentageEncoursMesure(o: Model) {
     this.uow.realisations.getPourcentageEncoursMesure(o).subscribe(r => {
       this.pourcentageEncourRealisationMesure = r.toString();
     });
   }
 
 
-  getCountAndPourcentage(o: Model)
-    {
-      this.uow.realisations.getCountAndPourcentage(o).subscribe(r => {
-        //this.sumNonRealise = r.epu.nonTermine;
-      });
+  getCountAndPourcentage(o: Model) {
+    this.uow.realisations.getCountAndPourcentage(o).subscribe(r => {
+      //this.sumNonRealise = r.epu.nonTermine;
+    });
 
 
-    }
+  }
 
   stateOneOFMecanisme() {
 
@@ -478,20 +649,19 @@ export class ListComponent implements OnInit {
     });
   }
 
-  typeToText(idType: number)
-  {
-    if(idType == 1)
+  typeToText(idType: number) {
+    if (idType == 1)
       return 'الجانب التشريعي والمؤسساتي';
-    else if(idType == 2)
+    else if (idType == 2)
       return 'التواصل والتحسيس';
     else
-    return 'تقوية القدرات';
+      return 'تقوية القدرات';
   }
 
 
   stateOneOFMecanismeByType(axe: number, type: number, control: Subject<unknown>) {
 
-    this.uow.realisations.stateMecanismeByType(1, axe , type ).subscribe(r => {
+    this.uow.realisations.stateMecanismeByType(1, axe, type).subscribe(r => {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
@@ -532,7 +702,7 @@ export class ListComponent implements OnInit {
 
   stateOneOFMecanismeByTypeDetails(type: number, control: Subject<unknown>) {
 
-    this.uow.realisations.stateMecanismeByTypeDetails(1, this.idAxeDetails, this.idSousAxeDetails, type ).subscribe(r => {
+    this.uow.realisations.stateMecanismeByTypeDetails(1, this.idAxeDetails, this.idSousAxeDetails, type).subscribe(r => {
       const chartLabels = [];
       chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
@@ -578,6 +748,30 @@ export class ListComponent implements OnInit {
   selectedTabChange(o: MatTabGroup) {
 
     this.stateAxe();
+    this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
+    this.stateOrganismeActivite(1, 'عمل متواصل', this.departementSubject2);
+    this.stateOrganismeActivite(2, 'منجز' , this.departementSubject3);
+
+    this.stateOrganismeMesure(0, 'غير منجز', this.departementSubject4);
+    this.stateOrganismeMesure(1, 'عمل متواصل', this.departementSubject5);
+    this.stateOrganismeMesure(2, 'منجز' , this.departementSubject6);
+
+    this.stateAxeActivite(0, 'غير منجز', this.departementSubject7 );
+    this.stateAxeActivite(1, 'عمل متواصل', this.departementSubject8);
+    this.stateAxeActivite(2, 'منجز' , this.departementSubject9);
+
+    this.stateAxeMesure(0, 'غير منجز', this.departementSubject10);
+    this.stateAxeMesure(1, 'عمل متواصل', this.departementSubject11);
+    this.stateAxeMesure(2, 'منجز' , this.departementSubject12);
+
+    this.stateSousAxeActivite(0, 'غير منجز', this.departementSubject13 );
+    this.stateSousAxeActivite(1, 'عمل متواصل', this.departementSubject14);
+    this.stateSousAxeActivite(2, 'منجز' , this.departementSubject15);
+
+    this.stateSousAxeMesure(0, 'غير منجز', this.departementSubject16);
+    this.stateSousAxeMesure(1, 'عمل متواصل', this.departementSubject17);
+    this.stateSousAxeMesure(2, 'منجز' , this.departementSubject18);
+
     this.stateOneOFMecanisme();
 
     this.stateOneOFMecanismeByType(1, 1, this.dataEpuPieType1);
@@ -634,7 +828,7 @@ export class ListComponent implements OnInit {
     this.title = 'إحصائيات';
 
     if (r.includes('mesure-region')) {
-     // this.title = 'المخطط التنفيدي الترابي';
+      // this.title = 'المخطط التنفيدي الترابي';
       this.isMesureRegion = true;
       this.isMesure = false;
       this.isProgramme = false;
@@ -649,7 +843,7 @@ export class ListComponent implements OnInit {
       this.getOrganismes();
     } else {
       // mesure-executif
-     // this.title = 'المخطط التنفيدي';
+      // this.title = 'المخطط التنفيدي';
       this.isMesureRegion = false;
       this.isMesure = true;
       this.isProgramme = false;
@@ -726,14 +920,14 @@ export class ListComponent implements OnInit {
   }
 
   selectChangeDetails(id, type) {
-    if(type === 'axe'){
-    this.idAxeDetails = id;
+    if (type === 'axe') {
+      this.idAxeDetails = id;
       this.uow.sousAxes.getByIdAxe(id).subscribe(r => {
         this.sousAxes = r as any[];
       });
     }
-    else{
-    this.idSousAxeDetails = id;
+    else {
+      this.idSousAxeDetails = id;
 
     }
 

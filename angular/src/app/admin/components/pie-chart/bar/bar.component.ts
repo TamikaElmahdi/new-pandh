@@ -87,6 +87,7 @@ export class BarComponent implements OnInit {
     // { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
+  public oneColor = '';
 
   public pieChartColors = [
     // { backgroundColor: ['#d17c36', '#2d71a1'], },
@@ -116,10 +117,45 @@ export class BarComponent implements OnInit {
     //   this.height = this.height + 50;
     // };
 
-    this.dataSubject.subscribe((r: { barChartLabels: Label[], barChartData: ChartDataSets[], title: string }) => {
+    this.dataSubject.subscribe((r: { barChartLabels: Label[], barChartData: ChartDataSets[], title: string, typeColor: number}) => {
       this.title = r.title;
       this.barChartLabels = r.barChartLabels; // .map(e => e.toString().substring(0, 35) + ' ...');
       this.barChartData = r.barChartData;
+      if(r.typeColor === 0)
+      {
+        this.pieChartColors = [
+          // { backgroundColor: ['#d17c36', '#2d71a1'], },
+          { backgroundColor: '#db0707' },
+          { backgroundColor: '#db0707' },
+          { backgroundColor: '#1476de' },
+          { backgroundColor: '#db0707' },
+
+        ];
+      }
+      else if(r.typeColor === 1)
+      {
+        this.pieChartColors = [
+          // { backgroundColor: ['#d17c36', '#2d71a1'], },
+          { backgroundColor: '#1476de' },
+          { backgroundColor: '#db0707' },
+          { backgroundColor: '#1476de' },
+          { backgroundColor: '#db0707' },
+
+        ];
+      }
+
+      else if(r.typeColor === 2)
+      {
+        this.pieChartColors = [
+          // { backgroundColor: ['#d17c36', '#2d71a1'], },
+          { backgroundColor: '#7dc460' },
+          { backgroundColor: '#db0707' },
+          { backgroundColor: '#1476de' },
+          { backgroundColor: '#db0707' },
+
+        ];
+      }
+
       // console.log(this.barChartData[0].data[0])
       // console.log(this.barChartData[1].data[0])
       // console.log(this.barChartData[2].data[0])

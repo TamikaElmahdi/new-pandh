@@ -16395,140 +16395,140 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            DateEvenement = new DateTime(2021, 4, 11, 10, 22, 7, 10, DateTimeKind.Local).AddTicks(7264),
+                            DateEvenement = new DateTime(2021, 3, 6, 8, 46, 35, 351, DateTimeKind.Local).AddTicks(4254),
                             Pv = "محضر رقم 1",
                             Type = "اللجنة رقم 1"
                         },
                         new
                         {
                             Id = 2,
-                            DateEvenement = new DateTime(2020, 11, 29, 7, 22, 8, 163, DateTimeKind.Local).AddTicks(788),
+                            DateEvenement = new DateTime(2021, 4, 17, 15, 24, 15, 575, DateTimeKind.Local).AddTicks(4788),
                             Pv = "محضر رقم 2",
                             Type = "اللجنة رقم 2"
                         },
                         new
                         {
                             Id = 3,
-                            DateEvenement = new DateTime(2020, 10, 30, 22, 25, 23, 859, DateTimeKind.Local).AddTicks(6889),
+                            DateEvenement = new DateTime(2021, 2, 28, 18, 3, 0, 861, DateTimeKind.Local).AddTicks(8180),
                             Pv = "محضر رقم 3",
                             Type = "اللجنة رقم 3"
                         },
                         new
                         {
                             Id = 4,
-                            DateEvenement = new DateTime(2021, 2, 18, 22, 31, 31, 319, DateTimeKind.Local).AddTicks(4944),
+                            DateEvenement = new DateTime(2021, 1, 1, 5, 29, 17, 97, DateTimeKind.Local).AddTicks(2761),
                             Pv = "محضر رقم 4",
                             Type = "اللجنة رقم 4"
                         },
                         new
                         {
                             Id = 5,
-                            DateEvenement = new DateTime(2020, 11, 15, 5, 55, 17, 726, DateTimeKind.Local).AddTicks(7636),
+                            DateEvenement = new DateTime(2021, 1, 31, 18, 41, 4, 578, DateTimeKind.Local).AddTicks(2995),
                             Pv = "محضر رقم 5",
                             Type = "اللجنة رقم 5"
                         },
                         new
                         {
                             Id = 6,
-                            DateEvenement = new DateTime(2020, 12, 5, 19, 42, 24, 361, DateTimeKind.Local).AddTicks(492),
+                            DateEvenement = new DateTime(2020, 10, 12, 22, 25, 24, 412, DateTimeKind.Local).AddTicks(4403),
                             Pv = "محضر رقم 6",
                             Type = "اللجنة رقم 6"
                         },
                         new
                         {
                             Id = 7,
-                            DateEvenement = new DateTime(2020, 5, 12, 4, 36, 33, 110, DateTimeKind.Local).AddTicks(2234),
+                            DateEvenement = new DateTime(2020, 5, 27, 16, 25, 26, 369, DateTimeKind.Local).AddTicks(6918),
                             Pv = "محضر رقم 7",
                             Type = "اللجنة رقم 7"
                         },
                         new
                         {
                             Id = 8,
-                            DateEvenement = new DateTime(2020, 8, 8, 11, 50, 5, 52, DateTimeKind.Local).AddTicks(5893),
+                            DateEvenement = new DateTime(2020, 11, 27, 15, 1, 37, 888, DateTimeKind.Local).AddTicks(4951),
                             Pv = "محضر رقم 8",
                             Type = "اللجنة رقم 8"
                         },
                         new
                         {
                             Id = 9,
-                            DateEvenement = new DateTime(2021, 3, 30, 6, 35, 31, 360, DateTimeKind.Local).AddTicks(8265),
+                            DateEvenement = new DateTime(2021, 4, 6, 7, 13, 58, 721, DateTimeKind.Local).AddTicks(2236),
                             Pv = "محضر رقم 9",
                             Type = "اللجنة رقم 9"
                         },
                         new
                         {
                             Id = 10,
-                            DateEvenement = new DateTime(2020, 9, 22, 4, 49, 0, 833, DateTimeKind.Local).AddTicks(1445),
+                            DateEvenement = new DateTime(2020, 8, 28, 14, 49, 14, 536, DateTimeKind.Local).AddTicks(9444),
                             Pv = "محضر رقم 10",
                             Type = "اللجنة رقم 10"
                         },
                         new
                         {
                             Id = 11,
-                            DateEvenement = new DateTime(2020, 12, 16, 9, 19, 30, 909, DateTimeKind.Local).AddTicks(6737),
+                            DateEvenement = new DateTime(2021, 2, 14, 4, 15, 47, 662, DateTimeKind.Local).AddTicks(6112),
                             Pv = "محضر رقم 11",
                             Type = "اللجنة رقم 11"
                         },
                         new
                         {
                             Id = 12,
-                            DateEvenement = new DateTime(2020, 10, 18, 18, 59, 44, 225, DateTimeKind.Local).AddTicks(9099),
+                            DateEvenement = new DateTime(2020, 7, 8, 3, 56, 46, 834, DateTimeKind.Local).AddTicks(6405),
                             Pv = "محضر رقم 12",
                             Type = "اللجنة رقم 12"
                         },
                         new
                         {
                             Id = 13,
-                            DateEvenement = new DateTime(2020, 5, 5, 15, 34, 39, 902, DateTimeKind.Local).AddTicks(8628),
+                            DateEvenement = new DateTime(2020, 12, 30, 17, 54, 38, 785, DateTimeKind.Local).AddTicks(2813),
                             Pv = "محضر رقم 13",
                             Type = "اللجنة رقم 13"
                         },
                         new
                         {
                             Id = 14,
-                            DateEvenement = new DateTime(2021, 2, 27, 21, 51, 11, 794, DateTimeKind.Local).AddTicks(9786),
+                            DateEvenement = new DateTime(2021, 4, 19, 12, 30, 55, 669, DateTimeKind.Local).AddTicks(7432),
                             Pv = "محضر رقم 14",
                             Type = "اللجنة رقم 14"
                         },
                         new
                         {
                             Id = 15,
-                            DateEvenement = new DateTime(2020, 6, 7, 9, 39, 0, 246, DateTimeKind.Local).AddTicks(8843),
+                            DateEvenement = new DateTime(2020, 8, 29, 8, 51, 54, 551, DateTimeKind.Local).AddTicks(1540),
                             Pv = "محضر رقم 15",
                             Type = "اللجنة رقم 15"
                         },
                         new
                         {
                             Id = 16,
-                            DateEvenement = new DateTime(2020, 11, 21, 13, 40, 31, 990, DateTimeKind.Local).AddTicks(4959),
+                            DateEvenement = new DateTime(2021, 4, 19, 6, 36, 10, 976, DateTimeKind.Local).AddTicks(4921),
                             Pv = "محضر رقم 16",
                             Type = "اللجنة رقم 16"
                         },
                         new
                         {
                             Id = 17,
-                            DateEvenement = new DateTime(2021, 2, 11, 3, 56, 15, 14, DateTimeKind.Local).AddTicks(1046),
+                            DateEvenement = new DateTime(2021, 4, 9, 22, 47, 17, 574, DateTimeKind.Local).AddTicks(7812),
                             Pv = "محضر رقم 17",
                             Type = "اللجنة رقم 17"
                         },
                         new
                         {
                             Id = 18,
-                            DateEvenement = new DateTime(2020, 9, 2, 19, 0, 32, 50, DateTimeKind.Local).AddTicks(7159),
+                            DateEvenement = new DateTime(2020, 9, 13, 22, 19, 0, 461, DateTimeKind.Local).AddTicks(7164),
                             Pv = "محضر رقم 18",
                             Type = "اللجنة رقم 18"
                         },
                         new
                         {
                             Id = 19,
-                            DateEvenement = new DateTime(2020, 9, 27, 17, 29, 56, 303, DateTimeKind.Local).AddTicks(8946),
+                            DateEvenement = new DateTime(2020, 12, 13, 16, 50, 9, 766, DateTimeKind.Local).AddTicks(5952),
                             Pv = "محضر رقم 19",
                             Type = "اللجنة رقم 19"
                         },
                         new
                         {
                             Id = 20,
-                            DateEvenement = new DateTime(2021, 1, 25, 9, 17, 58, 780, DateTimeKind.Local).AddTicks(6220),
+                            DateEvenement = new DateTime(2020, 9, 27, 3, 9, 58, 543, DateTimeKind.Local).AddTicks(4141),
                             Pv = "محضر رقم 20",
                             Type = "اللجنة رقم 20"
                         });
@@ -20692,1602 +20692,1602 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2020, 5, 14, 14, 3, 7, 145, DateTimeKind.Local).AddTicks(1136),
-                            IdIndicateur = 3,
-                            IdMesure = 147,
-                            Value = "60"
+                            Date = new DateTime(2020, 7, 14, 23, 27, 18, 480, DateTimeKind.Local).AddTicks(9181),
+                            IdIndicateur = 5,
+                            IdMesure = 70,
+                            Value = "81"
                         },
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2021, 3, 29, 11, 50, 3, 354, DateTimeKind.Local).AddTicks(551),
-                            IdIndicateur = 2,
-                            IdMesure = 265,
-                            Value = "18"
+                            Date = new DateTime(2021, 1, 27, 4, 15, 21, 576, DateTimeKind.Local).AddTicks(1981),
+                            IdIndicateur = 5,
+                            IdMesure = 97,
+                            Value = "39"
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2021, 4, 19, 21, 10, 35, 617, DateTimeKind.Local).AddTicks(3527),
-                            IdIndicateur = 6,
-                            IdMesure = 162,
-                            Value = "32"
+                            Date = new DateTime(2020, 11, 28, 23, 28, 12, 224, DateTimeKind.Local).AddTicks(9839),
+                            IdIndicateur = 4,
+                            IdMesure = 422,
+                            Value = "80"
                         },
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2021, 4, 5, 5, 18, 29, 99, DateTimeKind.Local).AddTicks(1004),
-                            IdIndicateur = 1,
-                            IdMesure = 133,
-                            Value = "54"
+                            Date = new DateTime(2020, 11, 14, 6, 43, 28, 411, DateTimeKind.Local).AddTicks(4435),
+                            IdIndicateur = 2,
+                            IdMesure = 403,
+                            Value = "92"
                         },
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2020, 11, 13, 19, 25, 8, 927, DateTimeKind.Local).AddTicks(231),
-                            IdIndicateur = 5,
-                            IdMesure = 166,
-                            Value = "26"
+                            Date = new DateTime(2020, 10, 31, 22, 20, 2, 904, DateTimeKind.Local).AddTicks(2136),
+                            IdIndicateur = 1,
+                            IdMesure = 161,
+                            Value = "11"
                         },
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2020, 6, 4, 21, 55, 17, 957, DateTimeKind.Local).AddTicks(1802),
-                            IdIndicateur = 1,
-                            IdMesure = 113,
-                            Value = "84"
+                            Date = new DateTime(2020, 6, 27, 18, 41, 11, 800, DateTimeKind.Local).AddTicks(8990),
+                            IdIndicateur = 2,
+                            IdMesure = 102,
+                            Value = "78"
                         },
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2021, 4, 1, 15, 22, 41, 95, DateTimeKind.Local).AddTicks(5242),
-                            IdIndicateur = 3,
-                            IdMesure = 220,
-                            Value = "77"
+                            Date = new DateTime(2020, 6, 19, 8, 35, 8, 948, DateTimeKind.Local).AddTicks(658),
+                            IdIndicateur = 6,
+                            IdMesure = 376,
+                            Value = "17"
                         },
                         new
                         {
                             Id = 8,
-                            Date = new DateTime(2020, 12, 20, 10, 39, 16, 619, DateTimeKind.Local).AddTicks(6143),
+                            Date = new DateTime(2020, 11, 1, 13, 7, 38, 193, DateTimeKind.Local).AddTicks(3311),
                             IdIndicateur = 4,
-                            IdMesure = 68,
-                            Value = "96"
+                            IdMesure = 23,
+                            Value = "32"
                         },
                         new
                         {
                             Id = 9,
-                            Date = new DateTime(2020, 10, 11, 4, 49, 16, 110, DateTimeKind.Local).AddTicks(4989),
+                            Date = new DateTime(2020, 5, 20, 15, 56, 13, 488, DateTimeKind.Local).AddTicks(7012),
                             IdIndicateur = 4,
-                            IdMesure = 183,
-                            Value = "59"
+                            IdMesure = 16,
+                            Value = "66"
                         },
                         new
                         {
                             Id = 10,
-                            Date = new DateTime(2020, 12, 6, 17, 55, 11, 415, DateTimeKind.Local).AddTicks(5205),
-                            IdIndicateur = 6,
-                            IdMesure = 52,
-                            Value = "94"
+                            Date = new DateTime(2021, 1, 22, 9, 24, 55, 492, DateTimeKind.Local).AddTicks(1577),
+                            IdIndicateur = 2,
+                            IdMesure = 340,
+                            Value = "28"
                         },
                         new
                         {
                             Id = 11,
-                            Date = new DateTime(2020, 8, 14, 2, 43, 24, 782, DateTimeKind.Local).AddTicks(1522),
+                            Date = new DateTime(2020, 7, 27, 5, 45, 0, 928, DateTimeKind.Local).AddTicks(3544),
                             IdIndicateur = 3,
-                            IdMesure = 387,
-                            Value = "20"
+                            IdMesure = 15,
+                            Value = "28"
                         },
                         new
                         {
                             Id = 12,
-                            Date = new DateTime(2021, 2, 5, 15, 41, 28, 253, DateTimeKind.Local).AddTicks(7642),
-                            IdIndicateur = 1,
-                            IdMesure = 277,
-                            Value = "91"
+                            Date = new DateTime(2021, 2, 4, 16, 56, 50, 844, DateTimeKind.Local).AddTicks(3509),
+                            IdIndicateur = 3,
+                            IdMesure = 164,
+                            Value = "17"
                         },
                         new
                         {
                             Id = 13,
-                            Date = new DateTime(2021, 3, 2, 18, 57, 52, 292, DateTimeKind.Local).AddTicks(6487),
-                            IdIndicateur = 6,
-                            IdMesure = 108,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Date = new DateTime(2021, 2, 2, 22, 1, 12, 552, DateTimeKind.Local).AddTicks(4809),
-                            IdIndicateur = 5,
-                            IdMesure = 288,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Date = new DateTime(2021, 3, 21, 22, 6, 50, 507, DateTimeKind.Local).AddTicks(4374),
-                            IdIndicateur = 4,
-                            IdMesure = 279,
-                            Value = "51"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Date = new DateTime(2020, 7, 15, 11, 5, 58, 644, DateTimeKind.Local).AddTicks(3595),
+                            Date = new DateTime(2020, 12, 10, 0, 5, 44, 283, DateTimeKind.Local).AddTicks(2988),
                             IdIndicateur = 1,
-                            IdMesure = 216,
-                            Value = "94"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Date = new DateTime(2020, 8, 18, 6, 2, 38, 957, DateTimeKind.Local).AddTicks(5913),
-                            IdIndicateur = 6,
-                            IdMesure = 11,
-                            Value = "65"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Date = new DateTime(2020, 10, 28, 12, 16, 50, 47, DateTimeKind.Local).AddTicks(9763),
-                            IdIndicateur = 6,
-                            IdMesure = 231,
+                            IdMesure = 377,
                             Value = "96"
                         },
                         new
                         {
+                            Id = 14,
+                            Date = new DateTime(2020, 7, 7, 12, 49, 4, 599, DateTimeKind.Local).AddTicks(2500),
+                            IdIndicateur = 4,
+                            IdMesure = 6,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Date = new DateTime(2021, 1, 27, 5, 13, 34, 616, DateTimeKind.Local).AddTicks(7986),
+                            IdIndicateur = 6,
+                            IdMesure = 24,
+                            Value = "95"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Date = new DateTime(2020, 12, 1, 1, 41, 38, 616, DateTimeKind.Local).AddTicks(5233),
+                            IdIndicateur = 3,
+                            IdMesure = 303,
+                            Value = "29"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Date = new DateTime(2021, 1, 22, 0, 10, 39, 495, DateTimeKind.Local).AddTicks(2965),
+                            IdIndicateur = 2,
+                            IdMesure = 146,
+                            Value = "46"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Date = new DateTime(2021, 4, 16, 19, 59, 41, 539, DateTimeKind.Local).AddTicks(1453),
+                            IdIndicateur = 6,
+                            IdMesure = 277,
+                            Value = "72"
+                        },
+                        new
+                        {
                             Id = 19,
-                            Date = new DateTime(2020, 7, 16, 12, 56, 28, 614, DateTimeKind.Local).AddTicks(3558),
+                            Date = new DateTime(2020, 7, 5, 18, 23, 36, 871, DateTimeKind.Local).AddTicks(7583),
                             IdIndicateur = 5,
-                            IdMesure = 361,
-                            Value = "61"
+                            IdMesure = 375,
+                            Value = "53"
                         },
                         new
                         {
                             Id = 20,
-                            Date = new DateTime(2020, 11, 3, 15, 30, 58, 29, DateTimeKind.Local).AddTicks(1799),
-                            IdIndicateur = 1,
-                            IdMesure = 429,
-                            Value = "34"
+                            Date = new DateTime(2020, 10, 29, 23, 30, 20, 767, DateTimeKind.Local).AddTicks(347),
+                            IdIndicateur = 6,
+                            IdMesure = 58,
+                            Value = "53"
                         },
                         new
                         {
                             Id = 21,
-                            Date = new DateTime(2021, 1, 12, 13, 35, 5, 182, DateTimeKind.Local).AddTicks(1578),
-                            IdIndicateur = 4,
-                            IdMesure = 265,
-                            Value = "85"
+                            Date = new DateTime(2020, 5, 26, 6, 19, 36, 184, DateTimeKind.Local).AddTicks(71),
+                            IdIndicateur = 6,
+                            IdMesure = 378,
+                            Value = "11"
                         },
                         new
                         {
                             Id = 22,
-                            Date = new DateTime(2020, 8, 15, 10, 28, 52, 250, DateTimeKind.Local).AddTicks(8019),
-                            IdIndicateur = 5,
-                            IdMesure = 254,
-                            Value = "73"
+                            Date = new DateTime(2020, 11, 16, 23, 40, 23, 896, DateTimeKind.Local).AddTicks(4934),
+                            IdIndicateur = 6,
+                            IdMesure = 255,
+                            Value = "55"
                         },
                         new
                         {
                             Id = 23,
-                            Date = new DateTime(2020, 11, 10, 22, 14, 55, 500, DateTimeKind.Local).AddTicks(594),
-                            IdIndicateur = 2,
-                            IdMesure = 154,
+                            Date = new DateTime(2020, 6, 30, 0, 36, 15, 750, DateTimeKind.Local).AddTicks(9758),
+                            IdIndicateur = 5,
+                            IdMesure = 286,
                             Value = "92"
                         },
                         new
                         {
                             Id = 24,
-                            Date = new DateTime(2020, 6, 15, 5, 55, 8, 225, DateTimeKind.Local).AddTicks(4956),
-                            IdIndicateur = 5,
-                            IdMesure = 183,
-                            Value = "91"
+                            Date = new DateTime(2020, 10, 4, 4, 43, 14, 454, DateTimeKind.Local).AddTicks(693),
+                            IdIndicateur = 6,
+                            IdMesure = 162,
+                            Value = "63"
                         },
                         new
                         {
                             Id = 25,
-                            Date = new DateTime(2020, 7, 31, 0, 18, 12, 68, DateTimeKind.Local).AddTicks(3120),
-                            IdIndicateur = 2,
-                            IdMesure = 233,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            Date = new DateTime(2021, 1, 8, 9, 41, 25, 239, DateTimeKind.Local).AddTicks(8096),
-                            IdIndicateur = 2,
-                            IdMesure = 178,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            Date = new DateTime(2020, 6, 13, 19, 5, 21, 735, DateTimeKind.Local).AddTicks(3529),
-                            IdIndicateur = 3,
-                            IdMesure = 394,
-                            Value = "40"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            Date = new DateTime(2020, 10, 17, 7, 43, 3, 246, DateTimeKind.Local).AddTicks(3825),
-                            IdIndicateur = 3,
-                            IdMesure = 62,
-                            Value = "32"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            Date = new DateTime(2020, 5, 6, 6, 7, 14, 603, DateTimeKind.Local).AddTicks(7728),
-                            IdIndicateur = 6,
-                            IdMesure = 167,
-                            Value = "55"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            Date = new DateTime(2021, 2, 4, 17, 35, 27, 261, DateTimeKind.Local).AddTicks(4118),
-                            IdIndicateur = 4,
+                            Date = new DateTime(2021, 3, 27, 18, 50, 19, 91, DateTimeKind.Local).AddTicks(5882),
+                            IdIndicateur = 5,
                             IdMesure = 79,
-                            Value = "29"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            Date = new DateTime(2021, 2, 9, 21, 29, 26, 678, DateTimeKind.Local).AddTicks(5287),
-                            IdIndicateur = 6,
-                            IdMesure = 82,
-                            Value = "41"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            Date = new DateTime(2021, 4, 27, 14, 4, 15, 905, DateTimeKind.Local).AddTicks(1108),
-                            IdIndicateur = 3,
-                            IdMesure = 13,
-                            Value = "17"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            Date = new DateTime(2020, 8, 30, 22, 58, 18, 867, DateTimeKind.Local).AddTicks(1106),
-                            IdIndicateur = 5,
-                            IdMesure = 384,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            Date = new DateTime(2020, 11, 29, 2, 56, 58, 262, DateTimeKind.Local).AddTicks(9947),
-                            IdIndicateur = 4,
-                            IdMesure = 182,
-                            Value = "17"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            Date = new DateTime(2021, 3, 28, 8, 27, 49, 440, DateTimeKind.Local).AddTicks(616),
-                            IdIndicateur = 4,
-                            IdMesure = 353,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            Date = new DateTime(2020, 6, 10, 9, 31, 9, 439, DateTimeKind.Local).AddTicks(6491),
-                            IdIndicateur = 5,
-                            IdMesure = 200,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            Date = new DateTime(2020, 11, 17, 5, 21, 43, 954, DateTimeKind.Local).AddTicks(3301),
-                            IdIndicateur = 3,
-                            IdMesure = 26,
-                            Value = "17"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            Date = new DateTime(2020, 6, 7, 8, 14, 26, 610, DateTimeKind.Local).AddTicks(967),
-                            IdIndicateur = 6,
-                            IdMesure = 140,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            Date = new DateTime(2020, 10, 27, 16, 46, 38, 614, DateTimeKind.Local).AddTicks(6522),
-                            IdIndicateur = 3,
-                            IdMesure = 49,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            Date = new DateTime(2020, 11, 27, 21, 22, 39, 772, DateTimeKind.Local).AddTicks(7895),
-                            IdIndicateur = 3,
-                            IdMesure = 367,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            Date = new DateTime(2020, 11, 18, 19, 35, 34, 553, DateTimeKind.Local).AddTicks(808),
-                            IdIndicateur = 2,
-                            IdMesure = 178,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 42,
-                            Date = new DateTime(2020, 6, 18, 11, 10, 11, 135, DateTimeKind.Local).AddTicks(6073),
-                            IdIndicateur = 4,
-                            IdMesure = 91,
-                            Value = "20"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            Date = new DateTime(2020, 9, 3, 12, 54, 38, 340, DateTimeKind.Local).AddTicks(8440),
-                            IdIndicateur = 1,
-                            IdMesure = 388,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            Date = new DateTime(2020, 12, 17, 2, 53, 40, 26, DateTimeKind.Local).AddTicks(8540),
-                            IdIndicateur = 1,
-                            IdMesure = 108,
-                            Value = "80"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            Date = new DateTime(2020, 9, 4, 13, 38, 16, 519, DateTimeKind.Local).AddTicks(2814),
-                            IdIndicateur = 3,
-                            IdMesure = 147,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            Date = new DateTime(2020, 5, 13, 18, 18, 43, 550, DateTimeKind.Local).AddTicks(4487),
-                            IdIndicateur = 4,
-                            IdMesure = 175,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            Date = new DateTime(2020, 5, 14, 3, 0, 57, 283, DateTimeKind.Local).AddTicks(1427),
-                            IdIndicateur = 3,
-                            IdMesure = 1,
-                            Value = "60"
-                        },
-                        new
-                        {
-                            Id = 48,
-                            Date = new DateTime(2020, 12, 31, 18, 29, 58, 563, DateTimeKind.Local).AddTicks(5247),
-                            IdIndicateur = 4,
-                            IdMesure = 416,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 49,
-                            Date = new DateTime(2021, 3, 12, 13, 55, 30, 790, DateTimeKind.Local).AddTicks(9602),
-                            IdIndicateur = 6,
-                            IdMesure = 108,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            Date = new DateTime(2020, 11, 9, 4, 28, 16, 299, DateTimeKind.Local).AddTicks(8703),
-                            IdIndicateur = 1,
-                            IdMesure = 358,
-                            Value = "71"
-                        },
-                        new
-                        {
-                            Id = 51,
-                            Date = new DateTime(2021, 2, 2, 15, 16, 31, 512, DateTimeKind.Local).AddTicks(5760),
-                            IdIndicateur = 2,
-                            IdMesure = 113,
-                            Value = "61"
-                        },
-                        new
-                        {
-                            Id = 52,
-                            Date = new DateTime(2020, 5, 2, 17, 1, 3, 900, DateTimeKind.Local).AddTicks(2831),
-                            IdIndicateur = 1,
-                            IdMesure = 323,
-                            Value = "69"
-                        },
-                        new
-                        {
-                            Id = 53,
-                            Date = new DateTime(2020, 12, 11, 12, 51, 30, 793, DateTimeKind.Local).AddTicks(5611),
-                            IdIndicateur = 2,
-                            IdMesure = 297,
-                            Value = "25"
-                        },
-                        new
-                        {
-                            Id = 54,
-                            Date = new DateTime(2020, 7, 22, 12, 25, 27, 968, DateTimeKind.Local).AddTicks(1607),
-                            IdIndicateur = 4,
-                            IdMesure = 141,
-                            Value = "11"
-                        },
-                        new
-                        {
-                            Id = 55,
-                            Date = new DateTime(2020, 6, 24, 0, 28, 18, 123, DateTimeKind.Local).AddTicks(9267),
-                            IdIndicateur = 1,
-                            IdMesure = 277,
                             Value = "50"
                         },
                         new
                         {
-                            Id = 56,
-                            Date = new DateTime(2021, 1, 4, 20, 23, 19, 592, DateTimeKind.Local).AddTicks(5008),
-                            IdIndicateur = 1,
-                            IdMesure = 15,
-                            Value = "92"
+                            Id = 26,
+                            Date = new DateTime(2020, 6, 4, 11, 41, 51, 173, DateTimeKind.Local).AddTicks(9664),
+                            IdIndicateur = 5,
+                            IdMesure = 415,
+                            Value = "65"
                         },
                         new
                         {
-                            Id = 57,
-                            Date = new DateTime(2021, 1, 18, 23, 19, 46, 256, DateTimeKind.Local).AddTicks(5476),
+                            Id = 27,
+                            Date = new DateTime(2021, 1, 24, 18, 29, 29, 539, DateTimeKind.Local).AddTicks(814),
                             IdIndicateur = 6,
-                            IdMesure = 221,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 58,
-                            Date = new DateTime(2021, 2, 10, 9, 50, 47, 80, DateTimeKind.Local).AddTicks(4155),
-                            IdIndicateur = 4,
-                            IdMesure = 189,
+                            IdMesure = 182,
                             Value = "59"
                         },
                         new
                         {
-                            Id = 59,
-                            Date = new DateTime(2021, 2, 23, 7, 40, 36, 887, DateTimeKind.Local).AddTicks(3695),
-                            IdIndicateur = 5,
-                            IdMesure = 340,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 60,
-                            Date = new DateTime(2020, 5, 14, 9, 12, 7, 52, DateTimeKind.Local).AddTicks(5237),
-                            IdIndicateur = 3,
-                            IdMesure = 33,
-                            Value = "30"
-                        },
-                        new
-                        {
-                            Id = 61,
-                            Date = new DateTime(2020, 7, 26, 4, 44, 7, 587, DateTimeKind.Local).AddTicks(8914),
-                            IdIndicateur = 4,
-                            IdMesure = 309,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 62,
-                            Date = new DateTime(2020, 9, 16, 17, 30, 9, 514, DateTimeKind.Local).AddTicks(705),
-                            IdIndicateur = 2,
-                            IdMesure = 176,
-                            Value = "10"
-                        },
-                        new
-                        {
-                            Id = 63,
-                            Date = new DateTime(2020, 7, 17, 10, 7, 41, 760, DateTimeKind.Local).AddTicks(9312),
-                            IdIndicateur = 6,
-                            IdMesure = 413,
-                            Value = "55"
-                        },
-                        new
-                        {
-                            Id = 64,
-                            Date = new DateTime(2021, 3, 23, 7, 43, 10, 15, DateTimeKind.Local).AddTicks(4466),
-                            IdIndicateur = 5,
-                            IdMesure = 294,
-                            Value = "49"
-                        },
-                        new
-                        {
-                            Id = 65,
-                            Date = new DateTime(2020, 6, 7, 6, 16, 23, 34, DateTimeKind.Local).AddTicks(5542),
-                            IdIndicateur = 2,
-                            IdMesure = 134,
-                            Value = "76"
-                        },
-                        new
-                        {
-                            Id = 66,
-                            Date = new DateTime(2021, 4, 15, 15, 28, 0, 998, DateTimeKind.Local).AddTicks(9190),
-                            IdIndicateur = 3,
-                            IdMesure = 275,
-                            Value = "60"
-                        },
-                        new
-                        {
-                            Id = 67,
-                            Date = new DateTime(2020, 9, 10, 9, 1, 34, 857, DateTimeKind.Local).AddTicks(8836),
-                            IdIndicateur = 6,
-                            IdMesure = 281,
-                            Value = "64"
-                        },
-                        new
-                        {
-                            Id = 68,
-                            Date = new DateTime(2021, 2, 21, 11, 36, 33, 19, DateTimeKind.Local).AddTicks(9668),
-                            IdIndicateur = 6,
-                            IdMesure = 102,
+                            Id = 28,
+                            Date = new DateTime(2021, 4, 7, 12, 13, 55, 65, DateTimeKind.Local).AddTicks(6),
+                            IdIndicateur = 1,
+                            IdMesure = 42,
                             Value = "73"
                         },
                         new
                         {
-                            Id = 69,
-                            Date = new DateTime(2020, 11, 8, 1, 1, 55, 30, DateTimeKind.Local).AddTicks(1473),
+                            Id = 29,
+                            Date = new DateTime(2020, 6, 26, 22, 43, 3, 668, DateTimeKind.Local).AddTicks(5558),
                             IdIndicateur = 3,
-                            IdMesure = 354,
-                            Value = "22"
+                            IdMesure = 198,
+                            Value = "46"
                         },
                         new
                         {
-                            Id = 70,
-                            Date = new DateTime(2021, 1, 4, 23, 50, 29, 188, DateTimeKind.Local).AddTicks(5358),
+                            Id = 30,
+                            Date = new DateTime(2020, 11, 8, 18, 57, 58, 410, DateTimeKind.Local).AddTicks(6823),
+                            IdIndicateur = 2,
+                            IdMesure = 190,
+                            Value = "86"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Date = new DateTime(2020, 7, 1, 4, 1, 10, 115, DateTimeKind.Local).AddTicks(3104),
+                            IdIndicateur = 6,
+                            IdMesure = 337,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Date = new DateTime(2020, 5, 31, 14, 37, 2, 681, DateTimeKind.Local).AddTicks(7522),
+                            IdIndicateur = 6,
+                            IdMesure = 19,
+                            Value = "71"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Date = new DateTime(2020, 12, 25, 6, 18, 1, 742, DateTimeKind.Local).AddTicks(9123),
+                            IdIndicateur = 6,
+                            IdMesure = 64,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Date = new DateTime(2021, 4, 10, 18, 30, 5, 78, DateTimeKind.Local).AddTicks(1363),
+                            IdIndicateur = 3,
+                            IdMesure = 234,
+                            Value = "61"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Date = new DateTime(2020, 8, 30, 0, 9, 17, 38, DateTimeKind.Local).AddTicks(8883),
                             IdIndicateur = 1,
-                            IdMesure = 380,
-                            Value = "93"
+                            IdMesure = 98,
+                            Value = "57"
                         },
                         new
                         {
-                            Id = 71,
-                            Date = new DateTime(2020, 10, 21, 18, 3, 32, 451, DateTimeKind.Local).AddTicks(7087),
+                            Id = 36,
+                            Date = new DateTime(2020, 11, 3, 1, 35, 34, 9, DateTimeKind.Local).AddTicks(4024),
+                            IdIndicateur = 2,
+                            IdMesure = 134,
+                            Value = "43"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Date = new DateTime(2020, 5, 26, 18, 42, 45, 564, DateTimeKind.Local).AddTicks(9794),
                             IdIndicateur = 5,
-                            IdMesure = 366,
+                            IdMesure = 41,
+                            Value = "45"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Date = new DateTime(2020, 6, 8, 21, 46, 26, 318, DateTimeKind.Local).AddTicks(820),
+                            IdIndicateur = 5,
+                            IdMesure = 231,
+                            Value = "23"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Date = new DateTime(2021, 4, 27, 23, 27, 42, 133, DateTimeKind.Local).AddTicks(8117),
+                            IdIndicateur = 6,
+                            IdMesure = 405,
                             Value = "40"
                         },
                         new
                         {
-                            Id = 72,
-                            Date = new DateTime(2020, 5, 18, 5, 59, 50, 422, DateTimeKind.Local).AddTicks(3557),
+                            Id = 40,
+                            Date = new DateTime(2020, 10, 8, 6, 37, 25, 178, DateTimeKind.Local).AddTicks(4048),
                             IdIndicateur = 5,
-                            IdMesure = 62,
+                            IdMesure = 75,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Date = new DateTime(2021, 2, 20, 7, 50, 44, 707, DateTimeKind.Local).AddTicks(1487),
+                            IdIndicateur = 4,
+                            IdMesure = 98,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Date = new DateTime(2021, 4, 5, 8, 11, 56, 450, DateTimeKind.Local).AddTicks(8849),
+                            IdIndicateur = 3,
+                            IdMesure = 219,
                             Value = "59"
                         },
                         new
                         {
-                            Id = 73,
-                            Date = new DateTime(2020, 7, 1, 12, 9, 34, 386, DateTimeKind.Local).AddTicks(6096),
+                            Id = 43,
+                            Date = new DateTime(2020, 12, 31, 17, 46, 40, 149, DateTimeKind.Local).AddTicks(5969),
+                            IdIndicateur = 3,
+                            IdMesure = 378,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Date = new DateTime(2020, 10, 15, 2, 39, 33, 691, DateTimeKind.Local).AddTicks(3737),
+                            IdIndicateur = 1,
+                            IdMesure = 326,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Date = new DateTime(2021, 2, 17, 0, 1, 45, 959, DateTimeKind.Local).AddTicks(3794),
+                            IdIndicateur = 1,
+                            IdMesure = 245,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Date = new DateTime(2020, 12, 5, 12, 58, 4, 600, DateTimeKind.Local).AddTicks(4596),
+                            IdIndicateur = 5,
+                            IdMesure = 196,
+                            Value = "46"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Date = new DateTime(2020, 10, 4, 19, 11, 33, 748, DateTimeKind.Local).AddTicks(2437),
+                            IdIndicateur = 5,
+                            IdMesure = 323,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Date = new DateTime(2020, 11, 19, 11, 37, 45, 634, DateTimeKind.Local).AddTicks(7228),
+                            IdIndicateur = 4,
+                            IdMesure = 17,
+                            Value = "91"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Date = new DateTime(2020, 8, 25, 3, 18, 20, 219, DateTimeKind.Local).AddTicks(9747),
+                            IdIndicateur = 6,
+                            IdMesure = 95,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Date = new DateTime(2020, 8, 2, 3, 55, 17, 248, DateTimeKind.Local).AddTicks(4252),
+                            IdIndicateur = 1,
+                            IdMesure = 39,
+                            Value = "10"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Date = new DateTime(2021, 2, 22, 21, 27, 6, 609, DateTimeKind.Local).AddTicks(1033),
                             IdIndicateur = 2,
-                            IdMesure = 109,
+                            IdMesure = 125,
+                            Value = "16"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Date = new DateTime(2020, 7, 28, 3, 29, 2, 715, DateTimeKind.Local).AddTicks(6250),
+                            IdIndicateur = 5,
+                            IdMesure = 44,
+                            Value = "24"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Date = new DateTime(2021, 4, 18, 21, 58, 58, 340, DateTimeKind.Local).AddTicks(2355),
+                            IdIndicateur = 5,
+                            IdMesure = 336,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Date = new DateTime(2020, 11, 9, 0, 8, 0, 842, DateTimeKind.Local).AddTicks(776),
+                            IdIndicateur = 4,
+                            IdMesure = 7,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Date = new DateTime(2020, 8, 2, 18, 18, 30, 107, DateTimeKind.Local).AddTicks(7354),
+                            IdIndicateur = 5,
+                            IdMesure = 93,
+                            Value = "52"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Date = new DateTime(2021, 1, 6, 7, 6, 51, 417, DateTimeKind.Local).AddTicks(8699),
+                            IdIndicateur = 6,
+                            IdMesure = 395,
+                            Value = "14"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Date = new DateTime(2020, 7, 19, 22, 1, 27, 79, DateTimeKind.Local).AddTicks(9639),
+                            IdIndicateur = 2,
+                            IdMesure = 190,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Date = new DateTime(2020, 12, 12, 18, 10, 47, 233, DateTimeKind.Local).AddTicks(1989),
+                            IdIndicateur = 3,
+                            IdMesure = 306,
+                            Value = "52"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Date = new DateTime(2021, 3, 16, 8, 17, 54, 852, DateTimeKind.Local).AddTicks(6828),
+                            IdIndicateur = 6,
+                            IdMesure = 54,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Date = new DateTime(2020, 5, 29, 9, 44, 29, 848, DateTimeKind.Local).AddTicks(1243),
+                            IdIndicateur = 2,
+                            IdMesure = 289,
+                            Value = "38"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Date = new DateTime(2021, 1, 30, 8, 35, 28, 917, DateTimeKind.Local).AddTicks(1732),
+                            IdIndicateur = 4,
+                            IdMesure = 255,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Date = new DateTime(2020, 10, 16, 4, 3, 16, 744, DateTimeKind.Local).AddTicks(9193),
+                            IdIndicateur = 6,
+                            IdMesure = 35,
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Date = new DateTime(2020, 12, 20, 20, 48, 41, 208, DateTimeKind.Local).AddTicks(3298),
+                            IdIndicateur = 6,
+                            IdMesure = 361,
+                            Value = "53"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Date = new DateTime(2021, 1, 5, 16, 51, 37, 953, DateTimeKind.Local).AddTicks(4652),
+                            IdIndicateur = 2,
+                            IdMesure = 307,
+                            Value = "87"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Date = new DateTime(2020, 6, 1, 16, 12, 57, 611, DateTimeKind.Local).AddTicks(307),
+                            IdIndicateur = 5,
+                            IdMesure = 116,
+                            Value = "79"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Date = new DateTime(2021, 1, 22, 0, 18, 40, 682, DateTimeKind.Local).AddTicks(7836),
+                            IdIndicateur = 3,
+                            IdMesure = 296,
+                            Value = "16"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Date = new DateTime(2021, 4, 28, 8, 50, 38, 776, DateTimeKind.Local).AddTicks(84),
+                            IdIndicateur = 1,
+                            IdMesure = 136,
+                            Value = "94"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Date = new DateTime(2021, 5, 1, 20, 27, 37, 335, DateTimeKind.Local).AddTicks(3213),
+                            IdIndicateur = 6,
+                            IdMesure = 322,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Date = new DateTime(2021, 2, 4, 0, 51, 41, 658, DateTimeKind.Local).AddTicks(9236),
+                            IdIndicateur = 4,
+                            IdMesure = 175,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Date = new DateTime(2020, 10, 4, 4, 1, 32, 614, DateTimeKind.Local).AddTicks(2831),
+                            IdIndicateur = 5,
+                            IdMesure = 64,
+                            Value = "32"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Date = new DateTime(2020, 8, 11, 13, 3, 42, 219, DateTimeKind.Local).AddTicks(1073),
+                            IdIndicateur = 4,
+                            IdMesure = 318,
+                            Value = "97"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Date = new DateTime(2020, 6, 19, 15, 4, 52, 994, DateTimeKind.Local).AddTicks(369),
+                            IdIndicateur = 1,
+                            IdMesure = 2,
+                            Value = "72"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Date = new DateTime(2020, 6, 5, 14, 20, 35, 620, DateTimeKind.Local).AddTicks(1171),
+                            IdIndicateur = 4,
+                            IdMesure = 63,
                             Value = "89"
                         },
                         new
                         {
                             Id = 74,
-                            Date = new DateTime(2020, 12, 28, 2, 35, 14, 499, DateTimeKind.Local).AddTicks(8787),
-                            IdIndicateur = 2,
-                            IdMesure = 313,
-                            Value = "40"
+                            Date = new DateTime(2021, 2, 13, 23, 9, 16, 219, DateTimeKind.Local).AddTicks(9143),
+                            IdIndicateur = 3,
+                            IdMesure = 192,
+                            Value = "33"
                         },
                         new
                         {
                             Id = 75,
-                            Date = new DateTime(2020, 11, 17, 17, 50, 2, 763, DateTimeKind.Local).AddTicks(9255),
-                            IdIndicateur = 2,
-                            IdMesure = 435,
-                            Value = "20"
+                            Date = new DateTime(2021, 4, 30, 12, 36, 17, 629, DateTimeKind.Local).AddTicks(9983),
+                            IdIndicateur = 4,
+                            IdMesure = 256,
+                            Value = "96"
                         },
                         new
                         {
                             Id = 76,
-                            Date = new DateTime(2021, 3, 22, 1, 35, 8, 315, DateTimeKind.Local).AddTicks(7357),
+                            Date = new DateTime(2020, 7, 2, 18, 39, 44, 363, DateTimeKind.Local).AddTicks(8298),
                             IdIndicateur = 3,
-                            IdMesure = 256,
-                            Value = "45"
+                            IdMesure = 404,
+                            Value = "84"
                         },
                         new
                         {
                             Id = 77,
-                            Date = new DateTime(2021, 2, 19, 6, 55, 49, 388, DateTimeKind.Local).AddTicks(2861),
-                            IdIndicateur = 2,
-                            IdMesure = 93,
+                            Date = new DateTime(2021, 3, 2, 0, 25, 40, 253, DateTimeKind.Local).AddTicks(5115),
+                            IdIndicateur = 3,
+                            IdMesure = 64,
                             Value = "98"
                         },
                         new
                         {
                             Id = 78,
-                            Date = new DateTime(2021, 3, 3, 5, 28, 25, 692, DateTimeKind.Local).AddTicks(1633),
-                            IdIndicateur = 6,
-                            IdMesure = 299,
-                            Value = "31"
+                            Date = new DateTime(2020, 11, 10, 12, 45, 49, 729, DateTimeKind.Local).AddTicks(3698),
+                            IdIndicateur = 4,
+                            IdMesure = 34,
+                            Value = "26"
                         },
                         new
                         {
                             Id = 79,
-                            Date = new DateTime(2020, 6, 27, 20, 58, 16, 956, DateTimeKind.Local).AddTicks(5832),
-                            IdIndicateur = 3,
-                            IdMesure = 143,
-                            Value = "15"
+                            Date = new DateTime(2021, 3, 27, 20, 7, 17, 25, DateTimeKind.Local).AddTicks(1021),
+                            IdIndicateur = 2,
+                            IdMesure = 218,
+                            Value = "27"
                         },
                         new
                         {
                             Id = 80,
-                            Date = new DateTime(2020, 6, 11, 11, 59, 51, 517, DateTimeKind.Local).AddTicks(9140),
-                            IdIndicateur = 1,
-                            IdMesure = 18,
-                            Value = "91"
+                            Date = new DateTime(2021, 2, 15, 19, 17, 17, 780, DateTimeKind.Local).AddTicks(2543),
+                            IdIndicateur = 3,
+                            IdMesure = 174,
+                            Value = "35"
                         },
                         new
                         {
                             Id = 81,
-                            Date = new DateTime(2020, 5, 20, 12, 53, 21, 496, DateTimeKind.Local).AddTicks(385),
-                            IdIndicateur = 4,
-                            IdMesure = 179,
-                            Value = "45"
+                            Date = new DateTime(2021, 3, 15, 8, 32, 25, 133, DateTimeKind.Local).AddTicks(966),
+                            IdIndicateur = 1,
+                            IdMesure = 164,
+                            Value = "89"
                         },
                         new
                         {
                             Id = 82,
-                            Date = new DateTime(2020, 11, 3, 9, 12, 54, 624, DateTimeKind.Local).AddTicks(7460),
+                            Date = new DateTime(2021, 4, 30, 17, 51, 16, 362, DateTimeKind.Local).AddTicks(5426),
                             IdIndicateur = 6,
-                            IdMesure = 421,
-                            Value = "52"
+                            IdMesure = 51,
+                            Value = "61"
                         },
                         new
                         {
                             Id = 83,
-                            Date = new DateTime(2020, 9, 12, 9, 59, 24, 906, DateTimeKind.Local).AddTicks(2935),
-                            IdIndicateur = 5,
-                            IdMesure = 66,
-                            Value = "53"
+                            Date = new DateTime(2020, 9, 22, 11, 12, 36, 855, DateTimeKind.Local).AddTicks(5793),
+                            IdIndicateur = 6,
+                            IdMesure = 119,
+                            Value = "70"
                         },
                         new
                         {
                             Id = 84,
-                            Date = new DateTime(2020, 11, 9, 15, 1, 53, 351, DateTimeKind.Local).AddTicks(1750),
-                            IdIndicateur = 3,
-                            IdMesure = 14,
-                            Value = "76"
+                            Date = new DateTime(2021, 1, 13, 20, 23, 57, 71, DateTimeKind.Local).AddTicks(2172),
+                            IdIndicateur = 2,
+                            IdMesure = 363,
+                            Value = "69"
                         },
                         new
                         {
                             Id = 85,
-                            Date = new DateTime(2020, 7, 1, 15, 9, 38, 210, DateTimeKind.Local).AddTicks(5327),
-                            IdIndicateur = 2,
-                            IdMesure = 177,
-                            Value = "38"
+                            Date = new DateTime(2020, 10, 23, 7, 38, 41, 230, DateTimeKind.Local).AddTicks(2840),
+                            IdIndicateur = 1,
+                            IdMesure = 331,
+                            Value = "63"
                         },
                         new
                         {
                             Id = 86,
-                            Date = new DateTime(2021, 1, 16, 9, 58, 47, 224, DateTimeKind.Local).AddTicks(6632),
-                            IdIndicateur = 3,
-                            IdMesure = 343,
-                            Value = "34"
+                            Date = new DateTime(2020, 10, 20, 17, 0, 17, 361, DateTimeKind.Local).AddTicks(7928),
+                            IdIndicateur = 4,
+                            IdMesure = 54,
+                            Value = "82"
                         },
                         new
                         {
                             Id = 87,
-                            Date = new DateTime(2021, 1, 9, 9, 7, 17, 23, DateTimeKind.Local).AddTicks(9216),
-                            IdIndicateur = 5,
-                            IdMesure = 25,
-                            Value = "55"
+                            Date = new DateTime(2021, 1, 28, 17, 18, 38, 771, DateTimeKind.Local).AddTicks(6309),
+                            IdIndicateur = 3,
+                            IdMesure = 180,
+                            Value = "47"
                         },
                         new
                         {
                             Id = 88,
-                            Date = new DateTime(2020, 5, 14, 23, 55, 19, 786, DateTimeKind.Local).AddTicks(8390),
-                            IdIndicateur = 3,
-                            IdMesure = 117,
-                            Value = "37"
+                            Date = new DateTime(2021, 2, 3, 0, 47, 10, 114, DateTimeKind.Local).AddTicks(5102),
+                            IdIndicateur = 1,
+                            IdMesure = 84,
+                            Value = "84"
                         },
                         new
                         {
                             Id = 89,
-                            Date = new DateTime(2020, 5, 24, 8, 21, 57, 395, DateTimeKind.Local).AddTicks(1393),
-                            IdIndicateur = 2,
-                            IdMesure = 149,
-                            Value = "13"
+                            Date = new DateTime(2020, 6, 17, 20, 51, 23, 235, DateTimeKind.Local).AddTicks(4937),
+                            IdIndicateur = 5,
+                            IdMesure = 109,
+                            Value = "68"
                         },
                         new
                         {
                             Id = 90,
-                            Date = new DateTime(2020, 12, 26, 8, 1, 26, 333, DateTimeKind.Local).AddTicks(7412),
-                            IdIndicateur = 3,
-                            IdMesure = 427,
-                            Value = "22"
+                            Date = new DateTime(2021, 2, 8, 3, 37, 29, 130, DateTimeKind.Local).AddTicks(9030),
+                            IdIndicateur = 5,
+                            IdMesure = 238,
+                            Value = "76"
                         },
                         new
                         {
                             Id = 91,
-                            Date = new DateTime(2020, 6, 12, 10, 48, 19, 272, DateTimeKind.Local).AddTicks(7565),
-                            IdIndicateur = 3,
-                            IdMesure = 367,
-                            Value = "13"
+                            Date = new DateTime(2021, 3, 20, 7, 4, 34, 576, DateTimeKind.Local).AddTicks(2866),
+                            IdIndicateur = 6,
+                            IdMesure = 393,
+                            Value = "92"
                         },
                         new
                         {
                             Id = 92,
-                            Date = new DateTime(2020, 6, 19, 18, 57, 23, 617, DateTimeKind.Local).AddTicks(3667),
+                            Date = new DateTime(2021, 1, 28, 3, 43, 3, 558, DateTimeKind.Local).AddTicks(2584),
                             IdIndicateur = 4,
-                            IdMesure = 212,
-                            Value = "21"
+                            IdMesure = 411,
+                            Value = "69"
                         },
                         new
                         {
                             Id = 93,
-                            Date = new DateTime(2020, 7, 6, 3, 44, 40, 913, DateTimeKind.Local).AddTicks(6125),
-                            IdIndicateur = 4,
-                            IdMesure = 298,
-                            Value = "49"
+                            Date = new DateTime(2021, 1, 25, 17, 8, 7, 511, DateTimeKind.Local).AddTicks(1640),
+                            IdIndicateur = 6,
+                            IdMesure = 226,
+                            Value = "41"
                         },
                         new
                         {
                             Id = 94,
-                            Date = new DateTime(2021, 4, 8, 3, 22, 41, 602, DateTimeKind.Local).AddTicks(6428),
-                            IdIndicateur = 1,
-                            IdMesure = 316,
+                            Date = new DateTime(2020, 6, 24, 20, 17, 19, 497, DateTimeKind.Local).AddTicks(8756),
+                            IdIndicateur = 5,
+                            IdMesure = 327,
                             Value = "18"
                         },
                         new
                         {
                             Id = 95,
-                            Date = new DateTime(2021, 1, 28, 18, 12, 35, 605, DateTimeKind.Local).AddTicks(3511),
-                            IdIndicateur = 1,
-                            IdMesure = 169,
-                            Value = "91"
+                            Date = new DateTime(2020, 8, 13, 20, 47, 51, 947, DateTimeKind.Local).AddTicks(2009),
+                            IdIndicateur = 3,
+                            IdMesure = 107,
+                            Value = "76"
                         },
                         new
                         {
                             Id = 96,
-                            Date = new DateTime(2020, 9, 2, 4, 33, 10, 327, DateTimeKind.Local).AddTicks(6862),
-                            IdIndicateur = 1,
-                            IdMesure = 160,
-                            Value = "30"
+                            Date = new DateTime(2021, 3, 21, 11, 29, 58, 257, DateTimeKind.Local).AddTicks(8974),
+                            IdIndicateur = 2,
+                            IdMesure = 215,
+                            Value = "84"
                         },
                         new
                         {
                             Id = 97,
-                            Date = new DateTime(2020, 7, 13, 3, 25, 21, 644, DateTimeKind.Local).AddTicks(5428),
-                            IdIndicateur = 4,
-                            IdMesure = 220,
-                            Value = "36"
+                            Date = new DateTime(2021, 3, 30, 22, 1, 50, 772, DateTimeKind.Local).AddTicks(3319),
+                            IdIndicateur = 3,
+                            IdMesure = 55,
+                            Value = "43"
                         },
                         new
                         {
                             Id = 98,
-                            Date = new DateTime(2020, 5, 13, 6, 17, 12, 846, DateTimeKind.Local).AddTicks(7966),
+                            Date = new DateTime(2021, 4, 4, 8, 12, 41, 120, DateTimeKind.Local).AddTicks(6085),
                             IdIndicateur = 5,
-                            IdMesure = 187,
-                            Value = "54"
+                            IdMesure = 259,
+                            Value = "79"
                         },
                         new
                         {
                             Id = 99,
-                            Date = new DateTime(2021, 1, 10, 19, 51, 58, 783, DateTimeKind.Local).AddTicks(6711),
-                            IdIndicateur = 6,
-                            IdMesure = 35,
-                            Value = "99"
+                            Date = new DateTime(2021, 3, 5, 17, 20, 19, 610, DateTimeKind.Local).AddTicks(701),
+                            IdIndicateur = 3,
+                            IdMesure = 174,
+                            Value = "67"
                         },
                         new
                         {
                             Id = 100,
-                            Date = new DateTime(2020, 11, 16, 8, 36, 4, 856, DateTimeKind.Local).AddTicks(7671),
-                            IdIndicateur = 3,
-                            IdMesure = 134,
-                            Value = "82"
+                            Date = new DateTime(2020, 6, 30, 9, 7, 42, 811, DateTimeKind.Local).AddTicks(8546),
+                            IdIndicateur = 5,
+                            IdMesure = 265,
+                            Value = "64"
                         },
                         new
                         {
                             Id = 101,
-                            Date = new DateTime(2020, 8, 24, 11, 35, 2, 842, DateTimeKind.Local).AddTicks(3026),
-                            IdIndicateur = 4,
-                            IdMesure = 255,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 102,
-                            Date = new DateTime(2021, 1, 21, 5, 11, 16, 274, DateTimeKind.Local).AddTicks(1697),
-                            IdIndicateur = 3,
-                            IdMesure = 25,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 103,
-                            Date = new DateTime(2020, 6, 13, 22, 38, 58, 136, DateTimeKind.Local).AddTicks(7735),
-                            IdIndicateur = 6,
-                            IdMesure = 58,
-                            Value = "59"
-                        },
-                        new
-                        {
-                            Id = 104,
-                            Date = new DateTime(2020, 8, 25, 7, 13, 3, 156, DateTimeKind.Local).AddTicks(47),
-                            IdIndicateur = 6,
-                            IdMesure = 239,
-                            Value = "98"
-                        },
-                        new
-                        {
-                            Id = 105,
-                            Date = new DateTime(2020, 5, 12, 3, 27, 22, 886, DateTimeKind.Local).AddTicks(8545),
-                            IdIndicateur = 3,
-                            IdMesure = 116,
-                            Value = "44"
-                        },
-                        new
-                        {
-                            Id = 106,
-                            Date = new DateTime(2020, 6, 9, 23, 58, 18, 711, DateTimeKind.Local).AddTicks(9599),
-                            IdIndicateur = 2,
-                            IdMesure = 137,
-                            Value = "49"
-                        },
-                        new
-                        {
-                            Id = 107,
-                            Date = new DateTime(2020, 7, 27, 17, 59, 51, 959, DateTimeKind.Local).AddTicks(9253),
-                            IdIndicateur = 3,
-                            IdMesure = 42,
-                            Value = "77"
-                        },
-                        new
-                        {
-                            Id = 108,
-                            Date = new DateTime(2021, 4, 29, 5, 13, 12, 735, DateTimeKind.Local).AddTicks(3767),
-                            IdIndicateur = 5,
-                            IdMesure = 36,
+                            Date = new DateTime(2021, 1, 15, 10, 29, 25, 160, DateTimeKind.Local).AddTicks(7239),
+                            IdIndicateur = 1,
+                            IdMesure = 322,
                             Value = "78"
                         },
                         new
                         {
-                            Id = 109,
-                            Date = new DateTime(2020, 8, 8, 5, 11, 34, 478, DateTimeKind.Local).AddTicks(1345),
-                            IdIndicateur = 3,
-                            IdMesure = 132,
-                            Value = "70"
-                        },
-                        new
-                        {
-                            Id = 110,
-                            Date = new DateTime(2021, 4, 21, 17, 21, 13, 221, DateTimeKind.Local).AddTicks(5054),
+                            Id = 102,
+                            Date = new DateTime(2020, 11, 3, 19, 12, 31, 780, DateTimeKind.Local).AddTicks(3168),
                             IdIndicateur = 4,
-                            IdMesure = 237,
-                            Value = "64"
-                        },
-                        new
-                        {
-                            Id = 111,
-                            Date = new DateTime(2020, 11, 16, 18, 12, 21, 939, DateTimeKind.Local).AddTicks(4023),
-                            IdIndicateur = 1,
-                            IdMesure = 123,
-                            Value = "70"
-                        },
-                        new
-                        {
-                            Id = 112,
-                            Date = new DateTime(2021, 2, 20, 21, 15, 38, 97, DateTimeKind.Local).AddTicks(7480),
-                            IdIndicateur = 4,
-                            IdMesure = 108,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 113,
-                            Date = new DateTime(2020, 5, 28, 15, 35, 12, 811, DateTimeKind.Local).AddTicks(6645),
-                            IdIndicateur = 2,
-                            IdMesure = 432,
-                            Value = "13"
-                        },
-                        new
-                        {
-                            Id = 114,
-                            Date = new DateTime(2021, 1, 28, 1, 57, 25, 475, DateTimeKind.Local).AddTicks(4921),
-                            IdIndicateur = 5,
-                            IdMesure = 3,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 115,
-                            Date = new DateTime(2020, 9, 28, 18, 19, 43, 9, DateTimeKind.Local).AddTicks(3497),
-                            IdIndicateur = 5,
-                            IdMesure = 90,
-                            Value = "63"
-                        },
-                        new
-                        {
-                            Id = 116,
-                            Date = new DateTime(2020, 12, 29, 8, 35, 24, 44, DateTimeKind.Local).AddTicks(4357),
-                            IdIndicateur = 3,
-                            IdMesure = 323,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 117,
-                            Date = new DateTime(2021, 3, 20, 18, 29, 7, 922, DateTimeKind.Local).AddTicks(7614),
-                            IdIndicateur = 4,
-                            IdMesure = 97,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 118,
-                            Date = new DateTime(2020, 8, 8, 2, 43, 55, 180, DateTimeKind.Local).AddTicks(9815),
-                            IdIndicateur = 2,
-                            IdMesure = 98,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 119,
-                            Date = new DateTime(2021, 1, 12, 8, 18, 4, 313, DateTimeKind.Local).AddTicks(6837),
-                            IdIndicateur = 3,
-                            IdMesure = 340,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 120,
-                            Date = new DateTime(2020, 11, 5, 2, 47, 38, 264, DateTimeKind.Local).AddTicks(3421),
-                            IdIndicateur = 6,
-                            IdMesure = 290,
-                            Value = "68"
-                        },
-                        new
-                        {
-                            Id = 121,
-                            Date = new DateTime(2020, 7, 21, 5, 27, 57, 30, DateTimeKind.Local).AddTicks(4801),
-                            IdIndicateur = 4,
-                            IdMesure = 24,
-                            Value = "79"
-                        },
-                        new
-                        {
-                            Id = 122,
-                            Date = new DateTime(2020, 11, 9, 21, 25, 31, 531, DateTimeKind.Local).AddTicks(7051),
-                            IdIndicateur = 5,
-                            IdMesure = 332,
-                            Value = "100"
-                        },
-                        new
-                        {
-                            Id = 123,
-                            Date = new DateTime(2020, 7, 8, 12, 1, 44, 538, DateTimeKind.Local).AddTicks(6650),
-                            IdIndicateur = 3,
-                            IdMesure = 130,
-                            Value = "57"
-                        },
-                        new
-                        {
-                            Id = 124,
-                            Date = new DateTime(2020, 7, 10, 2, 38, 33, 54, DateTimeKind.Local).AddTicks(5049),
-                            IdIndicateur = 1,
-                            IdMesure = 414,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 125,
-                            Date = new DateTime(2020, 8, 17, 11, 20, 25, 391, DateTimeKind.Local).AddTicks(5798),
-                            IdIndicateur = 2,
-                            IdMesure = 360,
-                            Value = "30"
-                        },
-                        new
-                        {
-                            Id = 126,
-                            Date = new DateTime(2020, 8, 2, 22, 43, 12, 41, DateTimeKind.Local).AddTicks(2504),
-                            IdIndicateur = 2,
-                            IdMesure = 16,
-                            Value = "97"
-                        },
-                        new
-                        {
-                            Id = 127,
-                            Date = new DateTime(2020, 9, 4, 15, 3, 58, 446, DateTimeKind.Local).AddTicks(3324),
-                            IdIndicateur = 2,
-                            IdMesure = 74,
-                            Value = "22"
-                        },
-                        new
-                        {
-                            Id = 128,
-                            Date = new DateTime(2021, 2, 8, 14, 41, 41, 778, DateTimeKind.Local).AddTicks(9088),
-                            IdIndicateur = 6,
-                            IdMesure = 64,
-                            Value = "63"
-                        },
-                        new
-                        {
-                            Id = 129,
-                            Date = new DateTime(2021, 2, 19, 9, 14, 51, 21, DateTimeKind.Local).AddTicks(1777),
-                            IdIndicateur = 1,
-                            IdMesure = 39,
-                            Value = "58"
-                        },
-                        new
-                        {
-                            Id = 130,
-                            Date = new DateTime(2020, 12, 9, 4, 16, 11, 234, DateTimeKind.Local).AddTicks(6014),
-                            IdIndicateur = 3,
-                            IdMesure = 309,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 131,
-                            Date = new DateTime(2020, 7, 8, 22, 33, 54, 786, DateTimeKind.Local).AddTicks(3769),
-                            IdIndicateur = 1,
-                            IdMesure = 238,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 132,
-                            Date = new DateTime(2020, 7, 25, 16, 25, 0, 835, DateTimeKind.Local).AddTicks(483),
-                            IdIndicateur = 2,
-                            IdMesure = 317,
-                            Value = "80"
-                        },
-                        new
-                        {
-                            Id = 133,
-                            Date = new DateTime(2020, 12, 29, 10, 25, 28, 4, DateTimeKind.Local).AddTicks(7963),
-                            IdIndicateur = 6,
-                            IdMesure = 31,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 134,
-                            Date = new DateTime(2020, 7, 30, 21, 31, 16, 143, DateTimeKind.Local).AddTicks(7568),
-                            IdIndicateur = 6,
-                            IdMesure = 328,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 135,
-                            Date = new DateTime(2020, 11, 15, 19, 44, 23, 488, DateTimeKind.Local).AddTicks(4941),
-                            IdIndicateur = 1,
-                            IdMesure = 255,
-                            Value = "65"
-                        },
-                        new
-                        {
-                            Id = 136,
-                            Date = new DateTime(2020, 11, 15, 11, 13, 34, 7, DateTimeKind.Local).AddTicks(7719),
-                            IdIndicateur = 3,
-                            IdMesure = 300,
-                            Value = "39"
-                        },
-                        new
-                        {
-                            Id = 137,
-                            Date = new DateTime(2020, 6, 25, 15, 8, 41, 233, DateTimeKind.Local).AddTicks(505),
-                            IdIndicateur = 2,
-                            IdMesure = 360,
-                            Value = "75"
-                        },
-                        new
-                        {
-                            Id = 138,
-                            Date = new DateTime(2020, 11, 30, 14, 16, 50, 300, DateTimeKind.Local).AddTicks(1744),
-                            IdIndicateur = 1,
-                            IdMesure = 211,
-                            Value = "18"
-                        },
-                        new
-                        {
-                            Id = 139,
-                            Date = new DateTime(2020, 5, 26, 9, 9, 20, 566, DateTimeKind.Local).AddTicks(2409),
-                            IdIndicateur = 6,
-                            IdMesure = 330,
-                            Value = "24"
-                        },
-                        new
-                        {
-                            Id = 140,
-                            Date = new DateTime(2020, 6, 27, 7, 42, 15, 537, DateTimeKind.Local).AddTicks(4882),
-                            IdIndicateur = 1,
-                            IdMesure = 214,
-                            Value = "11"
-                        },
-                        new
-                        {
-                            Id = 141,
-                            Date = new DateTime(2021, 1, 23, 4, 46, 9, 411, DateTimeKind.Local).AddTicks(9339),
-                            IdIndicateur = 3,
-                            IdMesure = 232,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 142,
-                            Date = new DateTime(2021, 3, 8, 0, 1, 19, 809, DateTimeKind.Local).AddTicks(4690),
-                            IdIndicateur = 2,
-                            IdMesure = 163,
-                            Value = "52"
-                        },
-                        new
-                        {
-                            Id = 143,
-                            Date = new DateTime(2020, 8, 24, 13, 30, 21, 137, DateTimeKind.Local).AddTicks(1081),
-                            IdIndicateur = 5,
-                            IdMesure = 286,
-                            Value = "65"
-                        },
-                        new
-                        {
-                            Id = 144,
-                            Date = new DateTime(2021, 2, 16, 21, 35, 29, 710, DateTimeKind.Local).AddTicks(3960),
-                            IdIndicateur = 1,
-                            IdMesure = 351,
-                            Value = "73"
-                        },
-                        new
-                        {
-                            Id = 145,
-                            Date = new DateTime(2020, 11, 25, 19, 45, 49, 625, DateTimeKind.Local).AddTicks(2227),
-                            IdIndicateur = 3,
-                            IdMesure = 340,
-                            Value = "99"
-                        },
-                        new
-                        {
-                            Id = 146,
-                            Date = new DateTime(2020, 5, 7, 7, 57, 9, 916, DateTimeKind.Local).AddTicks(9465),
-                            IdIndicateur = 6,
-                            IdMesure = 263,
-                            Value = "35"
-                        },
-                        new
-                        {
-                            Id = 147,
-                            Date = new DateTime(2020, 6, 1, 8, 24, 45, 102, DateTimeKind.Local).AddTicks(9000),
-                            IdIndicateur = 1,
-                            IdMesure = 340,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 148,
-                            Date = new DateTime(2020, 11, 24, 7, 12, 12, 205, DateTimeKind.Local).AddTicks(4864),
-                            IdIndicateur = 4,
-                            IdMesure = 342,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 149,
-                            Date = new DateTime(2021, 1, 7, 0, 51, 48, 602, DateTimeKind.Local).AddTicks(3360),
-                            IdIndicateur = 5,
-                            IdMesure = 5,
-                            Value = "94"
-                        },
-                        new
-                        {
-                            Id = 150,
-                            Date = new DateTime(2020, 10, 3, 19, 58, 5, 254, DateTimeKind.Local).AddTicks(1438),
-                            IdIndicateur = 1,
-                            IdMesure = 334,
-                            Value = "17"
-                        },
-                        new
-                        {
-                            Id = 151,
-                            Date = new DateTime(2020, 8, 17, 1, 7, 22, 240, DateTimeKind.Local).AddTicks(6438),
-                            IdIndicateur = 4,
-                            IdMesure = 362,
-                            Value = "27"
-                        },
-                        new
-                        {
-                            Id = 152,
-                            Date = new DateTime(2020, 9, 9, 3, 8, 16, 848, DateTimeKind.Local).AddTicks(4111),
-                            IdIndicateur = 3,
-                            IdMesure = 210,
-                            Value = "65"
-                        },
-                        new
-                        {
-                            Id = 153,
-                            Date = new DateTime(2021, 3, 13, 15, 49, 24, 443, DateTimeKind.Local).AddTicks(2154),
-                            IdIndicateur = 6,
-                            IdMesure = 61,
-                            Value = "23"
-                        },
-                        new
-                        {
-                            Id = 154,
-                            Date = new DateTime(2020, 9, 23, 9, 45, 41, 847, DateTimeKind.Local).AddTicks(1082),
-                            IdIndicateur = 4,
-                            IdMesure = 74,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 155,
-                            Date = new DateTime(2021, 1, 4, 19, 49, 10, 757, DateTimeKind.Local).AddTicks(5054),
-                            IdIndicateur = 4,
-                            IdMesure = 43,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 156,
-                            Date = new DateTime(2021, 3, 11, 18, 37, 18, 971, DateTimeKind.Local).AddTicks(3152),
-                            IdIndicateur = 4,
-                            IdMesure = 295,
-                            Value = "42"
-                        },
-                        new
-                        {
-                            Id = 157,
-                            Date = new DateTime(2021, 4, 16, 8, 1, 54, 274, DateTimeKind.Local).AddTicks(1650),
-                            IdIndicateur = 2,
-                            IdMesure = 228,
-                            Value = "71"
-                        },
-                        new
-                        {
-                            Id = 158,
-                            Date = new DateTime(2020, 8, 9, 13, 10, 17, 364, DateTimeKind.Local).AddTicks(9204),
-                            IdIndicateur = 3,
-                            IdMesure = 85,
-                            Value = "49"
-                        },
-                        new
-                        {
-                            Id = 159,
-                            Date = new DateTime(2021, 4, 20, 17, 7, 58, 814, DateTimeKind.Local).AddTicks(3072),
-                            IdIndicateur = 3,
-                            IdMesure = 121,
-                            Value = "64"
-                        },
-                        new
-                        {
-                            Id = 160,
-                            Date = new DateTime(2020, 12, 18, 18, 30, 20, 487, DateTimeKind.Local).AddTicks(4050),
-                            IdIndicateur = 4,
-                            IdMesure = 322,
+                            IdMesure = 349,
                             Value = "55"
                         },
                         new
                         {
-                            Id = 161,
-                            Date = new DateTime(2020, 7, 2, 4, 3, 17, 705, DateTimeKind.Local).AddTicks(7048),
-                            IdIndicateur = 6,
-                            IdMesure = 195,
-                            Value = "80"
-                        },
-                        new
-                        {
-                            Id = 162,
-                            Date = new DateTime(2020, 11, 26, 21, 16, 40, 852, DateTimeKind.Local).AddTicks(646),
-                            IdIndicateur = 1,
-                            IdMesure = 162,
-                            Value = "33"
-                        },
-                        new
-                        {
-                            Id = 163,
-                            Date = new DateTime(2021, 2, 28, 20, 56, 27, 348, DateTimeKind.Local).AddTicks(3666),
-                            IdIndicateur = 2,
-                            IdMesure = 230,
-                            Value = "29"
-                        },
-                        new
-                        {
-                            Id = 164,
-                            Date = new DateTime(2021, 1, 20, 4, 17, 45, 919, DateTimeKind.Local).AddTicks(3021),
+                            Id = 103,
+                            Date = new DateTime(2021, 2, 18, 15, 49, 59, 233, DateTimeKind.Local).AddTicks(3123),
                             IdIndicateur = 5,
-                            IdMesure = 249,
-                            Value = "91"
+                            IdMesure = 280,
+                            Value = "67"
                         },
                         new
                         {
-                            Id = 165,
-                            Date = new DateTime(2021, 1, 8, 17, 31, 58, 346, DateTimeKind.Local).AddTicks(9947),
+                            Id = 104,
+                            Date = new DateTime(2020, 9, 29, 6, 29, 31, 445, DateTimeKind.Local).AddTicks(6291),
                             IdIndicateur = 1,
-                            IdMesure = 94,
-                            Value = "26"
+                            IdMesure = 412,
+                            Value = "77"
                         },
                         new
                         {
-                            Id = 166,
-                            Date = new DateTime(2020, 7, 31, 7, 45, 52, 956, DateTimeKind.Local).AddTicks(2245),
+                            Id = 105,
+                            Date = new DateTime(2020, 10, 22, 19, 25, 4, 260, DateTimeKind.Local).AddTicks(6050),
+                            IdIndicateur = 5,
+                            IdMesure = 59,
+                            Value = "10"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            Date = new DateTime(2020, 8, 7, 14, 24, 45, 266, DateTimeKind.Local).AddTicks(8822),
                             IdIndicateur = 4,
-                            IdMesure = 325,
-                            Value = "50"
-                        },
-                        new
-                        {
-                            Id = 167,
-                            Date = new DateTime(2020, 7, 28, 5, 50, 21, 41, DateTimeKind.Local).AddTicks(3360),
-                            IdIndicateur = 3,
-                            IdMesure = 228,
-                            Value = "87"
-                        },
-                        new
-                        {
-                            Id = 168,
-                            Date = new DateTime(2020, 10, 21, 23, 58, 17, 394, DateTimeKind.Local).AddTicks(6064),
-                            IdIndicateur = 2,
-                            IdMesure = 432,
-                            Value = "88"
-                        },
-                        new
-                        {
-                            Id = 169,
-                            Date = new DateTime(2020, 8, 3, 16, 7, 23, 250, DateTimeKind.Local).AddTicks(2390),
-                            IdIndicateur = 1,
-                            IdMesure = 44,
-                            Value = "89"
-                        },
-                        new
-                        {
-                            Id = 170,
-                            Date = new DateTime(2020, 12, 7, 21, 59, 32, 898, DateTimeKind.Local).AddTicks(5857),
-                            IdIndicateur = 4,
-                            IdMesure = 340,
-                            Value = "79"
-                        },
-                        new
-                        {
-                            Id = 171,
-                            Date = new DateTime(2020, 6, 16, 3, 20, 12, 137, DateTimeKind.Local).AddTicks(2293),
-                            IdIndicateur = 2,
-                            IdMesure = 398,
-                            Value = "56"
-                        },
-                        new
-                        {
-                            Id = 172,
-                            Date = new DateTime(2020, 10, 25, 20, 16, 2, 692, DateTimeKind.Local).AddTicks(1144),
-                            IdIndicateur = 2,
-                            IdMesure = 78,
-                            Value = "23"
-                        },
-                        new
-                        {
-                            Id = 173,
-                            Date = new DateTime(2020, 8, 23, 15, 34, 7, 210, DateTimeKind.Local).AddTicks(7730),
-                            IdIndicateur = 2,
-                            IdMesure = 225,
-                            Value = "83"
-                        },
-                        new
-                        {
-                            Id = 174,
-                            Date = new DateTime(2020, 6, 14, 4, 51, 55, 709, DateTimeKind.Local).AddTicks(4321),
-                            IdIndicateur = 2,
-                            IdMesure = 173,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 175,
-                            Date = new DateTime(2020, 5, 20, 9, 4, 20, 902, DateTimeKind.Local).AddTicks(8893),
-                            IdIndicateur = 1,
-                            IdMesure = 215,
-                            Value = "37"
-                        },
-                        new
-                        {
-                            Id = 176,
-                            Date = new DateTime(2021, 1, 5, 6, 13, 12, 285, DateTimeKind.Local).AddTicks(2769),
-                            IdIndicateur = 4,
-                            IdMesure = 119,
-                            Value = "49"
-                        },
-                        new
-                        {
-                            Id = 177,
-                            Date = new DateTime(2020, 11, 17, 23, 10, 53, 307, DateTimeKind.Local).AddTicks(2755),
-                            IdIndicateur = 5,
-                            IdMesure = 201,
-                            Value = "16"
-                        },
-                        new
-                        {
-                            Id = 178,
-                            Date = new DateTime(2020, 8, 24, 19, 47, 10, 587, DateTimeKind.Local).AddTicks(4068),
-                            IdIndicateur = 1,
-                            IdMesure = 390,
-                            Value = "54"
-                        },
-                        new
-                        {
-                            Id = 179,
-                            Date = new DateTime(2020, 10, 30, 16, 44, 20, 170, DateTimeKind.Local).AddTicks(5831),
-                            IdIndicateur = 5,
-                            IdMesure = 126,
-                            Value = "45"
-                        },
-                        new
-                        {
-                            Id = 180,
-                            Date = new DateTime(2021, 1, 27, 4, 13, 50, 915, DateTimeKind.Local).AddTicks(3866),
-                            IdIndicateur = 4,
-                            IdMesure = 26,
-                            Value = "62"
-                        },
-                        new
-                        {
-                            Id = 181,
-                            Date = new DateTime(2020, 8, 28, 13, 10, 19, 861, DateTimeKind.Local).AddTicks(6680),
-                            IdIndicateur = 3,
-                            IdMesure = 119,
-                            Value = "31"
-                        },
-                        new
-                        {
-                            Id = 182,
-                            Date = new DateTime(2020, 6, 3, 8, 26, 42, 852, DateTimeKind.Local).AddTicks(6537),
-                            IdIndicateur = 2,
-                            IdMesure = 174,
-                            Value = "21"
-                        },
-                        new
-                        {
-                            Id = 183,
-                            Date = new DateTime(2020, 7, 28, 17, 2, 18, 263, DateTimeKind.Local).AddTicks(261),
-                            IdIndicateur = 6,
-                            IdMesure = 220,
-                            Value = "32"
-                        },
-                        new
-                        {
-                            Id = 184,
-                            Date = new DateTime(2020, 12, 1, 17, 28, 18, 613, DateTimeKind.Local).AddTicks(3644),
-                            IdIndicateur = 5,
-                            IdMesure = 99,
-                            Value = "20"
-                        },
-                        new
-                        {
-                            Id = 185,
-                            Date = new DateTime(2020, 11, 3, 20, 57, 48, 959, DateTimeKind.Local).AddTicks(4307),
-                            IdIndicateur = 2,
-                            IdMesure = 355,
-                            Value = "47"
-                        },
-                        new
-                        {
-                            Id = 186,
-                            Date = new DateTime(2020, 12, 19, 17, 7, 43, 7, DateTimeKind.Local).AddTicks(4728),
-                            IdIndicateur = 5,
-                            IdMesure = 88,
-                            Value = "66"
-                        },
-                        new
-                        {
-                            Id = 187,
-                            Date = new DateTime(2020, 9, 20, 13, 24, 52, 812, DateTimeKind.Local).AddTicks(331),
-                            IdIndicateur = 1,
-                            IdMesure = 360,
-                            Value = "46"
-                        },
-                        new
-                        {
-                            Id = 188,
-                            Date = new DateTime(2020, 5, 29, 16, 6, 42, 624, DateTimeKind.Local).AddTicks(1065),
-                            IdIndicateur = 1,
-                            IdMesure = 349,
-                            Value = "84"
-                        },
-                        new
-                        {
-                            Id = 189,
-                            Date = new DateTime(2020, 5, 26, 0, 16, 12, 583, DateTimeKind.Local).AddTicks(2228),
-                            IdIndicateur = 1,
-                            IdMesure = 198,
+                            IdMesure = 86,
                             Value = "71"
                         },
                         new
                         {
-                            Id = 190,
-                            Date = new DateTime(2021, 1, 16, 14, 32, 11, 135, DateTimeKind.Local).AddTicks(8963),
-                            IdIndicateur = 5,
-                            IdMesure = 115,
-                            Value = "93"
+                            Id = 107,
+                            Date = new DateTime(2020, 12, 9, 22, 34, 32, 118, DateTimeKind.Local).AddTicks(8458),
+                            IdIndicateur = 2,
+                            IdMesure = 57,
+                            Value = "89"
                         },
                         new
                         {
-                            Id = 191,
-                            Date = new DateTime(2020, 6, 5, 2, 58, 27, 708, DateTimeKind.Local).AddTicks(538),
-                            IdIndicateur = 1,
-                            IdMesure = 246,
-                            Value = "95"
+                            Id = 108,
+                            Date = new DateTime(2020, 10, 9, 7, 5, 14, 934, DateTimeKind.Local).AddTicks(7078),
+                            IdIndicateur = 6,
+                            IdMesure = 51,
+                            Value = "33"
                         },
                         new
                         {
-                            Id = 192,
-                            Date = new DateTime(2020, 11, 10, 14, 57, 29, 374, DateTimeKind.Local).AddTicks(2522),
-                            IdIndicateur = 5,
+                            Id = 109,
+                            Date = new DateTime(2020, 12, 30, 16, 1, 23, 486, DateTimeKind.Local).AddTicks(888),
+                            IdIndicateur = 6,
+                            IdMesure = 323,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 110,
+                            Date = new DateTime(2020, 10, 6, 19, 43, 51, 524, DateTimeKind.Local).AddTicks(5375),
+                            IdIndicateur = 4,
+                            IdMesure = 242,
+                            Value = "39"
+                        },
+                        new
+                        {
+                            Id = 111,
+                            Date = new DateTime(2020, 7, 11, 3, 16, 35, 278, DateTimeKind.Local).AddTicks(775),
+                            IdIndicateur = 6,
                             IdMesure = 396,
                             Value = "51"
                         },
                         new
                         {
-                            Id = 193,
-                            Date = new DateTime(2020, 6, 19, 22, 47, 18, 545, DateTimeKind.Local).AddTicks(3650),
-                            IdIndicateur = 6,
-                            IdMesure = 291,
-                            Value = "72"
-                        },
-                        new
-                        {
-                            Id = 194,
-                            Date = new DateTime(2020, 10, 5, 5, 39, 16, 819, DateTimeKind.Local).AddTicks(3098),
-                            IdIndicateur = 1,
-                            IdMesure = 70,
-                            Value = "15"
-                        },
-                        new
-                        {
-                            Id = 195,
-                            Date = new DateTime(2021, 1, 22, 20, 1, 3, 334, DateTimeKind.Local).AddTicks(9724),
-                            IdIndicateur = 6,
-                            IdMesure = 316,
-                            Value = "86"
-                        },
-                        new
-                        {
-                            Id = 196,
-                            Date = new DateTime(2020, 12, 11, 12, 16, 26, 537, DateTimeKind.Local).AddTicks(196),
+                            Id = 112,
+                            Date = new DateTime(2020, 12, 11, 6, 38, 19, 427, DateTimeKind.Local).AddTicks(6378),
                             IdIndicateur = 4,
-                            IdMesure = 340,
-                            Value = "19"
+                            IdMesure = 61,
+                            Value = "22"
                         },
                         new
                         {
-                            Id = 197,
-                            Date = new DateTime(2021, 2, 24, 16, 39, 3, 54, DateTimeKind.Local).AddTicks(6607),
-                            IdIndicateur = 2,
-                            IdMesure = 75,
+                            Id = 113,
+                            Date = new DateTime(2020, 7, 8, 1, 46, 41, 347, DateTimeKind.Local).AddTicks(8067),
+                            IdIndicateur = 1,
+                            IdMesure = 264,
+                            Value = "12"
+                        },
+                        new
+                        {
+                            Id = 114,
+                            Date = new DateTime(2021, 2, 26, 12, 26, 55, 337, DateTimeKind.Local).AddTicks(5742),
+                            IdIndicateur = 1,
+                            IdMesure = 293,
+                            Value = "69"
+                        },
+                        new
+                        {
+                            Id = 115,
+                            Date = new DateTime(2020, 10, 20, 15, 34, 14, 493, DateTimeKind.Local).AddTicks(7973),
+                            IdIndicateur = 1,
+                            IdMesure = 207,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 116,
+                            Date = new DateTime(2020, 8, 17, 2, 41, 36, 291, DateTimeKind.Local).AddTicks(7146),
+                            IdIndicateur = 1,
+                            IdMesure = 293,
+                            Value = "44"
+                        },
+                        new
+                        {
+                            Id = 117,
+                            Date = new DateTime(2021, 4, 11, 7, 22, 20, 618, DateTimeKind.Local).AddTicks(6239),
+                            IdIndicateur = 1,
+                            IdMesure = 227,
+                            Value = "52"
+                        },
+                        new
+                        {
+                            Id = 118,
+                            Date = new DateTime(2020, 9, 23, 4, 24, 24, 646, DateTimeKind.Local).AddTicks(3510),
+                            IdIndicateur = 3,
+                            IdMesure = 6,
+                            Value = "13"
+                        },
+                        new
+                        {
+                            Id = 119,
+                            Date = new DateTime(2021, 1, 5, 9, 13, 28, 499, DateTimeKind.Local).AddTicks(4587),
+                            IdIndicateur = 3,
+                            IdMesure = 200,
+                            Value = "66"
+                        },
+                        new
+                        {
+                            Id = 120,
+                            Date = new DateTime(2020, 10, 7, 3, 42, 46, 68, DateTimeKind.Local).AddTicks(9547),
+                            IdIndicateur = 6,
+                            IdMesure = 42,
+                            Value = "65"
+                        },
+                        new
+                        {
+                            Id = 121,
+                            Date = new DateTime(2021, 4, 4, 19, 50, 15, 519, DateTimeKind.Local).AddTicks(2362),
+                            IdIndicateur = 3,
+                            IdMesure = 53,
+                            Value = "82"
+                        },
+                        new
+                        {
+                            Id = 122,
+                            Date = new DateTime(2020, 8, 31, 9, 18, 23, 373, DateTimeKind.Local).AddTicks(4981),
+                            IdIndicateur = 3,
+                            IdMesure = 389,
+                            Value = "91"
+                        },
+                        new
+                        {
+                            Id = 123,
+                            Date = new DateTime(2020, 10, 16, 13, 37, 5, 185, DateTimeKind.Local).AddTicks(294),
+                            IdIndicateur = 5,
+                            IdMesure = 100,
+                            Value = "89"
+                        },
+                        new
+                        {
+                            Id = 124,
+                            Date = new DateTime(2020, 7, 13, 21, 40, 31, 945, DateTimeKind.Local).AddTicks(6326),
+                            IdIndicateur = 5,
+                            IdMesure = 151,
+                            Value = "92"
+                        },
+                        new
+                        {
+                            Id = 125,
+                            Date = new DateTime(2021, 4, 9, 6, 7, 50, 603, DateTimeKind.Local).AddTicks(3985),
+                            IdIndicateur = 5,
+                            IdMesure = 211,
                             Value = "37"
                         },
                         new
                         {
-                            Id = 198,
-                            Date = new DateTime(2021, 4, 10, 19, 46, 11, 118, DateTimeKind.Local).AddTicks(4877),
+                            Id = 126,
+                            Date = new DateTime(2021, 2, 19, 9, 19, 24, 747, DateTimeKind.Local).AddTicks(3757),
+                            IdIndicateur = 1,
+                            IdMesure = 37,
+                            Value = "45"
+                        },
+                        new
+                        {
+                            Id = 127,
+                            Date = new DateTime(2021, 2, 3, 15, 32, 5, 864, DateTimeKind.Local).AddTicks(7625),
+                            IdIndicateur = 3,
+                            IdMesure = 431,
+                            Value = "43"
+                        },
+                        new
+                        {
+                            Id = 128,
+                            Date = new DateTime(2020, 9, 21, 16, 10, 8, 83, DateTimeKind.Local).AddTicks(3241),
                             IdIndicateur = 2,
-                            IdMesure = 64,
+                            IdMesure = 191,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 129,
+                            Date = new DateTime(2021, 2, 23, 1, 31, 28, 721, DateTimeKind.Local).AddTicks(2940),
+                            IdIndicateur = 4,
+                            IdMesure = 175,
+                            Value = "48"
+                        },
+                        new
+                        {
+                            Id = 130,
+                            Date = new DateTime(2021, 4, 2, 1, 56, 19, 714, DateTimeKind.Local).AddTicks(1730),
+                            IdIndicateur = 2,
+                            IdMesure = 131,
+                            Value = "84"
+                        },
+                        new
+                        {
+                            Id = 131,
+                            Date = new DateTime(2021, 2, 16, 16, 46, 12, 115, DateTimeKind.Local).AddTicks(8037),
+                            IdIndicateur = 5,
+                            IdMesure = 73,
+                            Value = "86"
+                        },
+                        new
+                        {
+                            Id = 132,
+                            Date = new DateTime(2020, 9, 1, 7, 47, 30, 726, DateTimeKind.Local).AddTicks(8690),
+                            IdIndicateur = 3,
+                            IdMesure = 230,
+                            Value = "34"
+                        },
+                        new
+                        {
+                            Id = 133,
+                            Date = new DateTime(2020, 12, 26, 15, 7, 15, 251, DateTimeKind.Local).AddTicks(3623),
+                            IdIndicateur = 5,
+                            IdMesure = 226,
+                            Value = "87"
+                        },
+                        new
+                        {
+                            Id = 134,
+                            Date = new DateTime(2021, 4, 17, 23, 19, 26, 606, DateTimeKind.Local).AddTicks(224),
+                            IdIndicateur = 4,
+                            IdMesure = 243,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            Date = new DateTime(2020, 11, 13, 2, 41, 19, 109, DateTimeKind.Local).AddTicks(9128),
+                            IdIndicateur = 4,
+                            IdMesure = 40,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            Date = new DateTime(2020, 6, 8, 1, 41, 54, 742, DateTimeKind.Local).AddTicks(2398),
+                            IdIndicateur = 4,
+                            IdMesure = 27,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 137,
+                            Date = new DateTime(2020, 8, 4, 21, 55, 4, 262, DateTimeKind.Local).AddTicks(2051),
+                            IdIndicateur = 2,
+                            IdMesure = 309,
                             Value = "23"
                         },
                         new
                         {
-                            Id = 199,
-                            Date = new DateTime(2021, 4, 15, 6, 30, 47, 260, DateTimeKind.Local).AddTicks(8466),
+                            Id = 138,
+                            Date = new DateTime(2021, 2, 27, 21, 59, 24, 965, DateTimeKind.Local).AddTicks(1163),
+                            IdIndicateur = 5,
+                            IdMesure = 159,
+                            Value = "56"
+                        },
+                        new
+                        {
+                            Id = 139,
+                            Date = new DateTime(2021, 1, 18, 10, 41, 38, 262, DateTimeKind.Local).AddTicks(3202),
+                            IdIndicateur = 2,
+                            IdMesure = 399,
+                            Value = "92"
+                        },
+                        new
+                        {
+                            Id = 140,
+                            Date = new DateTime(2020, 11, 5, 0, 55, 56, 188, DateTimeKind.Local).AddTicks(9050),
+                            IdIndicateur = 2,
+                            IdMesure = 103,
+                            Value = "71"
+                        },
+                        new
+                        {
+                            Id = 141,
+                            Date = new DateTime(2020, 9, 20, 14, 32, 27, 729, DateTimeKind.Local).AddTicks(7532),
+                            IdIndicateur = 5,
+                            IdMesure = 65,
+                            Value = "76"
+                        },
+                        new
+                        {
+                            Id = 142,
+                            Date = new DateTime(2020, 6, 22, 19, 15, 59, 614, DateTimeKind.Local).AddTicks(1524),
+                            IdIndicateur = 5,
+                            IdMesure = 207,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 143,
+                            Date = new DateTime(2020, 8, 19, 15, 32, 23, 285, DateTimeKind.Local).AddTicks(7502),
+                            IdIndicateur = 3,
+                            IdMesure = 45,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 144,
+                            Date = new DateTime(2020, 10, 28, 10, 16, 39, 339, DateTimeKind.Local).AddTicks(6108),
+                            IdIndicateur = 3,
+                            IdMesure = 89,
+                            Value = "12"
+                        },
+                        new
+                        {
+                            Id = 145,
+                            Date = new DateTime(2021, 1, 24, 23, 1, 31, 713, DateTimeKind.Local).AddTicks(793),
+                            IdIndicateur = 6,
+                            IdMesure = 240,
+                            Value = "55"
+                        },
+                        new
+                        {
+                            Id = 146,
+                            Date = new DateTime(2020, 7, 14, 2, 59, 42, 131, DateTimeKind.Local).AddTicks(478),
+                            IdIndicateur = 4,
+                            IdMesure = 149,
+                            Value = "38"
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Date = new DateTime(2020, 12, 27, 23, 8, 36, 164, DateTimeKind.Local).AddTicks(4486),
+                            IdIndicateur = 4,
+                            IdMesure = 133,
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Date = new DateTime(2020, 6, 3, 18, 6, 14, 332, DateTimeKind.Local).AddTicks(6070),
+                            IdIndicateur = 2,
+                            IdMesure = 273,
+                            Value = "84"
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Date = new DateTime(2020, 12, 22, 19, 37, 16, 704, DateTimeKind.Local).AddTicks(5505),
+                            IdIndicateur = 4,
+                            IdMesure = 397,
+                            Value = "39"
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Date = new DateTime(2020, 5, 15, 4, 59, 0, 445, DateTimeKind.Local).AddTicks(8752),
+                            IdIndicateur = 4,
+                            IdMesure = 400,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Date = new DateTime(2020, 5, 7, 18, 55, 28, 514, DateTimeKind.Local).AddTicks(903),
+                            IdIndicateur = 2,
+                            IdMesure = 83,
+                            Value = "68"
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Date = new DateTime(2020, 10, 10, 18, 39, 34, 816, DateTimeKind.Local).AddTicks(9091),
+                            IdIndicateur = 5,
+                            IdMesure = 263,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Date = new DateTime(2021, 1, 14, 3, 19, 35, 269, DateTimeKind.Local).AddTicks(949),
+                            IdIndicateur = 3,
+                            IdMesure = 76,
+                            Value = "77"
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Date = new DateTime(2020, 9, 17, 22, 15, 59, 118, DateTimeKind.Local).AddTicks(829),
+                            IdIndicateur = 3,
+                            IdMesure = 290,
+                            Value = "24"
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Date = new DateTime(2020, 7, 14, 2, 48, 18, 862, DateTimeKind.Local).AddTicks(9772),
+                            IdIndicateur = 6,
+                            IdMesure = 167,
+                            Value = "38"
+                        },
+                        new
+                        {
+                            Id = 156,
+                            Date = new DateTime(2020, 6, 9, 14, 9, 9, 674, DateTimeKind.Local).AddTicks(83),
+                            IdIndicateur = 5,
+                            IdMesure = 128,
+                            Value = "31"
+                        },
+                        new
+                        {
+                            Id = 157,
+                            Date = new DateTime(2020, 9, 26, 6, 32, 12, 534, DateTimeKind.Local).AddTicks(1137),
+                            IdIndicateur = 2,
+                            IdMesure = 242,
+                            Value = "82"
+                        },
+                        new
+                        {
+                            Id = 158,
+                            Date = new DateTime(2020, 5, 30, 16, 26, 44, 891, DateTimeKind.Local).AddTicks(1546),
+                            IdIndicateur = 4,
+                            IdMesure = 10,
+                            Value = "64"
+                        },
+                        new
+                        {
+                            Id = 159,
+                            Date = new DateTime(2021, 4, 14, 14, 51, 14, 968, DateTimeKind.Local).AddTicks(3790),
+                            IdIndicateur = 4,
+                            IdMesure = 215,
+                            Value = "17"
+                        },
+                        new
+                        {
+                            Id = 160,
+                            Date = new DateTime(2020, 11, 2, 8, 54, 13, 940, DateTimeKind.Local).AddTicks(1603),
+                            IdIndicateur = 2,
+                            IdMesure = 380,
+                            Value = "28"
+                        },
+                        new
+                        {
+                            Id = 161,
+                            Date = new DateTime(2021, 2, 7, 1, 20, 31, 305, DateTimeKind.Local).AddTicks(7084),
+                            IdIndicateur = 6,
+                            IdMesure = 298,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 162,
+                            Date = new DateTime(2020, 10, 31, 21, 35, 44, 110, DateTimeKind.Local).AddTicks(1388),
+                            IdIndicateur = 4,
+                            IdMesure = 198,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 163,
+                            Date = new DateTime(2020, 5, 7, 3, 50, 42, 654, DateTimeKind.Local).AddTicks(4206),
+                            IdIndicateur = 5,
+                            IdMesure = 192,
+                            Value = "99"
+                        },
+                        new
+                        {
+                            Id = 164,
+                            Date = new DateTime(2020, 11, 11, 2, 7, 39, 405, DateTimeKind.Local).AddTicks(4776),
+                            IdIndicateur = 4,
+                            IdMesure = 131,
+                            Value = "71"
+                        },
+                        new
+                        {
+                            Id = 165,
+                            Date = new DateTime(2020, 12, 3, 15, 30, 8, 826, DateTimeKind.Local).AddTicks(7330),
+                            IdIndicateur = 5,
+                            IdMesure = 18,
+                            Value = "49"
+                        },
+                        new
+                        {
+                            Id = 166,
+                            Date = new DateTime(2020, 11, 1, 9, 24, 14, 741, DateTimeKind.Local).AddTicks(5783),
+                            IdIndicateur = 3,
+                            IdMesure = 1,
+                            Value = "59"
+                        },
+                        new
+                        {
+                            Id = 167,
+                            Date = new DateTime(2021, 3, 17, 12, 50, 12, 242, DateTimeKind.Local).AddTicks(7720),
+                            IdIndicateur = 5,
+                            IdMesure = 342,
+                            Value = "83"
+                        },
+                        new
+                        {
+                            Id = 168,
+                            Date = new DateTime(2021, 4, 11, 15, 34, 4, 500, DateTimeKind.Local).AddTicks(4497),
                             IdIndicateur = 1,
-                            IdMesure = 122,
-                            Value = "94"
+                            IdMesure = 138,
+                            Value = "78"
+                        },
+                        new
+                        {
+                            Id = 169,
+                            Date = new DateTime(2020, 12, 3, 17, 1, 40, 493, DateTimeKind.Local).AddTicks(9913),
+                            IdIndicateur = 5,
+                            IdMesure = 312,
+                            Value = "21"
+                        },
+                        new
+                        {
+                            Id = 170,
+                            Date = new DateTime(2021, 4, 18, 5, 39, 39, 503, DateTimeKind.Local).AddTicks(6184),
+                            IdIndicateur = 1,
+                            IdMesure = 231,
+                            Value = "50"
+                        },
+                        new
+                        {
+                            Id = 171,
+                            Date = new DateTime(2021, 1, 7, 20, 59, 9, 463, DateTimeKind.Local).AddTicks(9850),
+                            IdIndicateur = 2,
+                            IdMesure = 405,
+                            Value = "25"
+                        },
+                        new
+                        {
+                            Id = 172,
+                            Date = new DateTime(2020, 6, 22, 14, 37, 50, 48, DateTimeKind.Local).AddTicks(4637),
+                            IdIndicateur = 4,
+                            IdMesure = 297,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 173,
+                            Date = new DateTime(2021, 3, 19, 12, 46, 44, 321, DateTimeKind.Local).AddTicks(1880),
+                            IdIndicateur = 4,
+                            IdMesure = 370,
+                            Value = "11"
+                        },
+                        new
+                        {
+                            Id = 174,
+                            Date = new DateTime(2021, 1, 11, 11, 50, 13, 156, DateTimeKind.Local).AddTicks(2771),
+                            IdIndicateur = 5,
+                            IdMesure = 382,
+                            Value = "55"
+                        },
+                        new
+                        {
+                            Id = 175,
+                            Date = new DateTime(2020, 9, 13, 9, 43, 10, 710, DateTimeKind.Local).AddTicks(1910),
+                            IdIndicateur = 5,
+                            IdMesure = 143,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 176,
+                            Date = new DateTime(2021, 1, 1, 8, 58, 56, 724, DateTimeKind.Local).AddTicks(1828),
+                            IdIndicateur = 1,
+                            IdMesure = 303,
+                            Value = "27"
+                        },
+                        new
+                        {
+                            Id = 177,
+                            Date = new DateTime(2020, 11, 8, 7, 50, 32, 687, DateTimeKind.Local).AddTicks(167),
+                            IdIndicateur = 6,
+                            IdMesure = 409,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 178,
+                            Date = new DateTime(2021, 4, 21, 7, 23, 25, 638, DateTimeKind.Local).AddTicks(1868),
+                            IdIndicateur = 2,
+                            IdMesure = 218,
+                            Value = "96"
+                        },
+                        new
+                        {
+                            Id = 179,
+                            Date = new DateTime(2020, 8, 18, 10, 6, 50, 947, DateTimeKind.Local).AddTicks(7910),
+                            IdIndicateur = 3,
+                            IdMesure = 128,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 180,
+                            Date = new DateTime(2021, 3, 1, 0, 8, 52, 60, DateTimeKind.Local).AddTicks(7095),
+                            IdIndicateur = 2,
+                            IdMesure = 90,
+                            Value = "85"
+                        },
+                        new
+                        {
+                            Id = 181,
+                            Date = new DateTime(2020, 8, 19, 0, 45, 56, 179, DateTimeKind.Local).AddTicks(5259),
+                            IdIndicateur = 6,
+                            IdMesure = 80,
+                            Value = "35"
+                        },
+                        new
+                        {
+                            Id = 182,
+                            Date = new DateTime(2020, 5, 31, 22, 53, 16, 299, DateTimeKind.Local).AddTicks(3913),
+                            IdIndicateur = 4,
+                            IdMesure = 36,
+                            Value = "27"
+                        },
+                        new
+                        {
+                            Id = 183,
+                            Date = new DateTime(2020, 6, 27, 1, 12, 51, 842, DateTimeKind.Local).AddTicks(970),
+                            IdIndicateur = 5,
+                            IdMesure = 135,
+                            Value = "18"
+                        },
+                        new
+                        {
+                            Id = 184,
+                            Date = new DateTime(2020, 7, 14, 4, 13, 51, 68, DateTimeKind.Local).AddTicks(4957),
+                            IdIndicateur = 5,
+                            IdMesure = 238,
+                            Value = "42"
+                        },
+                        new
+                        {
+                            Id = 185,
+                            Date = new DateTime(2020, 7, 31, 14, 5, 49, 20, DateTimeKind.Local).AddTicks(7413),
+                            IdIndicateur = 5,
+                            IdMesure = 42,
+                            Value = "44"
+                        },
+                        new
+                        {
+                            Id = 186,
+                            Date = new DateTime(2020, 10, 2, 18, 39, 52, 141, DateTimeKind.Local).AddTicks(3374),
+                            IdIndicateur = 1,
+                            IdMesure = 141,
+                            Value = "43"
+                        },
+                        new
+                        {
+                            Id = 187,
+                            Date = new DateTime(2020, 11, 8, 18, 31, 16, 46, DateTimeKind.Local).AddTicks(6108),
+                            IdIndicateur = 6,
+                            IdMesure = 284,
+                            Value = "86"
+                        },
+                        new
+                        {
+                            Id = 188,
+                            Date = new DateTime(2021, 3, 28, 14, 37, 11, 431, DateTimeKind.Local).AddTicks(5740),
+                            IdIndicateur = 5,
+                            IdMesure = 130,
+                            Value = "19"
+                        },
+                        new
+                        {
+                            Id = 189,
+                            Date = new DateTime(2020, 8, 3, 18, 54, 22, 401, DateTimeKind.Local).AddTicks(5541),
+                            IdIndicateur = 2,
+                            IdMesure = 368,
+                            Value = "51"
+                        },
+                        new
+                        {
+                            Id = 190,
+                            Date = new DateTime(2021, 1, 12, 3, 27, 37, 243, DateTimeKind.Local).AddTicks(9099),
+                            IdIndicateur = 3,
+                            IdMesure = 364,
+                            Value = "33"
+                        },
+                        new
+                        {
+                            Id = 191,
+                            Date = new DateTime(2020, 8, 27, 14, 2, 48, 706, DateTimeKind.Local).AddTicks(7324),
+                            IdIndicateur = 3,
+                            IdMesure = 318,
+                            Value = "26"
+                        },
+                        new
+                        {
+                            Id = 192,
+                            Date = new DateTime(2020, 11, 9, 22, 43, 57, 733, DateTimeKind.Local).AddTicks(3602),
+                            IdIndicateur = 1,
+                            IdMesure = 74,
+                            Value = "54"
+                        },
+                        new
+                        {
+                            Id = 193,
+                            Date = new DateTime(2020, 12, 18, 5, 23, 8, 946, DateTimeKind.Local).AddTicks(6090),
+                            IdIndicateur = 5,
+                            IdMesure = 17,
+                            Value = "66"
+                        },
+                        new
+                        {
+                            Id = 194,
+                            Date = new DateTime(2021, 4, 21, 6, 7, 25, 769, DateTimeKind.Local).AddTicks(5360),
+                            IdIndicateur = 1,
+                            IdMesure = 366,
+                            Value = "87"
+                        },
+                        new
+                        {
+                            Id = 195,
+                            Date = new DateTime(2021, 3, 28, 9, 23, 11, 924, DateTimeKind.Local).AddTicks(152),
+                            IdIndicateur = 5,
+                            IdMesure = 250,
+                            Value = "15"
+                        },
+                        new
+                        {
+                            Id = 196,
+                            Date = new DateTime(2020, 10, 28, 7, 59, 25, 392, DateTimeKind.Local).AddTicks(5162),
+                            IdIndicateur = 5,
+                            IdMesure = 345,
+                            Value = "67"
+                        },
+                        new
+                        {
+                            Id = 197,
+                            Date = new DateTime(2021, 1, 26, 16, 46, 51, 496, DateTimeKind.Local).AddTicks(2781),
+                            IdIndicateur = 6,
+                            IdMesure = 307,
+                            Value = "11"
+                        },
+                        new
+                        {
+                            Id = 198,
+                            Date = new DateTime(2020, 9, 23, 6, 59, 35, 436, DateTimeKind.Local).AddTicks(7302),
+                            IdIndicateur = 4,
+                            IdMesure = 152,
+                            Value = "98"
+                        },
+                        new
+                        {
+                            Id = 199,
+                            Date = new DateTime(2020, 5, 16, 7, 36, 8, 131, DateTimeKind.Local).AddTicks(9391),
+                            IdIndicateur = 1,
+                            IdMesure = 247,
+                            Value = "12"
                         },
                         new
                         {
                             Id = 200,
-                            Date = new DateTime(2021, 3, 29, 2, 13, 9, 103, DateTimeKind.Local).AddTicks(4461),
+                            Date = new DateTime(2020, 10, 14, 13, 58, 18, 671, DateTimeKind.Local).AddTicks(7455),
                             IdIndicateur = 5,
-                            IdMesure = 331,
-                            Value = "51"
+                            IdMesure = 419,
+                            Value = "48"
                         });
                 });
 
@@ -22316,142 +22316,142 @@ namespace Admin5.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "Benjamin_Adam36@gmail.com",
+                            Email = "Justine9@yahoo.fr",
                             IdCommission = 1,
-                            NomComplete = "Yanis Bonnet"
+                            NomComplete = "Paul Bernard"
                         },
                         new
                         {
                             Id = 2,
-                            Email = "Rayan30@hotmail.fr",
+                            Email = "Julie57@yahoo.fr",
                             IdCommission = 2,
-                            NomComplete = "Clémence Dupont"
+                            NomComplete = "Jeanne Mathieu"
                         },
                         new
                         {
                             Id = 3,
-                            Email = "Tom_Jean@yahoo.fr",
+                            Email = "Enzo.Pierre72@yahoo.fr",
                             IdCommission = 3,
-                            NomComplete = "Léo Perrot"
+                            NomComplete = "Jade Sanchez"
                         },
                         new
                         {
                             Id = 4,
-                            Email = "Lucie.Brun@yahoo.fr",
+                            Email = "Alice_Rolland2@yahoo.fr",
                             IdCommission = 4,
-                            NomComplete = "Lilou Louis"
+                            NomComplete = "Léa Lemoine"
                         },
                         new
                         {
                             Id = 5,
-                            Email = "Maxence_Duval32@gmail.com",
+                            Email = "Maxime66@yahoo.fr",
                             IdCommission = 5,
-                            NomComplete = "Julie Roy"
+                            NomComplete = "Lou Durand"
                         },
                         new
                         {
                             Id = 6,
-                            Email = "Anais_Renaud88@hotmail.fr",
+                            Email = "Adrien51@hotmail.fr",
                             IdCommission = 6,
-                            NomComplete = "Mélissa Perez"
+                            NomComplete = "Noah Noel"
                         },
                         new
                         {
                             Id = 7,
-                            Email = "Lina_Lecomte@hotmail.fr",
+                            Email = "Celia.Perez@yahoo.fr",
                             IdCommission = 7,
-                            NomComplete = "Alice Gauthier"
+                            NomComplete = "Maëlle Schneider"
                         },
                         new
                         {
                             Id = 8,
-                            Email = "Romain.Pierre@hotmail.fr",
+                            Email = "Baptiste_Blanchard@yahoo.fr",
                             IdCommission = 8,
-                            NomComplete = "Ines Morel"
+                            NomComplete = "Théo Garcia"
                         },
                         new
                         {
                             Id = 9,
-                            Email = "Matteo_Leroy8@gmail.com",
+                            Email = "Raphael68@hotmail.fr",
                             IdCommission = 9,
-                            NomComplete = "Clément Rousseau"
+                            NomComplete = "Kylian Guyot"
                         },
                         new
                         {
                             Id = 10,
-                            Email = "Maelys35@yahoo.fr",
+                            Email = "Alicia.Meyer57@gmail.com",
                             IdCommission = 10,
-                            NomComplete = "Pauline Garnier"
+                            NomComplete = "Eva Lacroix"
                         },
                         new
                         {
                             Id = 11,
-                            Email = "Mathilde.Paris@hotmail.fr",
+                            Email = "Ines.Cousin@yahoo.fr",
                             IdCommission = 11,
-                            NomComplete = "Maeva Pons"
+                            NomComplete = "Lola Noel"
                         },
                         new
                         {
                             Id = 12,
-                            Email = "Arthur.Olivier@gmail.com",
+                            Email = "Victor_Picard10@yahoo.fr",
                             IdCommission = 12,
-                            NomComplete = "Eva Lemoine"
+                            NomComplete = "Romain Carpentier"
                         },
                         new
                         {
                             Id = 13,
-                            Email = "Louna_Schneider@gmail.com",
+                            Email = "Justine.Carpentier@yahoo.fr",
                             IdCommission = 13,
-                            NomComplete = "Marie Lemoine"
+                            NomComplete = "Emilie Vincent"
                         },
                         new
                         {
                             Id = 14,
-                            Email = "Antoine.Robin62@hotmail.fr",
+                            Email = "Maeva54@hotmail.fr",
                             IdCommission = 14,
-                            NomComplete = "Axel Mathieu"
+                            NomComplete = "Noa Guyot"
                         },
                         new
                         {
                             Id = 15,
-                            Email = "Louise81@yahoo.fr",
+                            Email = "Nathan.Barbier@hotmail.fr",
                             IdCommission = 15,
-                            NomComplete = "Pierre Schneider"
+                            NomComplete = "Laura Robert"
                         },
                         new
                         {
                             Id = 16,
-                            Email = "Benjamin_Fleury@yahoo.fr",
+                            Email = "Raphael_Bernard@yahoo.fr",
                             IdCommission = 16,
-                            NomComplete = "Victor Paris"
+                            NomComplete = "Jeanne Huet"
                         },
                         new
                         {
                             Id = 17,
-                            Email = "Carla59@gmail.com",
+                            Email = "Jeanne.Riviere@yahoo.fr",
                             IdCommission = 17,
-                            NomComplete = "Thomas Paris"
+                            NomComplete = "Sarah Lacroix"
                         },
                         new
                         {
                             Id = 18,
-                            Email = "Eva_Aubry@gmail.com",
+                            Email = "Ines.Vincent@hotmail.fr",
                             IdCommission = 18,
-                            NomComplete = "Clément Poirier"
+                            NomComplete = "Lina Menard"
                         },
                         new
                         {
                             Id = 19,
-                            Email = "Lisa19@yahoo.fr",
+                            Email = "Maxence.Lefevre49@gmail.com",
                             IdCommission = 19,
-                            NomComplete = "Alicia Arnaud"
+                            NomComplete = "Maxence Olivier"
                         },
                         new
                         {
                             Id = 20,
-                            Email = "Adam.Dupuy51@hotmail.fr",
+                            Email = "Adrien21@gmail.com",
                             IdCommission = 20,
-                            NomComplete = "Evan Adam"
+                            NomComplete = "Célia Giraud"
                         });
                 });
 
@@ -22520,7 +22520,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "التفعيل الأمثل للقوانين المنظمة للانتخابات الوطنية والمحلية لتقوية النزاهة والحكامة الرشيدة والشفافية",
                             ResultatsAttendu = "بيئة داعمة للنزاهة والشفافية والحكامة الانتخابية ",
                             TypeMesure = 1
@@ -22533,7 +22533,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الرفع من مستوى مشاركة النساء في المجالس التمثيلية.",
                             ResultatsAttendu = "بيئة داعمة للرفع من مشاركة النساء",
                             TypeMesure = 1
@@ -22546,7 +22546,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الإسراع بإحداث مرصد وطني مستقل يساهم في تحليل تطورات المشاركة السياسية والانتقال الديمقراطي.",
                             ResultatsAttendu = "آلية مؤسساتية مساعدة على تتبع تحليل وفهم تطورات المشاركة السياسية والانتقال الديمقراطي",
                             TypeMesure = 1
@@ -22611,7 +22611,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 1,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إطلاق برامج تواصلية لتعزيز الديمقراطية التشاركية.",
                             ResultatsAttendu = "بيئة داعمة ومحفزة للديمقراطية التشاركية ",
                             TypeMesure = 1
@@ -22624,7 +22624,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "دعم وتشجيع البرامج والأنشطة المتعلقة بالتنشئة السياسية والاجتماعية الهادفة إلى نشر قيم الديمقراطية والمساواة والتعدد والاختلاف والتسامح والعيش المشترك وعدم التمييز ونبذ الكراهية والعنف والتطرف.",
                             ResultatsAttendu = "مجتمع داعم لقيم الديمقراطية",
                             TypeMesure = 1
@@ -22650,7 +22650,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 1,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إحداث فضاءات لإثراء مشاركة اليافعين والشباب في الوسط التربوي والهيئات التمثيلية.",
                             ResultatsAttendu = "برامج ومبادرات داعمة لمشاركة الشباب واليافعين",
                             TypeMesure = 1
@@ -22689,7 +22689,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل مقتضيات القانون التنظيمي لقانون المالية المتعلق بالإدماج العرضاني لمقاربة النوع في السياسات العمومية.",
                             ResultatsAttendu = "برامج تكوينية داعمة لإشاعة ثقافة المواطنة وحقوق الإنسان",
                             TypeMesure = 1
@@ -22715,7 +22715,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل مقاربة النوع في كافة المجالس المنتخبة وطنيا وجهويا ومحليا.",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -22741,7 +22741,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 2,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج فعالة للتوعية والتحسيس والتربية على قيم ومبادئ المساواة وتكافؤ الفرص والمناصفة لفائدة أطر وموظفي الإدارات والمؤسسات العمومية والجماعات الترابية.",
                             ResultatsAttendu = "بيئة داعمة للرفع من مشاركة النساء; هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -22793,7 +22793,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إدماج البعد الثقافي في التنظيم الجهوي على مستوى وسائل الإعلام والبرامج التربوية والتظاهرات الثقافية والفنية.",
                             ResultatsAttendu = "آليات داعمة لالتقائية برامج إعداد التراب الوطني.",
                             TypeMesure = 1
@@ -22819,7 +22819,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة دعم الجهات بمناسبة وضع التصاميم الجهوية المقترحة لإعداد التراب.",
                             ResultatsAttendu = "آليات داعمة لتقوية خدمات القرب وتقييم السياسات العمومية",
                             TypeMesure = 1
@@ -22832,7 +22832,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 3,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "--",
                             ResultatsAttendu = "دينامية داعمة لتمكين الجهات من رؤية تنموية مستدامة.",
                             TypeMesure = 1
@@ -22871,7 +22871,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بالمصادقة على المقتضيات القانونية المؤطرة لتجريم الإثراء غير المشروع.",
                             ResultatsAttendu = "الإطار القانوني والتنظيمي الوطني لتعزيز النزاهة والشفافية متلائم مع الاتفاقيات الدولية لمكافحة الفساد ",
                             TypeMesure = 1
@@ -22897,7 +22897,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بوضع المقتضيات التنظيمية الخاصة بالتدابير المتعلقة بالوقاية من الفساد. ",
                             ResultatsAttendu = "ميثاق المرافق العمومية معتمد",
                             TypeMesure = 1
@@ -22923,7 +22923,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " اعتماد المقاربة التشاركية عند إعداد المقترحات المتعلقة بمجالات مكافحة الفساد. ",
                             ResultatsAttendu = "-",
                             TypeMesure = 1
@@ -22962,7 +22962,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز الالتقائية بين البرامج والمبادرات الأفقية والقطاعية.",
                             ResultatsAttendu = "إطار مؤسساتي داعم لتعزيز النزاهة والشفافية  ",
                             TypeMesure = 1
@@ -23014,7 +23014,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز طرق وأشكال التبليغ عن حالات الفساد، بما في ذلك وضع خط أخضر وتيسير تقديم الشكايات.",
                             ResultatsAttendu = "برامج رقمية داعمة لتجويد الخدمات الإدارية",
                             TypeMesure = 1
@@ -23053,7 +23053,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 4,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع سياسة إعلامية وخطط تواصلية لبلوغ أهداف الاستراتيجية الوطنية لمكافحة الفساد وفق مقاربة تتأسس على سيادة القانون واحترام حقوق الإنسان.",
                             ResultatsAttendu = "دينامية داعمة لتطوير انخراط مختلف الفاعلين في مجال مكافحة الفساد",
                             TypeMesure = 1
@@ -23066,7 +23066,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 4,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "توثيق ونشر الممارسات الفضلى في مجال مكافحة للفساد.",
                             ResultatsAttendu = " سياسة تواصلية داعمة للانخراط في مكافحة الفساد  ",
                             TypeMesure = 1
@@ -23092,7 +23092,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مراجعة المقتضيات القانونية بما يسمح بمرافقة الدفاع للشخص المعتقل بمجرد وضعه تحت الحراسة النظرية لدى الضابطة القضائية، ومواصلة ملاءمة الإطار التشريعي المنظم للبحث التمهيدي والحراسة النظرية والتفتيش وكافة الإجراءات الضبطية وملاءمتها مع المعايير الدولية ذات الصلة.",
                             ResultatsAttendu = "قدرات متطورة في مجال مكافحة الفساد ",
                             TypeMesure = 1
@@ -23118,7 +23118,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإصدار قانون يتعلق بالتحقق من هوية الأشخاص بواسطة البصمات الجينية. ",
                             ResultatsAttendu = "إطار قانوني ضامن للوقاية من التعذيب",
                             TypeMesure = 1
@@ -23131,7 +23131,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "استحضار البعد الأمني في وضع خطط التهيئة الحضرية وتصميم التجمعات السكنية الجديدة والأحياء بضواحي المدن بشكل يضمن أمن المواطنات والمواطنين.",
                             ResultatsAttendu = "إطار قانوني داعم للنجاعة الأمنية  ",
                             TypeMesure = 1
@@ -23183,7 +23183,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تجهيز أماكن الحرمان من الحرية بوسائل التوثيق السمعية البصرية لتوثيق تصريحات المستجوبين من طرف الشرطة القضائية ووضعها رهن إشارة القضاء.",
                             ResultatsAttendu = "تدخلات أمنية موثقة سمعيا وبصريا",
                             TypeMesure = 1
@@ -23196,7 +23196,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "العمل على تأمين تغذية الأشخاص الموضوعين رهن الحراسة النظرية.",
                             ResultatsAttendu = "آليات داعمة لحماية حقوق المستجوبين ",
                             TypeMesure = 1
@@ -23209,7 +23209,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "دعم المؤسسات الأمنية بالموارد البشرية والمالية والتقنية اللازمة.",
                             ResultatsAttendu = "آليات داعمة لأنسنة ظروف الحراسة النظرية",
                             TypeMesure = 1
@@ -23248,7 +23248,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تبسيط وتيسير وتعميم نشر المذكرات والدوريات المتعلقة بحقوق الإنسان المعمول بها في المؤسسات الأمنية على كافة موظفيها المكلفين بتنفيذ القانون.",
                             ResultatsAttendu = "برامج إعلامية وتواصلية داعمة لانفتاح المؤسسات الأمنية على محيطها",
                             TypeMesure = 1
@@ -23287,7 +23287,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعميم تدريس مادة حقوق الإنسان وأحكام القانون الدولي الإنساني ضمن برامج التكوين الأساسي والمستمر الخاص بالموظفين المكلفين بتنفيذ القانون.",
                             ResultatsAttendu = "أدوات ودلائل داعمة للنهوض بقواعد الحكامة الجيدة على المستوى الأمني واحترام حقوق الإنسان",
                             TypeMesure = 1
@@ -23313,7 +23313,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 5,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقوية الخبرة الفنية فيما يخص عمل لجان تقصي الحقائق البرلمانية.",
                             ResultatsAttendu = "قدرات موظفي المؤسسات الأمنية معززة في تدبير فضاء الاحتجاج",
                             TypeMesure = 1
@@ -23365,7 +23365,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تبسيط المساطر المتعلقة بالتصريح بالتجمعات العمومية من أجل تعزيز وضمان ممارسة الحريات العامة من طرف مختلف مكونات المجتمع (جمعيات، نقابات) والعمل على ضمان التطبيق السليم للمساطر المعمول بها في هذا المجال.",
                             ResultatsAttendu = "إطار قانوني وتنظيمي داعم لتيسير ممارسة الحق في التظاهر  ",
                             TypeMesure = 1
@@ -23391,7 +23391,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز الشراكة بين مؤسسات الدولة والجمعيات والرفع من مستوى حكامتها.",
                             ResultatsAttendu = "آليات داعمة لتطوير الممارسة المتعلقة بتأسيس الجمعيات",
                             TypeMesure = 1
@@ -23404,7 +23404,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تيسير حريات الاجتماع والتجمهر والتظاهر السلمي من حيث تحديد الأماكن المخصصة لها والقيام بالوساطة والتفاوض.",
                             ResultatsAttendu = "الشراكة متطورة بين مؤسسات الدولة وجمعيات المجتمع المدني ",
                             TypeMesure = 1
@@ -23417,7 +23417,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 6,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز آليات الوساطة والتوفيق والتدخل الاستباقي المؤسساتي والمدني لتفادي حالات التوتر والحيلولة دون وقوع انتهاكات.",
                             ResultatsAttendu = "مبادرات مؤسساتية ميسرة لممارسة حريات الاجتماع والتجمهر والتظاهر السلمي ",
                             TypeMesure = 1
@@ -23430,7 +23430,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة تجريم كل الأفعال التي تمثل انتهاكا جسيما لحقوق الإنسان وفقا لأحكام الدستور.",
                             ResultatsAttendu = "آليات داعمة للتدبير التوقعي والتدخل الاستباقي لتفادي حالات التوتر",
                             TypeMesure = 1
@@ -23443,7 +23443,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تكريس مبدأ عدم الإفلات من العقاب في السياسة الجنائية وفي سائر التدابير العمومية.",
                             ResultatsAttendu = " مقتضيات قانونية داعمة لتجريم الانتهاكات الجسيمة لحقوق الإنسان  ",
                             TypeMesure = 1
@@ -23456,7 +23456,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تيسير التقاضي للضحايا من خلال توفير المساعدة القانونية والقضائية.",
                             ResultatsAttendu = "إطار قانوني داعم لمبدأ عدم الإفلات من العقاب",
                             TypeMesure = 1
@@ -23482,7 +23482,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "حماية المشتكين والمبلغين والشهود والمدافعين عن حقوق الإنسان من أي سوء معاملة ومن أي ترهيب بسبب شكاويهم أو شهاداتهم أمام السلطات العمومية والقضائية.",
                             ResultatsAttendu = "مقتضيات قانونية ضامنة لحقوق الضحايا",
                             TypeMesure = 1
@@ -23521,7 +23521,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 7,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحالة نتائج تحريات الآلية الوطنية للوقاية من التعذيب على القضاء.",
                             ResultatsAttendu = "إطار قانوني معزز للطب الشرعي",
                             TypeMesure = 1
@@ -23560,7 +23560,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 7,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز برامج التدريب والتكوين والتوعية بقيم حقوق الإنسان وآليات حمايتها والنهوض بها الموجهة للقضاة وللمكلفين بإنفاذ القوانين وموظفي السجون",
                             ResultatsAttendu = "آليات داعمة لإعمال الحق في الوصول إلى المعلومات  ",
                             TypeMesure = 1
@@ -23599,7 +23599,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مراجعة المناهج والمقررات الدراسية وملاءمتها مع مبادئ وقيم الدستور وأحكامه والاتفاقيات الدولية ذات الصلة. ",
                             ResultatsAttendu = "برامج داعمة لتعميم التعليم ",
                             TypeMesure = 1
@@ -23612,7 +23612,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "--",
                             ResultatsAttendu = "  مناهج ومقررات دراسية معززة لحقوق الانسان",
                             TypeMesure = 1
@@ -23625,7 +23625,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  اعتماد تدابير تحفيزية لتعميم تمدرس الفتيات في جميع المستويات التعليمية.",
                             ResultatsAttendu = "برامج داعمة لتسريع وتيرة تدريس اللغة والثقافة الأمازيغيتين ",
                             TypeMesure = 1
@@ -23638,7 +23638,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "   إدماج المقاربة الحقوقية في جميع الأنشطة التربوية.",
                             ResultatsAttendu = "برامج داعمة لتعميم تمدرس الفتيات ",
                             TypeMesure = 1
@@ -23677,7 +23677,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  مأسسة وتعميم الدعم المادي المقدم للمتمدرسين المعوزين والأطفال في وضعية إعاقة",
                             ResultatsAttendu = "آليات مساهمة في ربط التكوين بالحاجيات الاقتصادية والاجتماعية والثقافية",
                             TypeMesure = 1
@@ -23690,7 +23690,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  إيجاد آليات إدارية تحفز المدرسين على المشاركة الفعالة في المشاريع المدرسية والتربوية وتسمح بتوسيع مشاركة التلاميذ فيها",
                             ResultatsAttendu = "آليات داعمة لمأسسة وتعميم الدعم المادي على الأطفال المتمدرسين المعوزين أو في وضعية إعاقة ",
                             TypeMesure = 1
@@ -23729,7 +23729,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 8,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  تيسير شروط ولوج التعليم العالي وتقوية وتثمين البحث العلمي والرفع من الميزانية المخصصة له",
                             ResultatsAttendu = "آليات داعمة للمساعدة الاجتماعية في الوسط المدرسي",
                             TypeMesure = 1
@@ -23755,7 +23755,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  إرساء استراتيجية ثقافية وطنية",
                             ResultatsAttendu = "مدرسة حاضنة لقيم التسامح والعيش المشترك ونبذ الكراهية والعنف والتطرف",
                             TypeMesure = 1
@@ -23781,7 +23781,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  الإسراع بإصدار القانون التنظيمي المتعلق بالمجلس الوطني للغات والثقافة المغربية",
                             ResultatsAttendu = "قانون تنظيمي معتمد",
                             TypeMesure = 1
@@ -23794,7 +23794,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  تنمية الأشكال والآليات والوسائل الكفيلة بالحفاظ على التنوع الثقافي وتطويره في السياسات العمومية والاستراتيجيات والمخططات والبرامج الوطنية التي تقتضي إعمال الحقوق الثقافية بما فيها الحق في المشاركة الثقافية ",
                             ResultatsAttendu = "قانون تنظيمي معتمد",
                             TypeMesure = 1
@@ -23807,7 +23807,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز استعمال اللغة العربية في المرافق العمومية وباقي مناحي الحياة العامة",
                             ResultatsAttendu = "مناخ داعم للتنوع الثقافي",
                             TypeMesure = 1
@@ -23820,7 +23820,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية مكانة اللغة العربية في البحث العلمي والتقني الجامعي والأكاديمي",
                             ResultatsAttendu = "برامج داعمة لتعزيز مكانة اللغة العربية في الجامعة",
                             TypeMesure = 1
@@ -23898,7 +23898,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة تعزيز القناة التلفزية الأمازيغية وتمكينها من الموارد البشرية والكفاءات اللازمة للبث المتواصل",
                             ResultatsAttendu = "بث متواصل للقناة التلفزية الأمازيغية",
                             TypeMesure = 1
@@ -23937,7 +23937,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع البحث الجامعي على مواصلة الجهود حول تاريخ المغرب المتعدد بعمقه الديني وبمكوناته البشرية والثقافية والمحلية",
                             ResultatsAttendu = "برامج داعمة للبحث الجامعي حول تاريخ المغرب المتعدد بعمقه الديني وبمكوناته البشرية والثقافية والمحلية",
                             TypeMesure = 1
@@ -23989,7 +23989,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تشجيع مبادرات الشباب والمجتمع المدني فيما يخص التربية الثقافية والإنتاج الثقافي ودعم المشاريع المحفزة على الإبداع",
                             ResultatsAttendu = "مناخ داعم لمبادرات الشباب في المجال الثقافي ",
                             TypeMesure = 1
@@ -24002,7 +24002,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز القواعد المنظمة للسكن اللائق بإحداث مرافق تعزز الحياة والإبداع الثقافيين.",
                             ResultatsAttendu = "برامج سكنية معززة للحياة الثقافية",
                             TypeMesure = 1
@@ -24015,7 +24015,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " توسيع شبكة المراكز والمركبات الثقافية لتشمل عموم المناطق الحضرية والقروية.",
                             ResultatsAttendu = "مركبات ثقافية جهوية ومحلية مساهمة في الإشعاع الثقافي",
                             TypeMesure = 1
@@ -24028,7 +24028,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعميم المكتبات ومراكز التنشيط الثقافي والمسرحي والفني في المناطق التي تفتقر للبنيات التحتية الثقافية.",
                             ResultatsAttendu = "بنيات مشجعة على الحياة الثقافية ",
                             TypeMesure = 1
@@ -24067,7 +24067,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " ترميم وصيانة المواقع الأثرية والصخرية وتأمين حراستها حفاظا على التراث الثقافي الوطني وتعزيز آليات حمايته من الإتلاف والحفاظ على الذاكرة في بعديها الوطني والمحلي.",
                             ResultatsAttendu = "منظومة حافظة للمواقع الأثرية والصخرية ",
                             TypeMesure = 1
@@ -24080,7 +24080,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع وتثمين الدراسات البحثية في مجال التأصيل للتنوع الثقافي والحفاظ على الذاكرة والثقافة الشعبية وسائر الإبداعات المماثلة.",
                             ResultatsAttendu = "مناخ مشجع على البحث ",
                             TypeMesure = 1
@@ -24093,7 +24093,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 9,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع إحداث محطات إعلامية جهوية",
                             ResultatsAttendu = "محطات جهوية متفاعلة مع محيطها",
                             TypeMesure = 1
@@ -24158,7 +24158,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بالمصادقة على مشروع القانون المتعلق بمكافحة الاضطرابات العقلية وبحماية حقوق الأشخاص المصابين بها.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية الأشخاص المصابين بالاضطرابات العقلية ",
                             TypeMesure = 1
@@ -24210,7 +24210,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم الموارد البشرية الطبية وشبه الطبية والإدارية ومواصلة تعزيز الكفاءات عن طريق التكوين والتكوين المستمر.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي   ",
                             TypeMesure = 1
@@ -24223,7 +24223,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تأهيل أقسام المستعجلات لتعزيز الخدمات المتعلقة بالحالات الطارئة والخطيرة.",
                             ResultatsAttendu = "برامج داعمة لتعزيز كفاءات القطاع الصحي/ أقسام المستعجلات مؤهلة لتقديم خدمات ذات جودة وتغطي الحاجيات",
                             TypeMesure = 1
@@ -24236,7 +24236,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النهوض بصحة الأم والمواليد الجدد والعناية بطب التوليد.",
                             ResultatsAttendu = "برامج صحية معززة لصحة الأم والطفل والمواليد الجدد",
                             TypeMesure = 1
@@ -24275,7 +24275,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة تحسين جودة الخدمات وتوسيع التغطية لتشمل باقي الفئات الأخرى وضمان التوزيع العادل للموارد على كافة التراب الوطني. ",
                             ResultatsAttendu = "برامج داعمة لتعميم وتجويد الخدمات الصحية",
                             TypeMesure = 1
@@ -24288,7 +24288,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم التحصيل والتحليل الممنهج والشمولي للمعطيات والمعلومات حسب النوع الاجتماعي في مجال الصحة وخصوصا ما تعلق بالأمراض المتنقلة جنسيا والعنف. ",
                             ResultatsAttendu = " نظاممعلوماتي مندمج معد",
                             TypeMesure = 1
@@ -24301,7 +24301,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إحداث خلايا تساعد الأطر الصحية على التواصل مع المرضى المتحدثين بالأمازيغية والحسانية.",
                             ResultatsAttendu = "بنيات داعمة للتواصل مع المرضى المتحدثين باللغة الأمازيغية والحسانية",
                             TypeMesure = 1
@@ -24327,7 +24327,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم عمل الفرق الطبية المتنقلة في إطار تقريب الخدمات الصحية وتيسيرها.",
                             ResultatsAttendu = "آليات داعمة لتقريب الخدمات الصحية وتيسيرها",
                             TypeMesure = 1
@@ -24340,7 +24340,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم الخطة المتعلقة بتوفير الأدوية الأساسية الاستعجالية وتلك المتعلقة بالأمراض المزمنة.",
                             ResultatsAttendu = "خطة داعمة لضمان تموين مستمر بالأدوية",
                             TypeMesure = 1
@@ -24366,7 +24366,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " ضمان التنسيق الفعال بين مختلف الإدارات الصحية على الصعيد الوطني وبين المستشفيات والمراكز الصحية، وإحداث آليات التتبع والمراقبة وتقييم الأداء وجودة الخدمات وفعاليتها.",
                             ResultatsAttendu = ".آليات مساعدة على التنسيق والتتبع والمراقبة ",
                             TypeMesure = 1
@@ -24379,7 +24379,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تطوير سبل التعاون والتنسيق بين القطاع العام والخاص بما يؤمن تجويد الخدمات الصحية والولوج العادل والمتكافئ إليها. ",
                             ResultatsAttendu = "شراكات مساهمة في الارتقاء بالمنظومة الصحية",
                             TypeMesure = 1
@@ -24392,7 +24392,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع وتحفيز طلبة الطب على التخصص في الطب الشرعي والطب النفسي والوظيفي وتوفير المناصب المالية اللازمة.",
                             ResultatsAttendu = "تحفيزات مساعدة على تقليص الخصاص",
                             TypeMesure = 1
@@ -24405,7 +24405,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 10,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تعزيز الخدمات المتعلقة بمعالجة الشكايات والتظلمات والاقتراحات من طرف المرتفقين على الصعيد الجهوي، واعتماد استمارات توضع رهن إشارة المرتفقين لقياس مستوى رضاهم عن الخدمات. ",
                             ResultatsAttendu = "منظومة داعمة لتحسين مستوى الخدمات",
                             TypeMesure = 1
@@ -24431,7 +24431,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 10,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز البرامج السمعية البصرية المتعلقة بالحق في الصحة",
                             ResultatsAttendu = "برامج سمعية بصرية داعمة للحق في الصحة",
                             TypeMesure = 1
@@ -24444,7 +24444,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " استكمال مسطرة المصادقة على اتفاقية منظمة العمل الدولية رقم 102 المتعلقة بالمعايير الدنيا للضمان الاجتماعي.",
                             ResultatsAttendu = "المصادقة على تفاقية منظمةا لعمل الدولية رقم 102 المتعلقة بالمعاييرالدنيا للضمان الاجتماعي",
                             TypeMesure = 1
@@ -24483,7 +24483,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع وتقوية أدوار لجان الحوار والمصالحة الإقليمية والوطنية.",
                             ResultatsAttendu = "اللجان الإقليمية للبحث والمصالحة مفعلة على مستوى العمالات والأقاليم.",
                             TypeMesure = 1
@@ -24509,7 +24509,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور الآليات الاستباقية للتقليص من النزاعات في مجال الشغل.",
                             ResultatsAttendu = "قدرات جهاز تفتيش الشغل في مجال التدخل الإستباقي معززة",
                             TypeMesure = 1
@@ -24522,7 +24522,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعمال مبدأ الشفافية وتكافؤ الفرص في التشغيل ووضع آليات ومساطر إدارية تنظم الإعلان عن المناصب الشاغرة في جميع القطاعات وفي مرافق الإدارة العمومية ضمانا للشفافية.",
                             ResultatsAttendu = "الشفافية   وتكافؤ الفرص في التوظيف معززة  ",
                             TypeMesure = 1
@@ -24535,7 +24535,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إعداد برامج لدعم وتنشيط المقاولات الصغرى والمتوسطة والتعاونيات ووضع شباك داخل الجماعات الترابية للتعريف بالمقاولات خصوصا النسائية منها.",
                             ResultatsAttendu = "برامج داعمة للمقاولات الصغرى           والمتوسطة",
                             TypeMesure = 1
@@ -24561,7 +24561,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز الخدمات الاجتماعية الموجهة إلى العمال والأجراء.",
                             ResultatsAttendu = "ارتفاع عدد المقاولات المحدثة للخدمات الاجتماعية ",
                             TypeMesure = 1
@@ -24574,7 +24574,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية آلية التعويض عن فقدان الشغل.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية العمال      والأجراء عند فقدان الشغل",
                             TypeMesure = 1
@@ -24613,7 +24613,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج للتوعية والتحسيس بمقتضيات مدونة الشغل لفائدة العمال.",
                             ResultatsAttendu = "برامج داعمةلاحترام مقتضيات مدونة الشغل",
                             TypeMesure = 1
@@ -24626,7 +24626,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنظيم دورات تدريبية لفائدة موظفي وأطر وزارة الشغل والأطر النقابية ومناديب المستخدمين وأرباب العمل بغية إشاعة ثقافة حقوق الإنسان في ميدان التشغيل.",
                             ResultatsAttendu = "الرفع من قدرات أطر وزارة الشغل والإدماج المهني والأطر النقابية ومناديب المستخدمين وأرباب العمل في مجال حقوق الانسان",
                             TypeMesure = 1
@@ -24639,7 +24639,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 11,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج لتكوين قضاة متخصصين في قانون الشغل.",
                             ResultatsAttendu = "برامج داعمة للتخصص القضائي في قانون الشغل",
                             TypeMesure = 1
@@ -24652,7 +24652,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إرساء استراتيجية وطنية شمولية ومندمجة في مجال السكن.",
                             ResultatsAttendu = "استراتيجية وطنية معتمدة داعمة للحق في السكن   ",
                             TypeMesure = 1
@@ -24665,7 +24665,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز المنظومة القانونية المتعلقة بالسكن والتعمير وملاءمتها مع متطلبات حقوق الإنسان.",
                             ResultatsAttendu = "إطار قانوني داعم للحق في السكن",
                             TypeMesure = 1
@@ -24678,7 +24678,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع مقتضيات قانونية وتنظيمية تخص المعايير الدنيا المطبقة على السكن الاجتماعي من حيث المواصفات العمرانية والمناطق الخضراء والسلامة الأمنية والولوجيات.",
                             ResultatsAttendu = "منظومة قانونية داعمة للسكن الاجتماعي ",
                             TypeMesure = 1
@@ -24704,7 +24704,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل القانون للحد من التجاوزات في ميدان التعمير والإسكان وزجر المخالفات وضمان سلامة البناء في الوسطين الحضري والقروي.",
                             ResultatsAttendu = "منظومة قانونية داعمة للحد من التجاوزات في ميدان التعمير والإسكان",
                             TypeMesure = 1
@@ -24717,7 +24717,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إسراع وتيرة إنجاز برامج القضاء على السكن غير اللائق.",
                             ResultatsAttendu = "برامج مساهمة في القضاء على السكن غير اللائق",
                             TypeMesure = 1
@@ -24730,7 +24730,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إسراع وتيرة إنجاز برامج القضاء على أحياء الصفيح للسعي إلى معالجة وضعيات 50 % من الأسر التي تعيش² في دور الصفيح في أفق 2021.",
                             ResultatsAttendu = "برامج مساهمة في القضاء على أحياء الصفيح  ",
                             TypeMesure = 1
@@ -24756,7 +24756,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " التأهيل الحضري للأحياء غير القانونية لتحسين ظروف السكان القاطنين بها.",
                             ResultatsAttendu = "برامج للتأهيل الحضري داعمة لتحسين ظروف عيش الساكنة",
                             TypeMesure = 1
@@ -24769,7 +24769,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تنفيذ أولويات السكن الاجتماعي بمضاعفة العرض في مجال المنتوجات السكنية الملائمة لحاجيات وإمكانيات الفئات المحدودة الدخل في إطار مشروع تطوير المنتوج السكني البديل في أفق 2021.",
                             ResultatsAttendu = "عرض سكني مستجيب لحاجيات الفئات المحدودة الدخل",
                             TypeMesure = 1
@@ -24782,7 +24782,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " حصر الاستفادة من برنامج السكن الاجتماعي في ذوي الدخل المحدود بالصرامة اللازمة",
                             ResultatsAttendu = "آليات داعمة لتعزيز الحكامة في تنفيذ برامج السكن الاجتماعي",
                             TypeMesure = 1
@@ -24795,7 +24795,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مضاعفة الإمكانيات المالية لصناديق الضمان الموجهة للشرائح الاجتماعية ذات الدخل المحدود والضعيف وغير القار لتمكينها من ولوج القروض السكنية في ظروف ملائمة.",
                             ResultatsAttendu = "آلية مالية داعمة لتمكين الشرائح الاجتماعية ذات الدخل المحدود والضعيف والقار من ولوج السكن",
                             TypeMesure = 1
@@ -24834,7 +24834,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 12,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تضمين دفاتر التحملات للمعايير الدنيا المطبقة على السكن الاجتماعي المحددة بصفة قانونية أو تنظيمية.",
                             ResultatsAttendu = "برامج داعمة لتعزيز مكانة اللغة العربية في الجامعة",
                             TypeMesure = 1
@@ -24860,7 +24860,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 12,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برامج تدريب وتكوين في مجالات التمتع بالحق في السكن اللائق والمصاحبة الاجتماعية الموجهة للفئات ذات الدخل المحدود وغير القار.",
                             ResultatsAttendu = "برامج داعمة للتحسيس بالحق في السكن",
                             TypeMesure = 1
@@ -24899,7 +24899,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " ملاءمة الإطار القانوني الوطني مع الاتفاقيات الدولية المتعلقة بحماية البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "إطار قانوني وطنيمتلائم",
                             TypeMesure = 1
@@ -24912,7 +24912,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مراجعة النصوص التشريعية والتنظيمية مع المعايير ذات الصلة بالجودة البيئية الجاري بها العمل لاسيما التشريع المتعلق بالماء والطاقات المتجددة والتنوع البيولوجي ومحاربة تلوث الهواء والتغييرات المناخية وتدبير وتثمين النفايات والتقييم البيئي واستصلاح البيئة ووضع تدابير لردع وزجر المخالفات البيئية. ",
                             ResultatsAttendu = "إطار قانوني متلائم",
                             TypeMesure = 1
@@ -24925,7 +24925,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " الإسراع بإصدار القانون المتعلق بالحصول على الموارد الجينية والتقاسم العادل والمنصف للمنافع الناشئة عن استخدامها إعمالا للاتفاقية المتعلقة بالتنوع البيولوجي وبروتوكول ناغويا.",
                             ResultatsAttendu = "إطار قانوني معتمد وفق المعايير الدولية ذات الصلة ",
                             TypeMesure = 1
@@ -24938,7 +24938,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بإصدار المرسوم المتعلق بإحداث نظام وطني لجرد الغازات الدفيئة تطبيقا لمقتضيات الاتفاقية الإطارية للأمم المتحدة المتعلق بتغير المناخ.",
                             ResultatsAttendu = "ديناميات داعمة لتعزيز مكانة اللغة والثقافة الأمازيغية ",
                             TypeMesure = 1
@@ -25081,7 +25081,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تقنين الزراعات المستهلكة للمياه خاصة بالمناطق الهشة.",
                             ResultatsAttendu = "برامج داعمةلتكريس تدبير يحافظ على الموارد المائية المحدودة ويضمن استدامتها",
                             TypeMesure = 1
@@ -25133,7 +25133,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز آليات التنسيق بين القطاعات المعنية بالبيئة والتنمية المستدامة.",
                             ResultatsAttendu = "آليات مؤسساتية داعمة لتنسيق تنفيذ برامج التنمية المستدامة",
                             TypeMesure = 1
@@ -25159,7 +25159,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تشجيع التدريس والبحث العلمي في الجامعة ومعاهد التكوين ومراكز البحث العلمي حول البيئة والتنمية المستدامة.",
                             ResultatsAttendu = "مبادرات داعمة للتدريس والبحث العلمي في مجال البيئة",
                             TypeMesure = 1
@@ -25185,7 +25185,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تنظيم حملات تحسيسية بمتطلبات ترشيد وعقلنة تدبير الموارد الطبيعية وحماية البيئة عبر وسائل الإعلام المكتوبة والمسموعة والمرئية والإلكترونية.",
                             ResultatsAttendu = "برامج إعلامية داعمة لحماية البيئة  ",
                             TypeMesure = 1
@@ -25198,7 +25198,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إدماج البعد البيئي في البرامج والمقررات الدراسية وفي الأنشطة التربوية بالوسط المدرسي.",
                             ResultatsAttendu = "مناهج ومقرراتدراسية معززة للتربية البيئية",
                             TypeMesure = 1
@@ -25237,7 +25237,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 13,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تكوين القضاة والشرطة القضائية والبيئية في مجال الحقوق البيئية.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي   ",
                             TypeMesure = 1
@@ -25263,7 +25263,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 14,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "-212- تحفيز المقاولات على وضع ميثاق داخلي عام للسلوك في مجال حقوق الإنسان.",
                             ResultatsAttendu = "بيئة داعمة للنهوض بحقوق الإنسان داخل المقاولة ",
                             TypeMesure = 1
@@ -25276,7 +25276,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 14,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إدماج بعد احترام حقوق الإنسان في المقاولة على مستوى القانون والممارسة والنهوض بأدوار المقاولة المتعلقة بحقوق الانسان وقيم المواطنة.",
                             ResultatsAttendu = "بيئة داعمة للنهوض بحقوق الإنسان داخل المقاولة",
                             TypeMesure = 1
@@ -25289,7 +25289,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " النهوض بدور المقاولة في مجال تقييم أثر أنشطتها على حقوق الانسان.",
                             ResultatsAttendu = "آليات داعمة للنهوض بحقوق الإنسان داخل المقاولة",
                             TypeMesure = 1
@@ -25315,7 +25315,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز الوعي بموضوع المقاولة وحقوق الإنسان من خلال تنظيم لقاءات وطنية وجهوية بمشاركة الأطراف المعنية. ",
                             ResultatsAttendu = "برامج داعمة للنهوض بمجال المقاولة وحقوق الإنسان ",
                             TypeMesure = 1
@@ -25341,7 +25341,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع برامج تكوينية في مجال حقوق الإنسان في المقاولة لفائدة كل المتدخلين وأصحاب المصلحة (مسؤولو المقاولة والأطر النقابية والفاعلون المدنيون والقضاة والمحامون ومفتشو الشغل).",
                             ResultatsAttendu = "برامج تكوينية مساعدة على الرفع من مستوى الوعي بحقوق الإنسان في المقاولة",
                             TypeMesure = 1
@@ -25354,7 +25354,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 14,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع التدريس والبحث العلمي في الجامعة ومعاهد التكوين ومراكز البحث العلمي حول المقاولة وحقوق الإنسان",
                             ResultatsAttendu = "برامج داعمة للتدريس والبحث الجامعي حول المقاولة وحقوق الإنسان",
                             TypeMesure = 1
@@ -25367,7 +25367,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إصدار القانون المتعلق بشروط فتح وإحداث وتدبير مؤسسات الرعاية الاجتماعية.",
                             ResultatsAttendu = "بيئة تربوية مساعدة على إدماج الحقوق اللغوية والثقافية الأمازيغية",
                             TypeMesure = 1
@@ -25393,7 +25393,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم الآليات والتدابير الكفيلة ببلورة وتيسير تتبع وتقييم السياسات العمومية والبرامج التي تستهدف الحماية والنهوض بالحقوق الفئوية.",
                             ResultatsAttendu = "آليات كفيلة بتطوير نجاعة البرامج الخاصة بالحقوق الفئوية ",
                             TypeMesure = 1
@@ -25406,7 +25406,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة إدماج ثقافة حقوق الإنسان ذات الصلة بالحقوق الفئوية في برامج المعهد العالي للقضاء والمهن القضائية.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي   ",
                             TypeMesure = 1
@@ -25458,7 +25458,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تجميع ونشر القوانين والتشريعات المتعلقة بالفئات المعنية والتعريف بمقتضياتها.",
                             ResultatsAttendu = "مصنفات منجزة",
                             TypeMesure = 1
@@ -25484,7 +25484,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع الجماعات الترابية لبرامج في مجال الحقوق الفئوية.",
                             ResultatsAttendu = "برامج داعمة للنهوض بالحقوق الفئوية",
                             TypeMesure = 1
@@ -25497,7 +25497,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "الرفع من الاعتمادات المخصصة للنهوض بالحقوق الفئوية في الميزانية العامة.",
                             ResultatsAttendu = "اعتمادات مالية مساهمة في النهوض بالحقوق الفئوية",
                             TypeMesure = 1
@@ -25523,7 +25523,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مراجعة الإطار القانوني المتعلق بالإحسان العمومي.           ",
                             ResultatsAttendu = "إطار قانوني داعم لتجويد مبادرات الإحسان العمومي",
                             TypeMesure = 1
@@ -25536,7 +25536,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تشجيع ودعم المبادرات التحسيسية الهادفة إلى حماية الفئات الاجتماعية في وضعية هشاشة",
                             ResultatsAttendu = "برامج داعمة لحماية الفئات الاجتماعية في وضعية هشاشة ",
                             TypeMesure = 1
@@ -25562,7 +25562,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 15,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تأهيل وتعزيز قدرات جمعية الهلال الأحمر المغربي والجمعيات الوطنية الأخرى المعنية بالفئات الاجتماعية في وضعية هشاشة.",
                             ResultatsAttendu = "برنامج داعم لقدرات جمعيات المجتمع المدني",
                             TypeMesure = 1
@@ -25575,7 +25575,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل المجلس الاستشاري للأسرة والطفولة وإصدار النصوص التشريعية والتنظيمية المتعلقة به.",
                             ResultatsAttendu = "المجلس الاستشاري للأسرة والطفولة مفعل",
                             TypeMesure = 1
@@ -25614,7 +25614,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بالمصادقة على مشروع قانون متعلق بمراكز حماية الطفولة.",
                             ResultatsAttendu = "إطار قانوني مساعد على تجويد خدمات مراكز حماية الطفولة ",
                             TypeMesure = 1
@@ -25627,7 +25627,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مراجعة قانون الكفالة بما يتلاءم ومقتضيات الدستور.",
                             ResultatsAttendu = "إطار تشريعي   وتنظيمي معتمد",
                             TypeMesure = 1
@@ -25640,7 +25640,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بإصدار القانون المتعلق بشروط فتح وتدبير مؤسسات الرعاية الاجتماعية والنصوص القانونية والتنظيمية ذات الصلة.",
                             ResultatsAttendu = " إطار قانوني داعم تجويد خدمات مؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -25666,7 +25666,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الحوار المجتمعي حول مراجعة المادة 20 من مدونة الأسرة المتعلقة بالإذن بزواج القاصر.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -25692,7 +25692,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع مؤشرات التتبع والتقييم في مجال حماية الأطفال من سوء المعاملة ومن كل أشكال الاستغلال والعنف.",
                             ResultatsAttendu = " منظومة المؤشرات الخاصة بتتبع وضعية حماية الأطفال وتقييمها معتمدة ومفعلة",
                             TypeMesure = 1
@@ -25731,7 +25731,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل منشور رئيس الحكومة حول الحملة الوطنية لتسجيل الأطفال غير المسجلين في الحالة المدنية بشكل دوري ومستمر.",
                             ResultatsAttendu = "آليات داعمة لحماية الأطفال في هويتهم المدنية وحقوقهم الأساسية ",
                             TypeMesure = 1
@@ -25757,7 +25757,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز حقوق الأطفال في المشاركة في إعداد وتتبع تفعيل السياسات والبرامج والمشاريع الوطنية.",
                             ResultatsAttendu = "بيئة مشجعة على مشاركة الأطفال",
                             TypeMesure = 1
@@ -25809,7 +25809,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " حماية حقوق الأطفال في وسائل الإعلام بما في ذلك وسائل الاتصال الحديثة والنهوض بالتربية عليها.",
                             ResultatsAttendu = "بيئة إعلامية داعمة لحقوق الطفل ",
                             TypeMesure = 1
@@ -25822,7 +25822,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز الولوج الآمن للأطفال إلى وسائل الإعلام والاتصال المعتمدة على التكنولوجية الحديثة عبر وضع برامج خاصة وحمايتهم من كافة أشكال الاستغلال.",
                             ResultatsAttendu = "بيئة داعمة لولوج الأطفال الآمن   لوسائل الإعلام والاتصال المعتمدة على التكنولوجيا الحديثة",
                             TypeMesure = 1
@@ -25835,7 +25835,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل دورية وزارة الداخلية المتعلقة باختيار الأسماء الشخصية. ",
                             ResultatsAttendu = "آليات ميسرة لإعمال الدورية",
                             TypeMesure = 1
@@ -25848,7 +25848,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة الجهود الرامية إلى الحد من ظاهرة تشغيل الأطفال.",
                             ResultatsAttendu = "الجهود الرامية إلى الحد من ظاهرة تشغيل الأطفال متواصلة ومعززة",
                             TypeMesure = 1
@@ -25861,7 +25861,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع ودعم الأسر التي يوجد أطفالها في وضعية صعبة لتفادي الرعاية المؤسساتية.",
                             ResultatsAttendu = "تراجع ظاهرة إيداع الأطفال بمؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -25926,7 +25926,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل البرنامج التنفيذي للسياسة العمومية المندمجة لحماية الطفولة بالمغرب محليا وجهويا.",
                             ResultatsAttendu = "تدابير البرنامج الوطني للسياسة العمومية المندمجة لحماية الطفولة منفذة جهويا ومحليا",
                             TypeMesure = 1
@@ -25991,7 +25991,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "وضع آليات ترابية مندمجة لحماية الطفولة تضمن التنسيق واليقظة من حيث الإشعار والتبليغ وتتبع الخدمات الموجهة للأطفال ضحايا العنف.",
                             ResultatsAttendu = "آليات ترابية مندمجة لحماية الطفولة مفعلة",
                             TypeMesure = 1
@@ -26004,7 +26004,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل ميثاق السياحة المستدامة من أجل وضع برامج وقائية لحماية الأطفال من الأشخاص الذين يستغلون السياحة لأسباب جنسية.",
                             ResultatsAttendu = "آليات داعمة لحماية الأطفال من الاستغلال الجنسي",
                             TypeMesure = 1
@@ -26030,7 +26030,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تفعيل آليات المراقبة التربوية والبيداغوجية واللوجيستيكية بالأماكن التي تخصص لتعليم وتربية الأطفال.",
                             ResultatsAttendu = "آليات معززة للمراقبة التربوية والبيداغوجية واللوجيستيكية",
                             TypeMesure = 1
@@ -26043,7 +26043,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز إجراءات حماية محيط المؤسسات التعليمية لحماية الأطفال واليافعين من أخطار المخدرات ومروجيها.",
                             ResultatsAttendu = "إجراءات أمنية معززة لحماية     الأطفال واليافعين من أخطار المخدرات ومروجيها",
                             TypeMesure = 1
@@ -26056,7 +26056,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إشاعة ثقافة حقوق الطفل داخل مؤسسات الرعاية الاجتماعية المستقبلة للأطفال.",
                             ResultatsAttendu = "ثقافة حقوق الطفل مشاعة داخل مؤسسات الرعاية الاجتماعية",
                             TypeMesure = 1
@@ -26095,7 +26095,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 16,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تقوية برامج الوقاية الموجهة للأطفال في وضعية صعبة ولأسرهم.",
                             ResultatsAttendu = "برامج معززة لحماية الأطفال في وضعية صعبة ولأسرهم",
                             TypeMesure = 1
@@ -26108,7 +26108,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 16,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإبداع في أشكال وصيغ الأدوات البيداغوجية حول التربية الجنسية وفق مقاربة وقائية تراعي أعمار ومستوى نضج الأطفال والمخاطر التي قد تهددهم.",
                             ResultatsAttendu = " بيئة داعمة للتربية الجنسية بالوسط المدرسي ",
                             TypeMesure = 1
@@ -26134,7 +26134,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل المجلس الاستشاري للشباب والعمل الجمعوي وإصدار النصوص التشريعية والتنظيمية المتعلقة به.",
                             ResultatsAttendu = "المجلس الاستشاري للشباب والعمل الجمعوي مفعل",
                             TypeMesure = 1
@@ -26160,7 +26160,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مراجعة القانون التنظيمي للأحزاب بكيفية تمكن الشباب من المساهمة الفعالة في تدبير الشأن الحزبي. ",
                             ResultatsAttendu = "مقتضيات قانونية داعمة للمشاركة السياسية للشباب",
                             TypeMesure = 1
@@ -26225,7 +26225,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد وتعميم تقارير دورية حول الشباب.",
                             ResultatsAttendu = "تقارير مساعدة على تتبع وضعية الشباب",
                             TypeMesure = 1
@@ -26238,7 +26238,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم الجمعيات التي تعنى بالشباب وبالترافع عن قضاياهم.",
                             ResultatsAttendu = " قدرات متطورة في مجال الترافع ",
                             TypeMesure = 1
@@ -26251,7 +26251,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 17,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية مشاركة الشباب في خدمات الإعلام والتواصل. ",
                             ResultatsAttendu = "آليات داعمة لتمكين الشباب من التواصل والولوج إلى المعلومة ",
                             TypeMesure = 1
@@ -26316,7 +26316,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تعزيز مواكبة الشباب ودعمهم في مجالات الادماج الاقتصادي والمهني والاجتماعي.",
                             ResultatsAttendu = "آليات داعمة لقدرات الشباب على الاندماج الاقتصادي والمهني والاجتماعي",
                             TypeMesure = 1
@@ -26329,7 +26329,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 17,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز المقررات المدرسية والجامعية بمصوغات بيداغوجية تعنى بحقوق الانسان وبالتربية على المواطنة.",
                             ResultatsAttendu = "بيئة تربوية داعمة لترسيخ ثقافة حقوق الإنسان",
                             TypeMesure = 1
@@ -26433,7 +26433,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل مقتضيات الرافعة الرابعة من الرؤية الاستراتيجية لإصلاح التربية والتعليم 2015-2030 من أجل مدرسة الانصاف والجودة والارتقاء لفائدة الأشخاص في وضعية إعاقة أو في وضعيات خاصة.",
                             ResultatsAttendu = "مؤسسة تعليمية دامجة ",
                             TypeMesure = 1
@@ -26446,7 +26446,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إدماج التربية على الاختلاف في المناهج المدرسية للمساهمة في تغيير المواقف والتمثلات في أوساط الأطفال والشباب.",
                             ResultatsAttendu = "كتب مدرسية معززة للتعايش وقبول الاختلاف",
                             TypeMesure = 1
@@ -26459,7 +26459,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز التمدرس بالقسم الدراسي العادي مع توفير الترتيبات التيسيرية اللازمة وتوسيع شبكة الأقسام المدمجة لتشمل المستوى الإعدادي والثانوي وجعل المراكز المتخصصة جزء من المنظومة التعليمية الوطنية.",
                             ResultatsAttendu = "تضاعف عدد الممدرسين من الأطفال في وضعية إعاقة",
                             TypeMesure = 1
@@ -26485,7 +26485,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بتحديد وإعمال النسبة المائوية للأشخاص في وضعية إعاقة الواجب تشغيلهم في إطار تعاقدي بين الدولة ومقاولات القطاع الخاص.",
                             ResultatsAttendu = " إطار تعاقدي محفز لتشغيل الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -26524,7 +26524,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "النهوض بالولوجية الشاملة سواء على المستوى العمراني والمعماري ووسائل النقل والاتصال.",
                             ResultatsAttendu = "ولوجيات كفيلة بالمساهمة في تحسين ظروف عيش الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -26576,7 +26576,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بتفعيل نظام الدعم الاجتماعي والتشجيع والمساندة لفائدة الأشخاص في وضعية إعاقة المنصوص عليه في المادة 6 من القانون الإطار رقم 97.13 المتعلق بحماية حقوق الاشخاص في وضعية إعاقة والنهوض بها.",
                             ResultatsAttendu = "نظام الدعم الاجتماعي مشجع على النهوض بوضعية الأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -26589,7 +26589,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تقنين وتأهيل خدمات مؤسسات الرعاية الاجتماعية.  ",
                             ResultatsAttendu = "  توفر مؤسسات الرعاية الاجتماعية على خدمات ذات جودة",
                             TypeMesure = 1
@@ -26628,7 +26628,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع نظام جديد لتقييم الإعاقة يتلاءم والمفهوم الطبي والنفسي والاجتماعي المعتمد بموجب الاتفاقية الدولية لحقوق الأشخاص ذوي الإعاقة.",
                             ResultatsAttendu = "نظام جديد لتقييم الإعاقة معتمد",
                             TypeMesure = 1
@@ -26641,7 +26641,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " توحيد لغة الإشارة ووضع معايير لها.",
                             ResultatsAttendu = "إطار معياري معد ومعتمد",
                             TypeMesure = 1
@@ -26667,7 +26667,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم وتشجيع مبادرات المجتمع المدني العامل في مجال الإعاقة.",
                             ResultatsAttendu = "مجتمع مدني متفاعل في مجال الإعاقة",
                             TypeMesure = 1
@@ -26680,7 +26680,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعميم ولوج الأشخاص في وضعية إعاقة إلى الخدمات الثقافية من خلال اعتماد الوسائل التقنية الحديثة سواء في المؤسسات التعليمية أو المكتبات والمركبات الثقافية والبنيات الرياضية.",
                             ResultatsAttendu = "فضاءات مساعدة على ولوج الأشخاص في وضعية إعاقة إلى الخدمات الثقافية",
                             TypeMesure = 1
@@ -26693,7 +26693,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " دعم دور القطاع الخاص للمساهمة في مسلسل الإدماج الاجتماعي للأشخاص في وضعية إعاقة. ",
                             ResultatsAttendu = "قطاع خاص منخرط في الإدماج الاجتماعي للأشخاص في وضعية إعاقة",
                             TypeMesure = 1
@@ -26732,7 +26732,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 18,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "تمكين الأشخاص في وضعية إعاقة من خدمات الإعلام والتواصل عن طريق إدماج لغة الإشارة في البرامج الإعلامية.",
                             ResultatsAttendu = "بيئة داعمة لولوج   الأشخاص في وضعية إعاقة للخدمات الإعلامية  ",
                             TypeMesure = 1
@@ -26771,7 +26771,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع إطار استراتيجي للنهوض بحقوق الأشخاص المسنين وحمايتها.",
                             ResultatsAttendu = "إطار استراتيجي معد ومعتمد",
                             TypeMesure = 1
@@ -26784,7 +26784,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " إحداث نظام أساسي لمهن المساعدة الاجتماعية لرعاية المسنين.",
                             ResultatsAttendu = "مهن المساعدة الاجتماعية مقننة ",
                             TypeMesure = 1
@@ -26810,7 +26810,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تحفيز البحث العلمي والدراسات الجامعية حول أوضاع الأشخاص المسنين وآثار الشيخوخة في مختلف المستويات الديمغرافية والاقتصادية والاجتماعية.",
                             ResultatsAttendu = "بيئة داعمة للبحث العلمي حول أوضاع الأشخاص المسنين",
                             TypeMesure = 1
@@ -26836,7 +26836,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " دعم وتشجيع مبادرات المجتمع المدني والقطاع الخاص لإحداث نوادي وفضاءات الترفيه الموجهة للأشخاص المسنين.",
                             ResultatsAttendu = "دينامية داعمة لمبادرات المجتمع المدني والقطاع الخاص في مجال الترفيه لفائدة الأشخاص المسنين ",
                             TypeMesure = 1
@@ -26849,7 +26849,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تشجيع كل المبادرات العمومية والجمعوية الداعمة والحاضنة لرفاه الأشخاص المسنين ومشاركتهم.",
                             ResultatsAttendu = "مبادرات عمومية داعمة لرفاه الأشخاص المسنين ومشاركتهم ",
                             TypeMesure = 1
@@ -26875,7 +26875,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع مؤشرات وأنظمة معلوماتية لتتبع أوضاع الأشخاص المسنين لاسيما الموجودين في أوضاع صعبة محليا جهويا ووطنيا.",
                             ResultatsAttendu = "منظومة معلوماتية ومؤشرات للتتبع مبلورة ",
                             TypeMesure = 1
@@ -26888,7 +26888,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "دعم الأسر التي تحتضن أفرادا مسنين في وضعية صعبة.",
                             ResultatsAttendu = "إطار داعم لخدمات التكفل بالأفراد المسنين في وضعية صعبة",
                             TypeMesure = 1
@@ -26940,7 +26940,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز قدرات العاملين العموميين والمؤسساتيين لإدماج حاجيات الأشخاص المسنين في السياسات العمومية",
                             ResultatsAttendu = "قدرات معززة لإدماج حاجيات الأشخاص المسنين في السياسات العمومية",
                             TypeMesure = 1
@@ -26953,7 +26953,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 19,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز العمل المؤسسي للجمعيات التي تعنى بأوضاع الأشخاص المسنين",
                             ResultatsAttendu = "العمل الجمعوي معزز في مجال النهوض بأوضاع الأشخاص المسنين",
                             TypeMesure = 1
@@ -26966,7 +26966,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة التفكير في سبل تفعيل مقتضيات الدستور ذات الصلة بحقوق مغاربة العالم.",
                             ResultatsAttendu = "تصورات حول تفعيل مقتضيات الدستور ذات الصلة بحقوق مغاربة العالم مبلورة",
                             TypeMesure = 1
@@ -27005,7 +27005,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تطوير الاتفاقيات الخاصة بالحماية الاجتماعية المبرمة بين المغرب ودول الاستقبال وفق مقاربة حقوق الإنسان.",
                             ResultatsAttendu = "الإطار الاتفاقي الثنائي في مجال الحماية الاجتماعية معزز وفق مقاربة حقوق الانسان",
                             TypeMesure = 1
@@ -27031,7 +27031,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "ضمان حماية النساء المغربيات المهاجرات وتعزيز الجهود الحكومية ذات الصلة.",
                             ResultatsAttendu = "آلية لتعزيز حماية النساء المغربيات المهاجرات محدثة ومفعلة",
                             TypeMesure = 1
@@ -27057,7 +27057,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع آلية وطنية للرصد ومتابعة تطور الهجرة من وإلى المغرب وقياس آثارها المجتمعية والاقتصادية والثقافية.",
                             ResultatsAttendu = "مرصد متخصص في متابعة تطور الهجرة محدث",
                             TypeMesure = 1
@@ -27096,7 +27096,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 20,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة التنسيق والالتقائية بين كافة المتدخلين في مجال الهجرة وتعزيز دور اللجنة بين الوزارية لمغاربة العالم وشؤون الهجرة في هذا المجال. ",
                             ResultatsAttendu = "أداء اللجنة بين الوزارية معزز وفعال",
                             TypeMesure = 1
@@ -27122,7 +27122,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " النهوض بإبداعات وابتكارات الباحثين المغاربة المقيمين بالخارج.",
                             ResultatsAttendu = "إبداعات وابتكارات الباحثين المغاربة المقيمين بالخارج مثمنة",
                             TypeMesure = 1
@@ -27135,7 +27135,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعميم ونشر التقارير الوطنية عن الهجرة وبأوضاع المهاجرين.",
                             ResultatsAttendu = "التقارير الوطنية عن الهجرة وأوضاع المهاجرين معممة ومنشورة ",
                             TypeMesure = 1
@@ -27174,7 +27174,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 20,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " إعداد برامج للتكوين والتكوين المستمر تستحضر البعد الحقوقي وتستهدف الجمعيات التي تعمل مع المغاربة في الخارج والمهاجرين بالمغرب.",
                             ResultatsAttendu = "قدرات فعاليات المجتمع المدني معززة",
                             TypeMesure = 1
@@ -27200,7 +27200,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الانخراط في اتفاقيات مجلس أوروبا المفتوحة للبلدان غير الأعضاء.",
                             ResultatsAttendu = "ممارسة اتفاقية في مجال حقوق الإنسان معززة ",
                             TypeMesure = 1
@@ -27213,7 +27213,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع باعتماد مشروعي القانون الجنائي وقانون المسطرة الجنائية.",
                             ResultatsAttendu = "منظومة جنائية معتمدة",
                             TypeMesure = 1
@@ -27226,7 +27226,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع باعتماد قانون جديد منظم للسجون بما يضمن أنسنة المؤسسات السجنية وتحسين ظروف إقامة النزلاء وتغذيتهم وحماية باقي حقوقهم.",
                             ResultatsAttendu = "إطار قانوني داعم لأنسنة المؤسسات السجنية  ",
                             TypeMesure = 1
@@ -27239,7 +27239,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الإسراع بإخراج المقتضيات القانونية الناظمة للعقوبات البديلة بهدف الحد من إشكالات الاعتقال الاحتياطي والاكتظاظ في السجون.",
                             ResultatsAttendu = "مقتضيات قانونية داعمة لتجويد خدمات المؤسسة السجنية",
                             TypeMesure = 1
@@ -27252,7 +27252,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة الحوار المجتمعي حول الانضمام إلى البروتوكول الاختياري الثاني الملحق بالعهد الدولي الخاص بالحقوق المدنية والسياسية المتعلق بإلغاء عقوبة الاعدام. ",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -27265,7 +27265,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مواصلة الحوار المجتمعي بشأن المصادقة على النظام الأساسي للمحكمة الجنائية الدولية.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -27278,7 +27278,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة الحوار المجتمعي حول تعديل المادة 53 من مدونة الأسرة لأجل كفالة الحماية الفعلية للزوج أو الزوجة من طرف النيابة العامة عند الإرجاع إلى بيت الزوجية.",
                             ResultatsAttendu = "حوار مجتمعي منظم",
                             TypeMesure = 1
@@ -27291,7 +27291,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 21,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إحداث مرصد وطني للإجرام.",
                             ResultatsAttendu = "آلية مؤسساتية مساعدة على تتبع تطور ظاهرة الإجرام",
                             TypeMesure = 1
@@ -27369,7 +27369,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " وضع برنامج خاص بجمع وتصنيف وتقديم ونشر الاجتهادات القضائية الجنائية والإدارية المعززة لإعمال المعايير الدولية لحقوق الإنسان.",
                             ResultatsAttendu = "منظومة داعمة لتثمين الاجتهادات القضائية واستثمارها",
                             TypeMesure = 1
@@ -27382,7 +27382,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "توثيق ونشر الأعمال البحثية المعززة لرصيد ثقافة حقوق الإنسان المنجزة بمناسبة الآراء والأعمال الاستشارية من قبل مؤسسات الديمقراطية التشاركية.",
                             ResultatsAttendu = "برامج معززة لرصيد ثقافة حقوق الإنسان ",
                             TypeMesure = 1
@@ -27395,7 +27395,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "ترصيد التواصل بين مهنيي ومساعدي العدالة والعمل على مأسسته على نحو أفضل.",
                             ResultatsAttendu = "آلية داعمة للتواصل",
                             TypeMesure = 1
@@ -27421,7 +27421,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 21,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز برامج التكوين الأساسي والتكوين المستمر في المعاهد والمراكز المعنية بالمكلفين بإنفاذ القانون.",
                             ResultatsAttendu = "سائل التظلم والانتصاف المتعلقة بالتمييز في مجال الحقوق معززة جهويا ومركزيا",
                             TypeMesure = 1
@@ -27434,7 +27434,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تفعيل الهيئة المكلفة بالمناصفة ومكافحة جميع أشكال التمييز.",
                             ResultatsAttendu = "هيئة المناصفة ومكافحة جميع أشكال التمييز مفعلة.",
                             TypeMesure = 1
@@ -27447,7 +27447,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " البحث في سبل مبادرات الحكومة وهيئات الديمقراطية التشاركية لتنظيم حوارات عمومية حول رصيد إعمال مدونة الأسرة على مستوى الاجتهاد القضائي والتطور المجتمعي.",
                             ResultatsAttendu = "ديناميات داعمة لتطوير مدونة الأسرة ",
                             TypeMesure = 1
@@ -27473,7 +27473,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز حماية النساء ضد العنف على مستوى التشريع والسياسة الجنائية الوطنية.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -27525,7 +27525,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "  تعزيز الضمانات القانونية المتعلقة بتجريم التحرش الجنسي.",
                             ResultatsAttendu = "إطار قانوني داعم لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -27564,7 +27564,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز آليات الرصد والتتبع لحماية النساء ضحايا العنف وطنيا جهويا ومحليا.",
                             ResultatsAttendu = "آليات فعالة لحماية النساء ضحايا العنف",
                             TypeMesure = 1
@@ -27577,7 +27577,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " مواصلة تفعيل مقتضيات صندوق التكافل العائلي وتبسيط مساطره.",
                             ResultatsAttendu = "مقتضيات داعمة لتوسيع دائرة المستفيدين",
                             TypeMesure = 1
@@ -27603,7 +27603,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " التفعيل الحازم لمقتضيات قانون الاتجار بالبشر المتعلقة بحماية الأطفال والنساء الضحايا.",
                             ResultatsAttendu = "إجراءات داعمة لحماية الأطفال والنساء ضحايا الاتجار بالبشر ",
                             TypeMesure = 1
@@ -27616,7 +27616,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور الجماعات الترابية في توفير بيئة آمنة تحمي الأطفال والنساء من كل أشكال العنف.",
                             ResultatsAttendu = "بيئة آمنة تحمي الأطفال والنساء من كل أشكال العنف",
                             TypeMesure = 1
@@ -27668,7 +27668,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "توثيق ونشر الاجتهاد القضائي في مجال حماية حقوق المرأة كمصدر من مصادر التشريع.",
                             ResultatsAttendu = "دينامية داعمة لترصيد الاجتهاد القضائي في مجال حماية حقوق المرأة",
                             TypeMesure = 1
@@ -27681,7 +27681,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 22,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "نشر الممارسات الفضلى المتعلقة بتطبيق مدونة الأسرة على مستوى عمل كتابة الضبط ومراكز الاستقبال.",
                             ResultatsAttendu = "دينامية داعمة للتطبيق الناجع لمدونة الأسرة ",
                             TypeMesure = 1
@@ -27720,7 +27720,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 22,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "مواصلة برامج التدريب وتطوير القدرات في مجال التكوين والتكوين المستمر على حقوق النساء لفائدة القضاة ومساعدي العدالة.",
                             ResultatsAttendu = "برامج مساعدة على تقوية القدرات في مجال حقوق النساء",
                             TypeMesure = 1
@@ -27746,7 +27746,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إصدار القرار الخاص بتحديد كيفيات سير وتنظيم مراحل انتخاب أعضاء المجلس الوطني للصحافة.",
                             ResultatsAttendu = "محطات جهوية متفاعلة مع محيطها",
                             TypeMesure = 1
@@ -27759,7 +27759,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " الإسراع بوضع ميثاق أخلاقيات مهنة الصحافة والإعلام بما في ذلك الصحافة الإلكترونية.",
                             ResultatsAttendu = "ميثاق أخلاقيات مهنة الصحافة والإعلام معتمد",
                             TypeMesure = 1
@@ -27772,7 +27772,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز الأخلاقيات المهنية في الممارسة الإعلامية.",
                             ResultatsAttendu = "بيئة داعمة لممارسة إعلامية وفق الضوابط المهنية  ",
                             TypeMesure = 1
@@ -27798,7 +27798,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "التنصيص على مبدأ المناصفة في دفاتر تحملات شركات الاتصال السمعي البصري.",
                             ResultatsAttendu = "بيئة إعلامية معززة لمبدأ المناصفة في الفضاء السمعي البصري ",
                             TypeMesure = 1
@@ -27811,7 +27811,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية المقتضيات القانونية المتعلقة بالاعتداء على الملكية الفكرية لتتلاءم مع الدستور.",
                             ResultatsAttendu = "مقتضيات قانونية داعمة لحماية الملكية الفكرية  ",
                             TypeMesure = 1
@@ -27824,7 +27824,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تعزيز دور المكتب المغربي لحقوق المؤلفين ومراجعة قانونه ليصبح مؤسسة عمومية.",
                             ResultatsAttendu = "إطار قانوني داعم لحقوق المؤلف",
                             TypeMesure = 1
@@ -27837,7 +27837,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 23,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تعزيز برامج التوعية والتحسيس بشأن مكتسبات وتحديات ممارسة حريات التعبير والإعلام والصحافة والحق في المعلومة",
                             ResultatsAttendu = "عدد البرامج والشراكات والدعامات المنجزة",
                             TypeMesure = 1
@@ -27850,7 +27850,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 23,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "إدماج قيم حقوق الإنسان في برامج التكوين والتدريب الموجهة لمهنيي الإعلام والاتصال",
                             ResultatsAttendu = "برامج التكوين والتدريب معززة بقيم حقوق الانسان",
                             TypeMesure = 1
@@ -27876,7 +27876,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "وضع النصوص التطبيقية للقانون المنظم لحماية التراث الثقافي.",
                             ResultatsAttendu = "نصوص تنظيمية داعمة لحماية التراث الثقافي.",
                             TypeMesure = 1
@@ -27889,7 +27889,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 24,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مراجعة النصوص المتعلقة بالتراث الثقافي.",
                             ResultatsAttendu = "إطار قانوني معزز",
                             TypeMesure = 1
@@ -27941,7 +27941,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " مراجعة قانون الأرشيف طبقا للممارسات الفضلى المعمول بها في هذا المجال مع استكمال إصدار المراسيم التطبيقية لقانون الأرشيف.",
                             ResultatsAttendu = "إطار قانوني داعم لثقافة الأرشيف ",
                             TypeMesure = 1
@@ -27967,7 +27967,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " رصد مصادر الأرشيف الخاصة بالمغرب والموجودة خارج الوطن ومواصلة استرجاعها ومعالجتها وحفظها وتيسير الاطلاع عليها من قبل المهتمين. ",
                             ResultatsAttendu = "الأرصدة الوثائقية المتعلقة بالمغرب والموجودة بالخارج مرصودة ومعالجة وميسرة للاطلاع",
                             TypeMesure = 1
@@ -27993,7 +27993,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 25,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تحسيس مصالح الإدارات العمومية بأهمية إيداع أرشيفها بانتظام لدى مصالح أرشيف المغرب طبقا للنصوص الجاري بها العمل.",
                             ResultatsAttendu = "مصالح الإدارات العمومية منخرطة",
                             TypeMesure = 1
@@ -28006,7 +28006,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "تقوية قدرات مؤسسة أرشيف المغرب المادية والبشرية حتى تتمكن من الاضطلاع بالمهام المنوطة بها.",
                             ResultatsAttendu = "قدرات مؤسسة أرشيف المغرب معززة ",
                             TypeMesure = 1
@@ -28019,7 +28019,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 25,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "النهوض بالموارد البشرية المعنية بمعالجة وبحفظ وتنظيم الأرشيف باعتماد برامج منتظمة خاصة بالتكوين والتكوين المستمر موجهة لفائدة المهنيين.",
                             ResultatsAttendu = "الموارد البشرية بمؤسسة أرشيف المغرب مكونة",
                             TypeMesure = 1
@@ -28045,7 +28045,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = "  تسهيل ولوج المتقاضين إلى المحاكم وتيسير التواصل اللغوي في عملها.",
                             ResultatsAttendu = "آليات داعمة لتيسير الولوج لخدمات العدالة",
                             TypeMesure = 1
@@ -28058,7 +28058,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "الرفع من جودة الأحكام.",
                             ResultatsAttendu = "آلية داعمة للرفع من جودة الاحكام",
                             TypeMesure = 1
@@ -28084,7 +28084,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "مواصلة جهود تخليق العدالة.",
                             ResultatsAttendu = "دينامية داعمة لتخليق العدالة",
                             TypeMesure = 1
@@ -28110,7 +28110,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 1,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = " تفعيل المقتضيات الدستورية المتعلقة بتقوية الدور الرقابي للبرلمان على الحكومة والمؤسسات التابعة للدولة من خلال لجن التقصي وغيرها من الآليات المتوفرة.",
                             ResultatsAttendu = "إطار قانوني داعم للدور الرقابي للبرلمان على الحكومة والمؤسسات التابعة للدولة ",
                             TypeMesure = 1
@@ -28123,7 +28123,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 2,
                             IdSousAxe = 26,
-                            IdType = 2,
+                            IdType = 1,
                             Nom = "إشاعة ثقافة حقوق الإنسان وتنميتها في أوساط العدالة.",
                             ResultatsAttendu = "شراكات وبرامج داعمة لتملك ثقافة حقوق الإنسان",
                             TypeMesure = 1
@@ -28149,7 +28149,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " تعزيز إدماج مرجعية حقوق الإنسان والتربية على المواطنة ضمن برامج التكوين بالمعهد العالي للقضاء.",
                             ResultatsAttendu = "قدرات متطورة في مجال التكوين القضائي التخصصي; برامج مساهمة في توسيع المعارف وتعزيز القدرات في مجال حقوق الإنسان",
                             TypeMesure = 1
@@ -28162,7 +28162,7 @@ namespace Admin5.Migrations
                             IdCycle = 1,
                             IdNature = 3,
                             IdSousAxe = 26,
-                            IdType = 1,
+                            IdType = 2,
                             Nom = " وضع برامج للتكوين المستمر وتبادل الخبرات والممارسات الفضلى بشأن إدماج حقوق الإنسان في الاجتهاد القضائي، تفاعلا مع التزامات المغرب في مجال حقوق الإنسان وأحكام الدستور.",
                             ResultatsAttendu = "آليات داعمة لاستحضار بعد حقوق الإنسان في الاحكام القضائية",
                             TypeMesure = 1
@@ -36330,8 +36330,8 @@ namespace Admin5.Migrations
                             IdActivite = 1,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36340,8 +36340,8 @@ namespace Admin5.Migrations
                             IdActivite = 2,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36350,8 +36350,8 @@ namespace Admin5.Migrations
                             IdActivite = 3,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36360,8 +36360,8 @@ namespace Admin5.Migrations
                             IdActivite = 4,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36370,8 +36370,8 @@ namespace Admin5.Migrations
                             IdActivite = 5,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36380,8 +36380,8 @@ namespace Admin5.Migrations
                             IdActivite = 6,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36390,8 +36390,8 @@ namespace Admin5.Migrations
                             IdActivite = 7,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36400,8 +36400,8 @@ namespace Admin5.Migrations
                             IdActivite = 8,
                             IdMesure = 1,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36410,8 +36410,8 @@ namespace Admin5.Migrations
                             IdActivite = 9,
                             IdMesure = 2,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36420,7 +36420,7 @@ namespace Admin5.Migrations
                             IdActivite = 9,
                             IdMesure = 16,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -36430,8 +36430,8 @@ namespace Admin5.Migrations
                             IdActivite = 9,
                             IdMesure = 17,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36540,8 +36540,8 @@ namespace Admin5.Migrations
                             IdActivite = 17,
                             IdMesure = 5,
                             Nom = " عقد اتفاقيات شراكة مع المجالس الجهوية - عقد لقاءات تشاورية جهوية مع مجالس الجماعات والقطاعات الحكومية المعنية وجمعيات المجتمع المدني للنهوض بالأليات التشاركية",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 66.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36580,8 +36580,8 @@ namespace Admin5.Migrations
                             IdActivite = 21,
                             IdMesure = 7,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36640,7 +36640,7 @@ namespace Admin5.Migrations
                             IdActivite = 27,
                             IdMesure = 8,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 70.0
                         },
                         new
@@ -36690,7 +36690,7 @@ namespace Admin5.Migrations
                             IdActivite = 32,
                             IdMesure = 9,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 40.0
                         },
                         new
@@ -36700,7 +36700,7 @@ namespace Admin5.Migrations
                             IdActivite = 33,
                             IdMesure = 9,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 40.0
                         },
                         new
@@ -36710,8 +36710,8 @@ namespace Admin5.Migrations
                             IdActivite = 34,
                             IdMesure = 9,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36720,8 +36720,8 @@ namespace Admin5.Migrations
                             IdActivite = 35,
                             IdMesure = 9,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36730,8 +36730,8 @@ namespace Admin5.Migrations
                             IdActivite = 36,
                             IdMesure = 9,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36740,8 +36740,8 @@ namespace Admin5.Migrations
                             IdActivite = 37,
                             IdMesure = 10,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36750,8 +36750,8 @@ namespace Admin5.Migrations
                             IdActivite = 38,
                             IdMesure = 10,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36760,8 +36760,8 @@ namespace Admin5.Migrations
                             IdActivite = 39,
                             IdMesure = 10,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36770,8 +36770,8 @@ namespace Admin5.Migrations
                             IdActivite = 40,
                             IdMesure = 10,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36780,8 +36780,8 @@ namespace Admin5.Migrations
                             IdActivite = 37,
                             IdMesure = 87,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36790,8 +36790,8 @@ namespace Admin5.Migrations
                             IdActivite = 38,
                             IdMesure = 87,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36800,8 +36800,8 @@ namespace Admin5.Migrations
                             IdActivite = 39,
                             IdMesure = 87,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36820,8 +36820,8 @@ namespace Admin5.Migrations
                             IdActivite = 37,
                             IdMesure = 95,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36830,8 +36830,8 @@ namespace Admin5.Migrations
                             IdActivite = 38,
                             IdMesure = 95,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36840,8 +36840,8 @@ namespace Admin5.Migrations
                             IdActivite = 39,
                             IdMesure = 95,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36850,8 +36850,8 @@ namespace Admin5.Migrations
                             IdActivite = 40,
                             IdMesure = 95,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36860,8 +36860,8 @@ namespace Admin5.Migrations
                             IdActivite = 37,
                             IdMesure = 303,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36870,8 +36870,8 @@ namespace Admin5.Migrations
                             IdActivite = 38,
                             IdMesure = 303,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36880,8 +36880,8 @@ namespace Admin5.Migrations
                             IdActivite = 39,
                             IdMesure = 303,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -36890,8 +36890,8 @@ namespace Admin5.Migrations
                             IdActivite = 40,
                             IdMesure = 303,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36900,8 +36900,8 @@ namespace Admin5.Migrations
                             IdActivite = 41,
                             IdMesure = 11,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36910,8 +36910,8 @@ namespace Admin5.Migrations
                             IdActivite = 42,
                             IdMesure = 11,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36930,8 +36930,8 @@ namespace Admin5.Migrations
                             IdActivite = 44,
                             IdMesure = 11,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36940,8 +36940,8 @@ namespace Admin5.Migrations
                             IdActivite = 45,
                             IdMesure = 11,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36950,8 +36950,8 @@ namespace Admin5.Migrations
                             IdActivite = 46,
                             IdMesure = 12,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36960,8 +36960,8 @@ namespace Admin5.Migrations
                             IdActivite = 47,
                             IdMesure = 12,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36970,8 +36970,8 @@ namespace Admin5.Migrations
                             IdActivite = 48,
                             IdMesure = 12,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36980,8 +36980,8 @@ namespace Admin5.Migrations
                             IdActivite = 49,
                             IdMesure = 12,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -36990,8 +36990,8 @@ namespace Admin5.Migrations
                             IdActivite = 50,
                             IdMesure = 13,
                             Nom = "مصادقة 11 مجلس جهة على اتفاقيات التعاون مع وزارة الدولة المكلفة بحقوق الانسان لاعمال خطة العمل الوطنية في مجال الدمقراطية و حقوق الانسان - اعداد مشاريع المخططات التنفيذية لاعمال خطة العمل الوطنية في مجال الدمقراطية و حقوق الانسان على مستوى الجماعات الترابية",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37000,8 +37000,8 @@ namespace Admin5.Migrations
                             IdActivite = 51,
                             IdMesure = 13,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37010,8 +37010,8 @@ namespace Admin5.Migrations
                             IdActivite = 52,
                             IdMesure = 13,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37020,7 +37020,7 @@ namespace Admin5.Migrations
                             IdActivite = 53,
                             IdMesure = 14,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37030,8 +37030,8 @@ namespace Admin5.Migrations
                             IdActivite = 54,
                             IdMesure = 14,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37050,8 +37050,8 @@ namespace Admin5.Migrations
                             IdActivite = 56,
                             IdMesure = 14,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37060,8 +37060,8 @@ namespace Admin5.Migrations
                             IdActivite = 53,
                             IdMesure = 394,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37070,8 +37070,8 @@ namespace Admin5.Migrations
                             IdActivite = 54,
                             IdMesure = 394,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37090,8 +37090,8 @@ namespace Admin5.Migrations
                             IdActivite = 56,
                             IdMesure = 394,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37100,8 +37100,8 @@ namespace Admin5.Migrations
                             IdActivite = 57,
                             IdMesure = 16,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37110,8 +37110,8 @@ namespace Admin5.Migrations
                             IdActivite = 58,
                             IdMesure = 16,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37120,8 +37120,8 @@ namespace Admin5.Migrations
                             IdActivite = 59,
                             IdMesure = 16,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37130,8 +37130,8 @@ namespace Admin5.Migrations
                             IdActivite = 60,
                             IdMesure = 16,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37140,8 +37140,8 @@ namespace Admin5.Migrations
                             IdActivite = 61,
                             IdMesure = 17,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37150,7 +37150,7 @@ namespace Admin5.Migrations
                             IdActivite = 62,
                             IdMesure = 18,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 85.0
                         },
                         new
@@ -37160,7 +37160,7 @@ namespace Admin5.Migrations
                             IdActivite = 63,
                             IdMesure = 18,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 85.0
                         },
                         new
@@ -37250,8 +37250,8 @@ namespace Admin5.Migrations
                             IdActivite = 68,
                             IdMesure = 20,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37260,8 +37260,8 @@ namespace Admin5.Migrations
                             IdActivite = 69,
                             IdMesure = 20,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37270,7 +37270,7 @@ namespace Admin5.Migrations
                             IdActivite = 70,
                             IdMesure = 20,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -37290,8 +37290,8 @@ namespace Admin5.Migrations
                             IdActivite = 69,
                             IdMesure = 21,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37300,8 +37300,8 @@ namespace Admin5.Migrations
                             IdActivite = 70,
                             IdMesure = 21,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37310,8 +37310,8 @@ namespace Admin5.Migrations
                             IdActivite = 71,
                             IdMesure = 21,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37330,8 +37330,8 @@ namespace Admin5.Migrations
                             IdActivite = 73,
                             IdMesure = 21,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37340,8 +37340,8 @@ namespace Admin5.Migrations
                             IdActivite = 74,
                             IdMesure = 22,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37350,7 +37350,7 @@ namespace Admin5.Migrations
                             IdActivite = 75,
                             IdMesure = 22,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37360,8 +37360,8 @@ namespace Admin5.Migrations
                             IdActivite = 76,
                             IdMesure = 23,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37370,8 +37370,8 @@ namespace Admin5.Migrations
                             IdActivite = 77,
                             IdMesure = 23,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37380,8 +37380,8 @@ namespace Admin5.Migrations
                             IdActivite = 78,
                             IdMesure = 23,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37390,8 +37390,8 @@ namespace Admin5.Migrations
                             IdActivite = 79,
                             IdMesure = 23,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37410,7 +37410,7 @@ namespace Admin5.Migrations
                             IdActivite = 81,
                             IdMesure = 24,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37430,7 +37430,7 @@ namespace Admin5.Migrations
                             IdActivite = 83,
                             IdMesure = 24,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37440,7 +37440,7 @@ namespace Admin5.Migrations
                             IdActivite = 84,
                             IdMesure = 24,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37450,8 +37450,8 @@ namespace Admin5.Migrations
                             IdActivite = 85,
                             IdMesure = 25,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37460,8 +37460,8 @@ namespace Admin5.Migrations
                             IdActivite = 86,
                             IdMesure = 25,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37470,8 +37470,8 @@ namespace Admin5.Migrations
                             IdActivite = 87,
                             IdMesure = 25,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37480,7 +37480,7 @@ namespace Admin5.Migrations
                             IdActivite = 88,
                             IdMesure = 27,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37500,8 +37500,8 @@ namespace Admin5.Migrations
                             IdActivite = 90,
                             IdMesure = 27,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37510,8 +37510,8 @@ namespace Admin5.Migrations
                             IdActivite = 91,
                             IdMesure = 28,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37520,8 +37520,8 @@ namespace Admin5.Migrations
                             IdActivite = 92,
                             IdMesure = 29,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37530,8 +37530,8 @@ namespace Admin5.Migrations
                             IdActivite = 93,
                             IdMesure = 29,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37540,8 +37540,8 @@ namespace Admin5.Migrations
                             IdActivite = 94,
                             IdMesure = 29,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37550,7 +37550,7 @@ namespace Admin5.Migrations
                             IdActivite = 95,
                             IdMesure = 29,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -37600,8 +37600,8 @@ namespace Admin5.Migrations
                             IdActivite = 100,
                             IdMesure = 32,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37610,8 +37610,8 @@ namespace Admin5.Migrations
                             IdActivite = 101,
                             IdMesure = 33,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37620,8 +37620,8 @@ namespace Admin5.Migrations
                             IdActivite = 102,
                             IdMesure = 33,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37630,8 +37630,8 @@ namespace Admin5.Migrations
                             IdActivite = 101,
                             IdMesure = 431,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37640,8 +37640,8 @@ namespace Admin5.Migrations
                             IdActivite = 102,
                             IdMesure = 431,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37650,7 +37650,7 @@ namespace Admin5.Migrations
                             IdActivite = 103,
                             IdMesure = 34,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37660,8 +37660,8 @@ namespace Admin5.Migrations
                             IdActivite = 104,
                             IdMesure = 34,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 75.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37670,8 +37670,8 @@ namespace Admin5.Migrations
                             IdActivite = 105,
                             IdMesure = 35,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37680,8 +37680,8 @@ namespace Admin5.Migrations
                             IdActivite = 106,
                             IdMesure = 35,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37690,8 +37690,8 @@ namespace Admin5.Migrations
                             IdActivite = 107,
                             IdMesure = 36,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37700,8 +37700,8 @@ namespace Admin5.Migrations
                             IdActivite = 108,
                             IdMesure = 36,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37710,7 +37710,7 @@ namespace Admin5.Migrations
                             IdActivite = 109,
                             IdMesure = 37,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.0
                         },
                         new
@@ -37720,7 +37720,7 @@ namespace Admin5.Migrations
                             IdActivite = 110,
                             IdMesure = 37,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.0
                         },
                         new
@@ -37730,7 +37730,7 @@ namespace Admin5.Migrations
                             IdActivite = 111,
                             IdMesure = 37,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.0
                         },
                         new
@@ -37760,7 +37760,7 @@ namespace Admin5.Migrations
                             IdActivite = 114,
                             IdMesure = 38,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37770,7 +37770,7 @@ namespace Admin5.Migrations
                             IdActivite = 115,
                             IdMesure = 39,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37780,7 +37780,7 @@ namespace Admin5.Migrations
                             IdActivite = 116,
                             IdMesure = 39,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37790,7 +37790,7 @@ namespace Admin5.Migrations
                             IdActivite = 117,
                             IdMesure = 39,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37800,7 +37800,7 @@ namespace Admin5.Migrations
                             IdActivite = 118,
                             IdMesure = 39,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -37810,7 +37810,7 @@ namespace Admin5.Migrations
                             IdActivite = 119,
                             IdMesure = 40,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -37820,8 +37820,8 @@ namespace Admin5.Migrations
                             IdActivite = 120,
                             IdMesure = 40,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37830,8 +37830,8 @@ namespace Admin5.Migrations
                             IdActivite = 121,
                             IdMesure = 40,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37840,8 +37840,8 @@ namespace Admin5.Migrations
                             IdActivite = 122,
                             IdMesure = 41,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37850,8 +37850,8 @@ namespace Admin5.Migrations
                             IdActivite = 123,
                             IdMesure = 41,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37860,8 +37860,8 @@ namespace Admin5.Migrations
                             IdActivite = 124,
                             IdMesure = 41,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37870,8 +37870,8 @@ namespace Admin5.Migrations
                             IdActivite = 125,
                             IdMesure = 42,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37880,8 +37880,8 @@ namespace Admin5.Migrations
                             IdActivite = 126,
                             IdMesure = 42,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37890,8 +37890,8 @@ namespace Admin5.Migrations
                             IdActivite = 127,
                             IdMesure = 42,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37900,8 +37900,8 @@ namespace Admin5.Migrations
                             IdActivite = 128,
                             IdMesure = 43,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37910,8 +37910,8 @@ namespace Admin5.Migrations
                             IdActivite = 129,
                             IdMesure = 43,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37920,7 +37920,7 @@ namespace Admin5.Migrations
                             IdActivite = 130,
                             IdMesure = 44,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -37930,8 +37930,8 @@ namespace Admin5.Migrations
                             IdActivite = 131,
                             IdMesure = 45,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37940,8 +37940,8 @@ namespace Admin5.Migrations
                             IdActivite = 132,
                             IdMesure = 46,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37950,8 +37950,8 @@ namespace Admin5.Migrations
                             IdActivite = 133,
                             IdMesure = 47,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -37960,8 +37960,8 @@ namespace Admin5.Migrations
                             IdActivite = 134,
                             IdMesure = 47,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37970,8 +37970,8 @@ namespace Admin5.Migrations
                             IdActivite = 135,
                             IdMesure = 47,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37980,8 +37980,8 @@ namespace Admin5.Migrations
                             IdActivite = 136,
                             IdMesure = 47,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -37990,8 +37990,8 @@ namespace Admin5.Migrations
                             IdActivite = 133,
                             IdMesure = 369,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38000,8 +38000,8 @@ namespace Admin5.Migrations
                             IdActivite = 134,
                             IdMesure = 369,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38010,8 +38010,8 @@ namespace Admin5.Migrations
                             IdActivite = 135,
                             IdMesure = 369,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38020,8 +38020,8 @@ namespace Admin5.Migrations
                             IdActivite = 136,
                             IdMesure = 369,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38050,8 +38050,8 @@ namespace Admin5.Migrations
                             IdActivite = 139,
                             IdMesure = 49,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38060,8 +38060,8 @@ namespace Admin5.Migrations
                             IdActivite = 140,
                             IdMesure = 49,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38070,8 +38070,8 @@ namespace Admin5.Migrations
                             IdActivite = 141,
                             IdMesure = 49,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38220,8 +38220,8 @@ namespace Admin5.Migrations
                             IdActivite = 142,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38230,8 +38230,8 @@ namespace Admin5.Migrations
                             IdActivite = 143,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38240,8 +38240,8 @@ namespace Admin5.Migrations
                             IdActivite = 144,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38250,8 +38250,8 @@ namespace Admin5.Migrations
                             IdActivite = 145,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38260,8 +38260,8 @@ namespace Admin5.Migrations
                             IdActivite = 146,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38270,8 +38270,8 @@ namespace Admin5.Migrations
                             IdActivite = 147,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38280,8 +38280,8 @@ namespace Admin5.Migrations
                             IdActivite = 148,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38300,8 +38300,8 @@ namespace Admin5.Migrations
                             IdActivite = 150,
                             IdMesure = 51,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38310,8 +38310,8 @@ namespace Admin5.Migrations
                             IdActivite = 149,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38350,8 +38350,8 @@ namespace Admin5.Migrations
                             IdActivite = 153,
                             IdMesure = 52,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38360,8 +38360,8 @@ namespace Admin5.Migrations
                             IdActivite = 154,
                             IdMesure = 52,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38370,8 +38370,8 @@ namespace Admin5.Migrations
                             IdActivite = 155,
                             IdMesure = 53,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38380,8 +38380,8 @@ namespace Admin5.Migrations
                             IdActivite = 156,
                             IdMesure = 53,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38390,8 +38390,8 @@ namespace Admin5.Migrations
                             IdActivite = 157,
                             IdMesure = 53,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38400,8 +38400,8 @@ namespace Admin5.Migrations
                             IdActivite = 158,
                             IdMesure = 53,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38420,7 +38420,7 @@ namespace Admin5.Migrations
                             IdActivite = 160,
                             IdMesure = 54,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -38430,7 +38430,7 @@ namespace Admin5.Migrations
                             IdActivite = 161,
                             IdMesure = 54,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -38440,7 +38440,7 @@ namespace Admin5.Migrations
                             IdActivite = 162,
                             IdMesure = 55,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -38450,7 +38450,7 @@ namespace Admin5.Migrations
                             IdActivite = 163,
                             IdMesure = 55,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -38460,7 +38460,7 @@ namespace Admin5.Migrations
                             IdActivite = 164,
                             IdMesure = 55,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -38470,7 +38470,7 @@ namespace Admin5.Migrations
                             IdActivite = 165,
                             IdMesure = 55,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -38510,8 +38510,8 @@ namespace Admin5.Migrations
                             IdActivite = 169,
                             IdMesure = 56,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38520,8 +38520,8 @@ namespace Admin5.Migrations
                             IdActivite = 170,
                             IdMesure = 57,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38540,8 +38540,8 @@ namespace Admin5.Migrations
                             IdActivite = 172,
                             IdMesure = 57,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38550,8 +38550,8 @@ namespace Admin5.Migrations
                             IdActivite = 173,
                             IdMesure = 57,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38560,8 +38560,8 @@ namespace Admin5.Migrations
                             IdActivite = 170,
                             IdMesure = 59,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38570,8 +38570,8 @@ namespace Admin5.Migrations
                             IdActivite = 171,
                             IdMesure = 59,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38580,8 +38580,8 @@ namespace Admin5.Migrations
                             IdActivite = 172,
                             IdMesure = 59,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38590,8 +38590,8 @@ namespace Admin5.Migrations
                             IdActivite = 173,
                             IdMesure = 59,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38600,8 +38600,8 @@ namespace Admin5.Migrations
                             IdActivite = 174,
                             IdMesure = 58,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38610,8 +38610,8 @@ namespace Admin5.Migrations
                             IdActivite = 175,
                             IdMesure = 58,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38620,8 +38620,8 @@ namespace Admin5.Migrations
                             IdActivite = 176,
                             IdMesure = 58,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38630,8 +38630,8 @@ namespace Admin5.Migrations
                             IdActivite = 177,
                             IdMesure = 58,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38640,8 +38640,8 @@ namespace Admin5.Migrations
                             IdActivite = 178,
                             IdMesure = 59,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38650,8 +38650,8 @@ namespace Admin5.Migrations
                             IdActivite = 179,
                             IdMesure = 60,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38660,8 +38660,8 @@ namespace Admin5.Migrations
                             IdActivite = 180,
                             IdMesure = 60,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38670,8 +38670,8 @@ namespace Admin5.Migrations
                             IdActivite = 181,
                             IdMesure = 60,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38680,8 +38680,8 @@ namespace Admin5.Migrations
                             IdActivite = 182,
                             IdMesure = 60,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38690,8 +38690,8 @@ namespace Admin5.Migrations
                             IdActivite = 183,
                             IdMesure = 60,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38700,8 +38700,8 @@ namespace Admin5.Migrations
                             IdActivite = 184,
                             IdMesure = 61,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38740,8 +38740,8 @@ namespace Admin5.Migrations
                             IdActivite = 188,
                             IdMesure = 61,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38750,8 +38750,8 @@ namespace Admin5.Migrations
                             IdActivite = 189,
                             IdMesure = 61,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38760,8 +38760,8 @@ namespace Admin5.Migrations
                             IdActivite = 179,
                             IdMesure = 378,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38790,8 +38790,8 @@ namespace Admin5.Migrations
                             IdActivite = 182,
                             IdMesure = 378,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38800,8 +38800,8 @@ namespace Admin5.Migrations
                             IdActivite = 183,
                             IdMesure = 378,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38810,8 +38810,8 @@ namespace Admin5.Migrations
                             IdActivite = 190,
                             IdMesure = 62,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38840,8 +38840,8 @@ namespace Admin5.Migrations
                             IdActivite = 190,
                             IdMesure = 431,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -38870,7 +38870,7 @@ namespace Admin5.Migrations
                             IdActivite = 193,
                             IdMesure = 63,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -38880,7 +38880,7 @@ namespace Admin5.Migrations
                             IdActivite = 194,
                             IdMesure = 63,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -38890,7 +38890,7 @@ namespace Admin5.Migrations
                             IdActivite = 195,
                             IdMesure = 63,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -38900,7 +38900,7 @@ namespace Admin5.Migrations
                             IdActivite = 196,
                             IdMesure = 63,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -38920,8 +38920,8 @@ namespace Admin5.Migrations
                             IdActivite = 198,
                             IdMesure = 64,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38930,8 +38930,8 @@ namespace Admin5.Migrations
                             IdActivite = 199,
                             IdMesure = 64,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38940,8 +38940,8 @@ namespace Admin5.Migrations
                             IdActivite = 200,
                             IdMesure = 64,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38950,8 +38950,8 @@ namespace Admin5.Migrations
                             IdActivite = 201,
                             IdMesure = 65,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38960,8 +38960,8 @@ namespace Admin5.Migrations
                             IdActivite = 202,
                             IdMesure = 65,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38970,8 +38970,8 @@ namespace Admin5.Migrations
                             IdActivite = 203,
                             IdMesure = 65,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38980,8 +38980,8 @@ namespace Admin5.Migrations
                             IdActivite = 204,
                             IdMesure = 65,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -38990,8 +38990,8 @@ namespace Admin5.Migrations
                             IdActivite = 205,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39000,8 +39000,8 @@ namespace Admin5.Migrations
                             IdActivite = 206,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39010,8 +39010,8 @@ namespace Admin5.Migrations
                             IdActivite = 207,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39020,8 +39020,8 @@ namespace Admin5.Migrations
                             IdActivite = 208,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39030,8 +39030,8 @@ namespace Admin5.Migrations
                             IdActivite = 209,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39040,8 +39040,8 @@ namespace Admin5.Migrations
                             IdActivite = 210,
                             IdMesure = 66,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39060,8 +39060,8 @@ namespace Admin5.Migrations
                             IdActivite = 212,
                             IdMesure = 67,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39080,8 +39080,8 @@ namespace Admin5.Migrations
                             IdActivite = 214,
                             IdMesure = 67,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39090,8 +39090,8 @@ namespace Admin5.Migrations
                             IdActivite = 193,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39100,8 +39100,8 @@ namespace Admin5.Migrations
                             IdActivite = 194,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39110,8 +39110,8 @@ namespace Admin5.Migrations
                             IdActivite = 195,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39130,8 +39130,8 @@ namespace Admin5.Migrations
                             IdActivite = 197,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39140,8 +39140,8 @@ namespace Admin5.Migrations
                             IdActivite = 198,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39210,8 +39210,8 @@ namespace Admin5.Migrations
                             IdActivite = 205,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39250,8 +39250,8 @@ namespace Admin5.Migrations
                             IdActivite = 209,
                             IdMesure = 69,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39280,8 +39280,8 @@ namespace Admin5.Migrations
                             IdActivite = 212,
                             IdMesure = 69,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39300,8 +39300,8 @@ namespace Admin5.Migrations
                             IdActivite = 214,
                             IdMesure = 69,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39310,7 +39310,7 @@ namespace Admin5.Migrations
                             IdActivite = 215,
                             IdMesure = 68,
                             Nom = ".",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -39320,7 +39320,7 @@ namespace Admin5.Migrations
                             IdActivite = 216,
                             IdMesure = 68,
                             Nom = ".",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 60.0
                         },
                         new
@@ -39330,7 +39330,7 @@ namespace Admin5.Migrations
                             IdActivite = 217,
                             IdMesure = 68,
                             Nom = ".",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -39360,8 +39360,8 @@ namespace Admin5.Migrations
                             IdActivite = 220,
                             IdMesure = 69,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39370,8 +39370,8 @@ namespace Admin5.Migrations
                             IdActivite = 221,
                             IdMesure = 69,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39380,8 +39380,8 @@ namespace Admin5.Migrations
                             IdActivite = 222,
                             IdMesure = 70,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39390,8 +39390,8 @@ namespace Admin5.Migrations
                             IdActivite = 223,
                             IdMesure = 70,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39400,8 +39400,8 @@ namespace Admin5.Migrations
                             IdActivite = 224,
                             IdMesure = 70,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39410,8 +39410,8 @@ namespace Admin5.Migrations
                             IdActivite = 225,
                             IdMesure = 71,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39420,8 +39420,8 @@ namespace Admin5.Migrations
                             IdActivite = 226,
                             IdMesure = 72,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39430,8 +39430,8 @@ namespace Admin5.Migrations
                             IdActivite = 227,
                             IdMesure = 72,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39480,8 +39480,8 @@ namespace Admin5.Migrations
                             IdActivite = 228,
                             IdMesure = 249,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39490,8 +39490,8 @@ namespace Admin5.Migrations
                             IdActivite = 229,
                             IdMesure = 249,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39500,8 +39500,8 @@ namespace Admin5.Migrations
                             IdActivite = 230,
                             IdMesure = 249,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39590,8 +39590,8 @@ namespace Admin5.Migrations
                             IdActivite = 239,
                             IdMesure = 77,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39650,8 +39650,8 @@ namespace Admin5.Migrations
                             IdActivite = 245,
                             IdMesure = 372,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39690,8 +39690,8 @@ namespace Admin5.Migrations
                             IdActivite = 245,
                             IdMesure = 372,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -39740,8 +39740,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 81,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39750,8 +39750,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 81,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39760,8 +39760,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 81,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39770,8 +39770,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 81,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39780,8 +39780,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 81,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39790,8 +39790,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 370,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39800,8 +39800,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 370,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39810,8 +39810,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 370,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39820,8 +39820,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 370,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39830,8 +39830,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 370,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39840,8 +39840,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 432,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39850,8 +39850,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 432,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39860,8 +39860,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 432,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39870,8 +39870,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 432,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39880,8 +39880,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 432,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39890,8 +39890,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 434,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39900,8 +39900,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 434,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39910,8 +39910,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 434,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39920,8 +39920,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 434,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39930,8 +39930,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 434,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39940,8 +39940,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 378,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39950,8 +39950,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 378,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39960,8 +39960,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 378,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39970,8 +39970,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 378,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39980,8 +39980,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 378,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -39990,8 +39990,8 @@ namespace Admin5.Migrations
                             IdActivite = 250,
                             IdMesure = 435,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40000,8 +40000,8 @@ namespace Admin5.Migrations
                             IdActivite = 251,
                             IdMesure = 435,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40010,8 +40010,8 @@ namespace Admin5.Migrations
                             IdActivite = 252,
                             IdMesure = 435,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40020,8 +40020,8 @@ namespace Admin5.Migrations
                             IdActivite = 253,
                             IdMesure = 435,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40030,8 +40030,8 @@ namespace Admin5.Migrations
                             IdActivite = 254,
                             IdMesure = 435,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40050,8 +40050,8 @@ namespace Admin5.Migrations
                             IdActivite = 256,
                             IdMesure = 82,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40080,8 +40080,8 @@ namespace Admin5.Migrations
                             IdActivite = 256,
                             IdMesure = 87,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40110,8 +40110,8 @@ namespace Admin5.Migrations
                             IdActivite = 259,
                             IdMesure = 84,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40120,8 +40120,8 @@ namespace Admin5.Migrations
                             IdActivite = 260,
                             IdMesure = 84,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40130,8 +40130,8 @@ namespace Admin5.Migrations
                             IdActivite = 261,
                             IdMesure = 84,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40140,8 +40140,8 @@ namespace Admin5.Migrations
                             IdActivite = 262,
                             IdMesure = 84,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40150,8 +40150,8 @@ namespace Admin5.Migrations
                             IdActivite = 259,
                             IdMesure = 95,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40160,8 +40160,8 @@ namespace Admin5.Migrations
                             IdActivite = 260,
                             IdMesure = 95,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40170,8 +40170,8 @@ namespace Admin5.Migrations
                             IdActivite = 261,
                             IdMesure = 95,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40180,8 +40180,8 @@ namespace Admin5.Migrations
                             IdActivite = 262,
                             IdMesure = 95,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40190,8 +40190,8 @@ namespace Admin5.Migrations
                             IdActivite = 259,
                             IdMesure = 303,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40200,8 +40200,8 @@ namespace Admin5.Migrations
                             IdActivite = 260,
                             IdMesure = 303,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40210,8 +40210,8 @@ namespace Admin5.Migrations
                             IdActivite = 261,
                             IdMesure = 303,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40220,8 +40220,8 @@ namespace Admin5.Migrations
                             IdActivite = 262,
                             IdMesure = 303,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40230,8 +40230,8 @@ namespace Admin5.Migrations
                             IdActivite = 263,
                             IdMesure = 85,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40240,8 +40240,8 @@ namespace Admin5.Migrations
                             IdActivite = 264,
                             IdMesure = 85,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40250,8 +40250,8 @@ namespace Admin5.Migrations
                             IdActivite = 265,
                             IdMesure = 85,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40260,8 +40260,8 @@ namespace Admin5.Migrations
                             IdActivite = 266,
                             IdMesure = 85,
                             Nom = ".",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40270,8 +40270,8 @@ namespace Admin5.Migrations
                             IdActivite = 267,
                             IdMesure = 85,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40280,8 +40280,8 @@ namespace Admin5.Migrations
                             IdActivite = 268,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40290,8 +40290,8 @@ namespace Admin5.Migrations
                             IdActivite = 269,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40300,8 +40300,8 @@ namespace Admin5.Migrations
                             IdActivite = 270,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40310,8 +40310,8 @@ namespace Admin5.Migrations
                             IdActivite = 271,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40320,8 +40320,8 @@ namespace Admin5.Migrations
                             IdActivite = 272,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40330,8 +40330,8 @@ namespace Admin5.Migrations
                             IdActivite = 273,
                             IdMesure = 86,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40340,8 +40340,8 @@ namespace Admin5.Migrations
                             IdActivite = 268,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40350,8 +40350,8 @@ namespace Admin5.Migrations
                             IdActivite = 269,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40360,8 +40360,8 @@ namespace Admin5.Migrations
                             IdActivite = 270,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40370,8 +40370,8 @@ namespace Admin5.Migrations
                             IdActivite = 271,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40380,8 +40380,8 @@ namespace Admin5.Migrations
                             IdActivite = 272,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40390,8 +40390,8 @@ namespace Admin5.Migrations
                             IdActivite = 273,
                             IdMesure = 251,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40400,8 +40400,8 @@ namespace Admin5.Migrations
                             IdActivite = 268,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40410,8 +40410,8 @@ namespace Admin5.Migrations
                             IdActivite = 269,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40420,8 +40420,8 @@ namespace Admin5.Migrations
                             IdActivite = 270,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40430,8 +40430,8 @@ namespace Admin5.Migrations
                             IdActivite = 271,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40440,8 +40440,8 @@ namespace Admin5.Migrations
                             IdActivite = 272,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40450,8 +40450,8 @@ namespace Admin5.Migrations
                             IdActivite = 273,
                             IdMesure = 380,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40460,8 +40460,8 @@ namespace Admin5.Migrations
                             IdActivite = 268,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40470,8 +40470,8 @@ namespace Admin5.Migrations
                             IdActivite = 269,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40480,8 +40480,8 @@ namespace Admin5.Migrations
                             IdActivite = 270,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40490,8 +40490,8 @@ namespace Admin5.Migrations
                             IdActivite = 271,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40500,8 +40500,8 @@ namespace Admin5.Migrations
                             IdActivite = 272,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40510,8 +40510,8 @@ namespace Admin5.Migrations
                             IdActivite = 273,
                             IdMesure = 252,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40520,8 +40520,8 @@ namespace Admin5.Migrations
                             IdActivite = 274,
                             IdMesure = 88,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40670,8 +40670,8 @@ namespace Admin5.Migrations
                             IdActivite = 289,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40680,8 +40680,8 @@ namespace Admin5.Migrations
                             IdActivite = 290,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40690,8 +40690,8 @@ namespace Admin5.Migrations
                             IdActivite = 291,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40700,8 +40700,8 @@ namespace Admin5.Migrations
                             IdActivite = 292,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -40710,8 +40710,8 @@ namespace Admin5.Migrations
                             IdActivite = 293,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -40720,8 +40720,8 @@ namespace Admin5.Migrations
                             IdActivite = 294,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40730,8 +40730,8 @@ namespace Admin5.Migrations
                             IdActivite = 295,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40740,8 +40740,8 @@ namespace Admin5.Migrations
                             IdActivite = 296,
                             IdMesure = 91,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40750,8 +40750,8 @@ namespace Admin5.Migrations
                             IdActivite = 297,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40760,8 +40760,8 @@ namespace Admin5.Migrations
                             IdActivite = 298,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40770,8 +40770,8 @@ namespace Admin5.Migrations
                             IdActivite = 299,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40780,8 +40780,8 @@ namespace Admin5.Migrations
                             IdActivite = 300,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40790,8 +40790,8 @@ namespace Admin5.Migrations
                             IdActivite = 301,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40800,8 +40800,8 @@ namespace Admin5.Migrations
                             IdActivite = 302,
                             IdMesure = 92,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40830,8 +40830,8 @@ namespace Admin5.Migrations
                             IdActivite = 305,
                             IdMesure = 93,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40840,8 +40840,8 @@ namespace Admin5.Migrations
                             IdActivite = 306,
                             IdMesure = 93,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40850,8 +40850,8 @@ namespace Admin5.Migrations
                             IdActivite = 307,
                             IdMesure = 93,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40859,9 +40859,9 @@ namespace Admin5.Migrations
                             Annee = 2020,
                             IdActivite = 308,
                             IdMesure = 94,
-                            Nom = " عقد اتفاقيات شراكة مع المجالس الجهوية عقد لقاءات تشاورية جهوية مع مجالس الجماعات والقطاعات الحكومية المعنية وجمعيات المجتمع المدني للنهوض بالأليات التشاركية",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Nom = "تنظم مراكز الاستقبال والإعلام بالجامعات والمؤسسات الجامعية التابعة لها في شهر يوليوز من كل سنة، أيام مفتوحة للطلبة من أجل مساعدتهم في اختياراتهم المتعلقة بالدراسات الجامعية الأساسية والمهنية و إخبارهم حول البرامج ووتيرة المناهج المقترحة، والاطلاع على شروط القبول والتمكن من فهم أفضل لمجرى الدراسات واكتشاف أماكن التكوين التي توفرها الجامعة,",
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -40879,9 +40879,9 @@ namespace Admin5.Migrations
                             Annee = 2020,
                             IdActivite = 310,
                             IdMesure = 94,
-                            Nom = " ارتفاع العدد الإجمالي للطلبة الممنوحين (المغرب والخارج) بنسبة تقدر ب 5,5%؛  المصادقة على مشروع مرسوم رقم 2.20.407 بتغيير وتتميم المرسوم رقم 2.18.512 الصادر في 15 ماي 2019. (تحديد قيمة المنح حسب السلم)؛   إطلاق البوابة الإلكترونية  www.bouمنجزsessup-etمنجزangفي طور الإنجاز.onousc.ma  لإيداع طلبات المنح للطلبة الذين يتابعون الدراسة بالخارج إطلاق خدمة الكترونية https://e-منجزeclamation-bouمنجزsescnss.onousc.ma     للطلبة الذين تم إيقاف صرف منحتهم بسبب انخراطهم بالصندوق الوطني للضمان الاجتماعي؛ عقد اتفاقية مع الأكاديميات الجهوية للتربية والتكوين الاثني عشر لصرف منح التلاميذ .  وصل عدد الأحياء الجامعية والداخليات والإقامات الطلابية العامة أو الخاصة، برسم سنة 2019-2020 إلى  90 ( منها 22 حي جامعي)؛ ارتفاع الطاقة الإيوائية الاجمالية (عام وخاص) بنسبة 3% مقارنة مع سنة 2018-2019 (87071  سرير) حيث وصلت إلى 89628 سرير سنة 2019- 2020 (منها 52957 سرير على مستوى الاحياء الجامعية)؛ ويقدر معدل الاستجابة لطلبات السكن ب 42% من مجموع الطلبات المقدمة؛ إبرام 14 اتفاقية مع مختلف المنعشين العقاريين من أجل بناء إقامات طلابية جديدة؛ رفع الحصة المخصصة للطلبة الأجانب ليصل بذلك عدد الطلبة القاطنين إلى 1222 سرير. (زيادة 6,5  % مقارنة مع سنة 2018-2019)؛ اعتماد منصة الكترونية جديدة logement.onousc.ma لإيداع طلبات السكن. بلغ عدد الوجبات المقدمة للطلبة بمختلف المطاعم الجامعية بالمملكة 8254686 وجبة (الى حدود 16 مارس 2020). اعتماد البطائق الالكترونية في تدبير المطاعم الجامعية( إطلاق العملية كمرحلة أولى بأربع مطاعم جامعية . افتتاح وتجهيز المركز الصحي بالحي الجامعي الناظور وتوسعة المركز الصحي بالحي الجامعي وجدة ليصل عدد  إطلاق مجموعة من الحملات الطبية وأنشطة التثقيف الصحي وتضاعف مجهودات الحفاظ على نظافة المرافق واحترام شروط الصحة والسلامة العامة، خصوصا بعد الإعلان عن ظهور أول حالة إصابة بفيروس كورونا بالمملكة؛ تخصيص ما يفوق مليوني درهم من ميزانيته لاقتناء الأدوية والمنتجات الصيدلانية برسم سنة 2019-2020.   ارتفاع عدد المؤمنين بنظام التأمين الاجباري عن المرض الخاص بالطلبة",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Nom = " ارتفاع العدد الإجمالي للطلبة الممنوحين (المغرب والخارج) بنسبة تقدر ب 5,5%؛  المصادقة على مشروع مرسوم رقم 2.20.407 بتغيير وتتميم المرسوم رقم 2.18.512 الصادر في 15 ماي 2019. (تحديد قيمة المنح حسب السلم)؛  إطلاق البوابة الإلكترونية  www.boursessup-etrangAC.onousc.ma  لإيداع طلبات المنح للطلبة الذين يتابعون الدراسة بالخارج  إطلاق خدمة الكترونية https://e-reclamation-boursescnss.onousc.ma     للطلبة الذين تم إيقاف صرف منحتهم بسبب انخراطهم بالصندوق الوطني للضمان الاجتماعي؛  عقد اتفاقية مع الأكاديميات الجهوية للتربية والتكوين الاثني عشر لصرف منح التلاميذ .  وصل عدد الأحياء الجامعية والداخليات الإقامات الطلابية العامة أو الخاصة، برسم سنة 2019-2020 إلى  90 ( منها 22 حي جامعي)؛  ارتفاع الطاقة الإيوائية الاجمالية (عام وخاص) بنسبة 3% مقارنة مع سنة 2018-2019 (87071  سرير) حيث وصلت إلى 89628 سرير سنة 2019- 2020 (منها 52957 سرير على مستوى الاحياء الجامعية)؛  ويقدر معدل الاستجابة لطلبات السكن ب42% من مجموع الطلبات المقدمة؛  إبرام 14 اتفاقية مع مختلف المنعشين العقاريين من أجل بناء إقامات طلابية جديدة؛  رفع الحصة المخصصة للطلبة الأجانب ليصل بذلك عدد الطلبة القاطنين إلى 1222 سرير. (زيادة 6,5  % مقارنة مع سنة 2018-2019)؛  اعتماد منصة الكترونية جديدة logement.onousc.ma لإيداع طلبات السكن.  بلغ عدد الوجبات المقدمة للطلبة بمختلف المطاعم الجامعية بالمملكة 8254686 وجبة (الى حدود 16 مارس 2020).  اعتماد البطائق الالكترونية في تدبير المطاعم الجامعية( إطلاق العملية كمرحلة أولى بأربع مطاعم جامعية .  افتتاح وتجهيز المركز الصحي بالحي الجامعي الناظور وتوسعة المركز الصحي بالحي الجامعي وجدة ليصل عدد  إطلاق مجموعة من الحملات الطبية وأنشطة التثقيف الصحي وتضاعف مجهودات الحفاظ على نظافة المرافق واحترام شروط الصحة والسلامة العامة، خصوصا بعد الإعلان عن ظهور أول حالة إصابة بفيروس كورونا بالمملكة؛  تخصيص ما يفوق مليوني درهم من ميزانيته لاقتناء الأدوية والمنتجات الصيدلانية برسم سنة 2019-2020.   ارتفاع عدد المؤمنين بنظام التأمين الاجباري عن المرض الخاص بالطلبة",
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -41010,8 +41010,8 @@ namespace Admin5.Migrations
                             IdActivite = 318,
                             IdMesure = 303,
                             Nom = "تعزيز وتقوية الشراكة -إبرام اتفاقية إطار للشراكة (21-12-2017) بين الوزارة والوزارة المنتدبة المكلفة بالمغاربة المقيمين بالخارج وشؤون الهجرة من أجل تنفيذ السياسة الوطنية للهجرة واللجوء والسياسة الحكومية المتعلقة بالمغاربة المقيمين بالخارج من خلال لاسيما إدماج بعد الهجرة في برامج التكوين والبحث المعتمدة من طرف الوزارة وكذا تشجيع إحداث مراصد ومراكز وفرق بحث وعيادات قانونية وتنظيم الملتقيات في ميدان الهجرة واللجوء -توقيع مذكرة تفاهم بين الوزارة والمندوبية السامية لإدارة السجون وإعادة الإدماج وجامعة محمد الخامس- الرباط ومؤسسة محمد السادس لإعادة إدماج السجناء، تهم إحداث فضاءات جامعية سجنية (25-09-2019)",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -41200,8 +41200,8 @@ namespace Admin5.Migrations
                             IdActivite = 332,
                             IdMesure = 100,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -41220,8 +41220,8 @@ namespace Admin5.Migrations
                             IdActivite = 334,
                             IdMesure = 100,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41230,8 +41230,8 @@ namespace Admin5.Migrations
                             IdActivite = 335,
                             IdMesure = 100,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41250,8 +41250,8 @@ namespace Admin5.Migrations
                             IdActivite = 337,
                             IdMesure = 100,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41320,8 +41320,8 @@ namespace Admin5.Migrations
                             IdActivite = 339,
                             IdMesure = 102,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41330,8 +41330,8 @@ namespace Admin5.Migrations
                             IdActivite = 340,
                             IdMesure = 102,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41340,8 +41340,8 @@ namespace Admin5.Migrations
                             IdActivite = 341,
                             IdMesure = 102,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41360,8 +41360,8 @@ namespace Admin5.Migrations
                             IdActivite = 343,
                             IdMesure = 102,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41370,8 +41370,8 @@ namespace Admin5.Migrations
                             IdActivite = 344,
                             IdMesure = 102,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41410,8 +41410,8 @@ namespace Admin5.Migrations
                             IdActivite = 339,
                             IdMesure = 426,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41430,8 +41430,8 @@ namespace Admin5.Migrations
                             IdActivite = 341,
                             IdMesure = 426,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41450,8 +41450,8 @@ namespace Admin5.Migrations
                             IdActivite = 343,
                             IdMesure = 426,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41460,8 +41460,8 @@ namespace Admin5.Migrations
                             IdActivite = 344,
                             IdMesure = 426,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41490,8 +41490,8 @@ namespace Admin5.Migrations
                             IdActivite = 347,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41510,8 +41510,8 @@ namespace Admin5.Migrations
                             IdActivite = 349,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41520,8 +41520,8 @@ namespace Admin5.Migrations
                             IdActivite = 350,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41530,8 +41530,8 @@ namespace Admin5.Migrations
                             IdActivite = 351,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41540,8 +41540,8 @@ namespace Admin5.Migrations
                             IdActivite = 352,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41550,8 +41550,8 @@ namespace Admin5.Migrations
                             IdActivite = 353,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41560,8 +41560,8 @@ namespace Admin5.Migrations
                             IdActivite = 354,
                             IdMesure = 103,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41640,8 +41640,8 @@ namespace Admin5.Migrations
                             IdActivite = 362,
                             IdMesure = 107,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41650,8 +41650,8 @@ namespace Admin5.Migrations
                             IdActivite = 363,
                             IdMesure = 107,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41660,8 +41660,8 @@ namespace Admin5.Migrations
                             IdActivite = 364,
                             IdMesure = 107,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41670,8 +41670,8 @@ namespace Admin5.Migrations
                             IdActivite = 362,
                             IdMesure = 109,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41680,8 +41680,8 @@ namespace Admin5.Migrations
                             IdActivite = 363,
                             IdMesure = 109,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41690,8 +41690,8 @@ namespace Admin5.Migrations
                             IdActivite = 364,
                             IdMesure = 109,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41700,8 +41700,8 @@ namespace Admin5.Migrations
                             IdActivite = 362,
                             IdMesure = 122,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41710,8 +41710,8 @@ namespace Admin5.Migrations
                             IdActivite = 363,
                             IdMesure = 122,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41720,8 +41720,8 @@ namespace Admin5.Migrations
                             IdActivite = 364,
                             IdMesure = 122,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41750,8 +41750,8 @@ namespace Admin5.Migrations
                             IdActivite = 367,
                             IdMesure = 108,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41790,8 +41790,8 @@ namespace Admin5.Migrations
                             IdActivite = 367,
                             IdMesure = 109,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41870,8 +41870,8 @@ namespace Admin5.Migrations
                             IdActivite = 367,
                             IdMesure = 321,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41900,8 +41900,8 @@ namespace Admin5.Migrations
                             IdActivite = 370,
                             IdMesure = 109,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41920,8 +41920,8 @@ namespace Admin5.Migrations
                             IdActivite = 370,
                             IdMesure = 122,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -41980,8 +41980,8 @@ namespace Admin5.Migrations
                             IdActivite = 376,
                             IdMesure = 111,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -41990,8 +41990,8 @@ namespace Admin5.Migrations
                             IdActivite = 377,
                             IdMesure = 111,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42050,8 +42050,8 @@ namespace Admin5.Migrations
                             IdActivite = 381,
                             IdMesure = 113,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42060,8 +42060,8 @@ namespace Admin5.Migrations
                             IdActivite = 382,
                             IdMesure = 113,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42070,8 +42070,8 @@ namespace Admin5.Migrations
                             IdActivite = 383,
                             IdMesure = 113,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42120,8 +42120,8 @@ namespace Admin5.Migrations
                             IdActivite = 388,
                             IdMesure = 114,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42140,8 +42140,8 @@ namespace Admin5.Migrations
                             IdActivite = 390,
                             IdMesure = 114,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42190,8 +42190,8 @@ namespace Admin5.Migrations
                             IdActivite = 388,
                             IdMesure = 123,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42200,8 +42200,8 @@ namespace Admin5.Migrations
                             IdActivite = 389,
                             IdMesure = 123,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42210,8 +42210,8 @@ namespace Admin5.Migrations
                             IdActivite = 390,
                             IdMesure = 123,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42220,8 +42220,8 @@ namespace Admin5.Migrations
                             IdActivite = 391,
                             IdMesure = 115,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42240,8 +42240,8 @@ namespace Admin5.Migrations
                             IdActivite = 393,
                             IdMesure = 115,
                             Nom = ".",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42290,8 +42290,8 @@ namespace Admin5.Migrations
                             IdActivite = 398,
                             IdMesure = 117,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42330,8 +42330,8 @@ namespace Admin5.Migrations
                             IdActivite = 402,
                             IdMesure = 119,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42340,7 +42340,7 @@ namespace Admin5.Migrations
                             IdActivite = 403,
                             IdMesure = 119,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -42350,8 +42350,8 @@ namespace Admin5.Migrations
                             IdActivite = 404,
                             IdMesure = 119,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42440,8 +42440,8 @@ namespace Admin5.Migrations
                             IdActivite = 411,
                             IdMesure = 123,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42450,8 +42450,8 @@ namespace Admin5.Migrations
                             IdActivite = 412,
                             IdMesure = 124,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42460,8 +42460,8 @@ namespace Admin5.Migrations
                             IdActivite = 413,
                             IdMesure = 124,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42520,8 +42520,8 @@ namespace Admin5.Migrations
                             IdActivite = 419,
                             IdMesure = 126,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42530,8 +42530,8 @@ namespace Admin5.Migrations
                             IdActivite = 420,
                             IdMesure = 126,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -42540,7 +42540,7 @@ namespace Admin5.Migrations
                             IdActivite = 421,
                             IdMesure = 127,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -42550,8 +42550,8 @@ namespace Admin5.Migrations
                             IdActivite = 422,
                             IdMesure = 128,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42580,8 +42580,8 @@ namespace Admin5.Migrations
                             IdActivite = 425,
                             IdMesure = 128,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42590,8 +42590,8 @@ namespace Admin5.Migrations
                             IdActivite = 422,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42600,8 +42600,8 @@ namespace Admin5.Migrations
                             IdActivite = 423,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42610,8 +42610,8 @@ namespace Admin5.Migrations
                             IdActivite = 424,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42620,8 +42620,8 @@ namespace Admin5.Migrations
                             IdActivite = 425,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42710,8 +42710,8 @@ namespace Admin5.Migrations
                             IdActivite = 427,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42720,8 +42720,8 @@ namespace Admin5.Migrations
                             IdActivite = 428,
                             IdMesure = 129,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42920,8 +42920,8 @@ namespace Admin5.Migrations
                             IdActivite = 445,
                             IdMesure = 134,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42930,8 +42930,8 @@ namespace Admin5.Migrations
                             IdActivite = 446,
                             IdMesure = 134,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42940,8 +42940,8 @@ namespace Admin5.Migrations
                             IdActivite = 447,
                             IdMesure = 134,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42950,8 +42950,8 @@ namespace Admin5.Migrations
                             IdActivite = 448,
                             IdMesure = 134,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42960,8 +42960,8 @@ namespace Admin5.Migrations
                             IdActivite = 449,
                             IdMesure = 135,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42970,8 +42970,8 @@ namespace Admin5.Migrations
                             IdActivite = 450,
                             IdMesure = 135,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -42980,8 +42980,8 @@ namespace Admin5.Migrations
                             IdActivite = 451,
                             IdMesure = 135,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43020,8 +43020,8 @@ namespace Admin5.Migrations
                             IdActivite = 455,
                             IdMesure = 137,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43080,7 +43080,7 @@ namespace Admin5.Migrations
                             IdActivite = 461,
                             IdMesure = 140,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -43100,7 +43100,7 @@ namespace Admin5.Migrations
                             IdActivite = 463,
                             IdMesure = 140,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 5.0
                         },
                         new
@@ -43130,7 +43130,7 @@ namespace Admin5.Migrations
                             IdActivite = 466,
                             IdMesure = 141,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.0
                         },
                         new
@@ -43140,7 +43140,7 @@ namespace Admin5.Migrations
                             IdActivite = 467,
                             IdMesure = 141,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 99.0
                         },
                         new
@@ -43150,7 +43150,7 @@ namespace Admin5.Migrations
                             IdActivite = 468,
                             IdMesure = 141,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 60.0
                         },
                         new
@@ -43160,8 +43160,8 @@ namespace Admin5.Migrations
                             IdActivite = 469,
                             IdMesure = 141,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43170,8 +43170,8 @@ namespace Admin5.Migrations
                             IdActivite = 470,
                             IdMesure = 142,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43180,8 +43180,8 @@ namespace Admin5.Migrations
                             IdActivite = 471,
                             IdMesure = 142,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43190,8 +43190,8 @@ namespace Admin5.Migrations
                             IdActivite = 472,
                             IdMesure = 142,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43200,8 +43200,8 @@ namespace Admin5.Migrations
                             IdActivite = 473,
                             IdMesure = 142,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43210,8 +43210,8 @@ namespace Admin5.Migrations
                             IdActivite = 474,
                             IdMesure = 142,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43220,8 +43220,8 @@ namespace Admin5.Migrations
                             IdActivite = 475,
                             IdMesure = 143,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43240,8 +43240,8 @@ namespace Admin5.Migrations
                             IdActivite = 477,
                             IdMesure = 143,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43260,7 +43260,7 @@ namespace Admin5.Migrations
                             IdActivite = 479,
                             IdMesure = 144,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -43270,8 +43270,8 @@ namespace Admin5.Migrations
                             IdActivite = 480,
                             IdMesure = 144,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43290,8 +43290,8 @@ namespace Admin5.Migrations
                             IdActivite = 482,
                             IdMesure = 146,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43300,8 +43300,8 @@ namespace Admin5.Migrations
                             IdActivite = 483,
                             IdMesure = 146,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43310,8 +43310,8 @@ namespace Admin5.Migrations
                             IdActivite = 484,
                             IdMesure = 146,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43320,8 +43320,8 @@ namespace Admin5.Migrations
                             IdActivite = 485,
                             IdMesure = 146,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43330,8 +43330,8 @@ namespace Admin5.Migrations
                             IdActivite = 486,
                             IdMesure = 146,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43340,8 +43340,8 @@ namespace Admin5.Migrations
                             IdActivite = 487,
                             IdMesure = 147,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43350,8 +43350,8 @@ namespace Admin5.Migrations
                             IdActivite = 488,
                             IdMesure = 147,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43360,8 +43360,8 @@ namespace Admin5.Migrations
                             IdActivite = 489,
                             IdMesure = 147,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43370,8 +43370,8 @@ namespace Admin5.Migrations
                             IdActivite = 490,
                             IdMesure = 147,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43380,8 +43380,8 @@ namespace Admin5.Migrations
                             IdActivite = 491,
                             IdMesure = 148,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43390,8 +43390,8 @@ namespace Admin5.Migrations
                             IdActivite = 492,
                             IdMesure = 148,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43400,8 +43400,8 @@ namespace Admin5.Migrations
                             IdActivite = 493,
                             IdMesure = 148,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43460,7 +43460,7 @@ namespace Admin5.Migrations
                             IdActivite = 499,
                             IdMesure = 151,
                             Nom = "أنشطة الحوار المجتمعي بخصوص الانضمام إلى اتفاقية منظمة العمل الدولية رقم 87 بشأن الحرية النقابية وحماية حق التنظيم النقابي، في إطار طلب عروض مشاريع سنة 2019",
-                            Situation = "في طور الإنجاز",
+                            Situation = "منجز",
                             TauxRealisation = 63.159999999999997
                         },
                         new
@@ -43470,8 +43470,8 @@ namespace Admin5.Migrations
                             IdActivite = 500,
                             IdMesure = 151,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43480,8 +43480,8 @@ namespace Admin5.Migrations
                             IdActivite = 501,
                             IdMesure = 151,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43530,8 +43530,8 @@ namespace Admin5.Migrations
                             IdActivite = 502,
                             IdMesure = 213,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43540,8 +43540,8 @@ namespace Admin5.Migrations
                             IdActivite = 503,
                             IdMesure = 213,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43550,7 +43550,7 @@ namespace Admin5.Migrations
                             IdActivite = 504,
                             IdMesure = 153,
                             Nom = "'- تم اصدار دورية مشتركة رقم 66 بتاريخ 6 دجنبر 2019 بين وزارة الشغل و الادماج المهني و وزارة الداخلية حول تركيبة و اختصاصات اللجن الجهوية و الاقليمية للحوار الاجتماعي.- تم خلال الستة اشهر الاولى من سنة 2019 دراسة 38 شكاية على المستوى الوطني، منها 13 شكاية فردية و 25 شكاية جماعية، كما تمت دراسة 13 نزاعا جماعيا على مستوى اللجنة الوطنية للبحث و المصالحة.- تم عقد اجتماعات الهيات الاستشارية الثلاثية التركيب التي تعنى بالحوار الاجتماعي الموضوعاتي و تئمين مخرجاته ( المجلس الاعلى لانعاش التشغيل، اللجنة المكلفة بالتشاور بشأن معايير العمل الدولية، اللجنة المختصة بتتبع التطبيق السليم للمقتضيات المتعلقة بمقاولات التشغيل المؤقت، مجلس طب الشغل و الوقاية من المخاطر المهنية، مجلس المفاوضة الجماعية.- مواصلة تنفيذ البرنامج الوطني للنهوض بالمفوضية الجماعية و تشجيع ابرام اتفاقيات الشغل الجماعية بتتبع ما مجموعه 133 مقاولة على الصعيد الوطني؛ وايداع 9 اتفاقيات جماعية للشغل، الى حدود نهاية شتنبر 2019.E506",
-                            Situation = "منجز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 100.0
                         },
                         new
@@ -43580,7 +43580,7 @@ namespace Admin5.Migrations
                             IdActivite = 504,
                             IdMesure = 293,
                             Nom = "",
-                            Situation = "منجز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 100.0
                         },
                         new
@@ -43610,7 +43610,7 @@ namespace Admin5.Migrations
                             IdActivite = 504,
                             IdMesure = 252,
                             Nom = "",
-                            Situation = "منجز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 100.0
                         },
                         new
@@ -43650,8 +43650,8 @@ namespace Admin5.Migrations
                             IdActivite = 508,
                             IdMesure = 154,
                             Nom = " فتح التخصصات التكوينية لفائدة الفتيات و مواكبة الفتيات في وضعية ضعبة من خلال :* احداث مراكز تكوينية متخصصة خصوصا بالاحياء المهمشة من اجل تاهيلهن و تيسير ادماجهن بسوق الشغل* احداث داخليات لاواء المتدربات خصوصا المنحدرات من العالم القروي - توسيع شبكة الوحدات المتنقلة للتكوين التابعة لمكتب التكوين المهني و انعاش الشغل لتسهيل استفادة الفتيات خصوصا بالمناطق النائية-'• وضع برامج خاصة تستهدف تكوين وتأهيل النساء والمساهمة في ادماجهن في سوق الشغل. حيث أطلقت وزارة الشغل والإدماج المهني النسخة الثانية من مشروع 'من أجلك' لمدة 5 سنوات 2017-2021. بتعاون بلجيكي. ويهدف هذا المشروع الموجه خصيصا للنساء إلى تحقيق التمكين الاقتصادي للنساء بالمغرب",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -43660,8 +43660,8 @@ namespace Admin5.Migrations
                             IdActivite = 509,
                             IdMesure = 154,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43670,7 +43670,7 @@ namespace Admin5.Migrations
                             IdActivite = 510,
                             IdMesure = 155,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -43690,8 +43690,8 @@ namespace Admin5.Migrations
                             IdActivite = 512,
                             IdMesure = 155,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43720,8 +43720,8 @@ namespace Admin5.Migrations
                             IdActivite = 515,
                             IdMesure = 156,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43730,8 +43730,8 @@ namespace Admin5.Migrations
                             IdActivite = 516,
                             IdMesure = 156,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43760,8 +43760,8 @@ namespace Admin5.Migrations
                             IdActivite = 515,
                             IdMesure = 293,
                             Nom = "'- 266 مشروعا لدعم الاستثمار التنموي باستثمار إجمالي يبلغ 4.2 مليار درهم و7 مشاريع خلال سنوات 2017 – 2018 -2019 في إطار برنامج الاستثمار التكنولوجي باستثمار إجمالي يبلغ 40.2 مليون درهم.  مواكبة 1392 مشروعا استثماريا فرديا لفائدة مقاولات صغيرة جدا وصغرى ومتوسطة من 2017 إلى 2019، تهم الانطلاق والنمو والتحويل. ",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43770,8 +43770,8 @@ namespace Admin5.Migrations
                             IdActivite = 516,
                             IdMesure = 293,
                             Nom = "مواكبة 1119 مشروعا للدعم التقني بكلفة إجمالية للخدمات: 268 مليون درهم خلال من 2017 إلى 2019.",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43800,8 +43800,8 @@ namespace Admin5.Migrations
                             IdActivite = 515,
                             IdMesure = 395,
                             Nom = "'- 266 مشروعا لدعم الاستثمار التنموي باستثمار إجمالي يبلغ 4.2 مليار درهم و7 مشاريع خلال سنوات 2017 – 2018 -2019 في إطار برنامج الاستثمار التكنولوجي باستثمار إجمالي يبلغ 40.2 مليون درهم.- مواكبة 1392 مشروعا استثماريا فرديا لفائدة مقاولات صغيرة جدا وصغرى ومتوسطة من 2017 إلى 2019، تهم الانطلاق والنمو والتحويل.",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -43810,8 +43810,8 @@ namespace Admin5.Migrations
                             IdActivite = 516,
                             IdMesure = 395,
                             Nom = "مواكبة 1119 مشروعا للدعم التقني بكلفة إجمالية للخدمات: 268 مليون درهم خلال من 2017 إلى 2019.",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44070,8 +44070,8 @@ namespace Admin5.Migrations
                             IdActivite = 522,
                             IdMesure = 158,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44080,7 +44080,7 @@ namespace Admin5.Migrations
                             IdActivite = 523,
                             IdMesure = 159,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -44090,7 +44090,7 @@ namespace Admin5.Migrations
                             IdActivite = 524,
                             IdMesure = 159,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -44160,8 +44160,8 @@ namespace Admin5.Migrations
                             IdActivite = 531,
                             IdMesure = 162,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44170,8 +44170,8 @@ namespace Admin5.Migrations
                             IdActivite = 532,
                             IdMesure = 162,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44180,8 +44180,8 @@ namespace Admin5.Migrations
                             IdActivite = 533,
                             IdMesure = 162,
                             Nom = "'- لمواكبة دخول القانون رقم 19-12 بتحديد شروط الشغل و التشغيل المتعلقة بالعاملات و العمال المنزليين حيز التنفيذ، تم انجاز حملتين تحسيسيتين لفائدة الفاعلين في هذا المجال في كل من فاس و مراكش، و تنظيم يوم دراسي حضرته جميع القطاعات المعنية بما فيها وزارة العدل و رئاسة النيابة العامة من اجل تعزيز التنسيق لضمان حسن احترام مقتضيات القانون السالف الذكر و نصوصه التطبيقية. -تم ابرام 19 اتفاقية شراكة مع الجمعيات العاملة في مجال محاربة تشغيل وحماية حقوق المرأة في العمل برسم سنة 2019. بهدف القيام خاصة بأنشطة وبرامج تحسيسية و توعوية بمقتضيات مدونة الشغل ذات الصلة بالحقوق الشغلية للفئات الخاصة.",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44230,8 +44230,8 @@ namespace Admin5.Migrations
                             IdActivite = 538,
                             IdMesure = 164,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44240,8 +44240,8 @@ namespace Admin5.Migrations
                             IdActivite = 539,
                             IdMesure = 164,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44250,8 +44250,8 @@ namespace Admin5.Migrations
                             IdActivite = 540,
                             IdMesure = 164,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -44270,7 +44270,7 @@ namespace Admin5.Migrations
                             IdActivite = 542,
                             IdMesure = 165,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 40.0
                         },
                         new
@@ -44300,7 +44300,7 @@ namespace Admin5.Migrations
                             IdActivite = 545,
                             IdMesure = 166,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -44310,7 +44310,7 @@ namespace Admin5.Migrations
                             IdActivite = 546,
                             IdMesure = 166,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -44320,7 +44320,7 @@ namespace Admin5.Migrations
                             IdActivite = 547,
                             IdMesure = 166,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -44380,7 +44380,7 @@ namespace Admin5.Migrations
                             IdActivite = 555,
                             IdMesure = 168,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -44390,8 +44390,8 @@ namespace Admin5.Migrations
                             IdActivite = 556,
                             IdMesure = 168,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44410,8 +44410,8 @@ namespace Admin5.Migrations
                             IdActivite = 558,
                             IdMesure = 169,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44650,8 +44650,8 @@ namespace Admin5.Migrations
                             IdActivite = 582,
                             IdMesure = 178,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44740,8 +44740,8 @@ namespace Admin5.Migrations
                             IdActivite = 591,
                             IdMesure = 181,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -44750,8 +44750,8 @@ namespace Admin5.Migrations
                             IdActivite = 592,
                             IdMesure = 181,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44780,8 +44780,8 @@ namespace Admin5.Migrations
                             IdActivite = 591,
                             IdMesure = 183,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -44800,7 +44800,7 @@ namespace Admin5.Migrations
                             IdActivite = 593,
                             IdMesure = 182,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -44810,7 +44810,7 @@ namespace Admin5.Migrations
                             IdActivite = 594,
                             IdMesure = 182,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -44820,8 +44820,8 @@ namespace Admin5.Migrations
                             IdActivite = 595,
                             IdMesure = 182,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44830,8 +44830,8 @@ namespace Admin5.Migrations
                             IdActivite = 596,
                             IdMesure = 182,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -44840,8 +44840,8 @@ namespace Admin5.Migrations
                             IdActivite = 597,
                             IdMesure = 183,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -44850,8 +44850,8 @@ namespace Admin5.Migrations
                             IdActivite = 598,
                             IdMesure = 183,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -44860,7 +44860,7 @@ namespace Admin5.Migrations
                             IdActivite = 599,
                             IdMesure = 184,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44870,7 +44870,7 @@ namespace Admin5.Migrations
                             IdActivite = 600,
                             IdMesure = 184,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44880,7 +44880,7 @@ namespace Admin5.Migrations
                             IdActivite = 601,
                             IdMesure = 185,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44890,7 +44890,7 @@ namespace Admin5.Migrations
                             IdActivite = 602,
                             IdMesure = 185,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -44900,7 +44900,7 @@ namespace Admin5.Migrations
                             IdActivite = 603,
                             IdMesure = 185,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -44910,7 +44910,7 @@ namespace Admin5.Migrations
                             IdActivite = 604,
                             IdMesure = 186,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44920,7 +44920,7 @@ namespace Admin5.Migrations
                             IdActivite = 605,
                             IdMesure = 186,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44930,7 +44930,7 @@ namespace Admin5.Migrations
                             IdActivite = 606,
                             IdMesure = 188,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44940,7 +44940,7 @@ namespace Admin5.Migrations
                             IdActivite = 607,
                             IdMesure = 188,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -44950,7 +44950,7 @@ namespace Admin5.Migrations
                             IdActivite = 608,
                             IdMesure = 189,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -44960,7 +44960,7 @@ namespace Admin5.Migrations
                             IdActivite = 609,
                             IdMesure = 189,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -44970,7 +44970,7 @@ namespace Admin5.Migrations
                             IdActivite = 610,
                             IdMesure = 189,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -44980,7 +44980,7 @@ namespace Admin5.Migrations
                             IdActivite = 611,
                             IdMesure = 190,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -45020,8 +45020,8 @@ namespace Admin5.Migrations
                             IdActivite = 615,
                             IdMesure = 192,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45030,8 +45030,8 @@ namespace Admin5.Migrations
                             IdActivite = 616,
                             IdMesure = 192,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45140,8 +45140,8 @@ namespace Admin5.Migrations
                             IdActivite = 627,
                             IdMesure = 195,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45150,8 +45150,8 @@ namespace Admin5.Migrations
                             IdActivite = 628,
                             IdMesure = 195,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45200,7 +45200,7 @@ namespace Admin5.Migrations
                             IdActivite = 627,
                             IdMesure = 208,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -45210,8 +45210,8 @@ namespace Admin5.Migrations
                             IdActivite = 628,
                             IdMesure = 208,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45260,8 +45260,8 @@ namespace Admin5.Migrations
                             IdActivite = 627,
                             IdMesure = 209,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45270,8 +45270,8 @@ namespace Admin5.Migrations
                             IdActivite = 628,
                             IdMesure = 209,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45380,7 +45380,7 @@ namespace Admin5.Migrations
                             IdActivite = 639,
                             IdMesure = 199,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -45420,7 +45420,7 @@ namespace Admin5.Migrations
                             IdActivite = 643,
                             IdMesure = 199,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 75.0
                         },
                         new
@@ -45430,8 +45430,8 @@ namespace Admin5.Migrations
                             IdActivite = 644,
                             IdMesure = 199,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45460,8 +45460,8 @@ namespace Admin5.Migrations
                             IdActivite = 647,
                             IdMesure = 201,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45470,8 +45470,8 @@ namespace Admin5.Migrations
                             IdActivite = 648,
                             IdMesure = 201,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45480,8 +45480,8 @@ namespace Admin5.Migrations
                             IdActivite = 649,
                             IdMesure = 201,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45530,8 +45530,8 @@ namespace Admin5.Migrations
                             IdActivite = 654,
                             IdMesure = 202,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45570,8 +45570,8 @@ namespace Admin5.Migrations
                             IdActivite = 658,
                             IdMesure = 203,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45650,8 +45650,8 @@ namespace Admin5.Migrations
                             IdActivite = 666,
                             IdMesure = 205,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45740,7 +45740,7 @@ namespace Admin5.Migrations
                             IdActivite = 675,
                             IdMesure = 208,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -45760,8 +45760,8 @@ namespace Admin5.Migrations
                             IdActivite = 677,
                             IdMesure = 210,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45790,8 +45790,8 @@ namespace Admin5.Migrations
                             IdActivite = 680,
                             IdMesure = 210,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45800,8 +45800,8 @@ namespace Admin5.Migrations
                             IdActivite = 681,
                             IdMesure = 210,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -45810,8 +45810,8 @@ namespace Admin5.Migrations
                             IdActivite = 682,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45820,8 +45820,8 @@ namespace Admin5.Migrations
                             IdActivite = 683,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45830,8 +45830,8 @@ namespace Admin5.Migrations
                             IdActivite = 684,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45840,8 +45840,8 @@ namespace Admin5.Migrations
                             IdActivite = 685,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45850,8 +45850,8 @@ namespace Admin5.Migrations
                             IdActivite = 686,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45860,7 +45860,7 @@ namespace Admin5.Migrations
                             IdActivite = 687,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 20.0
                         },
                         new
@@ -45870,8 +45870,8 @@ namespace Admin5.Migrations
                             IdActivite = 688,
                             IdMesure = 211,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45880,8 +45880,8 @@ namespace Admin5.Migrations
                             IdActivite = 682,
                             IdMesure = 213,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45890,8 +45890,8 @@ namespace Admin5.Migrations
                             IdActivite = 683,
                             IdMesure = 213,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45920,8 +45920,8 @@ namespace Admin5.Migrations
                             IdActivite = 686,
                             IdMesure = 212,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -45940,8 +45940,8 @@ namespace Admin5.Migrations
                             IdActivite = 688,
                             IdMesure = 212,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46010,8 +46010,8 @@ namespace Admin5.Migrations
                             IdActivite = 695,
                             IdMesure = 215,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46040,8 +46040,8 @@ namespace Admin5.Migrations
                             IdActivite = 698,
                             IdMesure = 216,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46200,8 +46200,8 @@ namespace Admin5.Migrations
                             IdActivite = 714,
                             IdMesure = 222,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46210,8 +46210,8 @@ namespace Admin5.Migrations
                             IdActivite = 715,
                             IdMesure = 222,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46220,8 +46220,8 @@ namespace Admin5.Migrations
                             IdActivite = 716,
                             IdMesure = 222,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46240,8 +46240,8 @@ namespace Admin5.Migrations
                             IdActivite = 718,
                             IdMesure = 222,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46260,8 +46260,8 @@ namespace Admin5.Migrations
                             IdActivite = 720,
                             IdMesure = 223,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46290,8 +46290,8 @@ namespace Admin5.Migrations
                             IdActivite = 720,
                             IdMesure = 370,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46320,8 +46320,8 @@ namespace Admin5.Migrations
                             IdActivite = 720,
                             IdMesure = 432,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46350,8 +46350,8 @@ namespace Admin5.Migrations
                             IdActivite = 720,
                             IdMesure = 434,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46370,8 +46370,8 @@ namespace Admin5.Migrations
                             IdActivite = 722,
                             IdMesure = 223,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46380,8 +46380,8 @@ namespace Admin5.Migrations
                             IdActivite = 722,
                             IdMesure = 370,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46390,8 +46390,8 @@ namespace Admin5.Migrations
                             IdActivite = 722,
                             IdMesure = 434,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46400,8 +46400,8 @@ namespace Admin5.Migrations
                             IdActivite = 722,
                             IdMesure = 432,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46430,7 +46430,7 @@ namespace Admin5.Migrations
                             IdActivite = 725,
                             IdMesure = 225,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -46480,8 +46480,8 @@ namespace Admin5.Migrations
                             IdActivite = 730,
                             IdMesure = 226,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46510,8 +46510,8 @@ namespace Admin5.Migrations
                             IdActivite = 733,
                             IdMesure = 226,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46720,7 +46720,7 @@ namespace Admin5.Migrations
                             IdActivite = 742,
                             IdMesure = 230,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -46730,8 +46730,8 @@ namespace Admin5.Migrations
                             IdActivite = 743,
                             IdMesure = 230,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46740,8 +46740,8 @@ namespace Admin5.Migrations
                             IdActivite = 744,
                             IdMesure = 230,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46750,8 +46750,8 @@ namespace Admin5.Migrations
                             IdActivite = 745,
                             IdMesure = 231,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46780,8 +46780,8 @@ namespace Admin5.Migrations
                             IdActivite = 748,
                             IdMesure = 232,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -46820,8 +46820,8 @@ namespace Admin5.Migrations
                             IdActivite = 752,
                             IdMesure = 234,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46830,8 +46830,8 @@ namespace Admin5.Migrations
                             IdActivite = 753,
                             IdMesure = 234,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -46920,8 +46920,8 @@ namespace Admin5.Migrations
                             IdActivite = 762,
                             IdMesure = 240,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47090,8 +47090,8 @@ namespace Admin5.Migrations
                             IdActivite = 770,
                             IdMesure = 243,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
-                            TauxRealisation = 90.480000000000004
+                            Situation = "غير منجز",
+                            TauxRealisation = 0.0
                         },
                         new
                         {
@@ -47120,8 +47120,8 @@ namespace Admin5.Migrations
                             IdActivite = 770,
                             IdMesure = 380,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47140,8 +47140,8 @@ namespace Admin5.Migrations
                             IdActivite = 772,
                             IdMesure = 244,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47150,8 +47150,8 @@ namespace Admin5.Migrations
                             IdActivite = 773,
                             IdMesure = 244,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47160,8 +47160,8 @@ namespace Admin5.Migrations
                             IdActivite = 772,
                             IdMesure = 392,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47170,8 +47170,8 @@ namespace Admin5.Migrations
                             IdActivite = 773,
                             IdMesure = 392,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47340,8 +47340,8 @@ namespace Admin5.Migrations
                             IdActivite = 790,
                             IdMesure = 250,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47360,8 +47360,8 @@ namespace Admin5.Migrations
                             IdActivite = 789,
                             IdMesure = 275,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47370,8 +47370,8 @@ namespace Admin5.Migrations
                             IdActivite = 790,
                             IdMesure = 275,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47380,8 +47380,8 @@ namespace Admin5.Migrations
                             IdActivite = 791,
                             IdMesure = 275,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47390,8 +47390,8 @@ namespace Admin5.Migrations
                             IdActivite = 792,
                             IdMesure = 251,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47400,8 +47400,8 @@ namespace Admin5.Migrations
                             IdActivite = 793,
                             IdMesure = 251,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47410,8 +47410,8 @@ namespace Admin5.Migrations
                             IdActivite = 794,
                             IdMesure = 251,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47420,8 +47420,8 @@ namespace Admin5.Migrations
                             IdActivite = 795,
                             IdMesure = 251,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47430,8 +47430,8 @@ namespace Admin5.Migrations
                             IdActivite = 792,
                             IdMesure = 380,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -47440,8 +47440,8 @@ namespace Admin5.Migrations
                             IdActivite = 793,
                             IdMesure = 380,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -47450,8 +47450,8 @@ namespace Admin5.Migrations
                             IdActivite = 794,
                             IdMesure = 380,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -47460,8 +47460,8 @@ namespace Admin5.Migrations
                             IdActivite = 795,
                             IdMesure = 380,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47470,8 +47470,8 @@ namespace Admin5.Migrations
                             IdActivite = 796,
                             IdMesure = 253,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47630,8 +47630,8 @@ namespace Admin5.Migrations
                             IdActivite = 802,
                             IdMesure = 255,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -47750,8 +47750,8 @@ namespace Admin5.Migrations
                             IdActivite = 814,
                             IdMesure = 258,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47770,8 +47770,8 @@ namespace Admin5.Migrations
                             IdActivite = 811,
                             IdMesure = 276,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47810,8 +47810,8 @@ namespace Admin5.Migrations
                             IdActivite = 815,
                             IdMesure = 276,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47950,8 +47950,8 @@ namespace Admin5.Migrations
                             IdActivite = 825,
                             IdMesure = 262,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -47980,8 +47980,8 @@ namespace Admin5.Migrations
                             IdActivite = 828,
                             IdMesure = 263,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48010,7 +48010,7 @@ namespace Admin5.Migrations
                             IdActivite = 831,
                             IdMesure = 265,
                             Nom = " البرنامج الوطني لصحة الأم والطفل والبرنامج الوطني للتلقيح؛-  برنامج هجرة وحماية لفائدة الأطفال المهاجرين بتعاون مع اليونيسيف؛- إنجاز دراسة حول الممارسات الفضلى في مجال الإيواء الاستعجالي لحماية الأطفال المهاجرين غير المرافقين بتعاون مع المنظمة الدولية للهجرة؛- إعداد دليل حول حماية الأطفال المهاجرين غير المرافقين؛- مذكرة وزارة التربية الوطنية الموجهة للأكاديميات الخاصة بإدماج المهاجرين واللاجئين في التعليم النظامي بغض النظر عن وضعيتهم الإدارية:- تقديم الدعم لفائدة الجمعيات قصد تمكين الأطفال المهاجرين واللاجئين بما فيهم الأطفال غير المرافقين من الإستفادة  برامج التكوين الأساس (التربية غير النظامية والتعليم الأولي، والدعم المدرسي)؛-  إعداد الدليل البيداغوجي الموجه للمنشطين العاملين في مجال التربية غير النظامية، يراعي خصوصيات الأطفال المهاجرين.- الشروع في تنفيذ مشروع هجرة وحماية بشراكة مع  اليونيسيف   لتمكين الأطفال المهاجرين كيفما كان وضعهم القانوني من ولوج عادل إلى التربية والرعاية الصحية والتكفل الاجتماعي والقضائي بجهتي الشرق طنجة-تطوان-الحسيمة.- تمكين التلاميذ المهاجرين من الاستفادة من برامج الدعم الاجتماعي ومحاربة الهدر المدرسي على غرار نظرائهم المغاربة من خلال إدماج برامج الدعم الإجتماعي في منظومة مسار وتكييف هذه الأخيرة لتشمل فئة التلاميذ المهاجرين واللاجئين.",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 15.0
                         },
                         new
@@ -48020,8 +48020,8 @@ namespace Admin5.Migrations
                             IdActivite = 832,
                             IdMesure = 265,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48030,7 +48030,7 @@ namespace Admin5.Migrations
                             IdActivite = 831,
                             IdMesure = 349,
                             Nom = " البرنامج الوطني لصحة الأم والطفل والبرنامج الوطني للتلقيح؛-  برنامج هجرة وحماية لفائدة الأطفال المهاجرين بتعاون مع اليونيسيف؛- إنجاز دراسة حول الممارسات الفضلى في مجال الإيواء الاستعجالي لحماية الأطفال المهاجرين غير المرافقين بتعاون مع المنظمة الدولية للهجرة؛- إعداد دليل حول حماية الأطفال المهاجرين غير المرافقين؛- مذكرة وزارة التربية الوطنية الموجهة للأكاديميات الخاصة بإدماج المهاجرين واللاجئين في التعليم النظامي بغض النظر عن وضعيتهم الإدارية:- تقديم الدعم لفائدة الجمعيات قصد تمكين الأطفال المهاجرين واللاجئين بما فيهم الأطفال غير المرافقين من الإستفادة  برامج التكوين الأساس (التربية غير النظامية والتعليم الأولي، والدعم المدرسي)؛-  إعداد الدليل البيداغوجي الموجه للمنشطين العاملين في مجال التربية غير النظامية، يراعي خصوصيات الأطفال المهاجرين.- الشروع في تنفيذ مشروع هجرة وحماية بشراكة مع  اليونيسيف   لتمكين الأطفال المهاجرين كيفما كان وضعهم القانوني من ولوج عادل إلى التربية والرعاية الصحية والتكفل الاجتماعي والقضائي بجهتي الشرق وطنجة-تطوان-الحسيمة.- تمكين التلاميذ المهاجرين من الاستفادة من برامج الدعم الاجتماعي ومحاربة الهدر المدرسي على غرار نظرائهم المغاربة من خلال إدماج برامج الدعم الإجتماعي في منظومة مسار وتكييف هذه الأخيرة لتشمل فئة التلاميذ المهاجرين واللاجئين.",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 15.0
                         },
                         new
@@ -48040,8 +48040,8 @@ namespace Admin5.Migrations
                             IdActivite = 832,
                             IdMesure = 349,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48060,7 +48060,7 @@ namespace Admin5.Migrations
                             IdActivite = 834,
                             IdMesure = 267,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -48070,7 +48070,7 @@ namespace Admin5.Migrations
                             IdActivite = 835,
                             IdMesure = 267,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -48100,8 +48100,8 @@ namespace Admin5.Migrations
                             IdActivite = 838,
                             IdMesure = 269,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48110,8 +48110,8 @@ namespace Admin5.Migrations
                             IdActivite = 839,
                             IdMesure = 269,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48120,8 +48120,8 @@ namespace Admin5.Migrations
                             IdActivite = 840,
                             IdMesure = 269,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48130,8 +48130,8 @@ namespace Admin5.Migrations
                             IdActivite = 841,
                             IdMesure = 269,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48170,8 +48170,8 @@ namespace Admin5.Migrations
                             IdActivite = 845,
                             IdMesure = 271,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48240,8 +48240,8 @@ namespace Admin5.Migrations
                             IdActivite = 852,
                             IdMesure = 273,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48260,8 +48260,8 @@ namespace Admin5.Migrations
                             IdActivite = 854,
                             IdMesure = 274,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48270,8 +48270,8 @@ namespace Admin5.Migrations
                             IdActivite = 855,
                             IdMesure = 274,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48280,8 +48280,8 @@ namespace Admin5.Migrations
                             IdActivite = 856,
                             IdMesure = 274,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48290,8 +48290,8 @@ namespace Admin5.Migrations
                             IdActivite = 857,
                             IdMesure = 274,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48300,8 +48300,8 @@ namespace Admin5.Migrations
                             IdActivite = 858,
                             IdMesure = 274,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48310,8 +48310,8 @@ namespace Admin5.Migrations
                             IdActivite = 859,
                             IdMesure = 275,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48320,8 +48320,8 @@ namespace Admin5.Migrations
                             IdActivite = 860,
                             IdMesure = 276,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48330,8 +48330,8 @@ namespace Admin5.Migrations
                             IdActivite = 861,
                             IdMesure = 276,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48370,8 +48370,8 @@ namespace Admin5.Migrations
                             IdActivite = 865,
                             IdMesure = 277,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48380,8 +48380,8 @@ namespace Admin5.Migrations
                             IdActivite = 866,
                             IdMesure = 277,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48390,8 +48390,8 @@ namespace Admin5.Migrations
                             IdActivite = 867,
                             IdMesure = 278,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48520,7 +48520,7 @@ namespace Admin5.Migrations
                             IdActivite = 880,
                             IdMesure = 284,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -48530,7 +48530,7 @@ namespace Admin5.Migrations
                             IdActivite = 881,
                             IdMesure = 284,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -48540,7 +48540,7 @@ namespace Admin5.Migrations
                             IdActivite = 882,
                             IdMesure = 284,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -48580,8 +48580,8 @@ namespace Admin5.Migrations
                             IdActivite = 886,
                             IdMesure = 286,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48590,8 +48590,8 @@ namespace Admin5.Migrations
                             IdActivite = 887,
                             IdMesure = 286,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48600,8 +48600,8 @@ namespace Admin5.Migrations
                             IdActivite = 888,
                             IdMesure = 286,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48670,8 +48670,8 @@ namespace Admin5.Migrations
                             IdActivite = 892,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48680,8 +48680,8 @@ namespace Admin5.Migrations
                             IdActivite = 893,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48690,8 +48690,8 @@ namespace Admin5.Migrations
                             IdActivite = 894,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48700,8 +48700,8 @@ namespace Admin5.Migrations
                             IdActivite = 895,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48710,8 +48710,8 @@ namespace Admin5.Migrations
                             IdActivite = 896,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48720,8 +48720,8 @@ namespace Admin5.Migrations
                             IdActivite = 897,
                             IdMesure = 289,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48730,8 +48730,8 @@ namespace Admin5.Migrations
                             IdActivite = 898,
                             IdMesure = 290,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48740,8 +48740,8 @@ namespace Admin5.Migrations
                             IdActivite = 899,
                             IdMesure = 290,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48750,8 +48750,8 @@ namespace Admin5.Migrations
                             IdActivite = 900,
                             IdMesure = 290,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48790,8 +48790,8 @@ namespace Admin5.Migrations
                             IdActivite = 904,
                             IdMesure = 292,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48840,8 +48840,8 @@ namespace Admin5.Migrations
                             IdActivite = 909,
                             IdMesure = 295,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48920,8 +48920,8 @@ namespace Admin5.Migrations
                             IdActivite = 917,
                             IdMesure = 299,
                             Nom = "تراجع مراسلة المجلس بعد تنقيحها",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48930,8 +48930,8 @@ namespace Admin5.Migrations
                             IdActivite = 918,
                             IdMesure = 299,
                             Nom = "تراجع مراسلة المجلس بعد تنقيحها",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48940,8 +48940,8 @@ namespace Admin5.Migrations
                             IdActivite = 919,
                             IdMesure = 300,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -48950,8 +48950,8 @@ namespace Admin5.Migrations
                             IdActivite = 920,
                             IdMesure = 300,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48960,8 +48960,8 @@ namespace Admin5.Migrations
                             IdActivite = 921,
                             IdMesure = 300,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48970,8 +48970,8 @@ namespace Admin5.Migrations
                             IdActivite = 922,
                             IdMesure = 302,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48980,8 +48980,8 @@ namespace Admin5.Migrations
                             IdActivite = 923,
                             IdMesure = 302,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -48990,8 +48990,8 @@ namespace Admin5.Migrations
                             IdActivite = 924,
                             IdMesure = 302,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49000,8 +49000,8 @@ namespace Admin5.Migrations
                             IdActivite = 925,
                             IdMesure = 302,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49010,8 +49010,8 @@ namespace Admin5.Migrations
                             IdActivite = 926,
                             IdMesure = 302,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49030,8 +49030,8 @@ namespace Admin5.Migrations
                             IdActivite = 922,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49040,8 +49040,8 @@ namespace Admin5.Migrations
                             IdActivite = 923,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49050,8 +49050,8 @@ namespace Admin5.Migrations
                             IdActivite = 924,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49060,8 +49060,8 @@ namespace Admin5.Migrations
                             IdActivite = 925,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49070,8 +49070,8 @@ namespace Admin5.Migrations
                             IdActivite = 926,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49090,8 +49090,8 @@ namespace Admin5.Migrations
                             IdActivite = 928,
                             IdMesure = 303,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49100,8 +49100,8 @@ namespace Admin5.Migrations
                             IdActivite = 929,
                             IdMesure = 304,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49110,8 +49110,8 @@ namespace Admin5.Migrations
                             IdActivite = 930,
                             IdMesure = 305,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49120,8 +49120,8 @@ namespace Admin5.Migrations
                             IdActivite = 931,
                             IdMesure = 305,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49130,8 +49130,8 @@ namespace Admin5.Migrations
                             IdActivite = 932,
                             IdMesure = 305,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49310,8 +49310,8 @@ namespace Admin5.Migrations
                             IdActivite = 944,
                             IdMesure = 309,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49320,8 +49320,8 @@ namespace Admin5.Migrations
                             IdActivite = 942,
                             IdMesure = 321,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49340,8 +49340,8 @@ namespace Admin5.Migrations
                             IdActivite = 944,
                             IdMesure = 321,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49360,8 +49360,8 @@ namespace Admin5.Migrations
                             IdActivite = 946,
                             IdMesure = 310,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49370,8 +49370,8 @@ namespace Admin5.Migrations
                             IdActivite = 947,
                             IdMesure = 311,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49440,8 +49440,8 @@ namespace Admin5.Migrations
                             IdActivite = 950,
                             IdMesure = 426,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49450,8 +49450,8 @@ namespace Admin5.Migrations
                             IdActivite = 951,
                             IdMesure = 312,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49510,7 +49510,7 @@ namespace Admin5.Migrations
                             IdActivite = 954,
                             IdMesure = 313,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.0
                         },
                         new
@@ -49580,8 +49580,8 @@ namespace Admin5.Migrations
                             IdActivite = 961,
                             IdMesure = 315,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49590,8 +49590,8 @@ namespace Admin5.Migrations
                             IdActivite = 962,
                             IdMesure = 315,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49600,8 +49600,8 @@ namespace Admin5.Migrations
                             IdActivite = 963,
                             IdMesure = 316,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49620,7 +49620,7 @@ namespace Admin5.Migrations
                             IdActivite = 965,
                             IdMesure = 317,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 30.0
                         },
                         new
@@ -49750,8 +49750,8 @@ namespace Admin5.Migrations
                             IdActivite = 973,
                             IdMesure = 320,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49760,8 +49760,8 @@ namespace Admin5.Migrations
                             IdActivite = 974,
                             IdMesure = 320,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49780,8 +49780,8 @@ namespace Admin5.Migrations
                             IdActivite = 976,
                             IdMesure = 321,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49790,8 +49790,8 @@ namespace Admin5.Migrations
                             IdActivite = 977,
                             IdMesure = 322,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49870,8 +49870,8 @@ namespace Admin5.Migrations
                             IdActivite = 985,
                             IdMesure = 324,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "غير منجز",
+                            TauxRealisation = 0.0
                         },
                         new
                         {
@@ -49880,8 +49880,8 @@ namespace Admin5.Migrations
                             IdActivite = 986,
                             IdMesure = 325,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "غير منجز",
+                            TauxRealisation = 0.0
                         },
                         new
                         {
@@ -49890,8 +49890,8 @@ namespace Admin5.Migrations
                             IdActivite = 987,
                             IdMesure = 325,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "غير منجز",
+                            TauxRealisation = 0.0
                         },
                         new
                         {
@@ -49900,8 +49900,8 @@ namespace Admin5.Migrations
                             IdActivite = 988,
                             IdMesure = 325,
                             Nom = "",
-                            Situation = "عمل متواصل",
-                            TauxRealisation = 50.0
+                            Situation = "غير منجز",
+                            TauxRealisation = 0.0
                         },
                         new
                         {
@@ -49910,8 +49910,8 @@ namespace Admin5.Migrations
                             IdActivite = 989,
                             IdMesure = 326,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49920,8 +49920,8 @@ namespace Admin5.Migrations
                             IdActivite = 990,
                             IdMesure = 326,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49930,8 +49930,8 @@ namespace Admin5.Migrations
                             IdActivite = 991,
                             IdMesure = 326,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49940,8 +49940,8 @@ namespace Admin5.Migrations
                             IdActivite = 992,
                             IdMesure = 326,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -49960,8 +49960,8 @@ namespace Admin5.Migrations
                             IdActivite = 994,
                             IdMesure = 327,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -49970,8 +49970,8 @@ namespace Admin5.Migrations
                             IdActivite = 995,
                             IdMesure = 327,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50080,7 +50080,7 @@ namespace Admin5.Migrations
                             IdActivite = 1000,
                             IdMesure = 329,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50180,8 +50180,8 @@ namespace Admin5.Migrations
                             IdActivite = 1006,
                             IdMesure = 332,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50190,8 +50190,8 @@ namespace Admin5.Migrations
                             IdActivite = 1007,
                             IdMesure = 332,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50200,7 +50200,7 @@ namespace Admin5.Migrations
                             IdActivite = 1008,
                             IdMesure = 333,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50210,8 +50210,8 @@ namespace Admin5.Migrations
                             IdActivite = 1009,
                             IdMesure = 334,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50220,8 +50220,8 @@ namespace Admin5.Migrations
                             IdActivite = 1010,
                             IdMesure = 334,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50230,7 +50230,7 @@ namespace Admin5.Migrations
                             IdActivite = 1011,
                             IdMesure = 334,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50240,8 +50240,8 @@ namespace Admin5.Migrations
                             IdActivite = 1012,
                             IdMesure = 335,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50290,8 +50290,8 @@ namespace Admin5.Migrations
                             IdActivite = 1017,
                             IdMesure = 337,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50340,7 +50340,7 @@ namespace Admin5.Migrations
                             IdActivite = 1020,
                             IdMesure = 339,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50390,8 +50390,8 @@ namespace Admin5.Migrations
                             IdActivite = 1025,
                             IdMesure = 340,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50400,8 +50400,8 @@ namespace Admin5.Migrations
                             IdActivite = 1026,
                             IdMesure = 340,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50410,8 +50410,8 @@ namespace Admin5.Migrations
                             IdActivite = 1027,
                             IdMesure = 340,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50450,7 +50450,7 @@ namespace Admin5.Migrations
                             IdActivite = 1031,
                             IdMesure = 341,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50480,7 +50480,7 @@ namespace Admin5.Migrations
                             IdActivite = 1034,
                             IdMesure = 342,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50540,7 +50540,7 @@ namespace Admin5.Migrations
                             IdActivite = 1040,
                             IdMesure = 344,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50600,8 +50600,8 @@ namespace Admin5.Migrations
                             IdActivite = 1046,
                             IdMesure = 348,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50610,8 +50610,8 @@ namespace Admin5.Migrations
                             IdActivite = 1047,
                             IdMesure = 348,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50620,8 +50620,8 @@ namespace Admin5.Migrations
                             IdActivite = 1048,
                             IdMesure = 348,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50630,8 +50630,8 @@ namespace Admin5.Migrations
                             IdActivite = 1049,
                             IdMesure = 349,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50640,8 +50640,8 @@ namespace Admin5.Migrations
                             IdActivite = 1050,
                             IdMesure = 349,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50650,7 +50650,7 @@ namespace Admin5.Migrations
                             IdActivite = 1051,
                             IdMesure = 350,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50750,8 +50750,8 @@ namespace Admin5.Migrations
                             IdActivite = 1061,
                             IdMesure = 353,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50760,8 +50760,8 @@ namespace Admin5.Migrations
                             IdActivite = 1062,
                             IdMesure = 353,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50770,8 +50770,8 @@ namespace Admin5.Migrations
                             IdActivite = 1063,
                             IdMesure = 353,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -50810,7 +50810,7 @@ namespace Admin5.Migrations
                             IdActivite = 1067,
                             IdMesure = 355,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 60.0
                         },
                         new
@@ -50820,7 +50820,7 @@ namespace Admin5.Migrations
                             IdActivite = 1068,
                             IdMesure = 355,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 60.0
                         },
                         new
@@ -50880,8 +50880,8 @@ namespace Admin5.Migrations
                             IdActivite = 1074,
                             IdMesure = 357,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50890,8 +50890,8 @@ namespace Admin5.Migrations
                             IdActivite = 1075,
                             IdMesure = 358,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50900,8 +50900,8 @@ namespace Admin5.Migrations
                             IdActivite = 1076,
                             IdMesure = 358,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -50910,7 +50910,7 @@ namespace Admin5.Migrations
                             IdActivite = 1077,
                             IdMesure = 358,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 70.0
                         },
                         new
@@ -50920,7 +50920,7 @@ namespace Admin5.Migrations
                             IdActivite = 1078,
                             IdMesure = 359,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -50930,8 +50930,8 @@ namespace Admin5.Migrations
                             IdActivite = 1079,
                             IdMesure = 359,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -51070,7 +51070,7 @@ namespace Admin5.Migrations
                             IdActivite = 1091,
                             IdMesure = 365,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 95.0
                         },
                         new
@@ -51080,7 +51080,7 @@ namespace Admin5.Migrations
                             IdActivite = 1092,
                             IdMesure = 365,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 95.0
                         },
                         new
@@ -51090,7 +51090,7 @@ namespace Admin5.Migrations
                             IdActivite = 1093,
                             IdMesure = 365,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 95.0
                         },
                         new
@@ -51100,8 +51100,8 @@ namespace Admin5.Migrations
                             IdActivite = 1094,
                             IdMesure = 366,
                             Nom = "",
-                            Situation = "منجز",
-                            TauxRealisation = 100.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 95.0
                         },
                         new
                         {
@@ -51110,8 +51110,8 @@ namespace Admin5.Migrations
                             IdActivite = 1095,
                             IdMesure = 366,
                             Nom = "",
-                            Situation = "منجز",
-                            TauxRealisation = 100.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 95.0
                         },
                         new
                         {
@@ -51120,8 +51120,8 @@ namespace Admin5.Migrations
                             IdActivite = 1096,
                             IdMesure = 366,
                             Nom = "",
-                            Situation = "منجز",
-                            TauxRealisation = 100.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 95.0
                         },
                         new
                         {
@@ -51150,7 +51150,7 @@ namespace Admin5.Migrations
                             IdActivite = 1099,
                             IdMesure = 367,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.480000000000004
                         },
                         new
@@ -51220,8 +51220,8 @@ namespace Admin5.Migrations
                             IdActivite = 1105,
                             IdMesure = 371,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51240,8 +51240,8 @@ namespace Admin5.Migrations
                             IdActivite = 1107,
                             IdMesure = 371,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51250,8 +51250,8 @@ namespace Admin5.Migrations
                             IdActivite = 1108,
                             IdMesure = 371,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51260,8 +51260,8 @@ namespace Admin5.Migrations
                             IdActivite = 1109,
                             IdMesure = 371,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51270,8 +51270,8 @@ namespace Admin5.Migrations
                             IdActivite = 1105,
                             IdMesure = 425,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51290,8 +51290,8 @@ namespace Admin5.Migrations
                             IdActivite = 1107,
                             IdMesure = 425,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51300,8 +51300,8 @@ namespace Admin5.Migrations
                             IdActivite = 1108,
                             IdMesure = 425,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51310,8 +51310,8 @@ namespace Admin5.Migrations
                             IdActivite = 1109,
                             IdMesure = 425,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51320,8 +51320,8 @@ namespace Admin5.Migrations
                             IdActivite = 1105,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51340,8 +51340,8 @@ namespace Admin5.Migrations
                             IdActivite = 1107,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51350,8 +51350,8 @@ namespace Admin5.Migrations
                             IdActivite = 1108,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51360,8 +51360,8 @@ namespace Admin5.Migrations
                             IdActivite = 1109,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51370,8 +51370,8 @@ namespace Admin5.Migrations
                             IdActivite = 1105,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51390,8 +51390,8 @@ namespace Admin5.Migrations
                             IdActivite = 1107,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51400,8 +51400,8 @@ namespace Admin5.Migrations
                             IdActivite = 1108,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51410,8 +51410,8 @@ namespace Admin5.Migrations
                             IdActivite = 1109,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51430,8 +51430,8 @@ namespace Admin5.Migrations
                             IdActivite = 1106,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51440,8 +51440,8 @@ namespace Admin5.Migrations
                             IdActivite = 1107,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51450,8 +51450,8 @@ namespace Admin5.Migrations
                             IdActivite = 1108,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51460,8 +51460,8 @@ namespace Admin5.Migrations
                             IdActivite = 1109,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51480,8 +51480,8 @@ namespace Admin5.Migrations
                             IdActivite = 1111,
                             IdMesure = 372,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51500,8 +51500,8 @@ namespace Admin5.Migrations
                             IdActivite = 1113,
                             IdMesure = 373,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51520,7 +51520,7 @@ namespace Admin5.Migrations
                             IdActivite = 1115,
                             IdMesure = 373,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 80.0
                         },
                         new
@@ -51800,7 +51800,7 @@ namespace Admin5.Migrations
                             IdActivite = 1142,
                             IdMesure = 387,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 90.480000000000004
                         },
                         new
@@ -51810,8 +51810,8 @@ namespace Admin5.Migrations
                             IdActivite = 1143,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51820,8 +51820,8 @@ namespace Admin5.Migrations
                             IdActivite = 1144,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51840,7 +51840,7 @@ namespace Admin5.Migrations
                             IdActivite = 1146,
                             IdMesure = 389,
                             Nom = "",
-                            Situation = "منجز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 100.0
                         },
                         new
@@ -51850,8 +51850,8 @@ namespace Admin5.Migrations
                             IdActivite = 1147,
                             IdMesure = 389,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51860,8 +51860,8 @@ namespace Admin5.Migrations
                             IdActivite = 1148,
                             IdMesure = 390,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51870,8 +51870,8 @@ namespace Admin5.Migrations
                             IdActivite = 1149,
                             IdMesure = 390,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51890,8 +51890,8 @@ namespace Admin5.Migrations
                             IdActivite = 1151,
                             IdMesure = 392,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51900,8 +51900,8 @@ namespace Admin5.Migrations
                             IdActivite = 1152,
                             IdMesure = 392,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51920,8 +51920,8 @@ namespace Admin5.Migrations
                             IdActivite = 1154,
                             IdMesure = 393,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51930,8 +51930,8 @@ namespace Admin5.Migrations
                             IdActivite = 1155,
                             IdMesure = 393,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51940,8 +51940,8 @@ namespace Admin5.Migrations
                             IdActivite = 1156,
                             IdMesure = 394,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51950,8 +51950,8 @@ namespace Admin5.Migrations
                             IdActivite = 1157,
                             IdMesure = 395,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -51970,8 +51970,8 @@ namespace Admin5.Migrations
                             IdActivite = 1159,
                             IdMesure = 396,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52010,8 +52010,8 @@ namespace Admin5.Migrations
                             IdActivite = 1163,
                             IdMesure = 398,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52030,8 +52030,8 @@ namespace Admin5.Migrations
                             IdActivite = 1165,
                             IdMesure = 399,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52190,8 +52190,8 @@ namespace Admin5.Migrations
                             IdActivite = 1169,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52200,8 +52200,8 @@ namespace Admin5.Migrations
                             IdActivite = 1170,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52210,8 +52210,8 @@ namespace Admin5.Migrations
                             IdActivite = 1171,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52220,8 +52220,8 @@ namespace Admin5.Migrations
                             IdActivite = 1172,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52230,8 +52230,8 @@ namespace Admin5.Migrations
                             IdActivite = 1173,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52240,8 +52240,8 @@ namespace Admin5.Migrations
                             IdActivite = 1174,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52250,8 +52250,8 @@ namespace Admin5.Migrations
                             IdActivite = 1175,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52260,8 +52260,8 @@ namespace Admin5.Migrations
                             IdActivite = 1176,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52270,8 +52270,8 @@ namespace Admin5.Migrations
                             IdActivite = 1177,
                             IdMesure = 388,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52410,8 +52410,8 @@ namespace Admin5.Migrations
                             IdActivite = 1179,
                             IdMesure = 401,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52420,8 +52420,8 @@ namespace Admin5.Migrations
                             IdActivite = 1180,
                             IdMesure = 401,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52470,8 +52470,8 @@ namespace Admin5.Migrations
                             IdActivite = 1181,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52480,8 +52480,8 @@ namespace Admin5.Migrations
                             IdActivite = 1182,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52490,8 +52490,8 @@ namespace Admin5.Migrations
                             IdActivite = 1183,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52510,8 +52510,8 @@ namespace Admin5.Migrations
                             IdActivite = 1185,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52520,8 +52520,8 @@ namespace Admin5.Migrations
                             IdActivite = 1186,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52530,8 +52530,8 @@ namespace Admin5.Migrations
                             IdActivite = 1187,
                             IdMesure = 405,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -52600,7 +52600,7 @@ namespace Admin5.Migrations
                             IdActivite = 1194,
                             IdMesure = 409,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -52740,7 +52740,7 @@ namespace Admin5.Migrations
                             IdActivite = 1208,
                             IdMesure = 413,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -52750,7 +52750,7 @@ namespace Admin5.Migrations
                             IdActivite = 1209,
                             IdMesure = 413,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -52930,7 +52930,7 @@ namespace Admin5.Migrations
                             IdActivite = 1227,
                             IdMesure = 419,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 10.0
                         },
                         new
@@ -52950,8 +52950,8 @@ namespace Admin5.Migrations
                             IdActivite = 1229,
                             IdMesure = 419,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -52960,7 +52960,7 @@ namespace Admin5.Migrations
                             IdActivite = 1230,
                             IdMesure = 420,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 85.0
                         },
                         new
@@ -52970,8 +52970,8 @@ namespace Admin5.Migrations
                             IdActivite = 1231,
                             IdMesure = 420,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -52990,8 +52990,8 @@ namespace Admin5.Migrations
                             IdActivite = 1233,
                             IdMesure = 420,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53000,8 +53000,8 @@ namespace Admin5.Migrations
                             IdActivite = 1234,
                             IdMesure = 420,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53010,7 +53010,7 @@ namespace Admin5.Migrations
                             IdActivite = 1235,
                             IdMesure = 421,
                             Nom = "",
-                            Situation = "منجز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 100.0
                         },
                         new
@@ -53030,8 +53030,8 @@ namespace Admin5.Migrations
                             IdActivite = 1237,
                             IdMesure = 421,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53040,8 +53040,8 @@ namespace Admin5.Migrations
                             IdActivite = 1238,
                             IdMesure = 421,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53050,7 +53050,7 @@ namespace Admin5.Migrations
                             IdActivite = 1239,
                             IdMesure = 422,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 60.0
                         },
                         new
@@ -53060,8 +53060,8 @@ namespace Admin5.Migrations
                             IdActivite = 1240,
                             IdMesure = 422,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53070,8 +53070,8 @@ namespace Admin5.Migrations
                             IdActivite = 1241,
                             IdMesure = 423,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53090,8 +53090,8 @@ namespace Admin5.Migrations
                             IdActivite = 1243,
                             IdMesure = 423,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53110,8 +53110,8 @@ namespace Admin5.Migrations
                             IdActivite = 1245,
                             IdMesure = 425,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53120,8 +53120,8 @@ namespace Admin5.Migrations
                             IdActivite = 1245,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53130,8 +53130,8 @@ namespace Admin5.Migrations
                             IdActivite = 1245,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53140,8 +53140,8 @@ namespace Admin5.Migrations
                             IdActivite = 1245,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53150,8 +53150,8 @@ namespace Admin5.Migrations
                             IdActivite = 1246,
                             IdMesure = 426,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53160,8 +53160,8 @@ namespace Admin5.Migrations
                             IdActivite = 1247,
                             IdMesure = 427,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53170,8 +53170,8 @@ namespace Admin5.Migrations
                             IdActivite = 1248,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53180,8 +53180,8 @@ namespace Admin5.Migrations
                             IdActivite = 1249,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53190,8 +53190,8 @@ namespace Admin5.Migrations
                             IdActivite = 1250,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53200,8 +53200,8 @@ namespace Admin5.Migrations
                             IdActivite = 1251,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53210,8 +53210,8 @@ namespace Admin5.Migrations
                             IdActivite = 1252,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "منجز",
+                            TauxRealisation = 100.0
                         },
                         new
                         {
@@ -53220,8 +53220,8 @@ namespace Admin5.Migrations
                             IdActivite = 1253,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53230,8 +53230,8 @@ namespace Admin5.Migrations
                             IdActivite = 1254,
                             IdMesure = 428,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53240,8 +53240,8 @@ namespace Admin5.Migrations
                             IdActivite = 1255,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53250,8 +53250,8 @@ namespace Admin5.Migrations
                             IdActivite = 1256,
                             IdMesure = 429,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53390,8 +53390,8 @@ namespace Admin5.Migrations
                             IdActivite = 179,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53420,8 +53420,8 @@ namespace Admin5.Migrations
                             IdActivite = 182,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53430,8 +53430,8 @@ namespace Admin5.Migrations
                             IdActivite = 183,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53440,8 +53440,8 @@ namespace Admin5.Migrations
                             IdActivite = 142,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53450,8 +53450,8 @@ namespace Admin5.Migrations
                             IdActivite = 143,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53460,8 +53460,8 @@ namespace Admin5.Migrations
                             IdActivite = 144,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53470,8 +53470,8 @@ namespace Admin5.Migrations
                             IdActivite = 145,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53480,8 +53480,8 @@ namespace Admin5.Migrations
                             IdActivite = 146,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53490,8 +53490,8 @@ namespace Admin5.Migrations
                             IdActivite = 147,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53500,8 +53500,8 @@ namespace Admin5.Migrations
                             IdActivite = 148,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53510,8 +53510,8 @@ namespace Admin5.Migrations
                             IdActivite = 184,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53550,8 +53550,8 @@ namespace Admin5.Migrations
                             IdActivite = 188,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53560,8 +53560,8 @@ namespace Admin5.Migrations
                             IdActivite = 189,
                             IdMesure = 81,
                             Nom = "",
-                            Situation = "غير منجز",
-                            TauxRealisation = 0.0
+                            Situation = "عمل متواصل",
+                            TauxRealisation = 50.0
                         },
                         new
                         {
@@ -53650,7 +53650,7 @@ namespace Admin5.Migrations
                             IdActivite = 686,
                             IdMesure = 212,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new
@@ -53670,7 +53670,7 @@ namespace Admin5.Migrations
                             IdActivite = 688,
                             IdMesure = 212,
                             Nom = "",
-                            Situation = "في طور الإنجاز",
+                            Situation = "عمل متواصل",
                             TauxRealisation = 50.0
                         },
                         new

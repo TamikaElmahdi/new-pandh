@@ -13,6 +13,563 @@ namespace Controllers
         public AxesController(AdminContext context) : base(context)
         { }
 
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateOrganismeActivite(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()) ,
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateOrganismeMesure(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                   // val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+
+
+
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateAxeActivite(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()) ,
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateAxeMesure(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                   // val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.Axe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.Axe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+
+                [HttpGet("{type}")]
+        public async Task<IActionResult> StateSousAxeActivite(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()) ,
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+        [HttpGet("{type}")]
+        public async Task<IActionResult> StateSousAxeMesure(int type) 
+        {
+
+            if(type==0)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                   // val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else if(type==1)
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+               
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            else 
+            {
+                    var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.Mesure.Realisations != null)
+                
+                 .Include(e => e.Mesure)
+                 .ThenInclude(e => e.SousAxe)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    
+
+                }).OrderByDescending(f => f.val)
+                .ToList()
+                ;
+            return Ok(list2);
+            }
+            
+        }
+
+
         [HttpGet("{type}/{isHome}")]
         public async Task<IActionResult> StateAxes(int type, int isHome) 
         {
