@@ -25,6 +25,13 @@ export class RealisationService  extends SuperService<Realisation> {
     }>(`${this.urlApi}/${this.controller}/stateMecanisme/${typeTable}`);
   }
 
+  stateMecanismeMesure(typeTable) {
+    return this.http.get<{
+      epu: { name: string | Observable<string>, t: number, r: number , c: number , n: number},
+      count: number,
+    }>(`${this.urlApi}/${this.controller}/stateMecanismeMesure/${typeTable}`);
+  }
+
   stateMecanismeByType(typeTable, axe, type) {
     return this.http.get<{
       epu: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},

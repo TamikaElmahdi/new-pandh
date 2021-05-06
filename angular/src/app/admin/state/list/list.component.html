@@ -51,11 +51,11 @@
                       <td>{{ pourcentageEnContinue }}</td>
                     </tr>
 
-                    <tr class="rowEncours">
+                    <!-- <tr class="rowEncours">
                       <td>في طور الإنجاز</td>
                       <td>{{ sumEncourRealisation }}</td>
                       <td>{{ pourcentageEncourRealisation }}</td>
-                    </tr>
+                    </tr> -->
 
                     <tr class="rowTermine">
                       <td>منجز</td>
@@ -100,8 +100,8 @@
                       <td>{{ pourcentageNonRealiseMesure }}</td>
                     </tr>
 
-                    <tr class="rowEncours">
-                      <td>في طور الإنجاز</td>
+                    <tr class="rowContinue">
+                      <td>عمل متواصل</td>
                       <td>{{ sumEncourRealisationMesure }}</td>
                       <td>{{ pourcentageEncourRealisationMesure }}</td>
                     </tr>
@@ -131,11 +131,16 @@
           </div>
 
           <div class="col-md-12">
+            <app-pie [obs]="dataEpuPieMesure"></app-pie>
+          </div>
+
+          <div class="col-md-12">
             <div class="chart-size">
               <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubject"></app-bar>
             </div>
           </div>
         </div>
+
 
 
         <div class="row justify-content-center">

@@ -38,6 +38,7 @@ export class ListComponent implements OnInit {
   examenPageSubjectDetails = new Subject();
   countRec = new Subject();
   dataEpuPie = new Subject();
+  dataEpuPieMesure = new Subject();
 
   dataEpuPieType1 = new Subject();
   dataEpuPieType2 = new Subject();
@@ -114,12 +115,12 @@ export class ListComponent implements OnInit {
 
   sumNonRealise = '0';
   sumRealise = '0';
-  sumEncourRealisation = '0';
+  //sumEncourRealisation = '0';
   sumEnContinue = '0';
 
   pourcentageNonRealise = '0';
   pourcentageRealise = '0';
-  pourcentageEncourRealisation = '0';
+  //pourcentageEncourRealisation = '0';
   pourcentageEnContinue = '0';
 
   sumNonRealiseMesure = '0';
@@ -197,7 +198,7 @@ export class ListComponent implements OnInit {
     this.stateSousAxeMesure(2, 'منجز' , this.departementSubject18);
 
     this.stateOneOFMecanisme();
-
+    this.stateOneOFMecanismeMesure();
     this.getOrganismes();
     this.routeMesure = this.router.url;
     this.checkWitchMesure(this.routeMesure);
@@ -479,7 +480,7 @@ export class ListComponent implements OnInit {
     this.getNbNonTermine(o);
     this.getNbTermine(o);
     this.getNbContinue(o);
-    this.getNbEncours(o);
+    //this.getNbEncours(o);
 
     this.getNbNonTermineMesure(o);
     this.getNbTermineMesure(o);
@@ -493,7 +494,7 @@ export class ListComponent implements OnInit {
     this.getPourcentageNonTermine(o);
     this.getPourcentageTermine(o);
     this.getPourcentageContinue(o);
-    this.getPourcentageEncours(o);
+    //this.getPourcentageEncours(o);
 
     this.getPourcentageNonTermineMesure(o);
     this.getPourcentageTermineMesure(o);
@@ -520,11 +521,11 @@ export class ListComponent implements OnInit {
     });
   }
 
-  getNbEncours(o: Model) {
-    this.uow.realisations.getNbEncours(o).subscribe(r => {
-      this.sumEncourRealisation = r.toString();
-    });
-  }
+  // getNbEncours(o: Model) {
+  //   this.uow.realisations.getNbEncours(o).subscribe(r => {
+  //     this.sumEncourRealisation = r.toString();
+  //   });
+  // }
 
   getNbNonTermineMesure(o: Model) {
     this.uow.realisations.getNbNonTermineMesure(o).subscribe(r => {
@@ -567,11 +568,11 @@ export class ListComponent implements OnInit {
     });
   }
 
-  getPourcentageEncours(o: Model) {
-    this.uow.realisations.getPourcentageEncours(o).subscribe(r => {
-      this.pourcentageEncourRealisation = r.toString();
-    });
-  }
+  // getPourcentageEncours(o: Model) {
+  //   this.uow.realisations.getPourcentageEncours(o).subscribe(r => {
+  //     this.pourcentageEncourRealisation = r.toString();
+  //   });
+  // }
 
   getPourcentageNonTermineMesure(o: Model) {
     this.uow.realisations.getPourcentageNonTermineMesure(o).subscribe(r => {
@@ -648,6 +649,53 @@ export class ListComponent implements OnInit {
 
     });
   }
+
+
+
+  stateOneOFMecanismeMesure() {
+
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+
+    this.uow.realisations.stateMecanismeMesure(1).subscribe(r => {
+      const chartLabels = [];
+      chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
+      chartLabels.push('غير منجز');
+
+      console.log(r)
+
+      const chartData = [];
+      const dataToShowInTable = [];
+
+
+      chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
+      chartData.push(r.epu.n * 100 / r.epu.t);
+
+      dataToShowInTable.push(r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.r + r.epu.c + r.epu.n);
+
+      // chartData.push(100 - r.epu.t);
+
+
+      const chartColors = ['#2b960b', '#2d71a1', '#db0707'];
+
+      this.dataEpuPieMesure.next({
+        chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
+        , title: 'وضعية التنفيذ حسب الأنشطة '
+      });
+
+    });
+  }
+
 
   typeToText(idType: number) {
     if (idType == 1)
@@ -773,6 +821,7 @@ export class ListComponent implements OnInit {
     this.stateSousAxeMesure(2, 'منجز' , this.departementSubject18);
 
     this.stateOneOFMecanisme();
+    this.stateOneOFMecanismeMesure();
 
     this.stateOneOFMecanismeByType(1, 1, this.dataEpuPieType1);
     this.stateOneOFMecanismeByType(1, 2, this.dataEpuPieType2);

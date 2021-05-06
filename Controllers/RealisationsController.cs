@@ -239,6 +239,35 @@ namespace Controllers
         }
 
 
+        private async Task<object> CalcMesure(IQueryable<Mesure> q, int typeTable)
+        {
+
+            // int recommendationsCount = _context.Recommendations.Count();
+
+            var t = await q.CountAsync();
+                            
+                            
+            var n = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 0))
+                           //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
+                           .CountAsync();
+
+            var r = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 100))
+                           //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
+                           .CountAsync();
+            
+            var c = await q.Where(e => e.Realisations.Any(r => r.TauxRealisation < 100 && r.TauxRealisation > 0 ))
+                          // .Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
+                           .CountAsync();
+            
+            var epu = new { n, r, c, t };
+
+
+            return new { epu, count = 0 };
+
+        }
+
+
+
         private async Task<object> CalcByType(IQueryable<Realisation> q, int typeTable, int axe, int type)
         {
 
@@ -330,6 +359,12 @@ namespace Controllers
         public async Task<IActionResult> StateMecanisme(int typeTable) // used
         {
             return Ok(await Calc(_context.Realisations, typeTable));
+        }
+
+        [HttpGet("{typeTable}")]
+        public async Task<IActionResult> StateMecanismeMesure(int typeTable) // used
+        {
+            return Ok(await CalcMesure(_context.Mesures, typeTable));
         }
 
         [HttpGet("{typeTable}/{axe}/{type}")]
@@ -522,7 +557,7 @@ namespace Controllers
                 .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
                 .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
                 .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "في طور الإنجاز")  && e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "عمل متواصل")  && e.Realisations.Any(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
                 return count;
                 //return Tuple.Create(count,moyen);
         }
@@ -598,7 +633,7 @@ namespace Controllers
                 .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
                 .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
                 .Where(e => model.Situation == "" ? true : e.Situation == model.Situation)
-                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز").Count();
+                .Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 ).Count();
                 var moyen = ( count * 100 ) / CountAllActivite(model);
                 return moyen;
                 //return Tuple.Create(count,moyen);
@@ -695,7 +730,7 @@ namespace Controllers
                 .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
                 .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
                 .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
-                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "في طور الإنجاز")  && e.Realisations.All(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
+                .Where(e => (model.SituationMesure == "" || model.SituationMesure == "عمل متواصل")  && e.Realisations.Any(f => f.TauxRealisation > 0 && f.TauxRealisation < 100)).Distinct().Count();
                
                 var countAll = _context.Mesures.Count();
                 var moyen = ( count * 100 ) / countAll;
