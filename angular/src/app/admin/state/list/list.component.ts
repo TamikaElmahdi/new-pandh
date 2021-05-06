@@ -339,7 +339,7 @@ export class ListComponent implements OnInit {
         { data: [], label: labelText /*, stack: 'a'*/ },
       ];
       r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
+        barChartData[0].data.push((e.val).toFixed(0));
       });
       const typeColor = type;
       control.next({ barChartLabels, typeColor, barChartData, title: '' });
@@ -690,7 +690,7 @@ export class ListComponent implements OnInit {
 
       this.dataEpuPieMesure.next({
         chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
-        , title: 'وضعية التنفيذ حسب الأنشطة '
+        , title: 'وضعية التنفيذ '
       });
 
     });

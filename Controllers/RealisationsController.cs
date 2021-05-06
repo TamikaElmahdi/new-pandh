@@ -244,20 +244,34 @@ namespace Controllers
 
             // int recommendationsCount = _context.Recommendations.Count();
 
+            // var count = _context.Mesures
+            //     // .Where(e => e.ActiviteMesures  != null)
+            //     // .Where(e => e.ActiviteMesures.Any(f => f.Activite != null))
+            //     .Where(e => model.IdCycle == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
+            //     .Where(e => model.IdAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
+            //     .Where(e => model.IdSousAxe == 0 || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                
+            //     .Where(e => model.CodeMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
+            //     .Where(e => model.NomMesure == "" || e.ActiviteMesures  == null ? true : e.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))
+            //     .Where(e => model.Situation == "" ? true : e.Realisations.Any(f => f.Situation == model.Situation))
+            //     .Where(e => (model.SituationMesure == "" || model.SituationMesure == "غير منجز")  && e.Realisations.All(f => f.TauxRealisation == 0) )
+            //     .Distinct().Count();
+                
+
             var t = await q.CountAsync();
                             
                             
             var n = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 0))
                            //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .CountAsync();
+                           .Distinct().CountAsync();
 
             var r = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 100))
                            //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .CountAsync();
+                           .Distinct().CountAsync();
             
             var c = await q.Where(e => e.Realisations.Any(r => r.TauxRealisation < 100 && r.TauxRealisation > 0 ))
                           // .Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .CountAsync();
+                           .Distinct().CountAsync();
             
             var epu = new { n, r, c, t };
 
