@@ -203,14 +203,10 @@ namespace Controllers
 
             if(type==0)
             {
-                    var q = _context.Realisations
+                var q = _context.Realisations
                 .Where(e => e.Mesure.Axe != null)
-                .Where(e => e.Mesure.ActiviteMesures != null)
-                .Where(e => e.Mesure.Realisations != null)
-
-                 .Include(e => e.Mesure)
-                 .ThenInclude(e => e.Axe)
-                 .Include(e => e.Mesure.Realisations)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Axe)
                 ;
             var list = await q.ToListAsync();
             var list2 = list
@@ -218,7 +214,8 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    val = e.Where(s => s.TauxRealisation == 0).Count() * 100 / e.Count(),
+                    //val = (e.Where(s => s.Situation == "غير منجز").Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation == 0)).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count()) ,
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
@@ -231,41 +228,34 @@ namespace Controllers
             }
             else if(type==1)
             {
-                    var q = _context.Responsables
+                var q = _context.Realisations
                 .Where(e => e.Mesure.Axe != null)
-                .Where(e => e.Mesure.ActiviteMesures != null)
-                .Where(e => e.Mesure.Realisations != null)
-                 .Include(e => e.Mesure)
-                 .ThenInclude(e => e.Axe)
-                 .Include(e => e.Mesure.Realisations)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Axe)
                 ;
+
             var list = await q.ToListAsync();
             var list2 = list
-                .GroupBy( e=>e.Mesure.Axe.Label)
-               
+                .GroupBy(e=>e.Mesure.Axe.Label)
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                    //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    val = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 ).Count() * 100 / e.Count(),
+                    t = e.Count()
                     
-
-                }).OrderByDescending(f => f.val)
+                    // // t = count,
+                   
+                })
                 .ToList()
                 ;
             return Ok(list2);
             }
             else 
             {
-                    var q = _context.Responsables
+                 var q = _context.Realisations
                 .Where(e => e.Mesure.Axe != null)
-                .Where(e => e.Mesure.ActiviteMesures != null)
-                .Where(e => e.Mesure.Responsables != null)
-                
-                 .Include(e => e.Mesure)
-                 .ThenInclude(e => e.Axe)
-                 .Include(e => e.Mesure.Realisations)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Axe)
                 ;
             var list = await q.ToListAsync();
             var list2 = list
@@ -273,9 +263,11 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    val = (e.Where(s => s.TauxRealisation == 100).Count() * 100) / e.Count(),
+                   // val = e.Where(s => s.TauxRealisation == 100).Count() * 100 / e.Count(),
+                    //val = (e.Where(s => s.TauxRealisation == 100).Count() * 100) / e.Count(),
                     //val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation == 100)).Count() * 100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    t = e.Count()
                     
 
                 }).OrderByDescending(f => f.val)
