@@ -889,6 +889,47 @@ namespace Controllers
         }
 
 
+         [HttpGet("{sousAxe}")]
+        public async Task<IActionResult> StateSousAxeByDepartement(int sousAxe) 
+        {
+            
+            var q = _context.Responsables
+                .Where(e => e.Mesure.Axe != null)
+                //.Where(e => e.Mesure.ActiviteMesures != null)
+                .Where(e => e.Mesure.Responsables != null)
+                //.Where(e => e.Mesure.Realisations != null)
+                .Where(e => e.Mesure.IdSousAxe == sousAxe)
+
+                //.Where(e => e.Mesure.Responsables.Any(p => p.Organisme.TypeHome == type))
+
+                 .Include(e => e.Mesure)
+                 .Include(e => e.Organisme)
+                 .Include(e => e.Mesure.Realisations)
+                // .Include(e => e.Mesure.Axe)
+                ;
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy( e=>e.Organisme.Label)
+               // .GroupBy( e=>e.Mesure.Responsables.Select(e => e.Organisme.Label))
+                .Select(e => new
+                {
+                    name = e.Key,
+                 
+                     p = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "في طور الإنجاز")).Count(),
+                    r = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count(),
+                    c = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count(),
+                    n = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count(),
+                    t = e.Where(s => s.Mesure.Responsables != null  ).Count(),
+                    
+                })
+                .ToList()
+                ;
+            return Ok(list2);
+
+        }
+
+
+
         
         
         [HttpGet("{type}/{typeTable}")]

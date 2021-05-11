@@ -369,6 +369,49 @@ namespace Controllers
         }
 
 
+
+
+        private async Task<object> CalcByDepartementDetails(IQueryable<Realisation> q, int typeTable, int axe, int sousAxe, int departement)
+        {
+
+            // int recommendationsCount = _context.Recommendations.Count();
+
+            var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any( r => r.Organisme.Id == departement)))
+                            .CountAsync();
+                            
+            var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any( r => r.Organisme.Id == departement)))
+                            .CountAsync();
+            var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any( r => r.Organisme.Id == departement)))
+                            .CountAsync();
+           
+            var c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل"))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any( r => r.Organisme.Id == departement)))
+                            .CountAsync();
+            
+            var epu = new { n, r, c, t };
+
+           
+
+            return new { epu, count = 0 };
+
+        }
+
+
         [HttpGet("{typeTable}")]
         public async Task<IActionResult> StateMecanisme(int typeTable) // used
         {
@@ -391,6 +434,12 @@ namespace Controllers
         public async Task<IActionResult> StateMecanismeByTypeDetails(int typeTable,int axe,int sousAxe,int type) // used
         {
             return Ok(await CalcByTypeDetails(_context.Realisations, typeTable, axe, sousAxe, type));
+        }
+
+        [HttpGet("{typeTable}/{axe}/{sousAxe}/{type}")]
+        public async Task<IActionResult> StateMecanismeByDepartementDetails(int typeTable,int axe,int sousAxe,int type) // used
+        {
+            return Ok(await CalcByDepartementDetails(_context.Realisations, typeTable, axe, sousAxe, type));
         }
 
        

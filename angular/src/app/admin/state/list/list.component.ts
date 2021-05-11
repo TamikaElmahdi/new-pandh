@@ -38,6 +38,37 @@ export class ListComponent implements OnInit {
   examenPageSubjectMesure = new Subject();
 
   examenPageSubjectDetails = new Subject();
+
+  examenPageSubjectDepSousAxe1 = new Subject();
+  examenPageSubjectDepSousAxe2 = new Subject();
+  examenPageSubjectDepSousAxe3 = new Subject();
+  examenPageSubjectDepSousAxe4= new Subject();
+  examenPageSubjectDepSousAxe5 = new Subject();
+  examenPageSubjectDepSousAxe6 = new Subject();
+  examenPageSubjectDepSousAxe7 = new Subject();
+  examenPageSubjectDepSousAxe8 = new Subject();
+  examenPageSubjectDepSousAxe9 = new Subject();
+  examenPageSubjectDepSousAxe10 = new Subject();
+  examenPageSubjectDepSousAxe11= new Subject();
+  examenPageSubjectDepSousAxe12 = new Subject();
+  examenPageSubjectDepSousAxe13= new Subject();
+  examenPageSubjectDepSousAxe14 = new Subject();
+  examenPageSubjectDepSousAxe15 = new Subject();
+  examenPageSubjectDepSousAxe16 = new Subject();
+
+  examenPageSubjectDepSousAxe17 = new Subject();
+  examenPageSubjectDepSousAxe18 = new Subject();
+  examenPageSubjectDepSousAxe19 = new Subject();
+  examenPageSubjectDepSousAxe20 = new Subject();
+  examenPageSubjectDepSousAxe21 = new Subject();
+  examenPageSubjectDepSousAxe22 = new Subject();
+  examenPageSubjectDepSousAxe23 = new Subject();
+  examenPageSubjectDepSousAxe24 = new Subject();
+  examenPageSubjectDepSousAxe25 = new Subject();
+  examenPageSubjectDepSousAxe26 = new Subject();
+
+
+
   countRec = new Subject();
   dataEpuPie = new Subject();
   dataEpuPieMesure = new Subject();
@@ -175,6 +206,35 @@ export class ListComponent implements OnInit {
   ngOnInit() {
 
     this.stateAxe();
+
+
+    this.stateSousAxeByDepartement(1, this.examenPageSubjectDepSousAxe1);
+    this.stateSousAxeByDepartement(2, this.examenPageSubjectDepSousAxe2);
+    this.stateSousAxeByDepartement(3, this.examenPageSubjectDepSousAxe3);
+    this.stateSousAxeByDepartement(4, this.examenPageSubjectDepSousAxe4);
+    this.stateSousAxeByDepartement(5, this.examenPageSubjectDepSousAxe5);
+    this.stateSousAxeByDepartement(6, this.examenPageSubjectDepSousAxe6);
+    this.stateSousAxeByDepartement(7, this.examenPageSubjectDepSousAxe7);
+    this.stateSousAxeByDepartement(8, this.examenPageSubjectDepSousAxe8);
+    this.stateSousAxeByDepartement(9, this.examenPageSubjectDepSousAxe9);
+    this.stateSousAxeByDepartement(10, this.examenPageSubjectDepSousAxe10);
+    this.stateSousAxeByDepartement(11, this.examenPageSubjectDepSousAxe11);
+    this.stateSousAxeByDepartement(12, this.examenPageSubjectDepSousAxe12);
+    this.stateSousAxeByDepartement(13, this.examenPageSubjectDepSousAxe13);
+    this.stateSousAxeByDepartement(14, this.examenPageSubjectDepSousAxe14);
+    this.stateSousAxeByDepartement(15, this.examenPageSubjectDepSousAxe15);
+    this.stateSousAxeByDepartement(16, this.examenPageSubjectDepSousAxe16);
+    this.stateSousAxeByDepartement(17, this.examenPageSubjectDepSousAxe17);
+    this.stateSousAxeByDepartement(18, this.examenPageSubjectDepSousAxe18);
+    this.stateSousAxeByDepartement(19, this.examenPageSubjectDepSousAxe19);
+    this.stateSousAxeByDepartement(20, this.examenPageSubjectDepSousAxe20);
+    this.stateSousAxeByDepartement(21, this.examenPageSubjectDepSousAxe21);
+    this.stateSousAxeByDepartement(22, this.examenPageSubjectDepSousAxe22);
+    this.stateSousAxeByDepartement(23, this.examenPageSubjectDepSousAxe23);
+    this.stateSousAxeByDepartement(24, this.examenPageSubjectDepSousAxe24);
+    this.stateSousAxeByDepartement(25, this.examenPageSubjectDepSousAxe25);
+    this.stateSousAxeByDepartement(26, this.examenPageSubjectDepSousAxe26);
+
     this.StateMesuresByType();
 
     this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
@@ -620,6 +680,64 @@ export class ListComponent implements OnInit {
     });
   }
 
+  stateSousAxeByDepartement(sousAxe : number, control: Subject<unknown>) {
+    this.uow.axes.stateSousAxeByDepartement(sousAxe).subscribe(r => {
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+
+      ];
+      r.forEach(e => {
+        let total = e.p + e.r + e.c + e.n ;
+        barChartData[0].data.push((e.p * 100 / total).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / total).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / total).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / total).toFixed(0));
+
+      });
+
+      // tslint:disable-next-line:max-line-length
+        control.next({ barChartLabels, barChartData, title: this.SousAxeToText(sousAxe) });
+
+    });
+
+}
+
+
+  stateSousAxeByDepartementkk(sousAxe : number, control: Subject<unknown>) {
+    this.uow.axes.stateSousAxeByDepartement(sousAxe).subscribe(r => {
+
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+      ];
+      var sousAxeName = '--';
+      r.forEach(e => {
+        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
+      });
+
+
+      // tslint:disable-next-line:max-line-length
+      control.next({ barChartLabels, barChartData, title: sousAxeName });
+    });
+  }
+
+
 
   StateMesuresByType() {
     if (this.router.url.includes('mesure-executif')) {
@@ -684,6 +802,8 @@ export class ListComponent implements OnInit {
       this.examenPageSubjectDetails.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ' });
     });
   }
+
+
 
 
   getCountBySituation(o: Model) {
@@ -917,6 +1037,36 @@ export class ListComponent implements OnInit {
   }
 
 
+  SousAxeToText(idDepartement: number) {
+    if(idDepartement === 1) return 'المشاركة السياسية';
+    else if(idDepartement === 2 ) return 'المساواة والمناصفة وتكافؤ الفرص ';
+    else if(idDepartement === 3 ) return ' الحكامة الترابية ';
+    else if(idDepartement === 4 ) return 'الحكامة الإدارية والنزاهة والشفافية ومكافحة الفساد ';
+    else if(idDepartement === 5 ) return 'الحكامة الأمنية ';
+    else if(idDepartement === 6 ) return ' حريات الاجتماع والتجمع والتظاهر السلمي وتأسيس الجمعيات ';
+    else if(idDepartement === 7 ) return ' مكافحة الإفلات من العقاب';
+    else if(idDepartement === 8 ) return ' جودة المنظومة الوطنية للتربية والتكوين والبحث العلمي ';
+    else if(idDepartement === 9 ) return 'الحقوق الثقافية ';
+    else if(idDepartement === 10 ) return ' الولوج إلى الخدمات الصحية ';
+    else if(idDepartement === 11) return ' الشغل وتكريس المساواة ';
+    else if(idDepartement === 12) return ' السياسة السكنية ';
+    else if(idDepartement === 13) return 'السياسة البيئية المندمجة ';
+    else if(idDepartement === 14) return ' المقاولة وحقوق الإنسان ';
+    else if(idDepartement === 15 ) return ' الأبعاد المؤسساتية والتشريعية ';
+    else if(idDepartement === 16 ) return ' حقوق الطفل ';
+    else if(idDepartement === 17 ) return 'حقوق الشباب ';
+    else if(idDepartement === 18) return ' حقوق الأشخاص في وضعية إعاقة ';
+    else if(idDepartement === 19 ) return ' حقوق الأشخاص المسنين ';
+    else if(idDepartement === 20 ) return 'حقوق المهاجرين واللاجئين ';
+    else if(idDepartement === 21 ) return ' الحماية القانونية والقضائية لحقوق الإنسان';
+    else if(idDepartement === 22 ) return ' الحماية القانونية والمؤسساتية لحقوق المرأة ';
+    else if(idDepartement === 23 ) return 'حريات التعبير والإعلام والصحافة والحق في المعلومة ';
+    else if(idDepartement === 24 ) return 'حماية التراث الثقافي ';
+    else if(idDepartement === 25 ) return ' حفظ الأرشيف وصيانته ';
+    else if(idDepartement === 26 ) return ' الحقوق والحريات والآليات المؤسساتية ';
+  }
+
+
   stateOneOFMecanismeByType(axe: number, type: number, control: Subject<unknown>) {
 
     this.uow.realisations.stateMecanismeByType(1, axe, type).subscribe(r => {
@@ -1002,10 +1152,37 @@ export class ListComponent implements OnInit {
 
 
 
-
   selectedTabChange(o: MatTabGroup) {
 
     this.stateAxe();
+
+    this.stateSousAxeByDepartement(1, this.examenPageSubjectDepSousAxe1);
+    this.stateSousAxeByDepartement(2, this.examenPageSubjectDepSousAxe2);
+    this.stateSousAxeByDepartement(3, this.examenPageSubjectDepSousAxe3);
+    this.stateSousAxeByDepartement(4, this.examenPageSubjectDepSousAxe4);
+    this.stateSousAxeByDepartement(5, this.examenPageSubjectDepSousAxe5);
+    this.stateSousAxeByDepartement(6, this.examenPageSubjectDepSousAxe6);
+    this.stateSousAxeByDepartement(7, this.examenPageSubjectDepSousAxe7);
+    this.stateSousAxeByDepartement(8, this.examenPageSubjectDepSousAxe8);
+    this.stateSousAxeByDepartement(9, this.examenPageSubjectDepSousAxe9);
+    this.stateSousAxeByDepartement(10, this.examenPageSubjectDepSousAxe10);
+    this.stateSousAxeByDepartement(11, this.examenPageSubjectDepSousAxe11);
+    this.stateSousAxeByDepartement(12, this.examenPageSubjectDepSousAxe12);
+    this.stateSousAxeByDepartement(13, this.examenPageSubjectDepSousAxe13);
+    this.stateSousAxeByDepartement(14, this.examenPageSubjectDepSousAxe14);
+    this.stateSousAxeByDepartement(15, this.examenPageSubjectDepSousAxe15);
+    this.stateSousAxeByDepartement(16, this.examenPageSubjectDepSousAxe16);
+    this.stateSousAxeByDepartement(17, this.examenPageSubjectDepSousAxe17);
+    this.stateSousAxeByDepartement(18, this.examenPageSubjectDepSousAxe18);
+    this.stateSousAxeByDepartement(19, this.examenPageSubjectDepSousAxe19);
+    this.stateSousAxeByDepartement(20, this.examenPageSubjectDepSousAxe20);
+    this.stateSousAxeByDepartement(21, this.examenPageSubjectDepSousAxe21);
+    this.stateSousAxeByDepartement(22, this.examenPageSubjectDepSousAxe22);
+    this.stateSousAxeByDepartement(23, this.examenPageSubjectDepSousAxe23);
+    this.stateSousAxeByDepartement(24, this.examenPageSubjectDepSousAxe24);
+    this.stateSousAxeByDepartement(25, this.examenPageSubjectDepSousAxe25);
+    this.stateSousAxeByDepartement(26, this.examenPageSubjectDepSousAxe26);
+
     this.StateMesuresByType();
     this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
     this.stateOrganismeActivite(1, 'عمل متواصل', this.departementSubject2);

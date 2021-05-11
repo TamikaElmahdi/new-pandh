@@ -19,4 +19,8 @@ export class SousAxeService  extends SuperService<any> {
     return this.http.get<{ name: string, p: number, t: number, r: number, c: number, n: number }[]>(`${this.urlApi}/${this.controller}/stateSousAxesDetails/${idAxe}/${idSousAxe}`);
   }
 
+  stateSousAxesDetailsByDepartement(idAxe: number, idSousAxe: number) {
+    return this.http.get<{ name: string, t: number, r: number, c: number, n: number }[]>(`${this.urlApi}/${this.controller}/stateSousAxesDetailsByDepartement/${idAxe}/${idSousAxe}`);
+  }
+
 }
