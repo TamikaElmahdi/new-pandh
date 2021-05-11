@@ -35,6 +35,8 @@ export class ListComponent implements OnInit {
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
   examenPageSubject = new Subject();
+  examenPageSubjectMesure = new Subject();
+
   examenPageSubjectDetails = new Subject();
   countRec = new Subject();
   dataEpuPie = new Subject();
@@ -173,6 +175,8 @@ export class ListComponent implements OnInit {
   ngOnInit() {
 
     this.stateAxe();
+    this.StateMesuresByType();
+
     this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
     this.stateOrganismeActivite(1, 'عمل متواصل', this.departementSubject2);
     this.stateOrganismeActivite(2, 'منجز' , this.departementSubject3);
@@ -292,40 +296,117 @@ export class ListComponent implements OnInit {
     this.uow.axes.stateOrganismeActivite(type).subscribe(r => {
       r = r.filter(e => e.name !== null);
       // console.log(r);
+      if(type === 0)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
 
-      const barChartLabels = r.map(e => e.name);
-      const dataToShowInTable = []
-       const barChartData = [
-        { data: [], label: labelText /*, stack: 'a'*/ },
-      ];
-      r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
-      });
-      const typeColor = type;
-      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else if (type === 1)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.c * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.r * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
 
     });
   }
 
 
-    stateOrganismeMesure(type: number, labelText : String, control: Subject<unknown>) {
+  stateOrganismeMesure(type: number, labelText : String, control: Subject<unknown>) {
     this.uow.axes.stateOrganismeMesure(type).subscribe(r => {
       r = r.filter(e => e.name !== null);
       // console.log(r);
+      if(type === 0)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
 
-      const barChartLabels = r.map(e => e.name);
-      const dataToShowInTable = []
-       const barChartData = [
-        { data: [], label: labelText /*, stack: 'a'*/ },
-      ];
-      r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
-      });
-      const typeColor = type;
-      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else if (type === 1)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.c * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.r * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
 
     });
   }
+
 
 
   stateAxeActivite(type: number, labelText : String, control: Subject<unknown>) {
@@ -368,48 +449,140 @@ export class ListComponent implements OnInit {
   }
 
 
-
-
   stateSousAxeActivite(type: number, labelText : String, control: Subject<unknown>) {
     this.uow.axes.stateSousAxeActivite(type).subscribe(r => {
       r = r.filter(e => e.name !== null);
       // console.log(r);
+      if(type === 0)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
 
-      const barChartLabels = r.map(e => e.name);
-      const dataToShowInTable = []
-       const barChartData = [
-        { data: [], label: labelText /*, stack: 'a'*/ },
-      ];
-      r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
-      });
-      const typeColor = type;
-      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else if (type === 1)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.c * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.r * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
 
     });
   }
 
 
-    stateSousAxeMesure(type: number, labelText : String, control: Subject<unknown>) {
+  // stateSousAxeActivite(type: number, labelText : String, control: Subject<unknown>) {
+  //   this.uow.axes.stateSousAxeActivite(type).subscribe(r => {
+  //     r = r.filter(e => e.name !== null);
+  //     // console.log(r);
+
+  //     const barChartLabels = r.map(e => e.name);
+  //     const dataToShowInTable = []
+  //      const barChartData = [
+  //       { data: [], label: labelText /*, stack: 'a'*/ },
+  //     ];
+  //     r.forEach(e => {
+  //       barChartData[0].data.push((e.val ).toFixed(0));
+  //     });
+  //     const typeColor = type;
+  //     control.next({ barChartLabels, typeColor, barChartData, title: '' });
+
+  //   });
+  // }
+
+
+  stateSousAxeMesure(type: number, labelText : String, control: Subject<unknown>) {
     this.uow.axes.stateSousAxeMesure(type).subscribe(r => {
       r = r.filter(e => e.name !== null);
       // console.log(r);
+      if(type === 0)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
 
-      const barChartLabels = r.map(e => e.name);
-      const dataToShowInTable = []
-       const barChartData = [
-        { data: [], label: labelText /*, stack: 'a'*/ },
-      ];
-      r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
-      });
-      const typeColor = type;
-      control.next({ barChartLabels, typeColor, barChartData, title: '' });
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else if (type === 1)
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.c * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
+      else
+      {
+        const barChartLabels = r.map(e => e.name);
+        const dataToShowInTable = []
+         const barChartData = [
+            { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        ];
+        r.forEach(e => {
+
+          let total = e.n + e.c + e.r ;
+          barChartData[0].data.push((e.r * 100 / total).toFixed(0));
+        });
+
+        const typeColor = type;
+        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+      }
 
     });
   }
-
-
 
   stateAxe() {
     if (this.router.url.includes('mesure-executif')) {
@@ -444,6 +617,43 @@ export class ListComponent implements OnInit {
 
       // tslint:disable-next-line:max-line-length
       this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
+    });
+  }
+
+
+  StateMesuresByType() {
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+    this.uow.axes.stateMesuresByType(0).subscribe(r => {
+
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+      ];
+
+      r.forEach(e => {
+        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
+      });
+
+
+      // tslint:disable-next-line:max-line-length
+      this.examenPageSubjectMesure.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب النوع' });
     });
   }
 
@@ -796,6 +1006,7 @@ export class ListComponent implements OnInit {
   selectedTabChange(o: MatTabGroup) {
 
     this.stateAxe();
+    this.StateMesuresByType();
     this.stateOrganismeActivite(0, 'غير منجز', this.departementSubject1 );
     this.stateOrganismeActivite(1, 'عمل متواصل', this.departementSubject2);
     this.stateOrganismeActivite(2, 'منجز' , this.departementSubject3);
