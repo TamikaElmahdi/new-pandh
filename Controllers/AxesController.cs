@@ -893,38 +893,63 @@ namespace Controllers
         public async Task<IActionResult> StateSousAxeByDepartement(int sousAxe) 
         {
             
-            var q = _context.Responsables
+            var q = _context.Realisations
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Responsables)
+                .ThenInclude(e => e.Organisme)
                 .Where(e => e.Mesure.Axe != null)
-                //.Where(e => e.Mesure.ActiviteMesures != null)
-                .Where(e => e.Mesure.Responsables != null)
-                //.Where(e => e.Mesure.Realisations != null)
-                .Where(e => e.Mesure.IdSousAxe == sousAxe)
-
-                //.Where(e => e.Mesure.Responsables.Any(p => p.Organisme.TypeHome == type))
-
-                 .Include(e => e.Mesure)
-                 .Include(e => e.Organisme)
-                 .Include(e => e.Mesure.Realisations)
-                // .Include(e => e.Mesure.Axe)
+                .Where(e => sousAxe == 0 ? true : e.Mesure.IdSousAxe == sousAxe)
+                
                 ;
+
             var list = await q.ToListAsync();
             var list2 = list
-                .GroupBy( e=>e.Organisme.Label)
-               // .GroupBy( e=>e.Mesure.Responsables.Select(e => e.Organisme.Label))
+                .GroupBy(e=>e.Mesure.Responsables.Select(f => f.Organisme.Label).FirstOrDefault())
                 .Select(e => new
                 {
                     name = e.Key,
-                 
-                     p = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "في طور الإنجاز")).Count(),
-                    r = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "منجز")).Count(),
-                    c = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count(),
-                    n = e.Where(s => s.Mesure.Responsables != null  && s.Mesure.Realisations.Any(s => s.Situation == "غير منجز")).Count(),
-                    t = e.Where(s => s.Mesure.Responsables != null  ).Count(),
+                    p = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "في طور الإنجاز").Count(),
+                    r = e.Where(s => s.TauxRealisation == 100).Count(),
+                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "عمل متواصل").Count(),
+                    n = e.Where(s => s.TauxRealisation == 0).Count(),
                     
+                    // // t = count,
+                    t = e.Count(),
                 })
                 .ToList()
                 ;
-            return Ok(list2);
+             return Ok(list2);
+
+        }
+
+        
+        [HttpGet("{sousAxe}")]
+        public async Task<IActionResult> StateSousAxeByDepartementOld(int sousAxe) 
+        {
+            var q = _context.Realisations
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => sousAxe == 0 ? true : e.Mesure.IdSousAxe == sousAxe)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Responsables).ThenInclude(e => e.Organisme)
+                ;
+
+            var list =  q.Select ( f => f.Mesure.Responsables).ToList();
+            var list2 = list
+                .GroupBy(e=>e.Select(r => r.Organisme.Label))
+                .Select(e => new
+                {
+                    name = e.Key,
+                    // p = e.Where(s => s..TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "في طور الإنجاز").Count(),
+                    // r = e.Where(s => s.TauxRealisation == 100).Count(),
+                    // c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "عمل متواصل").Count(),
+                    // n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    // t = e.Count(),
+
+                   
+                })
+                .ToList()
+                ;
+             return Ok(list2);
 
         }
 
