@@ -1,5 +1,5 @@
-import { ListComponent } from './list/list.component';
 import { NgModule } from '@angular/core';
+import { ListComponent } from './list/list.component';
 import { CommonModule } from '@angular/common';
 
 import { StateRoutingModule } from './state-routing.module';

@@ -1040,32 +1040,32 @@ export class ListComponent implements OnInit {
 
 
   SousAxeToText(idDepartement: number) {
-    if(idDepartement === 1) return 'المشاركة السياسية';
-    else if(idDepartement === 2 ) return 'المساواة والمناصفة وتكافؤ الفرص ';
-    else if(idDepartement === 3 ) return ' الحكامة الترابية ';
-    else if(idDepartement === 4 ) return 'الحكامة الإدارية والنزاهة والشفافية ومكافحة الفساد ';
-    else if(idDepartement === 5 ) return 'الحكامة الأمنية ';
-    else if(idDepartement === 6 ) return ' حريات الاجتماع والتجمع والتظاهر السلمي وتأسيس الجمعيات ';
-    else if(idDepartement === 7 ) return ' مكافحة الإفلات من العقاب';
-    else if(idDepartement === 8 ) return ' جودة المنظومة الوطنية للتربية والتكوين والبحث العلمي ';
-    else if(idDepartement === 9 ) return 'الحقوق الثقافية ';
-    else if(idDepartement === 10 ) return ' الولوج إلى الخدمات الصحية ';
-    else if(idDepartement === 11) return ' الشغل وتكريس المساواة ';
-    else if(idDepartement === 12) return ' السياسة السكنية ';
-    else if(idDepartement === 13) return 'السياسة البيئية المندمجة ';
-    else if(idDepartement === 14) return ' المقاولة وحقوق الإنسان ';
-    else if(idDepartement === 15 ) return ' الأبعاد المؤسساتية والتشريعية ';
-    else if(idDepartement === 16 ) return ' حقوق الطفل ';
-    else if(idDepartement === 17 ) return 'حقوق الشباب ';
-    else if(idDepartement === 18) return ' حقوق الأشخاص في وضعية إعاقة ';
-    else if(idDepartement === 19 ) return ' حقوق الأشخاص المسنين ';
-    else if(idDepartement === 20 ) return 'حقوق المهاجرين واللاجئين ';
-    else if(idDepartement === 21 ) return ' الحماية القانونية والقضائية لحقوق الإنسان';
-    else if(idDepartement === 22 ) return ' الحماية القانونية والمؤسساتية لحقوق المرأة ';
-    else if(idDepartement === 23 ) return 'حريات التعبير والإعلام والصحافة والحق في المعلومة ';
-    else if(idDepartement === 24 ) return 'حماية التراث الثقافي ';
-    else if(idDepartement === 25 ) return ' حفظ الأرشيف وصيانته ';
-    else if(idDepartement === 26 ) return ' الحقوق والحريات والآليات المؤسساتية ';
+    if(idDepartement === 1) { return 'المشاركة السياسية'; }
+    else if(idDepartement === 2 )  { return 'المساواة والمناصفة وتكافؤ الفرص ';}
+    else if(idDepartement === 3 )  { return ' الحكامة الترابية ';}
+    else if(idDepartement === 4 )  { return 'الحكامة الإدارية والنزاهة والشفافية ومكافحة الفساد ';}
+    else if(idDepartement === 5 )  { return 'الحكامة الأمنية ';}
+    else if(idDepartement === 6 )  { return ' حريات الاجتماع والتجمع والتظاهر السلمي وتأسيس الجمعيات ';}
+    else if(idDepartement === 7 )  { return ' مكافحة الإفلات من العقاب';}
+    else if(idDepartement === 8 )  { return ' جودة المنظومة الوطنية للتربية والتكوين والبحث العلمي ';}
+    else if(idDepartement === 9 )  { return 'الحقوق الثقافية ';}
+    else if(idDepartement === 10 )  { return ' الولوج إلى الخدمات الصحية ';}
+    else if(idDepartement === 11)  { return ' الشغل وتكريس المساواة ';}
+    else if(idDepartement === 12)  { return ' السياسة السكنية ';}
+    else if(idDepartement === 13)  { return 'السياسة البيئية المندمجة ';}
+    else if(idDepartement === 14)  { return ' المقاولة وحقوق الإنسان ';}
+    else if(idDepartement === 15 )  { return ' الأبعاد المؤسساتية والتشريعية ';}
+    else if(idDepartement === 16 )  { return ' حقوق الطفل ';}
+    else if(idDepartement === 17 )  { return 'حقوق الشباب ';}
+    else if(idDepartement === 18)  { return ' حقوق الأشخاص في وضعية إعاقة ';}
+    else if(idDepartement === 19 )  { return ' حقوق الأشخاص المسنين ';}
+    else if(idDepartement === 20 )  { return 'حقوق المهاجرين واللاجئين ';}
+    else if(idDepartement === 21 )  { return ' الحماية القانونية والقضائية لحقوق الإنسان';}
+    else if(idDepartement === 22 )  { return ' الحماية القانونية والمؤسساتية لحقوق المرأة ';}
+    else if(idDepartement === 23 )  { return 'حريات التعبير والإعلام والصحافة والحق في المعلومة ';}
+    else if(idDepartement === 24 ) { return 'حماية التراث الثقافي '; }
+    else if(idDepartement === 25 )  { return ' حفظ الأرشيف وصيانته ';}
+    else if(idDepartement === 26 )  { return ' الحقوق والحريات والآليات المؤسساتية ';}
   }
 
 
@@ -1118,8 +1118,6 @@ export class ListComponent implements OnInit {
       chartLabels.push('منجز');
       chartLabels.push('عمل متواصل');
       chartLabels.push('غير منجز');
-
-      console.log(r)
 
       const chartData = [];
       const dataToShowInTable = [];
@@ -1241,7 +1239,6 @@ export class ListComponent implements OnInit {
     this.searchAndGet(this.o);
     this.stateAxeDetails();
 
-    //this.getCountBySituation(this.o);
     this.createForm();
     this.createFormDetails();
 
@@ -1274,15 +1271,13 @@ export class ListComponent implements OnInit {
       this.typeOrganisme = 2;
       this.getOrganismes();
     } else if (r.includes('mesure-programme')) {
-      //this.title = 'برامج العمل';
       this.isMesureRegion = false;
       this.isMesure = false;
       this.isProgramme = true;
       this.typeOrganisme = 3;
       this.getOrganismes();
     } else {
-      // mesure-executif
-      // this.title = 'المخطط التنفيدي';
+     
       this.isMesureRegion = false;
       this.isMesure = true;
       this.isProgramme = false;
@@ -1378,16 +1373,10 @@ export class ListComponent implements OnInit {
     this.createFormDetails();
     this.searchAndGet(this.o);
     this.stateAxeDetails();
-
-    //this.getCountBySituation(this.o);
   }
 
   search(o: Model) {
     this.searchAndGet(o);
-    //this.getCountBySituation(this.o);
-
-    //this.o = o;
-    ///this.update.next(true);
   }
 
 
