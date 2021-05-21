@@ -191,17 +191,17 @@ export class ListComponent implements OnInit {
       const barChartLabels = r.map(e => e.name);
       const dataToShowInTable = []
       const barChartData = [
-        { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        // { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
         { data: [], label: 'منجز'/*, stack: 'a'*/ },
         { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
         { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
       ];
 
       r.forEach(e => {
-        barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
-        barChartData[1].data.push((e.r * 100 / e.t).toFixed(0));
-        barChartData[2].data.push((e.c * 100 / e.t).toFixed(0));
-        barChartData[3].data.push((e.n * 100 / e.t).toFixed(0));
+        // barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[0].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
       });
 
 
@@ -224,7 +224,7 @@ export class ListComponent implements OnInit {
 
     this.uow.realisations.stateMecanisme(this.type).subscribe(r => {
       const chartLabels = [];
-      chartLabels.push('في طور الإنجاز');
+      // chartLabels.push('في طور الإنجاز');
       chartLabels.push('منجز');
       chartLabels.push('عمل متواصل');
       chartLabels.push('غير منجز');
@@ -238,7 +238,7 @@ export class ListComponent implements OnInit {
       // chartData.push(r.epu.r * r.epu.t / 100);
       // chartData.push(r.epu.t - (r.epu.p * r.epu.t / 100) - (r.epu.r * r.epu.t / 100));
 
-      chartData.push(r.epu.p * 100 / r.epu.t);
+      // chartData.push(r.epu.p * 100 / r.epu.t);
       chartData.push(r.epu.r * 100 / r.epu.t);
       chartData.push(r.epu.c * 100 / r.epu.t);
       chartData.push(r.epu.n * 100 / r.epu.t);
@@ -249,7 +249,7 @@ export class ListComponent implements OnInit {
       // chartData.push(100 - r.epu.t);
 
 
-      const chartColors = ['#f7801e', '#2b960b', '#db0707', '#ffffff'];
+      const chartColors = [ '#2b960b', '#db0707', '#ffffff'];
 
       this.dataEpuPie.next({
         chartLabels, chartData, chartColors, dataToShowInTable, count: r.count

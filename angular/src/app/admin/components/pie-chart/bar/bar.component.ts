@@ -89,9 +89,10 @@ export class BarComponent implements OnInit {
 
   public oneColor = '';
 
+  
   public pieChartColors = [
     // { backgroundColor: ['#d17c36', '#2d71a1'], },
-    { backgroundColor: '#d17c36' },
+    // { backgroundColor: '#d17c36' },
     { backgroundColor: '#7dc460' },
     { backgroundColor: '#1476de' },
     { backgroundColor: '#db0707' },

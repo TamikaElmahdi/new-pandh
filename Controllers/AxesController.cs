@@ -925,6 +925,7 @@ namespace Controllers
                 .ThenInclude(e => e.Organisme)
                 .Where(e => e.Mesure.Axe != null)
                 .Where(e => sousAxe == 0 ? true : e.Mesure.IdSousAxe == sousAxe)
+                .Where(e => e.Mesure.Responsables.Any(r => r.IdOrganisme != 123))
                 
                 ;
 
