@@ -12,8 +12,8 @@ import { DetailsComponent } from '../details/details.component';
 import { DeleteService } from '../../components/delete/delete.service';
 import { IData } from '../../components/pie-chart/pie-chart.component';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import {jsPDF} from 'jspdf';
-import { PdfService } from '../../pdf.service';
+//import {jsPDF} from 'jspdf';
+//import { PdfService } from '../../pdf.service';
 
 
 @Component({
@@ -113,7 +113,7 @@ export class ListMesureComponent implements OnInit {
     , private snack: SnackbarService, private fb: FormBuilder
     , public session: SessionService, public dialog: MatDialog
     , private route: ActivatedRoute, public router: Router
-    , public pdf: PdfService
+   // , public pdf: PdfService
     ) { }
 
   ngOnInit() {
@@ -312,7 +312,7 @@ export class ListMesureComponent implements OnInit {
     cm.nom = d.nom;
 
 
-    this.pdf.generatePdfMesure(cm, 'A5', 'Commande avoir');
+    //this.pdf.generatePdfMesure(cm, 'A5', 'dd');
   }
 
 

@@ -431,6 +431,30 @@ namespace Controllers
             }
             
         }
+        
+
+        [HttpGet("{idOrganisme}/{idAxe}")]
+        public async Task<object> getStateMesureByOrganismeAndAxe(int idOrganisme, int idAxe) 
+        {
+            var t = await _context.Mesures.Where(f => f.Responsables.Any(e => e.IdOrganisme == idOrganisme))
+                                          .Where( f => f.IdAxe == idAxe).CountAsync();
+            
+            var n = await _context.Mesures.Where(f => f.Responsables.Any(e => e.IdOrganisme == idOrganisme))
+                                          .Where( f => f.IdAxe == idAxe)
+                                          .Where(f => f.Realisations.All(e=>e.TauxRealisation == 0)).CountAsync();
+            
+            var c = await _context.Mesures.Where(f => f.Responsables.Any(e => e.IdOrganisme == idOrganisme))
+                                          .Where( f => f.IdAxe == idAxe)
+                                          .Where(f => f.Realisations.Any(e=>e.TauxRealisation > 0 && e.TauxRealisation < 100)).CountAsync();
+
+            var r = await _context.Mesures.Where(f => f.Responsables.Any(e => e.IdOrganisme == idOrganisme))
+                                          .Where( f => f.IdAxe == idAxe)
+                                          .Where(f => f.Realisations.All(e=>e.TauxRealisation == 100)).CountAsync();
+            
+            var epu = new { t,n,c,r };
+            return new { epu };
+
+        }
 
         [HttpGet("{type}")]
         public async Task<IActionResult> StateAxeMesure(int type) 

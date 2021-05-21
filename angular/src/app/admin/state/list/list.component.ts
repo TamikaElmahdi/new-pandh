@@ -29,6 +29,8 @@ export class ListComponent implements OnInit {
   situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز'];
   situationsMesures = ['في طور الإنجاز', 'منجز', 'غير منجز'];
 
+
+
   pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب المحاور', idAxe: 0 });
   pieChartSubjectD = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب النوع', idAxe: 6 });
 
@@ -466,6 +468,13 @@ export class ListComponent implements OnInit {
 
     });
   }
+
+
+  //ICI
+  // getStateMesureByOrganismeAndAxes(idOrganisme: number , idAxe : number){
+  //   return [idOrganisme,idAxe];
+  // }
+
 
 
 

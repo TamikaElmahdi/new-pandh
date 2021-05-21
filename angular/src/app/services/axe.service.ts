@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SuperService } from './super.service';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -55,6 +56,22 @@ export class AxeService  extends SuperService<any> {
   stateSousAxeMesure(type: number) {
     return this.http.get<{ name: string, n: number, c: number, r: number, t: number, }[]>(`${this.urlApi}/${this.controller}/stateSousAxeMesure/${type}`);
   }
+
+  getStateMesureByOrganismeAndAxea(idOrganisme: number, idAxe: number) {
+    return this.http.get<{ name: string, n: number, c: number, r: number, t: number, }[]>(`${this.urlApi}/${this.controller}/getStateMesureByOrganismeAndAxe/${idOrganisme}/${idAxe}`);
+  }
+
+
+
+
+  getStateMesureByOrganismeAndAxe(idOrganisme: number, idAxe: number) {
+    return this.http.get<{
+      epu: { name: string | Observable<string>, p: number, t: number, r: number , c: number , n: number},
+    }>(`${this.urlApi}/${this.controller}/getStateMesureByOrganismeAndAxe/${idOrganisme}/${idAxe}`);
+  }
+
+
+  
 
 
 }
