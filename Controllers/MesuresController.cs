@@ -133,33 +133,58 @@ namespace Controllers
         public async Task<IActionResult> GetDataAxes(Model model)
         {
 
-          
-
-            var query = _context.Axes ;
-
             var countMesure = _context.Mesures.Count();
             var countActivite = _context.Activites.Count();
 
-            var list = await query
+            var list = await _context.Axes
+                //  .Include(e => e.SousAxes)
+                //  .Include(e => e.Mesures)
+                //  .ThenInclude(e => e.ActiviteMesures)
+                //  .Include(e => e.Mesures).ThenInclude(e => e.Realisations)
+
                 .Select(e => new
                 {
-                    id = e.Id,
                     axe = e.Label,
                     nbrSousAxe = e.SousAxes.Count(),
                     nbrMesure = e.Mesures.Count(),
                     pourcentageMesure = e.Mesures.Count() * 100 / countMesure,
-                    nbrActivite = 5,
-                    pourcentageActivite = 5,
-                    pourcentageRealisationMesureRealise = 4,
-                    pourcentageRealisationMesureEncour = 7,
-                    pourcentageRealisationMesureNonRealie = 8,
-                    
+                    nbrActivite = e.Mesures.SelectMany(o => o.ActiviteMesures.Select(t => t.Activite)).Count(),
+                    pourcentageActivite = e.Mesures.SelectMany(o => o.ActiviteMesures.Select(t => t.Activite)).Count() * 100 / countActivite,
+                    pourcentageRealisationMesureRealise = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation == 100)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count() ,
+                    pourcentageRealisationMesureEncour = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation > 0 && t.TauxRealisation <100)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count() ,
+                    pourcentageRealisationMesureNonRealie = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation == 0)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count(),
 
-                    
                 })
                 .ToListAsync();
             ;
+            return Ok(new { list = list});
+        }
 
+
+         [HttpPost]
+        public async Task<IActionResult> GetDataSousAxes(Model model)
+        {
+
+            var countMesure = _context.Mesures.Count();
+            var countActivite = _context.Activites.Count();
+
+            var list = await _context.SousAxes
+               
+
+                .Select(e => new
+                {
+                    sousAxe = e.Label,
+                    nbrMesure = e.Mesures.Count(),
+                    pourcentageMesure = e.Mesures.Count() * 100 / countMesure,
+                    nbrActivite = e.Mesures.SelectMany(o => o.ActiviteMesures.Select(t => t.Activite)).Count(),
+                    pourcentageActivite = e.Mesures.SelectMany(o => o.ActiviteMesures.Select(t => t.Activite)).Count() * 100 / countActivite,
+                    pourcentageRealisationMesureRealise = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation == 100)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count() ,
+                    pourcentageRealisationMesureEncour = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation > 0 && t.TauxRealisation <100)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count() ,
+                    pourcentageRealisationMesureNonRealie = e.Mesures.SelectMany(o => o.Realisations.Where(t => t.TauxRealisation == 0)).Count() * 100 / e.Mesures.SelectMany(o => o.Realisations).Count(),
+
+                })
+                .ToListAsync();
+            ;
             return Ok(new { list = list});
         }
 

@@ -35,6 +35,10 @@ export class MesureService extends SuperService<Mesure> {
     return this.http.post(`${this.urlApi}/${this.controller}/getDataAxes`, o);
   }
 
+  getDataSousAxes(o) {
+    return this.http.post(`${this.urlApi}/${this.controller}/getDataSousAxes`, o);
+  }
+
 
 
 }

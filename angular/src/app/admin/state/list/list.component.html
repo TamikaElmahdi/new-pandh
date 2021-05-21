@@ -1049,28 +1049,34 @@
 
 
 
-
-    <mat-tab label="وضعية تنفيد المحاور و المحاور الفرعية ">
+    <mat-tab label="وضعية تنفيد المحاور">
       <ng-template matTabContent>
 
         <div class="row justify-content-center">
           <div class="col-md-12" style="text-align: right;">
-            <article style="margin-right: 1%;"  *ngFor="let a of dataSourceAxes" >
-              <h2>{{a.axe}} المحور</h2>
-              <p>يضم هذا المحور {{a.nbrSousAxe}} محور فرعي و {{a.nbrMesure}} تدبير بنسبة {{ a.pourcentageMesure }}% من مجموع تدابير الخطة مع برمجة {{ a.nbrActivite }}  نشاط بنسبة {{ a.pourcentageActivite }}% من مجموع أنشطة الخطة . حيث تم إنجاز    {{ a.pourcentageRealisationMesureRealise }}% من هاته التدابير في حين لازالت {{ a.pourcentageRealisationMesureEncour }}% في طور الانجازو {{ a.pourcentageRealisationMesureNonRealie }}% لم يتم إنجازها بعد.</p>
-
-                <div style="margin-right: 3%;">
-                  <h3>X المحورالفرعي </h3>
-                  <p>يضم هذا المحور الفرعي Y تدبيربنسبة x1% من مجموع تدابير الخطة مع برمجة Z  نشاط بنسبة x2% من مجموع أنشطة الخطة . حيث تم إنجاز    x3% من هاته التدابير في حين لازالت x4% في طور الانجازو x5% لم يتم إنجازها بعد.
-
-                  </p>
-                </div>
+            <article style="margin: 1%;"  *ngFor="let a of dataSourceAxes" >
+              <h2 style="color: #00719d;">محور {{a.axe}} </h2>
+              <p style="font-size: larger; margin-right: 1%;">يضم هذا المحور {{a.nbrSousAxe}} محور فرعي و {{a.nbrMesure}} تدبير بنسبة {{ a.pourcentageMesure }}% من مجموع تدابير الخطة مع برمجة {{ a.nbrActivite }}  نشاط بنسبة {{ a.pourcentageActivite }}% من مجموع أنشطة الخطة . حيث تم إنجاز    {{ a.pourcentageRealisationMesureRealise }}% من هاته التدابير في حين لازالت {{ a.pourcentageRealisationMesureEncour }}% في طور الانجازو {{ a.pourcentageRealisationMesureNonRealie }}% لم يتم إنجازها بعد.</p>
             </article>
           </div>
         </div>
-
         
+      </ng-template>
+    </mat-tab>
 
+
+    <mat-tab label="وضعية تنفيد المحاور الفرعية">
+      <ng-template matTabContent>
+
+        <div class="row justify-content-center">
+          <div class="col-md-12" style="text-align: right;">
+            <article style="margin: 1%;"  *ngFor="let a of dataSourceSousAxes" >
+              <h2 style="color: #00719d;">المحورالفرعي {{a.sousAxe}} </h2>
+              <p style="font-size: larger; margin-right: 1%;">يضم هذا المحور الفرعي {{ a.nbrMesure }} تدبيربنسبة {{ a.pourcentageMesure }}% من مجموع تدابير الخطة مع برمجة {{ a.nbrActivite }}  نشاط بنسبة {{ a.pourcentageActivite }}% من مجموع أنشطة الخطة . حيث تم إنجاز    {{ a.pourcentageRealisationMesureRealise }}% من هاته التدابير في حين لازالت {{ a.pourcentageRealisationMesureEncour }}% في طور الانجازو {{ a.pourcentageRealisationMesureNonRealie }}% لم يتم إنجازها بعد.
+            </article>
+          </div>
+        </div>
+        
       </ng-template>
     </mat-tab>
 

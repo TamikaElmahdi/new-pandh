@@ -20,6 +20,7 @@ namespace Controllers
                 .Where(e => e.Mesure.ActiviteMesures != null)
                 .Where(e => e.Mesure.Responsables != null)
                 .Where(e => e.Mesure.Realisations != null)
+                .Where( e => e.IdOrganisme != 123)
 
                 //.Where(e => e.Mesure.Responsables.Any(p => p.Organisme.TypeHome == type))
 
@@ -228,6 +229,7 @@ namespace Controllers
                 .Where(e => e.Mesure.Axe != null)
                 .Where(e => e.Mesure.ActiviteMesures != null)
                 .Where(e => e.Mesure.Responsables != null)
+                .Where(e => e.IdOrganisme != 123)
                 //.Where(e => e.Mesure.Realisations != null)
 
                 //.Where(e => e.Mesure.Responsables.Any(p => p.Organisme.TypeHome == type))

@@ -31,19 +31,31 @@ export class ListComponent implements OnInit {
 
   dataSourceAxes = [];
   columnAxesDefs = [
-    { columnAxesDef: 'axe', headName: '' },
-    { columnAxesDef: 'nbrSousAxe', headName: '' },
-    { columnAxesDef: 'nbrMesure', headName: '' },
-    { columnAxesDef: 'pourcentageMesure', headName: '' },
-    { columnAxesDef: 'nbrActivite', headName: '' },
-    { columnAxesDef: 'pourcentageActivite', headName: '' },
-    { columnAxesDef: 'pourcentageRealisationMesureRealise', headName: '' },
-    { columnAxesDef: 'pourcentageRealisationMesureEncour', headName: '' },
-    { columnAxesDef: 'pourcentageRealisationMesureNonRealie', headName: '' },
-  ].map(e => {
-    e.headName = e.headName === '' ? e.columnAxesDef.toUpperCase() : e.headName;
-    return e;
-  });
+    { columnAxesDef: 'axe' },
+    { columnAxesDef: 'nbrSousAxe' },
+    { columnAxesDef: 'nbrMesure' },
+    { columnAxesDef: 'pourcentageMesure' },
+    { columnAxesDef: 'nbrActivite' },
+    { columnAxesDef: 'pourcentageActivite' },
+    { columnAxesDef: 'pourcentageRealisationMesureRealise' },
+    { columnAxesDef: 'pourcentageRealisationMesureEncour' },
+    { columnAxesDef: 'pourcentageRealisationMesureNonRealie' },
+  ];
+
+
+  dataSourceSousAxes = [];
+  columnSousAxesDefs = [
+    { columnSousAxesDef: 'sousAxe' },
+    { columnSousAxesDef: 'nbrMesure' },
+    { columnSousAxesDef: 'pourcentageMesure' },
+    { columnSousAxesDef: 'nbrActivite' },
+    { columnSousAxesDef: 'pourcentageActivite' },
+    { columnSousAxesDef: 'pourcentageRealisationMesureRealise' },
+    { columnSousAxesDef: 'pourcentageRealisationMesureEncour' },
+    { columnSousAxesDef: 'pourcentageRealisationMesureNonRealie' },
+  ];
+
+
 
 
   pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب المحاور', idAxe: 0 });
@@ -287,6 +299,7 @@ export class ListComponent implements OnInit {
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
     this.getDataAxes(this.o);
+    this.getDataSousAxes(this.o);
     this.stateAxeDetails();
 
     this.getCountBySituation(this.o);
@@ -344,6 +357,8 @@ export class ListComponent implements OnInit {
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
         this.getDataAxes(this.o);
+        this.getDataSousAxes(this.o);
+
         this.stateAxeDetails();
 
       }
@@ -1265,6 +1280,8 @@ export class ListComponent implements OnInit {
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
     this.getDataAxes(this.o);
+    this.getDataSousAxes(this.o);
+
     this.stateAxeDetails();
 
     this.createForm();
@@ -1282,6 +1299,8 @@ export class ListComponent implements OnInit {
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
         this.getDataAxes(this.o);
+        this.getDataSousAxes(this.o);
+
         this.stateAxeDetails();
 
       }
@@ -1402,6 +1421,8 @@ export class ListComponent implements OnInit {
     this.createFormDetails();
     this.searchAndGet(this.o);
     this.getDataAxes(this.o);
+    this.getDataSousAxes(this.o);
+
     this.stateAxeDetails();
   }
 
@@ -1462,6 +1483,22 @@ export class ListComponent implements OnInit {
       }, e => this.isLoadingResults = false,
     );
   }
+
+
+  getDataSousAxes(o: Model) {
+    console.log(o);
+    this.o = o;
+    // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
+    this.uow.mesures.getDataSousAxes(this.o).subscribe(
+      (r: any) => {
+        console.log(r.list);
+        this.dataSourceSousAxes = r.list;
+        this.resultsLength = r.count;
+        this.isLoadingResults = false;
+      }, e => this.isLoadingResults = false,
+    );
+  }
+
 
   async delete(o: Mesure) {
     const r = await this.mydialog.openDialog('تدبير').toPromise();
