@@ -125,6 +125,49 @@ namespace Controllers
         }
 
 
+
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> GetDataAxes(Model model)
+        {
+
+          
+
+            var query = _context.Axes ;
+
+            var countMesure = _context.Mesures.Count();
+            var countActivite = _context.Activites.Count();
+
+            var list = await query
+                .Select(e => new
+                {
+                    id = e.Id,
+                    axe = e.Label,
+                    nbrSousAxe = e.SousAxes.Count(),
+                    nbrMesure = e.Mesures.Count(),
+                    pourcentageMesure = e.Mesures.Count() * 100 / countMesure,
+                    nbrActivite = 5,
+                    pourcentageActivite = 5,
+                    pourcentageRealisationMesureRealise = 4,
+                    pourcentageRealisationMesureEncour = 7,
+                    pourcentageRealisationMesureNonRealie = 8,
+                    
+
+                    
+                })
+                .ToListAsync();
+            ;
+
+            return Ok(new { list = list});
+        }
+
+
+
+
+
+
         [HttpPost]
         public  async Task<IActionResult> PourcentageParSituation(string situation)
         {

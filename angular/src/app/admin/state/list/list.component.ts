@@ -29,6 +29,21 @@ export class ListComponent implements OnInit {
   situations = ['في طور الإنجاز', 'عمل متواصل', 'منجز', 'غير منجز'];
   situationsMesures = ['في طور الإنجاز', 'منجز', 'غير منجز'];
 
+  dataSourceAxes = [];
+  columnAxesDefs = [
+    { columnAxesDef: 'axe', headName: '' },
+    { columnAxesDef: 'nbrSousAxe', headName: '' },
+    { columnAxesDef: 'nbrMesure', headName: '' },
+    { columnAxesDef: 'pourcentageMesure', headName: '' },
+    { columnAxesDef: 'nbrActivite', headName: '' },
+    { columnAxesDef: 'pourcentageActivite', headName: '' },
+    { columnAxesDef: 'pourcentageRealisationMesureRealise', headName: '' },
+    { columnAxesDef: 'pourcentageRealisationMesureEncour', headName: '' },
+    { columnAxesDef: 'pourcentageRealisationMesureNonRealie', headName: '' },
+  ].map(e => {
+    e.headName = e.headName === '' ? e.columnAxesDef.toUpperCase() : e.headName;
+    return e;
+  });
 
 
   pieChartSubjectC = new BehaviorSubject<IData>({ table: 'axe', type: 'tauxRealisation', typeTable: 1, title: 'التوزيع الحسب المحاور', idAxe: 0 });
@@ -131,6 +146,7 @@ export class ListComponent implements OnInit {
   myFormDetails: FormGroup;
   //
   displayedColumns = this.columnDefs.map(e => e.columnDef);
+  displayedAxesColumns = this.columnAxesDefs.map(e => e.columnAxesDef);
   // progress = 0;
   // message: any;
   // formData = new FormData();
@@ -270,6 +286,7 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
+    this.getDataAxes(this.o);
     this.stateAxeDetails();
 
     this.getCountBySituation(this.o);
@@ -326,6 +343,7 @@ export class ListComponent implements OnInit {
         this.o.sortDir = this.sort.direction ? this.sort.direction : 'desc';
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
+        this.getDataAxes(this.o);
         this.stateAxeDetails();
 
       }
@@ -1246,6 +1264,7 @@ export class ListComponent implements OnInit {
     this.checkWitchMesure(this.routeMesure);
     this.o.typeOrganisme = this.typeOrganisme;
     this.searchAndGet(this.o);
+    this.getDataAxes(this.o);
     this.stateAxeDetails();
 
     this.createForm();
@@ -1262,6 +1281,7 @@ export class ListComponent implements OnInit {
         this.o.sortDir = this.sort.direction ? this.sort.direction : 'desc';
         this.isLoadingResults = true;
         this.searchAndGet(this.o);
+        this.getDataAxes(this.o);
         this.stateAxeDetails();
 
       }
@@ -1381,6 +1401,7 @@ export class ListComponent implements OnInit {
     this.createForm();
     this.createFormDetails();
     this.searchAndGet(this.o);
+    this.getDataAxes(this.o);
     this.stateAxeDetails();
   }
 
@@ -1423,6 +1444,21 @@ export class ListComponent implements OnInit {
         this.isLoadingResults = false;
         this.countMesure = r.count;
         this.countActivite = r.countActivite;
+      }, e => this.isLoadingResults = false,
+    );
+  }
+
+
+  getDataAxes(o: Model) {
+    console.log(o);
+    this.o = o;
+    // this.o.idOrganisme = this.session.isPointFocal || this.session.isProprietaire ? this.session.user.idOrganisme : this.o.idOrganisme;
+    this.uow.mesures.getDataAxes(this.o).subscribe(
+      (r: any) => {
+        console.log(r.list);
+        this.dataSourceAxes = r.list;
+        this.resultsLength = r.count;
+        this.isLoadingResults = false;
       }, e => this.isLoadingResults = false,
     );
   }

@@ -1047,6 +1047,34 @@
       </ng-template>
     </mat-tab>
 
+
+
+
+    <mat-tab label="وضعية تنفيد المحاور و المحاور الفرعية ">
+      <ng-template matTabContent>
+
+        <div class="row justify-content-center">
+          <div class="col-md-12" style="text-align: right;">
+            <article style="margin-right: 1%;"  *ngFor="let a of dataSourceAxes" >
+              <h2>{{a.axe}} المحور</h2>
+              <p>يضم هذا المحور {{a.nbrSousAxe}} محور فرعي و {{a.nbrMesure}} تدبير بنسبة {{ a.pourcentageMesure }}% من مجموع تدابير الخطة مع برمجة {{ a.nbrActivite }}  نشاط بنسبة {{ a.pourcentageActivite }}% من مجموع أنشطة الخطة . حيث تم إنجاز    {{ a.pourcentageRealisationMesureRealise }}% من هاته التدابير في حين لازالت {{ a.pourcentageRealisationMesureEncour }}% في طور الانجازو {{ a.pourcentageRealisationMesureNonRealie }}% لم يتم إنجازها بعد.</p>
+
+                <div style="margin-right: 3%;">
+                  <h3>X المحورالفرعي </h3>
+                  <p>يضم هذا المحور الفرعي Y تدبيربنسبة x1% من مجموع تدابير الخطة مع برمجة Z  نشاط بنسبة x2% من مجموع أنشطة الخطة . حيث تم إنجاز    x3% من هاته التدابير في حين لازالت x4% في طور الانجازو x5% لم يتم إنجازها بعد.
+
+                  </p>
+                </div>
+            </article>
+          </div>
+        </div>
+
+        
+
+      </ng-template>
+    </mat-tab>
+
+
   </mat-tab-group>
 
 

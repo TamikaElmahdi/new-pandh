@@ -462,7 +462,7 @@ namespace Controllers
 
             if(type==0)
             {
-                    var q = _context.Responsables
+                var q = _context.Responsables
                 .Where(e => e.Mesure.Axe != null)
                 .Where(e => e.Mesure.ActiviteMesures != null)
                 .Where(e => e.Mesure.Responsables != null)
