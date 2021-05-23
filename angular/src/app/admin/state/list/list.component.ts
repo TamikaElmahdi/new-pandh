@@ -760,7 +760,6 @@ export class ListComponent implements OnInit {
         barChartData[2].data.push((e.n ).toFixed(0));
       });
 
-
       // tslint:disable-next-line:max-line-length
       this.examenPageSubjectMesureGlobal.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
     });
