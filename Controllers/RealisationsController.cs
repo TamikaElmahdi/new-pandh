@@ -373,50 +373,10 @@ namespace Controllers
          private async Task<object> CalcBySousAxe(IQueryable<Realisation> q, int axe, int sousAxe)
         {
 
-            // int recommendationsCount = _context.Recommendations.Count();
-
-            // var t = await q
-            //                 .Where(e => e.Mesure.Axe != null)
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-            //                 .Include(e => e.Mesure)
-            //                 .Include(e => e.Mesure.SousAxe)
-            //                 .CountAsync();
-
-                            
-            // var n = await q.Where(e =>  e.TauxRealisation == 0)
-            //                 .Where(e => e.Mesure.Axe != null)
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-            //                 .Include(e => e.Mesure)
-            //     .Include(e => e.Mesure.SousAxe)
-            //                 .CountAsync();
-
-            // var r = await q.Where(e => e.TauxRealisation == 100)
-            //                 .Where(e => e.Mesure.Axe != null)
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-            //                 .Include(e => e.Mesure)
-            //     .Include(e => e.Mesure.SousAxe)
-            //                 .CountAsync();
-           
-            // var c = await q.Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 )
-            //                 .Where(e => e.Mesure.Axe != null)
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-            //                 .Include(e => e.Mesure)
-            //     .Include(e => e.Mesure.SousAxe)
-            //                 .CountAsync();
-            
-            // var epu = new { n, r, c, t };
-
-           
-
-            // return new { epu, count = 0 };
-
             
                var req = _context.Realisations
                 .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.Responsables != null)
                 .Where(e => axe == 0 ? true : e.Mesure.IdAxe == axe)
                 .Where(e => sousAxe == 0 ? true : e.Mesure.IdSousAxe == sousAxe)
                 .Include(e => e.Mesure)

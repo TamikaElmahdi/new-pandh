@@ -1249,10 +1249,11 @@ export class ListComponent implements OnInit {
 
       const chartData = [];
       const dataToShowInTable = [];
-   
-      chartData.push(r.epu.r * 100 / r.epu.t);
-      chartData.push(r.epu.c * 100 / r.epu.t);
-      chartData.push(r.epu.n * 100 / r.epu.t);
+      let total = r.epu.r + r.epu.c+ r.epu.n ;
+     
+      chartData.push(r.epu.r * 100 / total);
+      chartData.push(r.epu.c * 100 / total);
+      chartData.push(r.epu.n * 100 / total);
 
       dataToShowInTable.push(r.epu.r, r.epu.c, r.epu.n);
       this.countRec.next(r.epu.r + r.epu.c + r.epu.n);
