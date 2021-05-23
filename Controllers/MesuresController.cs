@@ -77,6 +77,7 @@ namespace Controllers
                 .Where(e => model.IdResponsable == 0 ? true : e.Responsables.Any(o => o.IdUser == model.IdResponsable))
                 .Where(e => model.IdAxe == 0 ? true : e.IdAxe == model.IdAxe)
                 .Where(e => model.IdSousAxe == 0 ? true : e.IdSousAxe == model.IdSousAxe)
+                .Where(e => model.IdOrganisme == 0 ? true : e.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
                 
                 .Where(e => model.CodeMesure == "" ? true : e.Code == model.CodeMesure)
                 .Where(e => model.NomMesure == "" ? true : e.Nom.Contains(model.NomMesure))
@@ -97,6 +98,8 @@ namespace Controllers
                 .Where(e => model.IdCycle == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdCycle == model.IdCycle))
                 .Where(e => model.IdAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdAxe == model.IdAxe))
                 .Where(e => model.IdSousAxe == 0 ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.IdSousAxe == model.IdSousAxe))
+                 .Where(e => model.IdOrganisme == 0 ? true : e.Mesure.Partenariats.Any(p => p.IdOrganisme == model.IdOrganisme))
+
                 
                 .Where(e => model.CodeMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Code == model.CodeMesure))
                 .Where(e => model.NomMesure == "" ? true : e.Activite.ActiviteMesures.Any(f=>f.Mesure.Nom.Contains(model.NomMesure)))

@@ -620,7 +620,7 @@
                   </mat-form-field>
 
 
-                  <mat-form-field appearance="fill" hidden>
+                  <mat-form-field appearance="fill">
                     <mat-label>{{isMesure ? 'القطاع الوزاري/المؤسسة' : (isMesureRegion ? 'الجهة أو الجماعة الترابية' :
                       'الهيئة')}}</mat-label>
                     <mat-select formControlName="idOrganisme">
@@ -628,6 +628,8 @@
                       <mat-option *ngFor="let e of organismes" [value]="e.id">{{ e.label }}</mat-option>
                     </mat-select>
                   </mat-form-field>
+
+                 
 
 
                 </div>
