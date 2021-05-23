@@ -924,9 +924,9 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    r = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                    c = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                    n = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    r = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
+                    c = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
+                    n = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     
 
