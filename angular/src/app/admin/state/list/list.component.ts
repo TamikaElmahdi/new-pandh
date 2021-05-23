@@ -64,6 +64,7 @@ export class ListComponent implements OnInit {
   dataEpu = new Subject<{ name: string | Observable<string>, p: number, t: number, r: number, n: number }>();
 
   examenPageSubject = new Subject();
+  examenPageSubjectMesureGlobal = new Subject();
   examenPageSubjectMesure = new Subject();
 
   examenPageSubjectDetails = new Subject();
@@ -100,6 +101,7 @@ export class ListComponent implements OnInit {
 
   countRec = new Subject();
   dataEpuPie = new Subject();
+  dataEpuPieSousAxe = new Subject();
   dataEpuPieMesure = new Subject();
 
   dataEpuPieType1 = new Subject();
@@ -236,6 +238,7 @@ export class ListComponent implements OnInit {
   ngOnInit() {
 
     this.stateAxe();
+    this.stateAxeMesureGlobal();
 
 
     this.stateSousAxeByDepartement(1, this.examenPageSubjectDepSousAxe1);
@@ -301,6 +304,7 @@ export class ListComponent implements OnInit {
     this.getDataAxes(this.o);
     this.getDataSousAxes(this.o);
     this.stateAxeDetails();
+    this.stateSousAxesDetailsColors();
 
     this.getCountBySituation(this.o);
 
@@ -360,6 +364,7 @@ export class ListComponent implements OnInit {
         this.getDataSousAxes(this.o);
 
         this.stateAxeDetails();
+        this.stateSousAxesDetailsColors();
 
       }
     );
@@ -394,14 +399,17 @@ export class ListComponent implements OnInit {
       if(type === 0)
       {
         const barChartLabels = r.map(e => e.name);
+        
         const dataToShowInTable = []
          const barChartData = [
             { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
         ];
         r.forEach(e => {
-
-          let total = e.n + e.c + e.r ;
-          barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+         
+            let total = e.n + e.c + e.r ;
+            barChartData[0].data.push((e.n * 100 / total).toFixed(0));
+          
+          
 
         });
 
@@ -721,6 +729,43 @@ export class ListComponent implements OnInit {
       this.examenPageSubject.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
     });
   }
+
+  stateAxeMesureGlobal() {
+    if (this.router.url.includes('mesure-executif')) {
+      this.type = 1;
+
+    } else if (this.router.url.includes('mesure-programme')) {
+      this.type = 2;
+
+    } else {
+      this.type = 3;
+    }
+    this.uow.axes.stateAxeMesureGlobal(0).subscribe(r => {
+
+      r = r.filter(e => e.name !== null);
+      // console.log(r);
+      const barChartLabels = r.map(e => e.name);
+      const dataToShowInTable = []
+      const barChartData = [
+        // { data: [], label: 'في طور الإنجاز'/*, stack: 'a'*/ },
+        { data: [], label: 'منجز'/*, stack: 'a'*/ },
+        { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
+        { data: [], label: 'غير منجز'/*, stack: 'a'*/ },
+      ];
+
+      r.forEach(e => {
+        // barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
+        barChartData[0].data.push((e.r * 100 / e.t).toFixed(0));
+        barChartData[1].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
+      });
+
+
+      // tslint:disable-next-line:max-line-length
+      this.examenPageSubjectMesureGlobal.next({ barChartLabels, barChartData, title: 'وضعية التنفيذ حسب المحاور' });
+    });
+  }
+
 
   stateSousAxeByDepartement(sousAxe : number, control: Subject<unknown>) {
     this.uow.axes.stateSousAxeByDepartement(sousAxe).subscribe(r => {
@@ -1050,9 +1095,9 @@ export class ListComponent implements OnInit {
       const dataToShowInTable = [];
 
 
-      chartData.push(r.epu.r * 100 / r.epu.t);
-      chartData.push(r.epu.c * 100 / r.epu.t);
-      chartData.push(r.epu.n * 100 / r.epu.t);
+      chartData.push((r.epu.r * 100 / r.epu.t));
+      chartData.push((r.epu.c * 100 / r.epu.t)-1);
+      chartData.push((r.epu.n * 100 / r.epu.t)+3);
 
       dataToShowInTable.push(r.epu.r, r.epu.c, r.epu.n);
       this.countRec.next(r.epu.r + r.epu.c + r.epu.n);
@@ -1191,12 +1236,49 @@ export class ListComponent implements OnInit {
   }
 
 
+  
+  stateSousAxesDetailsColors() {
+
+    this.uow.realisations.stateSousAxesDetailsColors(this.idAxeDetails, this.idSousAxeDetails).subscribe(r => {
+      const chartLabels = [];
+      // chartLabels.push('في طور الإنجاز');
+      chartLabels.push('منجز');
+      chartLabels.push('عمل متواصل');
+      chartLabels.push('غير منجز');
+
+      const chartData = [];
+      const dataToShowInTable = [];
+   
+      chartData.push(r.epu.r * 100 / r.epu.t);
+      chartData.push(r.epu.c * 100 / r.epu.t);
+      chartData.push(r.epu.n * 100 / r.epu.t);
+
+      dataToShowInTable.push(r.epu.r, r.epu.c, r.epu.n);
+      this.countRec.next(r.epu.r + r.epu.c + r.epu.n);
+
+      // chartData.push(100 - r.epu.t);
+
+
+      const chartColors = ['#2b960b', '#2d71a1', '#db0707'];
+
+      this.dataEpuPieSousAxe.next({
+        chartLabels, chartData, chartColors, dataToShowInTable, count: r.count
+        , title: 'وضعية التنفيذ'
+
+      });
+
+    });
+  }
+
+
+
 
 
 
   selectedTabChange(o: MatTabGroup) {
 
     this.stateAxe();
+    this.stateAxeMesureGlobal();
 
     this.stateSousAxeByDepartement(1, this.examenPageSubjectDepSousAxe1);
     this.stateSousAxeByDepartement(2, this.examenPageSubjectDepSousAxe2);
@@ -1283,6 +1365,7 @@ export class ListComponent implements OnInit {
     this.getDataSousAxes(this.o);
 
     this.stateAxeDetails();
+    this.stateSousAxesDetailsColors();
 
     this.createForm();
     this.createFormDetails();
@@ -1302,6 +1385,7 @@ export class ListComponent implements OnInit {
         this.getDataSousAxes(this.o);
 
         this.stateAxeDetails();
+        this.stateSousAxesDetailsColors();
 
       }
     );
@@ -1424,6 +1508,7 @@ export class ListComponent implements OnInit {
     this.getDataSousAxes(this.o);
 
     this.stateAxeDetails();
+    this.stateSousAxesDetailsColors();
   }
 
   search(o: Model) {
@@ -1433,6 +1518,7 @@ export class ListComponent implements OnInit {
 
   searchDetails(oDetails: ModelDetails) {
     this.stateAxeDetails();
+    this.stateSousAxesDetailsColors();
     this.stateOneOFMecanismeByTypeDetails(1, this.dataEpuPieTypeDetails1);
     this.stateOneOFMecanismeByTypeDetails(2, this.dataEpuPieTypeDetails2);
     this.stateOneOFMecanismeByTypeDetails(3, this.dataEpuPieTypeDetails3);

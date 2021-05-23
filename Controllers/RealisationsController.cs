@@ -370,6 +370,88 @@ namespace Controllers
 
 
 
+         private async Task<object> CalcBySousAxe(IQueryable<Realisation> q, int axe, int sousAxe)
+        {
+
+            // int recommendationsCount = _context.Recommendations.Count();
+
+            // var t = await q
+            //                 .Where(e => e.Mesure.Axe != null)
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Include(e => e.Mesure)
+            //                 .Include(e => e.Mesure.SousAxe)
+            //                 .CountAsync();
+
+                            
+            // var n = await q.Where(e =>  e.TauxRealisation == 0)
+            //                 .Where(e => e.Mesure.Axe != null)
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Include(e => e.Mesure)
+            //     .Include(e => e.Mesure.SousAxe)
+            //                 .CountAsync();
+
+            // var r = await q.Where(e => e.TauxRealisation == 100)
+            //                 .Where(e => e.Mesure.Axe != null)
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Include(e => e.Mesure)
+            //     .Include(e => e.Mesure.SousAxe)
+            //                 .CountAsync();
+           
+            // var c = await q.Where(e => e.TauxRealisation < 100 && e.TauxRealisation > 0 )
+            //                 .Where(e => e.Mesure.Axe != null)
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Include(e => e.Mesure)
+            //     .Include(e => e.Mesure.SousAxe)
+            //                 .CountAsync();
+            
+            // var epu = new { n, r, c, t };
+
+           
+
+            // return new { epu, count = 0 };
+
+            
+               var req = _context.Realisations
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => axe == 0 ? true : e.Mesure.IdAxe == axe)
+                .Where(e => sousAxe == 0 ? true : e.Mesure.IdSousAxe == sousAxe)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.SousAxe)
+                ;
+
+            var list = await req.ToListAsync();
+            var list2 = list
+                .GroupBy(e=>e.Mesure.SousAxe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    p = 0,
+                    r = e.Where(s => s.TauxRealisation == 100).Count(),
+                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0).Count(),
+                    n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    
+                    // // t = count,
+                    t = e.Count(),
+                })
+                .ToList()
+                ;
+
+            var epu = new { list2.FirstOrDefault().n, list2.FirstOrDefault().r, list2.FirstOrDefault().c, list2.FirstOrDefault().t };
+
+             return new { epu, count = 0 };
+
+
+
+        }
+
+
+
+
+
 
         private async Task<object> CalcByDepartementDetails(IQueryable<Realisation> q, int typeTable, int axe, int sousAxe, int departement)
         {
@@ -435,6 +517,13 @@ namespace Controllers
         {
             return Ok(await CalcByTypeDetails(_context.Realisations, typeTable, axe, sousAxe, type));
         }
+
+        [HttpGet("{axe}/{sousAxe}")]
+        public async Task<IActionResult> stateSousAxesDetailsColors(int axe,int sousAxe) // used
+        {
+            return Ok(await CalcBySousAxe(_context.Realisations, axe, sousAxe));
+        }
+        
 
         [HttpGet("{typeTable}/{axe}/{sousAxe}/{type}")]
         public async Task<IActionResult> StateMecanismeByDepartementDetails(int typeTable,int axe,int sousAxe,int type) // used

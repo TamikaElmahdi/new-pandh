@@ -60,9 +60,9 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    p = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "في طور الإنجاز").Count(),
+                    p = 0,
                     r = e.Where(s => s.TauxRealisation == 100).Count(),
-                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "عمل متواصل").Count(),
+                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0).Count(),
                     n = e.Where(s => s.TauxRealisation == 0).Count(),
                     
                     // // t = count,

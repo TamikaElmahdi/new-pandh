@@ -47,6 +47,15 @@ export class RealisationService  extends SuperService<Realisation> {
   }
 
 
+  stateSousAxesDetailsColors( axe, sousAxe) {
+    return this.http.get<{
+      epu: { name: string | Observable<string>, t: number, r: number , c: number , n: number},
+      count: number,
+    }>(`${this.urlApi}/${this.controller}/stateSousAxesDetailsColors/${axe}/${sousAxe}`);
+  }
+
+
+
   stateMecanismeByDepartementDetails(typeTable, axe, sousAxe, departement) {
     return this.http.get<{
       epu: { name: string | Observable<string>, t: number, r: number , c: number , n: number},

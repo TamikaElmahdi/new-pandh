@@ -21,6 +21,7 @@ namespace Controllers
                 .Where(e => e.Mesure.Responsables != null)
                 .Where(e => e.Mesure.Realisations != null)
                 .Where( e => e.IdOrganisme != 123)
+                //.Where( e => type == 0 ? e.Mesure.Realisations.Count(s => s.TauxRealisation == 0) > 0 : type == 1 ? e.Mesure.Realisations.Count(s => s.Situation == "عمل متواصل") > 0 : e.Mesure.Realisations.Count(s => s.TauxRealisation == 100) > 0)
 
                 //.Where(e => e.Mesure.Responsables.Any(p => p.Organisme.TypeHome == type))
 
@@ -872,6 +873,66 @@ namespace Controllers
             return Ok(list2);
 
             }
+        }
+
+
+        [HttpGet("{type}")]
+        public async Task<IActionResult> stateAxeMesureGlobal(int type) 
+        {
+
+            
+            //     var q = _context.Realisations
+            //     .Where(e => e.Mesure.Axe != null)
+            //     .Where(e => type > 0 ? e.Mesure.TypeMesure == type: true)
+            //     .Include(e => e.Mesure)
+            //     .Include(e => e.Mesure.Axe)
+            //     ;
+
+            // var list = await q.ToListAsync();
+            // var list2 = list
+            //     .GroupBy(e=>e.Mesure.Axe.Label)
+            //     .Select(e => new
+            //     {
+            //         name = e.Key,
+            //         p = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "في طور الإنجاز").Count(),
+            //         r = e.Where(s => s.TauxRealisation == 100).Count(),
+            //         c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 && s.Situation == "عمل متواصل").Count(),
+            //         n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    
+            //         // // t = count,
+            //         t = e.Count(),
+            //     })
+            //     .ToList()
+            //     ;
+
+            //  return Ok(list2);
+
+            var q = _context.Realisations
+                .Where(e => e.Mesure.Axe != null)
+                .Where(e => type > 0 ? e.Mesure.TypeMesure == type: true)
+                .Include(e => e.Mesure)
+                .Include(e => e.Mesure.Axe)
+                ;
+
+            var list = await q.ToListAsync();
+            var list2 = list
+                .GroupBy(e=>e.Mesure.Axe.Label)
+                .Select(e => new
+                {
+                    name = e.Key,
+                    p = 0,
+                    r = e.Where(s => s.TauxRealisation == 100).Count(),
+                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0 ).Count(),
+                    n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    
+                    // // t = count,
+                    t = e.Count(),
+                })
+                .ToList()
+                ;
+
+             return Ok(list2);
+            
         }
 
 

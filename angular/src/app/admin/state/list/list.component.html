@@ -379,6 +379,16 @@
 
         </div>
 
+        <div class="row justify-content-center">
+
+          <div class="col-md-12">
+            <div class="chart-size">
+              <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubjectMesureGlobal"></app-bar>
+            </div>
+          </div>
+        </div>
+
+
 
         <div class="row justify-content-center">
 
@@ -805,6 +815,11 @@
               <app-bar [col]="12" [height]="'70vh'" [dataSubject]="examenPageSubjectDetails"></app-bar>
             </div>
           </div>
+
+          <div class="col-md-12">
+            <app-pie [obs]="dataEpuPieSousAxe"></app-pie>
+          </div>
+
         </div>
 
 
