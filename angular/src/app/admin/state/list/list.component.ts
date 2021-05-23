@@ -550,7 +550,8 @@ export class ListComponent implements OnInit {
         { data: [], label: labelText /*, stack: 'a'*/ },
       ];
       r.forEach(e => {
-        barChartData[0].data.push((e.val ).toFixed(0));
+        var total =  e.valc + e.valn + e.valr;
+        barChartData[0].data.push((e.val * 100 / total ).toFixed(0));
       });
       const typeColor = type;
       control.next({ barChartLabels, typeColor, barChartData, title: '' });

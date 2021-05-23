@@ -49,7 +49,7 @@ export class AxeService  extends SuperService<any> {
     return this.http.get<{ name: string, val: number, t: number }[]>(`${this.urlApi}/${this.controller}/stateAxeActivite/${type}`);
   }
   stateAxeMesure(type: number) {
-    return this.http.get<{ name: string, val: number, t: number }[]>(`${this.urlApi}/${this.controller}/stateAxeMesure/${type}`);
+    return this.http.get<{ name: string, val: number, t: number, valn: number, valc: number, valr: number }[]>(`${this.urlApi}/${this.controller}/stateAxeMesure/${type}`);
   }
 
   stateSousAxeActivite(type: number) {

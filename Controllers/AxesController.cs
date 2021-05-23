@@ -458,9 +458,9 @@ namespace Controllers
             return new { epu };
 
         }
-
+        //ICII
         [HttpGet("{type}")]
-        public async Task<IActionResult> StateAxeMesure(int type) 
+        public async Task<IActionResult> StateAxeMesure(int type)  
         {
 
             if(type==0)
@@ -482,15 +482,18 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()*100) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
-                   // val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()),
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count()) ,
+                    valn = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
+                    valc = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation > 0 && s.TauxRealisation < 100)).Count(),
+                    valr = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     
 
-                }).OrderByDescending(f => f.val)
+                }).OrderByDescending(f => f.val * 100 / (f.valn + f.valc + f.valr))
                 .ToList()
                 ;
             return Ok(list2);
+            
             }
             else if(type==1)
             {
@@ -511,11 +514,14 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    val = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count(),
+                    valn = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
+                    valc = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation > 0 && s.TauxRealisation < 100)).Count(),
+                    valr = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     
 
-                }).OrderByDescending(f => f.val)
+                }).OrderByDescending(f => f.val * 100 / (f.valn + f.valc + f.valr))
                 .ToList()
                 ;
             return Ok(list2);
@@ -540,11 +546,14 @@ namespace Controllers
                 .Select(e => new
                 {
                     name = e.Key,
-                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count() * 100 ) / e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    val = (e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count() ) ,
+                    valn = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
+                    valc = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation > 0 && s.TauxRealisation < 100)).Count(),
+                    valr = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     
 
-                }).OrderByDescending(f => f.val)
+                }).OrderByDescending(f => f.val * 100 / (f.valn + f.valc + f.valr))
                 .ToList()
                 ;
             return Ok(list2);
@@ -925,7 +934,7 @@ namespace Controllers
                 {
                     name = e.Key,
                     r = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
-                    c = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
+                    c = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
                     n = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
                     t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
                     
