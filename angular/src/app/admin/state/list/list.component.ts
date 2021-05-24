@@ -329,26 +329,6 @@ export class ListComponent implements OnInit {
     this.stateOneOFMecanismeByTypeDetails(2, this.dataEpuPieTypeDetails2);
     this.stateOneOFMecanismeByTypeDetails(3, this.dataEpuPieTypeDetails3);
 
-
-
-
-    // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-    this.createForm();
-    this.createFormDetails();
-
-    // this.router.events.subscribe(route => {
-    //   if (route instanceof NavigationStart) {
-    //     this.routeMesure = route.url;
-    //     // console.log(this.routeMesure);
-    //     this.checkWitchMesure(this.routeMesure);
-    //     this.o.typeOrganisme = this.typeOrganisme;
-    //     this.createForm();
-    //     this.update.next(true);
-    //     console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-    //   }
-    // });
-
-
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
         r === true ? this.paginator.pageIndex = 0 : r = r;
@@ -369,16 +349,27 @@ export class ListComponent implements OnInit {
       }
     );
 
-    // this.route.queryParams.subscribe(params => {
-    //   const id = params['data'];
-    //   if (id) {
-    //     this.uow.mesures.getOne(id).subscribe(r => {
-    //       // this.openDialog(r);
-    //     });
+
+    // console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+    this.createForm();
+    this.createFormDetails();
+
+    // this.router.events.subscribe(route => {
+    //   if (route instanceof NavigationStart) {
+    //     this.routeMesure = route.url;
+    //     // console.log(this.routeMesure);
+    //     this.checkWitchMesure(this.routeMesure);
+    //     this.o.typeOrganisme = this.typeOrganisme;
+    //     this.createForm();
+    //     this.update.next(true);
+    //     console.warn('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
     //   }
     // });
 
-    // this.getRoute();
+
+ 
+
+ 
     this.autoComplete();
 
     setTimeout(() => {
@@ -1369,8 +1360,7 @@ export class ListComponent implements OnInit {
     this.stateAxeDetails();
     this.stateSousAxesDetailsColors();
 
-    this.createForm();
-    this.createFormDetails();
+    
 
     merge(...[this.sort.sortChange, this.paginator.page, this.update]).subscribe(
       r => {
@@ -1391,6 +1381,9 @@ export class ListComponent implements OnInit {
 
       }
     );
+
+    this.createForm();
+    this.createFormDetails();
     this.autoComplete();
 
   }
