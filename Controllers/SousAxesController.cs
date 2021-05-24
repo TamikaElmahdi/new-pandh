@@ -48,6 +48,7 @@ namespace Controllers
            
                 var q = _context.Realisations
                 .Where(e => e.Mesure.Axe != null)
+                .Where(e => e.Mesure.Responsables != null)
                 .Where(e => idAxe == 0 ? true : e.Mesure.IdAxe == idAxe)
                 .Where(e => idSousAxe == 0 ? true : e.Mesure.IdSousAxe == idSousAxe)
                 .Include(e => e.Mesure)
@@ -61,9 +62,9 @@ namespace Controllers
                 {
                     name = e.Key,
                     p = 0,
-                    r = e.Where(s => s.TauxRealisation == 100).Count(),
-                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0).Count(),
-                    n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    r = e.Where(s => s.Mesure.Realisations.All(f => f.TauxRealisation == 100)).Count(),
+                    c = e.Where(s => s.Mesure.Realisations.Any(f => f.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
+                    n = e.Where(s => s.Mesure.Realisations.All(f => f.TauxRealisation == 0)).Count(),
                     
                     // // t = count,
                     t = e.Count(),

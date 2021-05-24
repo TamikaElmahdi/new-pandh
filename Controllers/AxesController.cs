@@ -712,9 +712,9 @@ namespace Controllers
                     name = e.Key,
 
                     p = 0,
-                    r = e.Where(s => s.TauxRealisation == 100).Count(),
-                    c = e.Where(s => s.TauxRealisation < 100 && s.TauxRealisation > 0).Count(),
-                    n = e.Where(s => s.TauxRealisation == 0).Count(),
+                    r = e.Where(s => s.Mesure.Realisations.All(f => f.TauxRealisation == 100)).Count(),
+                    c = e.Where(s => s.Mesure.Realisations.Any(f => f.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
+                    n = e.Where(s => s.Mesure.Realisations.All(f => f.TauxRealisation == 0)).Count(),
                     t = e.Count(),
 
 
