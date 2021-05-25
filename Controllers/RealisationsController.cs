@@ -323,42 +323,79 @@ namespace Controllers
         }
 
 
-        private async Task<object> CalcByTypeDetails(IQueryable<Realisation> q, int typeTable, int axe, int sousAxe, int type)
+        private async Task<object> CalcByTypeDetails(IQueryable<Mesure> q, int typeTable, int axe, int sousAxe, int type)
         {
 
             // int recommendationsCount = _context.Recommendations.Count();
 
-            var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            // var t = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            //                 .CountAsync();
+                            
+            // var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            //                 .CountAsync();
+            // var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            //                 .CountAsync();
+
+            // var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز"))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            //                 .CountAsync();
+
+            // var c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل"))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
+            //                .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
+            //                 .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            //                 .CountAsync();
+
+
+            var t = await q.Where(f=> axe > 0 ? f.IdAxe == axe: true)
+                            .Where(f=> sousAxe > 0 ? f.IdSousAxe == sousAxe: true)
+                            .Where(e => e.IdNature == type)
                             .CountAsync();
                             
-            var n = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 0))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            var n = await q.Where(f=> axe > 0 ? f.IdAxe == axe: true)
+                            .Where(f=> sousAxe > 0 ? f.IdSousAxe == sousAxe: true)
+                            .Where(e => e.IdNature == type)
+                            .Where(e => e.Realisations.All(e => e.TauxRealisation == 0))
                             .CountAsync();
-            var r = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation == 100))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+            var r = await q.Where(f=> axe > 0 ? f.IdAxe == axe: true)
+                            .Where(f=> sousAxe > 0 ? f.IdSousAxe == sousAxe: true)
+                            .Where(e => e.IdNature == type)
+                            .Where(e => e.Realisations.All(e => e.TauxRealisation == 100))
                             .CountAsync();
-            var p = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "في طور الإنجاز"))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
+
+            var p = 0;
+                            
+            var c = await q.Where(f=> axe > 0 ? f.IdAxe == axe: true)
+                            .Where(f=> sousAxe > 0 ? f.IdSousAxe == sousAxe: true)
+                            .Where(e => e.IdNature == type)
+                            .Where(e => e.Realisations.Any(e => e.TauxRealisation > 0 && e.TauxRealisation < 100))
                             .CountAsync();
-            var c = await q.Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdCycle != null && e.TauxRealisation < 100 && e.TauxRealisation > 0 && e.Situation == "عمل متواصل"))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true)))
-                           .Where(e => e.Activite.ActiviteMesures.Any(f => axe > 0? f.Mesure.IdAxe == axe: true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => sousAxe > 0 ? f.Mesure.IdSousAxe == sousAxe : true))
-                            .Where(e => e.Activite.ActiviteMesures.Any(f => f.Mesure.IdNature == type))
-                            .CountAsync();
+
+        //    var t = 100;
+                            
+        //     var n = 40;
+        //     var r = 20;
+
+        //     var p = 0;
+                            
+        //     var c = 40;
+
             
             var epu = new { n, r, p, c, t };
 
@@ -475,7 +512,7 @@ namespace Controllers
         [HttpGet("{typeTable}/{axe}/{sousAxe}/{type}")]
         public async Task<IActionResult> StateMecanismeByTypeDetails(int typeTable,int axe,int sousAxe,int type) // used
         {
-            return Ok(await CalcByTypeDetails(_context.Realisations, typeTable, axe, sousAxe, type));
+            return Ok(await CalcByTypeDetails(_context.Mesures, typeTable, axe, sousAxe, type));
         }
 
         [HttpGet("{axe}/{sousAxe}")]
