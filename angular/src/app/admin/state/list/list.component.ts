@@ -390,6 +390,7 @@ export class ListComponent implements OnInit {
       if(type === 0)
       {
         const barChartLabels = r.map(e => e.name);
+        console.log('hhhhhh' + barChartLabels);
         
         const dataToShowInTable = []
          const barChartData = [
@@ -405,11 +406,14 @@ export class ListComponent implements OnInit {
         });
 
         const typeColor = type;
-        control.next({ barChartLabels, typeColor, barChartData, title: '' });
+        control.next({ barChartLabels, typeColor, barChartData, title: '' }); 
       }
       else if (type === 1)
       {
         const barChartLabels = r.map(e => e.name);
+
+        console.log('eeeeeeeeeeee' + barChartLabels);
+
         const dataToShowInTable = []
          const barChartData = [
             { data: [], label: 'عمل متواصل'/*, stack: 'a'*/ },
@@ -748,9 +752,9 @@ export class ListComponent implements OnInit {
       r.forEach(e => {
         // barChartData[0].data.push((e.p * 100 / e.t).toFixed(0));
         var total = e.r + e.c + e.n;
-        barChartData[0].data.push((e.r * 100 / total ).toFixed(0));
-        barChartData[1].data.push((e.c * 100 / total).toFixed(0));
-        barChartData[2].data.push((e.n * 100 / total).toFixed(0));
+        barChartData[0].data.push((e.r * 100 / e.t ).toFixed(0));
+        barChartData[1].data.push((e.c * 100 / e.t).toFixed(0));
+        barChartData[2].data.push((e.n * 100 / e.t).toFixed(0));
       });
 
       // tslint:disable-next-line:max-line-length
@@ -1086,10 +1090,10 @@ export class ListComponent implements OnInit {
       const chartData = [];
       const dataToShowInTable = [];
 
-
-      chartData.push((r.epu.r * 100 / r.epu.t));
-      chartData.push((r.epu.c * 100 / r.epu.t)-1);
-      chartData.push((r.epu.n * 100 / r.epu.t)+3);
+      var total = r.epu.r + r.epu.c + r.epu.n ;
+      chartData.push((r.epu.r * 100 / total));
+      chartData.push((r.epu.c * 100 / total));
+      chartData.push((r.epu.n * 100 / total));
 
       dataToShowInTable.push(r.epu.r, r.epu.c, r.epu.n);
       this.countRec.next(r.epu.r + r.epu.c + r.epu.n);

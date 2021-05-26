@@ -933,33 +933,61 @@ namespace Controllers
 
             //  return Ok(list2);
 
-            var q = _context.Responsables
-                .Where(e => e.Mesure.Axe != null)
-                .Where(e => e.Mesure.ActiviteMesures != null)
-                .Where(e => e.Mesure.Responsables != null)
-                .Where(e => e.Mesure.Realisations != null)
+            var q = _context.Mesures
+                .Where(e => e.Axe != null)
+                 .Include(e => e.Axe)
+                 .Include(e => e.Realisations);
 
-                 .Include(e => e.Mesure)
-                 .ThenInclude(e => e.Axe)
-                 .Include(e => e.Organisme)
-                 .Include(e => e.Mesure.Realisations)
-                ;
-            var list = await q.ToListAsync();
+                  var list = await q.ToListAsync();
             var list2 = list
-                .GroupBy( e=>e.Mesure.Axe.Label)
+                .GroupBy( e=>e.Axe.Label)
                 .Select(e => new
                 {
                     name = e.Key,
-                    r = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 100)).Count(),
-                    c = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.TauxRealisation < 100 && s.TauxRealisation > 0)).Count(),
-                    n = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.TauxRealisation == 0)).Count(),
-                    t = e.Where(s => s.Mesure.Responsables != null && s.Mesure.Realisations != null ).Count(),
+                    // r = e.Where(s => s.Realisations != null && s.Realisations.All(s => s.Situation == "منجز")).Count(),
+                    // c = e.Where(s => s.Realisations != null && s.Realisations.Any(s => s.Situation == "عمل متواصل")).Count(),
+                    // n = e.Where(s => s.Realisations != null && s.Realisations.All(s => s.Situation == "غير منجز")).Count(),
+                    r = e.Where(s => s.Realisations != null && s.Realisations.All(s => s.TauxRealisation == 100)).Count(),
+                    c = e.Where(s => s.Realisations != null && s.Realisations.Any(s => s.TauxRealisation > 0 && s.TauxRealisation < 100)).Count(),
+                    n = e.Where(s => s.Realisations != null && s.Realisations.All(s => s.TauxRealisation == 0)).Count(),
+                    t = e.Where(s => s.Realisations != null ).Count(),
                     
 
                 })
                 .ToList()
                 ;
             return Ok(list2);
+
+
+
+
+            // var q = _context.Responsables
+            //     .Where(e => e.Mesure.Axe != null)
+            //     //.Where(e => e.Mesure.ActiviteMesures != null)
+            //     //.Where(e => e.Mesure.Responsables != null)
+            //     .Where(e => e.Mesure.Realisations != null)
+
+            //      .Include(e => e.Mesure)
+            //      .ThenInclude(e => e.Axe)
+            //      .Include(e => e.Organisme)
+            //      .Include(e => e.Mesure.Realisations)
+            //     ;
+            // var list = await q.ToListAsync();
+            // var list2 = list
+            //     .GroupBy( e=>e.Mesure.Axe.Label)
+            //     .Select(e => new
+            //     {
+            //         name = e.Key,
+            //         r = e.Where(s => s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "منجز")).Count(),
+            //         c = e.Where(s => s.Mesure.Realisations != null && s.Mesure.Realisations.Any(s => s.Situation == "عمل متواصل")).Count(),
+            //         n = e.Where(s => s.Mesure.Realisations != null && s.Mesure.Realisations.All(s => s.Situation == "غير منجز")).Count(),
+            //         t = e.Where(s => s.Mesure.Realisations != null ).Count(),
+                    
+
+            //     })
+            //     .ToList()
+            //     ;
+            // return Ok(list2);
 
 
 

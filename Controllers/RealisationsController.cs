@@ -259,21 +259,27 @@ namespace Controllers
                 
 
             var t = await q.CountAsync();
-                            
-                            
-            var n = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 0))
-                           //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Mesure.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .Distinct().CountAsync();
 
-            var r = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 100))
-                           //.Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .Distinct().CountAsync();
+            var n = await q.Where(e => e.Realisations.All(r => r.Situation == "غير منجز"))
+                           .CountAsync();
+
+            var r = await q.Where(e => e.Realisations.All(r => r.Situation == "منجز"))
+                           .CountAsync();
             
-            var c = await q.Where(e => e.Realisations.Any(r => r.TauxRealisation < 100 && r.TauxRealisation > 0 ))
-                          // .Where(e => e.Realisations.Any( f=>f.Activite.ActiviteMesures.Any(f => f.Responsables.Any(o => typeTable > 0 ? o.Organisme.Type == typeTable : true))))
-                           .Distinct().CountAsync();
+            var c = await q.Where(e => e.Realisations.Any(r => r.Situation == "عمل متواصل" ))
+                           .CountAsync();
+                            
+                            
+            // var n = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 0))
+            //                .CountAsync();
+
+            // var r = await q.Where(e => e.Realisations.All(r => r.TauxRealisation == 100))
+            //                .CountAsync();
             
-            var epu = new { n, r, c, t };
+            // var c = await q.Where(e => e.Realisations.Any(r => r.TauxRealisation < 100 && r.TauxRealisation > 0 ))
+            //                .CountAsync();
+            
+            var epu = new {t, n, r, c };
 
 
             return new { epu, count = 0 };

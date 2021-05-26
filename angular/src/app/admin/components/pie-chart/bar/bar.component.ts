@@ -122,8 +122,7 @@ export class BarComponent implements OnInit {
       this.title = r.title;
       this.barChartLabels = r.barChartLabels; // .map(e => e.toString().substring(0, 35) + ' ...');
       this.barChartData = r.barChartData;
-      if(r.typeColor === 0)
-      {
+      if(r.typeColor === 0){
         this.pieChartColors = [
           // { backgroundColor: ['#d17c36', '#2d71a1'], },
           { backgroundColor: '#db0707' },
@@ -133,8 +132,8 @@ export class BarComponent implements OnInit {
 
         ];
       }
-      else if(r.typeColor === 1)
-      {
+
+      else if(r.typeColor === 1){
         this.pieChartColors = [
           // { backgroundColor: ['#d17c36', '#2d71a1'], },
           { backgroundColor: '#1476de' },
@@ -145,8 +144,7 @@ export class BarComponent implements OnInit {
         ];
       }
 
-      else if(r.typeColor === 2)
-      {
+      else if(r.typeColor === 2){
         this.pieChartColors = [
           // { backgroundColor: ['#d17c36', '#2d71a1'], },
           { backgroundColor: '#7dc460' },
@@ -157,6 +155,7 @@ export class BarComponent implements OnInit {
         ];
       }
 
+
       // console.log(this.barChartData[0].data[0])
       // console.log(this.barChartData[1].data[0])
       // console.log(this.barChartData[2].data[0])
@@ -164,19 +163,55 @@ export class BarComponent implements OnInit {
       // this.pieChartColors[0].backgroundColor = this.getColors(2);
       // console.log(this.barChartLabels)
 
-      r.barChartLabels.forEach((e, i) => {
-        this.list.push({
-          name: e.toString(),
-          // p: +this.barChartData.find(f => f.label === 'En cours').data[i] as number,
-          // r: +this.barChartData.find(f => f.label === 'Réalisé').data[i] as number,
-          // n: +this.barChartData.find(f => f.label.toLowerCase() === 'Non réalisé'.toLowerCase()).data[i] as number,
-          // t: this.barChartData.find(f => f.label === 'Taux').data[i] as number,
-          p: +this.barChartData.find((f, j) => j === 0).data[i] as number,
-          r: +this.barChartData.find((f, j) => j === 1).data[i] as number,
-          c: +this.barChartData.find((f, j) => j === 1).data[i] as number,
-          n: +this.barChartData.find((f, j) => j === 2).data[i] as number,
-        } as any);
-      });
+      // if(r.typeColor == null)
+      // {
+        r.barChartLabels.forEach((e, i) => {
+          this.list.push({
+            name: e.toString(),
+            // p: +this.barChartData.find(f => f.label === 'En cours').data[i] as number,
+            // r: +this.barChartData.find(f => f.label === 'Réalisé').data[i] as number,
+            // n: +this.barChartData.find(f => f.label.toLowerCase() === 'Non réalisé'.toLowerCase()).data[i] as number,
+            // t: this.barChartData.find(f => f.label === 'Taux').data[i] as number,
+            //p: +this.barChartData.find((f, j) => j === 0).data[i] as number,
+            r: +this.barChartData.find((f, j) => j === 1).data[i] as number,
+            c: +this.barChartData.find((f, j) => j === 1).data[i] as number,
+            n: +this.barChartData.find((f, j) => j === 2).data[i] as number,
+          } as any);
+        });
+     // }
+      // else if(r.typeColor === 0)
+      // {
+      //   r.barChartLabels.forEach((e, i) => {
+      //     this.list.push({
+      //       name: e.toString(),
+            
+      //       n: +this.barChartData.find((f, j) => j === 2).data[i] as number,
+      //     } as any);
+      //   });
+      // }
+
+      // else if(r.typeColor === 1)
+      // {
+      //   r.barChartLabels.forEach((e, i) => {
+      //     this.list.push({
+      //       name: e.toString(),
+            
+      //       c: +this.barChartData.find((f, j) => j === 1).data[i] as number,
+      //     } as any);
+      //   });
+      // }
+
+      // else if(r.typeColor === 2)
+      // {
+      //   r.barChartLabels.forEach((e, i) => {
+      //     this.list.push({
+      //       name: e.toString(),
+            
+      //       r: +this.barChartData.find((f, j) => j === 1).data[i] as number,
+      //     } as any);
+      //   });
+      // }
+      
 
 
       // console.log(this.list)

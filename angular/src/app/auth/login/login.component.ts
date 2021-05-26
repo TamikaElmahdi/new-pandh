@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.createForm();
 
     this.uow.users.getForTest().subscribe(r => {
-      console.log(r);
+      //console.log(r);
       this.dataSource = [];
       this.dataSource = r as User[];
     });
@@ -85,7 +85,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     // console.log(myForm.value);
     const o = myForm.value;
     // this.snackbar.openMySnackBar('login...');
-    console.log(o);
+    //console.log(o);
     this.uow.users.login(o).subscribe(async (r: any) => {
       this.session.doSignIn(r.user, r.token, r.idRole);
 
@@ -104,6 +104,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log('ngOnDestroy');
+    //console.log('ngOnDestroy');
   }
 }
