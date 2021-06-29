@@ -931,8 +931,7 @@ namespace Controllers
             //     .ToList()
             //     ;
 
-            //  return Ok(list2);
-
+            //  return Ok(list2)
             var q = _context.Mesures
                 .Where(e => e.Axe != null)
                  .Include(e => e.Axe)
